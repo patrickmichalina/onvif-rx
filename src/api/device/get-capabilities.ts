@@ -25,11 +25,11 @@ const numberProperties = [
   ''
 ]
 
-const rename: { [key: string]: string } = {
-  'tt:XAddr': 'xaddr',
-  'tt:RuleSupport': 'ruleSupport',
-  'tt:AnalyticsModuleSupport': 'analyticsModuleSupport'
+const specialRename: { [key: string]: string } = {
+  'XAddr': 'xaddr'
 }
+
+const lowerFirst = (str: string) => str[0].toLowerCase() + str.substring(1) 
 
 const propertyTypeConverter =
   (key: string) =>
@@ -51,7 +51,8 @@ export const getCapabilities =
         map(doc => {
           const z = Array.from(doc.documentElement.getElementsByTagName('tt:Analytics'))
           const analytics = Array.from(z[0].childNodes).reduce((acc, curr) => {
-            const key = rename[curr.nodeName] ? rename[curr.nodeName] : curr.nodeName
+            const cleanedKey = curr.nodeName.replace('tt:', '')
+            const key = specialRename[cleanedKey] ? specialRename[cleanedKey] : lowerFirst(cleanedKey)
             return {
               ...acc,
               [key]: propertyTypeConverter(curr.nodeName)(curr.textContent)
