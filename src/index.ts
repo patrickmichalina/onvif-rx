@@ -1,4 +1,4 @@
-import { ISystemConfig } from './config/interfaces';
+import { ISystemConfig } from './config/interfaces'
 import { getCapabilities, CapabilityCategory } from './api/device/get-capabilities'
 import { DEFAULT_NODE_ENV } from './config/node'
 
@@ -10,6 +10,5 @@ const NODE_CONFIG: ISystemConfig = {
 getCapabilities(CapabilityCategory.ALL)
   .run(NODE_CONFIG)
   .subscribe(a => {
-    console.log(a)
-    // a.Analytics
+    console.log(a.Analytics)
   }, console.log)

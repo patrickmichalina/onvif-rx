@@ -1,12 +1,17 @@
 {
   "name": "onvif-rx",
   "version": "0.0.0-development",
-  "description": "Interact with ONVIF cameras and devices",
+  "description": "Interact with ONVIF cameras and devices using RXJS",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/patrickmichalina/onvif-rx"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node-dev src/index.ts"
+    "start": "ts-node-dev src/index.ts",
+    "lint": "tslint -p tsconfig.json"
   },
   "dependencies": {
     "@akanass/rx-http-request": "^3.1.0",

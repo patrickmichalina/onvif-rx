@@ -1,7 +1,6 @@
 import { soapShell, XMLNS } from "../../xml"
-import { createStandardRequestBody, propertyTypeConverter } from "../request"
-import { map } from "rxjs/operators";
-import { maybe } from "typescript-monads"
+import { createStandardRequestBody, drillXml } from "../request"
+import { map } from "rxjs/operators"
 
 export enum CapabilityCategory {
   ALL = 'All',
@@ -25,12 +24,44 @@ export interface IAnalyticsCapabilities extends ICapability {
   readonly AnalyticsModuleSupport: string
 }
 
+export interface IStreamingCapabilities {
+  readonly RTPMulticast: boolean
+  readonly RTP_TCP: boolean
+  readonly RTP_RTSP_TCP: boolean
+}
+
+export interface IMediaCapabilities extends ICapability {
+  readonly RuleSupport: IStreamingCapabilities
+  readonly Extension: any
+}
+
+export interface IEventsCapabilities extends ICapability {
+  readonly WSSubscriptionPolicySupport: boolean
+  readonly WSPullPointSupport: boolean
+  readonly WSPausableSubscriptionManagerInterfaceSupport: boolean
+}
+
+export interface INetworkCapabilities {
+  readonly IPFilter: boolean
+  readonly ZeroConfiguration: boolean
+  readonly IPVersion6: boolean
+  readonly DynDNS: boolean
+  readonly Extension: boolean
+}
+
+export interface IDeviceCapabilities extends ICapability {
+  readonly Network: INetworkCapabilities
+  readonly System: any
+  readonly IO: any
+  readonly Security: any
+}
+
 export interface ICapabilities {
   readonly Analytics: IAnalyticsCapabilities
-  readonly Device: any
-  readonly Events: any
+  readonly Device: IDeviceCapabilities
+  readonly Events: IEventsCapabilities
   readonly Imaging: IImagingCapabilities
-  readonly Media: any
+  readonly Media: IMediaCapabilities
   readonly PTZ: IPTZCapabilities
   readonly Extension: any
 }
@@ -38,25 +69,6 @@ export interface ICapabilities {
 const createGetCapabilitiesBody =
   (cat: CapabilityCategory = CapabilityCategory.ALL) =>
     soapShell(`<GetCapabilities ${XMLNS.DEVICE}><Category>${cat}</Category></GetCapabilities>`)
-
-const deep = <T>(elm: Element): T =>
-  Array.from(elm.childNodes)
-    .reduce((acc, curr: any) => {
-      const goDeeper = curr.childNodes.length > 1
-      const key = curr.nodeName.replace('tt:', '').replace('.', '')
-      return {
-        ...acc,
-        [key]: goDeeper
-          ? deep(curr)
-          : propertyTypeConverter(curr.textContent)
-      }
-    }, {} as T)
-
-const drillXml =
-  <T>(doc: Document) =>
-    (startNodeElementTag: string) =>
-      maybe(Array.from(doc.documentElement.getElementsByTagName(startNodeElementTag))[0])
-        .map<T>(deep)
 
 /**
  * This method has been replaced by the more generic GetServices method. 
@@ -73,6 +85,6 @@ export const getCapabilities =
                 ...acc,
                 [curr]: drillXml(doc)(`tt:${curr}`).valueOrUndefined()
               }
-            }, {} as any)
+            }, {})
         })
       ))
