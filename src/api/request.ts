@@ -10,3 +10,11 @@ export const createStandardRequestBody =
     reader<ISystemConfig, Observable<Document>>(config =>
       config.transport(body)(config.xaddrs)
         .pipe(map(parseXml(config.parser))))
+
+export const propertyTypeConverter =
+  (val?: string | null) =>
+    val === 'false' || val === 'true'
+      ? val === 'true' ? true : false
+      : val
+        ? isNaN(Number(val)) ? val : Number(val)
+        : undefined

@@ -9,4 +9,7 @@ const NODE_CONFIG: ISystemConfig = {
 
 getCapabilities(CapabilityCategory.ALL)
   .run(NODE_CONFIG)
-  .subscribe(console.log, console.log)
+  .subscribe(a => {
+    console.log(a)
+    // a.Analytics
+  }, console.log)

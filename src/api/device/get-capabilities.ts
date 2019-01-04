@@ -1,6 +1,7 @@
 import { soapShell, XMLNS } from "../../xml"
-import { createStandardRequestBody } from "../request"
+import { createStandardRequestBody, propertyTypeConverter } from "../request"
 import { map } from "rxjs/operators";
+import { maybe } from "typescript-monads"
 
 export enum CapabilityCategory {
   ALL = 'All',
@@ -12,33 +13,50 @@ export enum CapabilityCategory {
   PTZ = 'PTZ'
 }
 
+export interface ICapability {
+  readonly XAddr: string
+}
+
+export interface IImagingCapabilities extends ICapability { }
+export interface IPTZCapabilities extends ICapability { }
+
+export interface IAnalyticsCapabilities extends ICapability {
+  readonly RuleSupport: string
+  readonly AnalyticsModuleSupport: string
+}
+
+export interface ICapabilities {
+  readonly Analytics: IAnalyticsCapabilities
+  readonly Device: any
+  readonly Events: any
+  readonly Imaging: IImagingCapabilities
+  readonly Media: any
+  readonly PTZ: IPTZCapabilities
+  readonly Extension: any
+}
+
 const createGetCapabilitiesBody =
   (cat: CapabilityCategory = CapabilityCategory.ALL) =>
     soapShell(`<GetCapabilities ${XMLNS.DEVICE}><Category>${cat}</Category></GetCapabilities>`)
 
-const booleanProperties = [
-  'tt:RuleSupport',
-  'tt:AnalyticsModuleSupport'
-]
+const deep = <T>(elm: Element): T =>
+  Array.from(elm.childNodes)
+    .reduce((acc, curr: any) => {
+      const goDeeper = curr.childNodes.length > 1
+      const key = curr.nodeName.replace('tt:', '').replace('.', '')
+      return {
+        ...acc,
+        [key]: goDeeper
+          ? deep(curr)
+          : propertyTypeConverter(curr.textContent)
+      }
+    }, {} as T)
 
-const numberProperties = [
-  ''
-]
-
-const specialRename: { [key: string]: string } = {
-  'XAddr': 'xaddr'
-}
-
-const lowerFirst = (str: string) => str[0].toLowerCase() + str.substring(1) 
-
-const propertyTypeConverter =
-  (key: string) =>
-    (val?: string | null) =>
-      booleanProperties.some(a => a === key)
-        ? val === 'true' ? true : false
-        : numberProperties.some(a => a === key)
-          ? val ? parseInt(val) : 0
-          : val
+const drillXml =
+  <T>(doc: Document) =>
+    (startNodeElementTag: string) =>
+      maybe(Array.from(doc.documentElement.getElementsByTagName(startNodeElementTag))[0])
+        .map<T>(deep)
 
 /**
  * This method has been replaced by the more generic GetServices method. 
@@ -48,18 +66,13 @@ export const getCapabilities =
   (cat: CapabilityCategory) =>
     createStandardRequestBody(createGetCapabilitiesBody(cat))
       .map(res => res.pipe(
-        map(doc => {
-          const z = Array.from(doc.documentElement.getElementsByTagName('tt:Analytics'))
-          const analytics = Array.from(z[0].childNodes).reduce((acc, curr) => {
-            const cleanedKey = curr.nodeName.replace('tt:', '')
-            const key = specialRename[cleanedKey] ? specialRename[cleanedKey] : lowerFirst(cleanedKey)
-            return {
-              ...acc,
-              [key]: propertyTypeConverter(curr.nodeName)(curr.textContent)
-            }
-          }, {})
-          return {
-            analytics
-          }
+        map<Document, Partial<ICapabilities>>(doc => {
+          return ['Analytics', 'Device', 'Events', 'Imaging', 'Media', 'PTZ', 'Extension']
+            .reduce((acc, curr) => {
+              return {
+                ...acc,
+                [curr]: drillXml(doc)(`tt:${curr}`).valueOrUndefined()
+              }
+            }, {} as any)
         })
       ))
