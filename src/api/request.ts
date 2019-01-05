@@ -3,7 +3,6 @@ import { ISystemConfig, IDeviceConfig } from '../config/interfaces'
 import { Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { createUserToken } from '../auth'
-import { soapShell, XMLNS } from '../xml'
 
 const parseXml = (parser: DOMParser) => (xml: string) => parser.parseFromString(xml, 'text/xml')
 
@@ -25,9 +24,6 @@ const parseAttributes = (attrs: ReadonlyArray<Attr>) => Array.from(attrs)
     }
   }, {})
 
-
-// const hasNoDuplicates = (arr: ReadonlyArray<string>) => arr.every(num => arr.indexOf(num) === arr.lastIndexOf(num))
-
 const deep = <T>(elm: Element): T =>
   Array.from(elm.childNodes)
     .reduce((acc, curr: any) => {
@@ -42,6 +38,20 @@ const deep = <T>(elm: Element): T =>
             : propertyTypeConverter(curr.textContent)
       }
     }, {} as T)
+
+export const XMLNS = {
+  SOAP: 'xmlns="http://www.w3.org/2003/05/soap-envelope"',
+  DEVICE: 'xmlns="http://www.onvif.org/ver10/device/wsdl"'
+}
+
+export const soapShell =
+  (rawBody: string) =>
+    (rawHeader?: string) =>
+      `<?xml version="1.0" encoding="UTF-8"?>
+         <Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:tt="http://www.onvif.org/ver10/schema">
+          <Header>${rawHeader || ''}</Header>
+          <Body>${rawBody}</Body>
+        </Envelope>`
 
 export const mapResponseXmlToJson = <T>(node: string) => (source: Observable<Document>) => source.pipe(
   map<Document, T>(startingAtNode(node))
