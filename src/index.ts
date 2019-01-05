@@ -4,13 +4,9 @@ import { maybe } from 'typescript-monads'
 import { getDNS } from './api/device/get-dns'
 import { ISystemConfig, IDeviceConfig } from './config/interfaces'
 import { getDeviceSystemDateAndTime } from './api/device/get-system-date-and-time'
-
-// import { ISystemConfig } from './config/interfaces'
-// import { DEFAULT_NODE_ENV } from './config/node'
-// export { getServiceCapabilities } from './api/device/get-service-capabilities'
-// import { getCapabilities } from './api/device/get-capabilities'
-// import { getDeviceSystemDateAndTime } from './api/device/get-system-date-and-time'
-// import { onvifDigest, nonce, createUserToken } from './auth'
+import { getCapabilities } from './api/device/get-capabilities'
+import { getDeviceInformation } from './api/device/get-device-information'
+import { getServiceCapabilities } from './api/device/get-service-capabilities'
 
 const NODE_CONFIG: IDeviceConfig = {
   system: DEFAULT_NODE_ENV,
@@ -31,7 +27,7 @@ const NODE_CONFIG: IDeviceConfig = {
 // })
 // digest.tapSome(console.log)
 
-getDNS()
+getServiceCapabilities()
   .run(NODE_CONFIG)
   .subscribe(a => {
     console.log(a)

@@ -1,5 +1,5 @@
 import { soapShell, XMLNS } from '../../xml'
-import { createStandardRequestBody } from '../request'
+import { createStandardRequestBody, mapResponseXmlToJson } from '../request'
 import { map } from 'rxjs/operators'
 
 export interface DeviceInformation {
@@ -32,24 +32,12 @@ export interface DeviceInformation {
 const createDeviceInformationBody = () =>
   soapShell(`<GetDeviceInformation ${XMLNS.DEVICE} />`)()
 
-
 /**
  * This operation gets basic device information from the device.
  */
 export const getDeviceInformation = () =>
   createStandardRequestBody(createDeviceInformationBody())
-    .map(res => res.pipe(
-      map<Document, any>(doc => {
-        return {}
-        // return ['GetDeviceInformationResponse']
-        //   .reduce((acc, curr) => {
-        //     return {
-        //       ...acc,
-        //       [curr]: drillXml(doc)(`tt:${curr}`).valueOrUndefined()
-        //     }
-        //   }, {})
-      })
-    ))
+    .map(mapResponseXmlToJson<any>('tds:GetDeviceInformationResponse'))
   // createONVIFDeviceActionSoapBody(ONVIFDeviceOperation.GET_DEVICE_INFORMATION)
   //   .flatMap(soapRequest)
   //   .map(successXmlPathMap<DeviceInformation>(xml => {

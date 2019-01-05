@@ -28,9 +28,10 @@ const deep = <T>(elm: Element): T =>
   Array.from(elm.childNodes)
     .reduce((acc, curr: any) => {
       const key = cleanColon(curr.nodeName).replace('.', '')
+      // console.log(curr.attributes.length)
       return {
         ...acc,
-        [key]: curr.nodeName.includes('tds:')
+        [key]: curr.attributes.length
           ? parseAttributes(curr.attributes)
           : curr.childNodes.length > 1
             ? deep(curr as Element)
@@ -66,10 +67,6 @@ export const drillXml =
 
 export const createStandardRequestBody =
   (body: string) =>
-    // createUserToken()
-    // .map(maybeUserToken => {
-    // return config.system.transport(body)(config.url)
-    // })
     reader<IDeviceConfig, Observable<Document>>(config => {
       const gen = (body: string) => config.system.transport(body)(config.url).pipe(map(parseXml(config.system.parser)))
       return createUserToken().map(maybeUserToken => {
@@ -77,8 +74,5 @@ export const createStandardRequestBody =
           return gen(body.replace('<Header></Header>', `<Header>${token}</Header>`))
         }).valueOr(gen(body))
       }).run(config)
-
-      // return config.system.transport(body)(config.url)
-      //   .pipe(map(parseXml(config.system.parser)))
     })
 
