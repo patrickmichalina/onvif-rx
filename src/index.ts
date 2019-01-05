@@ -1,12 +1,13 @@
+import 'typescript-monads'
+
 import { DEFAULT_NODE_ENV } from './config/node'
 import { maybe } from 'typescript-monads'
 import { ISystemConfig, IDeviceConfig } from './config/interfaces'
-import { getCapabilities } from './api/device/get-capabilities'
-import { getDeviceInformation } from './api/device/get-device-information'
-import { getServiceCapabilities } from './api/device/get-service-capabilities'
-import { getDeviceDiscoveryMode } from './api/device/get-discovery-mode'
-import { getWsdlUrl } from './api/device/get-wsdl-url'
-import { getSystemLog } from './api/device/system'
+// export * from './api/device/get-capabilities'
+// export * from './api/device/get-device-information'
+// export * from './api/device/get-discovery-mode'
+// export * from './api/device/get-wsdl-url'
+// export * from './api/device/system'
 import { getScopes } from './api/device/get-scopes'
 
 const NODE_CONFIG: IDeviceConfig = {

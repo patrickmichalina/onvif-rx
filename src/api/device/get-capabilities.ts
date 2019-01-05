@@ -64,11 +64,16 @@ export interface ICapabilities {
   readonly Extension: any
 }
 
+const K = {
+  k1: 'GetCapabilities',
+  k2: 'Category'
+}
+
 /**
  * This method has been replaced by the more generic GetServices method. 
  * For capabilities of individual services refer to the GetServiceCapabilities methods.
  */
 export const getCapabilities =
   (cat: CapabilityCategory = CapabilityCategory.ALL) =>
-    createStandardRequestBodyFromString(`<GetCapabilities ${XMLNS.DEVICE}><Category>${cat}</Category></GetCapabilities>`)
+    createStandardRequestBodyFromString(`<${K.k1} ${XMLNS.DEVICE}><${K.k2}>${cat}</${K.k2}></${K.k1}>`)
       .map(mapResponseXmlToJson<Partial<ICapabilities>>('tds:GetCapabilitiesResponse')())

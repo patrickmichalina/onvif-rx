@@ -77,14 +77,14 @@ export interface IHostnameInformation {
  */
 export const getDynamicDNS = () =>
   createDeviceRequestBodyFromString('GetDynamicDNS')
-    .map(mapResponseXmlToJson<IDynamicDNSInformation>('tds:DynamicDNSInformation')())
+    .map(mapResponseXmlToJson<IDynamicDNSInformation>(`tds:DynamicDNSInformation`)())
 
 /**
  * This operation gets the DNS settings from a device. The device shall return its DNS configurations through the GetDNS command.
  */
 export const getDNS = () =>
   createDeviceRequestBodyFromString('GetDNS')
-    .map(mapResponseXmlToJson<IDNSInformation>('tds:DNSInformation')())
+    .map(mapResponseXmlToJson<IDNSInformation>(`tds:DNSInformation`)())
 
 /**
  * This operation is used by an endpoint to get the hostname from a device. 
@@ -92,7 +92,7 @@ export const getDNS = () =>
  */
 export const getHostname = () =>
   createDeviceRequestBodyFromString('GetHostname')
-    .map(mapResponseXmlToJson<IHostnameInformation>('tds:HostnameInformation')())
+    .map(mapResponseXmlToJson<IHostnameInformation>(`tds:HostnameInformation`)())
 
 /**
 * This operation gets defined network protocols from a device. 
@@ -100,7 +100,7 @@ export const getHostname = () =>
 */
 export const getNetworkProtocols = () =>
   createDeviceRequestBodyFromString('GetNetworkProtocols')
-    .map(mapResponseXmlToJson<any>('tds:GetNetworkProtocolsResponse')())
+    .map(mapResponseXmlToJson<any>(`tds:GetNetworkProtocolsResponse`)())
 
 /**
 * This operation gets the network interface configuration from a device. The device shall support 
@@ -109,6 +109,6 @@ export const getNetworkProtocols = () =>
 */
 export const getNetworkInterfaces = () =>
   createDeviceRequestBodyFromString('GetNetworkInterfaces')
-    .map(mapResponseXmlToJson<any>('tds:GetNetworkInterfacesResponse')())
+    .map(mapResponseXmlToJson<any>(`tds:GetNetworkInterfacesResponse`)())
 
   // TODO: parsing this payload will require special work!
