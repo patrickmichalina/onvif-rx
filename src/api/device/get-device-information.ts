@@ -32,4 +32,4 @@ export interface IDeviceInformation {
  */
 export const getDeviceInformation = () =>
   createDeviceRequestBodyFromString('GetDeviceInformation')
-    .map(mapResponseXmlToJson<IDeviceInformation>('tds:GetDeviceInformationResponse'))
+    .map(mapResponseXmlToJson<IDeviceInformation>('tds:GetDeviceInformationResponse')())

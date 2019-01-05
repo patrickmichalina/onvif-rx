@@ -12,4 +12,4 @@ import { createDeviceRequestBodyFromString, mapResponseXmlToJson } from '../requ
  */
 export const getScopes = () =>
   createDeviceRequestBodyFromString('GetScopes')
-    .map(mapResponseXmlToJson<any>('tds:GetScopesResponse'))
+    .map(mapResponseXmlToJson<any>('tds:GetScopesResponse')(['tds:Scopes']))

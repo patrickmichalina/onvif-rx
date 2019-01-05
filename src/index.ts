@@ -18,7 +18,7 @@ const NODE_CONFIG: IDeviceConfig = {
   })
 }
 
-getServiceCapabilities()
+getScopes()
   .run(NODE_CONFIG)
   .subscribe(a => {
     console.log(a)

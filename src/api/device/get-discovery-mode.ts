@@ -16,4 +16,4 @@ export interface IDiscoveryResponse {
  */
 export const getDeviceDiscoveryMode = () =>
   createDeviceRequestBodyFromString('GetDiscoveryMode')
-    .map(mapResponseXmlToJson<IDiscoveryResponse>('tds:GetDiscoveryModeResponse'))
+    .map(mapResponseXmlToJson<IDiscoveryResponse>('tds:GetDiscoveryModeResponse')())

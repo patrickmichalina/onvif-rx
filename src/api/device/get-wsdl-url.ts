@@ -12,4 +12,4 @@ export interface WdslResponse {
  */
 export const getWsdlUrl = () =>
   createDeviceRequestBodyFromString(`GetWsdlUrl`)
-    .map(mapResponseXmlToJson<WdslResponse>(`tds:GetWsdlUrlResponse`))
+    .map(mapResponseXmlToJson<WdslResponse>(`tds:GetWsdlUrlResponse`)())

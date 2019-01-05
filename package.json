@@ -14,7 +14,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node-dev src/index.ts",
-    "lint": "tslint -p tsconfig.json",
+    "lint": "tsc && tslint -p tsconfig.json",
     "prepublishOnly": "npm run rollup && npm run minify",
     "minify": "uglifyjs dist/onvif-rx-umd.js -o dist/onvif-rx-umd.min.js --source-map",
     "rollup": "rollup -c",

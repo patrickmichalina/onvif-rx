@@ -77,7 +77,7 @@ export interface ISystemRebootResponse {
  */
 export const systemReboot = () =>
   createDeviceRequestBodyFromString(`SystemReboot`)
-    .map(mapResponseXmlToJson<ISystemRebootResponse>(`tds:SystemRebootResponse`))
+    .map(mapResponseXmlToJson<ISystemRebootResponse>(`tds:SystemRebootResponse`)())
 
 const dtkey = 'SystemDateAndTime'
 
@@ -89,18 +89,18 @@ const dtkey = 'SystemDateAndTime'
  */
 export const getDeviceSystemDateAndTime = () =>
   createDeviceRequestBodyFromString(`Get${dtkey}`)
-    .map(mapResponseXmlToJson<SystemDateTime>(`tds:${dtkey}`))
+    .map(mapResponseXmlToJson<SystemDateTime>(`tds:${dtkey}`)())
 
 /**
  * This operation gets a system log from the device. The exact format of the system logs is outside the scope of this standard.
  */
 export const getSystemLog = () =>
   createDeviceRequestBodyFromString(`GetSystemLog`)
-    .map(mapResponseXmlToJson<ISystemLog>(`tds:GetSystemLogResponse`))
+    .map(mapResponseXmlToJson<ISystemLog>(`tds:GetSystemLogResponse`)())
 
 /**
  * This operation gets a system log from the device. The exact format of the system logs is outside the scope of this standard.
  */
 export const getSystemSupportInformation = () =>
   createDeviceRequestBodyFromString(`GetSystemSupportInformation`)
-    .map(mapResponseXmlToJson<ISupportInformation>(`tds:GetSystemSupportInformationResponse`))
+    .map(mapResponseXmlToJson<ISupportInformation>(`tds:GetSystemSupportInformationResponse`)())

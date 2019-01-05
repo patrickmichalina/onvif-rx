@@ -250,4 +250,4 @@ export interface ISystemCapabilities {
  */
 export const getServiceCapabilities = () =>
   createDeviceRequestBodyFromString('GetServiceCapabilities')
-    .map(mapResponseXmlToJson<ICapabilities>(`tds:Capabilities`))
+    .map(mapResponseXmlToJson<ICapabilities>(`tds:Capabilities`)())

@@ -24,20 +24,27 @@ const parseAttributes = (attrs: ReadonlyArray<Attr>) => Array.from(attrs)
     }
   }, {})
 
-const deep = <T>(elm: Element): T =>
-  Array.from(elm.childNodes)
-    .reduce((acc, curr: any) => {
-      const key = cleanColon(curr.nodeName).replace('.', '')
-      // console.log(curr.nodeName, acc)
-      return {
-        ...acc,
-        [key]: curr.attributes.length
-          ? parseAttributes(curr.attributes)
-          : curr.childNodes.length > 1
-            ? deep(curr)
-            : propertyTypeConverter(curr.textContent)
-      }
-    }, {} as T)
+const deep =
+  (collectionKeys: ReadonlyArray<string> = []) =>
+    <T>(elm: Element): T =>
+      Array.from(elm.childNodes)
+        .reduce((acc, curr: any) => {
+          const key = cleanColon(curr.nodeName).replace('.', '')
+          const isCollection = collectionKeys.some(a => a === curr.nodeName)
+          const baseVal = (acc as any)[key]
+          return {
+            ...acc,
+            [key]: curr.attributes.length
+              ? parseAttributes(curr.attributes)
+              : curr.childNodes.length > 1
+                ? isCollection
+                  ? Array.isArray(baseVal)
+                    ? [...baseVal, deep(collectionKeys)(curr)]
+                    : [deep(collectionKeys)(curr)]
+                  : deep(collectionKeys)(curr)
+                : propertyTypeConverter(curr.textContent)
+          }
+        }, {} as T)
 
 export const XMLNS = {
   SOAP: 'xmlns="http://www.w3.org/2003/05/soap-envelope"',
@@ -53,31 +60,37 @@ export const soapShell =
           <Body>${rawBody}</Body>
         </Envelope>`
 
-export const mapResponseXmlToJson = <T>(node: string) => (source: Observable<Document>) => source.pipe(
-  map<Document, T>(startingAtNode(node))
-)
+export const mapResponseXmlToJson =
+  <T>(node: string) =>
+    (collectionKeys: ReadonlyArray<string> = []) =>
+      (source: Observable<Document>) => source.pipe(
+        map<Document, T>(startingAtNode<T>(node)(collectionKeys))
+      )
 
 export const startingAtNodes =
   <T>(nodes: ReadonlyArray<string>) =>
-    (doc: Document) =>
-      nodes
-        .reduce((acc, curr) => {
-          return {
-            ...acc,
-            [curr]: drillXml(doc)(curr).valueOrUndefined()
-          }
-        }, {} as T)
+    (collectionKeys: ReadonlyArray<string> = []) =>
+      (doc: Document) =>
+        nodes
+          .reduce<T>((acc, curr) => {
+            return {
+              ...acc,
+              [curr]: drillXml(doc)(curr)(collectionKeys).valueOrUndefined()
+            }
+          }, {} as T)
 
 export const startingAtNode =
   <T>(node: string) =>
-    (doc: Document) =>
-      startingAtNodes<any>([node])(doc)[node] as T
+    (collectionKeys: ReadonlyArray<string> = []) =>
+      (doc: Document): T =>
+        startingAtNodes<any>([node])(collectionKeys)(doc)[node] as T
 
 export const drillXml =
   <T>(doc: Document) =>
     (startNodeElementTag: string) =>
-      maybe(Array.from(doc.documentElement.getElementsByTagName(startNodeElementTag))[0])
-        .map<T>(deep)
+      (collectionKeys: ReadonlyArray<string> = []) =>
+        maybe(Array.from(doc.documentElement.getElementsByTagName(startNodeElementTag))[0])
+          .map<T>(deep(collectionKeys))
 
 export const createStandardRequestBody =
   (body: string) =>
