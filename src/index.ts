@@ -27,7 +27,7 @@ const NODE_CONFIG: IDeviceConfig = {
 // })
 // digest.tapSome(console.log)
 
-getServiceCapabilities()
+getDNS()
   .run(NODE_CONFIG)
   .subscribe(a => {
     console.log(a)
