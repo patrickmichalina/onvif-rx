@@ -1,5 +1,4 @@
-import { soapShell, XMLNS } from '../../xml'
-import { createStandardRequestBody, mapResponseXmlToJson } from '../request'
+import { mapResponseXmlToJson, createDeviceRequestBodyFromString } from '../request'
 
 export enum IPType {
   IPV4 = 'IPv4',
@@ -45,12 +44,9 @@ export interface IIPAddress {
   readonly IPv6Address?: string
 }
 
-const createGetDNSBody = () =>
-  soapShell(`<GetDNS ${XMLNS.DEVICE} />`)()
-
 /**
  * This operation gets the DNS settings from a device. The device shall return its DNS configurations through the GetDNS command.
  */
 export const getDNS = () =>
-  createStandardRequestBody(createGetDNSBody())
+  createDeviceRequestBodyFromString('GetDNS')
     .map(mapResponseXmlToJson<IDNSInformation>('tds:DNSInformation'))

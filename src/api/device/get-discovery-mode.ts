@@ -1,7 +1,12 @@
+import { mapResponseXmlToJson, createDeviceRequestBodyFromString } from '../request'
 
 export enum DiscoveryMode {
   DISCOVERABLE = 'Discoverable',
   NON_DISCOVERABLE = 'NonDiscoverable'
+}
+
+export interface IDiscoveryResponse {
+  readonly DiscoveryMode: DiscoveryMode
 }
 
 /**
@@ -9,10 +14,6 @@ export enum DiscoveryMode {
  * the different device discovery modes. The device shall support retrieval of the discovery 
  * mode setting through the GetDiscoveryMode command.
  */
-export const getDeviceDiscoveryMode = () => 1
-  // createONVIFDeviceActionSoapBody(ONVIFDeviceOperation.GET_DISCOVERY_MODE)
-  //   .flatMap(soapRequest)
-  //   .map(successXmlPathMap(xml =>
-  //     maybeOVNIFNodeItemText(xml)('//tds:DiscoveryMode')
-  //       .map(a => a as DiscoveryMode)
-  //       .valueOr(DiscoveryMode.NON_DISCOVERABLE)))
+export const getDeviceDiscoveryMode = () =>
+  createDeviceRequestBodyFromString('GetDiscoveryMode')
+    .map(mapResponseXmlToJson<IDiscoveryResponse>('tds:GetDiscoveryModeResponse'))

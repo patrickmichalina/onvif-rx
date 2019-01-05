@@ -1,5 +1,4 @@
-import { soapShell, XMLNS } from '../../xml'
-import { createStandardRequestBody, mapResponseXmlToJson } from '../request'
+import { mapResponseXmlToJson, createDeviceRequestBodyFromString } from '../request'
 
 export interface ICapabilities {
   /**
@@ -132,37 +131,37 @@ export interface INetworkCapabilities {
    * Indicates support for retrieval of hostname from DHCP.
    */
   readonly HostnameFromDHCP: boolean
-  
+
   /**
    * Indicates support for IEEE 802.11 configuration.
    */
   readonly Dot11Configuration: boolean
-  
+
   /**
    * Indicates the maximum number of Dot1X configurations supported by the device
    */
   readonly Dot1XConfigurations: number
-  
+
   /**
    * Indicates support for dynamic DNS configuration.
    */
   readonly DynDNS: boolean
-  
+
   /**
    * Indicates support for IPv6.
    */
   readonly IPVersion6: boolean
-  
+
   /**
    * Indicates support for zeroconf.
    */
   readonly ZeroConfiguration: boolean
-  
+
   /**
    * Indicates support for IP filtering.
    */
   readonly IPFilter: boolean
-  
+
   /**
    * Indicates support for Stateful IPv6 DHCP.
    */
@@ -194,7 +193,7 @@ export interface ISystemCapabilities {
    * Indicates support for retrieval of system logging through MTOM.
    */
   readonly SystemLogging: boolean
-  
+
   /**
    * Indicates support for firmware upgrade through MTOM.
    */
@@ -219,7 +218,7 @@ export interface ISystemCapabilities {
    * Indicates support for retrieving support information through HTTP.
    */
   readonly HTTPSupportInformation: boolean
-  
+
   /**
    * Indicates support for storage configuration interfaces.
    */
@@ -246,12 +245,9 @@ export interface ISystemCapabilities {
   readonly StorageTypesSupported: any
 }
 
-const createGetDeviceServiceCapabilitiesBody = () =>
-  soapShell(`<GetServiceCapabilities ${XMLNS.DEVICE} />`)()
-
 /**
  * Returns the capabilities of the device service. The result is returned in a typed answer.
  */
 export const getServiceCapabilities = () =>
-  createStandardRequestBody(createGetDeviceServiceCapabilitiesBody())
+  createDeviceRequestBodyFromString('GetServiceCapabilities')
     .map(mapResponseXmlToJson<ICapabilities>(`tds:Capabilities`))

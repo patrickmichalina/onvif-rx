@@ -3,6 +3,7 @@ import { ISystemConfig, IDeviceConfig } from '../config/interfaces'
 import { Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { createUserToken } from '../auth'
+import { soapShell, XMLNS } from '../xml'
 
 const parseXml = (parser: DOMParser) => (xml: string) => parser.parseFromString(xml, 'text/xml')
 
@@ -76,3 +77,10 @@ export const createStandardRequestBody =
       }).run(config)
     })
 
+export const createStandardRequestBodyFromString =
+  (body: string) =>
+    createStandardRequestBody(soapShell(body)())
+
+export const createDeviceRequestBodyFromString =
+  (key: string) =>
+    createStandardRequestBody(soapShell(`<${key} ${XMLNS.DEVICE}/>`)())

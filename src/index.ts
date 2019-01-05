@@ -7,6 +7,7 @@ import { getDeviceSystemDateAndTime } from './api/device/get-system-date-and-tim
 import { getCapabilities } from './api/device/get-capabilities'
 import { getDeviceInformation } from './api/device/get-device-information'
 import { getServiceCapabilities } from './api/device/get-service-capabilities'
+import { getDeviceDiscoveryMode } from './api/device/get-discovery-mode'
 
 const NODE_CONFIG: IDeviceConfig = {
   system: DEFAULT_NODE_ENV,
@@ -17,17 +18,7 @@ const NODE_CONFIG: IDeviceConfig = {
   })
 }
 
-// const digest = createUserToken().run({
-//   system: DEFAULT_NODE_ENV,
-//   url: 'http://192.168.1.172/onvif/device_service',
-//   user: maybe({
-//     username: 'admin',
-//     password: 'Cam120Cam'
-//   })
-// })
-// digest.tapSome(console.log)
-
-getDNS()
+getDeviceSystemDateAndTime()
   .run(NODE_CONFIG)
   .subscribe(a => {
     console.log(a)

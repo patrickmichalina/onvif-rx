@@ -1,5 +1,4 @@
-import { soapShell, XMLNS } from '../../xml'
-import { createStandardRequestBody, mapResponseXmlToJson } from '../request'
+import { mapResponseXmlToJson, createDeviceRequestBodyFromString } from '../request'
 
 export enum SetDateTimeType {
   MANUAL = 'Manual',
@@ -40,8 +39,6 @@ export interface SystemDateTime {
 }
 
 const key = 'SystemDateAndTime'
-const createGetDeviceSystemDateAndTimeBody = () =>
-  soapShell(`<Get${key} ${XMLNS.DEVICE} />`)()
 
 /**
  * This operation gets the device system date and time. 
@@ -50,6 +47,6 @@ const createGetDeviceSystemDateAndTimeBody = () =>
  * through the GetSystemDateAndTime command.
  */
 export const getDeviceSystemDateAndTime = () =>
-  createStandardRequestBody(createGetDeviceSystemDateAndTimeBody())
+  createDeviceRequestBodyFromString(`Get${key}`)
     .map(mapResponseXmlToJson<SystemDateTime>(`tds:${key}`))
 

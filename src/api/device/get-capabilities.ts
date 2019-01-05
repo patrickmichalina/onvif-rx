@@ -1,5 +1,5 @@
-import { soapShell, XMLNS } from '../../xml'
-import { createStandardRequestBody, mapResponseXmlToJson } from '../request'
+import { XMLNS } from '../../xml'
+import { mapResponseXmlToJson, createStandardRequestBodyFromString } from '../request'
 
 export enum CapabilityCategory {
   ALL = 'All',
@@ -65,15 +65,11 @@ export interface ICapabilities {
   readonly Extension: any
 }
 
-const createGetCapabilitiesBody =
-  (cat: CapabilityCategory) =>
-    soapShell(`<GetCapabilities ${XMLNS.DEVICE}><Category>${cat}</Category></GetCapabilities>`)()
-
 /**
  * This method has been replaced by the more generic GetServices method. 
  * For capabilities of individual services refer to the GetServiceCapabilities methods.
  */
 export const getCapabilities =
   (cat: CapabilityCategory = CapabilityCategory.ALL) =>
-    createStandardRequestBody(createGetCapabilitiesBody(cat))
+    createStandardRequestBodyFromString(`<GetCapabilities ${XMLNS.DEVICE}><Category>${cat}</Category></GetCapabilities>`)
       .map(mapResponseXmlToJson<Partial<ICapabilities>>('tds:Capabilities'))
