@@ -1,6 +1,5 @@
-import { soapShell, XMLNS } from "../../xml"
-import { createStandardRequestBody, drillXml } from "../request"
-import { map } from "rxjs/operators"
+import { soapShell, XMLNS } from '../../xml'
+import { createStandardRequestBody, mapResponseXmlToJson } from '../request'
 
 export enum CapabilityCategory {
   ALL = 'All',
@@ -67,7 +66,7 @@ export interface ICapabilities {
 }
 
 const createGetCapabilitiesBody =
-  (cat: CapabilityCategory = CapabilityCategory.ALL) =>
+  (cat: CapabilityCategory) =>
     soapShell(`<GetCapabilities ${XMLNS.DEVICE}><Category>${cat}</Category></GetCapabilities>`)
 
 /**
@@ -75,16 +74,6 @@ const createGetCapabilitiesBody =
  * For capabilities of individual services refer to the GetServiceCapabilities methods.
  */
 export const getCapabilities =
-  (cat: CapabilityCategory) =>
+  (cat: CapabilityCategory = CapabilityCategory.ALL) =>
     createStandardRequestBody(createGetCapabilitiesBody(cat))
-      .map(res => res.pipe(
-        map<Document, Partial<ICapabilities>>(doc => {
-          return ['Analytics', 'Device', 'Events', 'Imaging', 'Media', 'PTZ', 'Extension']
-            .reduce((acc, curr) => {
-              return {
-                ...acc,
-                [curr]: drillXml(doc)(`tt:${curr}`).valueOrUndefined()
-              }
-            }, {})
-        })
-      ))
+      .map(mapResponseXmlToJson<Partial<ICapabilities>>('tds:Capabilities'))

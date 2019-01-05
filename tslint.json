@@ -12,6 +12,7 @@
     "semicolon": [true, "never"],
     "align": false,
     "curly": false,
+    "quotemark": [true, "single"],
     "member-ordering": false,
     "member-access": [false, "no-public"],
     "newline-before-return": false,

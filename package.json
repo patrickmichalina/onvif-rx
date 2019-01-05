@@ -11,7 +11,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node-dev src/index.ts",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "rollup": "rollup dist/index.js -o dist/index.js --format umd --name \"onvif\" -m"
   },
   "dependencies": {
     "@akanass/rx-http-request": "^3.1.0",
@@ -27,6 +28,7 @@
     "@types/node": "^10.12.18",
     "@types/uuid": "^3.4.4",
     "@types/xmldom": "^0.1.29",
+    "rollup": "^1.0.1",
     "ts-node-dev": "^1.0.0-pre.32",
     "tslint": "^5.12.0",
     "tslint-immutable": "^5.0.1",
