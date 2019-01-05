@@ -72,4 +72,4 @@ export interface ICapabilities {
 export const getCapabilities =
   (cat: CapabilityCategory = CapabilityCategory.ALL) =>
     createStandardRequestBodyFromString(`<GetCapabilities ${XMLNS.DEVICE}><Category>${cat}</Category></GetCapabilities>`)
-      .map(mapResponseXmlToJson<Partial<ICapabilities>>('tds:Capabilities'))
+      .map(mapResponseXmlToJson<Partial<ICapabilities>>('tds:GetCapabilitiesResponse'))

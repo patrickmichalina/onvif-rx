@@ -25,16 +25,20 @@ const parseAttributes = (attrs: ReadonlyArray<Attr>) => Array.from(attrs)
     }
   }, {})
 
+
+// const hasNoDuplicates = (arr: ReadonlyArray<string>) => arr.every(num => arr.indexOf(num) === arr.lastIndexOf(num))
+
 const deep = <T>(elm: Element): T =>
   Array.from(elm.childNodes)
     .reduce((acc, curr: any) => {
       const key = cleanColon(curr.nodeName).replace('.', '')
+      // console.log(curr.nodeName, acc)
       return {
         ...acc,
         [key]: curr.attributes.length
           ? parseAttributes(curr.attributes)
           : curr.childNodes.length > 1
-            ? deep(curr as Element)
+            ? deep(curr)
             : propertyTypeConverter(curr.textContent)
       }
     }, {} as T)

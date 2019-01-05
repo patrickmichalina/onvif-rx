@@ -1,9 +1,7 @@
-import { createUserToken } from './auth'
 import { DEFAULT_NODE_ENV } from './config/node'
 import { maybe } from 'typescript-monads'
 import { getDNS } from './api/device/get-dns'
 import { ISystemConfig, IDeviceConfig } from './config/interfaces'
-import { getDeviceSystemDateAndTime } from './api/device/get-system-date-and-time'
 import { getCapabilities } from './api/device/get-capabilities'
 import { getDeviceInformation } from './api/device/get-device-information'
 import { getServiceCapabilities } from './api/device/get-service-capabilities'
@@ -12,10 +10,9 @@ import { getDynamicDNS } from './api/device/get-dynamic-dns'
 import { getHostname } from './api/device/get-hostname'
 import { getNetworkInterfaces } from './api/device/get-network-interfaces'
 import { getNetworkProtocols } from './api/device/get-network-protocols'
-import { getSystemLog } from './api/device/get-system-log'
-import { getSystemSupportInformation } from './api/device/get-system-support-information'
 import { getWsdlUrl } from './api/device/get-wsdl-url'
-import { systemReboot } from './api/device/reboot'
+import { getSystemLog } from './api/device/system'
+import { getScopes } from './api/device/get-scopes'
 
 const NODE_CONFIG: IDeviceConfig = {
   system: DEFAULT_NODE_ENV,
@@ -26,7 +23,7 @@ const NODE_CONFIG: IDeviceConfig = {
   })
 }
 
-systemReboot()
+getServiceCapabilities()
   .run(NODE_CONFIG)
   .subscribe(a => {
     console.log(a)
