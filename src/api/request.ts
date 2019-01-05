@@ -29,7 +29,6 @@ const deep = <T>(elm: Element): T =>
   Array.from(elm.childNodes)
     .reduce((acc, curr: any) => {
       const key = cleanColon(curr.nodeName).replace('.', '')
-      // console.log(curr.attributes.length)
       return {
         ...acc,
         [key]: curr.attributes.length

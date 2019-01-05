@@ -1,12 +1,12 @@
-// import { ONVIFDeviceOperation } from "../interfaces"
-// import { soapRequest, createONVIFDeviceActionSoapBody } from "../request"
-// import { successXmlPathMap } from "../xml"
-// import { maybeOVNIFNodeItemText } from "../parse"
+import { createDeviceRequestBodyFromString, mapResponseXmlToJson } from '../request'
 
-// /**
-//  * This operation reboots the device.
-//  */
-// export const deviceSystemReboot = () =>
-//   createONVIFDeviceActionSoapBody(ONVIFDeviceOperation.SYSTEM_REBOOT)
-//     .flatMap(soapRequest)
-//     .map(successXmlPathMap<string>(xml => maybeOVNIFNodeItemText(xml)('//tds:SystemRebootResponse').valueOr('')))
+export interface ISystemRebootResponse {
+  readonly Message: string
+}
+
+/**
+ * This operation reboots the device.
+ */
+export const systemReboot = () =>
+  createDeviceRequestBodyFromString(`SystemReboot`)
+    .map(mapResponseXmlToJson<ISystemRebootResponse>(`tds:SystemRebootResponse`))
