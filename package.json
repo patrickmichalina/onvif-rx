@@ -2,7 +2,9 @@
   "name": "onvif-rx",
   "version": "0.0.0-development",
   "description": "Interact with ONVIF cameras and devices using RXJS",
-  "main": "index.js",
+  "main": "dist/onvif-rx-cjs.js",
+  "module": "dist/onvif-rx-esm.js",
+  "browser": "dist/onvif-rx-umd.js",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -12,7 +14,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node-dev src/index.ts",
     "lint": "tslint -p tsconfig.json",
-    "rollup": "rollup dist/index.js -o dist/index.js --format umd --name \"onvif\" -m"
+    "minify": "uglifyjs dist/onvif-rx-umd.js -o dist/onvif-rx-umd.min.js --source-map",
+    "rollup": "rollup -c",
+    "watch": "rollup -cw"
   },
   "dependencies": {
     "@akanass/rx-http-request": "^3.1.0",
@@ -29,9 +33,11 @@
     "@types/uuid": "^3.4.4",
     "@types/xmldom": "^0.1.29",
     "rollup": "^1.0.1",
+    "rollup-plugin-typescript2": "^0.18.1",
     "ts-node-dev": "^1.0.0-pre.32",
     "tslint": "^5.12.0",
     "tslint-immutable": "^5.0.1",
-    "typescript": "^3.2.2"
+    "typescript": "^3.2.2",
+    "uglify-js": "^2.4.11"
   }
 }

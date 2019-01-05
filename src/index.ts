@@ -2,6 +2,7 @@ import { createUserToken } from './auth'
 import { DEFAULT_NODE_ENV } from './config/node'
 import { maybe } from 'typescript-monads'
 
+// export 
 // export * from api
 
 // import { ISystemConfig } from './config/interfaces'
@@ -9,7 +10,7 @@ import { maybe } from 'typescript-monads'
 // import { getServiceCapabilities } from './api/device/get-service-capabilities'
 // import { getCapabilities } from './api/device/get-capabilities'
 // import { getDeviceSystemDateAndTime } from './api/device/get-system-date-and-time'
-// import { getDNS } from './api/device/get-dns'
+export * from './api/device/get-dns'
 // import { onvifDigest, nonce, createUserToken } from './auth'
 
 // const NODE_CONFIG: ISystemConfig = {
@@ -18,16 +19,16 @@ import { maybe } from 'typescript-monads'
 //   password: '',
 //   username: 'admin'
 // }
-
-const digest = createUserToken().run({
-  system: DEFAULT_NODE_ENV,
-  url: 'http://192.168.1.172/onvif/device_service',
-  user: maybe({
-    username: 'admin',
-    password: 'Cam120Cam'
-  })
-})
-digest.tapSome(console.log)
+ 
+// const digest = createUserToken().run({
+//   system: DEFAULT_NODE_ENV,
+//   url: 'http://192.168.1.172/onvif/device_service',
+//   user: maybe({
+//     username: 'admin',
+//     password: 'Cam120Cam'
+//   })
+// })
+// digest.tapSome(console.log)
 
 // // getDNS()
 // //   .run(NODE_CONFIG)
