@@ -8,6 +8,9 @@ import { getCapabilities } from './api/device/get-capabilities'
 import { getDeviceInformation } from './api/device/get-device-information'
 import { getServiceCapabilities } from './api/device/get-service-capabilities'
 import { getDeviceDiscoveryMode } from './api/device/get-discovery-mode'
+import { getDynamicDNS } from './api/device/get-dynamic-dns'
+import { getHostname } from './api/device/get-hostname'
+import { getNetworkInterfaces } from './api/device/get-network-interfaces'
 
 const NODE_CONFIG: IDeviceConfig = {
   system: DEFAULT_NODE_ENV,
@@ -18,7 +21,7 @@ const NODE_CONFIG: IDeviceConfig = {
   })
 }
 
-getDeviceSystemDateAndTime()
+getNetworkInterfaces()
   .run(NODE_CONFIG)
   .subscribe(a => {
     console.log(a)
