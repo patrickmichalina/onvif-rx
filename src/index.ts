@@ -10,7 +10,6 @@ import { maybe } from 'typescript-monads'
 // import { getServiceCapabilities } from './api/device/get-service-capabilities'
 // import { getCapabilities } from './api/device/get-capabilities'
 // import { getDeviceSystemDateAndTime } from './api/device/get-system-date-and-time'
-export * from './api/device/get-dns'
 // import { onvifDigest, nonce, createUserToken } from './auth'
 
 // const NODE_CONFIG: ISystemConfig = {

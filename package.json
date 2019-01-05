@@ -2,6 +2,7 @@
   "name": "onvif-rx",
   "version": "0.0.0-development",
   "description": "Interact with ONVIF cameras and devices using RXJS",
+  "author": "Patrick Michalina <patrickmichalina@mac.com>",
   "main": "dist/onvif-rx-cjs.js",
   "module": "dist/onvif-rx-esm.js",
   "browser": "dist/onvif-rx-umd.js",
@@ -14,6 +15,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node-dev src/index.ts",
     "lint": "tslint -p tsconfig.json",
+    "prepublishOnly": "npm run rollup && npm run minify",
     "minify": "uglifyjs dist/onvif-rx-umd.js -o dist/onvif-rx-umd.min.js --source-map",
     "rollup": "rollup -c",
     "watch": "rollup -cw"
