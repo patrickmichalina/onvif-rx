@@ -1,4 +1,5 @@
 import { Observable } from 'rxjs'
+import { IMaybe } from 'typescript-monads'
 
 export type ITransport = (body: string) => (uri: string) => Observable<string>
 
@@ -11,7 +12,15 @@ export interface ISystemConfig {
   readonly parser: DOMParser
   readonly transport: ITransport
   readonly base64: IBase64
-  readonly xaddrs: string
-  readonly username?: string
-  readonly password?: string
+}
+
+export interface IDeviceConfig {
+  readonly system: ISystemConfig
+  readonly url: string
+  readonly user: IMaybe<IUserCredentials>
+}
+
+export interface IUserCredentials {
+  readonly username: string
+  readonly password: string
 }

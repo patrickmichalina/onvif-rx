@@ -18,6 +18,5 @@ export const DEFAULT_NODE_ENV: ISystemConfig = {
   base64: {
     decode: (str: string) => Buffer.from(str, 'base64').toString(),
     encode: (str: string) => Buffer.from(str).toString('base64')
-  },
-  xaddrs: ''
+  }
 }

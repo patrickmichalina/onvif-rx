@@ -1,7 +1,8 @@
 import { reader, maybe } from 'typescript-monads'
-import { ISystemConfig } from '../config/interfaces'
+import { ISystemConfig, IDeviceConfig } from '../config/interfaces'
 import { Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
+import { createUserToken } from '../auth'
 
 const parseXml = (parser: DOMParser) => (xml: string) => parser.parseFromString(xml, 'text/xml')
 
@@ -65,6 +66,9 @@ export const drillXml =
 
 export const createStandardRequestBody =
   (body: string) =>
-    reader<ISystemConfig, Observable<Document>>(config =>
-      config.transport(body)(config.xaddrs)
-        .pipe(map(parseXml(config.parser))))
+    reader<IDeviceConfig, Observable<Document>>(config => {
+      // const z = createUserToken()
+      return config.system.transport(body)(config.url)
+        .pipe(map(parseXml(config.system.parser)))
+    })
+

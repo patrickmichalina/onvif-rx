@@ -40,7 +40,7 @@ export interface SystemDateTime {
 }
 
 const createGetDeviceSystemDateAndTimeBody = () =>
-  soapShell(`<GetSystemDateAndTime ${XMLNS.DEVICE}></GetSystemDateAndTime>`)
+  soapShell(`<GetSystemDateAndTime ${XMLNS.DEVICE}></GetSystemDateAndTime>`)()
 
 /**
  * This operation gets the device system date and time. 

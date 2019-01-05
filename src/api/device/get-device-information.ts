@@ -30,7 +30,7 @@ export interface DeviceInformation {
 }
 
 const createDeviceInformationBody = () =>
-  soapShell(`<GetDeviceInformation ${XMLNS.DEVICE}></GetDeviceInformation>`)
+  soapShell(`<GetDeviceInformation ${XMLNS.DEVICE}></GetDeviceInformation>`)()
 
 
 /**

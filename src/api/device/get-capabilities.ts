@@ -67,7 +67,7 @@ export interface ICapabilities {
 
 const createGetCapabilitiesBody =
   (cat: CapabilityCategory) =>
-    soapShell(`<GetCapabilities ${XMLNS.DEVICE}><Category>${cat}</Category></GetCapabilities>`)
+    soapShell(`<GetCapabilities ${XMLNS.DEVICE}><Category>${cat}</Category></GetCapabilities>`)()
 
 /**
  * This method has been replaced by the more generic GetServices method. 

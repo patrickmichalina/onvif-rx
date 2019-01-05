@@ -1,3 +1,7 @@
+import { createUserToken } from './auth'
+import { DEFAULT_NODE_ENV } from './config/node'
+import { maybe } from 'typescript-monads'
+
 // export * from api
 
 // import { ISystemConfig } from './config/interfaces'
@@ -15,8 +19,15 @@
 //   username: 'admin'
 // }
 
-// const digest = createUserToken().run(NODE_CONFIG)
-// console.log(digest)
+const digest = createUserToken().run({
+  system: DEFAULT_NODE_ENV,
+  url: 'http://192.168.1.172/onvif/device_service',
+  user: maybe({
+    username: 'admin',
+    password: 'Cam120Cam'
+  })
+})
+digest.tapSome(console.log)
 
 // // getDNS()
 // //   .run(NODE_CONFIG)
