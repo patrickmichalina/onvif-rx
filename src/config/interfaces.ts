@@ -11,7 +11,6 @@ export interface IBase64 {
 export interface ISystemConfig {
   readonly parser: DOMParser
   readonly transport: ITransport
-  readonly base64: IBase64
 }
 
 export interface IDeviceConfig {

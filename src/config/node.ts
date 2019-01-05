@@ -9,14 +9,10 @@ const transport =
   (body: string) =>
     (uri: string) =>
       http.post(uri, { body, headers: transportHeaders }).pipe(
-        // tap(console.log),
+        tap(a => console.log(a.response.request.body)),
         map(res => res.body))
 
 export const DEFAULT_NODE_ENV: ISystemConfig = {
   parser,
-  transport,
-  base64: {
-    decode: (str: string) => Buffer.from(str, 'base64').toString(),
-    encode: (str: string) => Buffer.from(str).toString('base64')
-  }
+  transport
 }

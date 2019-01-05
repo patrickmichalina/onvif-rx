@@ -39,8 +39,9 @@ export interface SystemDateTime {
   readonly extension?: any
 }
 
+const key = 'GetSystemDateAndTime'
 const createGetDeviceSystemDateAndTimeBody = () =>
-  soapShell(`<GetSystemDateAndTime ${XMLNS.DEVICE}></GetSystemDateAndTime>`)()
+  soapShell(`<${key} ${XMLNS.DEVICE} />`)()
 
 /**
  * This operation gets the device system date and time. 
@@ -50,5 +51,5 @@ const createGetDeviceSystemDateAndTimeBody = () =>
  */
 export const getDeviceSystemDateAndTime = () =>
   createStandardRequestBody(createGetDeviceSystemDateAndTimeBody())
-    .map(mapResponseXmlToJson<SystemDateTime>('tds:SystemDateAndTime'))
+    .map(mapResponseXmlToJson<SystemDateTime>(`tds:${key}`))
 

@@ -52,7 +52,7 @@ export interface SystemCapabilities {
 }
 
 const createGetDeviceServiceCapabilitiesBody = () =>
-  soapShell(`<GetServiceCapabilities ${XMLNS.DEVICE}></GetServiceCapabilities>`)()
+  soapShell(`<GetServiceCapabilities ${XMLNS.DEVICE} />`)()
 
 /**
  * Returns the capabilities of the device service. The result is returned in a typed answer.

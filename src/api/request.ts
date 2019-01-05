@@ -66,9 +66,19 @@ export const drillXml =
 
 export const createStandardRequestBody =
   (body: string) =>
+    // createUserToken()
+    // .map(maybeUserToken => {
+    // return config.system.transport(body)(config.url)
+    // })
     reader<IDeviceConfig, Observable<Document>>(config => {
-      // const z = createUserToken()
-      return config.system.transport(body)(config.url)
-        .pipe(map(parseXml(config.system.parser)))
+      const gen = (body: string) => config.system.transport(body)(config.url).pipe(map(parseXml(config.system.parser)))
+      return createUserToken().map(maybeUserToken => {
+        return maybeUserToken.map(token => {
+          return gen(body.replace('<Header></Header>', `<Header>${token}</Header>`))
+        }).valueOr(gen(body))
+      }).run(config)
+
+      // return config.system.transport(body)(config.url)
+      //   .pipe(map(parseXml(config.system.parser)))
     })
 
