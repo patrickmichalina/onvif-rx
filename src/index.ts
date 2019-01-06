@@ -3,6 +3,7 @@ import { maybe } from 'typescript-monads'
 import { IDeviceConfig } from './config/interfaces'
 import { getNetworkProtocols } from './api/device/network'
 import { getServices } from './api/device/get-services'
+import { getSystemBackup, getSystemUris } from './api/device/system'
 
 const NODE_CONFIG: IDeviceConfig = {
   system: DEFAULT_NODE_ENV,
@@ -13,7 +14,7 @@ const NODE_CONFIG: IDeviceConfig = {
   })
 }
 
-getServices()
+getSystemUris()
   .run(NODE_CONFIG)
   .subscribe(a => {
     console.log(a)
