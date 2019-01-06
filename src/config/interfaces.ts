@@ -3,14 +3,14 @@ import { IMaybe } from 'typescript-monads'
 
 export type ITransport = (body: string) => (uri: string) => Observable<string>
 
-export interface IBase64 {
-  readonly encode: (str: string) => string
-  readonly decode: (str: string) => string
-}
+export type IEncodeBase64 = (str: string) => string
+export type INonce = (size?: number) => string
 
 export interface ISystemConfig {
   readonly parser: DOMParser
   readonly transport: ITransport
+  readonly nonce: INonce
+  readonly toBase64: IEncodeBase64
 }
 
 export interface IDeviceConfig {

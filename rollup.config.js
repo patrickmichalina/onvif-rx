@@ -9,9 +9,7 @@ export default {
       format: 'umd',
       name: 'onvif',
       globals: {
-        react: 'React',
         'typescript-monads': 'typescript-monads',
-        'crypto-js': 'crypto-js',
         'xmldom': 'xmldom',
         'rxjs/operators': 'rxjs/operators'
       },

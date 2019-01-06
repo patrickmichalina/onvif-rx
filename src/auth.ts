@@ -1,6 +1,6 @@
 import { reader, IMaybe } from 'typescript-monads'
 import { IDeviceConfig } from './config/interfaces'
-import { SHA1, enc, lib, } from 'crypto-js'
+const sha1 = require('js-sha1')
 
 interface IDigestBag {
   readonly dateIsoString: string
@@ -18,14 +18,14 @@ export const onvifDigest =
   (dateIsoString: string) =>
     reader<IDeviceConfig, IMaybe<IDigestBag>>(config => config.user
       .map(user => {
-        const nonce = lib.WordArray.random(16)
-        const wordArray = enc.Utf8.parse(nonce.toString())
-        const nonceBase64 = enc.Base64.stringify(wordArray)
-        const digest = SHA1(nonce + dateIsoString + user.password).toString(enc.Base64)
+        const nonce = config.system.nonce()
+        const digest = sha1.digest(nonce + dateIsoString + user.password)
+        const digest64 = config.system.toBase64(digest)
+        const nonceBase64 = config.system.toBase64(nonce)
         return {
           dateIsoString,
           nonceBase64,
-          digest,
+          digest: digest64,
           username: user.username
         }
       }))
