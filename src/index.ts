@@ -7,7 +7,11 @@ import { getSystemBackup, getSystemUris } from './api/device/system'
 import { getUsers, createUsers, IUserLevel } from './api/device/users'
 import { flatMap } from 'rxjs/operators'
 import { getCapabilities } from './api/device/get-capabilities'
-import { getStreamUri } from './api/media/stream'
+import { getVideoAnalyticsConfigurations } from './api/media/video-analytics'
+import { getGetVideoEncoderConfigurations } from './api/media/video-encoder'
+import { getVideoSourceConfigurations, getVideoSources } from './api/media/video-source'
+import { getProfiles } from './api/media/profiles'
+import { getStreamUri, StreamType, TransportProtocol } from './api/media/stream'
 
 const NODE_CONFIG: IDeviceConfig = {
   system: DEFAULT_NODE_ENV,
@@ -24,7 +28,12 @@ const NODE_CONFIG: IDeviceConfig = {
 //   Username: 'Test'
 // }])
 
-getStreamUri()
+// getStreamUri({
+//   ProfileToken: 'MediaProfile000',
+//   Protocol: TransportProtocol.RTSP,
+//   Stream: StreamType.RTP_UNICAST
+// })
+getProfiles()
   .run(NODE_CONFIG)
   .subscribe(a => {
     console.log(a)

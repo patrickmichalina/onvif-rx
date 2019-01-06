@@ -32,19 +32,28 @@ const deep =
           const key = cleanColon(curr.nodeName).replace('.', '')
           const isCollection = collectionKeys.some(a => a === curr.nodeName)
           const baseVal = (acc as any)[key]
+
           return {
             ...acc,
-            [key]: curr.attributes.length
-              ? parseAttributes(curr.attributes)
-              : curr.childNodes.length > 1
-                ? isCollection
-                  ? Array.isArray(baseVal)
-                    ? [...baseVal, deep(collectionKeys)(curr)]
-                    : [deep(collectionKeys)(curr)]
-                  : deep(collectionKeys)(curr)
-                : propertyTypeConverter(curr.textContent)
+            [key]: curr.childNodes.length > 1
+              ? isCollection
+                ? Array.isArray(baseVal)
+                  ? [...baseVal, deep(collectionKeys)(curr)]
+                  : [deep(collectionKeys)(curr)]
+                : deep(collectionKeys)(curr)
+              : propertyTypeConverter(curr.textContent)
+
+            // [key]: curr.attributes.length
+            //   ? parseAttributes(curr.attributes)
+            //   : curr.childNodes.length > 1
+            //     ? isCollection
+            //       ? Array.isArray(baseVal)
+            //         ? [...baseVal, deep(collectionKeys)(curr)]
+            //         : [deep(collectionKeys)(curr)]
+            //       : deep(collectionKeys)(curr)
+            //     : propertyTypeConverter(curr.textContent)
           }
-        }, {} as T)
+        }, { ...parseAttributes(elm.attributes as any) } as T)
 
 export enum XMLNS {
   SOAP = 'xmlns="http://www.w3.org/2003/05/soap-envelope"',
