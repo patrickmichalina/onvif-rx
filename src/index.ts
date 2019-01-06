@@ -9,6 +9,7 @@ import { ISystemConfig, IDeviceConfig } from './config/interfaces'
 // export * from './api/device/get-wsdl-url'
 // export * from './api/device/system'
 import { getScopes } from './api/device/get-scopes'
+import { getNetworkProtocols } from './api/device/network'
 
 const NODE_CONFIG: IDeviceConfig = {
   system: DEFAULT_NODE_ENV,
@@ -19,7 +20,7 @@ const NODE_CONFIG: IDeviceConfig = {
   })
 }
 
-getScopes()
+getNetworkProtocols()
   .run(NODE_CONFIG)
   .subscribe(a => {
     console.log(a)

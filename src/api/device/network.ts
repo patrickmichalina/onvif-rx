@@ -1,4 +1,5 @@
 import { createDeviceRequestBodyFromString, mapResponseXmlToJson } from '../request'
+import { map } from 'rxjs/operators'
 
 export enum DynamicDNSType {
   NO_UPDATE = 'NoUpdate',
@@ -70,6 +71,38 @@ export interface IHostnameInformation {
   readonly Extension?: any
 }
 
+export enum NetworkProtocolType {
+  HTTP = 'HTTP',
+  HTTPS = 'HTTPS',
+  RTSP = 'RTSP' 
+}
+
+export interface INetworkProtocol {
+  /**
+   * Network protocol type string.
+   */
+  readonly Name: NetworkProtocolType
+
+  /**
+   * Indicates if the protocol is enabled or not.
+   */
+  readonly Enabled: boolean
+
+  /**
+   * The port that is used by the protocol.
+   */
+  readonly Port: number
+}
+
+export interface IGetNetworkProtocolsResponse {
+  /**
+   * Contains an array of defined protocols supported by the device. 
+   * There are three protocols defined; HTTP, HTTPS and RTSP. 
+   * The following parameters can be retrieved for each protocol: port and enable/disable.
+   */
+  readonly NetworkProtocols: ReadonlyArray<INetworkProtocol>
+}
+
 /**
  * This operation gets the dynamic DNS settings from a device. 
  * If the device supports dynamic DNS as specified in [RFC 2136] and [RFC 4702], 
@@ -100,7 +133,8 @@ export const getHostname = () =>
 */
 export const getNetworkProtocols = () =>
   createDeviceRequestBodyFromString('GetNetworkProtocols')
-    .map(mapResponseXmlToJson<any>(`tds:GetNetworkProtocolsResponse`)())
+    .map(mapResponseXmlToJson<IGetNetworkProtocolsResponse>(`tds:GetNetworkProtocolsResponse`)(['NetworkProtocols']))
+    .map(a => a.pipe(map(b => b.NetworkProtocols)))
 
 /**
 * This operation gets the network interface configuration from a device. The device shall support 
