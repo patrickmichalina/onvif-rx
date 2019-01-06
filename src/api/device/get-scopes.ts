@@ -1,4 +1,30 @@
 import { createDeviceRequestBodyFromString, mapResponseXmlToJson } from '../request'
+import { map } from 'rxjs/operators'
+
+export enum ScopeDefinition {
+  FIXED = 'Fixed',
+  CONFIGURABLE = 'Configurable'
+}
+
+export interface IScope {
+  /**
+   * Indicates if the scope is fixed or configurable.
+   */
+  readonly ScopeDef: ScopeDefinition
+
+  /**
+   * Scope item URI.
+   */
+  readonly ScopeItem: string
+}
+
+export interface IScopesResponse {
+  /**
+   * Contains a list of URI definining the device scopes. 
+   * Scope parameters can be of two types: fixed and configurable. Fixed parameters can not be altered.
+   */
+  readonly Scopes: ReadonlyArray<IScope>
+}
 
 /**
  * This operation requests the scope parameters of a device. The scope parameters are 
@@ -12,4 +38,5 @@ import { createDeviceRequestBodyFromString, mapResponseXmlToJson } from '../requ
  */
 export const getScopes = () =>
   createDeviceRequestBodyFromString('GetScopes')
-    .map(mapResponseXmlToJson<any>('tds:GetScopesResponse')(['tds:Scopes']))
+    .map(mapResponseXmlToJson<IScopesResponse>('tds:GetScopesResponse')(['tds:Scopes']))
+    .map(a => a.pipe(map(b => b.Scopes)))
