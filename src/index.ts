@@ -4,6 +4,8 @@ import { IDeviceConfig } from './config/interfaces'
 import { getNetworkProtocols } from './api/device/network'
 import { getServices } from './api/device/get-services'
 import { getSystemBackup, getSystemUris } from './api/device/system'
+import { getUsers, createUsers, IUserLevel } from './api/device/users'
+import { flatMap } from 'rxjs/operators'
 
 const NODE_CONFIG: IDeviceConfig = {
   system: DEFAULT_NODE_ENV,
@@ -14,7 +16,13 @@ const NODE_CONFIG: IDeviceConfig = {
   })
 }
 
-getSystemUris()
+// createUsers([{
+//   Password: 'Test',
+//   UserLevel: IUserLevel.USER,
+//   Username: 'Test'
+// }])
+
+getUsers()
   .run(NODE_CONFIG)
   .subscribe(a => {
     console.log(a)

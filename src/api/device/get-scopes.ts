@@ -1,5 +1,4 @@
-import { createDeviceRequestBodyFromString, mapResponseXmlToJson } from '../request'
-import { map } from 'rxjs/operators'
+import { createDeviceRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from '../request'
 
 export enum ScopeDefinition {
   FIXED = 'Fixed',
@@ -39,4 +38,4 @@ export interface IScopesResponse {
 export const getScopes = () =>
   createDeviceRequestBodyFromString('GetScopes')
     .map(mapResponseXmlToJson<IScopesResponse>('tds:GetScopesResponse')(['tds:Scopes']))
-    .map(a => a.pipe(map(b => b.Scopes)))
+    .map(mapResponseObsToProperty(a => a.Scopes))
