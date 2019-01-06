@@ -1,15 +1,8 @@
-import 'typescript-monads'
-
 import { DEFAULT_NODE_ENV } from './config/node'
 import { maybe } from 'typescript-monads'
-import { ISystemConfig, IDeviceConfig } from './config/interfaces'
-// export * from './api/device/get-capabilities'
-// export * from './api/device/get-device-information'
-// export * from './api/device/get-discovery-mode'
-// export * from './api/device/get-wsdl-url'
-// export * from './api/device/system'
-import { getScopes } from './api/device/get-scopes'
+import { IDeviceConfig } from './config/interfaces'
 import { getNetworkProtocols } from './api/device/network'
+import { getServices } from './api/device/get-services'
 
 const NODE_CONFIG: IDeviceConfig = {
   system: DEFAULT_NODE_ENV,
@@ -20,7 +13,7 @@ const NODE_CONFIG: IDeviceConfig = {
   })
 }
 
-getNetworkProtocols()
+getServices()
   .run(NODE_CONFIG)
   .subscribe(a => {
     console.log(a)

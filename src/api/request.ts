@@ -62,6 +62,7 @@ export const mapResponseXmlToJson =
       (source: Observable<Document>) => source.pipe(
         map<Document, T>(startingAtNode<T>(node)(collectionKeys))
       )
+export const mapResponseObsToProperty = <TIn, TOut>(propSelectFn: (sel: TIn) => TOut) => (source: Observable<TIn>) => source.pipe(map(propSelectFn))
 
 export const startingAtNodes =
   <T>(nodes: ReadonlyArray<string>) =>
