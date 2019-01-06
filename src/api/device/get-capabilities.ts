@@ -1,4 +1,4 @@
-import { mapResponseXmlToJson, createStandardRequestBodyFromString, XMLNS } from '../request'
+import { mapResponseXmlToJson, createStandardRequestBodyFromString, XMLNS, mapResponseObsToProperty } from '../request'
 
 export enum CapabilityCategory {
   ALL = 'All',
@@ -8,6 +8,10 @@ export enum CapabilityCategory {
   IMAGING = 'Imaging',
   MEDIA = 'Media',
   PTZ = 'PTZ'
+}
+
+export interface IGetCapabilitiesResponse {
+  readonly Capabilities: Partial<ICapabilities>
 }
 
 export interface ICapability {
@@ -76,4 +80,5 @@ const K = {
 export const getCapabilities =
   (cat: CapabilityCategory = CapabilityCategory.ALL) =>
     createStandardRequestBodyFromString(`<${K.k1} ${XMLNS.DEVICE}><${K.k2}>${cat}</${K.k2}></${K.k1}>`)
-      .map(mapResponseXmlToJson<Partial<ICapabilities>>('tds:GetCapabilitiesResponse')())
+      .map(mapResponseXmlToJson<IGetCapabilitiesResponse>('tds:GetCapabilitiesResponse')())
+      .map(mapResponseObsToProperty(a => a.Capabilities))

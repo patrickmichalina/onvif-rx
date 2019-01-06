@@ -6,6 +6,7 @@ import { getServices } from './api/device/get-services'
 import { getSystemBackup, getSystemUris } from './api/device/system'
 import { getUsers, createUsers, IUserLevel } from './api/device/users'
 import { flatMap } from 'rxjs/operators'
+import { getCapabilities } from './api/device/get-capabilities'
 
 const NODE_CONFIG: IDeviceConfig = {
   system: DEFAULT_NODE_ENV,
@@ -22,7 +23,7 @@ const NODE_CONFIG: IDeviceConfig = {
 //   Username: 'Test'
 // }])
 
-getUsers()
+getCapabilities()
   .run(NODE_CONFIG)
   .subscribe(a => {
     console.log(a)
