@@ -7,10 +7,11 @@ import { getSystemBackup, getSystemUris } from './api/device/system'
 import { getUsers, createUsers, IUserLevel } from './api/device/users'
 import { flatMap } from 'rxjs/operators'
 import { getCapabilities } from './api/device/get-capabilities'
+import { getStreamUri } from './api/media/stream'
 
 const NODE_CONFIG: IDeviceConfig = {
   system: DEFAULT_NODE_ENV,
-  url: 'http://192.168.1.172/onvif/device_service',
+  url: 'http://192.168.1.172/onvif/media_service',
   user: maybe({
     username: 'admin',
     password: 'Cam120cam'
@@ -23,7 +24,7 @@ const NODE_CONFIG: IDeviceConfig = {
 //   Username: 'Test'
 // }])
 
-getCapabilities()
+getStreamUri()
   .run(NODE_CONFIG)
   .subscribe(a => {
     console.log(a)

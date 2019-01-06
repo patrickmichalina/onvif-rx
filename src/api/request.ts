@@ -46,9 +46,10 @@ const deep =
           }
         }, {} as T)
 
-export const XMLNS = {
-  SOAP: 'xmlns="http://www.w3.org/2003/05/soap-envelope"',
-  DEVICE: 'xmlns="http://www.onvif.org/ver10/device/wsdl"'
+export enum XMLNS {
+  SOAP = 'xmlns="http://www.w3.org/2003/05/soap-envelope"',
+  DEVICE = 'xmlns="http://www.onvif.org/ver10/device/wsdl"',
+  MEDIA = 'xmlns="http://www.onvif.org/ver10/media/wsdl"'
 }
 
 export const soapShell =
@@ -104,6 +105,15 @@ export const createStandardRequestBodyFromString =
   (body: string) =>
     createStandardRequestBody(soapShell(body)())
 
+export const createSimpleRequestBodyFromString =
+  (key: string) =>
+    (ns: XMLNS) =>
+      createStandardRequestBody(soapShell(`<${key} ${ns}/>`)())
+
 export const createDeviceRequestBodyFromString =
   (key: string) =>
-    createStandardRequestBody(soapShell(`<${key} ${XMLNS.DEVICE}/>`)())
+    createSimpleRequestBodyFromString(key)(XMLNS.DEVICE)
+
+export const createMediaRequestBodyFromString =
+  (key: string) =>
+    createSimpleRequestBodyFromString(key)(XMLNS.MEDIA)

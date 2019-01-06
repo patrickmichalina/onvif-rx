@@ -1,4 +1,4 @@
-import { createDeviceRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty, createStandardRequestBodyFromString, XMLNS } from '../request'
+import { mapResponseXmlToJson, mapResponseObsToProperty, createStandardRequestBodyFromString, XMLNS, createDeviceRequestBodyFromString } from '../request'
 
 export enum IUserLevel {
   ADMINISTRATOR = 'Administrator',

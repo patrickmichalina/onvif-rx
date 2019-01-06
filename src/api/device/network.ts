@@ -74,7 +74,7 @@ export interface IHostnameInformation {
 export enum NetworkProtocolType {
   HTTP = 'HTTP',
   HTTPS = 'HTTPS',
-  RTSP = 'RTSP' 
+  RTSP = 'RTSP'
 }
 
 export interface INetworkProtocol {
