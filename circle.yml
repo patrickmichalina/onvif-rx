@@ -20,6 +20,13 @@ jobs:
       - run:
           name: Lint
           command: npm run lint
+      - run:
+          name: Build
+          command: npm run build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - dist
       - persist_to_workspace:
           root: .
           paths:
