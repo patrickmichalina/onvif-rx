@@ -2,7 +2,7 @@ import { reader, maybe } from 'typescript-monads'
 import { ISystemConfig, IDeviceConfig } from '../config/interfaces'
 import { Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
-import { createUserToken } from '../auth'
+import { createUserToken } from './auth'
 
 const parseXml = (parser: DOMParser) => (xml: string) => parser.parseFromString(xml, 'text/xml')
 

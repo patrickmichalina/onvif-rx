@@ -6,6 +6,7 @@
   "main": "dist/onvif-rx-cjs.js",
   "module": "dist/onvif-rx-esm.js",
   "browser": "dist/onvif-rx-umd.js",
+  "types": "dist/index.d.ts",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -24,7 +25,7 @@
     "@akanass/rx-http-request": "^3.1.0",
     "js-sha1": "^0.6.0",
     "rxjs": "^6.3.3",
-    "typescript-monads": "^3.8.0",
+    "typescript-monads": "^3.10.0",
     "uuid": "^3.3.2",
     "xmldom": "^0.1.27"
   },
@@ -32,10 +33,10 @@
     "@types/node": "^10.12.18",
     "@types/uuid": "^3.4.4",
     "@types/xmldom": "^0.1.29",
-    "rollup": "^1.0.1",
+    "rollup": "^1.1.0",
     "rollup-plugin-typescript2": "^0.18.1",
     "ts-node-dev": "^1.0.0-pre.32",
-    "tslint": "^5.12.0",
+    "tslint": "^5.12.1",
     "tslint-immutable": "^5.0.1",
     "typescript": "^3.2.2",
     "uglify-js": "^2.4.11"
