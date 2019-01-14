@@ -35,10 +35,55 @@
     "@types/xmldom": "^0.1.29",
     "rollup": "^1.1.0",
     "rollup-plugin-typescript2": "^0.18.1",
+    "semantic-release": "^15.13.3",
     "ts-node-dev": "^1.0.0-pre.32",
     "tslint": "^5.12.1",
     "tslint-immutable": "^5.0.1",
     "typescript": "^3.2.2",
     "uglify-js": "^2.4.11"
+  },
+  "release": {
+    "branch": "master",
+    "plugins": [
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      [
+        "@semantic-release/commit-analyzer",
+        {
+          "preset": "angular",
+          "releaseRules": [
+            {
+              "type": "docs",
+              "scope": "README",
+              "release": "patch"
+            },
+            {
+              "type": "refactor",
+              "release": "patch"
+            }
+          ],
+          "parserOpts": {
+            "noteKeywords": [
+              "BREAKING CHANGE",
+              "BREAKING CHANGES",
+              "BREAKING"
+            ]
+          }
+        }
+      ],
+      [
+        "@semantic-release/release-notes-generator",
+        {
+          "preset": "angular",
+          "parserOpts": {
+            "noteKeywords": [
+              "BREAKING CHANGE",
+              "BREAKING CHANGES",
+              "BREAKING"
+            ]
+          }
+        }
+      ]
+    ]
   }
 }
