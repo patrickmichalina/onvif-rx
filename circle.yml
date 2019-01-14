@@ -38,6 +38,9 @@ jobs:
       - attach_workspace:
           at: .
       - run:
+          name: Dist Folder
+          command: node_modules/.bin/ts-node/scripts/publish-prep.ts
+      - run:
           name: Semantic Release
           command: node_modules/.bin/semantic-release
 

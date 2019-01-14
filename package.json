@@ -44,9 +44,11 @@
     "xmldom": "^0.1.27"
   },
   "devDependencies": {
+    "@types/fs-extra": "^5.0.4",
     "@types/node": "^10.12.18",
     "@types/uuid": "^3.4.4",
     "@types/xmldom": "^0.1.29",
+    "fs-extra": "^7.0.1",
     "rollup": "^1.1.0",
     "rollup-plugin-typescript2": "^0.18.1",
     "semantic-release": "^15.13.3",
@@ -57,6 +59,7 @@
     "uglify-js": "^3.4.9"
   },
   "release": {
+    "pkgRoot": "dist",
     "branch": "master",
     "plugins": [
       "@semantic-release/npm",
