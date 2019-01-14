@@ -19,7 +19,7 @@ export default [
     plugins,
     output: [
       {
-        file: pkg.browser,
+        file: `dist/${pkg.browser}`,
         format: 'umd',
         name: 'onvif',
         globals: {
@@ -35,11 +35,11 @@ export default [
     plugins,
     output: [
       {
-        file: pkg.main,
+        file: `dist/${pkg.main}`,
         format: 'cjs'
       },
       {
-        file: pkg.module,
+        file: `dist/${pkg.module}`,
         format: 'es'
       }
     ]
