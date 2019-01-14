@@ -8,7 +8,7 @@
   "browser": "dist/onvif-rx-umd.js",
   "types": "dist/index.d.ts",
   "license": "MIT",
-  "keyword": [
+  "keywords": [
     "onvif",
     "camera",
     "video",
@@ -54,7 +54,7 @@
     "tslint": "^5.12.1",
     "tslint-immutable": "^5.0.1",
     "typescript": "^3.2.2",
-    "uglify-js": "^2.4.11"
+    "uglify-js": "^3.4.9"
   },
   "release": {
     "branch": "master",

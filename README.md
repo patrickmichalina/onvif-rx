@@ -39,7 +39,22 @@ This package is designed to be run in both the browser and node environments.
 npm i onvif-rx
 ```
 
-## Usage
+## Browser Usage
+```html
+<head>
+ <!-- simplest method, gets the latest version, but not minifed -->
+ <script src="https://unpkg.com/onvif-rx"></script>
+ 
+ <!-- RECOMMENDED: use a specific version to avoid a redirect and get a minified version --> 
+ <script src="https://unpkg.com/onvif-rx@x.x.x/dist/onvif-rx-umd.min.js"></script>
+</head>
+```
+
+```js
+// TODO: config and example
+```
+
+## Node/Bundler Usage
 For the best developer experience use Typescript.
 
 ```ts
