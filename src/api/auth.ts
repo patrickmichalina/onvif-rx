@@ -1,5 +1,5 @@
 import { reader, IMaybe } from 'typescript-monads'
-import { IDeviceConfig } from './config/interfaces'
+import { IDeviceConfig } from '../config/interfaces'
 
 interface IDigestBag {
   readonly dateIsoString: string

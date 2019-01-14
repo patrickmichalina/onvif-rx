@@ -1,4 +1,3 @@
-import { DOMParser } from 'xmldom'
 import { ISystemConfig } from './interfaces'
 import { nonce, digestSha1 } from './universal'
 
