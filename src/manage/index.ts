@@ -1,1 +1,1 @@
-export const device = () => {}
+export * from './device'

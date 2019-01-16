@@ -17,7 +17,7 @@ export interface ISystemConfig {
 
 export interface IDeviceConfig {
   readonly system: ISystemConfig
-  readonly url: string
+  readonly deviceUrl: string
   readonly user: IMaybe<IUserCredentials>
 }
 

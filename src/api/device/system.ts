@@ -72,6 +72,10 @@ export interface ISystemRebootResponse {
   readonly Message: string
 }
 
+export interface WdslResponse {
+  readonly WsdlUrl: string
+}
+
 /**
  * This operation reboots the device.
  */
@@ -125,3 +129,13 @@ export const getSystemBackup = () =>
 export const getSystemUris = () =>
   createDeviceRequestBodyFromString(`GetSystemUris`)
     .map(mapResponseXmlToJson<any>(`tds:GetSystemUrisResponse`)())
+
+/**
+ * It is possible for an endpoint to request a URL that can be used to retrieve the complete 
+ * schema and WSDL definitions of a device. The command gives in return a URL entry point where all 
+ * the necessary product specific WSDL and schema definitions can be retrieved. The device shall 
+ * provide a URL for WSDL and schema download through the GetWsdlUrl command.
+ */
+export const getWsdlUrl = () =>
+  createDeviceRequestBodyFromString(`GetWsdlUrl`)
+    .map(mapResponseXmlToJson<WdslResponse>(`tds:GetWsdlUrlResponse`)())

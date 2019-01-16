@@ -11,7 +11,7 @@ const transport =
   (body: string) =>
     (uri: string) =>
       http.post(uri, { body, headers: transportHeaders }).pipe(
-        tap(a => console.log(a.response.body)),
+        tap(a => console.log('REQ MADE!')),
         map(res => res.body))
 
 export const DEFAULT_NODE_ENV: ISystemConfig = {
