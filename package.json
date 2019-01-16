@@ -6,7 +6,7 @@
   "main": "onvif-rx-cjs.js",
   "module": "onvif-rx-esm.js",
   "browser": "onvif-rx-umd.js",
-  "types": "index.d.ts",
+  "types": "node.d.ts",
   "license": "MIT",
   "keywords": [
     "onvif",
