@@ -1,2 +1,2 @@
-export * from './config/node'
+export * from './config'
 export * from './index'
