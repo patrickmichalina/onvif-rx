@@ -23,7 +23,7 @@
     "forceConsistentCasingInFileNames": true,
     "declaration": true,
     "sourceMap": true,
-    "noEmit": true
+    "noEmit": false
   },
   "include": [
     "src/**/*.ts"
