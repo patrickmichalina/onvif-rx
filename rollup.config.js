@@ -1,6 +1,6 @@
 import typescript from 'rollup-plugin-typescript2'
 import pkg from './package.json'
-import builtins from 'rollup-plugin-node-builtins'
+// import builtins from 'rollup-plugin-node-builtins'
 // import globals from 'rollup-plugin-node-globals'
 
 const external = [
@@ -11,7 +11,7 @@ const external = [
 
 const plugins = [
   // globals(),
-  builtins(),
+  // builtins(),
   typescript({
     tsconfig: './tsconfig.rollup.json'
   })
