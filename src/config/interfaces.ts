@@ -11,7 +11,7 @@ export interface ISystemConfig {
   readonly parser: DOMParser
   readonly transport: ITransport
   readonly nonce: INonce
-  readonly toBase64: IEncodeBase64
+  readonly buffer: any
   readonly digestSha1: ISha1Digest
 }
 

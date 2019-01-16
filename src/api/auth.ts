@@ -17,10 +17,11 @@ export const onvifDigest =
   (dateIsoString: string) =>
     reader<IDeviceConfig, IMaybe<IDigestBag>>(config => config.user
       .map(user => {
+        const toBase64 = (a: string) => config.system.buffer.from(a).toString('base64')
         const nonce = config.system.nonce()
         const digest = config.system.digestSha1(nonce + dateIsoString + user.password)
-        const digest64 = config.system.toBase64(digest)
-        const nonceBase64 = config.system.toBase64(nonce)
+        const digest64 = toBase64(digest)
+        const nonceBase64 = toBase64(nonce)
         return {
           dateIsoString,
           nonceBase64,
