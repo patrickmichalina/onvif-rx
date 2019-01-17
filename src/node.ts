@@ -1,7 +1,7 @@
 import { IDeviceInitConfig, createManagedDevice } from '.'
 import { DEFAULT_NODE_ENV } from './config/node'
 
-// export * from './browser'
+export * from './browser'
 export * from './index'
 
 export const createManagedDeviceInNode =

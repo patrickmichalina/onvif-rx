@@ -8,7 +8,7 @@ const transport =
       sharedFetchWrapper(fetch(uri, FETCH_CONFIG(body)))
 
 export const DEFAULT_BROWSER_ENV: ISystemConfig = {
-  parser: new DOMParser(),
+  parser: typeof DOMParser !== 'undefined' ? new DOMParser() : {} as DOMParser,
   nonce,
   digestSha1,
   transport,
