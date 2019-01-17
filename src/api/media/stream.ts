@@ -61,9 +61,6 @@ const mapStreamRequestToString =
     </StreamSetup>
     <ProfileToken>${req.ProfileToken}</ProfileToken>`
 
-/**
- * This operation gets basic device information from the device.
- */
 export const getStreamUri = (req: IGetStreamUriRequest) =>
   createStandardRequestBodyFromString(`<GetStreamUri ${XMLNS.MEDIA}>${mapStreamRequestToString(req)}</GetStreamUri>`)
     .map(mapResponseXmlToJson<IMediaUri>('trt:MediaUri')())

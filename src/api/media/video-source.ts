@@ -13,7 +13,6 @@ export const getVideoSources = () =>
     .map(mapResponseXmlToJson<IGetVideoSourcesResponse>('trt:GetVideoSourcesResponse')(['trt:VideoSources']))
     .map(mapResponseObsToProperty(a => a.VideoSources))
 
-
 export const getVideoSourceConfigurations = () =>
   createMediaRequestBodyFromString('GetVideoSourceConfigurations')
     .map(mapResponseXmlToJson<IGetVideoSourceConfigurations>('trt:GetVideoSourceConfigurationsResponse')(['trt:Configurations']))

@@ -1,7 +1,4 @@
 import { createDeviceRequestBodyFromString, mapResponseXmlToJson } from '../request'
-import { Observable } from 'rxjs'
-import { IReader } from 'typescript-monads'
-import { IDeviceConfig } from '../../node'
 
 /**
  * Contains the arbitary device diagnostics information.
@@ -79,45 +76,24 @@ export interface WdslResponse {
   readonly WsdlUrl: string
 }
 
-/**
- * This operation reboots the device.
- */
 export const systemReboot = () =>
   createDeviceRequestBodyFromString(`SystemReboot`)
     .map(mapResponseXmlToJson<ISystemRebootResponse>(`tds:SystemRebootResponse`)())
 
 const dtkey = 'SystemDateAndTime'
 
-/**
- * This operation gets the device system date and time. 
- * The device shall support the return of the daylight saving setting and of 
- * the manual system date and time (if applicable) or indication of NTP time (if applicable) 
- * through the GetSystemDateAndTime command.
- */
 export const getDeviceSystemDateAndTime = () =>
   createDeviceRequestBodyFromString(`Get${dtkey}`)
     .map(mapResponseXmlToJson<SystemDateTime>(`tds:${dtkey}`)())
 
-/**
- * This operation gets a system log from the device. The exact format of the system logs is outside the scope of this standard.
- */
 export const getSystemLog = () =>
   createDeviceRequestBodyFromString(`GetSystemLog`)
     .map(mapResponseXmlToJson<ISystemLog>(`tds:GetSystemLogResponse`)())
 
-/**
- * This operation gets a system log from the device. The exact format of the system logs is outside the scope of this standard.
- */
 export const getSystemSupportInformation = () =>
   createDeviceRequestBodyFromString(`GetSystemSupportInformation`)
     .map(mapResponseXmlToJson<ISupportInformation>(`tds:GetSystemSupportInformationResponse`)())
 
-/**
- * This operation is retrieves system backup configuration file(s) from a device. 
- * The device should support return of back up configuration file(s) through the GetSystemBackup command. 
- * The backup is returned with reference to a name and mime-type together with binary data. 
- * The exact format of the backup configuration files is outside the scope of this standard.
- */
 export const getSystemBackup = () =>
   createDeviceRequestBodyFromString(`GetSystemBackup`)
     .map(mapResponseXmlToJson<any>(`tds:GetSystemBackupResponse`)())
@@ -126,12 +102,6 @@ export const getSystemUris = () =>
   createDeviceRequestBodyFromString(`GetSystemUris`)
     .map(mapResponseXmlToJson<any>(`tds:GetSystemUrisResponse`)())
 
-/**
- * It is possible for an endpoint to request a URL that can be used to retrieve the complete 
- * schema and WSDL definitions of a device. The command gives in return a URL entry point where all 
- * the necessary product specific WSDL and schema definitions can be retrieved. The device shall 
- * provide a URL for WSDL and schema download through the GetWsdlUrl command.
- */
 export const getWsdlUrl = () =>
   createDeviceRequestBodyFromString(`GetWsdlUrl`)
     .map(mapResponseXmlToJson<WdslResponse>(`tds:GetWsdlUrlResponse`)())

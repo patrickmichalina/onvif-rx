@@ -29,6 +29,7 @@ export default [
         name: 'onvif',
         globals: {
           'typescript-monads': 'typescriptMonads',
+          'rxjs': 'rxjs',
           'rxjs/operators': 'rxjs/operators',
           'buffer': 'Buffer'
         }

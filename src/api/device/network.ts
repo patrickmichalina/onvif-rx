@@ -112,55 +112,28 @@ export interface IDiscoveryResponse {
   readonly DiscoveryMode: DiscoveryMode
 }
 
-/**
- * This operation gets the dynamic DNS settings from a device. 
- * If the device supports dynamic DNS as specified in [RFC 2136] and [RFC 4702], 
- * it shall be possible to get the type, name and TTL through the GetDynamicDNS command.
- */
 export const getDynamicDNS = () =>
   createDeviceRequestBodyFromString('GetDynamicDNS')
     .map(mapResponseXmlToJson<IDynamicDNSInformation>(`tds:DynamicDNSInformation`)())
 
-/**
- * This operation gets the DNS settings from a device. The device shall return its DNS configurations through the GetDNS command.
- */
 export const getDNS = () =>
   createDeviceRequestBodyFromString('GetDNS')
     .map(mapResponseXmlToJson<IDNSInformation>(`tds:DNSInformation`)())
 
-/**
- * This operation is used by an endpoint to get the hostname from a device. 
- * The device shall return its hostname configurations through the GetHostname command.
- */
 export const getHostname = () =>
   createDeviceRequestBodyFromString('GetHostname')
     .map(mapResponseXmlToJson<IHostnameInformation>(`tds:HostnameInformation`)())
 
-/**
-* This operation gets defined network protocols from a device. 
-* The device shall support the GetNetworkProtocols command returning configured network protocols.
-*/
 export const getNetworkProtocols = () =>
   createDeviceRequestBodyFromString('GetNetworkProtocols')
     .map(mapResponseXmlToJson<IGetNetworkProtocolsResponse>(`tds:GetNetworkProtocolsResponse`)(['tds:NetworkProtocols']))
     .map(a => a.pipe(map(b => b.NetworkProtocols)))
 
-/**
-* This operation gets the network interface configuration from a device. The device shall support 
-* return of network interface configuration settings as defined by the NetworkInterface type 
-* through the GetNetworkInterfaces command.
-*/
 export const getNetworkInterfaces = () =>
   createDeviceRequestBodyFromString('GetNetworkInterfaces')
     .map(mapResponseXmlToJson<any>(`tds:GetNetworkInterfacesResponse`)())
 
 // TODO: parsing this payload will require special work!
-
-/**
- * This operation gets the discovery mode of a device. See Section 7.2 for the definition of 
- * the different device discovery modes. The device shall support retrieval of the discovery 
- * mode setting through the GetDiscoveryMode command.
- */
 export const getDeviceDiscoveryMode = () =>
   createDeviceRequestBodyFromString('GetDiscoveryMode')
     .map(mapResponseXmlToJson<IDiscoveryResponse>('tds:GetDiscoveryModeResponse')())

@@ -413,48 +413,25 @@ export interface IService {
   readonly Version: OnvifVersion
 }
 
-/**
- * This method has been replaced by the more generic GetServices method. 
- * For capabilities of individual services refer to the GetServiceCapabilities methods.
- */
 export const getCapabilities =
   (cat: CapabilityCategory = CapabilityCategory.ALL) =>
     createStandardRequestBodyFromString(`<${K.k1} ${XMLNS.DEVICE}><${K.k2}>${cat}</${K.k2}></${K.k1}>`)
       .map(mapResponseXmlToJson<IGetCapabilitiesResponse>('tds:GetCapabilitiesResponse')())
       .map(mapResponseObsToProperty(a => a.Capabilities))
 
-/**
- * Returns the capabilities of the device service. The result is returned in a typed answer.
- */
 export const getServiceCapabilities = () =>
   createDeviceRequestBodyFromString('GetServiceCapabilities')
     .map(mapResponseXmlToJson<ICapabilities>(`tds:Capabilities`)())
 
-/**
- * This operation gets basic device information from the device.
- */
 export const getDeviceInformation = () =>
   createDeviceRequestBodyFromString('GetDeviceInformation')
     .map(mapResponseXmlToJson<IDeviceInformation>('tds:GetDeviceInformationResponse')())
 
-/**
- * This operation requests the scope parameters of a device. The scope parameters are 
- * used in the device discovery to match a probe message, see Section 7. The Scope parameters are of two different types:
- *     Fixed
- *     Configurable
- * Fixed scope parameters are permanent device characteristics and cannot be removed through the device 
- * management interface. The scope type is indicated in the scope list returned in the get scope parameters 
- * response. A device shall support retrieval of discovery scope parameters through the GetScopes command. 
- * As some scope parameters are mandatory, the device shall return a non-empty scope list in the response.
- */
 export const getScopes = () =>
   createDeviceRequestBodyFromString('GetScopes')
     .map(mapResponseXmlToJson<IScopesResponse>('tds:GetScopesResponse')(['tds:Scopes']))
     .map(mapResponseObsToProperty(a => a.Scopes))
 
-/**
- * Returns information about services on the device.
- */
 export const getServices =
   (includeCapability = false) =>
     createStandardRequestBodyFromString(`<GetServices ${XMLNS.DEVICE}><IncludeCapability>${includeCapability ? 'true' : 'false'}</IncludeCapability></GetServices>`)
