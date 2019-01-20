@@ -1,4 +1,4 @@
-import { reader, maybe } from 'typescript-monads'
+import { reader, maybe, fail, ok, IResult } from 'typescript-monads'
 import { IDeviceConfig, ITransportPayoad } from '../config/interfaces'
 import { Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
@@ -12,10 +12,12 @@ export interface ITransportPayloadXml {
 
 const parseXml =
   (parser: DOMParser) =>
-    (payload: ITransportPayoad): ITransportPayloadXml => ({
-      ...payload,
-      body: parser.parseFromString(payload.body, 'text/xml')
-    })
+    (payload: ITransportPayoad): ITransportPayloadXml => {
+      return {
+        ...payload,
+        body: parser.parseFromString(payload.body, 'text/xml')
+      }
+    }
 
 const propertyTypeConverter =
   (val?: string | null) =>
@@ -80,10 +82,14 @@ export const soapShell =
 export const mapResponseXmlToJson =
   <T>(node: string) =>
     (collectionKeys: ReadonlyArray<string> = []) =>
-      (source: Observable<Document>) => source.pipe(
-        map<Document, T>(startingAtNode<T>(node)(collectionKeys))
-      )
-export const mapResponseObsToProperty = <TIn, TOut>(propSelectFn: (sel: TIn) => TOut) => (source: Observable<TIn>) => source.pipe(map(propSelectFn))
+      (source: Observable<IOnvifResult>) =>
+        source.pipe(
+          map(a => a.map(startingAtNode<T>(node)(collectionKeys))))
+
+export const mapResponseObsToProperty =
+  <A, B, E>(propSelectFn: (sel: A) => B) =>
+    (source: Observable<IResult<A, E>>) =>
+      source.pipe(map(a => a.map(propSelectFn)))
 
 export const startingAtNodes =
   <T>(nodes: ReadonlyArray<string>) =>
@@ -110,34 +116,23 @@ export const drillXml =
         maybe(Array.from(doc.documentElement.getElementsByTagName(startNodeElementTag))[0])
           .map<T>(deep(collectionKeys))
 
+type IOnvifResult = IResult<Document, ITransportPayloadXml>
+
 export const createStandardRequestBody =
   (body: string) =>
-    reader<IDeviceConfig, Observable<Document>>(config => {
+    reader<IDeviceConfig, Observable<IOnvifResult>>(config => {
       const gen = (body: string) => config.system.transport(body)(config.deviceUrl)
         .pipe(map(parseXml(config.system.parser)))
         .pipe(map(response => {
           const doc = response.body
-          const reason = maybe(doc.getElementsByTagName('Reason').item(0)).map(a => a.textContent)
-          const code = maybe(doc.getElementsByTagName('Code').item(0)).map(a => a.textContent)
-          const subCode = maybe(doc.getElementsByTagName('Subcode').item(0)).map(a => a.textContent)
-          // const xml = parseXml(a.body)
-          // const reason = maybe(xml.get('//s:Fault//s:Reason', ONVIF_NAMESPACE)).map(a => a.text())
-          // const code = maybe(xml.get('//s:Value', ONVIF_NAMESPACE)).map(a => a.text())
-          // const subCode = maybe(xml.get('//s:Subcode//s:Value', ONVIF_NAMESPACE)).map(a => a.text())
-          // return ok()
-          // return a.response.statusCode === 200 && !reason.valueOrUndefined()
-          //       ? either<IFailure, Document>(undefined, xml)
-          //       : either<IFailure, Document>({
-          //         faultCode: code.valueOr('unknown'),
-          //         faultSubCode: subCode.valueOr('unknown'),
-          //         faultReason: reason.valueOr('unknown'),
-          //         statusMessage: a.response.statusMessage,
-          //         statusCode: a.response.statusCode
-          //       }, undefined)
+          const reason = maybe(doc.getElementsByTagName('s:Reason').item(0)).flatMapAuto(a => a.textContent)
 
           return response.status === 200 && !reason.valueOrUndefined()
-            ? doc
-            : doc
+            ? ok(doc)
+            : fail<Document, ITransportPayloadXml>({
+              ...response,
+              statusMessage: reason.valueOr(response.statusMessage)
+            })
         }))
 
       return createUserToken().map(maybeUserToken => {

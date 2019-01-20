@@ -127,7 +127,7 @@ export const getHostname = () =>
 export const getNetworkProtocols = () =>
   createDeviceRequestBodyFromString('GetNetworkProtocols')
     .map(mapResponseXmlToJson<IGetNetworkProtocolsResponse>(`tds:GetNetworkProtocolsResponse`)(['tds:NetworkProtocols']))
-    .map(a => a.pipe(map(b => b.NetworkProtocols)))
+    // .map(a => a.pipe(map(b => b.NetworkProtocols)))
 
 export const getNetworkInterfaces = () =>
   createDeviceRequestBodyFromString('GetNetworkInterfaces')
