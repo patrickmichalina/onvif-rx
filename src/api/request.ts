@@ -124,11 +124,11 @@ export const createStandardRequestBody =
       const gen = (body: string) => config.system.transport(body)(config.deviceUrl)
         .pipe(map(parseXml(config.system.parser)))
         .pipe(map(response => {
-          const doc = response.body
-          const reason = maybe(doc.getElementsByTagName('s:Reason').item(0)).flatMapAuto(a => a.textContent)
+          const reason = maybe(response.body.getElementsByTagName('s:Reason').item(0))
+            .flatMapAuto(a => a.textContent)
 
           return response.status === 200 && !reason.valueOrUndefined()
-            ? ok(doc)
+            ? ok(response.body)
             : fail<Document, ITransportPayloadXml>({
               ...response,
               statusMessage: reason.valueOr(response.statusMessage)
