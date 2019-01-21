@@ -1,7 +1,12 @@
 import { Observable } from 'rxjs'
 import { IMaybe } from 'typescript-monads'
 
-export type ITransport = (body: string) => (uri: string) => Observable<string>
+export interface ITransportPayoad {
+  readonly body: string
+  readonly statusMessage: string
+  readonly status: number
+}
+export type ITransport = (body: string) => (uri: string) => Observable<ITransportPayoad>
 
 export type IEncodeBase64 = (str: string) => string
 export type ISha1Digest = (str: string) => string

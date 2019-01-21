@@ -1,4 +1,4 @@
-import { INonce, ISha1Digest } from './interfaces'
+import { INonce, ISha1Digest, ITransportPayoad } from './interfaces'
 import { from } from 'rxjs'
 import { flatMap } from 'rxjs/operators'
 
@@ -9,7 +9,14 @@ export const FETCH_CONFIG = (body: string) => ({ method: 'POST', body, headers: 
 
 export const sharedFetchWrapper =
   (fetchResponse: Promise<any>) =>
-    from(fetchResponse).pipe(flatMap<any, string>(a => a.text()))
+    from(fetchResponse)
+      .pipe(flatMap<Response, ITransportPayoad>(a => a.text().then(body => {
+        return {
+          body,
+          status: a.status,
+          statusMessage: a.statusText
+        }
+      })))
 
 export const nonce: INonce =
   (size = 30) =>
