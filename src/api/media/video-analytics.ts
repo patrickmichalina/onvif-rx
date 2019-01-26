@@ -12,4 +12,4 @@ export interface IGetVideoAnalyticsConfigurationsResponse {
 export const getVideoAnalyticsConfigurations = () =>
   createMediaRequestBodyFromString('GetVideoAnalyticsConfigurations')
     .map(mapResponseXmlToJson<IGetVideoAnalyticsConfigurationsResponse>('trt:GetVideoAnalyticsConfigurationsResponse')(['trt:Configurations']))
-    .map(mapResponseObsToProperty(a => a.Configurations))
+    .map(mapResponseObsToProperty(a =>  a.Configurations))

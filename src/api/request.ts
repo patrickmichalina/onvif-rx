@@ -1,11 +1,25 @@
-import { reader, maybe } from 'typescript-monads'
-import { ISystemConfig, IDeviceConfig } from '../config/interfaces'
+import { reader, maybe, fail, ok, IResult } from 'typescript-monads'
+import { IDeviceConfig, ITransportPayoad } from '../config/interfaces'
 import { Observable } from 'rxjs'
 import { map, tap } from 'rxjs/operators'
 import { createUserToken } from './auth'
 
-const parseXml = (parser: DOMParser) => (xml: string) => parser.parseFromString(xml, 'text/xml')
+// const parseXml = (parser: DOMParser) => (xml: string) => parser.parseFromString(xml, 'text/xml')
 const cleanColon = (str: string) => str.replace(/^.+:/, '')
+export interface ITransportPayloadXml {
+  readonly body: Document
+  readonly statusMessage: string
+  readonly status: number
+}
+
+const parseXml =
+  (parser: DOMParser) =>
+    (payload: ITransportPayoad): ITransportPayloadXml => {
+      return {
+        ...payload,
+        body: parser.parseFromString(payload.body, 'text/xml')
+      }
+    }
 
 const propertyTypeConverter =
   (val?: string | null) =>
@@ -80,11 +94,14 @@ export const soapShell =
 export const mapResponseXmlToJson =
   <T>(node: string) =>
     (collectionKeys: ReadonlyArray<string> = []) =>
-      (source: Observable<Document>) => source.pipe(
-        map<Document, T>(startingAtNode<T>(node)(collectionKeys))
-      )
+      (source: Observable<IOnvifResult>) =>
+        source.pipe(
+          map(a => a.map(startingAtNode<T>(node)(collectionKeys))))
 
-export const mapResponseObsToProperty = <TIn, TOut>(propSelectFn: (sel: TIn) => TOut) => (source: Observable<TIn>) => source.pipe(map(propSelectFn))
+export const mapResponseObsToProperty =
+  <A, B, E>(propSelectFn: (sel: A) => B) =>
+    (source: Observable<IResult<A, E>>) =>
+      source.pipe(map(a => a.map(propSelectFn)))
 
 export const startingAtNodes =
   <T>(nodes: ReadonlyArray<string>) =>
@@ -111,10 +128,25 @@ export const drillXml =
         maybe(Array.from(doc.documentElement.getElementsByTagName(startNodeElementTag))[0])
           .map<T>(deep(collectionKeys))
 
+type IOnvifResult = IResult<Document, ITransportPayloadXml>
+
 export const createStandardRequestBody =
   (body: string) =>
-    reader<IDeviceConfig, Observable<Document>>(config => {
-      const gen = (body: string) => config.system.transport(body)(config.deviceUrl).pipe(tap(console.log), map(parseXml(config.system.parser)))
+    reader<IDeviceConfig, Observable<IOnvifResult>>(config => {
+      const gen = (body: string) => config.system.transport(body)(config.deviceUrl)
+        .pipe(map(parseXml(config.system.parser)))
+        .pipe(map(response => {
+          const reason = maybe(response.body.getElementsByTagName('s:Reason').item(0))
+            .flatMapAuto(a => a.textContent)
+
+          return response.status === 200 && !reason.valueOrUndefined()
+            ? ok(response.body)
+            : fail<Document, ITransportPayloadXml>({
+              ...response,
+              statusMessage: reason.valueOr(response.statusMessage)
+            })
+        }))
+
       return createUserToken().map(maybeUserToken => {
         return maybeUserToken.map(token => {
           return gen(body.replace(`<${SOAP_NODE.HEADER}></${SOAP_NODE.HEADER}>`, `<${SOAP_NODE.HEADER}>${token}</${SOAP_NODE.HEADER}>`))

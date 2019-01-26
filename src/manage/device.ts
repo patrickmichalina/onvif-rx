@@ -1,7 +1,7 @@
 import { Observable } from 'rxjs'
-import { maybe, reader } from 'typescript-monads'
+import { maybe, reader, IResult } from 'typescript-monads'
 import { IDeviceConfig, ISystemConfig, IUserCredentials } from '../config/interfaces'
-import { getStreamUri, IGetStreamUriRequest } from '../api/media/stream'
+import { getStreamUri, IGetStreamUriRequest, IMediaUri } from '../api/media/stream'
 import { getProfiles } from '../api/media/profiles'
 import {
   IService, IScope, getScopes, getServices, IDeviceInformation, getDeviceInformation,
@@ -20,7 +20,9 @@ import {
   getNetworkProtocols, IDNSInformation, IDiscoveryResponse, IDynamicDNSInformation,
   IHostnameInformation, INetworkProtocol
 } from '../api/device/network'
-import { DEFAULT_BROWSER_ENV, DEFAULT_NODE_ENV } from '../config'
+import { ITransportPayloadXml } from '../api/request'
+
+type IOnvifNetworkResponse<T> = Observable<IResult<T, ITransportPayloadXml>>
 
 export interface IDeviceApi {
   /**
@@ -33,28 +35,28 @@ export interface IDeviceApi {
    * response. A device shall support retrieval of discovery scope parameters through the GetScopes command. 
    * As some scope parameters are mandatory, the device shall return a non-empty scope list in the response.
    */
-  readonly getScopes: () => Observable<ReadonlyArray<IScope>>
+  readonly getScopes: () => IOnvifNetworkResponse<ReadonlyArray<IScope>>
 
   /**
    * Returns information about services on the device.
    */
-  readonly getServices: (includeCapability?: boolean) => Observable<ReadonlyArray<IService>>
+  readonly getServices: (includeCapability?: boolean) => IOnvifNetworkResponse<ReadonlyArray<IService>>
 
   /**
    * This operation gets basic device information from the device.
    */
-  readonly getDeviceInformation: () => Observable<IDeviceInformation>
+  readonly getDeviceInformation: () => IOnvifNetworkResponse<IDeviceInformation>
 
   /**
    * This method has been replaced by the more generic GetServices method. 
    * For capabilities of individual services refer to the GetServiceCapabilities methods.
    */
-  readonly getCapabilities: (cat?: CapabilityCategory) => Observable<Partial<ICapabilities>>
+  readonly getCapabilities: (cat?: CapabilityCategory) => IOnvifNetworkResponse<Partial<ICapabilities>>
 
   /**
    * Returns the capabilities of the device service. The result is returned in a typed answer.
    */
-  readonly getServiceCapabilities: () => Observable<ICapabilities>
+  readonly getServiceCapabilities: () => IOnvifNetworkResponse<ICapabilities>
 
   /**
    * This operation gets the device system date and time. 
@@ -62,7 +64,7 @@ export interface IDeviceApi {
    * the manual system date and time (if applicable) or indication of NTP time (if applicable) 
    * through the GetSystemDateAndTime command.
    */
-  readonly getDeviceSystemDateAndTime: () => Observable<SystemDateTime>
+  readonly getDeviceSystemDateAndTime: () => IOnvifNetworkResponse<SystemDateTime>
 
   /**
    * This operation is retrieves system backup configuration file(s) from a device. 
@@ -70,17 +72,17 @@ export interface IDeviceApi {
    * The backup is returned with reference to a name and mime-type together with binary data. 
    * The exact format of the backup configuration files is outside the scope of this standard.
    */
-  readonly getSystemBackup: () => Observable<any>
+  readonly getSystemBackup: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets a system log from the device. The exact format of the system logs is outside the scope of this standard.
    */
-  readonly getSystemLog: () => Observable<ISystemLog>
+  readonly getSystemLog: () => IOnvifNetworkResponse<ISystemLog>
 
   /**
    * This operation gets a system log from the device. The exact format of the system logs is outside the scope of this standard.
    */
-  readonly getSystemSupportInformation: () => Observable<ISupportInformation>
+  readonly getSystemSupportInformation: () => IOnvifNetworkResponse<ISupportInformation>
 
   /**
   * This operation is used to retrieve URIs from which system information may be downloaded using HTTP. URIs may be returned for the following system information:
@@ -89,7 +91,7 @@ export interface IDeviceApi {
   * System Backup. The received file is a backup file that can be used to restore the current device configuration at a later date. The exact format of the backup configuration file is outside the scope of this specification.
   * If the device allows retrieval of system logs, support information or system backup data, it should make them available via HTTP GET. If it does, it shall support the GetSystemUris command.
   */
-  readonly getSystemUris: () => Observable<any>
+  readonly getSystemUris: () => IOnvifNetworkResponse<any>
 
   /**
    * It is possible for an endpoint to request a URL that can be used to retrieve the complete 
@@ -97,12 +99,12 @@ export interface IDeviceApi {
    * the necessary product specific WSDL and schema definitions can be retrieved. The device shall 
    * provide a URL for WSDL and schema download through the GetWsdlUrl command.
    */
-  readonly getWsdlUrl: () => Observable<WdslResponse>
+  readonly getWsdlUrl: () => IOnvifNetworkResponse<WdslResponse>
 
   /**
    * This operation reboots the device.
    */
-  readonly systemReboot: () => Observable<ISystemRebootResponse>
+  readonly systemReboot: () => IOnvifNetworkResponse<ISystemRebootResponse>
 
   /**
   * This operation creates a new device user and corresponding credentials on a device for authentication purposes. 
@@ -113,7 +115,7 @@ export interface IDeviceApi {
   * password derivation mechanism which results in 'password equivalent' of length 28 bytes, as described in section 3.1.2 
   * of the ONVIF security white paper.
   */
-  readonly createUser: (user: ICreateUserRequest) => Observable<any>
+  readonly createUser: (user: ICreateUserRequest) => IOnvifNetworkResponse<any>
 
   /**
    * This operation creates new device users and corresponding credentials on a device for authentication purposes. 
@@ -124,74 +126,74 @@ export interface IDeviceApi {
    * password derivation mechanism which results in 'password equivalent' of length 28 bytes, as described in section 3.1.2 
    * of the ONVIF security white paper.
    */
-  readonly createUsers: (users: ReadonlyArray<ICreateUserRequest>) => Observable<any>
+  readonly createUsers: (users: ReadonlyArray<ICreateUserRequest>) => IOnvifNetworkResponse<any>
 
   /**
   * Deletes a user on an device and there may exist users that cannot be deleted to ensure access to the unit. 
   * Either all users are deleted successfully or a fault message MUST be returned and no users be deleted. 
   * If a username exists multiple times in the request, then a fault message is returned.
   */
-  readonly deleteUser: (username: string) => Observable<any>
+  readonly deleteUser: (username: string) => IOnvifNetworkResponse<any>
 
   /**
    * Deletes users on an device and there may exist users that cannot be deleted to ensure access to the unit. 
    * Either all users are deleted successfully or a fault message MUST be returned and no users be deleted. 
    * If a username exists multiple times in the request, then a fault message is returned.
    */
-  readonly deleteUsers: (usernames: ReadonlyArray<string>) => Observable<any>
+  readonly deleteUsers: (usernames: ReadonlyArray<string>) => IOnvifNetworkResponse<any>
 
   /**
    * This operation lists the registered users and corresponding credentials on a device. 
    * The device shall support retrieval of registered device users and their credentials for 
    * the user token through the GetUsers command.
    */
-  readonly getUsers: () => Observable<ReadonlyArray<IUser>>
+  readonly getUsers: () => IOnvifNetworkResponse<ReadonlyArray<IUser>>
 
   /**
   * This operation gets the DNS settings from a device. The device shall return its DNS configurations through the GetDNS command.
   */
-  readonly getDNS: () => Observable<IDNSInformation>
+  readonly getDNS: () => IOnvifNetworkResponse<IDNSInformation>
 
   /**
    * This operation gets the discovery mode of a device. See Section 7.2 for the definition of 
    * the different device discovery modes. The device shall support retrieval of the discovery 
    * mode setting through the GetDiscoveryMode command.
    */
-  readonly getDeviceDiscoveryMode: () => Observable<IDiscoveryResponse>
+  readonly getDeviceDiscoveryMode: () => IOnvifNetworkResponse<IDiscoveryResponse>
 
   /**
    * This operation gets the dynamic DNS settings from a device. 
    * If the device supports dynamic DNS as specified in [RFC 2136] and [RFC 4702], 
    * it shall be possible to get the type, name and TTL through the GetDynamicDNS command.
    */
-  readonly getDynamicDNS: () => Observable<IDynamicDNSInformation>
+  readonly getDynamicDNS: () => IOnvifNetworkResponse<IDynamicDNSInformation>
 
   /**
    * This operation is used by an endpoint to get the hostname from a device. 
    * The device shall return its hostname configurations through the GetHostname command.
    */
-  readonly getHostname: () => Observable<IHostnameInformation>
+  readonly getHostname: () => IOnvifNetworkResponse<IHostnameInformation>
 
   /**
   * This operation gets the network interface configuration from a device. The device shall support 
   * return of network interface configuration settings as defined by the NetworkInterface type 
   * through the GetNetworkInterfaces command.
   */
-  readonly getNetworkInterfaces: () => Observable<any>
+  readonly getNetworkInterfaces: () => IOnvifNetworkResponse<any>
 
   /**
   * This operation gets defined network protocols from a device. 
   * The device shall support the GetNetworkProtocols command returning configured network protocols.
   */
-  readonly getNetworkProtocols: () => Observable<ReadonlyArray<INetworkProtocol>>
+  // readonly getNetworkProtocols: () => IOnvifNetworkResponse<INetworkProtocol>
 }
 
 export interface IMediaApi {
   /**
    * This operation gets basic device information from the device.
    */
-  readonly getStreamUri: (req: IGetStreamUriRequest) => Observable<any>
-  readonly getProfiles: () => Observable<any>
+  readonly getStreamUri: (req: IGetStreamUriRequest) => IOnvifNetworkResponse<IMediaUri>
+  readonly getProfiles: () => IOnvifNetworkResponse<any>
 }
 
 export interface IOnvifApi {
@@ -243,7 +245,7 @@ export const createManagedDevice = (config: IDeviceInitConfig) => reader<ISystem
         getDynamicDNS: () => getDynamicDNS().run(innerRunConfig),
         getHostname: () => getHostname().run(innerRunConfig),
         getNetworkInterfaces: () => getNetworkInterfaces().run(innerRunConfig),
-        getNetworkProtocols: () => getNetworkProtocols().run(innerRunConfig)
+        // getNetworkProtocols: () => getNetworkProtocols().run(innerRunConfig)
       },
       media: {
         getStreamUri: (req: IGetStreamUriRequest) => getStreamUri(req).run(innerRunConfig),
