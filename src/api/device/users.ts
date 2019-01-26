@@ -68,7 +68,7 @@ export const deleteUser =
 
 export const deleteUsers =
   (usernames: ReadonlyArray<string>) =>
-    createDeviceRequestBodyFromString(`<DeleteUsers ${XMLNS.DEVICE}>${mapUsersToString(usernames)}</DeleteUsers>`)
+    createDeviceRequestBodyFromString(`<DeleteUsers ${XMLNS.tds}>${mapUsersToString(usernames)}</DeleteUsers>`)
       .map(mapResponseXmlToJson<any>(`tds:DeleteUsersResponse`)())
 // .map(successXmlPathMap<string>(_ => 'OK')) //TODO: return list of users
 
@@ -78,6 +78,6 @@ export const createUser =
 
 export const createUsers =
   (users: ReadonlyArray<ICreateUserRequest>) =>
-    createStandardRequestBodyFromString(`<CreateUsers ${XMLNS.DEVICE}>${mapUserRequestsToString(users)}</CreateUsers>`)
+    createStandardRequestBodyFromString(`<CreateUsers ${XMLNS.tds}>${mapUserRequestsToString(users)}</CreateUsers>`)
       .map(mapResponseXmlToJson<Object>(`tds:CreateUsersResponse`)())
     //   .map(successXmlPathMap<string>(_ => 'OK')) //TODO: return list of users

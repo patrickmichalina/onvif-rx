@@ -69,8 +69,8 @@ export interface ICapabilities {
 }
 
 const K = {
-  k1: 'GetCapabilities',
-  k2: 'Category'
+  k1: 'tds:GetCapabilities',
+  k2: 'tds:Category'
 }
 
 export interface ICapabilities {
@@ -415,7 +415,7 @@ export interface IService {
 
 export const getCapabilities =
   (cat: CapabilityCategory = CapabilityCategory.ALL) =>
-    createStandardRequestBodyFromString(`<${K.k1} ${XMLNS.DEVICE}><${K.k2}>${cat}</${K.k2}></${K.k1}>`)
+    createStandardRequestBodyFromString(`<${K.k1}><${K.k2}>${cat}</${K.k2}></${K.k1}>`)
       .map(mapResponseXmlToJson<IGetCapabilitiesResponse>('tds:GetCapabilitiesResponse')())
       .map(mapResponseObsToProperty(a => a.Capabilities))
 
@@ -434,6 +434,6 @@ export const getScopes = () =>
 
 export const getServices =
   (includeCapability = false) =>
-    createStandardRequestBodyFromString(`<GetServices ${XMLNS.DEVICE}><IncludeCapability>${includeCapability ? 'true' : 'false'}</IncludeCapability></GetServices>`)
+    createStandardRequestBodyFromString(`<GetServices ${XMLNS.tds}><IncludeCapability>${includeCapability ? 'true' : 'false'}</IncludeCapability></GetServices>`)
       .map(mapResponseXmlToJson<IServiceResponse>('tds:GetServicesResponse')(['tds:Service']))
       .map(mapResponseObsToProperty(a => a.Service))

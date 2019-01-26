@@ -1,10 +1,11 @@
 import { reader, maybe } from 'typescript-monads'
 import { ISystemConfig, IDeviceConfig } from '../config/interfaces'
 import { Observable } from 'rxjs'
-import { map } from 'rxjs/operators'
+import { map, tap } from 'rxjs/operators'
 import { createUserToken } from './auth'
 
 const parseXml = (parser: DOMParser) => (xml: string) => parser.parseFromString(xml, 'text/xml')
+const cleanColon = (str: string) => str.replace(/^.+:/, '')
 
 const propertyTypeConverter =
   (val?: string | null) =>
@@ -13,8 +14,6 @@ const propertyTypeConverter =
       : val
         ? isNaN(Number(val)) ? val : Number(val)
         : undefined
-
-const cleanColon = (str: string) => str.replace(/^.+:/, '')
 
 const parseAttributes = (attrs: ReadonlyArray<Attr>) => Array.from(attrs)
   .reduce((acc: any, attr: any) => {
@@ -56,15 +55,27 @@ const deep =
         }, { ...parseAttributes(elm.attributes as any) } as T)
 
 export enum XMLNS {
-  SOAP = 'xmlns="http://www.w3.org/2003/05/soap-envelope"',
-  DEVICE = 'xmlns="http://www.onvif.org/ver10/device/wsdl"',
+  S11 = 'xmlns:S11="http://www.w3.org/2003/05/soap-envelope"',
+  wsse = 'xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"',
+  wsu = 'xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"',
+  tt = 'xmlns:tt="http://www.onvif.org/ver10/schema"',
+  tds = 'xmlns:tds="http://www.onvif.org/ver10/device/wsdl"',
   MEDIA = 'xmlns="http://www.onvif.org/ver10/media/wsdl"'
+}
+
+export enum SOAP_NODE {
+  HEADER = 'S11:Header'
 }
 
 export const soapShell =
   (rawBody: string) =>
     (rawHeader?: string) =>
-      `<?xml version="1.0" encoding="UTF-8"?><Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:tt="http://www.onvif.org/ver10/schema"><Header>${rawHeader || ''}</Header><Body>${rawBody}</Body></Envelope>`
+      // `<?xml version="1.0" encoding="UTF-8"?><Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:tt="http://www.onvif.org/ver10/schema"><Header>${rawHeader || ''}</Header><Body>${rawBody}</Body></Envelope>`
+      `<?xml version="1.0" encoding="UTF-8"?>
+      <S11:Envelope ${XMLNS.S11} ${XMLNS.tds} ${XMLNS.tt} ${XMLNS.wsse} ${XMLNS.wsu}>
+        <${SOAP_NODE.HEADER}>${rawHeader || ''}</${SOAP_NODE.HEADER}>
+        <S11:Body>${rawBody}</S11:Body>
+      </S11:Envelope>`
 
 export const mapResponseXmlToJson =
   <T>(node: string) =>
@@ -72,6 +83,7 @@ export const mapResponseXmlToJson =
       (source: Observable<Document>) => source.pipe(
         map<Document, T>(startingAtNode<T>(node)(collectionKeys))
       )
+
 export const mapResponseObsToProperty = <TIn, TOut>(propSelectFn: (sel: TIn) => TOut) => (source: Observable<TIn>) => source.pipe(map(propSelectFn))
 
 export const startingAtNodes =
@@ -102,10 +114,10 @@ export const drillXml =
 export const createStandardRequestBody =
   (body: string) =>
     reader<IDeviceConfig, Observable<Document>>(config => {
-      const gen = (body: string) => config.system.transport(body)(config.deviceUrl).pipe(map(parseXml(config.system.parser)))
+      const gen = (body: string) => config.system.transport(body)(config.deviceUrl).pipe(tap(console.log), map(parseXml(config.system.parser)))
       return createUserToken().map(maybeUserToken => {
         return maybeUserToken.map(token => {
-          return gen(body.replace('<Header></Header>', `<Header>${token}</Header>`))
+          return gen(body.replace(`<${SOAP_NODE.HEADER}></${SOAP_NODE.HEADER}>`, `<${SOAP_NODE.HEADER}>${token}</${SOAP_NODE.HEADER}>`))
         }).valueOr(gen(body))
       }).run(config)
     })
@@ -116,13 +128,12 @@ export const createStandardRequestBodyFromString =
 
 export const createSimpleRequestBodyFromString =
   (key: string) =>
-    (ns: XMLNS) =>
-      createStandardRequestBody(soapShell(`<${key} ${ns}/>`)())
+    createStandardRequestBody(soapShell(`<${key}/>`)())
 
 export const createDeviceRequestBodyFromString =
   (key: string) =>
-    createSimpleRequestBodyFromString(key)(XMLNS.DEVICE)
+    createSimpleRequestBodyFromString(`tds:${key}`)
 
 export const createMediaRequestBodyFromString =
   (key: string) =>
-    createSimpleRequestBodyFromString(key)(XMLNS.MEDIA)
+    createSimpleRequestBodyFromString(key)
