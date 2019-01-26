@@ -53,14 +53,14 @@ export interface IGetStreamUriRequest {
 
 const mapStreamRequestToString =
   (req: IGetStreamUriRequest) =>
-    `<StreamSetup>
-      <Stream>${req.Stream}</Stream>
-      <Transport>
-        <Protocol>${req.Protocol}</Protocol>
-      </Transport>
-    </StreamSetup>
-    <ProfileToken>${req.ProfileToken}</ProfileToken>`
+    `<trt:StreamSetup>
+      <tt:Stream>${req.Stream}</tt:Stream>
+      <tt:Transport>
+        <tt:Protocol>${req.Protocol}</tt:Protocol>
+      </tt:Transport>
+    </trt:StreamSetup>
+    <trt:ProfileToken>${req.ProfileToken}</trt:ProfileToken>`
 
 export const getStreamUri = (req: IGetStreamUriRequest) =>
-  createStandardRequestBodyFromString(`<GetStreamUri ${XMLNS.MEDIA}>${mapStreamRequestToString(req)}</GetStreamUri>`)
+  createStandardRequestBodyFromString(`<trt:GetStreamUri>${mapStreamRequestToString(req)}</trt:GetStreamUri>`)
     .map(mapResponseXmlToJson<IMediaUri>('trt:MediaUri')())
