@@ -180,23 +180,24 @@ import { GetGeoLocation } from './GetGeoLocation'
 import { SetGeoLocation } from './SetGeoLocation'
 import { DeleteGeoLocation } from './DeleteGeoLocation'
 import { IDeviceConfig } from '../../config'
+import { IOnvifNetworkResponse } from '../../soap/request'
 
 export interface IONVIFDeviceApi {
   
   /**
    * Returns information about services on the device.
    */
-  readonly GetServices: () => any
+  readonly GetServices: () => IOnvifNetworkResponse<any>
 
   /**
    * Returns the capabilities of the device service. The result is returned in a typed answer.
    */
-  readonly GetServiceCapabilities: () => any
+  readonly GetServiceCapabilities: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets basic device information from the device.
    */
-  readonly GetDeviceInformation: () => any
+  readonly GetDeviceInformation: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the device system date and time. The device shall support the
@@ -209,7 +210,7 @@ export interface IONVIFDeviceApi {
    * Clear the DayLightSavings flag if the DST portion of the TimeZone settings should be ignored.
    * 
    */
-  readonly SetSystemDateAndTime: () => any
+  readonly SetSystemDateAndTime: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets the device system date and time. The device shall support the return of
@@ -217,12 +218,12 @@ export interface IONVIFDeviceApi {
    * of NTP time (if applicable) through the GetSystemDateAndTime command.
    * A device shall provide the UTCDateTime information.
    */
-  readonly GetSystemDateAndTime: () => any
+  readonly GetSystemDateAndTime: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation reloads the parameters on the device to their factory default values.
    */
-  readonly SetSystemFactoryDefault: () => any
+  readonly SetSystemFactoryDefault: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation upgrades a device firmware version. After a successful upgrade the response
@@ -230,12 +231,12 @@ export interface IONVIFDeviceApi {
    * through the UpgradeSystemFirmware command. The exact format of the firmware data is
    * outside the scope of this standard.
    */
-  readonly UpgradeSystemFirmware: () => any
+  readonly UpgradeSystemFirmware: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation reboots the device.
    */
-  readonly SystemReboot: () => any
+  readonly SystemReboot: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation restores the system backup configuration files(s) previously retrieved from a
@@ -244,7 +245,7 @@ export interface IONVIFDeviceApi {
    * scope of this standard. If the command is supported, it shall accept backup files returned by
    * the GetSystemBackup command.
    */
-  readonly RestoreSystem: () => any
+  readonly RestoreSystem: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation is retrieves system backup configuration file(s) from a device. The device
@@ -252,17 +253,17 @@ export interface IONVIFDeviceApi {
    * The backup is returned with reference to a name and mime-type together with binary data.
    * The exact format of the backup configuration files is outside the scope of this standard.
    */
-  readonly GetSystemBackup: () => any
+  readonly GetSystemBackup: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets a system log from the device. The exact format of the system logs is outside the scope of this standard.
    */
-  readonly GetSystemLog: () => any
+  readonly GetSystemLog: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets arbitary device diagnostics information from the device.
    */
-  readonly GetSystemSupportInformation: () => any
+  readonly GetSystemSupportInformation: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation requests the scope parameters of a device. The scope parameters are used in
@@ -276,7 +277,7 @@ export interface IONVIFDeviceApi {
    * retrieval of discovery scope parameters through the GetScopes command. As some scope parameters are mandatory, 
    * the device shall return a non-empty scope list in the response.
    */
-  readonly GetScopes: () => any
+  readonly GetScopes: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the scope parameters of a device. The scope parameters are used in the
@@ -285,14 +286,14 @@ export interface IONVIFDeviceApi {
    * this shall be avoided, one should use the scope add command instead. The device shall
    * support configuration of discovery scope parameters through the SetScopes command.
    */
-  readonly SetScopes: () => any
+  readonly SetScopes: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation adds new configurable scope parameters to a device. The scope parameters
    * are used in the device discovery to match a probe message. The device shall
    * support addition of discovery scope parameters through the AddScopes command.
    */
-  readonly AddScopes: () => any
+  readonly AddScopes: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation deletes scope-configurable scope parameters from a device. The scope
@@ -301,21 +302,21 @@ export interface IONVIFDeviceApi {
    * command.
    * Table
    */
-  readonly RemoveScopes: () => any
+  readonly RemoveScopes: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets the discovery mode of a device. See Section 7.2 for the definition of the
    * different device discovery modes. The device shall support retrieval of the discovery mode
    * setting through the GetDiscoveryMode command.
    */
-  readonly GetDiscoveryMode: () => any
+  readonly GetDiscoveryMode: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the discovery mode operation of a device. See Section 7.2 for the
    * definition of the different device discovery modes. The device shall support configuration of
    * the discovery mode setting through the SetDiscoveryMode command.
    */
-  readonly SetDiscoveryMode: () => any
+  readonly SetDiscoveryMode: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets the remote discovery mode of a device. See Section 7.4 for the definition
@@ -323,7 +324,7 @@ export interface IONVIFDeviceApi {
    * retrieval of the remote discovery mode setting through the GetRemoteDiscoveryMode
    * command.
    */
-  readonly GetRemoteDiscoveryMode: () => any
+  readonly GetRemoteDiscoveryMode: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the remote discovery mode of operation of a device. See Section 7.4 for
@@ -331,21 +332,21 @@ export interface IONVIFDeviceApi {
    * shall support configuration of the discovery mode setting through the
    * SetRemoteDiscoveryMode command.
    */
-  readonly SetRemoteDiscoveryMode: () => any
+  readonly SetRemoteDiscoveryMode: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets the remote DP address or addresses from a device. If the device supports
    * remote discovery, as specified in Section 7.4, the device shall support retrieval of the remote
    * DP address(es) through the GetDPAddresses command.
    */
-  readonly GetDPAddresses: () => any
+  readonly GetDPAddresses: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the remote DP address or addresses on a device. If the device supports
    * remote discovery, as specified in Section 7.4, the device shall support configuration of the
    * remote DP address(es) through the SetDPAddresses command.
    */
-  readonly SetDPAddresses: () => any
+  readonly SetDPAddresses: () => IOnvifNetworkResponse<any>
 
   /**
    * A client can ask for the device service endpoint reference address property that can be used
@@ -353,7 +354,7 @@ export interface IONVIFDeviceApi {
    * GetEndpointReference command returning the address property of the device service
    * endpoint reference.
    */
-  readonly GetEndpointReference: () => any
+  readonly GetEndpointReference: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation returns the configured remote user (if any). A device supporting remote user
@@ -361,7 +362,7 @@ export interface IONVIFDeviceApi {
    * as a HTTP / RTSP user.
    * The algorithm to use for deriving the password is described in section 5.12.2.1 of the core specification.
    */
-  readonly GetRemoteUser: () => any
+  readonly GetRemoteUser: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the remote user. A device supporting remote user handling shall support this
@@ -371,14 +372,14 @@ export interface IONVIFDeviceApi {
    * remote device.The algorithm to use for deriving the password is described in section 5.12.2.1 of the core specification.
    * To remove the remote user SetRemoteUser should be called without the RemoteUser parameter.
    */
-  readonly SetRemoteUser: () => any
+  readonly SetRemoteUser: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation lists the registered users and corresponding credentials on a device. The
    * device shall support retrieval of registered device users and their credentials for the user
    * token through the GetUsers command.
    */
-  readonly GetUsers: () => any
+  readonly GetUsers: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation creates new device users and corresponding credentials on a device for authentication purposes. 
@@ -389,7 +390,7 @@ export interface IONVIFDeviceApi {
    * as clients may follow the password derivation mechanism which results in 'password
    * equivalent' of length 28 bytes, as described in section 3.1.2 of the ONVIF security white paper.
    */
-  readonly CreateUsers: () => any
+  readonly CreateUsers: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation deletes users on a device. The device shall support deletion of device users and their credentials 
@@ -397,14 +398,14 @@ export interface IONVIFDeviceApi {
    * that cannot be deleted to ensure access to the unit. Either all users are deleted successfully or a
    * fault message shall be returned and no users be deleted.
    */
-  readonly DeleteUsers: () => any
+  readonly DeleteUsers: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation updates the settings for one or several users on a device for authentication purposes.
    * The device shall support update of device users and their credentials through the SetUser command. 
    * Either all change requests are processed successfully or a fault message shall be returned and no change requests be processed.
    */
-  readonly SetUser: () => any
+  readonly SetUser: () => IOnvifNetworkResponse<any>
 
   /**
    * It is possible for an endpoint to request a URL that can be used to retrieve the complete
@@ -412,19 +413,19 @@ export interface IONVIFDeviceApi {
    * where all the necessary product specific WSDL and schema definitions can be retrieved. The
    * device shall provide a URL for WSDL and schema download through the GetWsdlUrl command.
    */
-  readonly GetWsdlUrl: () => any
+  readonly GetWsdlUrl: () => IOnvifNetworkResponse<any>
 
   /**
    * This method has been replaced by the more generic GetServices method.
    *  For capabilities of individual services refer to the GetServiceCapabilities methods.
    */
-  readonly GetCapabilities: () => any
+  readonly GetCapabilities: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation is used by an endpoint to get the hostname from a device. The device shall
    * return its hostname configurations through the GetHostname command.
    */
-  readonly GetHostname: () => any
+  readonly GetHostname: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the hostname on a device. It shall be possible to set the device hostname
@@ -433,30 +434,30 @@ export interface IONVIFDeviceApi {
    * other string shall be considered as invalid strings. 
    * 
    */
-  readonly SetHostname: () => any
+  readonly SetHostname: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation controls whether the hostname is set manually or retrieved via DHCP.
    */
-  readonly SetHostnameFromDHCP: () => any
+  readonly SetHostnameFromDHCP: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets the DNS settings from a device. The device shall return its DNS
    * configurations through the GetDNS command.
    */
-  readonly GetDNS: () => any
+  readonly GetDNS: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the DNS settings on a device. It shall be possible to set the device DNS
    * configurations through the SetDNS command.
    */
-  readonly SetDNS: () => any
+  readonly SetDNS: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets the NTP settings from a device. If the device supports NTP, it shall be
    * possible to get the NTP server settings through the GetNTP command.
    */
-  readonly GetNTP: () => any
+  readonly GetNTP: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the NTP settings on a device. If the device supports NTP, it shall be
@@ -466,28 +467,28 @@ export interface IONVIFDeviceApi {
    * Changes to the NTP server list will not affect the clock mode DateTimeType. Use SetSystemDateAndTime to activate NTP operation.
    * 
    */
-  readonly SetNTP: () => any
+  readonly SetNTP: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets the dynamic DNS settings from a device. If the device supports dynamic
    * DNS as specified in [RFC 2136] and [RFC 4702], it shall be possible to get the type, name
    * and TTL through the GetDynamicDNS command.
    */
-  readonly GetDynamicDNS: () => any
+  readonly GetDynamicDNS: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the dynamic DNS settings on a device. If the device supports dynamic
    * DNS as specified in [RFC 2136] and [RFC 4702], it shall be possible to set the type, name
    * and TTL through the SetDynamicDNS command.
    */
-  readonly SetDynamicDNS: () => any
+  readonly SetDynamicDNS: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets the network interface configuration from a device. The device shall
    * support return of network interface configuration settings as defined by the NetworkInterface
    * type through the GetNetworkInterfaces command.
    */
-  readonly GetNetworkInterfaces: () => any
+  readonly GetNetworkInterfaces: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the network interface configuration on a device. The device shall support
@@ -497,31 +498,31 @@ export interface IONVIFDeviceApi {
    * its IEEE 802.11 configuration if the IEEE 802.11 configuration element isn’t present in the
    * request.
    */
-  readonly SetNetworkInterfaces: () => any
+  readonly SetNetworkInterfaces: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets defined network protocols from a device. The device shall support the
    * GetNetworkProtocols command returning configured network protocols.
    */
-  readonly GetNetworkProtocols: () => any
+  readonly GetNetworkProtocols: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation configures defined network protocols on a device. The device shall support
    * configuration of defined network protocols through the SetNetworkProtocols command.
    */
-  readonly SetNetworkProtocols: () => any
+  readonly SetNetworkProtocols: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets the default gateway settings from a device. The device shall support the
    * GetNetworkDefaultGateway command returning configured default gateway address(es).
    */
-  readonly GetNetworkDefaultGateway: () => any
+  readonly GetNetworkDefaultGateway: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the default gateway settings on a device. The device shall support
    * configuration of default gateway through the SetNetworkDefaultGateway command.
    */
-  readonly SetNetworkDefaultGateway: () => any
+  readonly SetNetworkDefaultGateway: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets the zero-configuration from a device. If the device supports dynamic IP
@@ -529,19 +530,19 @@ export interface IONVIFDeviceApi {
    * address and status through the GetZeroConfiguration command.
    * Devices supporting zero configuration on more than one interface shall use the extension to list the additional interface settings.
    */
-  readonly GetZeroConfiguration: () => any
+  readonly GetZeroConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the zero-configuration. Use GetCapalities to get if zero-zero-configuration is supported or not.
    */
-  readonly SetZeroConfiguration: () => any
+  readonly SetZeroConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets the IP address filter settings from a device. If the device supports device
    * access control based on IP filtering rules (denied or accepted ranges of IP addresses), the
    * device shall support the GetIPAddressFilter command.
    */
-  readonly GetIPAddressFilter: () => any
+  readonly GetIPAddressFilter: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the IP address filter settings on a device. If the device supports device
@@ -549,21 +550,21 @@ export interface IONVIFDeviceApi {
    * device shall support configuration of IP filtering rules through the SetIPAddressFilter
    * command.
    */
-  readonly SetIPAddressFilter: () => any
+  readonly SetIPAddressFilter: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation adds an IP filter address to a device. If the device supports device access
    * control based on IP filtering rules (denied or accepted ranges of IP addresses), the device
    * shall support adding of IP filtering addresses through the AddIPAddressFilter command.
    */
-  readonly AddIPAddressFilter: () => any
+  readonly AddIPAddressFilter: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation deletes an IP filter address from a device. If the device supports device access
    * control based on IP filtering rules (denied or accepted ranges of IP addresses), the device
    * shall support deletion of IP filtering addresses through the RemoveIPAddressFilter command.
    */
-  readonly RemoveIPAddressFilter: () => any
+  readonly RemoveIPAddressFilter: () => IOnvifNetworkResponse<any>
 
   /**
    * Access to different services and sub-sets of services should be subject to access control. The
@@ -575,14 +576,14 @@ export interface IONVIFDeviceApi {
    * device supports access policy settings based on WS-Security authentication, then the device
    * shall support this command.
    */
-  readonly GetAccessPolicy: () => any
+  readonly GetAccessPolicy: () => IOnvifNetworkResponse<any>
 
   /**
    * This command sets the device access security policy (for more details on the access security
    * policy see the Get command). If the device supports access policy settings
    * based on WS-Security authentication, then the device shall support this command.
    */
-  readonly SetAccessPolicy: () => any
+  readonly SetAccessPolicy: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation generates a private/public key pair and also can create a self-signed device
@@ -595,7 +596,7 @@ export interface IONVIFDeviceApi {
    * chosen by the certificate generation requester or by the device (in case that no ID value is
    * given).
    */
-  readonly CreateCertificate: () => any
+  readonly CreateCertificate: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets all device server certificates (including self-signed) for the purpose of TLS
@@ -606,21 +607,21 @@ export interface IONVIFDeviceApi {
    * certificates shall be encoded using ASN.1 [X.681], [X.682], [X.683] DER [X.690] encoding
    * rules.
    */
-  readonly GetCertificates: () => any
+  readonly GetCertificates: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation is specific to TLS functionality. This operation gets the status
    * (enabled/disabled) of the device TLS server certificates. A device that supports TLS shall
    * support this command.
    */
-  readonly GetCertificatesStatus: () => any
+  readonly GetCertificatesStatus: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation is specific to TLS functionality. This operation sets the status (enable/disable)
    * of the device TLS server certificates. A device that supports TLS shall support this command.
    * Typically only one device server certificate is allowed to be enabled at a time.
    */
-  readonly SetCertificatesStatus: () => any
+  readonly SetCertificatesStatus: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation deletes a certificate or multiple certificates. The device MAY also delete a
@@ -629,7 +630,7 @@ export interface IONVIFDeviceApi {
    * certificates through this command. Either all certificates are deleted successfully or a fault
    * message shall be returned without deleting any certificate.
    */
-  readonly DeleteCertificates: () => any
+  readonly DeleteCertificates: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation requests a PKCS #10 certificate signature request from the device. The
@@ -641,7 +642,7 @@ export interface IONVIFDeviceApi {
    * A device that support onboard key pair generation that supports either TLS or IEEE 802.1X
    * using client certificate shall support this command.
    */
-  readonly GetPkcs10Request: () => any
+  readonly GetPkcs10Request: () => IOnvifNetworkResponse<any>
 
   /**
    * TLS server certificate(s) or IEEE 802.1X client certificate(s) created using the PKCS#10
@@ -659,39 +660,39 @@ export interface IONVIFDeviceApi {
    * This command is applicable to any device type, although the parameter name is called for
    * historical reasons NVTCertificate.
    */
-  readonly LoadCertificates: () => any
+  readonly LoadCertificates: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation is specific to TLS functionality. This operation gets the status
    * (enabled/disabled) of the device TLS client authentication. A device that supports TLS shall
    * support this command.
    */
-  readonly GetClientCertificateMode: () => any
+  readonly GetClientCertificateMode: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation is specific to TLS functionality. This operation sets the status
    * (enabled/disabled) of the device TLS client authentication. A device that supports TLS shall
    * support this command.
    */
-  readonly SetClientCertificateMode: () => any
+  readonly SetClientCertificateMode: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets a list of all available relay outputs and their settings.
    * This method has been depricated with version 2.0. Refer to the DeviceIO service.
    */
-  readonly GetRelayOutputs: () => any
+  readonly GetRelayOutputs: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the settings of a relay output.
    * This method has been depricated with version 2.0. Refer to the DeviceIO service.
    */
-  readonly SetRelayOutputSettings: () => any
+  readonly SetRelayOutputSettings: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation sets the state of a relay output.
    * This method has been depricated with version 2.0. Refer to the DeviceIO service.
    */
-  readonly SetRelayOutputState: () => any
+  readonly SetRelayOutputState: () => IOnvifNetworkResponse<any>
 
   /**
    * Manage auxiliary commands supported by a device, such as controlling an Infrared (IR) lamp, 
@@ -712,7 +713,7 @@ export interface IONVIFDeviceApi {
    * 
    * A device that indicates auxiliary service capability shall support this command.
    */
-  readonly SendAuxiliaryCommand: () => any
+  readonly SendAuxiliaryCommand: () => IOnvifNetworkResponse<any>
 
   /**
    * CA certificates will be loaded into a device and be used for the sake of following two cases.
@@ -722,7 +723,7 @@ export interface IONVIFDeviceApi {
    * authentication or IEEE 802.1X shall support this command and the returned certificates shall
    * be encoded using ASN.1 [X.681], [X.682], [X.683] DER [X.690] encoding rules.
    */
-  readonly GetCACertificates: () => any
+  readonly GetCACertificates: () => IOnvifNetworkResponse<any>
 
   /**
    * There might be some cases that a Certificate Authority or some other equivalent creates a
@@ -739,7 +740,7 @@ export interface IONVIFDeviceApi {
    * pair generation MAY support this command. The security policy of a device that supports this
    * operation should make sure that the private key is sufficiently protected.
    */
-  readonly LoadCertificateWithPrivateKey: () => any
+  readonly LoadCertificateWithPrivateKey: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation requests the information of a certificate specified by certificate ID. The device
@@ -749,7 +750,7 @@ export interface IONVIFDeviceApi {
    * specified certificate.
    * A device that supports either TLS or IEEE 802.1X should support this command.
    */
-  readonly GetCertificateInformation: () => any
+  readonly GetCertificateInformation: () => IOnvifNetworkResponse<any>
 
   /**
    * This command is used when it is necessary to load trusted CA certificates or trusted root
@@ -762,7 +763,7 @@ export interface IONVIFDeviceApi {
    * information in the certificate(s). Either all CA certificates are loaded successfully or a fault
    * message shall be returned without loading any CA certificate.
    */
-  readonly LoadCACertificates: () => any
+  readonly LoadCACertificates: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation newly creates IEEE 802.1X configuration parameter set of the device. The
@@ -771,14 +772,14 @@ export interface IONVIFDeviceApi {
    * device should respond with 'ter:ReferenceToken ' error to indicate there is some configuration
    * conflict.
    */
-  readonly CreateDot1XConfiguration: () => any
+  readonly CreateDot1XConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * While the CreateDot1XConfiguration command is trying to create a new configuration
    * parameter set, this operation modifies existing IEEE 802.1X configuration parameter set of
    * the device. A device that support IEEE 802.1X shall support this command.
    */
-  readonly SetDot1XConfiguration: () => any
+  readonly SetDot1XConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets one IEEE 802.1X configuration parameter set from the device by
@@ -787,7 +788,7 @@ export interface IONVIFDeviceApi {
    * Regardless of whether the 802.1X method in the retrieved configuration has a password or
    * not, the device shall not include the Password element in the response.
    */
-  readonly GetDot1XConfiguration: () => any
+  readonly GetDot1XConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation gets all the existing IEEE 802.1X configuration parameter sets from the device.
@@ -797,32 +798,32 @@ export interface IONVIFDeviceApi {
    * Regardless of whether the 802.1X method in the retrieved configuration has a password or
    * not, the device shall not include the Password element in the response.
    */
-  readonly GetDot1XConfigurations: () => any
+  readonly GetDot1XConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation deletes an IEEE 802.1X configuration parameter set from the device. Which
    * configuration should be deleted is specified by the 'Dot1XConfigurationToken' in the request.
    * A device that support IEEE 802.1X shall support this command.
    */
-  readonly DeleteDot1XConfiguration: () => any
+  readonly DeleteDot1XConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation returns the IEEE802.11 capabilities. The device shall support
    * this operation.
    */
-  readonly GetDot11Capabilities: () => any
+  readonly GetDot11Capabilities: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation returns the status of a wireless network interface. The device shall support this
    * command.
    */
-  readonly GetDot11Status: () => any
+  readonly GetDot11Status: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation returns a lists of the wireless networks in range of the device. A device should
    * support this operation.
    */
-  readonly ScanAvailableDot11Networks: () => any
+  readonly ScanAvailableDot11Networks: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation is used to retrieve URIs from which system information may be downloaded
@@ -838,7 +839,7 @@ export interface IONVIFDeviceApi {
    * should make them available via HTTP GET. If it does, it shall support the GetSystemUris
    * command.
    */
-  readonly GetSystemUris: () => any
+  readonly GetSystemUris: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation initiates a firmware upgrade using the HTTP POST mechanism. The response
@@ -858,7 +859,7 @@ export interface IONVIFDeviceApi {
    * device, the HTTP POST response shall be “500 Internal Server Error”.
    * The value of the Content-Type header in the HTTP POST request shall be “application/octetstream”.
    */
-  readonly StartFirmwareUpgrade: () => any
+  readonly StartFirmwareUpgrade: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation initiates a system restore from backed up configuration data using the HTTP
@@ -878,14 +879,14 @@ export interface IONVIFDeviceApi {
    * device, the HTTP POST response shall be “500 Internal Server Error”.
    * The value of the Content-Type header in the HTTP POST request shall be “application/octetstream”.
    */
-  readonly StartSystemRestore: () => any
+  readonly StartSystemRestore: () => IOnvifNetworkResponse<any>
 
   /**
    * 
    * This operation lists all existing storage configurations for the device. 
    * 
    */
-  readonly GetStorageConfigurations: () => any
+  readonly GetStorageConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * 
@@ -893,49 +894,49 @@ export interface IONVIFDeviceApi {
    * The configuration data shall be created in the device and shall be persistent (remain after reboot).
    * 
    */
-  readonly CreateStorageConfiguration: () => any
+  readonly CreateStorageConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * 
    * This operation retrieves the Storage configuration associated with the given storage configuration token.
    * 
    */
-  readonly GetStorageConfiguration: () => any
+  readonly GetStorageConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * 
    * This operation modifies an existing Storage configuration.
    * 
    */
-  readonly SetStorageConfiguration: () => any
+  readonly SetStorageConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * 
    * This operation deletes the given storage configuration and configuration change shall always be persistent.
    * 
    */
-  readonly DeleteStorageConfiguration: () => any
+  readonly DeleteStorageConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * 
    * This operation lists all existing geo location configurations for the device. 
    * 
    */
-  readonly GetGeoLocation: () => any
+  readonly GetGeoLocation: () => IOnvifNetworkResponse<any>
 
   /**
    * 
    * This operation allows to modify one or more geo configuration entries.
    * 
    */
-  readonly SetGeoLocation: () => any
+  readonly SetGeoLocation: () => IOnvifNetworkResponse<any>
 
   /**
    * 
    * This operation deletes the given geo location entries.
    * 
    */
-  readonly DeleteGeoLocation: () => any
+  readonly DeleteGeoLocation: () => IOnvifNetworkResponse<any>
 }
 
 export const ONVIF_Device_API = (config: IDeviceConfig): IONVIFDeviceApi => {

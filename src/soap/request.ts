@@ -46,6 +46,8 @@ export interface ITransportPayloadXml {
   readonly status: number
 }
 
+export type IOnvifNetworkResponse<T> = Observable<IResult<T, ITransportPayloadXml>>
+
 // LOL
 const cleanColon = (str: string) => str.replace(/^.+:/, '')
 

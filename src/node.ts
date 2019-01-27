@@ -16,10 +16,10 @@ const device = createManagedDeviceInNode({
   username: 'admin'
 })
 
-device.api.ptz.AbsoluteMove()
-  .subscribe((res: any) => {
+device.api.media.GetAudioOutputs()
+  .subscribe(res=> {
     res.match({
       ok: console.log,
-      fail: (r: any) => console.log(r.status, r.statusMessage)
+      fail: r => console.log(r.status, r.statusMessage)
     })
   })

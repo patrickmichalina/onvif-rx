@@ -158,40 +158,41 @@ import { SetOSD } from './SetOSD'
 import { CreateOSD } from './CreateOSD'
 import { DeleteOSD } from './DeleteOSD'
 import { IDeviceConfig } from '../../config'
+import { IOnvifNetworkResponse } from '../../soap/request'
 
 export interface IONVIFMediaApi {
   
   /**
    * Returns the capabilities of the media service. The result is returned in a typed answer.
    */
-  readonly GetServiceCapabilities: () => any
+  readonly GetServiceCapabilities: () => IOnvifNetworkResponse<any>
 
   /**
    * This command lists all available physical video inputs of the device.
    */
-  readonly GetVideoSources: () => any
+  readonly GetVideoSources: () => IOnvifNetworkResponse<any>
 
   /**
    * This command lists all available physical audio inputs of the device.
    */
-  readonly GetAudioSources: () => any
+  readonly GetAudioSources: () => IOnvifNetworkResponse<any>
 
   /**
    * This command lists all available physical audio outputs of the device.
    */
-  readonly GetAudioOutputs: () => any
+  readonly GetAudioOutputs: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation creates a new empty media profile. The media profile shall be created in the
    * device and shall be persistent (remain after reboot). A created profile shall be deletable and a device shall set the “fixed” attribute to false in the
    * returned Profile.
    */
-  readonly CreateProfile: () => any
+  readonly CreateProfile: () => IOnvifNetworkResponse<any>
 
   /**
    * If the profile token is already known, a profile can be fetched through the GetProfile command.
    */
-  readonly GetProfile: () => any
+  readonly GetProfile: () => IOnvifNetworkResponse<any>
 
   /**
    * Any endpoint can ask for the existing media profiles of a device using the GetProfiles
@@ -199,7 +200,7 @@ export interface IONVIFMediaApi {
    * command. This command lists all configured profiles in a device. The client does not need to
    * know the media profile in order to use the command.
    */
-  readonly GetProfiles: () => any
+  readonly GetProfiles: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation adds a VideoEncoderConfiguration to an existing media profile. If a
@@ -208,26 +209,26 @@ export interface IONVIFMediaApi {
    * support streaming video data of such a profile.
    * 
    */
-  readonly AddVideoEncoderConfiguration: () => any
+  readonly AddVideoEncoderConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation removes a VideoEncoderConfiguration from an existing media profile. If the
    * media profile does not contain a VideoEncoderConfiguration, the operation has no effect. The removal shall be persistent.
    */
-  readonly RemoveVideoEncoderConfiguration: () => any
+  readonly RemoveVideoEncoderConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation adds a VideoSourceConfiguration to an existing media profile. If such a
    * configuration exists in the media profile, it will be replaced. The change shall be persistent.
    */
-  readonly AddVideoSourceConfiguration: () => any
+  readonly AddVideoSourceConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation removes a VideoSourceConfiguration from an existing media profile. If the
    * media profile does not contain a VideoSourceConfiguration, the operation has no effect. The removal shall be persistent. Video source configurations should only be removed after removing a
    * VideoEncoderConfiguration from the media profile.
    */
-  readonly RemoveVideoSourceConfiguration: () => any
+  readonly RemoveVideoSourceConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation adds an AudioEncoderConfiguration to an existing media profile. If a 
@@ -236,20 +237,20 @@ export interface IONVIFMediaApi {
    * support streaming audio data of such a profile.
    * 
    */
-  readonly AddAudioEncoderConfiguration: () => any
+  readonly AddAudioEncoderConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation removes an AudioEncoderConfiguration from an existing media profile. If the
    * media profile does not contain an AudioEncoderConfiguration, the operation has no effect.
    * The removal shall be persistent.
    */
-  readonly RemoveAudioEncoderConfiguration: () => any
+  readonly RemoveAudioEncoderConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation adds an AudioSourceConfiguration to an existing media profile. If a
    * configuration exists in the media profile, it will be replaced. The change shall be persistent.
    */
-  readonly AddAudioSourceConfiguration: () => any
+  readonly AddAudioSourceConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation removes an AudioSourceConfiguration from an existing media profile. If the
@@ -257,7 +258,7 @@ export interface IONVIFMediaApi {
    * removal shall be persistent. Audio source configurations should only be removed after removing an
    * AudioEncoderConfiguration from the media profile.
    */
-  readonly RemoveAudioSourceConfiguration: () => any
+  readonly RemoveAudioSourceConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation adds a PTZConfiguration to an existing media profile. If a configuration exists
@@ -265,13 +266,13 @@ export interface IONVIFMediaApi {
    * contain PTZ status (in the metadata), and that the media profile can be used for controlling
    * PTZ movement.
    */
-  readonly AddPTZConfiguration: () => any
+  readonly AddPTZConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation removes a PTZConfiguration from an existing media profile. If the media profile
    * does not contain a PTZConfiguration, the operation has no effect. The removal shall be persistent.
    */
-  readonly RemovePTZConfiguration: () => any
+  readonly RemovePTZConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation adds a VideoAnalytics configuration to an existing media profile. If a
@@ -279,134 +280,134 @@ export interface IONVIFMediaApi {
    * profile can contain video analytics data (in the metadata) as defined by the submitted configuration reference. A profile containing only a video analytics configuration but no video source configuration is incomplete. Therefore, a client should first add a video source configuration to a profile before adding a video analytics configuration. The device can deny adding of a video analytics
    * configuration before a video source configuration.
    */
-  readonly AddVideoAnalyticsConfiguration: () => any
+  readonly AddVideoAnalyticsConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation removes a VideoAnalyticsConfiguration from an existing media profile. If the media profile does not contain a VideoAnalyticsConfiguration, the operation has no effect.
    * The removal shall be persistent.
    */
-  readonly RemoveVideoAnalyticsConfiguration: () => any
+  readonly RemoveVideoAnalyticsConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation adds a Metadata configuration to an existing media profile. If a configuration exists in the media profile, it will be replaced. The change shall be persistent. Adding a MetadataConfiguration to a Profile means that streams using that profile contain metadata. Metadata can consist of events, PTZ status, and/or video analytics data.
    */
-  readonly AddMetadataConfiguration: () => any
+  readonly AddMetadataConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation removes a MetadataConfiguration from an existing media profile. If the media profile does not contain a MetadataConfiguration, the operation has no effect. The removal shall be persistent.
    */
-  readonly RemoveMetadataConfiguration: () => any
+  readonly RemoveMetadataConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation adds an AudioOutputConfiguration to an existing media profile. If a configuration exists in the media profile, it will be replaced. The change shall be persistent.
    */
-  readonly AddAudioOutputConfiguration: () => any
+  readonly AddAudioOutputConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation removes an AudioOutputConfiguration from an existing media profile. If the media profile does not contain an AudioOutputConfiguration, the operation has no effect. The removal shall be persistent.
    */
-  readonly RemoveAudioOutputConfiguration: () => any
+  readonly RemoveAudioOutputConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation adds an AudioDecoderConfiguration to an existing media profile. If a configuration exists in the media profile, it shall be replaced. The change shall be persistent.
    */
-  readonly AddAudioDecoderConfiguration: () => any
+  readonly AddAudioDecoderConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation removes an AudioDecoderConfiguration from an existing media profile. If the media profile does not contain an AudioDecoderConfiguration, the operation has no effect. The removal shall be persistent.
    */
-  readonly RemoveAudioDecoderConfiguration: () => any
+  readonly RemoveAudioDecoderConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation deletes a profile. This change shall always be persistent. Deletion of a profile is only possible for non-fixed profiles
    */
-  readonly DeleteProfile: () => any
+  readonly DeleteProfile: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation lists all existing video source configurations for a device. The client need not know anything about the video source configurations in order to use the command.
    */
-  readonly GetVideoSourceConfigurations: () => any
+  readonly GetVideoSourceConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation lists all existing video encoder configurations of a device. This command lists all configured video encoder configurations in a device. The client need not know anything apriori about the video encoder configurations in order to use the command.
    */
-  readonly GetVideoEncoderConfigurations: () => any
+  readonly GetVideoEncoderConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation lists all existing audio source configurations of a device. This command lists all audio source configurations in a device. The client need not know anything apriori about the audio source configurations in order to use the command.
    */
-  readonly GetAudioSourceConfigurations: () => any
+  readonly GetAudioSourceConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation lists all existing device audio encoder configurations. The client need not know anything apriori about the audio encoder configurations in order to use the command.
    */
-  readonly GetAudioEncoderConfigurations: () => any
+  readonly GetAudioEncoderConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation lists all video analytics configurations of a device. This command lists all configured video analytics in a device. The client need not know anything apriori about the video analytics in order to use the command.
    */
-  readonly GetVideoAnalyticsConfigurations: () => any
+  readonly GetVideoAnalyticsConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation lists all existing metadata configurations. The client need not know anything apriori about the metadata in order to use the command.
    */
-  readonly GetMetadataConfigurations: () => any
+  readonly GetMetadataConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This command lists all existing AudioOutputConfigurations of a device. The NVC need not know anything apriori about the audio configurations to use this command.
    */
-  readonly GetAudioOutputConfigurations: () => any
+  readonly GetAudioOutputConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This command lists all existing AudioDecoderConfigurations of a device. The NVC need not know anything apriori about the audio decoder configurations in order to
    * use this command.
    */
-  readonly GetAudioDecoderConfigurations: () => any
+  readonly GetAudioDecoderConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * If the video source configuration token is already known, the video source configuration can be fetched through the GetVideoSourceConfiguration command.
    */
-  readonly GetVideoSourceConfiguration: () => any
+  readonly GetVideoSourceConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * If the video encoder configuration token is already known, the encoder configuration can be fetched through the GetVideoEncoderConfiguration command.
    */
-  readonly GetVideoEncoderConfiguration: () => any
+  readonly GetVideoEncoderConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * The GetAudioSourceConfiguration command fetches the audio source configurations if the audio source configuration token is already known. An
    */
-  readonly GetAudioSourceConfiguration: () => any
+  readonly GetAudioSourceConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * The GetAudioEncoderConfiguration command fetches the encoder configuration if the audio encoder configuration token is known.
    */
-  readonly GetAudioEncoderConfiguration: () => any
+  readonly GetAudioEncoderConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * The GetVideoAnalyticsConfiguration command fetches the video analytics configuration if the video analytics token is known.
    */
-  readonly GetVideoAnalyticsConfiguration: () => any
+  readonly GetVideoAnalyticsConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * The GetMetadataConfiguration command fetches the metadata configuration if the metadata token is known.
    */
-  readonly GetMetadataConfiguration: () => any
+  readonly GetMetadataConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * If the audio output configuration token is already known, the output configuration can be fetched through the GetAudioOutputConfiguration command.
    */
-  readonly GetAudioOutputConfiguration: () => any
+  readonly GetAudioOutputConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * If the audio decoder configuration token is already known, the decoder configuration can be fetched through the GetAudioDecoderConfiguration command.
    */
-  readonly GetAudioDecoderConfiguration: () => any
+  readonly GetAudioDecoderConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation lists all the video encoder configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddVideoEncoderConfiguration command on the media profile. The result will vary depending on the capabilities, configurations and settings in the device.
    */
-  readonly GetCompatibleVideoEncoderConfigurations: () => any
+  readonly GetCompatibleVideoEncoderConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation requests all the video source configurations of the device that are compatible
@@ -414,48 +415,48 @@ export interface IONVIFMediaApi {
    * parameter for the AddVideoSourceConfiguration command on the media profile. The result
    * will vary depending on the capabilities, configurations and settings in the device.
    */
-  readonly GetCompatibleVideoSourceConfigurations: () => any
+  readonly GetCompatibleVideoSourceConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation requests all audio encoder configurations of a device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddAudioSourceConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
    */
-  readonly GetCompatibleAudioEncoderConfigurations: () => any
+  readonly GetCompatibleAudioEncoderConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation requests all audio source configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddAudioEncoderConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
    */
-  readonly GetCompatibleAudioSourceConfigurations: () => any
+  readonly GetCompatibleAudioSourceConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation requests all video analytic configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddVideoAnalyticsConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
    */
-  readonly GetCompatibleVideoAnalyticsConfigurations: () => any
+  readonly GetCompatibleVideoAnalyticsConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation requests all the metadata configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddMetadataConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
    */
-  readonly GetCompatibleMetadataConfigurations: () => any
+  readonly GetCompatibleMetadataConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This command lists all audio output configurations of a device that are compatible with a certain media profile. Each returned configuration shall be a valid input for the 
    * AddAudioOutputConfiguration command.
    */
-  readonly GetCompatibleAudioOutputConfigurations: () => any
+  readonly GetCompatibleAudioOutputConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation lists all the audio decoder configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddAudioDecoderConfiguration command on the media profile.
    */
-  readonly GetCompatibleAudioDecoderConfigurations: () => any
+  readonly GetCompatibleAudioDecoderConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation modifies a video source configuration. The ForcePersistence flag indicates if the changes shall remain after reboot of the device. Running streams using this configuration may be immediately updated according to the new settings. The changes are not guaranteed to take effect unless the client requests a new stream URI and restarts any affected stream. NVC methods for changing a running stream are out of scope for this specification.
    */
-  readonly SetVideoSourceConfiguration: () => any
+  readonly SetVideoSourceConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation modifies a video encoder configuration. The ForcePersistence flag indicates if the changes shall remain after reboot of the device. Changes in the Multicast settings shall always be persistent. Running streams using this configuration may be immediately updated according to the new settings. The changes are not guaranteed to take effect unless the client requests a new stream URI and restarts any affected stream. NVC methods for changing a running stream are out of scope for this specification. SessionTimeout is provided as a hint for keeping rtsp session by a device. If necessary the device may adapt parameter values for SessionTimeout elements without returning an error. For the time between keep alive calls the client shall adhere to the timeout value signaled via RTSP.
    */
-  readonly SetVideoEncoderConfiguration: () => any
+  readonly SetVideoEncoderConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation modifies an audio source configuration. The ForcePersistence flag indicates if
@@ -464,7 +465,7 @@ export interface IONVIFMediaApi {
    * to take effect unless the client requests a new stream URI and restarts any affected stream
    * NVC methods for changing a running stream are out of scope for this specification.
    */
-  readonly SetAudioSourceConfiguration: () => any
+  readonly SetAudioSourceConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation modifies an audio encoder configuration. The ForcePersistence flag indicates if
@@ -473,7 +474,7 @@ export interface IONVIFMediaApi {
    * requests a new stream URI and restarts any affected streams. NVC methods for changing a
    * running stream are out of scope for this specification.
    */
-  readonly SetAudioEncoderConfiguration: () => any
+  readonly SetAudioEncoderConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * A video analytics configuration is modified using this command. The ForcePersistence flag
@@ -483,7 +484,7 @@ export interface IONVIFMediaApi {
    * the notifications produced by analytics engine and rule engine which reference the very same
    * video analytics configuration token.
    */
-  readonly SetVideoAnalyticsConfiguration: () => any
+  readonly SetVideoAnalyticsConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation modifies a metadata configuration. The ForcePersistence flag indicates if the
@@ -493,19 +494,19 @@ export interface IONVIFMediaApi {
    * requests a new stream URI and restarts any affected streams. NVC methods for changing a
    * running stream are out of scope for this specification.
    */
-  readonly SetMetadataConfiguration: () => any
+  readonly SetMetadataConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation modifies an audio output configuration. The ForcePersistence flag indicates if
    * the changes shall remain after reboot of the device.
    */
-  readonly SetAudioOutputConfiguration: () => any
+  readonly SetAudioOutputConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation modifies an audio decoder configuration. The ForcePersistence flag indicates if
    * the changes shall remain after reboot of the device.
    */
-  readonly SetAudioDecoderConfiguration: () => any
+  readonly SetAudioDecoderConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation returns the available options  (supported values and ranges for video source configuration parameters) when the video source parameters are
@@ -513,7 +514,7 @@ export interface IONVIFMediaApi {
    * particular configuration. If a media profile is specified, the options shall be compatible with
    * that media profile.
    */
-  readonly GetVideoSourceConfigurationOptions: () => any
+  readonly GetVideoSourceConfigurationOptions: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation returns the available options (supported values and ranges for video encoder 
@@ -525,7 +526,7 @@ export interface IONVIFMediaApi {
    * compatible with that media profile. If no tokens are specified, the options shall be considered generic for the device.
    * 
    */
-  readonly GetVideoEncoderConfigurationOptions: () => any
+  readonly GetVideoEncoderConfigurationOptions: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation returns the available options (supported values and ranges for audio source configuration parameters) when the audio source parameters are
@@ -533,36 +534,36 @@ export interface IONVIFMediaApi {
    * particular configuration. If a media profile is specified, the options shall be compatible with
    * that media profile.
    */
-  readonly GetAudioSourceConfigurationOptions: () => any
+  readonly GetAudioSourceConfigurationOptions: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation returns the available options  (supported values and ranges for audio encoder configuration parameters) when the audio encoder parameters are
    * reconfigured.
    */
-  readonly GetAudioEncoderConfigurationOptions: () => any
+  readonly GetAudioEncoderConfigurationOptions: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation returns the available options (supported values and ranges for metadata configuration parameters) for changing the metadata configuration.
    */
-  readonly GetMetadataConfigurationOptions: () => any
+  readonly GetMetadataConfigurationOptions: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation returns the available options (supported values and ranges for audio output configuration parameters) for configuring an audio output.
    */
-  readonly GetAudioOutputConfigurationOptions: () => any
+  readonly GetAudioOutputConfigurationOptions: () => IOnvifNetworkResponse<any>
 
   /**
    * This command list the audio decoding capabilities for a given profile and configuration of a
    * device.
    */
-  readonly GetAudioDecoderConfigurationOptions: () => any
+  readonly GetAudioDecoderConfigurationOptions: () => IOnvifNetworkResponse<any>
 
   /**
    * The GetGuaranteedNumberOfVideoEncoderInstances command can be used to request the
    * minimum number of guaranteed video encoder instances (applications) per Video Source
    * Configuration.
    */
-  readonly GetGuaranteedNumberOfVideoEncoderInstances: () => any
+  readonly GetGuaranteedNumberOfVideoEncoderInstances: () => IOnvifNetworkResponse<any>
 
   /**
    * This operation requests a URI that can be used to initiate a live media stream using RTSP as
@@ -581,7 +582,7 @@ export interface IONVIFMediaApi {
    * For full compatibility with other ONVIF services a device should not generate Uris longer than
    * 128 octets.
    */
-  readonly GetStreamUri: () => any
+  readonly GetStreamUri: () => IOnvifNetworkResponse<any>
 
   /**
    * This command starts multicast streaming using a specified media profile of a device.
@@ -591,12 +592,12 @@ export interface IONVIFMediaApi {
    * VideoEncoderConfiguration, AudioEncoderConfiguration and MetadataConfiguration
    * respectively.
    */
-  readonly StartMulticastStreaming: () => any
+  readonly StartMulticastStreaming: () => IOnvifNetworkResponse<any>
 
   /**
    * This command stop multicast streaming using a specified media profile of a device
    */
-  readonly StopMulticastStreaming: () => any
+  readonly StopMulticastStreaming: () => IOnvifNetworkResponse<any>
 
   /**
    * Synchronization points allow clients to decode and correctly use all data after the
@@ -611,7 +612,7 @@ export interface IONVIFMediaApi {
    * If a PTZ metadata stream is associated to the profile,
    * the PTZ position shall be repeated within the metadata stream.
    */
-  readonly SetSynchronizationPoint: () => any
+  readonly SetSynchronizationPoint: () => IOnvifNetworkResponse<any>
 
   /**
    * A client uses the GetSnapshotUri command to obtain a JPEG snapshot from the
@@ -623,47 +624,47 @@ export interface IONVIFMediaApi {
    * (like resolution or quality) may be taken from the profile if suitable. The provided
    * image will be updated automatically and independent from calls to GetSnapshotUri.
    */
-  readonly GetSnapshotUri: () => any
+  readonly GetSnapshotUri: () => IOnvifNetworkResponse<any>
 
   /**
    * A device returns the information for current video source mode and settable video source modes of specified video source. A device that indicates a capability of  VideoSourceModes shall support this command.
    */
-  readonly GetVideoSourceModes: () => any
+  readonly GetVideoSourceModes: () => IOnvifNetworkResponse<any>
 
   /**
    * SetVideoSourceMode changes the media profile structure relating to video source for the specified video source mode. A device that indicates a capability of VideoSourceModes shall support this command. The behavior after changing the mode is not defined in this specification.
    */
-  readonly SetVideoSourceMode: () => any
+  readonly SetVideoSourceMode: () => IOnvifNetworkResponse<any>
 
   /**
    * Get the OSDs.
    */
-  readonly GetOSDs: () => any
+  readonly GetOSDs: () => IOnvifNetworkResponse<any>
 
   /**
    * Get the OSD.
    */
-  readonly GetOSD: () => any
+  readonly GetOSD: () => IOnvifNetworkResponse<any>
 
   /**
    * Get the OSD Options.
    */
-  readonly GetOSDOptions: () => any
+  readonly GetOSDOptions: () => IOnvifNetworkResponse<any>
 
   /**
    * Set the OSD
    */
-  readonly SetOSD: () => any
+  readonly SetOSD: () => IOnvifNetworkResponse<any>
 
   /**
    * Create the OSD.
    */
-  readonly CreateOSD: () => any
+  readonly CreateOSD: () => IOnvifNetworkResponse<any>
 
   /**
    * Delete the OSD.
    */
-  readonly DeleteOSD: () => any
+  readonly DeleteOSD: () => IOnvifNetworkResponse<any>
 }
 
 export const ONVIF_Media_API = (config: IDeviceConfig): IONVIFMediaApi => {

@@ -56,13 +56,14 @@ import { OperatePresetTour } from './OperatePresetTour'
 import { RemovePresetTour } from './RemovePresetTour'
 import { GetCompatibleConfigurations } from './GetCompatibleConfigurations'
 import { IDeviceConfig } from '../../config'
+import { IOnvifNetworkResponse } from '../../soap/request'
 
 export interface IONVIFPTZApi {
   
   /**
    * Returns the capabilities of the PTZ service. The result is returned in a typed answer.
    */
-  readonly GetServiceCapabilities: () => any
+  readonly GetServiceCapabilities: () => IOnvifNetworkResponse<any>
 
   /**
    * 
@@ -74,14 +75,14 @@ export interface IONVIFPTZApi {
    * PTZ Node is referenced either by its name or by its reference token. 
    *       
    */
-  readonly GetNodes: () => any
+  readonly GetNodes: () => IOnvifNetworkResponse<any>
 
   /**
    * Get a specific PTZ Node identified by a reference
    *         token or a name.
    *   
    */
-  readonly GetNode: () => any
+  readonly GetNode: () => IOnvifNetworkResponse<any>
 
   /**
    * Get a specific PTZconfiguration from the device, identified by its reference token or name.
@@ -102,7 +103,7 @@ export interface IONVIFPTZApi {
    * accordingly.
    * 
    */
-  readonly GetConfiguration: () => any
+  readonly GetConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * 
@@ -124,14 +125,14 @@ export interface IONVIFPTZApi {
    * accordingly.
    * 
    */
-  readonly GetConfigurations: () => any
+  readonly GetConfigurations: () => IOnvifNetworkResponse<any>
 
   /**
    * 
    *         Set/update a existing PTZConfiguration on the device.
    *       
    */
-  readonly SetConfiguration: () => any
+  readonly SetConfiguration: () => IOnvifNetworkResponse<any>
 
   /**
    * 
@@ -143,7 +144,7 @@ export interface IONVIFPTZApi {
    * which Timeouts are accepted by the PTZ Node.
    * 
    */
-  readonly GetConfigurationOptions: () => any
+  readonly GetConfigurationOptions: () => IOnvifNetworkResponse<any>
 
   /**
    * 
@@ -153,7 +154,7 @@ export interface IONVIFPTZApi {
    *         if the AuxiliarySupported element of the PTZNode is true
    *       
    */
-  readonly SendAuxiliaryCommand: () => any
+  readonly SendAuxiliaryCommand: () => IOnvifNetworkResponse<any>
 
   /**
    * 
@@ -161,7 +162,7 @@ export interface IONVIFPTZApi {
    *         in the selected profile. The operation is supported if there is support
    *         for at least on PTZ preset by the PTZNode.
    */
-  readonly GetPresets: () => any
+  readonly GetPresets: () => IOnvifNetworkResponse<any>
 
   /**
    * 
@@ -175,7 +176,7 @@ export interface IONVIFPTZApi {
    * The device MAY internally save additional states such as imaging properties in the PTZ
    * Preset which then should be recalled in the GotoPreset operation.      
    */
-  readonly SetPreset: () => any
+  readonly SetPreset: () => IOnvifNetworkResponse<any>
 
   /**
    * 
@@ -187,7 +188,7 @@ export interface IONVIFPTZApi {
    *         selected profile.
    *       
    */
-  readonly RemovePreset: () => any
+  readonly RemovePreset: () => IOnvifNetworkResponse<any>
 
   /**
    * 
@@ -195,13 +196,13 @@ export interface IONVIFPTZApi {
    *         PTZNode in the selected profile. The operation is supported if there is
    *         support for at least on PTZ preset by the PTZNode.
    */
-  readonly GotoPreset: () => any
+  readonly GotoPreset: () => IOnvifNetworkResponse<any>
 
   /**
    * 
    *         Operation to move the PTZ device to it's "home" position. The operation is supported if the HomeSupported element in the PTZNode is true.
    */
-  readonly GotoHomePosition: () => any
+  readonly GotoHomePosition: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation to save current position as the home position.
@@ -209,12 +210,12 @@ export interface IONVIFPTZApi {
    * cannot be overwritten. If the SetHomePosition is successful, it is possible to recall the
    * Home Position with the GotoHomePosition command.
    */
-  readonly SetHomePosition: () => any
+  readonly SetHomePosition: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation for continuous Pan/Tilt and Zoom movements. The operation is supported if the PTZNode supports at least one continuous Pan/Tilt or Zoom space. If the space argument is omitted, the default space set by the PTZConfiguration will be used.
    */
-  readonly ContinuousMove: () => any
+  readonly ContinuousMove: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation for Relative Pan/Tilt and Zoom Move. The operation is supported if the PTZNode supports at least one relative Pan/Tilt or Zoom space. 
@@ -223,14 +224,14 @@ export interface IONVIFPTZApi {
    * If the speed argument is omitted, the default speed set by the PTZConfiguration will be used.
    * 
    */
-  readonly RelativeMove: () => any
+  readonly RelativeMove: () => IOnvifNetworkResponse<any>
 
   /**
    * 
    * Operation to request PTZ status for the Node in the
    * selected profile.
    */
-  readonly GetStatus: () => any
+  readonly GetStatus: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation to move pan,tilt or zoom to a absolute destination. 
@@ -239,7 +240,7 @@ export interface IONVIFPTZApi {
    * If the speed argument is omitted, the default speed set by the PTZConfiguration will be used.
    * 
    */
-  readonly AbsoluteMove: () => any
+  readonly AbsoluteMove: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation to move pan,tilt or zoom to point to a destination based on the geolocation of the target. 
@@ -250,48 +251,48 @@ export interface IONVIFPTZApi {
    * by the device to automatically determine the best zoom level to show the target.
    * 
    */
-  readonly GeoMove: () => any
+  readonly GeoMove: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation to stop ongoing pan, tilt and zoom movements of absolute relative and continuous type.
    * If no stop argument for pan, tilt or zoom is set, the device will stop all ongoing pan, tilt and zoom movements.
    */
-  readonly Stop: () => any
+  readonly Stop: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation to request PTZ preset tours in the selected media profiles.
    */
-  readonly GetPresetTours: () => any
+  readonly GetPresetTours: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation to request a specific PTZ preset tour in the selected media profile.
    */
-  readonly GetPresetTour: () => any
+  readonly GetPresetTour: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation to request available options to configure PTZ preset tour.
    */
-  readonly GetPresetTourOptions: () => any
+  readonly GetPresetTourOptions: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation to create a preset tour for the selected media profile.
    */
-  readonly CreatePresetTour: () => any
+  readonly CreatePresetTour: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation to modify a preset tour for the selected media profile.
    */
-  readonly ModifyPresetTour: () => any
+  readonly ModifyPresetTour: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation to perform specific operation on the preset tour in selected media profile.
    */
-  readonly OperatePresetTour: () => any
+  readonly OperatePresetTour: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation to delete a specific preset tour from the media profile.
    */
-  readonly RemovePresetTour: () => any
+  readonly RemovePresetTour: () => IOnvifNetworkResponse<any>
 
   /**
    * Operation to get all available PTZConfigurations that can be added to the referenced media profile. 
@@ -300,7 +301,7 @@ export interface IONVIFPTZApi {
    * PTZConfiguration entities returned by this operation shall not fail on adding them to the referenced media profile.
    * 
    */
-  readonly GetCompatibleConfigurations: () => any
+  readonly GetCompatibleConfigurations: () => IOnvifNetworkResponse<any>
 }
 
 export const ONVIF_PTZ_API = (config: IDeviceConfig): IONVIFPTZApi => {

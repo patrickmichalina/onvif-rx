@@ -22,6 +22,7 @@ const genIndexApi = (name: string) => (exp: string) => (imports: string) => (fun
 
 ${imports}
 import { IDeviceConfig } from '../../config'
+import { IOnvifNetworkResponse } from '../../soap/request'
 
 export interface IONVIF${name}Api {
   ${iface}
@@ -104,7 +105,7 @@ const gen = (wsdl: WSDL | string) => {
   /**
    * ${a.comments.replace(/\n \* /g, '\n   * ')}
    */
-  readonly ${a.name}: () => any`).join('\n')
+  readonly ${a.name}: () => IOnvifNetworkResponse<any>`).join('\n')
 
 
           return {
