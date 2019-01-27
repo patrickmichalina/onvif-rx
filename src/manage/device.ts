@@ -197,11 +197,27 @@ export interface IMediaApi {
 }
 
 export interface IOnvifApi {
+
+  /**
+   * 
+   * https://www.onvif.org/ver10/device/wsdl/devicemgmt.wsdl
+   */
   readonly device: IDeviceApi
+
+  /**
+   * Web service interface for configuration of the so called media profiles. 
+   * These include the selection of Video and Audio inputs as well as PTZ and Analytics
+   * modes and the configuration of Video and Audio encoders. 
+   * 
+   * http://www.onvif.org/ver10/media/wsdl
+   */
   readonly media: IMediaApi
 }
 
 export interface IManagedDevice {
+  /**
+   * ONVIF standard API
+   */
   readonly api: IOnvifApi
 }
 
