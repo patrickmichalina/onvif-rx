@@ -4,7 +4,9 @@ import { Observable } from 'rxjs'
 import { map, tap } from 'rxjs/operators'
 import { createUserToken } from './auth'
 
+// lol
 const cleanColon = (str: string) => str.replace(/^.+:/, '')
+
 export interface ITransportPayloadXml {
   readonly body: Document
   readonly statusMessage: string
@@ -55,16 +57,6 @@ const deep =
                   : [deep(collectionKeys)(curr)]
                 : deep(collectionKeys)(curr)
               : propertyTypeConverter(curr.textContent)
-
-            // [key]: curr.attributes.length
-            //   ? parseAttributes(curr.attributes)
-            //   : curr.childNodes.length > 1
-            //     ? isCollection
-            //       ? Array.isArray(baseVal)
-            //         ? [...baseVal, deep(collectionKeys)(curr)]
-            //         : [deep(collectionKeys)(curr)]
-            //       : deep(collectionKeys)(curr)
-            //     : propertyTypeConverter(curr.textContent)
           }
         }, { ...parseAttributes(elm.attributes as any) } as T)
 
@@ -105,7 +97,7 @@ export enum XMLNS {
 }
 
 export enum SOAP_NODE {
-  HEADER = 'S11:Header',
+  Header = 'S11:Header',
   Envelope = 'S11:Envelope',
   Body = 'S11:Body'
 }
@@ -117,7 +109,7 @@ export const soapShell =
     (rawHeader?: string) =>
       `<?xml version="1.0" encoding="UTF-8"?>
       <${SOAP_NODE.Envelope} ${nsstr().join(' ')}>
-        <${SOAP_NODE.HEADER}>${rawHeader || ''}</${SOAP_NODE.HEADER}>
+        <${SOAP_NODE.Header}>${rawHeader || ''}</${SOAP_NODE.Header}>
         <${SOAP_NODE.Body}>${rawBody}</${SOAP_NODE.Body}>
       </${SOAP_NODE.Envelope}>`
 
@@ -180,7 +172,7 @@ export const createStandardRequestBody =
 
       return createUserToken().map(maybeUserToken => {
         return maybeUserToken.map(token => {
-          return gen(body.replace(`<${SOAP_NODE.HEADER}></${SOAP_NODE.HEADER}>`, `<${SOAP_NODE.HEADER}>${token}</${SOAP_NODE.HEADER}>`))
+          return gen(body.replace(`<${SOAP_NODE.Header}></${SOAP_NODE.Header}>`, `<${SOAP_NODE.Header}>${token}</${SOAP_NODE.Header}>`))
         }).valueOr(gen(body))
       }).run(config)
     })

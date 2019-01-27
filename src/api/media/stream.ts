@@ -51,16 +51,26 @@ export interface IGetStreamUriRequest {
   readonly ProfileToken: string
 }
 
+enum StreamUriRequestXmlTokens {
+  GET_STREAM_URI = 'trt:GetStreamUri',
+  MEDIA_URI = 'trt:MediaUri',
+  STREAM_SETUP = 'trt:StreamSetup',
+  PROFILE_TOKEN = 'trt:ProfileToken',
+  STREAM = 'tt:Stream',
+  TRANSPORT = 'tt:Transport',
+  PROTOCOL = 'tt:Protocol'
+}
+
 const mapStreamRequestToString =
   (req: IGetStreamUriRequest) =>
-    `<trt:StreamSetup>
-      <tt:Stream>${req.Stream}</tt:Stream>
-      <tt:Transport>
-        <tt:Protocol>${req.Protocol}</tt:Protocol>
-      </tt:Transport>
-    </trt:StreamSetup>
-    <trt:ProfileToken>${req.ProfileToken}</trt:ProfileToken>`
+    `<${StreamUriRequestXmlTokens.STREAM_SETUP}>
+      <${StreamUriRequestXmlTokens.STREAM}>${req.Stream}</${StreamUriRequestXmlTokens.STREAM}>
+      <${StreamUriRequestXmlTokens.TRANSPORT}>
+        <${StreamUriRequestXmlTokens.PROTOCOL}>${req.Protocol}</${StreamUriRequestXmlTokens.PROTOCOL}>
+      </${StreamUriRequestXmlTokens.TRANSPORT}>
+    </${StreamUriRequestXmlTokens.STREAM_SETUP}>
+    <${StreamUriRequestXmlTokens.PROFILE_TOKEN}>${req.ProfileToken}</${StreamUriRequestXmlTokens.PROFILE_TOKEN}>`
 
 export const getStreamUri = (req: IGetStreamUriRequest) =>
-  createStandardRequestBodyFromString(`<trt:GetStreamUri>${mapStreamRequestToString(req)}</trt:GetStreamUri>`)
-    .map(mapResponseXmlToJson<IMediaUri>('trt:MediaUri')())
+  createStandardRequestBodyFromString(`<${StreamUriRequestXmlTokens.GET_STREAM_URI}>${mapStreamRequestToString(req)}</${StreamUriRequestXmlTokens.GET_STREAM_URI}>`)
+    .map(mapResponseXmlToJson<IMediaUri>(StreamUriRequestXmlTokens.MEDIA_URI)())
