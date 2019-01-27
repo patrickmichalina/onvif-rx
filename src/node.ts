@@ -28,4 +28,4 @@ export const createManagedDeviceInNode =
 
 // createManagedDeviceInNode({
 //   deviceUrl: ''
-// }).api.
+// }).api.media

@@ -34,8 +34,9 @@ export const ONVIF_${name}_API = (config: IDeviceConfig): IONVIF${name}Api => {
 }`
 }
 
-const genApiMain = (objs: string) => (iface: string) => {
+const genApiMain = (objs: string) => (iface: string) => (imports: string) => {
   return `import { IDeviceConfig } from '../config'
+${imports}
 
 export interface IONVIFApi {
   ${iface}
@@ -144,8 +145,12 @@ Promise
       }
     }, { apis: [] } as any)
 
-    console.log(formain)
-    writeFileSync(resolve('src/api/index.ts'), genApiMain('')(''))
+
+    const interfaces = operateMe.map((a: any) => `readonly ${a.type}: IONVIF${a.name}Api`).join('\n  ')
+    const imports = operateMe.map((a: any) => `import { IONVIF${a.name}Api, ONVIF_${a.name}_API } from './${a.type}'`).join('\n')
+    const objs = operateMe.map((a: any) => `${a.type}: ONVIF_${a.name}_API(config),`).join('\n    ')
+
+    writeFileSync(resolve('src/api/index.ts'), genApiMain(objs)(interfaces)(imports))
 
     const writeOperations = operateMe.reduce((acc, curr: any) => {
       return [
