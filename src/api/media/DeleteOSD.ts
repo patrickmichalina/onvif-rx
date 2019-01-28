@@ -1,9 +1,11 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from '../../soap/request'
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../../soap/request";
+import { ReferenceToken } from "../types";
 
 /**
  * Delete the OSD.
  */
-export const DeleteOSD =
-  () =>
+export function DeleteOSD(OSDToken: ReferenceToken) {
     createStandardRequestBodyFromString('<trt:DeleteOSD />')
-      .map(mapResponseXmlToJson<any>('trt:DeleteOSDResponse')())
+                  .map(mapResponseXmlToJson<any>('trt:DeleteOSDResponse')())
+                
+}

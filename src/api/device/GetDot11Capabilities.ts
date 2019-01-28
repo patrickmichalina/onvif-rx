@@ -1,10 +1,12 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from '../../soap/request'
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../../soap/request";
+import "../types";
 
 /**
  * This operation returns the IEEE802.11 capabilities. The device shall support
- * this operation.
+ *   this operation.
  */
-export const GetDot11Capabilities =
-  () =>
+export function GetDot11Capabilities() {
     createStandardRequestBodyFromString('<tds:GetDot11Capabilities />')
-      .map(mapResponseXmlToJson<any>('tds:GetDot11CapabilitiesResponse')())
+                  .map(mapResponseXmlToJson<any>('tds:GetDot11CapabilitiesResponse')())
+                
+}

@@ -1,9 +1,11 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from '../../soap/request'
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../../soap/request";
+import { ReferenceToken } from "../types";
 
 /**
  * This operation deletes a profile. This change shall always be persistent. Deletion of a profile is only possible for non-fixed profiles
  */
-export const DeleteProfile =
-  () =>
+export function DeleteProfile(ProfileToken: ReferenceToken) {
     createStandardRequestBodyFromString('<trt:DeleteProfile />')
-      .map(mapResponseXmlToJson<any>('trt:DeleteProfileResponse')())
+                  .map(mapResponseXmlToJson<any>('trt:DeleteProfileResponse')())
+                
+}

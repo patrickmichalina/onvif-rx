@@ -1,11 +1,13 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from '../../soap/request'
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../../soap/request";
+import { ReferenceToken } from "../types";
 
 /**
  * 
- * Operation to request PTZ status for the Node in the
- * selected profile.
+ *   Operation to request PTZ status for the Node in the
+ *   selected profile.
  */
-export const GetStatus =
-  () =>
+export function GetStatus(ProfileToken: ReferenceToken) {
     createStandardRequestBodyFromString('<tptz:GetStatus />')
-      .map(mapResponseXmlToJson<any>('tptz:GetStatusResponse')())
+                  .map(mapResponseXmlToJson<any>('tptz:GetStatusResponse')())
+                
+}

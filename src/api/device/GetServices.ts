@@ -1,9 +1,11 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from '../../soap/request'
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../../soap/request";
+import "../types";
 
 /**
  * Returns information about services on the device.
  */
-export const GetServices =
-  () =>
+export function GetServices(IncludeCapability: boolean) {
     createStandardRequestBodyFromString('<tds:GetServices />')
-      .map(mapResponseXmlToJson<any>('tds:GetServicesResponse')())
+                  .map(mapResponseXmlToJson<any>('tds:GetServicesResponse')())
+                
+}

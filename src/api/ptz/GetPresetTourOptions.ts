@@ -1,9 +1,11 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from '../../soap/request'
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../../soap/request";
+import { ReferenceToken } from "../types";
 
 /**
  * Operation to request available options to configure PTZ preset tour.
  */
-export const GetPresetTourOptions =
-  () =>
+export function GetPresetTourOptions(ProfileToken: ReferenceToken, PresetTourToken: ReferenceToken) {
     createStandardRequestBodyFromString('<tptz:GetPresetTourOptions />')
-      .map(mapResponseXmlToJson<any>('tptz:GetPresetTourOptionsResponse')())
+                  .map(mapResponseXmlToJson<any>('tptz:GetPresetTourOptionsResponse')())
+                
+}

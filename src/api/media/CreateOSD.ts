@@ -1,9 +1,11 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from '../../soap/request'
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../../soap/request";
+import { OSDConfiguration } from "../types";
 
 /**
  * Create the OSD.
  */
-export const CreateOSD =
-  () =>
+export function CreateOSD(OSD: OSDConfiguration) {
     createStandardRequestBodyFromString('<trt:CreateOSD />')
-      .map(mapResponseXmlToJson<any>('trt:CreateOSDResponse')())
+                  .map(mapResponseXmlToJson<any>('trt:CreateOSDResponse')())
+                
+}

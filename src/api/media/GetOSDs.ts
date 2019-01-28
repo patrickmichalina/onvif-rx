@@ -1,9 +1,11 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from '../../soap/request'
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../../soap/request";
+import { ReferenceToken } from "../types";
 
 /**
  * Get the OSDs.
  */
-export const GetOSDs =
-  () =>
+export function GetOSDs(ConfigurationToken: ReferenceToken) {
     createStandardRequestBodyFromString('<trt:GetOSDs />')
-      .map(mapResponseXmlToJson<any>('trt:GetOSDsResponse')())
+                  .map(mapResponseXmlToJson<any>('trt:GetOSDsResponse')())
+                
+}

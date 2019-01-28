@@ -1,11 +1,13 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from '../../soap/request'
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../../soap/request";
+import "../types";
 
 /**
  * 
- * This operation lists all existing geo location configurations for the device. 
- * 
+ *   This operation lists all existing geo location configurations for the device. 
+ *   
  */
-export const GetGeoLocation =
-  () =>
+export function GetGeoLocation() {
     createStandardRequestBodyFromString('<tds:GetGeoLocation />')
-      .map(mapResponseXmlToJson<any>('tds:GetGeoLocationResponse')())
+                  .map(mapResponseXmlToJson<any>('tds:GetGeoLocationResponse')())
+                
+}

@@ -1,11 +1,13 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from '../../soap/request'
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../../soap/request";
+import "../types";
 
 /**
  * 
- * This operation modifies an existing Storage configuration.
- * 
+ *   This operation modifies an existing Storage configuration.
+ *   
  */
-export const SetStorageConfiguration =
-  () =>
+export function SetStorageConfiguration(StorageConfiguration: any) {
     createStandardRequestBodyFromString('<tds:SetStorageConfiguration />')
-      .map(mapResponseXmlToJson<any>('tds:SetStorageConfigurationResponse')())
+                  .map(mapResponseXmlToJson<any>('tds:SetStorageConfigurationResponse')())
+                
+}

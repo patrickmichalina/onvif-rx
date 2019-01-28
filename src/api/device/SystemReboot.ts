@@ -1,9 +1,11 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from '../../soap/request'
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../../soap/request";
+import "../types";
 
 /**
  * This operation reboots the device.
  */
-export const SystemReboot =
-  () =>
+export function SystemReboot() {
     createStandardRequestBodyFromString('<tds:SystemReboot />')
-      .map(mapResponseXmlToJson<any>('tds:SystemRebootResponse')())
+                  .map(mapResponseXmlToJson<any>('tds:SystemRebootResponse')())
+                
+}

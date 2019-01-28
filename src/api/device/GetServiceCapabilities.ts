@@ -1,9 +1,11 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from '../../soap/request'
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../../soap/request";
+import "../types";
 
 /**
  * Returns the capabilities of the device service. The result is returned in a typed answer.
  */
-export const GetServiceCapabilities =
-  () =>
+export function GetServiceCapabilities() {
     createStandardRequestBodyFromString('<tds:GetServiceCapabilities />')
-      .map(mapResponseXmlToJson<any>('tds:GetServiceCapabilitiesResponse')())
+                  .map(mapResponseXmlToJson<any>('tds:GetServiceCapabilitiesResponse')())
+                
+}
