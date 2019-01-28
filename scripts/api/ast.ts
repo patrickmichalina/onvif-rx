@@ -50,70 +50,68 @@ generateTypes()
   })
   .then(generateActions)
   .then(actionTree => {
+    // main api entry index.ts
+    project.createSourceFile(`src/api/index.ts`, {
+      exports: actionTree.map(grp => {
+        return {
+          moduleSpecifier: `./${grp.type.toLowerCase()}`
+        }
+      })
+    })
+
     actionTree.forEach(group => {
-      group.actions.forEach(action => {
-        project.createSourceFile(`src/api/${group.type}/${action.actionName}.ts`, {
-          imports: [{
-            moduleSpecifier: '../../soap/request',
-            namedImports: ['createStandardRequestBodyFromString', 'mapResponseXmlToJson', 'mapResponseObsToProperty'].map(name => ({ name }))
-          }, {
-            moduleSpecifier: '../types',
-            namedImports: action.input.parameters
-              .map(a => a.propertyType)
-              .filter((elem, pos, arr) => arr.indexOf(elem) == pos)
-              .filter(a => !['string', 'number', 'any', 'boolean']
-                .some(b => b === a)).map(a => ({ name: a }))
-          }],
-          functions: [{
-            isExported: true,
-            docs: [{ description: action.documentation.replace(/\*/g, '') }],
-            name: action.actionName,
-            bodyText: `createStandardRequestBodyFromString('<${action.soapRequestNode} />')
-              .map(mapResponseXmlToJson<any>('${action.output.ref}')())
-            `,
-            // parameters: [{}]
-            parameters: action.input.parameters.map(p => {
-              return {
-                name: p.name,
-                type: p.propertyType
-              }
-            })
-          }]
-        })
+      // index file for each group
+      // project.createSourceFile(`src/api/${group.type}/index.ts`, {
+      //   exports: group.actions.map(a => {
+      //     return {
+      //       moduleSpecifier: `./${a.actionName}`
+      //     }
+      //   })
+      // })
+
+      project.createSourceFile(`src/api/${group.type.toLowerCase()}.ts`, {
+        imports: [{
+          moduleSpecifier: '../soap/request',
+          namedImports: ['createStandardRequestBodyFromString', 'mapResponseXmlToJson', 'mapResponseObsToProperty'].map(name => ({ name }))
+        },
+        {
+          moduleSpecifier: './types',
+          namedImports: group.actions.reduce((acc, action) => {
+            return [
+              ...acc,
+              ...action.input.parameters.map(a => a.propertyType)
+            ]
+          }, [] as ReadonlyArray<string>)
+            .filter((elem, pos, arr) => arr.indexOf(elem) == pos)
+            .filter(a => !['string', 'number', 'any', 'boolean'].some(b => b === a))
+            .map(name => ({ name }))
+        }
+        ],
+        namespaces: [{
+          isExported: true,
+          name: group.type,
+          functions: group.actions.map(action => {
+            return {
+              isExported: true,
+              docs: [{ description: action.documentation.replace(/\*/g, '') }],
+              name: action.actionName,
+              bodyText: `return createStandardRequestBodyFromString('<${action.soapRequestNode} />')
+                .map(mapResponseXmlToJson<any>('${action.output.ref}')())
+              `,
+              parameters: action.input.parameters.map(p => {
+                return {
+                  name: p.name,
+                  type: p.propertyType
+                }
+              })
+            }
+          })
+        }]
       })
     })
     return project.save()
   })
 
-
-
-
-
-
-// const requestSource = project.getSourceFileOrThrow(resolve('src/soap/request.ts'))
-// const requestFunctions = requestSource.getVariableDeclarations().map(a => a.getName())
-
-// console.log(requestFunctions)
-
-// project.createSourceFile('test.ts', {
-//   // imports: [{
-//     // moduleSpecifier: 'test',
-//     // namedImports: ['createStandardRequestBodyFromString', 'mapResponseXmlToJson', 'mapResponseObsToProperty'].map(name => ({ name }))
-//   // }],
-//   functions: [{
-//     isExported: true,
-//     docs: [{
-//       description: 'This operation adds an IP filter address to a device. If the device supports device access'
-//     }],
-//     name: 'CreateUsers',
-//     bodyText: 'console.log(1)',
-//     parameters: [{
-//       name: 'test',
-//       initializer: '\'thing\''
-//     }]
-//   }]
-// })
-// project.save()
 
 
 // const myClassFile = project.createSourceFile('src/MyClass.ts', {
