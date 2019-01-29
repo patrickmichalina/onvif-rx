@@ -34,7 +34,8 @@
     "minify": "uglifyjs dist/onvif-rx-umd.js -o dist/onvif-rx-umd.min.js --source-map -c -m",
     "rollup": "rollup -c",
     "watch": "rollup -cw",
-    "gen.api": "rm -rf src/api && ts-node scripts/api/ast.ts"
+    "docs": "typedoc src --theme markdown --out docs --readme none",
+    "gen.api": "rm -rf src/api && ts-node scripts/api/ast.ts && npm run docs"
   },
   "dependencies": {
     "js-sha1": "^0.6.0",
@@ -60,6 +61,8 @@
     "ts-simple-ast": "^21.0.2",
     "tslint": "^5.12.1",
     "tslint-immutable": "^5.1.2",
+    "typedoc": "^0.14.2",
+    "typedoc-plugin-markdown": "^1.1.25",
     "typescript": "^3.2.4",
     "uglify-js": "^3.4.9"
   },

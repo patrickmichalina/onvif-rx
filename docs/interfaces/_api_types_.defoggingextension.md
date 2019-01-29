@@ -1,0 +1,12 @@
+[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [DefoggingExtension](../interfaces/_api_types_.defoggingextension.md)
+
+# Interface: DefoggingExtension
+
+## Hierarchy
+
+**DefoggingExtension**
+
+## Index
+
+---
+

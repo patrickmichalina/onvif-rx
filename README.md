@@ -43,6 +43,9 @@ This library is very early and not garaunteed to work for evey camera. Feel free
 
 This library does not "discover" devices on the network - for that try [onvif-probe-rx](https://github.com/patrickmichalina/onvif-probe-rx)
 
+## Docs
+For more information about the TypeScript API checkout the [generated API docs](docs/README.md).
+
 ## Roadmap
 
 - [x] Generate API with typings and docs from WSDL's and XSD's
