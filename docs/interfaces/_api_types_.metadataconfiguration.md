@@ -30,7 +30,7 @@ optional element to configure which PTZ related data is to include in the metada
 
 **● Analytics**: *`boolean`*
 
-*Defined in [api/types.ts:766](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L766)*
+*Defined in [api/types.ts:766](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L766)*
 
 ___
 <a id="analyticsengineconfiguration"></a>
@@ -39,7 +39,7 @@ ___
 
 **● AnalyticsEngineConfiguration**: *[AnalyticsEngineConfiguration](_api_types_.analyticsengineconfiguration.md)*
 
-*Defined in [api/types.ts:769](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L769)*
+*Defined in [api/types.ts:769](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L769)*
 
 ___
 <a id="events"></a>
@@ -48,7 +48,7 @@ ___
 
 **● Events**: *[EventSubscription](_api_types_.eventsubscription.md)*
 
-*Defined in [api/types.ts:765](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L765)*
+*Defined in [api/types.ts:765](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L765)*
 
 ___
 <a id="extension"></a>
@@ -57,7 +57,7 @@ ___
 
 **● Extension**: *[MetadataConfigurationExtension](_api_types_.metadataconfigurationextension.md)*
 
-*Defined in [api/types.ts:770](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L770)*
+*Defined in [api/types.ts:770](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L770)*
 
 ___
 <a id="multicast"></a>
@@ -66,7 +66,7 @@ ___
 
 **● Multicast**: *[MulticastConfiguration](_api_types_.multicastconfiguration.md)*
 
-*Defined in [api/types.ts:767](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L767)*
+*Defined in [api/types.ts:767](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L767)*
 
 ___
 <a id="ptzstatus"></a>
@@ -75,7 +75,7 @@ ___
 
 **● PTZStatus**: *[PTZFilter](_api_types_.ptzfilter.md)*
 
-*Defined in [api/types.ts:764](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L764)*
+*Defined in [api/types.ts:764](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L764)*
 
 ___
 <a id="sessiontimeout"></a>
@@ -84,7 +84,7 @@ ___
 
 **● SessionTimeout**: *`string`*
 
-*Defined in [api/types.ts:768](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L768)*
+*Defined in [api/types.ts:768](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L768)*
 
 ___
 

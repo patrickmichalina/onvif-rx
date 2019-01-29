@@ -2,7 +2,7 @@ import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequ
 import { IDeviceConfig } from "../config";
 import { ReferenceToken, Config } from "./types";
 
-export class Analytics {
+export class ONVIFAnalytics {
     constructor(private config: IDeviceConfig) {
     }
 
@@ -183,7 +183,7 @@ export class Analytics {
      *   
      */
     GetSupportedRules(ConfigurationToken: ReferenceToken) {
-        return Analytics.GetSupportedRules(ConfigurationToken).run(this.config)
+        return ONVIFAnalytics.GetSupportedRules(ConfigurationToken).run(this.config)
     }
 
     /**
@@ -200,7 +200,7 @@ export class Analytics {
      *   
      */
     CreateRules(ConfigurationToken: ReferenceToken, Rule: Config) {
-        return Analytics.CreateRules(ConfigurationToken,Rule).run(this.config)
+        return ONVIFAnalytics.CreateRules(ConfigurationToken,Rule).run(this.config)
     }
 
     /**
@@ -209,7 +209,7 @@ export class Analytics {
      *   
      */
     DeleteRules(ConfigurationToken: ReferenceToken, RuleName: string) {
-        return Analytics.DeleteRules(ConfigurationToken,RuleName).run(this.config)
+        return ONVIFAnalytics.DeleteRules(ConfigurationToken,RuleName).run(this.config)
     }
 
     /**
@@ -218,7 +218,7 @@ export class Analytics {
      *   
      */
     GetRules(ConfigurationToken: ReferenceToken) {
-        return Analytics.GetRules(ConfigurationToken).run(this.config)
+        return ONVIFAnalytics.GetRules(ConfigurationToken).run(this.config)
     }
 
     /**
@@ -227,7 +227,7 @@ export class Analytics {
      *   
      */
     GetRuleOptions(ConfigurationToken: ReferenceToken, RuleType: any) {
-        return Analytics.GetRuleOptions(ConfigurationToken,RuleType).run(this.config)
+        return ONVIFAnalytics.GetRuleOptions(ConfigurationToken,RuleType).run(this.config)
     }
 
     /**
@@ -236,14 +236,14 @@ export class Analytics {
      *   
      */
     ModifyRules(ConfigurationToken: ReferenceToken, Rule: Config) {
-        return Analytics.ModifyRules(ConfigurationToken,Rule).run(this.config)
+        return ONVIFAnalytics.ModifyRules(ConfigurationToken,Rule).run(this.config)
     }
 
     /**
      * Returns the capabilities of the analytics service. The result is returned in a typed answer.
      */
     GetServiceCapabilities() {
-        return Analytics.GetServiceCapabilities().run(this.config)
+        return ONVIFAnalytics.GetServiceCapabilities().run(this.config)
     }
 
     /**
@@ -254,7 +254,7 @@ export class Analytics {
      *   
      */
     GetSupportedAnalyticsModules(ConfigurationToken: ReferenceToken) {
-        return Analytics.GetSupportedAnalyticsModules(ConfigurationToken).run(this.config)
+        return ONVIFAnalytics.GetSupportedAnalyticsModules(ConfigurationToken).run(this.config)
     }
 
     /**
@@ -263,7 +263,7 @@ export class Analytics {
      *   
      */
     GetAnalyticsModuleOptions(ConfigurationToken: ReferenceToken, Type: any) {
-        return Analytics.GetAnalyticsModuleOptions(ConfigurationToken,Type).run(this.config)
+        return ONVIFAnalytics.GetAnalyticsModuleOptions(ConfigurationToken,Type).run(this.config)
     }
 
     /**
@@ -287,7 +287,7 @@ export class Analytics {
      *   
      */
     CreateAnalyticsModules(ConfigurationToken: ReferenceToken, AnalyticsModule: Config) {
-        return Analytics.CreateAnalyticsModules(ConfigurationToken,AnalyticsModule).run(this.config)
+        return ONVIFAnalytics.CreateAnalyticsModules(ConfigurationToken,AnalyticsModule).run(this.config)
     }
 
     /**
@@ -296,7 +296,7 @@ export class Analytics {
      *   
      */
     DeleteAnalyticsModules(ConfigurationToken: ReferenceToken, AnalyticsModuleName: string) {
-        return Analytics.DeleteAnalyticsModules(ConfigurationToken,AnalyticsModuleName).run(this.config)
+        return ONVIFAnalytics.DeleteAnalyticsModules(ConfigurationToken,AnalyticsModuleName).run(this.config)
     }
 
     /**
@@ -305,7 +305,7 @@ export class Analytics {
      *   
      */
     GetAnalyticsModules(ConfigurationToken: ReferenceToken) {
-        return Analytics.GetAnalyticsModules(ConfigurationToken).run(this.config)
+        return ONVIFAnalytics.GetAnalyticsModules(ConfigurationToken).run(this.config)
     }
 
     /**
@@ -315,6 +315,6 @@ export class Analytics {
      *   
      */
     ModifyAnalyticsModules(ConfigurationToken: ReferenceToken, AnalyticsModule: Config) {
-        return Analytics.ModifyAnalyticsModules(ConfigurationToken,AnalyticsModule).run(this.config)
+        return ONVIFAnalytics.ModifyAnalyticsModules(ConfigurationToken,AnalyticsModule).run(this.config)
     }
 }

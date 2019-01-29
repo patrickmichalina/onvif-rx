@@ -29,7 +29,7 @@
 
 **● AnalyticsDevice**: *[AnalyticsDeviceCapabilities](_api_types_.analyticsdevicecapabilities.md)*
 
-*Defined in [api/types.ts:1457](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1457)*
+*Defined in [api/types.ts:1457](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1457)*
 
 ___
 <a id="deviceio"></a>
@@ -38,7 +38,7 @@ ___
 
 **● DeviceIO**: *[DeviceIOCapabilities](_api_types_.deviceiocapabilities.md)*
 
-*Defined in [api/types.ts:1451](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1451)*
+*Defined in [api/types.ts:1451](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1451)*
 
 ___
 <a id="display"></a>
@@ -47,7 +47,7 @@ ___
 
 **● Display**: *[DisplayCapabilities](_api_types_.displaycapabilities.md)*
 
-*Defined in [api/types.ts:1452](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1452)*
+*Defined in [api/types.ts:1452](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1452)*
 
 ___
 <a id="extensions"></a>
@@ -56,7 +56,7 @@ ___
 
 **● Extensions**: *[CapabilitiesExtension2](_api_types_.capabilitiesextension2.md)*
 
-*Defined in [api/types.ts:1458](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1458)*
+*Defined in [api/types.ts:1458](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1458)*
 
 ___
 <a id="receiver"></a>
@@ -65,7 +65,7 @@ ___
 
 **● Receiver**: *[ReceiverCapabilities](_api_types_.receivercapabilities.md)*
 
-*Defined in [api/types.ts:1456](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1456)*
+*Defined in [api/types.ts:1456](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1456)*
 
 ___
 <a id="recording"></a>
@@ -74,7 +74,7 @@ ___
 
 **● Recording**: *[RecordingCapabilities](_api_types_.recordingcapabilities.md)*
 
-*Defined in [api/types.ts:1453](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1453)*
+*Defined in [api/types.ts:1453](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1453)*
 
 ___
 <a id="replay"></a>
@@ -83,7 +83,7 @@ ___
 
 **● Replay**: *[ReplayCapabilities](_api_types_.replaycapabilities.md)*
 
-*Defined in [api/types.ts:1455](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1455)*
+*Defined in [api/types.ts:1455](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1455)*
 
 ___
 <a id="search"></a>
@@ -92,7 +92,7 @@ ___
 
 **● Search**: *[SearchCapabilities](_api_types_.searchcapabilities.md)*
 
-*Defined in [api/types.ts:1454](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1454)*
+*Defined in [api/types.ts:1454](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1454)*
 
 ___
 

@@ -26,7 +26,7 @@ EAP Methods supported by the device. The int values refer to the IANA EAP Regist
 
 **● Dot1X**: *`boolean`*
 
-*Defined in [api/types.ts:1619](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1619)*
+*Defined in [api/types.ts:1619](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1619)*
 
 ___
 <a id="remoteuserhandling"></a>
@@ -35,7 +35,7 @@ ___
 
 **● RemoteUserHandling**: *`boolean`*
 
-*Defined in [api/types.ts:1621](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1621)*
+*Defined in [api/types.ts:1621](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1621)*
 
 ___
 <a id="supportedeapmethod"></a>
@@ -44,7 +44,7 @@ ___
 
 **● SupportedEAPMethod**: *`number`*
 
-*Defined in [api/types.ts:1620](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1620)*
+*Defined in [api/types.ts:1620](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1620)*
 
 ___
 

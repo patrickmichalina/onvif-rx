@@ -6,7 +6,7 @@
 
 ### Classes
 
-* [Replay](../classes/_api_replay_.replay.md)
+* [ONVIFReplay](../classes/_api_replay_.onvifreplay.md)
 
 ---
 

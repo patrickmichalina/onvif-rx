@@ -28,7 +28,7 @@ A list of available Preset Tokens for tour spots.
 
 **● Extension**: *[PTZPresetTourPresetDetailOptionsExtension](_api_types_.ptzpresettourpresetdetailoptionsextension.md)*
 
-*Defined in [api/types.ts:2396](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2396)*
+*Defined in [api/types.ts:2396](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2396)*
 
 ___
 <a id="home"></a>
@@ -37,7 +37,7 @@ ___
 
 **● Home**: *`boolean`*
 
-*Defined in [api/types.ts:2393](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2393)*
+*Defined in [api/types.ts:2393](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2393)*
 
 ___
 <a id="pantiltpositionspace"></a>
@@ -46,7 +46,7 @@ ___
 
 **● PanTiltPositionSpace**: *[Space2DDescription](_api_types_.space2ddescription.md)*
 
-*Defined in [api/types.ts:2394](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2394)*
+*Defined in [api/types.ts:2394](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2394)*
 
 ___
 <a id="presettoken"></a>
@@ -55,7 +55,7 @@ ___
 
 **● PresetToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:2392](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2392)*
+*Defined in [api/types.ts:2392](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2392)*
 
 ___
 <a id="zoompositionspace"></a>
@@ -64,7 +64,7 @@ ___
 
 **● ZoomPositionSpace**: *[Space1DDescription](_api_types_.space1ddescription.md)*
 
-*Defined in [api/types.ts:2395](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2395)*
+*Defined in [api/types.ts:2395](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2395)*
 
 ___
 

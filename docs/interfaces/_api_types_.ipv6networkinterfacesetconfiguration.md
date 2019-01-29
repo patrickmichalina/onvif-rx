@@ -27,7 +27,7 @@ Indicates whether or not IPv6 is enabled.
 
 **● AcceptRouterAdvert**: *`boolean`*
 
-*Defined in [api/types.ts:1278](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1278)*
+*Defined in [api/types.ts:1278](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1278)*
 
 ___
 <a id="dhcp"></a>
@@ -36,7 +36,7 @@ ___
 
 **● DHCP**: *[IPv6DHCPConfiguration](../enums/_api_types_.ipv6dhcpconfiguration.md)*
 
-*Defined in [api/types.ts:1280](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1280)*
+*Defined in [api/types.ts:1280](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1280)*
 
 ___
 <a id="enabled"></a>
@@ -45,7 +45,7 @@ ___
 
 **● Enabled**: *`boolean`*
 
-*Defined in [api/types.ts:1277](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1277)*
+*Defined in [api/types.ts:1277](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1277)*
 
 ___
 <a id="manual"></a>
@@ -54,7 +54,7 @@ ___
 
 **● Manual**: *[PrefixedIPv6Address](_api_types_.prefixedipv6address.md)*
 
-*Defined in [api/types.ts:1279](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1279)*
+*Defined in [api/types.ts:1279](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1279)*
 
 ___
 

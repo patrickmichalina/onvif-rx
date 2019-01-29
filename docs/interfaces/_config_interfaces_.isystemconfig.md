@@ -26,7 +26,7 @@
 
 **● buffer**: *`any`*
 
-*Defined in [config/interfaces.ts:19](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/interfaces.ts#L19)*
+*Defined in [config/interfaces.ts:19](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L19)*
 
 ___
 <a id="digestsha1"></a>
@@ -35,7 +35,7 @@ ___
 
 **● digestSha1**: *[ISha1Digest](../modules/_config_interfaces_.md#isha1digest)*
 
-*Defined in [config/interfaces.ts:20](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/interfaces.ts#L20)*
+*Defined in [config/interfaces.ts:20](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L20)*
 
 ___
 <a id="nonce"></a>
@@ -44,7 +44,7 @@ ___
 
 **● nonce**: *[INonce](../modules/_config_interfaces_.md#inonce)*
 
-*Defined in [config/interfaces.ts:18](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/interfaces.ts#L18)*
+*Defined in [config/interfaces.ts:18](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L18)*
 
 ___
 <a id="parser"></a>
@@ -53,7 +53,7 @@ ___
 
 **● parser**: *`DOMParser`*
 
-*Defined in [config/interfaces.ts:16](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/interfaces.ts#L16)*
+*Defined in [config/interfaces.ts:16](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L16)*
 
 ___
 <a id="transport"></a>
@@ -62,7 +62,7 @@ ___
 
 **● transport**: *[ITransport](../modules/_config_interfaces_.md#itransport)*
 
-*Defined in [config/interfaces.ts:17](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/interfaces.ts#L17)*
+*Defined in [config/interfaces.ts:17](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L17)*
 
 ___
 

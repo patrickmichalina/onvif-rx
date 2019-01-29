@@ -26,7 +26,7 @@ Token of the recording.
 
 **● Configuration**: *[RecordingConfiguration](_api_types_.recordingconfiguration.md)*
 
-*Defined in [api/types.ts:3662](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3662)*
+*Defined in [api/types.ts:3662](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3662)*
 
 ___
 <a id="recordingtoken"></a>
@@ -35,7 +35,7 @@ ___
 
 **● RecordingToken**: *[RecordingReference](../modules/_api_types_.md#recordingreference)*
 
-*Defined in [api/types.ts:3661](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3661)*
+*Defined in [api/types.ts:3661](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3661)*
 
 ___
 <a id="tracks"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Tracks**: *[GetTracksResponseList](_api_types_.gettracksresponselist.md)*
 
-*Defined in [api/types.ts:3663](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3663)*
+*Defined in [api/types.ts:3663](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3663)*
 
 ___
 

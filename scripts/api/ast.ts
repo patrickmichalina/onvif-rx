@@ -1,4 +1,4 @@
-import { Project, Scope, FunctionLikeDeclaration, ParameterDeclarationStructure } from 'ts-simple-ast'
+import { Project, Scope, ParameterDeclarationStructure } from 'ts-simple-ast'
 import { generateActions, generateTypes } from './exec'
 
 // initialize
@@ -61,7 +61,7 @@ generateTypes()
         ...actionTree.map(grp => {
           return {
             moduleSpecifier: `./${grp.type.toLowerCase()}`,
-            namedImports: [{ name: grp.type }]
+            namedImports: [{ name: `ONVIF${grp.type}` }]
           }
         }),
         {
@@ -77,7 +77,7 @@ generateTypes()
           return {
             name: group.type,
             scope: Scope.Public,
-            initializer: `new ${group.type}(this.config)`
+            initializer: `new ONVIF${group.type}(this.config)`
           }
         })
       }]
@@ -107,7 +107,7 @@ generateTypes()
         }],
         classes: [{
           isExported: true,
-          name: group.type,
+          name: `ONVIF${group.type}`,
           ctors: [{
             parameters: [{ name: 'config', type: 'IDeviceConfig', scope: Scope.Private }]
           }],
@@ -133,7 +133,7 @@ generateTypes()
             return {
               docs: [{ description: action.documentation.replace(/\*/g, '') }],
               name: action.actionName,
-              bodyText: `return ${group.type}.${action.actionName}(${action.input.parameters.map(a => a.name).join(',')}).run(this.config)`,
+              bodyText: `return ONVIF${group.type}.${action.actionName}(${action.input.parameters.map(a => a.name).join(',')}).run(this.config)`,
               parameters: action.input.parameters.map(p => {
                 return {
                   name: p.name,

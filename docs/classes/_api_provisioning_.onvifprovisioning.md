@@ -1,39 +1,39 @@
-[onvif-rx](../README.md) > ["api/provisioning"](../modules/_api_provisioning_.md) > [Provisioning](../classes/_api_provisioning_.provisioning.md)
+[onvif-rx](../README.md) > ["api/provisioning"](../modules/_api_provisioning_.md) > [ONVIFProvisioning](../classes/_api_provisioning_.onvifprovisioning.md)
 
-# Class: Provisioning
+# Class: ONVIFProvisioning
 
 ## Hierarchy
 
-**Provisioning**
+**ONVIFProvisioning**
 
 ## Index
 
 ### Constructors
 
-* [constructor](_api_provisioning_.provisioning.md#constructor)
+* [constructor](_api_provisioning_.onvifprovisioning.md#constructor)
 
 ### Properties
 
-* [config](_api_provisioning_.provisioning.md#config)
+* [config](_api_provisioning_.onvifprovisioning.md#config)
 
 ### Methods
 
-* [FocusMove](_api_provisioning_.provisioning.md#focusmove)
-* [GetServiceCapabilities](_api_provisioning_.provisioning.md#getservicecapabilities)
-* [GetUsage](_api_provisioning_.provisioning.md#getusage)
-* [PanMove](_api_provisioning_.provisioning.md#panmove)
-* [RollMove](_api_provisioning_.provisioning.md#rollmove)
-* [Stop](_api_provisioning_.provisioning.md#stop)
-* [TiltMove](_api_provisioning_.provisioning.md#tiltmove)
-* [ZoomMove](_api_provisioning_.provisioning.md#zoommove)
-* [FocusMove](_api_provisioning_.provisioning.md#focusmove-1)
-* [GetServiceCapabilities](_api_provisioning_.provisioning.md#getservicecapabilities-1)
-* [GetUsage](_api_provisioning_.provisioning.md#getusage-1)
-* [PanMove](_api_provisioning_.provisioning.md#panmove-1)
-* [RollMove](_api_provisioning_.provisioning.md#rollmove-1)
-* [Stop](_api_provisioning_.provisioning.md#stop-1)
-* [TiltMove](_api_provisioning_.provisioning.md#tiltmove-1)
-* [ZoomMove](_api_provisioning_.provisioning.md#zoommove-1)
+* [FocusMove](_api_provisioning_.onvifprovisioning.md#focusmove)
+* [GetServiceCapabilities](_api_provisioning_.onvifprovisioning.md#getservicecapabilities)
+* [GetUsage](_api_provisioning_.onvifprovisioning.md#getusage)
+* [PanMove](_api_provisioning_.onvifprovisioning.md#panmove)
+* [RollMove](_api_provisioning_.onvifprovisioning.md#rollmove)
+* [Stop](_api_provisioning_.onvifprovisioning.md#stop)
+* [TiltMove](_api_provisioning_.onvifprovisioning.md#tiltmove)
+* [ZoomMove](_api_provisioning_.onvifprovisioning.md#zoommove)
+* [FocusMove](_api_provisioning_.onvifprovisioning.md#focusmove-1)
+* [GetServiceCapabilities](_api_provisioning_.onvifprovisioning.md#getservicecapabilities-1)
+* [GetUsage](_api_provisioning_.onvifprovisioning.md#getusage-1)
+* [PanMove](_api_provisioning_.onvifprovisioning.md#panmove-1)
+* [RollMove](_api_provisioning_.onvifprovisioning.md#rollmove-1)
+* [Stop](_api_provisioning_.onvifprovisioning.md#stop-1)
+* [TiltMove](_api_provisioning_.onvifprovisioning.md#tiltmove-1)
+* [ZoomMove](_api_provisioning_.onvifprovisioning.md#zoommove-1)
 
 ---
 
@@ -43,9 +43,9 @@
 
 ###  constructor
 
-⊕ **new Provisioning**(config: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*): [Provisioning](_api_provisioning_.provisioning.md)
+⊕ **new ONVIFProvisioning**(config: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*): [ONVIFProvisioning](_api_provisioning_.onvifprovisioning.md)
 
-*Defined in [api/provisioning.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L5)*
+*Defined in [api/provisioning.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L5)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@
 | ------ | ------ |
 | config | [IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md) |
 
-**Returns:** [Provisioning](_api_provisioning_.provisioning.md)
+**Returns:** [ONVIFProvisioning](_api_provisioning_.onvifprovisioning.md)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 **● config**: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*
 
-*Defined in [api/provisioning.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L6)*
+*Defined in [api/provisioning.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L6)*
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 ▸ **FocusMove**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/provisioning.ts:119](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L119)*
+*Defined in [api/provisioning.ts:119](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L119)*
 
 Moves device on the focus axis.
 
@@ -90,7 +90,7 @@ ___
 
 ▸ **GetServiceCapabilities**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/provisioning.ts:84](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L84)*
+*Defined in [api/provisioning.ts:84](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L84)*
 
 Returns the capabilities of the provisioning service.
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **GetUsage**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/provisioning.ts:133](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L133)*
+*Defined in [api/provisioning.ts:133](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L133)*
 
 Returns the lifetime move counts.
 
@@ -116,7 +116,7 @@ ___
 
 ▸ **PanMove**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/provisioning.ts:91](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L91)*
+*Defined in [api/provisioning.ts:91](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L91)*
 
 Moves device on the pan axis.
 
@@ -129,7 +129,7 @@ ___
 
 ▸ **RollMove**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/provisioning.ts:112](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L112)*
+*Defined in [api/provisioning.ts:112](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L112)*
 
 Moves device on the roll axis.
 
@@ -142,7 +142,7 @@ ___
 
 ▸ **Stop**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/provisioning.ts:126](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L126)*
+*Defined in [api/provisioning.ts:126](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L126)*
 
 Stops device motion on all axes.
 
@@ -155,7 +155,7 @@ ___
 
 ▸ **TiltMove**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/provisioning.ts:98](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L98)*
+*Defined in [api/provisioning.ts:98](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L98)*
 
 Moves device on the tilt axis.
 
@@ -168,7 +168,7 @@ ___
 
 ▸ **ZoomMove**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/provisioning.ts:105](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L105)*
+*Defined in [api/provisioning.ts:105](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L105)*
 
 Moves device on the zoom axis.
 
@@ -181,7 +181,7 @@ ___
 
 ▸ **FocusMove**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/provisioning.ts:57](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L57)*
+*Defined in [api/provisioning.ts:57](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L57)*
 
 Moves device on the focus axis.
 
@@ -194,7 +194,7 @@ ___
 
 ▸ **GetServiceCapabilities**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/provisioning.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L12)*
+*Defined in [api/provisioning.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L12)*
 
 Returns the capabilities of the provisioning service.
 
@@ -207,7 +207,7 @@ ___
 
 ▸ **GetUsage**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/provisioning.ts:75](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L75)*
+*Defined in [api/provisioning.ts:75](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L75)*
 
 Returns the lifetime move counts.
 
@@ -220,7 +220,7 @@ ___
 
 ▸ **PanMove**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/provisioning.ts:21](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L21)*
+*Defined in [api/provisioning.ts:21](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L21)*
 
 Moves device on the pan axis.
 
@@ -233,7 +233,7 @@ ___
 
 ▸ **RollMove**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/provisioning.ts:48](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L48)*
+*Defined in [api/provisioning.ts:48](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L48)*
 
 Moves device on the roll axis.
 
@@ -246,7 +246,7 @@ ___
 
 ▸ **Stop**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/provisioning.ts:66](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L66)*
+*Defined in [api/provisioning.ts:66](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L66)*
 
 Stops device motion on all axes.
 
@@ -259,7 +259,7 @@ ___
 
 ▸ **TiltMove**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/provisioning.ts:30](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L30)*
+*Defined in [api/provisioning.ts:30](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L30)*
 
 Moves device on the tilt axis.
 
@@ -272,7 +272,7 @@ ___
 
 ▸ **ZoomMove**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/provisioning.ts:39](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/provisioning.ts#L39)*
+*Defined in [api/provisioning.ts:39](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/provisioning.ts#L39)*
 
 Moves device on the zoom axis.
 

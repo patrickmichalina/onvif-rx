@@ -21,7 +21,7 @@ Enumeration describing the available factory default modes.
 
 **Hard**:  = "Hard"
 
-*Defined in [api/types.ts:4863](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4863)*
+*Defined in [api/types.ts:4863](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4863)*
 
 Indicates that a hard factory default is requested.
 
@@ -32,7 +32,7 @@ ___
 
 **Soft**:  = "Soft"
 
-*Defined in [api/types.ts:4867](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4867)*
+*Defined in [api/types.ts:4867](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4867)*
 
 Indicates that a soft factory default is requested.
 

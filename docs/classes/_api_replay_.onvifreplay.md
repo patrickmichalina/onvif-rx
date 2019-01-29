@@ -1,31 +1,31 @@
-[onvif-rx](../README.md) > ["api/replay"](../modules/_api_replay_.md) > [Replay](../classes/_api_replay_.replay.md)
+[onvif-rx](../README.md) > ["api/replay"](../modules/_api_replay_.md) > [ONVIFReplay](../classes/_api_replay_.onvifreplay.md)
 
-# Class: Replay
+# Class: ONVIFReplay
 
 ## Hierarchy
 
-**Replay**
+**ONVIFReplay**
 
 ## Index
 
 ### Constructors
 
-* [constructor](_api_replay_.replay.md#constructor)
+* [constructor](_api_replay_.onvifreplay.md#constructor)
 
 ### Properties
 
-* [config](_api_replay_.replay.md#config)
+* [config](_api_replay_.onvifreplay.md#config)
 
 ### Methods
 
-* [GetReplayConfiguration](_api_replay_.replay.md#getreplayconfiguration)
-* [GetReplayUri](_api_replay_.replay.md#getreplayuri)
-* [GetServiceCapabilities](_api_replay_.replay.md#getservicecapabilities)
-* [SetReplayConfiguration](_api_replay_.replay.md#setreplayconfiguration)
-* [GetReplayConfiguration](_api_replay_.replay.md#getreplayconfiguration-1)
-* [GetReplayUri](_api_replay_.replay.md#getreplayuri-1)
-* [GetServiceCapabilities](_api_replay_.replay.md#getservicecapabilities-1)
-* [SetReplayConfiguration](_api_replay_.replay.md#setreplayconfiguration-1)
+* [GetReplayConfiguration](_api_replay_.onvifreplay.md#getreplayconfiguration)
+* [GetReplayUri](_api_replay_.onvifreplay.md#getreplayuri)
+* [GetServiceCapabilities](_api_replay_.onvifreplay.md#getservicecapabilities)
+* [SetReplayConfiguration](_api_replay_.onvifreplay.md#setreplayconfiguration)
+* [GetReplayConfiguration](_api_replay_.onvifreplay.md#getreplayconfiguration-1)
+* [GetReplayUri](_api_replay_.onvifreplay.md#getreplayuri-1)
+* [GetServiceCapabilities](_api_replay_.onvifreplay.md#getservicecapabilities-1)
+* [SetReplayConfiguration](_api_replay_.onvifreplay.md#setreplayconfiguration-1)
 
 ---
 
@@ -35,9 +35,9 @@
 
 ###  constructor
 
-⊕ **new Replay**(config: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*): [Replay](_api_replay_.replay.md)
+⊕ **new ONVIFReplay**(config: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*): [ONVIFReplay](_api_replay_.onvifreplay.md)
 
-*Defined in [api/replay.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/replay.ts#L5)*
+*Defined in [api/replay.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L5)*
 
 **Parameters:**
 
@@ -45,7 +45,7 @@
 | ------ | ------ |
 | config | [IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md) |
 
-**Returns:** [Replay](_api_replay_.replay.md)
+**Returns:** [ONVIFReplay](_api_replay_.onvifreplay.md)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 **● config**: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*
 
-*Defined in [api/replay.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/replay.ts#L6)*
+*Defined in [api/replay.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L6)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 ▸ **GetReplayConfiguration**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/replay.ts:81](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/replay.ts#L81)*
+*Defined in [api/replay.ts:81](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L81)*
 
 Returns the current configuration of the replay service. This operation is mandatory.
 
@@ -82,7 +82,7 @@ ___
 
 ▸ **GetReplayUri**(StreamSetup: *[StreamSetup](../interfaces/_api_types_.streamsetup.md)*, RecordingToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/replay.ts:71](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/replay.ts#L71)*
+*Defined in [api/replay.ts:71](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L71)*
 
 Requests a URI that can be used to initiate playback of a recorded stream using RTSP as the control protocol. The URI is valid only as it is specified in the response. This operation is mandatory.
 
@@ -102,7 +102,7 @@ ___
 
 ▸ **GetServiceCapabilities**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/replay.ts:59](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/replay.ts#L59)*
+*Defined in [api/replay.ts:59](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L59)*
 
 Returns the capabilities of the replay service. The result is returned in a typed answer.
 
@@ -115,7 +115,7 @@ ___
 
 ▸ **SetReplayConfiguration**(Configuration: *[ReplayConfiguration](../interfaces/_api_types_.replayconfiguration.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/replay.ts:91](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/replay.ts#L91)*
+*Defined in [api/replay.ts:91](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L91)*
 
 Changes the current configuration of the replay service. This operation is mandatory.
 
@@ -134,7 +134,7 @@ ___
 
 ▸ **GetReplayConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/replay.ts:38](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/replay.ts#L38)*
+*Defined in [api/replay.ts:38](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L38)*
 
 Returns the current configuration of the replay service. This operation is mandatory.
 
@@ -147,7 +147,7 @@ ___
 
 ▸ **GetReplayUri**(StreamSetup: *[StreamSetup](../interfaces/_api_types_.streamsetup.md)*, RecordingToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/replay.ts:26](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/replay.ts#L26)*
+*Defined in [api/replay.ts:26](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L26)*
 
 Requests a URI that can be used to initiate playback of a recorded stream using RTSP as the control protocol. The URI is valid only as it is specified in the response. This operation is mandatory.
 
@@ -167,7 +167,7 @@ ___
 
 ▸ **GetServiceCapabilities**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/replay.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/replay.ts#L12)*
+*Defined in [api/replay.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L12)*
 
 Returns the capabilities of the replay service. The result is returned in a typed answer.
 
@@ -180,7 +180,7 @@ ___
 
 ▸ **SetReplayConfiguration**(Configuration: *[ReplayConfiguration](../interfaces/_api_types_.replayconfiguration.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/replay.ts:50](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/replay.ts#L50)*
+*Defined in [api/replay.ts:50](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L50)*
 
 Changes the current configuration of the replay service. This operation is mandatory.
 

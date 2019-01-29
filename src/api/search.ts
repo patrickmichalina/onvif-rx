@@ -2,7 +2,7 @@ import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequ
 import { IDeviceConfig } from "../config";
 import { RecordingReference, SearchScope, JobToken, EventFilter, PTZPositionFilter, MetadataFilter } from "./types";
 
-export class Search {
+export class ONVIFSearch {
     constructor(private config: IDeviceConfig) {
     }
 
@@ -250,7 +250,7 @@ export class Search {
      * Returns the capabilities of the search service. The result is returned in a typed answer.
      */
     GetServiceCapabilities() {
-        return Search.GetServiceCapabilities().run(this.config)
+        return ONVIFSearch.GetServiceCapabilities().run(this.config)
     }
 
     /**
@@ -258,7 +258,7 @@ export class Search {
      *   operation is mandatory to support for a device implementing the recording search service.
      */
     GetRecordingSummary() {
-        return Search.GetRecordingSummary().run(this.config)
+        return ONVIFSearch.GetRecordingSummary().run(this.config)
     }
 
     /**
@@ -266,7 +266,7 @@ export class Search {
      *   is mandatory to support for a device implementing the recording search service.
      */
     GetRecordingInformation(RecordingToken: RecordingReference) {
-        return Search.GetRecordingInformation(RecordingToken).run(this.config)
+        return ONVIFSearch.GetRecordingInformation(RecordingToken).run(this.config)
     }
 
     /**
@@ -278,7 +278,7 @@ export class Search {
      *   recording search service.
      */
     GetMediaAttributes(Time: string, RecordingTokens: RecordingReference) {
-        return Search.GetMediaAttributes(Time,RecordingTokens).run(this.config)
+        return ONVIFSearch.GetMediaAttributes(Time,RecordingTokens).run(this.config)
     }
 
     /**
@@ -297,7 +297,7 @@ export class Search {
      *   search service.
      */
     FindRecordings(Scope: SearchScope, KeepAliveTime: string, MaxMatches: number) {
-        return Search.FindRecordings(Scope,KeepAliveTime,MaxMatches).run(this.config)
+        return ONVIFSearch.FindRecordings(Scope,KeepAliveTime,MaxMatches).run(this.config)
     }
 
     /**
@@ -316,7 +316,7 @@ export class Search {
      *   This operation is mandatory to support for a device implementing the recording search service.
      */
     GetRecordingSearchResults(SearchToken: JobToken, MinResults: number, MaxResults: number, WaitTime: string) {
-        return Search.GetRecordingSearchResults(SearchToken,MinResults,MaxResults,WaitTime).run(this.config)
+        return ONVIFSearch.GetRecordingSearchResults(SearchToken,MinResults,MaxResults,WaitTime).run(this.config)
     }
 
     /**
@@ -337,7 +337,7 @@ export class Search {
      *   recording search service.
      */
     FindEvents(StartPoint: string, Scope: SearchScope, SearchFilter: EventFilter, IncludeStartState: boolean, KeepAliveTime: string, EndPoint: string, MaxMatches: number) {
-        return Search.FindEvents(StartPoint,Scope,SearchFilter,IncludeStartState,KeepAliveTime,EndPoint,MaxMatches).run(this.config)
+        return ONVIFSearch.FindEvents(StartPoint,Scope,SearchFilter,IncludeStartState,KeepAliveTime,EndPoint,MaxMatches).run(this.config)
     }
 
     /**
@@ -355,7 +355,7 @@ export class Search {
      *   This operation is mandatory to support for a device implementing the recording search service.
      */
     GetEventSearchResults(SearchToken: JobToken, MinResults: number, MaxResults: number, WaitTime: string) {
-        return Search.GetEventSearchResults(SearchToken,MinResults,MaxResults,WaitTime).run(this.config)
+        return ONVIFSearch.GetEventSearchResults(SearchToken,MinResults,MaxResults,WaitTime).run(this.config)
     }
 
     /**
@@ -375,7 +375,7 @@ export class Search {
      *   track in any recording on the device.
      */
     FindPTZPosition(StartPoint: string, Scope: SearchScope, SearchFilter: PTZPositionFilter, KeepAliveTime: string, EndPoint: string, MaxMatches: number) {
-        return Search.FindPTZPosition(StartPoint,Scope,SearchFilter,KeepAliveTime,EndPoint,MaxMatches).run(this.config)
+        return ONVIFSearch.FindPTZPosition(StartPoint,Scope,SearchFilter,KeepAliveTime,EndPoint,MaxMatches).run(this.config)
     }
 
     /**
@@ -394,14 +394,14 @@ export class Search {
      *   track in any recording on the device.
      */
     GetPTZPositionSearchResults(SearchToken: JobToken, MinResults: number, MaxResults: number, WaitTime: string) {
-        return Search.GetPTZPositionSearchResults(SearchToken,MinResults,MaxResults,WaitTime).run(this.config)
+        return ONVIFSearch.GetPTZPositionSearchResults(SearchToken,MinResults,MaxResults,WaitTime).run(this.config)
     }
 
     /**
      * GetSearchState returns the current state of the specified search session. This command is deprecated .
      */
     GetSearchState(SearchToken: JobToken) {
-        return Search.GetSearchState(SearchToken).run(this.config)
+        return ONVIFSearch.GetSearchState(SearchToken).run(this.config)
     }
 
     /**
@@ -416,7 +416,7 @@ export class Search {
      *   
      */
     EndSearch(SearchToken: JobToken) {
-        return Search.EndSearch(SearchToken).run(this.config)
+        return ONVIFSearch.EndSearch(SearchToken).run(this.config)
     }
 
     /**
@@ -436,7 +436,7 @@ export class Search {
      *   SearchCapabilities structure return by the GetCapabilities command in the Device service.
      */
     FindMetadata(StartPoint: string, Scope: SearchScope, MetadataFilter: MetadataFilter, KeepAliveTime: string, EndPoint: string, MaxMatches: number) {
-        return Search.FindMetadata(StartPoint,Scope,MetadataFilter,KeepAliveTime,EndPoint,MaxMatches).run(this.config)
+        return ONVIFSearch.FindMetadata(StartPoint,Scope,MetadataFilter,KeepAliveTime,EndPoint,MaxMatches).run(this.config)
     }
 
     /**
@@ -455,6 +455,6 @@ export class Search {
      *   SearchCapabilities structure return by the GetCapabilities command in the Device service.
      */
     GetMetadataSearchResults(SearchToken: JobToken, MinResults: number, MaxResults: number, WaitTime: string) {
-        return Search.GetMetadataSearchResults(SearchToken,MinResults,MaxResults,WaitTime).run(this.config)
+        return ONVIFSearch.GetMetadataSearchResults(SearchToken,MinResults,MaxResults,WaitTime).run(this.config)
     }
 }

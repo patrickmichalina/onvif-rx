@@ -18,7 +18,7 @@
 
 ▸ **createManagedDeviceInNode**(config: *[IDeviceInitConfig](../interfaces/_manage_device_.ideviceinitconfig.md)*): [IManagedDevice](../interfaces/_manage_device_.imanageddevice.md)
 
-*Defined in [node.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/node.ts#L7)*
+*Defined in [node.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/node.ts#L7)*
 
 **Parameters:**
 

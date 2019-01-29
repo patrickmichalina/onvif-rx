@@ -22,7 +22,7 @@
 
 ▸ **transport**(body: *`string`*): `(Anonymous function)`
 
-*Defined in [config/browser.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/browser.ts#L5)*
+*Defined in [config/browser.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/browser.ts#L5)*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ ___
 
 **DEFAULT_BROWSER_ENV**: *`object`*
 
-*Defined in [config/browser.ts:10](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/browser.ts#L10)*
+*Defined in [config/browser.ts:10](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/browser.ts#L10)*
 
 <a id="default_browser_env.buffer"></a>
 
@@ -50,7 +50,7 @@ ___
 
 **● buffer**: *`object`* =  Buffer
 
-*Defined in [config/browser.ts:15](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/browser.ts#L15)*
+*Defined in [config/browser.ts:15](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/browser.ts#L15)*
 
 #### Type declaration
 
@@ -371,7 +371,7 @@ ___
 
 **● digestSha1**: *`function`*
 
-*Defined in [config/browser.ts:13](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/browser.ts#L13)*
+*Defined in [config/browser.ts:13](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/browser.ts#L13)*
 
 #### Type declaration
 ▸(str: *`string`*): `string`
@@ -391,7 +391,7 @@ ___
 
 **● nonce**: *`function`*
 
-*Defined in [config/browser.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/browser.ts#L12)*
+*Defined in [config/browser.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/browser.ts#L12)*
 
 #### Type declaration
 ▸(size?: *`undefined` \| `number`*): `string`
@@ -411,7 +411,7 @@ ___
 
 **● parser**: *`DOMParser`* =  typeof DOMParser !== 'undefined' ? new DOMParser() : {} as DOMParser
 
-*Defined in [config/browser.ts:11](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/browser.ts#L11)*
+*Defined in [config/browser.ts:11](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/browser.ts#L11)*
 
 ___
 <a id="default_browser_env.transport-1"></a>
@@ -420,7 +420,7 @@ ___
 
 **● transport**: *[transport]()*
 
-*Defined in [config/browser.ts:14](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/browser.ts#L14)*
+*Defined in [config/browser.ts:14](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/browser.ts#L14)*
 
 ___
 

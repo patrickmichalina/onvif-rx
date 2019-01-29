@@ -28,7 +28,7 @@ Indicates whether or not DNS information is retrieved from DHCP.
 
 **● DNSFromDHCP**: *[IPAddress](_api_types_.ipaddress.md)*
 
-*Defined in [api/types.ts:1209](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1209)*
+*Defined in [api/types.ts:1209](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1209)*
 
 ___
 <a id="dnsmanual"></a>
@@ -37,7 +37,7 @@ ___
 
 **● DNSManual**: *[IPAddress](_api_types_.ipaddress.md)*
 
-*Defined in [api/types.ts:1210](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1210)*
+*Defined in [api/types.ts:1210](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1210)*
 
 ___
 <a id="extension"></a>
@@ -46,7 +46,7 @@ ___
 
 **● Extension**: *[DNSInformationExtension](_api_types_.dnsinformationextension.md)*
 
-*Defined in [api/types.ts:1211](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1211)*
+*Defined in [api/types.ts:1211](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1211)*
 
 ___
 <a id="fromdhcp"></a>
@@ -55,7 +55,7 @@ ___
 
 **● FromDHCP**: *`boolean`*
 
-*Defined in [api/types.ts:1207](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1207)*
+*Defined in [api/types.ts:1207](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1207)*
 
 ___
 <a id="searchdomain"></a>
@@ -64,7 +64,7 @@ ___
 
 **● SearchDomain**: *`string`*
 
-*Defined in [api/types.ts:1208](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1208)*
+*Defined in [api/types.ts:1208](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1208)*
 
 ___
 

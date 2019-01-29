@@ -23,7 +23,7 @@
 
 **● Extension**: *[SecurityCapabilitiesExtension2](_api_types_.securitycapabilitiesextension2.md)*
 
-*Defined in [api/types.ts:1612](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1612)*
+*Defined in [api/types.ts:1612](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1612)*
 
 ___
 <a id="tls1_0"></a>
@@ -32,7 +32,7 @@ ___
 
 **● TLS1.0**: *`boolean`*
 
-*Defined in [api/types.ts:1611](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1611)*
+*Defined in [api/types.ts:1611](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1611)*
 
 ___
 

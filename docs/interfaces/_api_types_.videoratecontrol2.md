@@ -25,7 +25,7 @@ Desired frame rate in fps. The actual rate may be lower due to e.g. performance 
 
 **● BitrateLimit**: *`number`*
 
-*Defined in [api/types.ts:672](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L672)*
+*Defined in [api/types.ts:672](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L672)*
 
 ___
 <a id="frameratelimit"></a>
@@ -34,7 +34,7 @@ ___
 
 **● FrameRateLimit**: *`number`*
 
-*Defined in [api/types.ts:671](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L671)*
+*Defined in [api/types.ts:671](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L671)*
 
 ___
 

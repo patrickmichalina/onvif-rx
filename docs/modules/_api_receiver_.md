@@ -6,7 +6,7 @@
 
 ### Classes
 
-* [Receiver](../classes/_api_receiver_.receiver.md)
+* [ONVIFReceiver](../classes/_api_receiver_.onvifreceiver.md)
 
 ---
 

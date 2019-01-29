@@ -23,7 +23,7 @@
 
 **● password**: *`string`*
 
-*Defined in [config/interfaces.ts:31](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/interfaces.ts#L31)*
+*Defined in [config/interfaces.ts:31](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L31)*
 
 ___
 <a id="username"></a>
@@ -32,7 +32,7 @@ ___
 
 **● username**: *`string`*
 
-*Defined in [config/interfaces.ts:30](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/interfaces.ts#L30)*
+*Defined in [config/interfaces.ts:30](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L30)*
 
 ___
 

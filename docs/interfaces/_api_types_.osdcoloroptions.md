@@ -26,7 +26,7 @@ Describe the option of the color and its transparency.
 
 **● Color**: *[ColorOptions](_api_types_.coloroptions.md)*
 
-*Defined in [api/types.ts:4057](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4057)*
+*Defined in [api/types.ts:4057](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4057)*
 
 ___
 <a id="extension"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Extension**: *[OSDColorOptionsExtension](_api_types_.osdcoloroptionsextension.md)*
 
-*Defined in [api/types.ts:4059](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4059)*
+*Defined in [api/types.ts:4059](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4059)*
 
 ___
 <a id="transparent"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Transparent**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:4058](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4058)*
+*Defined in [api/types.ts:4058](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4058)*
 
 ___
 

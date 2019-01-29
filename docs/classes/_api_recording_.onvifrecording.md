@@ -1,65 +1,65 @@
-[onvif-rx](../README.md) > ["api/recording"](../modules/_api_recording_.md) > [Recording](../classes/_api_recording_.recording.md)
+[onvif-rx](../README.md) > ["api/recording"](../modules/_api_recording_.md) > [ONVIFRecording](../classes/_api_recording_.onvifrecording.md)
 
-# Class: Recording
+# Class: ONVIFRecording
 
 ## Hierarchy
 
-**Recording**
+**ONVIFRecording**
 
 ## Index
 
 ### Constructors
 
-* [constructor](_api_recording_.recording.md#constructor)
+* [constructor](_api_recording_.onvifrecording.md#constructor)
 
 ### Properties
 
-* [config](_api_recording_.recording.md#config)
+* [config](_api_recording_.onvifrecording.md#config)
 
 ### Methods
 
-* [CreateRecording](_api_recording_.recording.md#createrecording)
-* [CreateRecordingJob](_api_recording_.recording.md#createrecordingjob)
-* [CreateTrack](_api_recording_.recording.md#createtrack)
-* [DeleteRecording](_api_recording_.recording.md#deleterecording)
-* [DeleteRecordingJob](_api_recording_.recording.md#deleterecordingjob)
-* [DeleteTrack](_api_recording_.recording.md#deletetrack)
-* [ExportRecordedData](_api_recording_.recording.md#exportrecordeddata)
-* [GetExportRecordedDataState](_api_recording_.recording.md#getexportrecordeddatastate)
-* [GetRecordingConfiguration](_api_recording_.recording.md#getrecordingconfiguration)
-* [GetRecordingJobConfiguration](_api_recording_.recording.md#getrecordingjobconfiguration)
-* [GetRecordingJobState](_api_recording_.recording.md#getrecordingjobstate)
-* [GetRecordingJobs](_api_recording_.recording.md#getrecordingjobs)
-* [GetRecordingOptions](_api_recording_.recording.md#getrecordingoptions)
-* [GetRecordings](_api_recording_.recording.md#getrecordings)
-* [GetServiceCapabilities](_api_recording_.recording.md#getservicecapabilities)
-* [GetTrackConfiguration](_api_recording_.recording.md#gettrackconfiguration)
-* [SetRecordingConfiguration](_api_recording_.recording.md#setrecordingconfiguration)
-* [SetRecordingJobConfiguration](_api_recording_.recording.md#setrecordingjobconfiguration)
-* [SetRecordingJobMode](_api_recording_.recording.md#setrecordingjobmode)
-* [SetTrackConfiguration](_api_recording_.recording.md#settrackconfiguration)
-* [StopExportRecordedData](_api_recording_.recording.md#stopexportrecordeddata)
-* [CreateRecording](_api_recording_.recording.md#createrecording-1)
-* [CreateRecordingJob](_api_recording_.recording.md#createrecordingjob-1)
-* [CreateTrack](_api_recording_.recording.md#createtrack-1)
-* [DeleteRecording](_api_recording_.recording.md#deleterecording-1)
-* [DeleteRecordingJob](_api_recording_.recording.md#deleterecordingjob-1)
-* [DeleteTrack](_api_recording_.recording.md#deletetrack-1)
-* [ExportRecordedData](_api_recording_.recording.md#exportrecordeddata-1)
-* [GetExportRecordedDataState](_api_recording_.recording.md#getexportrecordeddatastate-1)
-* [GetRecordingConfiguration](_api_recording_.recording.md#getrecordingconfiguration-1)
-* [GetRecordingJobConfiguration](_api_recording_.recording.md#getrecordingjobconfiguration-1)
-* [GetRecordingJobState](_api_recording_.recording.md#getrecordingjobstate-1)
-* [GetRecordingJobs](_api_recording_.recording.md#getrecordingjobs-1)
-* [GetRecordingOptions](_api_recording_.recording.md#getrecordingoptions-1)
-* [GetRecordings](_api_recording_.recording.md#getrecordings-1)
-* [GetServiceCapabilities](_api_recording_.recording.md#getservicecapabilities-1)
-* [GetTrackConfiguration](_api_recording_.recording.md#gettrackconfiguration-1)
-* [SetRecordingConfiguration](_api_recording_.recording.md#setrecordingconfiguration-1)
-* [SetRecordingJobConfiguration](_api_recording_.recording.md#setrecordingjobconfiguration-1)
-* [SetRecordingJobMode](_api_recording_.recording.md#setrecordingjobmode-1)
-* [SetTrackConfiguration](_api_recording_.recording.md#settrackconfiguration-1)
-* [StopExportRecordedData](_api_recording_.recording.md#stopexportrecordeddata-1)
+* [CreateRecording](_api_recording_.onvifrecording.md#createrecording)
+* [CreateRecordingJob](_api_recording_.onvifrecording.md#createrecordingjob)
+* [CreateTrack](_api_recording_.onvifrecording.md#createtrack)
+* [DeleteRecording](_api_recording_.onvifrecording.md#deleterecording)
+* [DeleteRecordingJob](_api_recording_.onvifrecording.md#deleterecordingjob)
+* [DeleteTrack](_api_recording_.onvifrecording.md#deletetrack)
+* [ExportRecordedData](_api_recording_.onvifrecording.md#exportrecordeddata)
+* [GetExportRecordedDataState](_api_recording_.onvifrecording.md#getexportrecordeddatastate)
+* [GetRecordingConfiguration](_api_recording_.onvifrecording.md#getrecordingconfiguration)
+* [GetRecordingJobConfiguration](_api_recording_.onvifrecording.md#getrecordingjobconfiguration)
+* [GetRecordingJobState](_api_recording_.onvifrecording.md#getrecordingjobstate)
+* [GetRecordingJobs](_api_recording_.onvifrecording.md#getrecordingjobs)
+* [GetRecordingOptions](_api_recording_.onvifrecording.md#getrecordingoptions)
+* [GetRecordings](_api_recording_.onvifrecording.md#getrecordings)
+* [GetServiceCapabilities](_api_recording_.onvifrecording.md#getservicecapabilities)
+* [GetTrackConfiguration](_api_recording_.onvifrecording.md#gettrackconfiguration)
+* [SetRecordingConfiguration](_api_recording_.onvifrecording.md#setrecordingconfiguration)
+* [SetRecordingJobConfiguration](_api_recording_.onvifrecording.md#setrecordingjobconfiguration)
+* [SetRecordingJobMode](_api_recording_.onvifrecording.md#setrecordingjobmode)
+* [SetTrackConfiguration](_api_recording_.onvifrecording.md#settrackconfiguration)
+* [StopExportRecordedData](_api_recording_.onvifrecording.md#stopexportrecordeddata)
+* [CreateRecording](_api_recording_.onvifrecording.md#createrecording-1)
+* [CreateRecordingJob](_api_recording_.onvifrecording.md#createrecordingjob-1)
+* [CreateTrack](_api_recording_.onvifrecording.md#createtrack-1)
+* [DeleteRecording](_api_recording_.onvifrecording.md#deleterecording-1)
+* [DeleteRecordingJob](_api_recording_.onvifrecording.md#deleterecordingjob-1)
+* [DeleteTrack](_api_recording_.onvifrecording.md#deletetrack-1)
+* [ExportRecordedData](_api_recording_.onvifrecording.md#exportrecordeddata-1)
+* [GetExportRecordedDataState](_api_recording_.onvifrecording.md#getexportrecordeddatastate-1)
+* [GetRecordingConfiguration](_api_recording_.onvifrecording.md#getrecordingconfiguration-1)
+* [GetRecordingJobConfiguration](_api_recording_.onvifrecording.md#getrecordingjobconfiguration-1)
+* [GetRecordingJobState](_api_recording_.onvifrecording.md#getrecordingjobstate-1)
+* [GetRecordingJobs](_api_recording_.onvifrecording.md#getrecordingjobs-1)
+* [GetRecordingOptions](_api_recording_.onvifrecording.md#getrecordingoptions-1)
+* [GetRecordings](_api_recording_.onvifrecording.md#getrecordings-1)
+* [GetServiceCapabilities](_api_recording_.onvifrecording.md#getservicecapabilities-1)
+* [GetTrackConfiguration](_api_recording_.onvifrecording.md#gettrackconfiguration-1)
+* [SetRecordingConfiguration](_api_recording_.onvifrecording.md#setrecordingconfiguration-1)
+* [SetRecordingJobConfiguration](_api_recording_.onvifrecording.md#setrecordingjobconfiguration-1)
+* [SetRecordingJobMode](_api_recording_.onvifrecording.md#setrecordingjobmode-1)
+* [SetTrackConfiguration](_api_recording_.onvifrecording.md#settrackconfiguration-1)
+* [StopExportRecordedData](_api_recording_.onvifrecording.md#stopexportrecordeddata-1)
 
 ---
 
@@ -69,9 +69,9 @@
 
 ###  constructor
 
-⊕ **new Recording**(config: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*): [Recording](_api_recording_.recording.md)
+⊕ **new ONVIFRecording**(config: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*): [ONVIFRecording](_api_recording_.onvifrecording.md)
 
-*Defined in [api/recording.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L5)*
+*Defined in [api/recording.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L5)*
 
 **Parameters:**
 
@@ -79,7 +79,7 @@
 | ------ | ------ |
 | config | [IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md) |
 
-**Returns:** [Recording](_api_recording_.recording.md)
+**Returns:** [ONVIFRecording](_api_recording_.onvifrecording.md)
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 **● config**: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*
 
-*Defined in [api/recording.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L6)*
+*Defined in [api/recording.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L6)*
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **CreateRecording**(RecordingConfiguration: *[RecordingConfiguration](../interfaces/_api_types_.recordingconfiguration.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:272](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L272)*
+*Defined in [api/recording.ts:272](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L272)*
 
 CreateRecording shall create a new recording. The new recording shall be created with a track for each supported TrackType see Recording Control Spec. This method is optional. It shall be available if the Recording/DynamicRecordings capability is TRUE. When successfully completed, CreateRecording shall have created three tracks with the following configurations:
 
@@ -132,7 +132,7 @@ ___
 
 ▸ **CreateRecordingJob**(JobConfiguration: *[RecordingJobConfiguration](../interfaces/_api_types_.recordingjobconfiguration.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:361](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L361)*
+*Defined in [api/recording.ts:361](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L361)*
 
 CreateRecordingJob shall create a new recording job. The JobConfiguration returned from CreateRecordingJob shall be identical to the JobConfiguration passed into CreateRecordingJob, except for the ReceiverToken and the AutoCreateReceiver. In the returned structure, the ReceiverToken shall be present and valid and the AutoCreateReceiver field shall be omitted.
 
@@ -151,7 +151,7 @@ ___
 
 ▸ **CreateTrack**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*, TrackConfiguration: *[TrackConfiguration](../interfaces/_api_types_.trackconfiguration.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:326](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L326)*
+*Defined in [api/recording.ts:326](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L326)*
 
 This method shall create a new track within a recording. This method is optional. It shall be available if the Recording/DynamicTracks capability is TRUE. A TrackToken in itself does not uniquely identify a specific track. Tracks within different recordings may have the same TrackToken.
 
@@ -171,7 +171,7 @@ ___
 
 ▸ **DeleteRecording**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:286](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L286)*
+*Defined in [api/recording.ts:286](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L286)*
 
 DeleteRecording shall delete a recording object. Whenever a recording is deleted, the device shall delete all the tracks that are part of the recording, and it shall delete all the Recording Jobs that record into the recording. For each deleted recording job, the device shall also delete all the receiver objects associated with the recording job that are automatically created using the AutoCreateReceiver field of the recording job configuration structure and are not used in any other recording job. This method is optional. It shall be available if the Recording/DynamicRecordings capability is TRUE.
 
@@ -190,7 +190,7 @@ ___
 
 ▸ **DeleteRecordingJob**(JobToken: *[RecordingJobReference](../modules/_api_types_.md#recordingjobreference)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:371](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L371)*
+*Defined in [api/recording.ts:371](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L371)*
 
 DeleteRecordingJob removes a recording job. It shall also implicitly delete all the receiver objects associated with the recording job that are automatically created using the AutoCreateReceiver field of the recording job configuration structure and are not used in any other recording job.
 
@@ -209,7 +209,7 @@ ___
 
 ▸ **DeleteTrack**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*, TrackToken: *[TrackReference](../modules/_api_types_.md#trackreference)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:335](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L335)*
+*Defined in [api/recording.ts:335](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L335)*
 
 DeleteTrack shall remove a track from a recording. All the data in the track shall be deleted. This method is optional. It shall be available if the Recording/DynamicTracks capability is TRUE.
 
@@ -229,7 +229,7 @@ ___
 
 ▸ **ExportRecordedData**(SearchScope: *[SearchScope](../interfaces/_api_types_.searchscope.md)*, FileFormat: *`string`*, StorageDestination: *[StorageReferencePath](../interfaces/_api_types_.storagereferencepath.md)*, StartPoint: *`string`*, EndPoint: *`string`*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:421](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L421)*
+*Defined in [api/recording.ts:421](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L421)*
 
 Exports the selected recordings (from existing recorded data) to the given storage target based on the requested file format.
 
@@ -252,7 +252,7 @@ ___
 
 ▸ **GetExportRecordedDataState**(OperationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:439](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L439)*
+*Defined in [api/recording.ts:439](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L439)*
 
 Retrieves the status of selected ExportRecordedData operation.
 
@@ -271,7 +271,7 @@ ___
 
 ▸ **GetRecordingConfiguration**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:308](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L308)*
+*Defined in [api/recording.ts:308](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L308)*
 
 GetRecordingConfiguration shall retrieve the recording configuration for a recording.
 
@@ -290,7 +290,7 @@ ___
 
 ▸ **GetRecordingJobConfiguration**(JobToken: *[RecordingJobReference](../modules/_api_types_.md#recordingjobreference)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:395](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L395)*
+*Defined in [api/recording.ts:395](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L395)*
 
 GetRecordingJobConfiguration shall return the current configuration for a recording job.
 
@@ -309,7 +309,7 @@ ___
 
 ▸ **GetRecordingJobState**(JobToken: *[RecordingJobReference](../modules/_api_types_.md#recordingjobreference)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:412](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L412)*
+*Defined in [api/recording.ts:412](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L412)*
 
 GetRecordingJobState returns the state of a recording job. It includes an aggregated state, and state for each track of the recording job.
 
@@ -328,7 +328,7 @@ ___
 
 ▸ **GetRecordingJobs**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:378](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L378)*
+*Defined in [api/recording.ts:378](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L378)*
 
 GetRecordingJobs shall return a list of all the recording jobs in the device.
 
@@ -341,7 +341,7 @@ ___
 
 ▸ **GetRecordingOptions**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:315](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L315)*
+*Defined in [api/recording.ts:315](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L315)*
 
 GetRecordingOptions returns information for a recording identified by the RecordingToken. The information includes the number of additonal tracks as well as recording jobs that can be configured.
 
@@ -360,7 +360,7 @@ ___
 
 ▸ **GetRecordings**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:294](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L294)*
+*Defined in [api/recording.ts:294](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L294)*
 
 GetRecordings shall return a description of all the recordings in the device. This description shall include a list of all the tracks for each recording.
 
@@ -373,7 +373,7 @@ ___
 
 ▸ **GetServiceCapabilities**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:250](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L250)*
+*Defined in [api/recording.ts:250](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L250)*
 
 Returns the capabilities of the recording service. The result is returned in a typed answer.
 
@@ -386,7 +386,7 @@ ___
 
 ▸ **GetTrackConfiguration**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*, TrackToken: *[TrackReference](../modules/_api_types_.md#trackreference)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:342](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L342)*
+*Defined in [api/recording.ts:342](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L342)*
 
 GetTrackConfiguration shall retrieve the configuration for a specific track.
 
@@ -406,7 +406,7 @@ ___
 
 ▸ **SetRecordingConfiguration**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*, RecordingConfiguration: *[RecordingConfiguration](../interfaces/_api_types_.recordingconfiguration.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:301](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L301)*
+*Defined in [api/recording.ts:301](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L301)*
 
 SetRecordingConfiguration shall change the configuration of a recording.
 
@@ -426,7 +426,7 @@ ___
 
 ▸ **SetRecordingJobConfiguration**(JobToken: *[RecordingJobReference](../modules/_api_types_.md#recordingjobreference)*, JobConfiguration: *[RecordingJobConfiguration](../interfaces/_api_types_.recordingjobconfiguration.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:388](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L388)*
+*Defined in [api/recording.ts:388](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L388)*
 
 SetRecordingJobConfiguration shall change the configuration for a recording job. SetRecordingJobConfiguration shall implicitly delete any receiver objects that were created automatically if they are no longer used as a result of changing the recording job configuration.
 
@@ -446,7 +446,7 @@ ___
 
 ▸ **SetRecordingJobMode**(JobToken: *[RecordingJobReference](../modules/_api_types_.md#recordingjobreference)*, Mode: *[RecordingJobMode](../modules/_api_types_.md#recordingjobmode)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:404](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L404)*
+*Defined in [api/recording.ts:404](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L404)*
 
 SetRecordingJobMode shall change the mode of the recording job. Using this method shall be equivalent to retrieving the recording job configuration, and writing it back with a different mode.
 
@@ -466,7 +466,7 @@ ___
 
 ▸ **SetTrackConfiguration**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*, TrackToken: *[TrackReference](../modules/_api_types_.md#trackreference)*, TrackConfiguration: *[TrackConfiguration](../interfaces/_api_types_.trackconfiguration.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:349](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L349)*
+*Defined in [api/recording.ts:349](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L349)*
 
 SetTrackConfiguration shall change the configuration of a track.
 
@@ -487,7 +487,7 @@ ___
 
 ▸ **StopExportRecordedData**(OperationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/recording.ts:430](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L430)*
+*Defined in [api/recording.ts:430](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L430)*
 
 Stops the selected ExportRecordedData operation.
 
@@ -506,7 +506,7 @@ ___
 
 ▸ **CreateRecording**(RecordingConfiguration: *[RecordingConfiguration](../interfaces/_api_types_.recordingconfiguration.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:36](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L36)*
+*Defined in [api/recording.ts:36](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L36)*
 
 CreateRecording shall create a new recording. The new recording shall be created with a track for each supported TrackType see Recording Control Spec. This method is optional. It shall be available if the Recording/DynamicRecordings capability is TRUE. When successfully completed, CreateRecording shall have created three tracks with the following configurations:
 
@@ -535,7 +535,7 @@ ___
 
 ▸ **CreateRecordingJob**(JobConfiguration: *[RecordingJobConfiguration](../interfaces/_api_types_.recordingjobconfiguration.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:145](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L145)*
+*Defined in [api/recording.ts:145](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L145)*
 
 CreateRecordingJob shall create a new recording job. The JobConfiguration returned from CreateRecordingJob shall be identical to the JobConfiguration passed into CreateRecordingJob, except for the ReceiverToken and the AutoCreateReceiver. In the returned structure, the ReceiverToken shall be present and valid and the AutoCreateReceiver field shall be omitted.
 
@@ -554,7 +554,7 @@ ___
 
 ▸ **CreateTrack**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*, TrackConfiguration: *[TrackConfiguration](../interfaces/_api_types_.trackconfiguration.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:102](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L102)*
+*Defined in [api/recording.ts:102](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L102)*
 
 This method shall create a new track within a recording. This method is optional. It shall be available if the Recording/DynamicTracks capability is TRUE. A TrackToken in itself does not uniquely identify a specific track. Tracks within different recordings may have the same TrackToken.
 
@@ -574,7 +574,7 @@ ___
 
 ▸ **DeleteRecording**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:52](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L52)*
+*Defined in [api/recording.ts:52](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L52)*
 
 DeleteRecording shall delete a recording object. Whenever a recording is deleted, the device shall delete all the tracks that are part of the recording, and it shall delete all the Recording Jobs that record into the recording. For each deleted recording job, the device shall also delete all the receiver objects associated with the recording job that are automatically created using the AutoCreateReceiver field of the recording job configuration structure and are not used in any other recording job. This method is optional. It shall be available if the Recording/DynamicRecordings capability is TRUE.
 
@@ -593,7 +593,7 @@ ___
 
 ▸ **DeleteRecordingJob**(JobToken: *[RecordingJobReference](../modules/_api_types_.md#recordingjobreference)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:157](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L157)*
+*Defined in [api/recording.ts:157](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L157)*
 
 DeleteRecordingJob removes a recording job. It shall also implicitly delete all the receiver objects associated with the recording job that are automatically created using the AutoCreateReceiver field of the recording job configuration structure and are not used in any other recording job.
 
@@ -612,7 +612,7 @@ ___
 
 ▸ **DeleteTrack**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*, TrackToken: *[TrackReference](../modules/_api_types_.md#trackreference)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:113](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L113)*
+*Defined in [api/recording.ts:113](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L113)*
 
 DeleteTrack shall remove a track from a recording. All the data in the track shall be deleted. This method is optional. It shall be available if the Recording/DynamicTracks capability is TRUE.
 
@@ -632,7 +632,7 @@ ___
 
 ▸ **ExportRecordedData**(SearchScope: *[SearchScope](../interfaces/_api_types_.searchscope.md)*, FileFormat: *`string`*, StorageDestination: *[StorageReferencePath](../interfaces/_api_types_.storagereferencepath.md)*, StartPoint?: *`undefined` \| `string`*, EndPoint?: *`undefined` \| `string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:219](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L219)*
+*Defined in [api/recording.ts:219](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L219)*
 
 Exports the selected recordings (from existing recorded data) to the given storage target based on the requested file format.
 
@@ -655,7 +655,7 @@ ___
 
 ▸ **GetExportRecordedDataState**(OperationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:241](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L241)*
+*Defined in [api/recording.ts:241](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L241)*
 
 Retrieves the status of selected ExportRecordedData operation.
 
@@ -674,7 +674,7 @@ ___
 
 ▸ **GetRecordingConfiguration**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:80](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L80)*
+*Defined in [api/recording.ts:80](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L80)*
 
 GetRecordingConfiguration shall retrieve the recording configuration for a recording.
 
@@ -693,7 +693,7 @@ ___
 
 ▸ **GetRecordingJobConfiguration**(JobToken: *[RecordingJobReference](../modules/_api_types_.md#recordingjobreference)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:187](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L187)*
+*Defined in [api/recording.ts:187](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L187)*
 
 GetRecordingJobConfiguration shall return the current configuration for a recording job.
 
@@ -712,7 +712,7 @@ ___
 
 ▸ **GetRecordingJobState**(JobToken: *[RecordingJobReference](../modules/_api_types_.md#recordingjobreference)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:208](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L208)*
+*Defined in [api/recording.ts:208](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L208)*
 
 GetRecordingJobState returns the state of a recording job. It includes an aggregated state, and state for each track of the recording job.
 
@@ -731,7 +731,7 @@ ___
 
 ▸ **GetRecordingJobs**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:166](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L166)*
+*Defined in [api/recording.ts:166](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L166)*
 
 GetRecordingJobs shall return a list of all the recording jobs in the device.
 
@@ -744,7 +744,7 @@ ___
 
 ▸ **GetRecordingOptions**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:89](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L89)*
+*Defined in [api/recording.ts:89](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L89)*
 
 GetRecordingOptions returns information for a recording identified by the RecordingToken. The information includes the number of additonal tracks as well as recording jobs that can be configured.
 
@@ -763,7 +763,7 @@ ___
 
 ▸ **GetRecordings**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:62](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L62)*
+*Defined in [api/recording.ts:62](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L62)*
 
 GetRecordings shall return a description of all the recordings in the device. This description shall include a list of all the tracks for each recording.
 
@@ -776,7 +776,7 @@ ___
 
 ▸ **GetServiceCapabilities**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L12)*
+*Defined in [api/recording.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L12)*
 
 Returns the capabilities of the recording service. The result is returned in a typed answer.
 
@@ -789,7 +789,7 @@ ___
 
 ▸ **GetTrackConfiguration**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*, TrackToken: *[TrackReference](../modules/_api_types_.md#trackreference)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:122](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L122)*
+*Defined in [api/recording.ts:122](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L122)*
 
 GetTrackConfiguration shall retrieve the configuration for a specific track.
 
@@ -809,7 +809,7 @@ ___
 
 ▸ **SetRecordingConfiguration**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*, RecordingConfiguration: *[RecordingConfiguration](../interfaces/_api_types_.recordingconfiguration.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:71](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L71)*
+*Defined in [api/recording.ts:71](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L71)*
 
 SetRecordingConfiguration shall change the configuration of a recording.
 
@@ -829,7 +829,7 @@ ___
 
 ▸ **SetRecordingJobConfiguration**(JobToken: *[RecordingJobReference](../modules/_api_types_.md#recordingjobreference)*, JobConfiguration: *[RecordingJobConfiguration](../interfaces/_api_types_.recordingjobconfiguration.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:178](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L178)*
+*Defined in [api/recording.ts:178](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L178)*
 
 SetRecordingJobConfiguration shall change the configuration for a recording job. SetRecordingJobConfiguration shall implicitly delete any receiver objects that were created automatically if they are no longer used as a result of changing the recording job configuration.
 
@@ -849,7 +849,7 @@ ___
 
 ▸ **SetRecordingJobMode**(JobToken: *[RecordingJobReference](../modules/_api_types_.md#recordingjobreference)*, Mode: *[RecordingJobMode](../modules/_api_types_.md#recordingjobmode)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:198](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L198)*
+*Defined in [api/recording.ts:198](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L198)*
 
 SetRecordingJobMode shall change the mode of the recording job. Using this method shall be equivalent to retrieving the recording job configuration, and writing it back with a different mode.
 
@@ -869,7 +869,7 @@ ___
 
 ▸ **SetTrackConfiguration**(RecordingToken: *[RecordingReference](../modules/_api_types_.md#recordingreference)*, TrackToken: *[TrackReference](../modules/_api_types_.md#trackreference)*, TrackConfiguration: *[TrackConfiguration](../interfaces/_api_types_.trackconfiguration.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:131](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L131)*
+*Defined in [api/recording.ts:131](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L131)*
 
 SetTrackConfiguration shall change the configuration of a track.
 
@@ -890,7 +890,7 @@ ___
 
 ▸ **StopExportRecordedData**(OperationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/recording.ts:230](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/recording.ts#L230)*
+*Defined in [api/recording.ts:230](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/recording.ts#L230)*
 
 Stops the selected ExportRecordedData operation.
 

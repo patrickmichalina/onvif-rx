@@ -25,7 +25,7 @@ Supported options for detail definition of preset position of the tour spot.
 
 **● PresetDetail**: *[PTZPresetTourPresetDetailOptions](_api_types_.ptzpresettourpresetdetailoptions.md)*
 
-*Defined in [api/types.ts:2384](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2384)*
+*Defined in [api/types.ts:2384](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2384)*
 
 ___
 <a id="staytime"></a>
@@ -34,7 +34,7 @@ ___
 
 **● StayTime**: *[DurationRange](_api_types_.durationrange.md)*
 
-*Defined in [api/types.ts:2385](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2385)*
+*Defined in [api/types.ts:2385](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2385)*
 
 ___
 

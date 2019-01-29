@@ -19,7 +19,7 @@
 
 **Configurable**:  = "Configurable"
 
-*Defined in [api/types.ts:4555](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4555)*
+*Defined in [api/types.ts:4555](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4555)*
 
 ___
 <a id="fixed"></a>
@@ -28,7 +28,7 @@ ___
 
 **Fixed**:  = "Fixed"
 
-*Defined in [api/types.ts:4551](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4551)*
+*Defined in [api/types.ts:4551](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4551)*
 
 ___
 

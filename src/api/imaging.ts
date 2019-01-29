@@ -2,7 +2,7 @@ import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequ
 import { IDeviceConfig } from "../config";
 import { ReferenceToken, ImagingSettings20, FocusMove } from "./types";
 
-export class Imaging {
+export class ONVIFImaging {
     constructor(private config: IDeviceConfig) {
     }
 
@@ -128,21 +128,21 @@ export class Imaging {
      * Returns the capabilities of the imaging service. The result is returned in a typed answer.
      */
     GetServiceCapabilities() {
-        return Imaging.GetServiceCapabilities().run(this.config)
+        return ONVIFImaging.GetServiceCapabilities().run(this.config)
     }
 
     /**
      * Get the ImagingConfiguration for the requested VideoSource.
      */
     GetImagingSettings(VideoSourceToken: ReferenceToken) {
-        return Imaging.GetImagingSettings(VideoSourceToken).run(this.config)
+        return ONVIFImaging.GetImagingSettings(VideoSourceToken).run(this.config)
     }
 
     /**
      * Set the ImagingConfiguration for the requested VideoSource.
      */
     SetImagingSettings(VideoSourceToken: ReferenceToken, ImagingSettings: ImagingSettings20, ForcePersistence: boolean) {
-        return Imaging.SetImagingSettings(VideoSourceToken,ImagingSettings,ForcePersistence).run(this.config)
+        return ONVIFImaging.SetImagingSettings(VideoSourceToken,ImagingSettings,ForcePersistence).run(this.config)
     }
 
     /**
@@ -153,7 +153,7 @@ export class Imaging {
      *   is provided.
      */
     GetOptions(VideoSourceToken: ReferenceToken) {
-        return Imaging.GetOptions(VideoSourceToken).run(this.config)
+        return ONVIFImaging.GetOptions(VideoSourceToken).run(this.config)
     }
 
     /**
@@ -169,14 +169,14 @@ export class Imaging {
      *   
      */
     Move(VideoSourceToken: ReferenceToken, Focus: FocusMove) {
-        return Imaging.Move(VideoSourceToken,Focus).run(this.config)
+        return ONVIFImaging.Move(VideoSourceToken,Focus).run(this.config)
     }
 
     /**
      * Imaging move operation options supported for the Video source.
      */
     GetMoveOptions(VideoSourceToken: ReferenceToken) {
-        return Imaging.GetMoveOptions(VideoSourceToken).run(this.config)
+        return ONVIFImaging.GetMoveOptions(VideoSourceToken).run(this.config)
     }
 
     /**
@@ -184,21 +184,21 @@ export class Imaging {
      *   the GetMoveOptions supports this command. The operation will not affect ongoing autofocus operation.
      */
     Stop(VideoSourceToken: ReferenceToken) {
-        return Imaging.Stop(VideoSourceToken).run(this.config)
+        return ONVIFImaging.Stop(VideoSourceToken).run(this.config)
     }
 
     /**
      * Via this command the current status of the Move operation can be requested. Supported for this command is available if the support for the Move operation is signalled via GetMoveOptions.
      */
     GetStatus(VideoSourceToken: ReferenceToken) {
-        return Imaging.GetStatus(VideoSourceToken).run(this.config)
+        return ONVIFImaging.GetStatus(VideoSourceToken).run(this.config)
     }
 
     /**
      * Via this command the list of available Imaging Presets can be requested.
      */
     GetPresets(VideoSourceToken: ReferenceToken) {
-        return Imaging.GetPresets(VideoSourceToken).run(this.config)
+        return ONVIFImaging.GetPresets(VideoSourceToken).run(this.config)
     }
 
     /**
@@ -207,7 +207,7 @@ export class Imaging {
      *   GetCurrentPreset shall return 0 if Imaging Presets are not supported by the Video Source.
      */
     GetCurrentPreset(VideoSourceToken: ReferenceToken) {
-        return Imaging.GetCurrentPreset(VideoSourceToken).run(this.config)
+        return ONVIFImaging.GetCurrentPreset(VideoSourceToken).run(this.config)
     }
 
     /**
@@ -217,6 +217,6 @@ export class Imaging {
      *   When the new Imaging Preset is applied by SetCurrentPreset, the Device shall adjust the Video Source settings to match those defined by the specified Imaging Preset.
      */
     SetCurrentPreset(VideoSourceToken: ReferenceToken, PresetToken: ReferenceToken) {
-        return Imaging.SetCurrentPreset(VideoSourceToken,PresetToken).run(this.config)
+        return ONVIFImaging.SetCurrentPreset(VideoSourceToken,PresetToken).run(this.config)
     }
 }

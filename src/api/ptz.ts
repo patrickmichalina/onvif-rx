@@ -2,7 +2,7 @@ import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequ
 import { IDeviceConfig } from "../config";
 import { ReferenceToken, PTZConfiguration, AuxiliaryData, PTZSpeed, PTZVector, GeoLocation, PresetTour, PTZPresetTourOperation } from "./types";
 
-export class PTZ {
+export class ONVIFPTZ {
     constructor(private config: IDeviceConfig) {
     }
 
@@ -365,7 +365,7 @@ export class PTZ {
      * Returns the capabilities of the PTZ service. The result is returned in a typed answer.
      */
     GetServiceCapabilities() {
-        return PTZ.GetServiceCapabilities().run(this.config)
+        return ONVIFPTZ.GetServiceCapabilities().run(this.config)
     }
 
     /**
@@ -379,7 +379,7 @@ export class PTZ {
      *         
      */
     GetNodes() {
-        return PTZ.GetNodes().run(this.config)
+        return ONVIFPTZ.GetNodes().run(this.config)
     }
 
     /**
@@ -388,7 +388,7 @@ export class PTZ {
      *     
      */
     GetNode(NodeToken: ReferenceToken) {
-        return PTZ.GetNode(NodeToken).run(this.config)
+        return ONVIFPTZ.GetNode(NodeToken).run(this.config)
     }
 
     /**
@@ -411,7 +411,7 @@ export class PTZ {
      *   
      */
     GetConfiguration(PTZConfigurationToken: ReferenceToken) {
-        return PTZ.GetConfiguration(PTZConfigurationToken).run(this.config)
+        return ONVIFPTZ.GetConfiguration(PTZConfigurationToken).run(this.config)
     }
 
     /**
@@ -435,7 +435,7 @@ export class PTZ {
      *   
      */
     GetConfigurations() {
-        return PTZ.GetConfigurations().run(this.config)
+        return ONVIFPTZ.GetConfigurations().run(this.config)
     }
 
     /**
@@ -444,7 +444,7 @@ export class PTZ {
      *         
      */
     SetConfiguration(PTZConfiguration: PTZConfiguration, ForcePersistence: boolean) {
-        return PTZ.SetConfiguration(PTZConfiguration,ForcePersistence).run(this.config)
+        return ONVIFPTZ.SetConfiguration(PTZConfiguration,ForcePersistence).run(this.config)
     }
 
     /**
@@ -458,7 +458,7 @@ export class PTZ {
      *   
      */
     GetConfigurationOptions(ConfigurationToken: ReferenceToken) {
-        return PTZ.GetConfigurationOptions(ConfigurationToken).run(this.config)
+        return ONVIFPTZ.GetConfigurationOptions(ConfigurationToken).run(this.config)
     }
 
     /**
@@ -470,7 +470,7 @@ export class PTZ {
      *         
      */
     SendAuxiliaryCommand(ProfileToken: ReferenceToken, AuxiliaryData: AuxiliaryData) {
-        return PTZ.SendAuxiliaryCommand(ProfileToken,AuxiliaryData).run(this.config)
+        return ONVIFPTZ.SendAuxiliaryCommand(ProfileToken,AuxiliaryData).run(this.config)
     }
 
     /**
@@ -480,7 +480,7 @@ export class PTZ {
      *           for at least on PTZ preset by the PTZNode.
      */
     GetPresets(ProfileToken: ReferenceToken) {
-        return PTZ.GetPresets(ProfileToken).run(this.config)
+        return ONVIFPTZ.GetPresets(ProfileToken).run(this.config)
     }
 
     /**
@@ -496,7 +496,7 @@ export class PTZ {
      *   Preset which then should be recalled in the GotoPreset operation.      
      */
     SetPreset(ProfileToken: ReferenceToken, PresetName: string, PresetToken: ReferenceToken) {
-        return PTZ.SetPreset(ProfileToken,PresetName,PresetToken).run(this.config)
+        return ONVIFPTZ.SetPreset(ProfileToken,PresetName,PresetToken).run(this.config)
     }
 
     /**
@@ -510,7 +510,7 @@ export class PTZ {
      *         
      */
     RemovePreset(ProfileToken: ReferenceToken, PresetToken: ReferenceToken) {
-        return PTZ.RemovePreset(ProfileToken,PresetToken).run(this.config)
+        return ONVIFPTZ.RemovePreset(ProfileToken,PresetToken).run(this.config)
     }
 
     /**
@@ -520,7 +520,7 @@ export class PTZ {
      *           support for at least on PTZ preset by the PTZNode.
      */
     GotoPreset(ProfileToken: ReferenceToken, PresetToken: ReferenceToken, Speed: PTZSpeed) {
-        return PTZ.GotoPreset(ProfileToken,PresetToken,Speed).run(this.config)
+        return ONVIFPTZ.GotoPreset(ProfileToken,PresetToken,Speed).run(this.config)
     }
 
     /**
@@ -528,7 +528,7 @@ export class PTZ {
      *           Operation to move the PTZ device to it's "home" position. The operation is supported if the HomeSupported element in the PTZNode is true.
      */
     GotoHomePosition(ProfileToken: ReferenceToken, Speed: PTZSpeed) {
-        return PTZ.GotoHomePosition(ProfileToken,Speed).run(this.config)
+        return ONVIFPTZ.GotoHomePosition(ProfileToken,Speed).run(this.config)
     }
 
     /**
@@ -538,14 +538,14 @@ export class PTZ {
      *   Home Position with the GotoHomePosition command.
      */
     SetHomePosition(ProfileToken: ReferenceToken) {
-        return PTZ.SetHomePosition(ProfileToken).run(this.config)
+        return ONVIFPTZ.SetHomePosition(ProfileToken).run(this.config)
     }
 
     /**
      * Operation for continuous Pan/Tilt and Zoom movements. The operation is supported if the PTZNode supports at least one continuous Pan/Tilt or Zoom space. If the space argument is omitted, the default space set by the PTZConfiguration will be used.
      */
     ContinuousMove(ProfileToken: ReferenceToken, Velocity: PTZSpeed, Timeout: string) {
-        return PTZ.ContinuousMove(ProfileToken,Velocity,Timeout).run(this.config)
+        return ONVIFPTZ.ContinuousMove(ProfileToken,Velocity,Timeout).run(this.config)
     }
 
     /**
@@ -556,7 +556,7 @@ export class PTZ {
      *   
      */
     RelativeMove(ProfileToken: ReferenceToken, Translation: PTZVector, Speed: PTZSpeed) {
-        return PTZ.RelativeMove(ProfileToken,Translation,Speed).run(this.config)
+        return ONVIFPTZ.RelativeMove(ProfileToken,Translation,Speed).run(this.config)
     }
 
     /**
@@ -565,7 +565,7 @@ export class PTZ {
      *   selected profile.
      */
     GetStatus(ProfileToken: ReferenceToken) {
-        return PTZ.GetStatus(ProfileToken).run(this.config)
+        return ONVIFPTZ.GetStatus(ProfileToken).run(this.config)
     }
 
     /**
@@ -576,7 +576,7 @@ export class PTZ {
      *   
      */
     AbsoluteMove(ProfileToken: ReferenceToken, Position: PTZVector, Speed: PTZSpeed) {
-        return PTZ.AbsoluteMove(ProfileToken,Position,Speed).run(this.config)
+        return ONVIFPTZ.AbsoluteMove(ProfileToken,Position,Speed).run(this.config)
     }
 
     /**
@@ -589,7 +589,7 @@ export class PTZ {
      *   
      */
     GeoMove(ProfileToken: ReferenceToken, Target: GeoLocation, Speed: PTZSpeed, AreaHeight: number, AreaWidth: number) {
-        return PTZ.GeoMove(ProfileToken,Target,Speed,AreaHeight,AreaWidth).run(this.config)
+        return ONVIFPTZ.GeoMove(ProfileToken,Target,Speed,AreaHeight,AreaWidth).run(this.config)
     }
 
     /**
@@ -597,56 +597,56 @@ export class PTZ {
      *   If no stop argument for pan, tilt or zoom is set, the device will stop all ongoing pan, tilt and zoom movements.
      */
     Stop(ProfileToken: ReferenceToken, PanTilt: boolean, Zoom: boolean) {
-        return PTZ.Stop(ProfileToken,PanTilt,Zoom).run(this.config)
+        return ONVIFPTZ.Stop(ProfileToken,PanTilt,Zoom).run(this.config)
     }
 
     /**
      * Operation to request PTZ preset tours in the selected media profiles.
      */
     GetPresetTours(ProfileToken: ReferenceToken) {
-        return PTZ.GetPresetTours(ProfileToken).run(this.config)
+        return ONVIFPTZ.GetPresetTours(ProfileToken).run(this.config)
     }
 
     /**
      * Operation to request a specific PTZ preset tour in the selected media profile.
      */
     GetPresetTour(ProfileToken: ReferenceToken, PresetTourToken: ReferenceToken) {
-        return PTZ.GetPresetTour(ProfileToken,PresetTourToken).run(this.config)
+        return ONVIFPTZ.GetPresetTour(ProfileToken,PresetTourToken).run(this.config)
     }
 
     /**
      * Operation to request available options to configure PTZ preset tour.
      */
     GetPresetTourOptions(ProfileToken: ReferenceToken, PresetTourToken: ReferenceToken) {
-        return PTZ.GetPresetTourOptions(ProfileToken,PresetTourToken).run(this.config)
+        return ONVIFPTZ.GetPresetTourOptions(ProfileToken,PresetTourToken).run(this.config)
     }
 
     /**
      * Operation to create a preset tour for the selected media profile.
      */
     CreatePresetTour(ProfileToken: ReferenceToken) {
-        return PTZ.CreatePresetTour(ProfileToken).run(this.config)
+        return ONVIFPTZ.CreatePresetTour(ProfileToken).run(this.config)
     }
 
     /**
      * Operation to modify a preset tour for the selected media profile.
      */
     ModifyPresetTour(ProfileToken: ReferenceToken, PresetTour: PresetTour) {
-        return PTZ.ModifyPresetTour(ProfileToken,PresetTour).run(this.config)
+        return ONVIFPTZ.ModifyPresetTour(ProfileToken,PresetTour).run(this.config)
     }
 
     /**
      * Operation to perform specific operation on the preset tour in selected media profile.
      */
     OperatePresetTour(ProfileToken: ReferenceToken, PresetTourToken: ReferenceToken, Operation: PTZPresetTourOperation) {
-        return PTZ.OperatePresetTour(ProfileToken,PresetTourToken,Operation).run(this.config)
+        return ONVIFPTZ.OperatePresetTour(ProfileToken,PresetTourToken,Operation).run(this.config)
     }
 
     /**
      * Operation to delete a specific preset tour from the media profile.
      */
     RemovePresetTour(ProfileToken: ReferenceToken, PresetTourToken: ReferenceToken) {
-        return PTZ.RemovePresetTour(ProfileToken,PresetTourToken).run(this.config)
+        return ONVIFPTZ.RemovePresetTour(ProfileToken,PresetTourToken).run(this.config)
     }
 
     /**
@@ -657,6 +657,6 @@ export class PTZ {
      *   
      */
     GetCompatibleConfigurations(ProfileToken: ReferenceToken) {
-        return PTZ.GetCompatibleConfigurations(ProfileToken).run(this.config)
+        return ONVIFPTZ.GetCompatibleConfigurations(ProfileToken).run(this.config)
     }
 }

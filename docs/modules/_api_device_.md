@@ -6,7 +6,7 @@
 
 ### Classes
 
-* [Device](../classes/_api_device_.device.md)
+* [ONVIFDevice](../classes/_api_device_.onvifdevice.md)
 
 ---
 

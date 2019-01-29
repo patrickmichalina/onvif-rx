@@ -2,7 +2,7 @@ import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequ
 import { IDeviceConfig } from "../config";
 import { StreamSetup, ReferenceToken, ReplayConfiguration } from "./types";
 
-export class Replay {
+export class ONVIFReplay {
     constructor(private config: IDeviceConfig) {
     }
 
@@ -57,7 +57,7 @@ export class Replay {
      * Returns the capabilities of the replay service. The result is returned in a typed answer.
      */
     GetServiceCapabilities() {
-        return Replay.GetServiceCapabilities().run(this.config)
+        return ONVIFReplay.GetServiceCapabilities().run(this.config)
     }
 
     /**
@@ -69,7 +69,7 @@ export class Replay {
      *   
      */
     GetReplayUri(StreamSetup: StreamSetup, RecordingToken: ReferenceToken) {
-        return Replay.GetReplayUri(StreamSetup,RecordingToken).run(this.config)
+        return ONVIFReplay.GetReplayUri(StreamSetup,RecordingToken).run(this.config)
     }
 
     /**
@@ -79,7 +79,7 @@ export class Replay {
      *   
      */
     GetReplayConfiguration() {
-        return Replay.GetReplayConfiguration().run(this.config)
+        return ONVIFReplay.GetReplayConfiguration().run(this.config)
     }
 
     /**
@@ -89,6 +89,6 @@ export class Replay {
      *   
      */
     SetReplayConfiguration(Configuration: ReplayConfiguration) {
-        return Replay.SetReplayConfiguration(Configuration).run(this.config)
+        return ONVIFReplay.SetReplayConfiguration(Configuration).run(this.config)
     }
 }

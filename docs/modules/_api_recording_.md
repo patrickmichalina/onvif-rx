@@ -6,7 +6,7 @@
 
 ### Classes
 
-* [Recording](../classes/_api_recording_.recording.md)
+* [ONVIFRecording](../classes/_api_recording_.onvifrecording.md)
 
 ---
 

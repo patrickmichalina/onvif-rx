@@ -27,7 +27,7 @@
 
 **● ActiveConfigAlias**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:1412](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1412)*
+*Defined in [api/types.ts:1412](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1412)*
 
 ___
 <a id="bssid"></a>
@@ -36,7 +36,7 @@ ___
 
 **● BSSID**: *`string`*
 
-*Defined in [api/types.ts:1408](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1408)*
+*Defined in [api/types.ts:1408](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1408)*
 
 ___
 <a id="groupcipher"></a>
@@ -45,7 +45,7 @@ ___
 
 **● GroupCipher**: *[Dot11Cipher](../enums/_api_types_.dot11cipher.md)*
 
-*Defined in [api/types.ts:1410](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1410)*
+*Defined in [api/types.ts:1410](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1410)*
 
 ___
 <a id="paircipher"></a>
@@ -54,7 +54,7 @@ ___
 
 **● PairCipher**: *[Dot11Cipher](../enums/_api_types_.dot11cipher.md)*
 
-*Defined in [api/types.ts:1409](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1409)*
+*Defined in [api/types.ts:1409](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1409)*
 
 ___
 <a id="ssid"></a>
@@ -63,7 +63,7 @@ ___
 
 **● SSID**: *[Dot11SSIDType](../modules/_api_types_.md#dot11ssidtype)*
 
-*Defined in [api/types.ts:1407](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1407)*
+*Defined in [api/types.ts:1407](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1407)*
 
 ___
 <a id="signalstrength"></a>
@@ -72,7 +72,7 @@ ___
 
 **● SignalStrength**: *[Dot11SignalStrength](../enums/_api_types_.dot11signalstrength.md)*
 
-*Defined in [api/types.ts:1411](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1411)*
+*Defined in [api/types.ts:1411](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1411)*
 
 ___
 

@@ -24,7 +24,7 @@
 
 **● Extension**: *[TransformationExtension](_api_types_.transformationextension.md)*
 
-*Defined in [api/types.ts:213](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L213)*
+*Defined in [api/types.ts:213](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L213)*
 
 ___
 <a id="scale"></a>
@@ -33,7 +33,7 @@ ___
 
 **● Scale**: *[Vector](_api_types_.vector.md)*
 
-*Defined in [api/types.ts:212](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L212)*
+*Defined in [api/types.ts:212](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L212)*
 
 ___
 <a id="translate"></a>
@@ -42,7 +42,7 @@ ___
 
 **● Translate**: *[Vector](_api_types_.vector.md)*
 
-*Defined in [api/types.ts:211](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L211)*
+*Defined in [api/types.ts:211](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L211)*
 
 ___
 
