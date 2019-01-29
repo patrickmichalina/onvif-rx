@@ -1,4 +1,4 @@
-import { Project } from 'ts-simple-ast'
+import { Project, Scope, FunctionLikeDeclaration } from 'ts-simple-ast'
 import { generateActions, generateTypes } from './exec'
 
 // initialize
@@ -56,7 +56,31 @@ generateTypes()
         return {
           moduleSpecifier: `./${grp.type.toLowerCase()}`
         }
-      })
+      }),
+      imports: [
+        ...actionTree.map(grp => {
+          return {
+            moduleSpecifier: `./${grp.type.toLowerCase()}`,
+            namedImports: [{ name: grp.type }]
+          }
+        }),
+        {
+          moduleSpecifier: '../config',
+          namedImports: [{ name: 'IDeviceConfig' }]
+        }
+      ],
+      classes: [{
+        isExported: true,
+        name: 'ManagedONVIFApi',
+        ctors: [{ parameters: [{ scope: Scope.Private, name: 'config', type: 'IDeviceConfig' }] }],
+        properties: actionTree.map(group => {
+          return {
+            name: group.type,
+            scope: Scope.Public,
+            initializer: `new ${group.type}(this.config)`
+          }
+        })
+      }]
     })
 
     actionTree.forEach(group => {
@@ -75,6 +99,10 @@ generateTypes()
           namedImports: ['createStandardRequestBodyFromString', 'mapResponseXmlToJson', 'mapResponseObsToProperty'].map(name => ({ name }))
         },
         {
+          moduleSpecifier: '../config',
+          namedImports: [{ name: 'IDeviceConfig' }]
+        },
+        {
           moduleSpecifier: './types',
           namedImports: group.actions.reduce((acc, action) => {
             return [
@@ -85,14 +113,16 @@ generateTypes()
             .filter((elem, pos, arr) => arr.indexOf(elem) == pos)
             .filter(a => !['string', 'number', 'any', 'boolean'].some(b => b === a))
             .map(name => ({ name }))
-        }
-        ],
-        namespaces: [{
+        }],
+        classes: [{
           isExported: true,
           name: group.type,
-          functions: group.actions.map(action => {
+          ctors: [{
+            parameters: [{ name: 'config', type: 'IDeviceConfig', scope: Scope.Private }]
+          }],
+          methods: [...group.actions.map(action => {
             return {
-              isExported: true,
+              isStatic: true,
               docs: [{ description: action.documentation.replace(/\*/g, '') }],
               name: action.actionName,
               bodyText: `return createStandardRequestBodyFromString('<${action.soapRequestNode} />')
@@ -105,7 +135,78 @@ generateTypes()
                 }
               })
             }
+          }),
+          ...group.actions.map(action => {
+            return {
+              docs: [{ description: action.documentation.replace(/\*/g, '') }],
+              name: action.actionName,
+              bodyText: `return ${group.type}.${action.actionName}(${action.input.parameters.map(a => a.name).join(',')}).run(this.config)`,
+              parameters: action.input.parameters.map(p => {
+                return {
+                  name: p.name,
+                  type: p.propertyType
+                }
+              })
+            }
           })
+
+
+          ]
+          // namespaces: [{
+          //   isExported: true,
+          //   name: group.type,
+          //   functions: group.actions.map(action => {
+          //     return {
+          //       isExported: true,
+          //       docs: [{ description: action.documentation.replace(/\*/g, '') }],
+          //       name: action.actionName,
+          //       bodyText: `return createStandardRequestBodyFromString('<${action.soapRequestNode} />')
+          //         .map(mapResponseXmlToJson<any>('${action.output.ref}')())
+          //       `,
+          //       parameters: action.input.parameters.map(p => {
+          //         return {
+          //           name: p.name,
+          //           type: p.propertyType
+          //         }
+          //       })
+          //     }
+          //   })
+          // {
+          //   isExported: true,
+          //   name: 'ManagedApi',
+          //   parameters: [{
+          //     name: 'config',
+          //     type: 'IDeviceConfig'
+          //   }],
+          //   functions: [{
+          //     name: 'inner',
+          //   }]
+          // }
+          // classes: [
+          //   {
+          //     name: 'Api',
+          //     isExported: true,
+          //     ctors: [{
+          //       parameters: [{
+          //         name: 'config',
+          //         type: 'IDeviceConfig'
+          //       }]
+          //     }],
+          //     // properties: [{
+          //     //   isReadonly: true,
+          //     //   name: 'test1',
+          //     //   initializer: '() => console.log()',
+          //     // }],
+          //     methods: [{
+          //       name: 'test2',
+          //       parameters: [{
+          //         name: 'param1',
+          //         type: 'any'
+          //       }],
+          //       bodyText: ``
+          //     }]
+          //   }
+          // ]
         }]
       })
     })

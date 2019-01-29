@@ -1,12 +1,12 @@
 import { maybe, reader } from 'typescript-monads'
 import { IDeviceConfig, ISystemConfig, IUserCredentials } from '../config/interfaces'
-import { IONVIFApi, ONVIF_API } from '../api'
+import { ManagedONVIFApi } from '../api'
 
 export interface IManagedDevice {
   /**
    * ONVIF standard API
    */
-  readonly api: IONVIFApi
+  readonly api: ManagedONVIFApi
 }
 
 export interface IDeviceInitConfig {
@@ -25,7 +25,6 @@ export const createManagedDevice = (config: IDeviceInitConfig) => reader<ISystem
   }
 
   return {
-    api: ONVIF_API(innerRunConfig)
+    api: new ManagedONVIFApi(innerRunConfig)
   }
 })
-

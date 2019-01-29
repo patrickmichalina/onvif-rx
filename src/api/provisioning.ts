@@ -1,11 +1,15 @@
 import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../soap/request";
+import { IDeviceConfig } from "../config";
 import "./types";
 
-export namespace Provisioning {
+export class Provisioning {
+    constructor(private config: IDeviceConfig) {
+    }
+
     /**
      * Returns the capabilities of the provisioning service.
      */
-    export function GetServiceCapabilities() {
+    static GetServiceCapabilities() {
         return createStandardRequestBodyFromString('<tpv:GetServiceCapabilities />')
                         .map(mapResponseXmlToJson<any>('tpv:GetServiceCapabilitiesResponse')())
                       
@@ -14,7 +18,7 @@ export namespace Provisioning {
     /**
      * Moves device on the pan axis.
      */
-    export function PanMove() {
+    static PanMove() {
         return createStandardRequestBodyFromString('<tpv:PanMove />')
                         .map(mapResponseXmlToJson<any>('tpv:PanMoveResponse')())
                       
@@ -23,7 +27,7 @@ export namespace Provisioning {
     /**
      * Moves device on the tilt axis.
      */
-    export function TiltMove() {
+    static TiltMove() {
         return createStandardRequestBodyFromString('<tpv:TiltMove />')
                         .map(mapResponseXmlToJson<any>('tpv:TiltMoveResponse')())
                       
@@ -32,7 +36,7 @@ export namespace Provisioning {
     /**
      * Moves device on the zoom axis.
      */
-    export function ZoomMove() {
+    static ZoomMove() {
         return createStandardRequestBodyFromString('<tpv:ZoomMove />')
                         .map(mapResponseXmlToJson<any>('tpv:ZoomMoveResponse')())
                       
@@ -41,7 +45,7 @@ export namespace Provisioning {
     /**
      * Moves device on the roll axis.
      */
-    export function RollMove() {
+    static RollMove() {
         return createStandardRequestBodyFromString('<tpv:RollMove />')
                         .map(mapResponseXmlToJson<any>('tpv:RollMoveResponse')())
                       
@@ -50,7 +54,7 @@ export namespace Provisioning {
     /**
      * Moves device on the focus axis.
      */
-    export function FocusMove() {
+    static FocusMove() {
         return createStandardRequestBodyFromString('<tpv:FocusMove />')
                         .map(mapResponseXmlToJson<any>('tpv:FocusMoveResponse')())
                       
@@ -59,7 +63,7 @@ export namespace Provisioning {
     /**
      * Stops device motion on all axes.
      */
-    export function Stop() {
+    static Stop() {
         return createStandardRequestBodyFromString('<tpv:Stop />')
                         .map(mapResponseXmlToJson<any>('tpv:StopResponse')())
                       
@@ -68,9 +72,65 @@ export namespace Provisioning {
     /**
      * Returns the lifetime move counts.
      */
-    export function GetUsage() {
+    static GetUsage() {
         return createStandardRequestBodyFromString('<tpv:GetUsage />')
                         .map(mapResponseXmlToJson<any>('tpv:GetUsageResponse')())
                       
+    }
+
+    /**
+     * Returns the capabilities of the provisioning service.
+     */
+    GetServiceCapabilities() {
+        return Provisioning.GetServiceCapabilities().run(this.config)
+    }
+
+    /**
+     * Moves device on the pan axis.
+     */
+    PanMove() {
+        return Provisioning.PanMove().run(this.config)
+    }
+
+    /**
+     * Moves device on the tilt axis.
+     */
+    TiltMove() {
+        return Provisioning.TiltMove().run(this.config)
+    }
+
+    /**
+     * Moves device on the zoom axis.
+     */
+    ZoomMove() {
+        return Provisioning.ZoomMove().run(this.config)
+    }
+
+    /**
+     * Moves device on the roll axis.
+     */
+    RollMove() {
+        return Provisioning.RollMove().run(this.config)
+    }
+
+    /**
+     * Moves device on the focus axis.
+     */
+    FocusMove() {
+        return Provisioning.FocusMove().run(this.config)
+    }
+
+    /**
+     * Stops device motion on all axes.
+     */
+    Stop() {
+        return Provisioning.Stop().run(this.config)
+    }
+
+    /**
+     * Returns the lifetime move counts.
+     */
+    GetUsage() {
+        return Provisioning.GetUsage().run(this.config)
     }
 }
