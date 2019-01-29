@@ -44,9 +44,10 @@ This library is very early and not garaunteed to work for evey camera. Feel free
 This library does not "discover" devices on the network - for that try [onvif-probe-rx](https://github.com/patrickmichalina/onvif-probe-rx)
 
 ## Roadmap
-[x] - Generate API with typings and docs from WSDL's and XSD's
-[x] - Execute simple (parameter-less) requests
-[ ] - Execute requests with paremeters
+
+- [x] Generate API with typings and docs from WSDL's and XSD's
+- [x] Execute simple (parameter-less) requests
+- [ ] Execute requests with paremeters
 
 ## Node Installation
 This package is designed to be run in both the browser and node environments.
