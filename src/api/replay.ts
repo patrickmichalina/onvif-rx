@@ -1,4 +1,4 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../soap/request";
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequestElements, mapResponseObsToProperty } from "../soap/request";
 import { IDeviceConfig } from "../config";
 import { StreamSetup, ReferenceToken, ReplayConfiguration } from "./types";
 
@@ -10,7 +10,7 @@ export class Replay {
      * Returns the capabilities of the replay service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString('<trp:GetServiceCapabilities />')
+        return createStandardRequestBodyFromString(generateRequestElements('trp:GetServiceCapabilities')([])())
                         .map(mapResponseXmlToJson<any>('trp:GetServiceCapabilitiesResponse')())
                       
     }
@@ -24,7 +24,7 @@ export class Replay {
      *   
      */
     static GetReplayUri(StreamSetup: StreamSetup, RecordingToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trp:GetReplayUri />')
+        return createStandardRequestBodyFromString(generateRequestElements('trp:GetReplayUri')(['StreamSetup','RecordingToken'])(StreamSetup,RecordingToken))
                         .map(mapResponseXmlToJson<any>('trp:GetReplayUriResponse')())
                       
     }
@@ -36,7 +36,7 @@ export class Replay {
      *   
      */
     static GetReplayConfiguration() {
-        return createStandardRequestBodyFromString('<trp:GetReplayConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trp:GetReplayConfiguration')([])())
                         .map(mapResponseXmlToJson<any>('trp:GetReplayConfigurationResponse')())
                       
     }
@@ -48,7 +48,7 @@ export class Replay {
      *   
      */
     static SetReplayConfiguration(Configuration: ReplayConfiguration) {
-        return createStandardRequestBodyFromString('<trp:SetReplayConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trp:SetReplayConfiguration')(['Configuration'])(Configuration))
                         .map(mapResponseXmlToJson<any>('trp:SetReplayConfigurationResponse')())
                       
     }

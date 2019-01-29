@@ -1,4 +1,4 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../soap/request";
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequestElements, mapResponseObsToProperty } from "../soap/request";
 import { IDeviceConfig } from "../config";
 import { ReferenceToken, ReceiverConfiguration, ReceiverMode } from "./types";
 
@@ -10,7 +10,7 @@ export class Receiver {
      * Returns the capabilities of the receiver service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString('<trv:GetServiceCapabilities />')
+        return createStandardRequestBodyFromString(generateRequestElements('trv:GetServiceCapabilities')([])())
                         .map(mapResponseXmlToJson<any>('trv:GetServiceCapabilitiesResponse')())
                       
     }
@@ -21,7 +21,7 @@ export class Receiver {
      *   
      */
     static GetReceivers() {
-        return createStandardRequestBodyFromString('<trv:GetReceivers />')
+        return createStandardRequestBodyFromString(generateRequestElements('trv:GetReceivers')([])())
                         .map(mapResponseXmlToJson<any>('trv:GetReceiversResponse')())
                       
     }
@@ -32,7 +32,7 @@ export class Receiver {
      *   
      */
     static GetReceiver(ReceiverToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trv:GetReceiver />')
+        return createStandardRequestBodyFromString(generateRequestElements('trv:GetReceiver')(['ReceiverToken'])(ReceiverToken))
                         .map(mapResponseXmlToJson<any>('trv:GetReceiverResponse')())
                       
     }
@@ -44,7 +44,7 @@ export class Receiver {
      *   
      */
     static CreateReceiver(Configuration: ReceiverConfiguration) {
-        return createStandardRequestBodyFromString('<trv:CreateReceiver />')
+        return createStandardRequestBodyFromString(generateRequestElements('trv:CreateReceiver')(['Configuration'])(Configuration))
                         .map(mapResponseXmlToJson<any>('trv:CreateReceiverResponse')())
                       
     }
@@ -57,7 +57,7 @@ export class Receiver {
      *   
      */
     static DeleteReceiver(ReceiverToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trv:DeleteReceiver />')
+        return createStandardRequestBodyFromString(generateRequestElements('trv:DeleteReceiver')(['ReceiverToken'])(ReceiverToken))
                         .map(mapResponseXmlToJson<any>('trv:DeleteReceiverResponse')())
                       
     }
@@ -68,7 +68,7 @@ export class Receiver {
      *   
      */
     static ConfigureReceiver(ReceiverToken: ReferenceToken, Configuration: ReceiverConfiguration) {
-        return createStandardRequestBodyFromString('<trv:ConfigureReceiver />')
+        return createStandardRequestBodyFromString(generateRequestElements('trv:ConfigureReceiver')(['ReceiverToken','Configuration'])(ReceiverToken,Configuration))
                         .map(mapResponseXmlToJson<any>('trv:ConfigureReceiverResponse')())
                       
     }
@@ -80,7 +80,7 @@ export class Receiver {
      *   
      */
     static SetReceiverMode(ReceiverToken: ReferenceToken, Mode: ReceiverMode) {
-        return createStandardRequestBodyFromString('<trv:SetReceiverMode />')
+        return createStandardRequestBodyFromString(generateRequestElements('trv:SetReceiverMode')(['ReceiverToken','Mode'])(ReceiverToken,Mode))
                         .map(mapResponseXmlToJson<any>('trv:SetReceiverModeResponse')())
                       
     }
@@ -93,7 +93,7 @@ export class Receiver {
      *   
      */
     static GetReceiverState(ReceiverToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trv:GetReceiverState />')
+        return createStandardRequestBodyFromString(generateRequestElements('trv:GetReceiverState')(['ReceiverToken'])(ReceiverToken))
                         .map(mapResponseXmlToJson<any>('trv:GetReceiverStateResponse')())
                       
     }

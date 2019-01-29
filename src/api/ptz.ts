@@ -1,4 +1,4 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../soap/request";
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequestElements, mapResponseObsToProperty } from "../soap/request";
 import { IDeviceConfig } from "../config";
 import { ReferenceToken, PTZConfiguration, AuxiliaryData, PTZSpeed, PTZVector, GeoLocation, PresetTour, PTZPresetTourOperation } from "./types";
 
@@ -10,7 +10,7 @@ export class PTZ {
      * Returns the capabilities of the PTZ service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString('<tptz:GetServiceCapabilities />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GetServiceCapabilities')([])())
                         .map(mapResponseXmlToJson<any>('tptz:GetServiceCapabilitiesResponse')())
                       
     }
@@ -26,7 +26,7 @@ export class PTZ {
      *         
      */
     static GetNodes() {
-        return createStandardRequestBodyFromString('<tptz:GetNodes />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GetNodes')([])())
                         .map(mapResponseXmlToJson<any>('tptz:GetNodesResponse')())
                       
     }
@@ -37,7 +37,7 @@ export class PTZ {
      *     
      */
     static GetNode(NodeToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:GetNode />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GetNode')(['NodeToken'])(NodeToken))
                         .map(mapResponseXmlToJson<any>('tptz:GetNodeResponse')())
                       
     }
@@ -62,7 +62,7 @@ export class PTZ {
      *   
      */
     static GetConfiguration(PTZConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:GetConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GetConfiguration')(['PTZConfigurationToken'])(PTZConfigurationToken))
                         .map(mapResponseXmlToJson<any>('tptz:GetConfigurationResponse')())
                       
     }
@@ -88,7 +88,7 @@ export class PTZ {
      *   
      */
     static GetConfigurations() {
-        return createStandardRequestBodyFromString('<tptz:GetConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GetConfigurations')([])())
                         .map(mapResponseXmlToJson<any>('tptz:GetConfigurationsResponse')())
                       
     }
@@ -99,7 +99,7 @@ export class PTZ {
      *         
      */
     static SetConfiguration(PTZConfiguration: PTZConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString('<tptz:SetConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:SetConfiguration')(['PTZConfiguration','ForcePersistence'])(PTZConfiguration,ForcePersistence))
                         .map(mapResponseXmlToJson<any>('tptz:SetConfigurationResponse')())
                       
     }
@@ -115,7 +115,7 @@ export class PTZ {
      *   
      */
     static GetConfigurationOptions(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:GetConfigurationOptions />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GetConfigurationOptions')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('tptz:GetConfigurationOptionsResponse')())
                       
     }
@@ -129,7 +129,7 @@ export class PTZ {
      *         
      */
     static SendAuxiliaryCommand(ProfileToken: ReferenceToken, AuxiliaryData: AuxiliaryData) {
-        return createStandardRequestBodyFromString('<tptz:SendAuxiliaryCommand />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:SendAuxiliaryCommand')(['ProfileToken','AuxiliaryData'])(ProfileToken,AuxiliaryData))
                         .map(mapResponseXmlToJson<any>('tptz:SendAuxiliaryCommandResponse')())
                       
     }
@@ -141,7 +141,7 @@ export class PTZ {
      *           for at least on PTZ preset by the PTZNode.
      */
     static GetPresets(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:GetPresets />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GetPresets')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('tptz:GetPresetsResponse')())
                       
     }
@@ -158,8 +158,8 @@ export class PTZ {
      *   The device MAY internally save additional states such as imaging properties in the PTZ
      *   Preset which then should be recalled in the GotoPreset operation.      
      */
-    static SetPreset(ProfileToken: ReferenceToken, PresetName: string, PresetToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:SetPreset />')
+    static SetPreset(ProfileToken: ReferenceToken, PresetName?: string, PresetToken?: ReferenceToken) {
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:SetPreset')(['ProfileToken','PresetName','PresetToken'])(ProfileToken,PresetName,PresetToken))
                         .map(mapResponseXmlToJson<any>('tptz:SetPresetResponse')())
                       
     }
@@ -175,7 +175,7 @@ export class PTZ {
      *         
      */
     static RemovePreset(ProfileToken: ReferenceToken, PresetToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:RemovePreset />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:RemovePreset')(['ProfileToken','PresetToken'])(ProfileToken,PresetToken))
                         .map(mapResponseXmlToJson<any>('tptz:RemovePresetResponse')())
                       
     }
@@ -186,8 +186,8 @@ export class PTZ {
      *           PTZNode in the selected profile. The operation is supported if there is
      *           support for at least on PTZ preset by the PTZNode.
      */
-    static GotoPreset(ProfileToken: ReferenceToken, PresetToken: ReferenceToken, Speed: PTZSpeed) {
-        return createStandardRequestBodyFromString('<tptz:GotoPreset />')
+    static GotoPreset(ProfileToken: ReferenceToken, PresetToken: ReferenceToken, Speed?: PTZSpeed) {
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GotoPreset')(['ProfileToken','PresetToken','Speed'])(ProfileToken,PresetToken,Speed))
                         .map(mapResponseXmlToJson<any>('tptz:GotoPresetResponse')())
                       
     }
@@ -196,8 +196,8 @@ export class PTZ {
      * 
      *           Operation to move the PTZ device to it's "home" position. The operation is supported if the HomeSupported element in the PTZNode is true.
      */
-    static GotoHomePosition(ProfileToken: ReferenceToken, Speed: PTZSpeed) {
-        return createStandardRequestBodyFromString('<tptz:GotoHomePosition />')
+    static GotoHomePosition(ProfileToken: ReferenceToken, Speed?: PTZSpeed) {
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GotoHomePosition')(['ProfileToken','Speed'])(ProfileToken,Speed))
                         .map(mapResponseXmlToJson<any>('tptz:GotoHomePositionResponse')())
                       
     }
@@ -209,7 +209,7 @@ export class PTZ {
      *   Home Position with the GotoHomePosition command.
      */
     static SetHomePosition(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:SetHomePosition />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:SetHomePosition')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('tptz:SetHomePositionResponse')())
                       
     }
@@ -217,8 +217,8 @@ export class PTZ {
     /**
      * Operation for continuous Pan/Tilt and Zoom movements. The operation is supported if the PTZNode supports at least one continuous Pan/Tilt or Zoom space. If the space argument is omitted, the default space set by the PTZConfiguration will be used.
      */
-    static ContinuousMove(ProfileToken: ReferenceToken, Velocity: PTZSpeed, Timeout: string) {
-        return createStandardRequestBodyFromString('<tptz:ContinuousMove />')
+    static ContinuousMove(ProfileToken: ReferenceToken, Velocity: PTZSpeed, Timeout?: string) {
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:ContinuousMove')(['ProfileToken','Velocity','Timeout'])(ProfileToken,Velocity,Timeout))
                         .map(mapResponseXmlToJson<any>('tptz:ContinuousMoveResponse')())
                       
     }
@@ -230,8 +230,8 @@ export class PTZ {
      *   If the speed argument is omitted, the default speed set by the PTZConfiguration will be used.
      *   
      */
-    static RelativeMove(ProfileToken: ReferenceToken, Translation: PTZVector, Speed: PTZSpeed) {
-        return createStandardRequestBodyFromString('<tptz:RelativeMove />')
+    static RelativeMove(ProfileToken: ReferenceToken, Translation: PTZVector, Speed?: PTZSpeed) {
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:RelativeMove')(['ProfileToken','Translation','Speed'])(ProfileToken,Translation,Speed))
                         .map(mapResponseXmlToJson<any>('tptz:RelativeMoveResponse')())
                       
     }
@@ -242,7 +242,7 @@ export class PTZ {
      *   selected profile.
      */
     static GetStatus(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:GetStatus />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GetStatus')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('tptz:GetStatusResponse')())
                       
     }
@@ -254,8 +254,8 @@ export class PTZ {
      *   If the speed argument is omitted, the default speed set by the PTZConfiguration will be used.
      *   
      */
-    static AbsoluteMove(ProfileToken: ReferenceToken, Position: PTZVector, Speed: PTZSpeed) {
-        return createStandardRequestBodyFromString('<tptz:AbsoluteMove />')
+    static AbsoluteMove(ProfileToken: ReferenceToken, Position: PTZVector, Speed?: PTZSpeed) {
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:AbsoluteMove')(['ProfileToken','Position','Speed'])(ProfileToken,Position,Speed))
                         .map(mapResponseXmlToJson<any>('tptz:AbsoluteMoveResponse')())
                       
     }
@@ -269,8 +269,8 @@ export class PTZ {
      *   by the device to automatically determine the best zoom level to show the target.
      *   
      */
-    static GeoMove(ProfileToken: ReferenceToken, Target: GeoLocation, Speed: PTZSpeed, AreaHeight: number, AreaWidth: number) {
-        return createStandardRequestBodyFromString('<tptz:GeoMove />')
+    static GeoMove(ProfileToken: ReferenceToken, Target: GeoLocation, Speed?: PTZSpeed, AreaHeight?: number, AreaWidth?: number) {
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GeoMove')(['ProfileToken','Target','Speed','AreaHeight','AreaWidth'])(ProfileToken,Target,Speed,AreaHeight,AreaWidth))
                         .map(mapResponseXmlToJson<any>('tptz:GeoMoveResponse')())
                       
     }
@@ -279,8 +279,8 @@ export class PTZ {
      * Operation to stop ongoing pan, tilt and zoom movements of absolute relative and continuous type.
      *   If no stop argument for pan, tilt or zoom is set, the device will stop all ongoing pan, tilt and zoom movements.
      */
-    static Stop(ProfileToken: ReferenceToken, PanTilt: boolean, Zoom: boolean) {
-        return createStandardRequestBodyFromString('<tptz:Stop />')
+    static Stop(ProfileToken: ReferenceToken, PanTilt?: boolean, Zoom?: boolean) {
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:Stop')(['ProfileToken','PanTilt','Zoom'])(ProfileToken,PanTilt,Zoom))
                         .map(mapResponseXmlToJson<any>('tptz:StopResponse')())
                       
     }
@@ -289,7 +289,7 @@ export class PTZ {
      * Operation to request PTZ preset tours in the selected media profiles.
      */
     static GetPresetTours(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:GetPresetTours />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GetPresetTours')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('tptz:GetPresetToursResponse')())
                       
     }
@@ -298,7 +298,7 @@ export class PTZ {
      * Operation to request a specific PTZ preset tour in the selected media profile.
      */
     static GetPresetTour(ProfileToken: ReferenceToken, PresetTourToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:GetPresetTour />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GetPresetTour')(['ProfileToken','PresetTourToken'])(ProfileToken,PresetTourToken))
                         .map(mapResponseXmlToJson<any>('tptz:GetPresetTourResponse')())
                       
     }
@@ -306,8 +306,8 @@ export class PTZ {
     /**
      * Operation to request available options to configure PTZ preset tour.
      */
-    static GetPresetTourOptions(ProfileToken: ReferenceToken, PresetTourToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:GetPresetTourOptions />')
+    static GetPresetTourOptions(ProfileToken: ReferenceToken, PresetTourToken?: ReferenceToken) {
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GetPresetTourOptions')(['ProfileToken','PresetTourToken'])(ProfileToken,PresetTourToken))
                         .map(mapResponseXmlToJson<any>('tptz:GetPresetTourOptionsResponse')())
                       
     }
@@ -316,7 +316,7 @@ export class PTZ {
      * Operation to create a preset tour for the selected media profile.
      */
     static CreatePresetTour(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:CreatePresetTour />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:CreatePresetTour')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('tptz:CreatePresetTourResponse')())
                       
     }
@@ -325,7 +325,7 @@ export class PTZ {
      * Operation to modify a preset tour for the selected media profile.
      */
     static ModifyPresetTour(ProfileToken: ReferenceToken, PresetTour: PresetTour) {
-        return createStandardRequestBodyFromString('<tptz:ModifyPresetTour />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:ModifyPresetTour')(['ProfileToken','PresetTour'])(ProfileToken,PresetTour))
                         .map(mapResponseXmlToJson<any>('tptz:ModifyPresetTourResponse')())
                       
     }
@@ -334,7 +334,7 @@ export class PTZ {
      * Operation to perform specific operation on the preset tour in selected media profile.
      */
     static OperatePresetTour(ProfileToken: ReferenceToken, PresetTourToken: ReferenceToken, Operation: PTZPresetTourOperation) {
-        return createStandardRequestBodyFromString('<tptz:OperatePresetTour />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:OperatePresetTour')(['ProfileToken','PresetTourToken','Operation'])(ProfileToken,PresetTourToken,Operation))
                         .map(mapResponseXmlToJson<any>('tptz:OperatePresetTourResponse')())
                       
     }
@@ -343,7 +343,7 @@ export class PTZ {
      * Operation to delete a specific preset tour from the media profile.
      */
     static RemovePresetTour(ProfileToken: ReferenceToken, PresetTourToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:RemovePresetTour />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:RemovePresetTour')(['ProfileToken','PresetTourToken'])(ProfileToken,PresetTourToken))
                         .map(mapResponseXmlToJson<any>('tptz:RemovePresetTourResponse')())
                       
     }
@@ -356,7 +356,7 @@ export class PTZ {
      *   
      */
     static GetCompatibleConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tptz:GetCompatibleConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:GetCompatibleConfigurations')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('tptz:GetCompatibleConfigurationsResponse')())
                       
     }

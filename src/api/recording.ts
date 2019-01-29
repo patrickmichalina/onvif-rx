@@ -1,4 +1,4 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../soap/request";
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequestElements, mapResponseObsToProperty } from "../soap/request";
 import { IDeviceConfig } from "../config";
 import { RecordingConfiguration, RecordingReference, TrackConfiguration, TrackReference, RecordingJobConfiguration, RecordingJobReference, RecordingJobMode, SearchScope, StorageReferencePath, ReferenceToken } from "./types";
 
@@ -10,7 +10,7 @@ export class Recording {
      * Returns the capabilities of the recording service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString('<trc:GetServiceCapabilities />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetServiceCapabilities')([])())
                         .map(mapResponseXmlToJson<any>('trc:GetServiceCapabilitiesResponse')())
                       
     }
@@ -34,7 +34,7 @@ export class Recording {
      *   
      */
     static CreateRecording(RecordingConfiguration: RecordingConfiguration) {
-        return createStandardRequestBodyFromString('<trc:CreateRecording />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:CreateRecording')(['RecordingConfiguration'])(RecordingConfiguration))
                         .map(mapResponseXmlToJson<any>('trc:CreateRecordingResponse')())
                       
     }
@@ -50,7 +50,7 @@ export class Recording {
      *   
      */
     static DeleteRecording(RecordingToken: RecordingReference) {
-        return createStandardRequestBodyFromString('<trc:DeleteRecording />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:DeleteRecording')(['RecordingToken'])(RecordingToken))
                         .map(mapResponseXmlToJson<any>('trc:DeleteRecordingResponse')())
                       
     }
@@ -60,7 +60,7 @@ export class Recording {
      *   shall include a list of all the tracks for each recording.
      */
     static GetRecordings() {
-        return createStandardRequestBodyFromString('<trc:GetRecordings />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordings')([])())
                         .map(mapResponseXmlToJson<any>('trc:GetRecordingsResponse')())
                       
     }
@@ -69,7 +69,7 @@ export class Recording {
      * SetRecordingConfiguration shall change the configuration of a recording.
      */
     static SetRecordingConfiguration(RecordingToken: RecordingReference, RecordingConfiguration: RecordingConfiguration) {
-        return createStandardRequestBodyFromString('<trc:SetRecordingConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:SetRecordingConfiguration')(['RecordingToken','RecordingConfiguration'])(RecordingToken,RecordingConfiguration))
                         .map(mapResponseXmlToJson<any>('trc:SetRecordingConfigurationResponse')())
                       
     }
@@ -78,7 +78,7 @@ export class Recording {
      * GetRecordingConfiguration shall retrieve the recording configuration for a recording.
      */
     static GetRecordingConfiguration(RecordingToken: RecordingReference) {
-        return createStandardRequestBodyFromString('<trc:GetRecordingConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingConfiguration')(['RecordingToken'])(RecordingToken))
                         .map(mapResponseXmlToJson<any>('trc:GetRecordingConfigurationResponse')())
                       
     }
@@ -87,7 +87,7 @@ export class Recording {
      * GetRecordingOptions returns information for a recording identified by the RecordingToken. The information includes the number of additonal tracks as well as recording jobs that can be configured.
      */
     static GetRecordingOptions(RecordingToken: RecordingReference) {
-        return createStandardRequestBodyFromString('<trc:GetRecordingOptions />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingOptions')(['RecordingToken'])(RecordingToken))
                         .map(mapResponseXmlToJson<any>('trc:GetRecordingOptionsResponse')())
                       
     }
@@ -100,7 +100,7 @@ export class Recording {
      *   
      */
     static CreateTrack(RecordingToken: RecordingReference, TrackConfiguration: TrackConfiguration) {
-        return createStandardRequestBodyFromString('<trc:CreateTrack />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:CreateTrack')(['RecordingToken','TrackConfiguration'])(RecordingToken,TrackConfiguration))
                         .map(mapResponseXmlToJson<any>('trc:CreateTrackResponse')())
                       
     }
@@ -111,7 +111,7 @@ export class Recording {
      *   TRUE.
      */
     static DeleteTrack(RecordingToken: RecordingReference, TrackToken: TrackReference) {
-        return createStandardRequestBodyFromString('<trc:DeleteTrack />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:DeleteTrack')(['RecordingToken','TrackToken'])(RecordingToken,TrackToken))
                         .map(mapResponseXmlToJson<any>('trc:DeleteTrackResponse')())
                       
     }
@@ -120,7 +120,7 @@ export class Recording {
      * GetTrackConfiguration shall retrieve the configuration for a specific track.
      */
     static GetTrackConfiguration(RecordingToken: RecordingReference, TrackToken: TrackReference) {
-        return createStandardRequestBodyFromString('<trc:GetTrackConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetTrackConfiguration')(['RecordingToken','TrackToken'])(RecordingToken,TrackToken))
                         .map(mapResponseXmlToJson<any>('trc:GetTrackConfigurationResponse')())
                       
     }
@@ -129,7 +129,7 @@ export class Recording {
      * SetTrackConfiguration shall change the configuration of a track.
      */
     static SetTrackConfiguration(RecordingToken: RecordingReference, TrackToken: TrackReference, TrackConfiguration: TrackConfiguration) {
-        return createStandardRequestBodyFromString('<trc:SetTrackConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:SetTrackConfiguration')(['RecordingToken','TrackToken','TrackConfiguration'])(RecordingToken,TrackToken,TrackConfiguration))
                         .map(mapResponseXmlToJson<any>('trc:SetTrackConfigurationResponse')())
                       
     }
@@ -143,7 +143,7 @@ export class Recording {
      *   
      */
     static CreateRecordingJob(JobConfiguration: RecordingJobConfiguration) {
-        return createStandardRequestBodyFromString('<trc:CreateRecordingJob />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:CreateRecordingJob')(['JobConfiguration'])(JobConfiguration))
                         .map(mapResponseXmlToJson<any>('trc:CreateRecordingJobResponse')())
                       
     }
@@ -155,7 +155,7 @@ export class Recording {
      *   other recording job.
      */
     static DeleteRecordingJob(JobToken: RecordingJobReference) {
-        return createStandardRequestBodyFromString('<trc:DeleteRecordingJob />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:DeleteRecordingJob')(['JobToken'])(JobToken))
                         .map(mapResponseXmlToJson<any>('trc:DeleteRecordingJobResponse')())
                       
     }
@@ -164,7 +164,7 @@ export class Recording {
      * GetRecordingJobs shall return a list of all the recording jobs in the device.
      */
     static GetRecordingJobs() {
-        return createStandardRequestBodyFromString('<trc:GetRecordingJobs />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingJobs')([])())
                         .map(mapResponseXmlToJson<any>('trc:GetRecordingJobsResponse')())
                       
     }
@@ -176,7 +176,7 @@ export class Recording {
      *   
      */
     static SetRecordingJobConfiguration(JobToken: RecordingJobReference, JobConfiguration: RecordingJobConfiguration) {
-        return createStandardRequestBodyFromString('<trc:SetRecordingJobConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:SetRecordingJobConfiguration')(['JobToken','JobConfiguration'])(JobToken,JobConfiguration))
                         .map(mapResponseXmlToJson<any>('trc:SetRecordingJobConfigurationResponse')())
                       
     }
@@ -185,7 +185,7 @@ export class Recording {
      * GetRecordingJobConfiguration shall return the current configuration for a recording job.
      */
     static GetRecordingJobConfiguration(JobToken: RecordingJobReference) {
-        return createStandardRequestBodyFromString('<trc:GetRecordingJobConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingJobConfiguration')(['JobToken'])(JobToken))
                         .map(mapResponseXmlToJson<any>('trc:GetRecordingJobConfigurationResponse')())
                       
     }
@@ -196,7 +196,7 @@ export class Recording {
      *   mode.
      */
     static SetRecordingJobMode(JobToken: RecordingJobReference, Mode: RecordingJobMode) {
-        return createStandardRequestBodyFromString('<trc:SetRecordingJobMode />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:SetRecordingJobMode')(['JobToken','Mode'])(JobToken,Mode))
                         .map(mapResponseXmlToJson<any>('trc:SetRecordingJobModeResponse')())
                       
     }
@@ -206,7 +206,7 @@ export class Recording {
      *   and state for each track of the recording job.
      */
     static GetRecordingJobState(JobToken: RecordingJobReference) {
-        return createStandardRequestBodyFromString('<trc:GetRecordingJobState />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingJobState')(['JobToken'])(JobToken))
                         .map(mapResponseXmlToJson<any>('trc:GetRecordingJobStateResponse')())
                       
     }
@@ -216,8 +216,8 @@ export class Recording {
      *   Exports the selected recordings (from existing recorded data) to the given storage target based on the requested file format. 
      *   
      */
-    static ExportRecordedData(StartPoint: string, EndPoint: string, SearchScope: SearchScope, FileFormat: string, StorageDestination: StorageReferencePath) {
-        return createStandardRequestBodyFromString('<trc:ExportRecordedData />')
+    static ExportRecordedData(SearchScope: SearchScope, FileFormat: string, StorageDestination: StorageReferencePath, StartPoint?: string, EndPoint?: string) {
+        return createStandardRequestBodyFromString(generateRequestElements('trc:ExportRecordedData')(['SearchScope','FileFormat','StorageDestination','StartPoint','EndPoint'])(SearchScope,FileFormat,StorageDestination,StartPoint,EndPoint))
                         .map(mapResponseXmlToJson<any>('trc:ExportRecordedDataResponse')())
                       
     }
@@ -228,7 +228,7 @@ export class Recording {
      *   
      */
     static StopExportRecordedData(OperationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trc:StopExportRecordedData />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:StopExportRecordedData')(['OperationToken'])(OperationToken))
                         .map(mapResponseXmlToJson<any>('trc:StopExportRecordedDataResponse')())
                       
     }
@@ -239,7 +239,7 @@ export class Recording {
      *   
      */
     static GetExportRecordedDataState(OperationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trc:GetExportRecordedDataState />')
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetExportRecordedDataState')(['OperationToken'])(OperationToken))
                         .map(mapResponseXmlToJson<any>('trc:GetExportRecordedDataStateResponse')())
                       
     }
@@ -418,8 +418,8 @@ export class Recording {
      *   Exports the selected recordings (from existing recorded data) to the given storage target based on the requested file format. 
      *   
      */
-    ExportRecordedData(StartPoint: string, EndPoint: string, SearchScope: SearchScope, FileFormat: string, StorageDestination: StorageReferencePath) {
-        return Recording.ExportRecordedData(StartPoint,EndPoint,SearchScope,FileFormat,StorageDestination).run(this.config)
+    ExportRecordedData(SearchScope: SearchScope, FileFormat: string, StorageDestination: StorageReferencePath, StartPoint: string, EndPoint: string) {
+        return Recording.ExportRecordedData(SearchScope,FileFormat,StorageDestination,StartPoint,EndPoint).run(this.config)
     }
 
     /**
