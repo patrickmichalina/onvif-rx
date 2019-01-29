@@ -1,7 +1,7 @@
 import { reader, maybe, fail, ok, IResult } from 'typescript-monads'
 import { IDeviceConfig, ITransportPayoad } from '../config/interfaces'
 import { Observable } from 'rxjs'
-import { map, tap } from 'rxjs/operators'
+import { map } from 'rxjs/operators'
 import { createUserToken } from './auth'
 
 export enum XMLNS {

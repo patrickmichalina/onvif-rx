@@ -54,9 +54,48 @@ npm i onvif-rx
 // TODO: config and example
 ```
 
-## Node/Bundler Usage
-For the best developer experience use Typescript.
+## Usage
+The library is designed to be used in 2 distinct ways.
+- Managed - you construct a manged device using service URL and username/password combo. This makes running commands painless.
+- Ad Hoc - you can call methods individually with different username/passwords if needed.
 
+### Managed Usage
 ```ts
-// TODO
+import { createManagedDeviceInNode } from 'onvif-rx'
+
+const device = createManagedDeviceInNode({
+  deviceUrl: 'http://192.168.1.11/onvif/device_service',
+  password: 'admin',
+  username: '1234'
+})
+
+device.api.Device.GetUsers()
+  .toPromise()
+  .then(res=> {
+    res.match({
+      ok: console.log, // successful response object
+      fail: r => console.log(r.status, r.statusMessage) // request failure object
+    })
+  }) 
+```
+
+### Ad Hoc Usage
+```ts
+import { Device } from 'onvif-rx'
+
+const device = createManagedDeviceInNode({
+  deviceUrl: 'http://192.168.1.11/onvif/device_service',
+  password: 'admin',
+  username: '1234'
+})
+
+Device.GetUsers()
+  .run({}) // requires config
+  .toPromise()
+  .then(res=> {
+    res.match({
+      ok: console.log, // successful response object
+      fail: r => console.log(r.status, r.statusMessage) // request failure object
+    })
+  }) 
 ```
