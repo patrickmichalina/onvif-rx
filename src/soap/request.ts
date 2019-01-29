@@ -195,3 +195,25 @@ export const createDeviceRequestBodyFromString =
 export const createMediaRequestBodyFromString =
   (key: string) =>
     createSimpleRequestBodyFromString(`trt:${key}`)
+
+// tslint:disable-next-line:readonly-array
+export const generateRequestElements = (reqNode: string) => (parameterNodes: string[]) => (...params: any[]) => {
+  return !params.length
+    ? `<${reqNode} />`
+    : `<${reqNode}>${params.map((param, index) => {
+      const type = typeof param
+      const insertIntoRootNode = (inner: string) => `<${parameterNodes[index]}>${inner}</${parameterNodes[index]}>`
+
+      switch (type) {
+        case 'undefined': return ''
+        case 'boolean': return insertIntoRootNode(param)
+        case 'object': return insertIntoRootNode(Object.keys(param).reduce((acc, key) => {
+          const val = (param as any)[key]
+          return val
+            ? (acc || '') + `<${key}>${(param as any)[key]}</${key}>`
+            : (acc || '')
+        }, ''))
+        default: return insertIntoRootNode(param)
+      }
+    }).join('')}</${reqNode}>`
+}

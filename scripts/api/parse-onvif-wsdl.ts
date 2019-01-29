@@ -62,9 +62,10 @@ export const parseOnvifWsdlDocument = (xmlDoc: Document) => {
                 .map(paramNode => {
                   const name = paramNode.getAttribute('name') as string
                   const propertyType = maybe(paramNode.getAttribute('type')).flatMapAuto(a => a.split(':').pop()).map(typeConvert).valueOr('')
-                  const propertyMinOccurs = paramNode.getAttribute('minOccurs') as string
+                  const propertyMinOccurs = paramNode.getAttribute('minOccurs') || '1' as string
                   const propertyMaxOccurs = paramNode.getAttribute('maxOccurs') as string
                   const documentation = maybe(paramNode.getElementsByTagNameNS(xmlSchemaNs, 'documentation').item(0)).map(a => a.textContent).valueOr('') as string
+
                   return {
                     name,
                     propertyType,
@@ -72,7 +73,7 @@ export const parseOnvifWsdlDocument = (xmlDoc: Document) => {
                     propertyMaxOccurs,
                     documentation
                   }
-                })
+                }).sort((a, b) => parseInt(b.propertyMinOccurs) - parseInt(a.propertyMinOccurs))
             }).valueOr([])
 
         const input = typeRef('input')

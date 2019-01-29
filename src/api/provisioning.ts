@@ -1,4 +1,4 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../soap/request";
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequestElements, mapResponseObsToProperty } from "../soap/request";
 import { IDeviceConfig } from "../config";
 import "./types";
 
@@ -10,7 +10,7 @@ export class Provisioning {
      * Returns the capabilities of the provisioning service.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString('<tpv:GetServiceCapabilities />')
+        return createStandardRequestBodyFromString(generateRequestElements('tpv:GetServiceCapabilities')([])())
                         .map(mapResponseXmlToJson<any>('tpv:GetServiceCapabilitiesResponse')())
                       
     }
@@ -19,7 +19,7 @@ export class Provisioning {
      * Moves device on the pan axis.
      */
     static PanMove() {
-        return createStandardRequestBodyFromString('<tpv:PanMove />')
+        return createStandardRequestBodyFromString(generateRequestElements('tpv:PanMove')([])())
                         .map(mapResponseXmlToJson<any>('tpv:PanMoveResponse')())
                       
     }
@@ -28,7 +28,7 @@ export class Provisioning {
      * Moves device on the tilt axis.
      */
     static TiltMove() {
-        return createStandardRequestBodyFromString('<tpv:TiltMove />')
+        return createStandardRequestBodyFromString(generateRequestElements('tpv:TiltMove')([])())
                         .map(mapResponseXmlToJson<any>('tpv:TiltMoveResponse')())
                       
     }
@@ -37,7 +37,7 @@ export class Provisioning {
      * Moves device on the zoom axis.
      */
     static ZoomMove() {
-        return createStandardRequestBodyFromString('<tpv:ZoomMove />')
+        return createStandardRequestBodyFromString(generateRequestElements('tpv:ZoomMove')([])())
                         .map(mapResponseXmlToJson<any>('tpv:ZoomMoveResponse')())
                       
     }
@@ -46,7 +46,7 @@ export class Provisioning {
      * Moves device on the roll axis.
      */
     static RollMove() {
-        return createStandardRequestBodyFromString('<tpv:RollMove />')
+        return createStandardRequestBodyFromString(generateRequestElements('tpv:RollMove')([])())
                         .map(mapResponseXmlToJson<any>('tpv:RollMoveResponse')())
                       
     }
@@ -55,7 +55,7 @@ export class Provisioning {
      * Moves device on the focus axis.
      */
     static FocusMove() {
-        return createStandardRequestBodyFromString('<tpv:FocusMove />')
+        return createStandardRequestBodyFromString(generateRequestElements('tpv:FocusMove')([])())
                         .map(mapResponseXmlToJson<any>('tpv:FocusMoveResponse')())
                       
     }
@@ -64,7 +64,7 @@ export class Provisioning {
      * Stops device motion on all axes.
      */
     static Stop() {
-        return createStandardRequestBodyFromString('<tpv:Stop />')
+        return createStandardRequestBodyFromString(generateRequestElements('tpv:Stop')([])())
                         .map(mapResponseXmlToJson<any>('tpv:StopResponse')())
                       
     }
@@ -73,7 +73,7 @@ export class Provisioning {
      * Returns the lifetime move counts.
      */
     static GetUsage() {
-        return createStandardRequestBodyFromString('<tpv:GetUsage />')
+        return createStandardRequestBodyFromString(generateRequestElements('tpv:GetUsage')([])())
                         .map(mapResponseXmlToJson<any>('tpv:GetUsageResponse')())
                       
     }

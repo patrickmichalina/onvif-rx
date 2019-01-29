@@ -1,4 +1,4 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../soap/request";
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequestElements, mapResponseObsToProperty } from "../soap/request";
 import { IDeviceConfig } from "../config";
 import { ReferenceToken, Config } from "./types";
 
@@ -14,7 +14,7 @@ export class Analytics {
      *   
      */
     static GetSupportedRules(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tan:GetSupportedRules />')
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetSupportedRules')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('tan:GetSupportedRulesResponse')())
                       
     }
@@ -33,7 +33,7 @@ export class Analytics {
      *   
      */
     static CreateRules(ConfigurationToken: ReferenceToken, Rule: Config) {
-        return createStandardRequestBodyFromString('<tan:CreateRules />')
+        return createStandardRequestBodyFromString(generateRequestElements('tan:CreateRules')(['ConfigurationToken','Rule'])(ConfigurationToken,Rule))
                         .map(mapResponseXmlToJson<any>('tan:CreateRulesResponse')())
                       
     }
@@ -44,7 +44,7 @@ export class Analytics {
      *   
      */
     static DeleteRules(ConfigurationToken: ReferenceToken, RuleName: string) {
-        return createStandardRequestBodyFromString('<tan:DeleteRules />')
+        return createStandardRequestBodyFromString(generateRequestElements('tan:DeleteRules')(['ConfigurationToken','RuleName'])(ConfigurationToken,RuleName))
                         .map(mapResponseXmlToJson<any>('tan:DeleteRulesResponse')())
                       
     }
@@ -55,7 +55,7 @@ export class Analytics {
      *   
      */
     static GetRules(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tan:GetRules />')
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetRules')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('tan:GetRulesResponse')())
                       
     }
@@ -65,8 +65,8 @@ export class Analytics {
      *   Return the options for the supported rules that specify an Option attribute.
      *   
      */
-    static GetRuleOptions(RuleType: any, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tan:GetRuleOptions />')
+    static GetRuleOptions(ConfigurationToken: ReferenceToken, RuleType?: any) {
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetRuleOptions')(['ConfigurationToken','RuleType'])(ConfigurationToken,RuleType))
                         .map(mapResponseXmlToJson<any>('tan:GetRuleOptionsResponse')())
                       
     }
@@ -77,7 +77,7 @@ export class Analytics {
      *   
      */
     static ModifyRules(ConfigurationToken: ReferenceToken, Rule: Config) {
-        return createStandardRequestBodyFromString('<tan:ModifyRules />')
+        return createStandardRequestBodyFromString(generateRequestElements('tan:ModifyRules')(['ConfigurationToken','Rule'])(ConfigurationToken,Rule))
                         .map(mapResponseXmlToJson<any>('tan:ModifyRulesResponse')())
                       
     }
@@ -86,7 +86,7 @@ export class Analytics {
      * Returns the capabilities of the analytics service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString('<tan:GetServiceCapabilities />')
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetServiceCapabilities')([])())
                         .map(mapResponseXmlToJson<any>('tan:GetServiceCapabilitiesResponse')())
                       
     }
@@ -99,7 +99,7 @@ export class Analytics {
      *   
      */
     static GetSupportedAnalyticsModules(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tan:GetSupportedAnalyticsModules />')
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetSupportedAnalyticsModules')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('tan:GetSupportedAnalyticsModulesResponse')())
                       
     }
@@ -109,8 +109,8 @@ export class Analytics {
      *   Return the options for the supported analytics modules that specify an Option attribute.
      *   
      */
-    static GetAnalyticsModuleOptions(Type: any, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tan:GetAnalyticsModuleOptions />')
+    static GetAnalyticsModuleOptions(ConfigurationToken: ReferenceToken, Type?: any) {
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetAnalyticsModuleOptions')(['ConfigurationToken','Type'])(ConfigurationToken,Type))
                         .map(mapResponseXmlToJson<any>('tan:GetAnalyticsModuleOptionsResponse')())
                       
     }
@@ -136,7 +136,7 @@ export class Analytics {
      *   
      */
     static CreateAnalyticsModules(ConfigurationToken: ReferenceToken, AnalyticsModule: Config) {
-        return createStandardRequestBodyFromString('<tan:CreateAnalyticsModules />')
+        return createStandardRequestBodyFromString(generateRequestElements('tan:CreateAnalyticsModules')(['ConfigurationToken','AnalyticsModule'])(ConfigurationToken,AnalyticsModule))
                         .map(mapResponseXmlToJson<any>('tan:CreateAnalyticsModulesResponse')())
                       
     }
@@ -147,7 +147,7 @@ export class Analytics {
      *   
      */
     static DeleteAnalyticsModules(ConfigurationToken: ReferenceToken, AnalyticsModuleName: string) {
-        return createStandardRequestBodyFromString('<tan:DeleteAnalyticsModules />')
+        return createStandardRequestBodyFromString(generateRequestElements('tan:DeleteAnalyticsModules')(['ConfigurationToken','AnalyticsModuleName'])(ConfigurationToken,AnalyticsModuleName))
                         .map(mapResponseXmlToJson<any>('tan:DeleteAnalyticsModulesResponse')())
                       
     }
@@ -158,7 +158,7 @@ export class Analytics {
      *   
      */
     static GetAnalyticsModules(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<tan:GetAnalyticsModules />')
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetAnalyticsModules')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('tan:GetAnalyticsModulesResponse')())
                       
     }
@@ -170,7 +170,7 @@ export class Analytics {
      *   
      */
     static ModifyAnalyticsModules(ConfigurationToken: ReferenceToken, AnalyticsModule: Config) {
-        return createStandardRequestBodyFromString('<tan:ModifyAnalyticsModules />')
+        return createStandardRequestBodyFromString(generateRequestElements('tan:ModifyAnalyticsModules')(['ConfigurationToken','AnalyticsModule'])(ConfigurationToken,AnalyticsModule))
                         .map(mapResponseXmlToJson<any>('tan:ModifyAnalyticsModulesResponse')())
                       
     }
@@ -226,8 +226,8 @@ export class Analytics {
      *   Return the options for the supported rules that specify an Option attribute.
      *   
      */
-    GetRuleOptions(RuleType: any, ConfigurationToken: ReferenceToken) {
-        return Analytics.GetRuleOptions(RuleType,ConfigurationToken).run(this.config)
+    GetRuleOptions(ConfigurationToken: ReferenceToken, RuleType: any) {
+        return Analytics.GetRuleOptions(ConfigurationToken,RuleType).run(this.config)
     }
 
     /**
@@ -262,8 +262,8 @@ export class Analytics {
      *   Return the options for the supported analytics modules that specify an Option attribute.
      *   
      */
-    GetAnalyticsModuleOptions(Type: any, ConfigurationToken: ReferenceToken) {
-        return Analytics.GetAnalyticsModuleOptions(Type,ConfigurationToken).run(this.config)
+    GetAnalyticsModuleOptions(ConfigurationToken: ReferenceToken, Type: any) {
+        return Analytics.GetAnalyticsModuleOptions(ConfigurationToken,Type).run(this.config)
     }
 
     /**

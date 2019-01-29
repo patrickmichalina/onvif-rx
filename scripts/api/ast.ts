@@ -1,4 +1,4 @@
-import { Project, Scope, FunctionLikeDeclaration } from 'ts-simple-ast'
+import { Project, Scope, FunctionLikeDeclaration, ParameterDeclarationStructure } from 'ts-simple-ast'
 import { generateActions, generateTypes } from './exec'
 
 // initialize
@@ -84,19 +84,10 @@ generateTypes()
     })
 
     actionTree.forEach(group => {
-      // index file for each group
-      // project.createSourceFile(`src/api/${group.type}/index.ts`, {
-      //   exports: group.actions.map(a => {
-      //     return {
-      //       moduleSpecifier: `./${a.actionName}`
-      //     }
-      //   })
-      // })
-
       project.createSourceFile(`src/api/${group.type.toLowerCase()}.ts`, {
         imports: [{
           moduleSpecifier: '../soap/request',
-          namedImports: ['createStandardRequestBodyFromString', 'mapResponseXmlToJson', 'mapResponseObsToProperty'].map(name => ({ name }))
+          namedImports: ['createStandardRequestBodyFromString', 'mapResponseXmlToJson', 'generateRequestElements', 'mapResponseObsToProperty'].map(name => ({ name }))
         },
         {
           moduleSpecifier: '../config',
@@ -125,15 +116,17 @@ generateTypes()
               isStatic: true,
               docs: [{ description: action.documentation.replace(/\*/g, '') }],
               name: action.actionName,
-              bodyText: `return createStandardRequestBodyFromString('<${action.soapRequestNode} />')
+              bodyText: `return createStandardRequestBodyFromString(generateRequestElements('${action.soapRequestNode}')([${action.input.parameters.map(a => `'${a.name}'`).join(',')}])(${action.input.parameters.map(a => a.name).join(',')}))
                 .map(mapResponseXmlToJson<any>('${action.output.ref}')())
               `,
-              parameters: action.input.parameters.map(p => {
-                return {
-                  name: p.name,
-                  type: p.propertyType
-                }
-              })
+              parameters: action.input.parameters
+                .map<ParameterDeclarationStructure>(p => {
+                  return {
+                    name: p.name,
+                    type: p.propertyType,
+                    hasQuestionToken: p.propertyMinOccurs === '0'
+                  }
+                })
             }
           }),
           ...group.actions.map(action => {
@@ -148,109 +141,9 @@ generateTypes()
                 }
               })
             }
-          })
-
-
-          ]
-          // namespaces: [{
-          //   isExported: true,
-          //   name: group.type,
-          //   functions: group.actions.map(action => {
-          //     return {
-          //       isExported: true,
-          //       docs: [{ description: action.documentation.replace(/\*/g, '') }],
-          //       name: action.actionName,
-          //       bodyText: `return createStandardRequestBodyFromString('<${action.soapRequestNode} />')
-          //         .map(mapResponseXmlToJson<any>('${action.output.ref}')())
-          //       `,
-          //       parameters: action.input.parameters.map(p => {
-          //         return {
-          //           name: p.name,
-          //           type: p.propertyType
-          //         }
-          //       })
-          //     }
-          //   })
-          // {
-          //   isExported: true,
-          //   name: 'ManagedApi',
-          //   parameters: [{
-          //     name: 'config',
-          //     type: 'IDeviceConfig'
-          //   }],
-          //   functions: [{
-          //     name: 'inner',
-          //   }]
-          // }
-          // classes: [
-          //   {
-          //     name: 'Api',
-          //     isExported: true,
-          //     ctors: [{
-          //       parameters: [{
-          //         name: 'config',
-          //         type: 'IDeviceConfig'
-          //       }]
-          //     }],
-          //     // properties: [{
-          //     //   isReadonly: true,
-          //     //   name: 'test1',
-          //     //   initializer: '() => console.log()',
-          //     // }],
-          //     methods: [{
-          //       name: 'test2',
-          //       parameters: [{
-          //         name: 'param1',
-          //         type: 'any'
-          //       }],
-          //       bodyText: ``
-          //     }]
-          //   }
-          // ]
+          })]
         }]
       })
     })
     return project.save()
   })
-
-
-
-// const myClassFile = project.createSourceFile('src/MyClass.ts', {
-//   classes: [{
-
-//   }]
-// })
-// const myEnumFile = project.createSourceFile('src/MyEnum.ts', {
-//   enums: [{
-//     name: 'MyEnum',
-//     isExported: true,
-//     members: [{ name: 'member' }]
-//   }]
-// })
-
-// // get information from ast
-// const myClass = myClassFile.getClassOrThrow('MyClass')
-// myClass.getName()          // returns: "MyClass"
-// myClass.hasExportKeyword() // returns: true
-// myClass.isDefaultExport()  // returns: false
-
-// // manipulate ast
-// const myInterface = myClassFile.addInterface({
-//   name: 'IMyInterface',
-//   isExported: true,
-//   properties: [{
-//     name: 'myProp',
-//     type: 'number'
-//   }]
-// })
-
-// myClass.rename('NewName')
-// myClass.addImplements(myInterface.getName())
-// myClass.addProperty({
-//   name: 'myProp',
-//   initializer: '5'
-// })
-
-// project.getSourceFileOrThrow('src/ExistingFile.ts').delete()
-// get underlying compiler node from the typescript AST from any node
-// const compilerNode = myClassFile.compilerNode

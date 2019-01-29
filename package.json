@@ -34,7 +34,7 @@
     "minify": "uglifyjs dist/onvif-rx-umd.js -o dist/onvif-rx-umd.min.js --source-map -c -m",
     "rollup": "rollup -c",
     "watch": "rollup -cw",
-    "gen.api": "ts-node scripts/api/ast.ts"
+    "gen.api": "rm -rf src/api && ts-node scripts/api/ast.ts"
   },
   "dependencies": {
     "js-sha1": "^0.6.0",

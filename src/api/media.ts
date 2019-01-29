@@ -1,4 +1,4 @@
-import { createStandardRequestBodyFromString, mapResponseXmlToJson, mapResponseObsToProperty } from "../soap/request";
+import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequestElements, mapResponseObsToProperty } from "../soap/request";
 import { IDeviceConfig } from "../config";
 import { Name, ReferenceToken, VideoSourceConfiguration, VideoEncoderConfiguration, AudioSourceConfiguration, AudioEncoderConfiguration, VideoAnalyticsConfiguration, MetadataConfiguration, AudioOutputConfiguration, AudioDecoderConfiguration, StreamSetup, OSDConfiguration } from "./types";
 
@@ -10,7 +10,7 @@ export class Media {
      * Returns the capabilities of the media service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString('<trt:GetServiceCapabilities />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetServiceCapabilities')([])())
                         .map(mapResponseXmlToJson<any>('trt:GetServiceCapabilitiesResponse')())
                       
     }
@@ -19,7 +19,7 @@ export class Media {
      * This command lists all available physical video inputs of the device.
      */
     static GetVideoSources() {
-        return createStandardRequestBodyFromString('<trt:GetVideoSources />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSources')([])())
                         .map(mapResponseXmlToJson<any>('trt:GetVideoSourcesResponse')())
                       
     }
@@ -28,7 +28,7 @@ export class Media {
      * This command lists all available physical audio inputs of the device.
      */
     static GetAudioSources() {
-        return createStandardRequestBodyFromString('<trt:GetAudioSources />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSources')([])())
                         .map(mapResponseXmlToJson<any>('trt:GetAudioSourcesResponse')())
                       
     }
@@ -37,7 +37,7 @@ export class Media {
      * This command lists all available physical audio outputs of the device.
      */
     static GetAudioOutputs() {
-        return createStandardRequestBodyFromString('<trt:GetAudioOutputs />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputs')([])())
                         .map(mapResponseXmlToJson<any>('trt:GetAudioOutputsResponse')())
                       
     }
@@ -47,8 +47,8 @@ export class Media {
      *   device and shall be persistent (remain after reboot). A created profile shall be deletable and a device shall set the “fixed” attribute to false in the
      *   returned Profile.
      */
-    static CreateProfile(Name: Name, Token: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:CreateProfile />')
+    static CreateProfile(Name: Name, Token?: ReferenceToken) {
+        return createStandardRequestBodyFromString(generateRequestElements('trt:CreateProfile')(['Name','Token'])(Name,Token))
                         .map(mapResponseXmlToJson<any>('trt:CreateProfileResponse')())
                       
     }
@@ -57,7 +57,7 @@ export class Media {
      * If the profile token is already known, a profile can be fetched through the GetProfile command.
      */
     static GetProfile(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetProfile />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetProfile')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetProfileResponse')())
                       
     }
@@ -69,7 +69,7 @@ export class Media {
      *   know the media profile in order to use the command.
      */
     static GetProfiles() {
-        return createStandardRequestBodyFromString('<trt:GetProfiles />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetProfiles')([])())
                         .map(mapResponseXmlToJson<any>('trt:GetProfilesResponse')())
                       
     }
@@ -82,7 +82,7 @@ export class Media {
      *   
      */
     static AddVideoEncoderConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:AddVideoEncoderConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddVideoEncoderConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:AddVideoEncoderConfigurationResponse')())
                       
     }
@@ -92,7 +92,7 @@ export class Media {
      *   media profile does not contain a VideoEncoderConfiguration, the operation has no effect. The removal shall be persistent.
      */
     static RemoveVideoEncoderConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:RemoveVideoEncoderConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveVideoEncoderConfiguration')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:RemoveVideoEncoderConfigurationResponse')())
                       
     }
@@ -102,7 +102,7 @@ export class Media {
      *   configuration exists in the media profile, it will be replaced. The change shall be persistent.
      */
     static AddVideoSourceConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:AddVideoSourceConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddVideoSourceConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:AddVideoSourceConfigurationResponse')())
                       
     }
@@ -113,7 +113,7 @@ export class Media {
      *   VideoEncoderConfiguration from the media profile.
      */
     static RemoveVideoSourceConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:RemoveVideoSourceConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveVideoSourceConfiguration')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:RemoveVideoSourceConfigurationResponse')())
                       
     }
@@ -126,7 +126,7 @@ export class Media {
      *   
      */
     static AddAudioEncoderConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:AddAudioEncoderConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioEncoderConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:AddAudioEncoderConfigurationResponse')())
                       
     }
@@ -137,7 +137,7 @@ export class Media {
      *   The removal shall be persistent.
      */
     static RemoveAudioEncoderConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:RemoveAudioEncoderConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioEncoderConfiguration')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:RemoveAudioEncoderConfigurationResponse')())
                       
     }
@@ -147,7 +147,7 @@ export class Media {
      *   configuration exists in the media profile, it will be replaced. The change shall be persistent.
      */
     static AddAudioSourceConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:AddAudioSourceConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioSourceConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:AddAudioSourceConfigurationResponse')())
                       
     }
@@ -159,7 +159,7 @@ export class Media {
      *   AudioEncoderConfiguration from the media profile.
      */
     static RemoveAudioSourceConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:RemoveAudioSourceConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioSourceConfiguration')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:RemoveAudioSourceConfigurationResponse')())
                       
     }
@@ -171,7 +171,7 @@ export class Media {
      *   PTZ movement.
      */
     static AddPTZConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:AddPTZConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddPTZConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:AddPTZConfigurationResponse')())
                       
     }
@@ -181,7 +181,7 @@ export class Media {
      *   does not contain a PTZConfiguration, the operation has no effect. The removal shall be persistent.
      */
     static RemovePTZConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:RemovePTZConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemovePTZConfiguration')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:RemovePTZConfigurationResponse')())
                       
     }
@@ -193,7 +193,7 @@ export class Media {
      *   configuration before a video source configuration.
      */
     static AddVideoAnalyticsConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:AddVideoAnalyticsConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddVideoAnalyticsConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:AddVideoAnalyticsConfigurationResponse')())
                       
     }
@@ -203,7 +203,7 @@ export class Media {
      *   The removal shall be persistent.
      */
     static RemoveVideoAnalyticsConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:RemoveVideoAnalyticsConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveVideoAnalyticsConfiguration')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:RemoveVideoAnalyticsConfigurationResponse')())
                       
     }
@@ -212,7 +212,7 @@ export class Media {
      * This operation adds a Metadata configuration to an existing media profile. If a configuration exists in the media profile, it will be replaced. The change shall be persistent. Adding a MetadataConfiguration to a Profile means that streams using that profile contain metadata. Metadata can consist of events, PTZ status, and/or video analytics data.
      */
     static AddMetadataConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:AddMetadataConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddMetadataConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:AddMetadataConfigurationResponse')())
                       
     }
@@ -221,7 +221,7 @@ export class Media {
      * This operation removes a MetadataConfiguration from an existing media profile. If the media profile does not contain a MetadataConfiguration, the operation has no effect. The removal shall be persistent.
      */
     static RemoveMetadataConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:RemoveMetadataConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveMetadataConfiguration')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:RemoveMetadataConfigurationResponse')())
                       
     }
@@ -230,7 +230,7 @@ export class Media {
      * This operation adds an AudioOutputConfiguration to an existing media profile. If a configuration exists in the media profile, it will be replaced. The change shall be persistent.
      */
     static AddAudioOutputConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:AddAudioOutputConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioOutputConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:AddAudioOutputConfigurationResponse')())
                       
     }
@@ -239,7 +239,7 @@ export class Media {
      * This operation removes an AudioOutputConfiguration from an existing media profile. If the media profile does not contain an AudioOutputConfiguration, the operation has no effect. The removal shall be persistent.
      */
     static RemoveAudioOutputConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:RemoveAudioOutputConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioOutputConfiguration')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:RemoveAudioOutputConfigurationResponse')())
                       
     }
@@ -248,7 +248,7 @@ export class Media {
      * This operation adds an AudioDecoderConfiguration to an existing media profile. If a configuration exists in the media profile, it shall be replaced. The change shall be persistent.
      */
     static AddAudioDecoderConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:AddAudioDecoderConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioDecoderConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:AddAudioDecoderConfigurationResponse')())
                       
     }
@@ -257,7 +257,7 @@ export class Media {
      * This operation removes an AudioDecoderConfiguration from an existing media profile. If the media profile does not contain an AudioDecoderConfiguration, the operation has no effect. The removal shall be persistent.
      */
     static RemoveAudioDecoderConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:RemoveAudioDecoderConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioDecoderConfiguration')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:RemoveAudioDecoderConfigurationResponse')())
                       
     }
@@ -266,7 +266,7 @@ export class Media {
      * This operation deletes a profile. This change shall always be persistent. Deletion of a profile is only possible for non-fixed profiles
      */
     static DeleteProfile(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:DeleteProfile />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:DeleteProfile')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:DeleteProfileResponse')())
                       
     }
@@ -275,7 +275,7 @@ export class Media {
      * This operation lists all existing video source configurations for a device. The client need not know anything about the video source configurations in order to use the command.
      */
     static GetVideoSourceConfigurations() {
-        return createStandardRequestBodyFromString('<trt:GetVideoSourceConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceConfigurations')([])())
                         .map(mapResponseXmlToJson<any>('trt:GetVideoSourceConfigurationsResponse')())
                       
     }
@@ -284,7 +284,7 @@ export class Media {
      * This operation lists all existing video encoder configurations of a device. This command lists all configured video encoder configurations in a device. The client need not know anything apriori about the video encoder configurations in order to use the command.
      */
     static GetVideoEncoderConfigurations() {
-        return createStandardRequestBodyFromString('<trt:GetVideoEncoderConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoEncoderConfigurations')([])())
                         .map(mapResponseXmlToJson<any>('trt:GetVideoEncoderConfigurationsResponse')())
                       
     }
@@ -293,7 +293,7 @@ export class Media {
      * This operation lists all existing audio source configurations of a device. This command lists all audio source configurations in a device. The client need not know anything apriori about the audio source configurations in order to use the command.
      */
     static GetAudioSourceConfigurations() {
-        return createStandardRequestBodyFromString('<trt:GetAudioSourceConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSourceConfigurations')([])())
                         .map(mapResponseXmlToJson<any>('trt:GetAudioSourceConfigurationsResponse')())
                       
     }
@@ -302,7 +302,7 @@ export class Media {
      * This operation lists all existing device audio encoder configurations. The client need not know anything apriori about the audio encoder configurations in order to use the command.
      */
     static GetAudioEncoderConfigurations() {
-        return createStandardRequestBodyFromString('<trt:GetAudioEncoderConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioEncoderConfigurations')([])())
                         .map(mapResponseXmlToJson<any>('trt:GetAudioEncoderConfigurationsResponse')())
                       
     }
@@ -311,7 +311,7 @@ export class Media {
      * This operation lists all video analytics configurations of a device. This command lists all configured video analytics in a device. The client need not know anything apriori about the video analytics in order to use the command.
      */
     static GetVideoAnalyticsConfigurations() {
-        return createStandardRequestBodyFromString('<trt:GetVideoAnalyticsConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoAnalyticsConfigurations')([])())
                         .map(mapResponseXmlToJson<any>('trt:GetVideoAnalyticsConfigurationsResponse')())
                       
     }
@@ -320,7 +320,7 @@ export class Media {
      * This operation lists all existing metadata configurations. The client need not know anything apriori about the metadata in order to use the command.
      */
     static GetMetadataConfigurations() {
-        return createStandardRequestBodyFromString('<trt:GetMetadataConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetMetadataConfigurations')([])())
                         .map(mapResponseXmlToJson<any>('trt:GetMetadataConfigurationsResponse')())
                       
     }
@@ -329,7 +329,7 @@ export class Media {
      * This command lists all existing AudioOutputConfigurations of a device. The NVC need not know anything apriori about the audio configurations to use this command.
      */
     static GetAudioOutputConfigurations() {
-        return createStandardRequestBodyFromString('<trt:GetAudioOutputConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputConfigurations')([])())
                         .map(mapResponseXmlToJson<any>('trt:GetAudioOutputConfigurationsResponse')())
                       
     }
@@ -339,7 +339,7 @@ export class Media {
      *   use this command.
      */
     static GetAudioDecoderConfigurations() {
-        return createStandardRequestBodyFromString('<trt:GetAudioDecoderConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioDecoderConfigurations')([])())
                         .map(mapResponseXmlToJson<any>('trt:GetAudioDecoderConfigurationsResponse')())
                       
     }
@@ -348,7 +348,7 @@ export class Media {
      * If the video source configuration token is already known, the video source configuration can be fetched through the GetVideoSourceConfiguration command.
      */
     static GetVideoSourceConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetVideoSourceConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceConfiguration')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoSourceConfigurationResponse')())
                       
     }
@@ -357,7 +357,7 @@ export class Media {
      * If the video encoder configuration token is already known, the encoder configuration can be fetched through the GetVideoEncoderConfiguration command.
      */
     static GetVideoEncoderConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetVideoEncoderConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoEncoderConfiguration')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoEncoderConfigurationResponse')())
                       
     }
@@ -366,7 +366,7 @@ export class Media {
      * The GetAudioSourceConfiguration command fetches the audio source configurations if the audio source configuration token is already known. An
      */
     static GetAudioSourceConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetAudioSourceConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSourceConfiguration')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioSourceConfigurationResponse')())
                       
     }
@@ -375,7 +375,7 @@ export class Media {
      * The GetAudioEncoderConfiguration command fetches the encoder configuration if the audio encoder configuration token is known.
      */
     static GetAudioEncoderConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetAudioEncoderConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioEncoderConfiguration')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioEncoderConfigurationResponse')())
                       
     }
@@ -384,7 +384,7 @@ export class Media {
      * The GetVideoAnalyticsConfiguration command fetches the video analytics configuration if the video analytics token is known.
      */
     static GetVideoAnalyticsConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetVideoAnalyticsConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoAnalyticsConfiguration')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoAnalyticsConfigurationResponse')())
                       
     }
@@ -393,7 +393,7 @@ export class Media {
      * The GetMetadataConfiguration command fetches the metadata configuration if the metadata token is known.
      */
     static GetMetadataConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetMetadataConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetMetadataConfiguration')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:GetMetadataConfigurationResponse')())
                       
     }
@@ -402,7 +402,7 @@ export class Media {
      * If the audio output configuration token is already known, the output configuration can be fetched through the GetAudioOutputConfiguration command.
      */
     static GetAudioOutputConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetAudioOutputConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputConfiguration')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioOutputConfigurationResponse')())
                       
     }
@@ -411,7 +411,7 @@ export class Media {
      * If the audio decoder configuration token is already known, the decoder configuration can be fetched through the GetAudioDecoderConfiguration command.
      */
     static GetAudioDecoderConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetAudioDecoderConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioDecoderConfiguration')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioDecoderConfigurationResponse')())
                       
     }
@@ -420,7 +420,7 @@ export class Media {
      * This operation lists all the video encoder configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddVideoEncoderConfiguration command on the media profile. The result will vary depending on the capabilities, configurations and settings in the device.
      */
     static GetCompatibleVideoEncoderConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetCompatibleVideoEncoderConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleVideoEncoderConfigurations')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleVideoEncoderConfigurationsResponse')())
                       
     }
@@ -432,7 +432,7 @@ export class Media {
      *   will vary depending on the capabilities, configurations and settings in the device.
      */
     static GetCompatibleVideoSourceConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetCompatibleVideoSourceConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleVideoSourceConfigurations')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleVideoSourceConfigurationsResponse')())
                       
     }
@@ -441,7 +441,7 @@ export class Media {
      * This operation requests all audio encoder configurations of a device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddAudioSourceConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
      */
     static GetCompatibleAudioEncoderConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetCompatibleAudioEncoderConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioEncoderConfigurations')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioEncoderConfigurationsResponse')())
                       
     }
@@ -450,7 +450,7 @@ export class Media {
      * This operation requests all audio source configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddAudioEncoderConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
      */
     static GetCompatibleAudioSourceConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetCompatibleAudioSourceConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioSourceConfigurations')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioSourceConfigurationsResponse')())
                       
     }
@@ -459,7 +459,7 @@ export class Media {
      * This operation requests all video analytic configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddVideoAnalyticsConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
      */
     static GetCompatibleVideoAnalyticsConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetCompatibleVideoAnalyticsConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleVideoAnalyticsConfigurations')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleVideoAnalyticsConfigurationsResponse')())
                       
     }
@@ -468,7 +468,7 @@ export class Media {
      * This operation requests all the metadata configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddMetadataConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
      */
     static GetCompatibleMetadataConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetCompatibleMetadataConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleMetadataConfigurations')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleMetadataConfigurationsResponse')())
                       
     }
@@ -478,7 +478,7 @@ export class Media {
      *   AddAudioOutputConfiguration command.
      */
     static GetCompatibleAudioOutputConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetCompatibleAudioOutputConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioOutputConfigurations')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioOutputConfigurationsResponse')())
                       
     }
@@ -487,7 +487,7 @@ export class Media {
      * This operation lists all the audio decoder configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddAudioDecoderConfiguration command on the media profile.
      */
     static GetCompatibleAudioDecoderConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetCompatibleAudioDecoderConfigurations />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioDecoderConfigurations')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioDecoderConfigurationsResponse')())
                       
     }
@@ -496,7 +496,7 @@ export class Media {
      * This operation modifies a video source configuration. The ForcePersistence flag indicates if the changes shall remain after reboot of the device. Running streams using this configuration may be immediately updated according to the new settings. The changes are not guaranteed to take effect unless the client requests a new stream URI and restarts any affected stream. NVC methods for changing a running stream are out of scope for this specification.
      */
     static SetVideoSourceConfiguration(Configuration: VideoSourceConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString('<trt:SetVideoSourceConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoSourceConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
                         .map(mapResponseXmlToJson<any>('trt:SetVideoSourceConfigurationResponse')())
                       
     }
@@ -505,7 +505,7 @@ export class Media {
      * This operation modifies a video encoder configuration. The ForcePersistence flag indicates if the changes shall remain after reboot of the device. Changes in the Multicast settings shall always be persistent. Running streams using this configuration may be immediately updated according to the new settings. The changes are not guaranteed to take effect unless the client requests a new stream URI and restarts any affected stream. NVC methods for changing a running stream are out of scope for this specification. SessionTimeout is provided as a hint for keeping rtsp session by a device. If necessary the device may adapt parameter values for SessionTimeout elements without returning an error. For the time between keep alive calls the client shall adhere to the timeout value signaled via RTSP.
      */
     static SetVideoEncoderConfiguration(Configuration: VideoEncoderConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString('<trt:SetVideoEncoderConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoEncoderConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
                         .map(mapResponseXmlToJson<any>('trt:SetVideoEncoderConfigurationResponse')())
                       
     }
@@ -518,7 +518,7 @@ export class Media {
      *   NVC methods for changing a running stream are out of scope for this specification.
      */
     static SetAudioSourceConfiguration(Configuration: AudioSourceConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString('<trt:SetAudioSourceConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioSourceConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
                         .map(mapResponseXmlToJson<any>('trt:SetAudioSourceConfigurationResponse')())
                       
     }
@@ -531,7 +531,7 @@ export class Media {
      *   running stream are out of scope for this specification.
      */
     static SetAudioEncoderConfiguration(Configuration: AudioEncoderConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString('<trt:SetAudioEncoderConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioEncoderConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
                         .map(mapResponseXmlToJson<any>('trt:SetAudioEncoderConfigurationResponse')())
                       
     }
@@ -545,7 +545,7 @@ export class Media {
      *   video analytics configuration token.
      */
     static SetVideoAnalyticsConfiguration(Configuration: VideoAnalyticsConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString('<trt:SetVideoAnalyticsConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoAnalyticsConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
                         .map(mapResponseXmlToJson<any>('trt:SetVideoAnalyticsConfigurationResponse')())
                       
     }
@@ -559,7 +559,7 @@ export class Media {
      *   running stream are out of scope for this specification.
      */
     static SetMetadataConfiguration(Configuration: MetadataConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString('<trt:SetMetadataConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetMetadataConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
                         .map(mapResponseXmlToJson<any>('trt:SetMetadataConfigurationResponse')())
                       
     }
@@ -569,7 +569,7 @@ export class Media {
      *   the changes shall remain after reboot of the device.
      */
     static SetAudioOutputConfiguration(Configuration: AudioOutputConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString('<trt:SetAudioOutputConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioOutputConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
                         .map(mapResponseXmlToJson<any>('trt:SetAudioOutputConfigurationResponse')())
                       
     }
@@ -579,7 +579,7 @@ export class Media {
      *   the changes shall remain after reboot of the device.
      */
     static SetAudioDecoderConfiguration(Configuration: AudioDecoderConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString('<trt:SetAudioDecoderConfiguration />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioDecoderConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
                         .map(mapResponseXmlToJson<any>('trt:SetAudioDecoderConfigurationResponse')())
                       
     }
@@ -590,8 +590,8 @@ export class Media {
      *   particular configuration. If a media profile is specified, the options shall be compatible with
      *   that media profile.
      */
-    static GetVideoSourceConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetVideoSourceConfigurationOptions />')
+    static GetVideoSourceConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoSourceConfigurationOptionsResponse')())
                       
     }
@@ -606,8 +606,8 @@ export class Media {
      *   compatible with that media profile. If no tokens are specified, the options shall be considered generic for the device.
      *   
      */
-    static GetVideoEncoderConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetVideoEncoderConfigurationOptions />')
+    static GetVideoEncoderConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoEncoderConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoEncoderConfigurationOptionsResponse')())
                       
     }
@@ -618,8 +618,8 @@ export class Media {
      *   particular configuration. If a media profile is specified, the options shall be compatible with
      *   that media profile.
      */
-    static GetAudioSourceConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetAudioSourceConfigurationOptions />')
+    static GetAudioSourceConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSourceConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioSourceConfigurationOptionsResponse')())
                       
     }
@@ -628,8 +628,8 @@ export class Media {
      * This operation returns the available options  (supported values and ranges for audio encoder configuration parameters) when the audio encoder parameters are
      *   reconfigured.
      */
-    static GetAudioEncoderConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetAudioEncoderConfigurationOptions />')
+    static GetAudioEncoderConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioEncoderConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioEncoderConfigurationOptionsResponse')())
                       
     }
@@ -637,8 +637,8 @@ export class Media {
     /**
      * This operation returns the available options (supported values and ranges for metadata configuration parameters) for changing the metadata configuration.
      */
-    static GetMetadataConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetMetadataConfigurationOptions />')
+    static GetMetadataConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetMetadataConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetMetadataConfigurationOptionsResponse')())
                       
     }
@@ -646,8 +646,8 @@ export class Media {
     /**
      * This operation returns the available options (supported values and ranges for audio output configuration parameters) for configuring an audio output.
      */
-    static GetAudioOutputConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetAudioOutputConfigurationOptions />')
+    static GetAudioOutputConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioOutputConfigurationOptionsResponse')())
                       
     }
@@ -656,8 +656,8 @@ export class Media {
      * This command list the audio decoding capabilities for a given profile and configuration of a
      *   device.
      */
-    static GetAudioDecoderConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetAudioDecoderConfigurationOptions />')
+    static GetAudioDecoderConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioDecoderConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioDecoderConfigurationOptionsResponse')())
                       
     }
@@ -668,7 +668,7 @@ export class Media {
      *   Configuration.
      */
     static GetGuaranteedNumberOfVideoEncoderInstances(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetGuaranteedNumberOfVideoEncoderInstances />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetGuaranteedNumberOfVideoEncoderInstances')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:GetGuaranteedNumberOfVideoEncoderInstancesResponse')())
                       
     }
@@ -691,7 +691,7 @@ export class Media {
      *   128 octets.
      */
     static GetStreamUri(StreamSetup: StreamSetup, ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetStreamUri />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetStreamUri')(['StreamSetup','ProfileToken'])(StreamSetup,ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetStreamUriResponse')())
                       
     }
@@ -705,7 +705,7 @@ export class Media {
      *   respectively.
      */
     static StartMulticastStreaming(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:StartMulticastStreaming />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:StartMulticastStreaming')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:StartMulticastStreamingResponse')())
                       
     }
@@ -714,7 +714,7 @@ export class Media {
      * This command stop multicast streaming using a specified media profile of a device
      */
     static StopMulticastStreaming(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:StopMulticastStreaming />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:StopMulticastStreaming')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:StopMulticastStreamingResponse')())
                       
     }
@@ -733,7 +733,7 @@ export class Media {
      *   the PTZ position shall be repeated within the metadata stream.
      */
     static SetSynchronizationPoint(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:SetSynchronizationPoint />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetSynchronizationPoint')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:SetSynchronizationPointResponse')())
                       
     }
@@ -749,7 +749,7 @@ export class Media {
      *   image will be updated automatically and independent from calls to GetSnapshotUri.
      */
     static GetSnapshotUri(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetSnapshotUri />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetSnapshotUri')(['ProfileToken'])(ProfileToken))
                         .map(mapResponseXmlToJson<any>('trt:GetSnapshotUriResponse')())
                       
     }
@@ -758,7 +758,7 @@ export class Media {
      * A device returns the information for current video source mode and settable video source modes of specified video source. A device that indicates a capability of  VideoSourceModes shall support this command.
      */
     static GetVideoSourceModes(VideoSourceToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetVideoSourceModes />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceModes')(['VideoSourceToken'])(VideoSourceToken))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoSourceModesResponse')())
                       
     }
@@ -767,7 +767,7 @@ export class Media {
      * SetVideoSourceMode changes the media profile structure relating to video source for the specified video source mode. A device that indicates a capability of VideoSourceModes shall support this command. The behavior after changing the mode is not defined in this specification.
      */
     static SetVideoSourceMode(VideoSourceToken: ReferenceToken, VideoSourceModeToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:SetVideoSourceMode />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoSourceMode')(['VideoSourceToken','VideoSourceModeToken'])(VideoSourceToken,VideoSourceModeToken))
                         .map(mapResponseXmlToJson<any>('trt:SetVideoSourceModeResponse')())
                       
     }
@@ -775,8 +775,8 @@ export class Media {
     /**
      * Get the OSDs.
      */
-    static GetOSDs(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetOSDs />')
+    static GetOSDs(ConfigurationToken?: ReferenceToken) {
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetOSDs')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:GetOSDsResponse')())
                       
     }
@@ -785,7 +785,7 @@ export class Media {
      * Get the OSD.
      */
     static GetOSD(OSDToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetOSD />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetOSD')(['OSDToken'])(OSDToken))
                         .map(mapResponseXmlToJson<any>('trt:GetOSDResponse')())
                       
     }
@@ -794,7 +794,7 @@ export class Media {
      * Get the OSD Options.
      */
     static GetOSDOptions(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:GetOSDOptions />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetOSDOptions')(['ConfigurationToken'])(ConfigurationToken))
                         .map(mapResponseXmlToJson<any>('trt:GetOSDOptionsResponse')())
                       
     }
@@ -803,7 +803,7 @@ export class Media {
      * Set the OSD
      */
     static SetOSD(OSD: OSDConfiguration) {
-        return createStandardRequestBodyFromString('<trt:SetOSD />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetOSD')(['OSD'])(OSD))
                         .map(mapResponseXmlToJson<any>('trt:SetOSDResponse')())
                       
     }
@@ -812,7 +812,7 @@ export class Media {
      * Create the OSD.
      */
     static CreateOSD(OSD: OSDConfiguration) {
-        return createStandardRequestBodyFromString('<trt:CreateOSD />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:CreateOSD')(['OSD'])(OSD))
                         .map(mapResponseXmlToJson<any>('trt:CreateOSDResponse')())
                       
     }
@@ -821,7 +821,7 @@ export class Media {
      * Delete the OSD.
      */
     static DeleteOSD(OSDToken: ReferenceToken) {
-        return createStandardRequestBodyFromString('<trt:DeleteOSD />')
+        return createStandardRequestBodyFromString(generateRequestElements('trt:DeleteOSD')(['OSDToken'])(OSDToken))
                         .map(mapResponseXmlToJson<any>('trt:DeleteOSDResponse')())
                       
     }
