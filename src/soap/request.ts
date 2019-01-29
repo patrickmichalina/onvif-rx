@@ -159,7 +159,7 @@ export const createStandardRequestBody =
   (body: string) =>
     reader<IDeviceConfig, Observable<IOnvifResult>>(config => {
       const gen = (body: string) => config.system.transport(body)(config.deviceUrl)
-        .pipe(tap(console.log), map(parseXml(config.system.parser)))
+        .pipe(map(parseXml(config.system.parser)))
         .pipe(map(response => {
           const tmp = (XMLNS.S11.split('=').pop() || '').replace(/"/g, '')
           const subcode = maybe(response.body.getElementsByTagNameNS(tmp, 'Subcode').item(0)).flatMapAuto(a => a.textContent)
