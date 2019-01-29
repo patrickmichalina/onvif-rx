@@ -1,4 +1,4 @@
-import { mapResponseXmlToJson, createMediaRequestBodyFromString, mapResponseObsToProperty } from '../request'
+import { mapResponseXmlToJson, createMediaRequestBodyFromString, mapResponseObsToProperty } from '../soap/request'
 
 export interface IGetVideoAnalyticsConfigurationsResponse {
   readonly Configurations: any

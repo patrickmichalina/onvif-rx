@@ -1,4 +1,4 @@
-import { createDeviceRequestBodyFromString, mapResponseXmlToJson } from '../request'
+import { createDeviceRequestBodyFromString, mapResponseXmlToJson } from '../soap/request'
 import { map } from 'rxjs/operators'
 
 export enum DynamicDNSType {

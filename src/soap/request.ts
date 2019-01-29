@@ -4,15 +4,57 @@ import { Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { createUserToken } from './auth'
 
+export enum XMLNS {
+  S11 = 'xmlns:S11="http://www.w3.org/2003/05/soap-envelope"',
+  wsse = 'xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"',
+  wsu = 'xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"',
+  tt = 'xmlns:tt="http://www.onvif.org/ver10/schema"',
+  tds = 'xmlns:tds="http://www.onvif.org/ver10/device/wsdl"',
+  trt = 'xmlns:trt="http://www.onvif.org/ver10/media/wsdl"',
+  xsi = 'xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"',
+  xsd = 'xmlns:xsd="http://www.w3.org/2001/XMLSchema"',
+  ns1 = 'xmlns:ns1="http://www.onvif.org/ver10/accesscontrol/wsdl"',
+  ns3 = 'xmlns:ns3="http://www.onvif.org/ver10/actionengine/wsdl"',
+  tad = 'xmlns:tad="http://www.onvif.org/ver10/analyticsdevice/wsdl"',
+  timg = 'xmlns:timg="http://www.onvif.org/ver20/imaging/wsdl"',
+  tptz = 'xmlns:tptz="http://www.onvif.org/ver20/ptz/wsdl"',
+  trc = 'xmlns:trc="http://www.onvif.org/ver10/recording/wsdl"',
+  trv = 'xmlns:trv="http://www.onvif.org/ver10/receiver/wsdl"',
+  tse = 'xmlns:tse="http://www.onvif.org/ver10/search/wsdl"',
+  vifsvr = 'xmlns:vifsvr="http://www.onvif.org/ver10/events/wsdl/PullPointSubscriptionBinding"',
+  vifsvr10 = 'xmlns:vifsvr10="http://www.onvif.org/ver20/analytics/wsdl/AnalyticsEngineBinding"',
+  vifsvr2 = 'xmlns:vifsvr2="http://www.onvif.org/ver10/events/wsdl/EventBinding"',
+  tev = 'xmlns:tev="http://www.onvif.org/ver10/events/wsdl"',
+  vifsvr3 = 'xmlns:vifsvr3="http://www.onvif.org/ver10/events/wsdl/SubscriptionManagerBinding"',
+  vifsvr4 = 'xmlns:vifsvr4="http://www.onvif.org/ver10/events/wsdl/NotificationProducerBinding"',
+  vifsvr5 = 'xmlns:vifsvr5="http://www.onvif.org/ver10/events/wsdl/NotificationConsumerBinding"',
+  vifsvr6 = 'xmlns:vifsvr6="http://www.onvif.org/ver10/events/wsdl/PullPointBinding"',
+  vifsvr7 = 'xmlns:vifsvr7="http://www.onvif.org/ver10/events/wsdl/CreatePullPointBinding"',
+  vifsvr8 = 'xmlns:vifsvr8="http://www.onvif.org/ver10/events/wsdl/PausableSubscriptionManagerBinding"',
+  wsnt = 'xmlns:wsnt="http://docs.oasis-open.org/wsn/b-2"',
+  vifsvr9 = 'xmlns:vifsvr9="http://www.onvif.org/ver20/analytics/wsdl/RuleEngineBinding"',
+  tan = 'xmlns:tan="http://www.onvif.org/ver20/analytics/wsdl"',
+  ter = 'xmlns:ter="http://www.onvif.org/ver10/error"',
+  tns1 = 'xmlns:tns1="http://www.onvif.org/ver10/topics"',
+  ns2 = 'xmlns:ns2="http://www.onvif.org/ver10/pacs"',
+  wsa5 = 'xmlns:wsa5="http://www.w3.org/2005/08/addressing"'
+}
+
 export interface ITransportPayloadXml {
   readonly body: Document
   readonly statusMessage: string
   readonly status: number
 }
 
+export type IOnvifNetworkResponse<T> = Observable<IResult<T, ITransportPayloadXml>>
+
+// LOL
+const cleanColon = (str: string) => str.replace(/^.+:/, '')
+
 const parseXml =
   (parser: DOMParser) =>
     (payload: ITransportPayoad): ITransportPayloadXml => {
+      // console.log(payload.body)
       return {
         ...payload,
         body: parser.parseFromString(payload.body, 'text/xml')
@@ -26,8 +68,6 @@ const propertyTypeConverter =
       : val
         ? isNaN(Number(val)) ? val : Number(val)
         : undefined
-
-const cleanColon = (str: string) => str.replace(/^.+:/, '')
 
 const parseAttributes = (attrs: ReadonlyArray<Attr>) => Array.from(attrs)
   .reduce((acc: any, attr: any) => {
@@ -55,29 +95,26 @@ const deep =
                   : [deep(collectionKeys)(curr)]
                 : deep(collectionKeys)(curr)
               : propertyTypeConverter(curr.textContent)
-
-            // [key]: curr.attributes.length
-            //   ? parseAttributes(curr.attributes)
-            //   : curr.childNodes.length > 1
-            //     ? isCollection
-            //       ? Array.isArray(baseVal)
-            //         ? [...baseVal, deep(collectionKeys)(curr)]
-            //         : [deep(collectionKeys)(curr)]
-            //       : deep(collectionKeys)(curr)
-            //     : propertyTypeConverter(curr.textContent)
           }
         }, { ...parseAttributes(elm.attributes as any) } as T)
 
-export enum XMLNS {
-  SOAP = 'xmlns="http://www.w3.org/2003/05/soap-envelope"',
-  DEVICE = 'xmlns="http://www.onvif.org/ver10/device/wsdl"',
-  MEDIA = 'xmlns="http://www.onvif.org/ver10/media/wsdl"'
+
+export enum SOAP_NODE {
+  Header = 'S11:Header',
+  Envelope = 'S11:Envelope',
+  Body = 'S11:Body'
 }
+
+const nsstr = () => Object.keys(XMLNS).map((k: any) => XMLNS[k])
 
 export const soapShell =
   (rawBody: string) =>
     (rawHeader?: string) =>
-      `<?xml version="1.0" encoding="UTF-8"?><Envelope xmlns:s="http://www.w3.org/2003/05/soap-envelope" xmlns:tds="http://www.onvif.org/ver10/device/wsdl" xmlns:tt="http://www.onvif.org/ver10/schema"><Header>${rawHeader || ''}</Header><Body>${rawBody}</Body></Envelope>`
+      `<?xml version="1.0" encoding="UTF-8"?>
+      <${SOAP_NODE.Envelope} ${nsstr().join(' ')}>
+        <${SOAP_NODE.Header}>${rawHeader || ''}</${SOAP_NODE.Header}>
+        <${SOAP_NODE.Body}>${rawBody}</${SOAP_NODE.Body}>
+      </${SOAP_NODE.Envelope}>`
 
 export const mapResponseXmlToJson =
   <T>(node: string) =>
@@ -124,20 +161,21 @@ export const createStandardRequestBody =
       const gen = (body: string) => config.system.transport(body)(config.deviceUrl)
         .pipe(map(parseXml(config.system.parser)))
         .pipe(map(response => {
-          const reason = maybe(response.body.getElementsByTagName('s:Reason').item(0))
-            .flatMapAuto(a => a.textContent)
+          const tmp = (XMLNS.S11.split('=').pop() || '').replace(/"/g, '')
+          const subcode = maybe(response.body.getElementsByTagNameNS(tmp, 'Subcode').item(0)).flatMapAuto(a => a.textContent)
+          const reason = maybe(response.body.getElementsByTagNameNS(tmp, 'Reason').item(0)).flatMapAuto(a => a.textContent)
 
           return response.status === 200 && !reason.valueOrUndefined()
             ? ok(response.body)
             : fail<Document, ITransportPayloadXml>({
               ...response,
-              statusMessage: reason.valueOr(response.statusMessage)
+              statusMessage: (reason.valueOrUndefined() || subcode.valueOr(response.statusMessage)).trim()
             })
         }))
 
       return createUserToken().map(maybeUserToken => {
         return maybeUserToken.map(token => {
-          return gen(body.replace('<Header></Header>', `<Header>${token}</Header>`))
+          return gen(body.replace(`<${SOAP_NODE.Header}></${SOAP_NODE.Header}>`, `<${SOAP_NODE.Header}>${token}</${SOAP_NODE.Header}>`))
         }).valueOr(gen(body))
       }).run(config)
     })
@@ -148,13 +186,12 @@ export const createStandardRequestBodyFromString =
 
 export const createSimpleRequestBodyFromString =
   (key: string) =>
-    (ns: XMLNS) =>
-      createStandardRequestBody(soapShell(`<${key} ${ns}/>`)())
+    createStandardRequestBody(soapShell(`<${key}/>`)())
 
 export const createDeviceRequestBodyFromString =
   (key: string) =>
-    createSimpleRequestBodyFromString(key)(XMLNS.DEVICE)
+    createSimpleRequestBodyFromString(`tds:${key}`)
 
 export const createMediaRequestBodyFromString =
   (key: string) =>
-    createSimpleRequestBodyFromString(key)(XMLNS.MEDIA)
+    createSimpleRequestBodyFromString(`trt:${key}`)

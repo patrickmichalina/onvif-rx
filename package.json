@@ -33,7 +33,8 @@
     "build": "npm run rollup && npm run minify",
     "minify": "uglifyjs dist/onvif-rx-umd.js -o dist/onvif-rx-umd.min.js --source-map -c -m",
     "rollup": "rollup -c",
-    "watch": "rollup -cw"
+    "watch": "rollup -cw",
+    "gen.api": "ts-node scripts/api/ast.ts"
   },
   "dependencies": {
     "js-sha1": "^0.6.0",
@@ -45,18 +46,19 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^5.0.4",
-    "@types/node": "^10.12.18",
+    "@types/node": "^10.12.19",
     "@types/node-fetch": "^2.1.4",
     "@types/uuid": "^3.4.4",
     "@types/xmldom": "^0.1.29",
     "fs-extra": "^7.0.1",
-    "rollup": "^1.1.0",
-    "rollup-plugin-typescript2": "^0.18.1",
+    "rollup": "^1.1.2",
+    "rollup-plugin-typescript2": "^0.19.2",
     "semantic-release": "^15.13.3",
     "ts-node-dev": "^1.0.0-pre.32",
+    "ts-simple-ast": "^21.0.2",
     "tslint": "^5.12.1",
-    "tslint-immutable": "^5.1.0",
-    "typescript": "^3.2.2",
+    "tslint-immutable": "^5.1.2",
+    "typescript": "^3.2.4",
     "uglify-js": "^3.4.9"
   },
   "release": {

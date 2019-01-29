@@ -8,3 +8,4 @@ export const createManagedDeviceInNode =
   (config: IDeviceInitConfig) =>
     createManagedDevice(config)
       .run(DEFAULT_NODE_ENV)
+

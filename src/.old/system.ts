@@ -1,4 +1,4 @@
-import { createDeviceRequestBodyFromString, mapResponseXmlToJson } from '../request'
+import { createDeviceRequestBodyFromString, mapResponseXmlToJson } from '../soap/request'
 
 /**
  * Contains the arbitary device diagnostics information.

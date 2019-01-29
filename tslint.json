@@ -27,5 +27,10 @@
     "no-class": true,
     "no-expression-statement": false,
     "no-if-statement": true
+  },
+  "linterOptions": {
+    "exclude": [
+      "src/api/**/*.ts"
+    ]
   }
 }

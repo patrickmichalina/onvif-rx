@@ -1,4 +1,4 @@
-import { mapResponseXmlToJson, createStandardRequestBodyFromString, XMLNS } from '../request'
+import { mapResponseXmlToJson, createStandardRequestBodyFromString, XMLNS } from '../soap/request'
 
 export interface IMediaUri {
   /**
@@ -51,16 +51,26 @@ export interface IGetStreamUriRequest {
   readonly ProfileToken: string
 }
 
+enum StreamUriRequestXmlTokens {
+  GET_STREAM_URI = 'trt:GetStreamUri',
+  MEDIA_URI = 'trt:MediaUri',
+  STREAM_SETUP = 'trt:StreamSetup',
+  PROFILE_TOKEN = 'trt:ProfileToken',
+  STREAM = 'tt:Stream',
+  TRANSPORT = 'tt:Transport',
+  PROTOCOL = 'tt:Protocol'
+}
+
 const mapStreamRequestToString =
   (req: IGetStreamUriRequest) =>
-    `<StreamSetup>
-      <Stream>${req.Stream}</Stream>
-      <Transport>
-        <Protocol>${req.Protocol}</Protocol>
-      </Transport>
-    </StreamSetup>
-    <ProfileToken>${req.ProfileToken}</ProfileToken>`
+    `<${StreamUriRequestXmlTokens.STREAM_SETUP}>
+      <${StreamUriRequestXmlTokens.STREAM}>${req.Stream}</${StreamUriRequestXmlTokens.STREAM}>
+      <${StreamUriRequestXmlTokens.TRANSPORT}>
+        <${StreamUriRequestXmlTokens.PROTOCOL}>${req.Protocol}</${StreamUriRequestXmlTokens.PROTOCOL}>
+      </${StreamUriRequestXmlTokens.TRANSPORT}>
+    </${StreamUriRequestXmlTokens.STREAM_SETUP}>
+    <${StreamUriRequestXmlTokens.PROFILE_TOKEN}>${req.ProfileToken}</${StreamUriRequestXmlTokens.PROFILE_TOKEN}>`
 
 export const getStreamUri = (req: IGetStreamUriRequest) =>
-  createStandardRequestBodyFromString(`<GetStreamUri ${XMLNS.MEDIA}>${mapStreamRequestToString(req)}</GetStreamUri>`)
-    .map(mapResponseXmlToJson<IMediaUri>('trt:MediaUri')())
+  createStandardRequestBodyFromString(`<${StreamUriRequestXmlTokens.GET_STREAM_URI}>${mapStreamRequestToString(req)}</${StreamUriRequestXmlTokens.GET_STREAM_URI}>`)
+    .map(mapResponseXmlToJson<IMediaUri>(StreamUriRequestXmlTokens.MEDIA_URI)())

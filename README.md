@@ -33,13 +33,28 @@
 
 ![0930282e-7f18-11e6-948a-00546393fd93](https://cloud.githubusercontent.com/assets/6701211/25729535/89c26d18-30fb-11e7-8701-af3bcdda410f.png)
 
-## Installation
+## About
+This library aims to provide an easy way to interact with ONVIF devices from within Node. It is built with TypeScript to provide IDE's easy access to
+documentation and typing information. 
+
+The API is generated dynamically by reading ONVIF WSDL and XSD files.
+
+This library is very early and not garaunteed to work for evey camera. Feel free to create a Github issue if it's not working for you.
+
+This library does not "discover" devices on the network - for that try [onvif-probe-rx](https://github.com/patrickmichalina/onvif-probe-rx)
+
+## Roadmap
+[x] - Generate API with typings and docs from WSDL's and XSD's
+[x] - Execute simple (parameter-less) requests
+[ ] - Execute requests with paremeters
+
+## Node Installation
 This package is designed to be run in both the browser and node environments.
 ```sh
 npm i onvif-rx
 ```
 
-## Browser Usage
+## Browser Installation (expiremental)
 ```html
 <head>
  <!-- simplest method, gets the latest version, but not minifed -->
@@ -50,13 +65,56 @@ npm i onvif-rx
 </head>
 ```
 
-```js
-// TODO: config and example
+## Usage
+The library is designed to be used in 2 distinct ways.
+- [Managed](#managed-usage) - you construct a manged device using service URL and username/password combo. This makes running commands painless.
+- [Ad Hoc](#ad-hoc-usage) - you can call methods individually with different username/passwords if needed.
+
+### Managed Usage
+```ts
+import { createManagedDeviceInNode } from 'onvif-rx'
+
+const device = createManagedDeviceInNode({
+  deviceUrl: 'http://192.168.1.11/onvif/device_service',
+  password: 'admin',
+  username: '1234'
+})
+
+device.api.Device.GetUsers()
+  .toPromise()
+  .then(res=> {
+    res.match({ // results are wrapped in a managed object for safer processing
+      ok: console.log, // successful response object
+      fail: r => console.log(r.status, r.statusMessage) // request failure object
+    })
+  }) 
+
+// output
+// { User: { Username: 'admin', UserLevel: 'Administrator' } }
 ```
 
-## Node/Bundler Usage
-For the best developer experience use Typescript.
-
+### Ad Hoc Usage
 ```ts
-// TODO
+import { Device } from 'onvif-rx'
+import { maybe } from 'typescript-monads'
+
+Device.GetUsers()
+  .run({
+    system: DEFAULT_NODE_ENV,
+    deviceUrl: 'http://192.168.1.11/onvif/device_service',
+    user: maybe({ // currenlty requires a wrapper object, will improve in the future
+      username: 'admin',
+      password: '1234'
+    })
+  })
+  .toPromise()
+  .then(res=> {
+    res.match({
+      ok: console.log, // successful response object
+      fail: r => console.log(r.status, r.statusMessage) // request failure object
+    })
+  }) 
+
+// output
+// { User: { Username: 'admin', UserLevel: 'Administrator' } }
 ```
