@@ -41,6 +41,13 @@ The API is generated dynamically by reading ONVIF WSDL and XSD files.
 
 This library is very early and not garaunteed to work for evey camera. Feel free to create a Github issue if it's not working for you.
 
+This library does not "discover" devices on the network - for that try [onvif-probe-rx](https://github.com/patrickmichalina/onvif-probe-rx)
+
+## Roadmap
+[x] - Generate API with typings and docs from WSDL's and XSD's
+[x] - Execute simple (parameter-less) requests
+[ ] - Execute requests with paremeters
+
 ## Node Installation
 This package is designed to be run in both the browser and node environments.
 ```sh
@@ -95,7 +102,7 @@ Device.GetUsers()
   .run({
     system: DEFAULT_NODE_ENV,
     deviceUrl: 'http://192.168.1.11/onvif/device_service',
-    user: maybe({
+    user: maybe({ // currenlty requires a wrapper object, will improve in the future
       username: 'admin',
       password: '1234'
     })
@@ -107,4 +114,7 @@ Device.GetUsers()
       fail: r => console.log(r.status, r.statusMessage) // request failure object
     })
   }) 
+
+// output
+// { User: { Username: 'admin', UserLevel: 'Administrator' } }
 ```
