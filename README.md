@@ -33,13 +33,21 @@
 
 ![0930282e-7f18-11e6-948a-00546393fd93](https://cloud.githubusercontent.com/assets/6701211/25729535/89c26d18-30fb-11e7-8701-af3bcdda410f.png)
 
-## Installation
+## About
+This library aims to provide an easy way to interact with ONVIF devices from within Node. It is built with TypeScript to provide IDE's easy access to
+documentation and typing information. 
+
+The API is generated dynamically by reading ONVIF WSDL and XSD files.
+
+This library is very early and not garaunteed to work for evey camera. Feel free to create a Github issue if it's not working for you.
+
+## Node Installation
 This package is designed to be run in both the browser and node environments.
 ```sh
 npm i onvif-rx
 ```
 
-## Browser Usage
+## Browser Installation (expiremental)
 ```html
 <head>
  <!-- simplest method, gets the latest version, but not minifed -->
@@ -50,14 +58,10 @@ npm i onvif-rx
 </head>
 ```
 
-```js
-// TODO: config and example
-```
-
 ## Usage
 The library is designed to be used in 2 distinct ways.
-- Managed - you construct a manged device using service URL and username/password combo. This makes running commands painless.
-- Ad Hoc - you can call methods individually with different username/passwords if needed.
+- [Managed](#managed-usage) - you construct a manged device using service URL and username/password combo. This makes running commands painless.
+- [Ad Hoc](#ad-hoc-usage) - you can call methods individually with different username/passwords if needed.
 
 ### Managed Usage
 ```ts
@@ -85,6 +89,7 @@ device.api.Device.GetUsers()
 ### Ad Hoc Usage
 ```ts
 import { Device } from 'onvif-rx'
+import { maybe } from 'typescript-monads'
 
 Device.GetUsers()
   .run({

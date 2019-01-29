@@ -52,7 +52,7 @@
     "@types/xmldom": "^0.1.29",
     "fs-extra": "^7.0.1",
     "rollup": "^1.1.2",
-    "rollup-plugin-typescript2": "^0.18.1",
+    "rollup-plugin-typescript2": "^0.19.2",
     "semantic-release": "^15.13.3",
     "ts-node-dev": "^1.0.0-pre.32",
     "ts-simple-ast": "^21.0.2",
