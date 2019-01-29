@@ -3,6 +3,7 @@ import { IDeviceConfig, ITransportPayoad } from '../config/interfaces'
 import { Observable } from 'rxjs'
 import { map } from 'rxjs/operators'
 import { createUserToken } from './auth'
+import { xml2json } from 'xml-js'
 
 export enum XMLNS {
   S11 = 'xmlns:S11="http://www.w3.org/2003/05/soap-envelope"',
@@ -48,9 +49,6 @@ export interface ITransportPayloadXml {
 
 export type IOnvifNetworkResponse<T> = Observable<IResult<T, ITransportPayloadXml>>
 
-// LOL
-const cleanColon = (str: string) => str.replace(/^.+:/, '')
-
 const parseXml =
   (parser: DOMParser) =>
     (payload: ITransportPayoad): ITransportPayloadXml => {
@@ -60,44 +58,6 @@ const parseXml =
         body: parser.parseFromString(payload.body, 'text/xml')
       }
     }
-
-const propertyTypeConverter =
-  (val?: string | null) =>
-    val === 'false' || val === 'true'
-      ? val === 'true' ? true : false
-      : val
-        ? isNaN(Number(val)) ? val : Number(val)
-        : undefined
-
-const parseAttributes = (attrs: ReadonlyArray<Attr>) => Array.from(attrs)
-  .reduce((acc: any, attr: any) => {
-    return {
-      ...acc,
-      [attr.name.replace('.', '')]: propertyTypeConverter(attr.value)
-    }
-  }, {})
-
-const deep =
-  (collectionKeys: ReadonlyArray<string> = []) =>
-    <T>(elm: Element): T =>
-      Array.from(elm.childNodes)
-        .reduce((acc, curr: any) => {
-          const key = cleanColon(curr.nodeName).replace('.', '')
-          const isCollection = collectionKeys.some(a => a === curr.nodeName)
-          const baseVal = (acc as any)[key]
-
-          return {
-            ...acc,
-            [key]: curr.childNodes.length > 1
-              ? isCollection
-                ? Array.isArray(baseVal)
-                  ? [...baseVal, deep(collectionKeys)(curr)]
-                  : [deep(collectionKeys)(curr)]
-                : deep(collectionKeys)(curr)
-              : propertyTypeConverter(curr.textContent)
-          }
-        }, { ...parseAttributes(elm.attributes as any) } as T)
-
 
 export enum SOAP_NODE {
   Header = 'S11:Header',
@@ -118,40 +78,31 @@ export const soapShell =
 
 export const mapResponseXmlToJson =
   <T>(node: string) =>
-    (collectionKeys: ReadonlyArray<string> = []) =>
-      (source: Observable<IOnvifResult>) =>
-        source.pipe(
-          map(a => a.map(startingAtNode<T>(node)(collectionKeys))))
+    (source: Observable<IOnvifResult>) =>
+      source.pipe(
+        map(a => a.map(b => {
+          const split = node.split(':')
+          const nodeKey = maybe(split[1]).valueOr(node)
+          const soapNsPrefix = b.documentElement.lookupPrefix(b.documentElement.namespaceURI)
+
+          const parsed = JSON.parse(xml2json(b as any, {
+            compact: true,
+            spaces: 2,
+            ignoreAttributes: true,
+            elementNameFn: d => maybe(d.split(':')[1]).valueOr(d)
+          }))
+
+          const resultObject = parsed['Envelope']
+            ? parsed['Envelope']['Body'][nodeKey]
+            : parsed[`${soapNsPrefix}:Envelope`][`${soapNsPrefix}:Body`][nodeKey]
+
+          return resultObject as T
+        })))
 
 export const mapResponseObsToProperty =
   <A, B, E>(propSelectFn: (sel: A) => B) =>
     (source: Observable<IResult<A, E>>) =>
       source.pipe(map(a => a.map(propSelectFn)))
-
-export const startingAtNodes =
-  <T>(nodes: ReadonlyArray<string>) =>
-    (collectionKeys: ReadonlyArray<string> = []) =>
-      (doc: Document) =>
-        nodes
-          .reduce<T>((acc, curr) => {
-            return {
-              ...acc,
-              [curr]: drillXml(doc)(curr)(collectionKeys).valueOrUndefined()
-            }
-          }, {} as T)
-
-export const startingAtNode =
-  <T>(node: string) =>
-    (collectionKeys: ReadonlyArray<string> = []) =>
-      (doc: Document): T =>
-        startingAtNodes<any>([node])(collectionKeys)(doc)[node] as T
-
-export const drillXml =
-  <T>(doc: Document) =>
-    (startNodeElementTag: string) =>
-      (collectionKeys: ReadonlyArray<string> = []) =>
-        maybe(Array.from(doc.documentElement.getElementsByTagName(startNodeElementTag))[0])
-          .map<T>(deep(collectionKeys))
 
 type IOnvifResult = IResult<Document, ITransportPayloadXml>
 

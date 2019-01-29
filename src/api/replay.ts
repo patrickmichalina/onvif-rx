@@ -11,7 +11,7 @@ export class Replay {
      */
     static GetServiceCapabilities() {
         return createStandardRequestBodyFromString(generateRequestElements('trp:GetServiceCapabilities')([])())
-                        .map(mapResponseXmlToJson<any>('trp:GetServiceCapabilitiesResponse')())
+                        .map(mapResponseXmlToJson<any>('trp:GetServiceCapabilitiesResponse'))
                       
     }
 
@@ -25,7 +25,7 @@ export class Replay {
      */
     static GetReplayUri(StreamSetup: StreamSetup, RecordingToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trp:GetReplayUri')(['StreamSetup','RecordingToken'])(StreamSetup,RecordingToken))
-                        .map(mapResponseXmlToJson<any>('trp:GetReplayUriResponse')())
+                        .map(mapResponseXmlToJson<any>('trp:GetReplayUriResponse'))
                       
     }
 
@@ -37,7 +37,7 @@ export class Replay {
      */
     static GetReplayConfiguration() {
         return createStandardRequestBodyFromString(generateRequestElements('trp:GetReplayConfiguration')([])())
-                        .map(mapResponseXmlToJson<any>('trp:GetReplayConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trp:GetReplayConfigurationResponse'))
                       
     }
 
@@ -49,7 +49,7 @@ export class Replay {
      */
     static SetReplayConfiguration(Configuration: ReplayConfiguration) {
         return createStandardRequestBodyFromString(generateRequestElements('trp:SetReplayConfiguration')(['Configuration'])(Configuration))
-                        .map(mapResponseXmlToJson<any>('trp:SetReplayConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trp:SetReplayConfigurationResponse'))
                       
     }
 

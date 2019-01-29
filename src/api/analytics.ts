@@ -15,7 +15,7 @@ export class Analytics {
      */
     static GetSupportedRules(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tan:GetSupportedRules')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('tan:GetSupportedRulesResponse')())
+                        .map(mapResponseXmlToJson<any>('tan:GetSupportedRulesResponse'))
                       
     }
 
@@ -34,7 +34,7 @@ export class Analytics {
      */
     static CreateRules(ConfigurationToken: ReferenceToken, Rule: Config) {
         return createStandardRequestBodyFromString(generateRequestElements('tan:CreateRules')(['ConfigurationToken','Rule'])(ConfigurationToken,Rule))
-                        .map(mapResponseXmlToJson<any>('tan:CreateRulesResponse')())
+                        .map(mapResponseXmlToJson<any>('tan:CreateRulesResponse'))
                       
     }
 
@@ -45,7 +45,7 @@ export class Analytics {
      */
     static DeleteRules(ConfigurationToken: ReferenceToken, RuleName: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tan:DeleteRules')(['ConfigurationToken','RuleName'])(ConfigurationToken,RuleName))
-                        .map(mapResponseXmlToJson<any>('tan:DeleteRulesResponse')())
+                        .map(mapResponseXmlToJson<any>('tan:DeleteRulesResponse'))
                       
     }
 
@@ -56,7 +56,7 @@ export class Analytics {
      */
     static GetRules(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tan:GetRules')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('tan:GetRulesResponse')())
+                        .map(mapResponseXmlToJson<any>('tan:GetRulesResponse'))
                       
     }
 
@@ -67,7 +67,7 @@ export class Analytics {
      */
     static GetRuleOptions(ConfigurationToken: ReferenceToken, RuleType?: any) {
         return createStandardRequestBodyFromString(generateRequestElements('tan:GetRuleOptions')(['ConfigurationToken','RuleType'])(ConfigurationToken,RuleType))
-                        .map(mapResponseXmlToJson<any>('tan:GetRuleOptionsResponse')())
+                        .map(mapResponseXmlToJson<any>('tan:GetRuleOptionsResponse'))
                       
     }
 
@@ -78,7 +78,7 @@ export class Analytics {
      */
     static ModifyRules(ConfigurationToken: ReferenceToken, Rule: Config) {
         return createStandardRequestBodyFromString(generateRequestElements('tan:ModifyRules')(['ConfigurationToken','Rule'])(ConfigurationToken,Rule))
-                        .map(mapResponseXmlToJson<any>('tan:ModifyRulesResponse')())
+                        .map(mapResponseXmlToJson<any>('tan:ModifyRulesResponse'))
                       
     }
 
@@ -87,7 +87,7 @@ export class Analytics {
      */
     static GetServiceCapabilities() {
         return createStandardRequestBodyFromString(generateRequestElements('tan:GetServiceCapabilities')([])())
-                        .map(mapResponseXmlToJson<any>('tan:GetServiceCapabilitiesResponse')())
+                        .map(mapResponseXmlToJson<any>('tan:GetServiceCapabilitiesResponse'))
                       
     }
 
@@ -100,7 +100,7 @@ export class Analytics {
      */
     static GetSupportedAnalyticsModules(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tan:GetSupportedAnalyticsModules')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('tan:GetSupportedAnalyticsModulesResponse')())
+                        .map(mapResponseXmlToJson<any>('tan:GetSupportedAnalyticsModulesResponse'))
                       
     }
 
@@ -111,7 +111,7 @@ export class Analytics {
      */
     static GetAnalyticsModuleOptions(ConfigurationToken: ReferenceToken, Type?: any) {
         return createStandardRequestBodyFromString(generateRequestElements('tan:GetAnalyticsModuleOptions')(['ConfigurationToken','Type'])(ConfigurationToken,Type))
-                        .map(mapResponseXmlToJson<any>('tan:GetAnalyticsModuleOptionsResponse')())
+                        .map(mapResponseXmlToJson<any>('tan:GetAnalyticsModuleOptionsResponse'))
                       
     }
 
@@ -137,7 +137,7 @@ export class Analytics {
      */
     static CreateAnalyticsModules(ConfigurationToken: ReferenceToken, AnalyticsModule: Config) {
         return createStandardRequestBodyFromString(generateRequestElements('tan:CreateAnalyticsModules')(['ConfigurationToken','AnalyticsModule'])(ConfigurationToken,AnalyticsModule))
-                        .map(mapResponseXmlToJson<any>('tan:CreateAnalyticsModulesResponse')())
+                        .map(mapResponseXmlToJson<any>('tan:CreateAnalyticsModulesResponse'))
                       
     }
 
@@ -148,7 +148,7 @@ export class Analytics {
      */
     static DeleteAnalyticsModules(ConfigurationToken: ReferenceToken, AnalyticsModuleName: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tan:DeleteAnalyticsModules')(['ConfigurationToken','AnalyticsModuleName'])(ConfigurationToken,AnalyticsModuleName))
-                        .map(mapResponseXmlToJson<any>('tan:DeleteAnalyticsModulesResponse')())
+                        .map(mapResponseXmlToJson<any>('tan:DeleteAnalyticsModulesResponse'))
                       
     }
 
@@ -159,7 +159,7 @@ export class Analytics {
      */
     static GetAnalyticsModules(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tan:GetAnalyticsModules')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('tan:GetAnalyticsModulesResponse')())
+                        .map(mapResponseXmlToJson<any>('tan:GetAnalyticsModulesResponse'))
                       
     }
 
@@ -171,7 +171,7 @@ export class Analytics {
      */
     static ModifyAnalyticsModules(ConfigurationToken: ReferenceToken, AnalyticsModule: Config) {
         return createStandardRequestBodyFromString(generateRequestElements('tan:ModifyAnalyticsModules')(['ConfigurationToken','AnalyticsModule'])(ConfigurationToken,AnalyticsModule))
-                        .map(mapResponseXmlToJson<any>('tan:ModifyAnalyticsModulesResponse')())
+                        .map(mapResponseXmlToJson<any>('tan:ModifyAnalyticsModulesResponse'))
                       
     }
 

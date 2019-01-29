@@ -11,7 +11,7 @@ export class AdvancedSecurity {
      */
     static GetServiceCapabilities() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetServiceCapabilities')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetServiceCapabilitiesResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetServiceCapabilitiesResponse'))
                       
     }
 
@@ -31,7 +31,7 @@ export class AdvancedSecurity {
      */
     static CreateRSAKeyPair() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:CreateRSAKeyPair')([])())
-                        .map(mapResponseXmlToJson<any>('tas:CreateRSAKeyPairResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:CreateRSAKeyPairResponse'))
                       
     }
 
@@ -46,7 +46,7 @@ export class AdvancedSecurity {
      */
     static UploadKeyPairInPKCS8() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:UploadKeyPairInPKCS8')([])())
-                        .map(mapResponseXmlToJson<any>('tas:UploadKeyPairInPKCS8Response')())
+                        .map(mapResponseXmlToJson<any>('tas:UploadKeyPairInPKCS8Response'))
                       
     }
 
@@ -70,7 +70,7 @@ export class AdvancedSecurity {
      */
     static UploadCertificateWithPrivateKeyInPKCS12() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:UploadCertificateWithPrivateKeyInPKCS12')([])())
-                        .map(mapResponseXmlToJson<any>('tas:UploadCertificateWithPrivateKeyInPKCS12Response')())
+                        .map(mapResponseXmlToJson<any>('tas:UploadCertificateWithPrivateKeyInPKCS12Response'))
                       
     }
 
@@ -83,7 +83,7 @@ export class AdvancedSecurity {
      */
     static GetKeyStatus() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetKeyStatus')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetKeyStatusResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetKeyStatusResponse'))
                       
     }
 
@@ -97,7 +97,7 @@ export class AdvancedSecurity {
      */
     static GetPrivateKeyStatus() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetPrivateKeyStatus')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetPrivateKeyStatusResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetPrivateKeyStatusResponse'))
                       
     }
 
@@ -110,7 +110,7 @@ export class AdvancedSecurity {
      */
     static GetAllKeys() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllKeys')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetAllKeysResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetAllKeysResponse'))
                       
     }
 
@@ -126,7 +126,7 @@ export class AdvancedSecurity {
      */
     static DeleteKey() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteKey')([])())
-                        .map(mapResponseXmlToJson<any>('tas:DeleteKeyResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:DeleteKeyResponse'))
                       
     }
 
@@ -148,7 +148,7 @@ export class AdvancedSecurity {
      */
     static CreatePKCS10CSR() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:CreatePKCS10CSR')([])())
-                        .map(mapResponseXmlToJson<any>('tas:CreatePKCS10CSRResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:CreatePKCS10CSRResponse'))
                       
     }
 
@@ -173,7 +173,7 @@ export class AdvancedSecurity {
      */
     static CreateSelfSignedCertificate() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:CreateSelfSignedCertificate')([])())
-                        .map(mapResponseXmlToJson<any>('tas:CreateSelfSignedCertificateResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:CreateSelfSignedCertificateResponse'))
                       
     }
 
@@ -212,7 +212,7 @@ export class AdvancedSecurity {
      */
     static UploadCertificate() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:UploadCertificate')([])())
-                        .map(mapResponseXmlToJson<any>('tas:UploadCertificateResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:UploadCertificateResponse'))
                       
     }
 
@@ -225,7 +225,7 @@ export class AdvancedSecurity {
      */
     static GetCertificate() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetCertificate')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetCertificateResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetCertificateResponse'))
                       
     }
 
@@ -238,7 +238,7 @@ export class AdvancedSecurity {
      */
     static GetAllCertificates() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllCertificates')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetAllCertificatesResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetAllCertificatesResponse'))
                       
     }
 
@@ -254,7 +254,7 @@ export class AdvancedSecurity {
      */
     static DeleteCertificate() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteCertificate')([])())
-                        .map(mapResponseXmlToJson<any>('tas:DeleteCertificateResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:DeleteCertificateResponse'))
                       
     }
 
@@ -273,7 +273,7 @@ export class AdvancedSecurity {
      */
     static CreateCertificationPath() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:CreateCertificationPath')([])())
-                        .map(mapResponseXmlToJson<any>('tas:CreateCertificationPathResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:CreateCertificationPathResponse'))
                       
     }
 
@@ -286,7 +286,7 @@ export class AdvancedSecurity {
      */
     static GetCertificationPath() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetCertificationPath')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetCertificationPathResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetCertificationPathResponse'))
                       
     }
 
@@ -299,7 +299,7 @@ export class AdvancedSecurity {
      */
     static GetAllCertificationPaths() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllCertificationPaths')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetAllCertificationPathsResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetAllCertificationPathsResponse'))
                       
     }
 
@@ -317,7 +317,7 @@ export class AdvancedSecurity {
      */
     static DeleteCertificationPath() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteCertificationPath')([])())
-                        .map(mapResponseXmlToJson<any>('tas:DeleteCertificationPathResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:DeleteCertificationPathResponse'))
                       
     }
 
@@ -328,7 +328,7 @@ export class AdvancedSecurity {
      */
     static UploadPassphrase() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:UploadPassphrase')([])())
-                        .map(mapResponseXmlToJson<any>('tas:UploadPassphraseResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:UploadPassphraseResponse'))
                       
     }
 
@@ -341,7 +341,7 @@ export class AdvancedSecurity {
      */
     static GetAllPassphrases() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllPassphrases')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetAllPassphrasesResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetAllPassphrasesResponse'))
                       
     }
 
@@ -352,7 +352,7 @@ export class AdvancedSecurity {
      */
     static DeletePassphrase() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:DeletePassphrase')([])())
-                        .map(mapResponseXmlToJson<any>('tas:DeletePassphraseResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:DeletePassphraseResponse'))
                       
     }
 
@@ -366,7 +366,7 @@ export class AdvancedSecurity {
      */
     static UploadCRL() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:UploadCRL')([])())
-                        .map(mapResponseXmlToJson<any>('tas:UploadCRLResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:UploadCRLResponse'))
                       
     }
 
@@ -378,7 +378,7 @@ export class AdvancedSecurity {
      */
     static GetCRL() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetCRL')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetCRLResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetCRLResponse'))
                       
     }
 
@@ -390,7 +390,7 @@ export class AdvancedSecurity {
      */
     static GetAllCRLs() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllCRLs')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetAllCRLsResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetAllCRLsResponse'))
                       
     }
 
@@ -404,7 +404,7 @@ export class AdvancedSecurity {
      */
     static DeleteCRL() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteCRL')([])())
-                        .map(mapResponseXmlToJson<any>('tas:DeleteCRLResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:DeleteCRLResponse'))
                       
     }
 
@@ -420,7 +420,7 @@ export class AdvancedSecurity {
      */
     static CreateCertPathValidationPolicy() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:CreateCertPathValidationPolicy')([])())
-                        .map(mapResponseXmlToJson<any>('tas:CreateCertPathValidationPolicyResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:CreateCertPathValidationPolicyResponse'))
                       
     }
 
@@ -432,7 +432,7 @@ export class AdvancedSecurity {
      */
     static GetCertPathValidationPolicy() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetCertPathValidationPolicy')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetCertPathValidationPolicyResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetCertPathValidationPolicyResponse'))
                       
     }
 
@@ -444,7 +444,7 @@ export class AdvancedSecurity {
      */
     static GetAllCertPathValidationPolicies() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllCertPathValidationPolicies')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetAllCertPathValidationPoliciesResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetAllCertPathValidationPoliciesResponse'))
                       
     }
 
@@ -458,7 +458,7 @@ export class AdvancedSecurity {
      */
     static DeleteCertPathValidationPolicy() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteCertPathValidationPolicy')([])())
-                        .map(mapResponseXmlToJson<any>('tas:DeleteCertPathValidationPolicyResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:DeleteCertPathValidationPolicyResponse'))
                       
     }
 
@@ -483,7 +483,7 @@ export class AdvancedSecurity {
      */
     static AddServerCertificateAssignment() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:AddServerCertificateAssignment')([])())
-                        .map(mapResponseXmlToJson<any>('tas:AddServerCertificateAssignmentResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:AddServerCertificateAssignmentResponse'))
                       
     }
 
@@ -495,7 +495,7 @@ export class AdvancedSecurity {
      */
     static RemoveServerCertificateAssignment() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:RemoveServerCertificateAssignment')([])())
-                        .map(mapResponseXmlToJson<any>('tas:RemoveServerCertificateAssignmentResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:RemoveServerCertificateAssignmentResponse'))
                       
     }
 
@@ -521,7 +521,7 @@ export class AdvancedSecurity {
      */
     static ReplaceServerCertificateAssignment() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:ReplaceServerCertificateAssignment')([])())
-                        .map(mapResponseXmlToJson<any>('tas:ReplaceServerCertificateAssignmentResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:ReplaceServerCertificateAssignmentResponse'))
                       
     }
 
@@ -536,7 +536,7 @@ export class AdvancedSecurity {
      */
     static SetEnabledTLSVersions() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:SetEnabledTLSVersions')([])())
-                        .map(mapResponseXmlToJson<any>('tas:SetEnabledTLSVersionsResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:SetEnabledTLSVersionsResponse'))
                       
     }
 
@@ -547,7 +547,7 @@ export class AdvancedSecurity {
      */
     static GetEnabledTLSVersions() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetEnabledTLSVersions')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetEnabledTLSVersionsResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetEnabledTLSVersionsResponse'))
                       
     }
 
@@ -560,7 +560,7 @@ export class AdvancedSecurity {
      */
     static GetAssignedServerCertificates() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetAssignedServerCertificates')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetAssignedServerCertificatesResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetAssignedServerCertificatesResponse'))
                       
     }
 
@@ -574,7 +574,7 @@ export class AdvancedSecurity {
      */
     static SetClientAuthenticationRequired() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:SetClientAuthenticationRequired')([])())
-                        .map(mapResponseXmlToJson<any>('tas:SetClientAuthenticationRequiredResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:SetClientAuthenticationRequiredResponse'))
                       
     }
 
@@ -585,7 +585,7 @@ export class AdvancedSecurity {
      */
     static GetClientAuthenticationRequired() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetClientAuthenticationRequired')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetClientAuthenticationRequiredResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetClientAuthenticationRequiredResponse'))
                       
     }
 
@@ -598,7 +598,7 @@ export class AdvancedSecurity {
      */
     static AddCertPathValidationPolicyAssignment() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:AddCertPathValidationPolicyAssignment')([])())
-                        .map(mapResponseXmlToJson<any>('tas:AddCertPathValidationPolicyAssignmentResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:AddCertPathValidationPolicyAssignmentResponse'))
                       
     }
 
@@ -610,7 +610,7 @@ export class AdvancedSecurity {
      */
     static RemoveCertPathValidationPolicyAssignment() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:RemoveCertPathValidationPolicyAssignment')([])())
-                        .map(mapResponseXmlToJson<any>('tas:RemoveCertPathValidationPolicyAssignmentResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:RemoveCertPathValidationPolicyAssignmentResponse'))
                       
     }
 
@@ -623,7 +623,7 @@ export class AdvancedSecurity {
      */
     static ReplaceCertPathValidationPolicyAssignment() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:ReplaceCertPathValidationPolicyAssignment')([])())
-                        .map(mapResponseXmlToJson<any>('tas:ReplaceCertPathValidationPolicyAssignmentResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:ReplaceCertPathValidationPolicyAssignmentResponse'))
                       
     }
 
@@ -634,7 +634,7 @@ export class AdvancedSecurity {
      */
     static GetAssignedCertPathValidationPolicies() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetAssignedCertPathValidationPolicies')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetAssignedCertPathValidationPoliciesResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetAssignedCertPathValidationPoliciesResponse'))
                       
     }
 
@@ -645,7 +645,7 @@ export class AdvancedSecurity {
      */
     static AddDot1XConfiguration() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:AddDot1XConfiguration')([])())
-                        .map(mapResponseXmlToJson<any>('tas:AddDot1XConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:AddDot1XConfigurationResponse'))
                       
     }
 
@@ -656,7 +656,7 @@ export class AdvancedSecurity {
      */
     static GetAllDot1XConfigurations() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllDot1XConfigurations')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetAllDot1XConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetAllDot1XConfigurationsResponse'))
                       
     }
 
@@ -667,7 +667,7 @@ export class AdvancedSecurity {
      */
     static GetDot1XConfiguration() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetDot1XConfiguration')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetDot1XConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetDot1XConfigurationResponse'))
                       
     }
 
@@ -678,7 +678,7 @@ export class AdvancedSecurity {
      */
     static DeleteDot1XConfiguration() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteDot1XConfiguration')([])())
-                        .map(mapResponseXmlToJson<any>('tas:DeleteDot1XConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:DeleteDot1XConfigurationResponse'))
                       
     }
 
@@ -689,7 +689,7 @@ export class AdvancedSecurity {
      */
     static SetNetworkInterfaceDot1XConfiguration() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:SetNetworkInterfaceDot1XConfiguration')([])())
-                        .map(mapResponseXmlToJson<any>('tas:SetNetworkInterfaceDot1XConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:SetNetworkInterfaceDot1XConfigurationResponse'))
                       
     }
 
@@ -700,7 +700,7 @@ export class AdvancedSecurity {
      */
     static GetNetworkInterfaceDot1XConfiguration() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:GetNetworkInterfaceDot1XConfiguration')([])())
-                        .map(mapResponseXmlToJson<any>('tas:GetNetworkInterfaceDot1XConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:GetNetworkInterfaceDot1XConfigurationResponse'))
                       
     }
 
@@ -711,7 +711,7 @@ export class AdvancedSecurity {
      */
     static DeleteNetworkInterfaceDot1XConfiguration() {
         return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteNetworkInterfaceDot1XConfiguration')([])())
-                        .map(mapResponseXmlToJson<any>('tas:DeleteNetworkInterfaceDot1XConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tas:DeleteNetworkInterfaceDot1XConfigurationResponse'))
                       
     }
 

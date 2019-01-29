@@ -11,7 +11,7 @@ export class Media {
      */
     static GetServiceCapabilities() {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetServiceCapabilities')([])())
-                        .map(mapResponseXmlToJson<any>('trt:GetServiceCapabilitiesResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetServiceCapabilitiesResponse'))
                       
     }
 
@@ -20,7 +20,7 @@ export class Media {
      */
     static GetVideoSources() {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSources')([])())
-                        .map(mapResponseXmlToJson<any>('trt:GetVideoSourcesResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetVideoSourcesResponse'))
                       
     }
 
@@ -29,7 +29,7 @@ export class Media {
      */
     static GetAudioSources() {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSources')([])())
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioSourcesResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioSourcesResponse'))
                       
     }
 
@@ -38,7 +38,7 @@ export class Media {
      */
     static GetAudioOutputs() {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputs')([])())
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioOutputsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioOutputsResponse'))
                       
     }
 
@@ -49,7 +49,7 @@ export class Media {
      */
     static CreateProfile(Name: Name, Token?: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:CreateProfile')(['Name','Token'])(Name,Token))
-                        .map(mapResponseXmlToJson<any>('trt:CreateProfileResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:CreateProfileResponse'))
                       
     }
 
@@ -58,7 +58,7 @@ export class Media {
      */
     static GetProfile(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetProfile')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetProfileResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetProfileResponse'))
                       
     }
 
@@ -70,7 +70,7 @@ export class Media {
      */
     static GetProfiles() {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetProfiles')([])())
-                        .map(mapResponseXmlToJson<any>('trt:GetProfilesResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetProfilesResponse'))
                       
     }
 
@@ -83,7 +83,7 @@ export class Media {
      */
     static AddVideoEncoderConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:AddVideoEncoderConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:AddVideoEncoderConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:AddVideoEncoderConfigurationResponse'))
                       
     }
 
@@ -93,7 +93,7 @@ export class Media {
      */
     static RemoveVideoEncoderConfiguration(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveVideoEncoderConfiguration')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:RemoveVideoEncoderConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:RemoveVideoEncoderConfigurationResponse'))
                       
     }
 
@@ -103,7 +103,7 @@ export class Media {
      */
     static AddVideoSourceConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:AddVideoSourceConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:AddVideoSourceConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:AddVideoSourceConfigurationResponse'))
                       
     }
 
@@ -114,7 +114,7 @@ export class Media {
      */
     static RemoveVideoSourceConfiguration(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveVideoSourceConfiguration')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:RemoveVideoSourceConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:RemoveVideoSourceConfigurationResponse'))
                       
     }
 
@@ -127,7 +127,7 @@ export class Media {
      */
     static AddAudioEncoderConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioEncoderConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:AddAudioEncoderConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:AddAudioEncoderConfigurationResponse'))
                       
     }
 
@@ -138,7 +138,7 @@ export class Media {
      */
     static RemoveAudioEncoderConfiguration(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioEncoderConfiguration')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:RemoveAudioEncoderConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:RemoveAudioEncoderConfigurationResponse'))
                       
     }
 
@@ -148,7 +148,7 @@ export class Media {
      */
     static AddAudioSourceConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioSourceConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:AddAudioSourceConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:AddAudioSourceConfigurationResponse'))
                       
     }
 
@@ -160,7 +160,7 @@ export class Media {
      */
     static RemoveAudioSourceConfiguration(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioSourceConfiguration')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:RemoveAudioSourceConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:RemoveAudioSourceConfigurationResponse'))
                       
     }
 
@@ -172,7 +172,7 @@ export class Media {
      */
     static AddPTZConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:AddPTZConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:AddPTZConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:AddPTZConfigurationResponse'))
                       
     }
 
@@ -182,7 +182,7 @@ export class Media {
      */
     static RemovePTZConfiguration(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:RemovePTZConfiguration')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:RemovePTZConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:RemovePTZConfigurationResponse'))
                       
     }
 
@@ -194,7 +194,7 @@ export class Media {
      */
     static AddVideoAnalyticsConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:AddVideoAnalyticsConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:AddVideoAnalyticsConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:AddVideoAnalyticsConfigurationResponse'))
                       
     }
 
@@ -204,7 +204,7 @@ export class Media {
      */
     static RemoveVideoAnalyticsConfiguration(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveVideoAnalyticsConfiguration')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:RemoveVideoAnalyticsConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:RemoveVideoAnalyticsConfigurationResponse'))
                       
     }
 
@@ -213,7 +213,7 @@ export class Media {
      */
     static AddMetadataConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:AddMetadataConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:AddMetadataConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:AddMetadataConfigurationResponse'))
                       
     }
 
@@ -222,7 +222,7 @@ export class Media {
      */
     static RemoveMetadataConfiguration(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveMetadataConfiguration')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:RemoveMetadataConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:RemoveMetadataConfigurationResponse'))
                       
     }
 
@@ -231,7 +231,7 @@ export class Media {
      */
     static AddAudioOutputConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioOutputConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:AddAudioOutputConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:AddAudioOutputConfigurationResponse'))
                       
     }
 
@@ -240,7 +240,7 @@ export class Media {
      */
     static RemoveAudioOutputConfiguration(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioOutputConfiguration')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:RemoveAudioOutputConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:RemoveAudioOutputConfigurationResponse'))
                       
     }
 
@@ -249,7 +249,7 @@ export class Media {
      */
     static AddAudioDecoderConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioDecoderConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:AddAudioDecoderConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:AddAudioDecoderConfigurationResponse'))
                       
     }
 
@@ -258,7 +258,7 @@ export class Media {
      */
     static RemoveAudioDecoderConfiguration(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioDecoderConfiguration')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:RemoveAudioDecoderConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:RemoveAudioDecoderConfigurationResponse'))
                       
     }
 
@@ -267,7 +267,7 @@ export class Media {
      */
     static DeleteProfile(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:DeleteProfile')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:DeleteProfileResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:DeleteProfileResponse'))
                       
     }
 
@@ -276,7 +276,7 @@ export class Media {
      */
     static GetVideoSourceConfigurations() {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceConfigurations')([])())
-                        .map(mapResponseXmlToJson<any>('trt:GetVideoSourceConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetVideoSourceConfigurationsResponse'))
                       
     }
 
@@ -285,7 +285,7 @@ export class Media {
      */
     static GetVideoEncoderConfigurations() {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoEncoderConfigurations')([])())
-                        .map(mapResponseXmlToJson<any>('trt:GetVideoEncoderConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetVideoEncoderConfigurationsResponse'))
                       
     }
 
@@ -294,7 +294,7 @@ export class Media {
      */
     static GetAudioSourceConfigurations() {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSourceConfigurations')([])())
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioSourceConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioSourceConfigurationsResponse'))
                       
     }
 
@@ -303,7 +303,7 @@ export class Media {
      */
     static GetAudioEncoderConfigurations() {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioEncoderConfigurations')([])())
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioEncoderConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioEncoderConfigurationsResponse'))
                       
     }
 
@@ -312,7 +312,7 @@ export class Media {
      */
     static GetVideoAnalyticsConfigurations() {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoAnalyticsConfigurations')([])())
-                        .map(mapResponseXmlToJson<any>('trt:GetVideoAnalyticsConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetVideoAnalyticsConfigurationsResponse'))
                       
     }
 
@@ -321,7 +321,7 @@ export class Media {
      */
     static GetMetadataConfigurations() {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetMetadataConfigurations')([])())
-                        .map(mapResponseXmlToJson<any>('trt:GetMetadataConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetMetadataConfigurationsResponse'))
                       
     }
 
@@ -330,7 +330,7 @@ export class Media {
      */
     static GetAudioOutputConfigurations() {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputConfigurations')([])())
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioOutputConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioOutputConfigurationsResponse'))
                       
     }
 
@@ -340,7 +340,7 @@ export class Media {
      */
     static GetAudioDecoderConfigurations() {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioDecoderConfigurations')([])())
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioDecoderConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioDecoderConfigurationsResponse'))
                       
     }
 
@@ -349,7 +349,7 @@ export class Media {
      */
     static GetVideoSourceConfiguration(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceConfiguration')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetVideoSourceConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetVideoSourceConfigurationResponse'))
                       
     }
 
@@ -358,7 +358,7 @@ export class Media {
      */
     static GetVideoEncoderConfiguration(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoEncoderConfiguration')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetVideoEncoderConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetVideoEncoderConfigurationResponse'))
                       
     }
 
@@ -367,7 +367,7 @@ export class Media {
      */
     static GetAudioSourceConfiguration(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSourceConfiguration')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioSourceConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioSourceConfigurationResponse'))
                       
     }
 
@@ -376,7 +376,7 @@ export class Media {
      */
     static GetAudioEncoderConfiguration(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioEncoderConfiguration')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioEncoderConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioEncoderConfigurationResponse'))
                       
     }
 
@@ -385,7 +385,7 @@ export class Media {
      */
     static GetVideoAnalyticsConfiguration(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoAnalyticsConfiguration')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetVideoAnalyticsConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetVideoAnalyticsConfigurationResponse'))
                       
     }
 
@@ -394,7 +394,7 @@ export class Media {
      */
     static GetMetadataConfiguration(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetMetadataConfiguration')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetMetadataConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetMetadataConfigurationResponse'))
                       
     }
 
@@ -403,7 +403,7 @@ export class Media {
      */
     static GetAudioOutputConfiguration(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputConfiguration')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioOutputConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioOutputConfigurationResponse'))
                       
     }
 
@@ -412,7 +412,7 @@ export class Media {
      */
     static GetAudioDecoderConfiguration(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioDecoderConfiguration')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioDecoderConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioDecoderConfigurationResponse'))
                       
     }
 
@@ -421,7 +421,7 @@ export class Media {
      */
     static GetCompatibleVideoEncoderConfigurations(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleVideoEncoderConfigurations')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleVideoEncoderConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleVideoEncoderConfigurationsResponse'))
                       
     }
 
@@ -433,7 +433,7 @@ export class Media {
      */
     static GetCompatibleVideoSourceConfigurations(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleVideoSourceConfigurations')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleVideoSourceConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleVideoSourceConfigurationsResponse'))
                       
     }
 
@@ -442,7 +442,7 @@ export class Media {
      */
     static GetCompatibleAudioEncoderConfigurations(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioEncoderConfigurations')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioEncoderConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioEncoderConfigurationsResponse'))
                       
     }
 
@@ -451,7 +451,7 @@ export class Media {
      */
     static GetCompatibleAudioSourceConfigurations(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioSourceConfigurations')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioSourceConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioSourceConfigurationsResponse'))
                       
     }
 
@@ -460,7 +460,7 @@ export class Media {
      */
     static GetCompatibleVideoAnalyticsConfigurations(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleVideoAnalyticsConfigurations')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleVideoAnalyticsConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleVideoAnalyticsConfigurationsResponse'))
                       
     }
 
@@ -469,7 +469,7 @@ export class Media {
      */
     static GetCompatibleMetadataConfigurations(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleMetadataConfigurations')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleMetadataConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleMetadataConfigurationsResponse'))
                       
     }
 
@@ -479,7 +479,7 @@ export class Media {
      */
     static GetCompatibleAudioOutputConfigurations(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioOutputConfigurations')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioOutputConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioOutputConfigurationsResponse'))
                       
     }
 
@@ -488,7 +488,7 @@ export class Media {
      */
     static GetCompatibleAudioDecoderConfigurations(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioDecoderConfigurations')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioDecoderConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioDecoderConfigurationsResponse'))
                       
     }
 
@@ -497,7 +497,7 @@ export class Media {
      */
     static SetVideoSourceConfiguration(Configuration: VideoSourceConfiguration, ForcePersistence: boolean) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoSourceConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
-                        .map(mapResponseXmlToJson<any>('trt:SetVideoSourceConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:SetVideoSourceConfigurationResponse'))
                       
     }
 
@@ -506,7 +506,7 @@ export class Media {
      */
     static SetVideoEncoderConfiguration(Configuration: VideoEncoderConfiguration, ForcePersistence: boolean) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoEncoderConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
-                        .map(mapResponseXmlToJson<any>('trt:SetVideoEncoderConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:SetVideoEncoderConfigurationResponse'))
                       
     }
 
@@ -519,7 +519,7 @@ export class Media {
      */
     static SetAudioSourceConfiguration(Configuration: AudioSourceConfiguration, ForcePersistence: boolean) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioSourceConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
-                        .map(mapResponseXmlToJson<any>('trt:SetAudioSourceConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:SetAudioSourceConfigurationResponse'))
                       
     }
 
@@ -532,7 +532,7 @@ export class Media {
      */
     static SetAudioEncoderConfiguration(Configuration: AudioEncoderConfiguration, ForcePersistence: boolean) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioEncoderConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
-                        .map(mapResponseXmlToJson<any>('trt:SetAudioEncoderConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:SetAudioEncoderConfigurationResponse'))
                       
     }
 
@@ -546,7 +546,7 @@ export class Media {
      */
     static SetVideoAnalyticsConfiguration(Configuration: VideoAnalyticsConfiguration, ForcePersistence: boolean) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoAnalyticsConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
-                        .map(mapResponseXmlToJson<any>('trt:SetVideoAnalyticsConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:SetVideoAnalyticsConfigurationResponse'))
                       
     }
 
@@ -560,7 +560,7 @@ export class Media {
      */
     static SetMetadataConfiguration(Configuration: MetadataConfiguration, ForcePersistence: boolean) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:SetMetadataConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
-                        .map(mapResponseXmlToJson<any>('trt:SetMetadataConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:SetMetadataConfigurationResponse'))
                       
     }
 
@@ -570,7 +570,7 @@ export class Media {
      */
     static SetAudioOutputConfiguration(Configuration: AudioOutputConfiguration, ForcePersistence: boolean) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioOutputConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
-                        .map(mapResponseXmlToJson<any>('trt:SetAudioOutputConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:SetAudioOutputConfigurationResponse'))
                       
     }
 
@@ -580,7 +580,7 @@ export class Media {
      */
     static SetAudioDecoderConfiguration(Configuration: AudioDecoderConfiguration, ForcePersistence: boolean) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioDecoderConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
-                        .map(mapResponseXmlToJson<any>('trt:SetAudioDecoderConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:SetAudioDecoderConfigurationResponse'))
                       
     }
 
@@ -592,7 +592,7 @@ export class Media {
      */
     static GetVideoSourceConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetVideoSourceConfigurationOptionsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetVideoSourceConfigurationOptionsResponse'))
                       
     }
 
@@ -608,7 +608,7 @@ export class Media {
      */
     static GetVideoEncoderConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoEncoderConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetVideoEncoderConfigurationOptionsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetVideoEncoderConfigurationOptionsResponse'))
                       
     }
 
@@ -620,7 +620,7 @@ export class Media {
      */
     static GetAudioSourceConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSourceConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioSourceConfigurationOptionsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioSourceConfigurationOptionsResponse'))
                       
     }
 
@@ -630,7 +630,7 @@ export class Media {
      */
     static GetAudioEncoderConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioEncoderConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioEncoderConfigurationOptionsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioEncoderConfigurationOptionsResponse'))
                       
     }
 
@@ -639,7 +639,7 @@ export class Media {
      */
     static GetMetadataConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetMetadataConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetMetadataConfigurationOptionsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetMetadataConfigurationOptionsResponse'))
                       
     }
 
@@ -648,7 +648,7 @@ export class Media {
      */
     static GetAudioOutputConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioOutputConfigurationOptionsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioOutputConfigurationOptionsResponse'))
                       
     }
 
@@ -658,7 +658,7 @@ export class Media {
      */
     static GetAudioDecoderConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioDecoderConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetAudioDecoderConfigurationOptionsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetAudioDecoderConfigurationOptionsResponse'))
                       
     }
 
@@ -669,7 +669,7 @@ export class Media {
      */
     static GetGuaranteedNumberOfVideoEncoderInstances(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetGuaranteedNumberOfVideoEncoderInstances')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetGuaranteedNumberOfVideoEncoderInstancesResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetGuaranteedNumberOfVideoEncoderInstancesResponse'))
                       
     }
 
@@ -692,7 +692,7 @@ export class Media {
      */
     static GetStreamUri(StreamSetup: StreamSetup, ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetStreamUri')(['StreamSetup','ProfileToken'])(StreamSetup,ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetStreamUriResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetStreamUriResponse'))
                       
     }
 
@@ -706,7 +706,7 @@ export class Media {
      */
     static StartMulticastStreaming(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:StartMulticastStreaming')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:StartMulticastStreamingResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:StartMulticastStreamingResponse'))
                       
     }
 
@@ -715,7 +715,7 @@ export class Media {
      */
     static StopMulticastStreaming(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:StopMulticastStreaming')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:StopMulticastStreamingResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:StopMulticastStreamingResponse'))
                       
     }
 
@@ -734,7 +734,7 @@ export class Media {
      */
     static SetSynchronizationPoint(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:SetSynchronizationPoint')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:SetSynchronizationPointResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:SetSynchronizationPointResponse'))
                       
     }
 
@@ -750,7 +750,7 @@ export class Media {
      */
     static GetSnapshotUri(ProfileToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetSnapshotUri')(['ProfileToken'])(ProfileToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetSnapshotUriResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetSnapshotUriResponse'))
                       
     }
 
@@ -759,7 +759,7 @@ export class Media {
      */
     static GetVideoSourceModes(VideoSourceToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceModes')(['VideoSourceToken'])(VideoSourceToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetVideoSourceModesResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetVideoSourceModesResponse'))
                       
     }
 
@@ -768,7 +768,7 @@ export class Media {
      */
     static SetVideoSourceMode(VideoSourceToken: ReferenceToken, VideoSourceModeToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoSourceMode')(['VideoSourceToken','VideoSourceModeToken'])(VideoSourceToken,VideoSourceModeToken))
-                        .map(mapResponseXmlToJson<any>('trt:SetVideoSourceModeResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:SetVideoSourceModeResponse'))
                       
     }
 
@@ -777,7 +777,7 @@ export class Media {
      */
     static GetOSDs(ConfigurationToken?: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetOSDs')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetOSDsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetOSDsResponse'))
                       
     }
 
@@ -786,7 +786,7 @@ export class Media {
      */
     static GetOSD(OSDToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetOSD')(['OSDToken'])(OSDToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetOSDResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetOSDResponse'))
                       
     }
 
@@ -795,7 +795,7 @@ export class Media {
      */
     static GetOSDOptions(ConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:GetOSDOptions')(['ConfigurationToken'])(ConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('trt:GetOSDOptionsResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:GetOSDOptionsResponse'))
                       
     }
 
@@ -804,7 +804,7 @@ export class Media {
      */
     static SetOSD(OSD: OSDConfiguration) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:SetOSD')(['OSD'])(OSD))
-                        .map(mapResponseXmlToJson<any>('trt:SetOSDResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:SetOSDResponse'))
                       
     }
 
@@ -813,7 +813,7 @@ export class Media {
      */
     static CreateOSD(OSD: OSDConfiguration) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:CreateOSD')(['OSD'])(OSD))
-                        .map(mapResponseXmlToJson<any>('trt:CreateOSDResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:CreateOSDResponse'))
                       
     }
 
@@ -822,7 +822,7 @@ export class Media {
      */
     static DeleteOSD(OSDToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('trt:DeleteOSD')(['OSDToken'])(OSDToken))
-                        .map(mapResponseXmlToJson<any>('trt:DeleteOSDResponse')())
+                        .map(mapResponseXmlToJson<any>('trt:DeleteOSDResponse'))
                       
     }
 

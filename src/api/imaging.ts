@@ -11,7 +11,7 @@ export class Imaging {
      */
     static GetServiceCapabilities() {
         return createStandardRequestBodyFromString(generateRequestElements('timg:GetServiceCapabilities')([])())
-                        .map(mapResponseXmlToJson<any>('timg:GetServiceCapabilitiesResponse')())
+                        .map(mapResponseXmlToJson<any>('timg:GetServiceCapabilitiesResponse'))
                       
     }
 
@@ -20,7 +20,7 @@ export class Imaging {
      */
     static GetImagingSettings(VideoSourceToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('timg:GetImagingSettings')(['VideoSourceToken'])(VideoSourceToken))
-                        .map(mapResponseXmlToJson<any>('timg:GetImagingSettingsResponse')())
+                        .map(mapResponseXmlToJson<any>('timg:GetImagingSettingsResponse'))
                       
     }
 
@@ -29,7 +29,7 @@ export class Imaging {
      */
     static SetImagingSettings(VideoSourceToken: ReferenceToken, ImagingSettings: ImagingSettings20, ForcePersistence?: boolean) {
         return createStandardRequestBodyFromString(generateRequestElements('timg:SetImagingSettings')(['VideoSourceToken','ImagingSettings','ForcePersistence'])(VideoSourceToken,ImagingSettings,ForcePersistence))
-                        .map(mapResponseXmlToJson<any>('timg:SetImagingSettingsResponse')())
+                        .map(mapResponseXmlToJson<any>('timg:SetImagingSettingsResponse'))
                       
     }
 
@@ -42,7 +42,7 @@ export class Imaging {
      */
     static GetOptions(VideoSourceToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('timg:GetOptions')(['VideoSourceToken'])(VideoSourceToken))
-                        .map(mapResponseXmlToJson<any>('timg:GetOptionsResponse')())
+                        .map(mapResponseXmlToJson<any>('timg:GetOptionsResponse'))
                       
     }
 
@@ -60,7 +60,7 @@ export class Imaging {
      */
     static Move(VideoSourceToken: ReferenceToken, Focus: FocusMove) {
         return createStandardRequestBodyFromString(generateRequestElements('timg:Move')(['VideoSourceToken','Focus'])(VideoSourceToken,Focus))
-                        .map(mapResponseXmlToJson<any>('timg:MoveResponse')())
+                        .map(mapResponseXmlToJson<any>('timg:MoveResponse'))
                       
     }
 
@@ -69,7 +69,7 @@ export class Imaging {
      */
     static GetMoveOptions(VideoSourceToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('timg:GetMoveOptions')(['VideoSourceToken'])(VideoSourceToken))
-                        .map(mapResponseXmlToJson<any>('timg:GetMoveOptionsResponse')())
+                        .map(mapResponseXmlToJson<any>('timg:GetMoveOptionsResponse'))
                       
     }
 
@@ -79,7 +79,7 @@ export class Imaging {
      */
     static Stop(VideoSourceToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('timg:Stop')(['VideoSourceToken'])(VideoSourceToken))
-                        .map(mapResponseXmlToJson<any>('timg:StopResponse')())
+                        .map(mapResponseXmlToJson<any>('timg:StopResponse'))
                       
     }
 
@@ -88,7 +88,7 @@ export class Imaging {
      */
     static GetStatus(VideoSourceToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('timg:GetStatus')(['VideoSourceToken'])(VideoSourceToken))
-                        .map(mapResponseXmlToJson<any>('timg:GetStatusResponse')())
+                        .map(mapResponseXmlToJson<any>('timg:GetStatusResponse'))
                       
     }
 
@@ -97,7 +97,7 @@ export class Imaging {
      */
     static GetPresets(VideoSourceToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('timg:GetPresets')(['VideoSourceToken'])(VideoSourceToken))
-                        .map(mapResponseXmlToJson<any>('timg:GetPresetsResponse')())
+                        .map(mapResponseXmlToJson<any>('timg:GetPresetsResponse'))
                       
     }
 
@@ -108,7 +108,7 @@ export class Imaging {
      */
     static GetCurrentPreset(VideoSourceToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('timg:GetCurrentPreset')(['VideoSourceToken'])(VideoSourceToken))
-                        .map(mapResponseXmlToJson<any>('timg:GetCurrentPresetResponse')())
+                        .map(mapResponseXmlToJson<any>('timg:GetCurrentPresetResponse'))
                       
     }
 
@@ -120,7 +120,7 @@ export class Imaging {
      */
     static SetCurrentPreset(VideoSourceToken: ReferenceToken, PresetToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('timg:SetCurrentPreset')(['VideoSourceToken','PresetToken'])(VideoSourceToken,PresetToken))
-                        .map(mapResponseXmlToJson<any>('timg:SetCurrentPresetResponse')())
+                        .map(mapResponseXmlToJson<any>('timg:SetCurrentPresetResponse'))
                       
     }
 
