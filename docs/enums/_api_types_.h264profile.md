@@ -21,7 +21,7 @@
 
 **Baseline**:  = "Baseline"
 
-*Defined in [api/types.ts:4383](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4383)*
+*Defined in [api/types.ts:4383](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4383)*
 
 ___
 <a id="extended"></a>
@@ -30,7 +30,7 @@ ___
 
 **Extended**:  = "Extended"
 
-*Defined in [api/types.ts:4391](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4391)*
+*Defined in [api/types.ts:4391](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4391)*
 
 ___
 <a id="high"></a>
@@ -39,7 +39,7 @@ ___
 
 **High**:  = "High"
 
-*Defined in [api/types.ts:4395](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4395)*
+*Defined in [api/types.ts:4395](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4395)*
 
 ___
 <a id="main"></a>
@@ -48,7 +48,7 @@ ___
 
 **Main**:  = "Main"
 
-*Defined in [api/types.ts:4387](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4387)*
+*Defined in [api/types.ts:4387](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4387)*
 
 ___
 

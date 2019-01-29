@@ -26,7 +26,7 @@ Supported options of Rotate mode parameter.
 
 **● DegreeList**: *[IntList](_api_types_.intlist.md)*
 
-*Defined in [api/types.ts:502](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L502)*
+*Defined in [api/types.ts:502](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L502)*
 
 ___
 <a id="extension"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Extension**: *[RotateOptionsExtension](_api_types_.rotateoptionsextension.md)*
 
-*Defined in [api/types.ts:503](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L503)*
+*Defined in [api/types.ts:503](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L503)*
 
 ___
 <a id="mode"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Mode**: *[RotateMode](../enums/_api_types_.rotatemode.md)*
 
-*Defined in [api/types.ts:501](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L501)*
+*Defined in [api/types.ts:501](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L501)*
 
 ___
 

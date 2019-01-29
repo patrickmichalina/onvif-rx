@@ -6,7 +6,7 @@
 
 ### Classes
 
-* [Imaging](../classes/_api_imaging_.imaging.md)
+* [ONVIFImaging](../classes/_api_imaging_.onvifimaging.md)
 
 ---
 

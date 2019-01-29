@@ -29,7 +29,7 @@
 
 **● CbGain**: *`number`*
 
-*Defined in [api/types.ts:3006](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3006)*
+*Defined in [api/types.ts:3006](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3006)*
 
 ___
 <a id="crgain"></a>
@@ -38,7 +38,7 @@ ___
 
 **● CrGain**: *`number`*
 
-*Defined in [api/types.ts:3005](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3005)*
+*Defined in [api/types.ts:3005](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3005)*
 
 ___
 <a id="extension"></a>
@@ -47,7 +47,7 @@ ___
 
 **● Extension**: *[WhiteBalance20Extension](_api_types_.whitebalance20extension.md)*
 
-*Defined in [api/types.ts:3007](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3007)*
+*Defined in [api/types.ts:3007](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3007)*
 
 ___
 <a id="mode"></a>
@@ -56,7 +56,7 @@ ___
 
 **● Mode**: *[WhiteBalanceMode](../enums/_api_types_.whitebalancemode.md)*
 
-*Defined in [api/types.ts:3004](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3004)*
+*Defined in [api/types.ts:3004](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3004)*
 
 ___
 

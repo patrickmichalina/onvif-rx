@@ -19,7 +19,7 @@
 
 **AUTO**:  = "AUTO"
 
-*Defined in [api/types.ts:4283](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4283)*
+*Defined in [api/types.ts:4283](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4283)*
 
 ___
 <a id="manual"></a>
@@ -28,7 +28,7 @@ ___
 
 **MANUAL**:  = "MANUAL"
 
-*Defined in [api/types.ts:4279](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4279)*
+*Defined in [api/types.ts:4279](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4279)*
 
 ___
 

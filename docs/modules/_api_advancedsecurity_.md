@@ -6,7 +6,7 @@
 
 ### Classes
 
-* [AdvancedSecurity](../classes/_api_advancedsecurity_.advancedsecurity.md)
+* [ONVIFAdvancedSecurity](../classes/_api_advancedsecurity_.onvifadvancedsecurity.md)
 
 ---
 

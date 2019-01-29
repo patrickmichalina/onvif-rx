@@ -22,7 +22,7 @@ This case should never happen.
 
 **Active**:  = "Active"
 
-*Defined in [api/types.ts:5433](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L5433)*
+*Defined in [api/types.ts:5433](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5433)*
 
 ___
 <a id="idle"></a>
@@ -31,7 +31,7 @@ ___
 
 **Idle**:  = "Idle"
 
-*Defined in [api/types.ts:5429](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L5429)*
+*Defined in [api/types.ts:5429](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5429)*
 
 ___
 <a id="unknown"></a>
@@ -40,7 +40,7 @@ ___
 
 **Unknown**:  = "Unknown"
 
-*Defined in [api/types.ts:5437](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L5437)*
+*Defined in [api/types.ts:5437](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5437)*
 
 This case should never happen.
 

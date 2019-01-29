@@ -28,7 +28,7 @@ The basic information about the track. Note that a track may represent a single 
 
 **● AudioAttributes**: *[AudioAttributes](_api_types_.audioattributes.md)*
 
-*Defined in [api/types.ts:3599](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3599)*
+*Defined in [api/types.ts:3599](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3599)*
 
 ___
 <a id="extension"></a>
@@ -37,7 +37,7 @@ ___
 
 **● Extension**: *[TrackAttributesExtension](_api_types_.trackattributesextension.md)*
 
-*Defined in [api/types.ts:3601](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3601)*
+*Defined in [api/types.ts:3601](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3601)*
 
 ___
 <a id="metadataattributes"></a>
@@ -46,7 +46,7 @@ ___
 
 **● MetadataAttributes**: *[MetadataAttributes](_api_types_.metadataattributes.md)*
 
-*Defined in [api/types.ts:3600](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3600)*
+*Defined in [api/types.ts:3600](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3600)*
 
 ___
 <a id="trackinformation"></a>
@@ -55,7 +55,7 @@ ___
 
 **● TrackInformation**: *[TrackInformation](_api_types_.trackinformation.md)*
 
-*Defined in [api/types.ts:3597](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3597)*
+*Defined in [api/types.ts:3597](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3597)*
 
 ___
 <a id="videoattributes"></a>
@@ -64,7 +64,7 @@ ___
 
 **● VideoAttributes**: *[VideoAttributes](_api_types_.videoattributes.md)*
 
-*Defined in [api/types.ts:3598](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3598)*
+*Defined in [api/types.ts:3598](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3598)*
 
 ___
 

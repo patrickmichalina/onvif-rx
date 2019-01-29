@@ -23,7 +23,7 @@
 
 **● MetadataSearch**: *`boolean`*
 
-*Defined in [api/types.ts:1714](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1714)*
+*Defined in [api/types.ts:1714](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1714)*
 
 ___
 <a id="xaddr"></a>
@@ -32,7 +32,7 @@ ___
 
 **● XAddr**: *`string`*
 
-*Defined in [api/types.ts:1713](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1713)*
+*Defined in [api/types.ts:1713](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1713)*
 
 ___
 

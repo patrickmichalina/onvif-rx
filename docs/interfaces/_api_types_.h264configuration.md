@@ -25,7 +25,7 @@ Group of Video frames length. Determines typically the interval in which the I-F
 
 **● GovLength**: *`number`*
 
-*Defined in [api/types.ts:565](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L565)*
+*Defined in [api/types.ts:565](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L565)*
 
 ___
 <a id="h264profile"></a>
@@ -34,7 +34,7 @@ ___
 
 **● H264Profile**: *[H264Profile](../enums/_api_types_.h264profile.md)*
 
-*Defined in [api/types.ts:566](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L566)*
+*Defined in [api/types.ts:566](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L566)*
 
 ___
 

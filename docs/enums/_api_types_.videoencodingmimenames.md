@@ -23,7 +23,7 @@ Video Media Subtypes as referenced by IANA (without the leading "video/" Video M
 
 **H264**:  = "H264"
 
-*Defined in [api/types.ts:4413](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4413)*
+*Defined in [api/types.ts:4413](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4413)*
 
 ___
 <a id="h265"></a>
@@ -32,7 +32,7 @@ ___
 
 **H265**:  = "H265"
 
-*Defined in [api/types.ts:4417](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4417)*
+*Defined in [api/types.ts:4417](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4417)*
 
 ___
 <a id="jpeg"></a>
@@ -41,7 +41,7 @@ ___
 
 **JPEG**:  = "JPEG"
 
-*Defined in [api/types.ts:4405](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4405)*
+*Defined in [api/types.ts:4405](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4405)*
 
 ___
 <a id="mpv4_es"></a>
@@ -50,7 +50,7 @@ ___
 
 **MPV4-ES**:  = "MPV4-ES"
 
-*Defined in [api/types.ts:4409](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4409)*
+*Defined in [api/types.ts:4409](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4409)*
 
 ___
 

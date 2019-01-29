@@ -31,7 +31,7 @@ Indicates whether or not WS Discovery resolve requests are supported.
 
 **● DiscoveryBye**: *`boolean`*
 
-*Defined in [api/types.ts:1629](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1629)*
+*Defined in [api/types.ts:1629](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1629)*
 
 ___
 <a id="discoveryresolve"></a>
@@ -40,7 +40,7 @@ ___
 
 **● DiscoveryResolve**: *`boolean`*
 
-*Defined in [api/types.ts:1628](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1628)*
+*Defined in [api/types.ts:1628](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1628)*
 
 ___
 <a id="extension"></a>
@@ -49,7 +49,7 @@ ___
 
 **● Extension**: *[SystemCapabilitiesExtension](_api_types_.systemcapabilitiesextension.md)*
 
-*Defined in [api/types.ts:1635](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1635)*
+*Defined in [api/types.ts:1635](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1635)*
 
 ___
 <a id="firmwareupgrade"></a>
@@ -58,7 +58,7 @@ ___
 
 **● FirmwareUpgrade**: *`boolean`*
 
-*Defined in [api/types.ts:1633](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1633)*
+*Defined in [api/types.ts:1633](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1633)*
 
 ___
 <a id="remotediscovery"></a>
@@ -67,7 +67,7 @@ ___
 
 **● RemoteDiscovery**: *`boolean`*
 
-*Defined in [api/types.ts:1630](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1630)*
+*Defined in [api/types.ts:1630](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1630)*
 
 ___
 <a id="supportedversions"></a>
@@ -76,7 +76,7 @@ ___
 
 **● SupportedVersions**: *[OnvifVersion](_api_types_.onvifversion.md)*
 
-*Defined in [api/types.ts:1634](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1634)*
+*Defined in [api/types.ts:1634](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1634)*
 
 ___
 <a id="systembackup"></a>
@@ -85,7 +85,7 @@ ___
 
 **● SystemBackup**: *`boolean`*
 
-*Defined in [api/types.ts:1631](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1631)*
+*Defined in [api/types.ts:1631](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1631)*
 
 ___
 <a id="systemlogging"></a>
@@ -94,7 +94,7 @@ ___
 
 **● SystemLogging**: *`boolean`*
 
-*Defined in [api/types.ts:1632](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1632)*
+*Defined in [api/types.ts:1632](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1632)*
 
 ___
 

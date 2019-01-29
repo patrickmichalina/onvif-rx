@@ -24,7 +24,7 @@
 
 **● body**: *`Document`*
 
-*Defined in [soap/request.ts:45](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/soap/request.ts#L45)*
+*Defined in [soap/request.ts:45](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L45)*
 
 ___
 <a id="status"></a>
@@ -33,7 +33,7 @@ ___
 
 **● status**: *`number`*
 
-*Defined in [soap/request.ts:47](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/soap/request.ts#L47)*
+*Defined in [soap/request.ts:47](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L47)*
 
 ___
 <a id="statusmessage"></a>
@@ -42,7 +42,7 @@ ___
 
 **● statusMessage**: *`string`*
 
-*Defined in [soap/request.ts:46](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/soap/request.ts#L46)*
+*Defined in [soap/request.ts:46](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L46)*
 
 ___
 

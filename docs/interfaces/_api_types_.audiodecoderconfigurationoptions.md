@@ -27,7 +27,7 @@ If the device is able to decode AAC encoded audio this section describes the sup
 
 **● AACDecOptions**: *[AACDecOptions](_api_types_.aacdecoptions.md)*
 
-*Defined in [api/types.ts:944](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L944)*
+*Defined in [api/types.ts:944](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L944)*
 
 ___
 <a id="extension"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Extension**: *[AudioDecoderConfigurationOptionsExtension](_api_types_.audiodecoderconfigurationoptionsextension.md)*
 
-*Defined in [api/types.ts:947](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L947)*
+*Defined in [api/types.ts:947](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L947)*
 
 ___
 <a id="g711decoptions"></a>
@@ -45,7 +45,7 @@ ___
 
 **● G711DecOptions**: *[G711DecOptions](_api_types_.g711decoptions.md)*
 
-*Defined in [api/types.ts:945](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L945)*
+*Defined in [api/types.ts:945](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L945)*
 
 ___
 <a id="g726decoptions"></a>
@@ -54,7 +54,7 @@ ___
 
 **● G726DecOptions**: *[G726DecOptions](_api_types_.g726decoptions.md)*
 
-*Defined in [api/types.ts:946](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L946)*
+*Defined in [api/types.ts:946](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L946)*
 
 ___
 

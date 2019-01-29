@@ -26,7 +26,7 @@ Range is 1 to 12.
 
 **● Day**: *`number`*
 
-*Defined in [api/types.ts:1835](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1835)*
+*Defined in [api/types.ts:1835](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1835)*
 
 ___
 <a id="month"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Month**: *`number`*
 
-*Defined in [api/types.ts:1834](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1834)*
+*Defined in [api/types.ts:1834](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1834)*
 
 ___
 <a id="year"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Year**: *`number`*
 
-*Defined in [api/types.ts:1833](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1833)*
+*Defined in [api/types.ts:1833](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1833)*
 
 ___
 

@@ -2,7 +2,7 @@ import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequ
 import { IDeviceConfig } from "../config";
 import { SetDateTimeType, TimeZone, DateTime, FactoryDefaultType, AttachmentData, BackupFile, SystemLogType, DiscoveryMode, NetworkHost, RemoteUser, User, CapabilityCategory, IPAddress, DynamicDNSType, DNSName, ReferenceToken, NetworkInterfaceSetConfiguration, NetworkProtocol, IPv4Address, IPv6Address, IPAddressFilter, BinaryData, CertificateStatus, Certificate, RelayOutputSettings, RelayLogicalState, AuxiliaryData, CertificateWithPrivateKey, Dot1XConfiguration, LocationEntity } from "./types";
 
-export class Device {
+export class ONVIFDevice {
     constructor(private config: IDeviceConfig) {
     }
 
@@ -1124,21 +1124,21 @@ export class Device {
      * Returns information about services on the device.
      */
     GetServices(IncludeCapability: boolean) {
-        return Device.GetServices(IncludeCapability).run(this.config)
+        return ONVIFDevice.GetServices(IncludeCapability).run(this.config)
     }
 
     /**
      * Returns the capabilities of the device service. The result is returned in a typed answer.
      */
     GetServiceCapabilities() {
-        return Device.GetServiceCapabilities().run(this.config)
+        return ONVIFDevice.GetServiceCapabilities().run(this.config)
     }
 
     /**
      * This operation gets basic device information from the device.
      */
     GetDeviceInformation() {
-        return Device.GetDeviceInformation().run(this.config)
+        return ONVIFDevice.GetDeviceInformation().run(this.config)
     }
 
     /**
@@ -1153,7 +1153,7 @@ export class Device {
      *   
      */
     SetSystemDateAndTime(DateTimeType: SetDateTimeType, DaylightSavings: boolean, TimeZone: TimeZone, UTCDateTime: DateTime) {
-        return Device.SetSystemDateAndTime(DateTimeType,DaylightSavings,TimeZone,UTCDateTime).run(this.config)
+        return ONVIFDevice.SetSystemDateAndTime(DateTimeType,DaylightSavings,TimeZone,UTCDateTime).run(this.config)
     }
 
     /**
@@ -1163,14 +1163,14 @@ export class Device {
      *   A device shall provide the UTCDateTime information.
      */
     GetSystemDateAndTime() {
-        return Device.GetSystemDateAndTime().run(this.config)
+        return ONVIFDevice.GetSystemDateAndTime().run(this.config)
     }
 
     /**
      * This operation reloads the parameters on the device to their factory default values.
      */
     SetSystemFactoryDefault(FactoryDefault: FactoryDefaultType) {
-        return Device.SetSystemFactoryDefault(FactoryDefault).run(this.config)
+        return ONVIFDevice.SetSystemFactoryDefault(FactoryDefault).run(this.config)
     }
 
     /**
@@ -1180,14 +1180,14 @@ export class Device {
      *   outside the scope of this standard.
      */
     UpgradeSystemFirmware(Firmware: AttachmentData) {
-        return Device.UpgradeSystemFirmware(Firmware).run(this.config)
+        return ONVIFDevice.UpgradeSystemFirmware(Firmware).run(this.config)
     }
 
     /**
      * This operation reboots the device.
      */
     SystemReboot() {
-        return Device.SystemReboot().run(this.config)
+        return ONVIFDevice.SystemReboot().run(this.config)
     }
 
     /**
@@ -1198,7 +1198,7 @@ export class Device {
      *   the GetSystemBackup command.
      */
     RestoreSystem(BackupFiles: BackupFile) {
-        return Device.RestoreSystem(BackupFiles).run(this.config)
+        return ONVIFDevice.RestoreSystem(BackupFiles).run(this.config)
     }
 
     /**
@@ -1208,21 +1208,21 @@ export class Device {
      *   The exact format of the backup configuration files is outside the scope of this standard.
      */
     GetSystemBackup() {
-        return Device.GetSystemBackup().run(this.config)
+        return ONVIFDevice.GetSystemBackup().run(this.config)
     }
 
     /**
      * This operation gets a system log from the device. The exact format of the system logs is outside the scope of this standard.
      */
     GetSystemLog(LogType: SystemLogType) {
-        return Device.GetSystemLog(LogType).run(this.config)
+        return ONVIFDevice.GetSystemLog(LogType).run(this.config)
     }
 
     /**
      * This operation gets arbitary device diagnostics information from the device.
      */
     GetSystemSupportInformation() {
-        return Device.GetSystemSupportInformation().run(this.config)
+        return ONVIFDevice.GetSystemSupportInformation().run(this.config)
     }
 
     /**
@@ -1238,7 +1238,7 @@ export class Device {
      *   the device shall return a non-empty scope list in the response.
      */
     GetScopes() {
-        return Device.GetScopes().run(this.config)
+        return ONVIFDevice.GetScopes().run(this.config)
     }
 
     /**
@@ -1249,7 +1249,7 @@ export class Device {
      *   support configuration of discovery scope parameters through the SetScopes command.
      */
     SetScopes(Scopes: string) {
-        return Device.SetScopes(Scopes).run(this.config)
+        return ONVIFDevice.SetScopes(Scopes).run(this.config)
     }
 
     /**
@@ -1258,7 +1258,7 @@ export class Device {
      *   support addition of discovery scope parameters through the AddScopes command.
      */
     AddScopes(ScopeItem: string) {
-        return Device.AddScopes(ScopeItem).run(this.config)
+        return ONVIFDevice.AddScopes(ScopeItem).run(this.config)
     }
 
     /**
@@ -1269,7 +1269,7 @@ export class Device {
      *   Table
      */
     RemoveScopes(ScopeItem: string) {
-        return Device.RemoveScopes(ScopeItem).run(this.config)
+        return ONVIFDevice.RemoveScopes(ScopeItem).run(this.config)
     }
 
     /**
@@ -1278,7 +1278,7 @@ export class Device {
      *   setting through the GetDiscoveryMode command.
      */
     GetDiscoveryMode() {
-        return Device.GetDiscoveryMode().run(this.config)
+        return ONVIFDevice.GetDiscoveryMode().run(this.config)
     }
 
     /**
@@ -1287,7 +1287,7 @@ export class Device {
      *   the discovery mode setting through the SetDiscoveryMode command.
      */
     SetDiscoveryMode(DiscoveryMode: DiscoveryMode) {
-        return Device.SetDiscoveryMode(DiscoveryMode).run(this.config)
+        return ONVIFDevice.SetDiscoveryMode(DiscoveryMode).run(this.config)
     }
 
     /**
@@ -1297,7 +1297,7 @@ export class Device {
      *   command.
      */
     GetRemoteDiscoveryMode() {
-        return Device.GetRemoteDiscoveryMode().run(this.config)
+        return ONVIFDevice.GetRemoteDiscoveryMode().run(this.config)
     }
 
     /**
@@ -1307,7 +1307,7 @@ export class Device {
      *   SetRemoteDiscoveryMode command.
      */
     SetRemoteDiscoveryMode(RemoteDiscoveryMode: DiscoveryMode) {
-        return Device.SetRemoteDiscoveryMode(RemoteDiscoveryMode).run(this.config)
+        return ONVIFDevice.SetRemoteDiscoveryMode(RemoteDiscoveryMode).run(this.config)
     }
 
     /**
@@ -1316,7 +1316,7 @@ export class Device {
      *   DP address(es) through the GetDPAddresses command.
      */
     GetDPAddresses() {
-        return Device.GetDPAddresses().run(this.config)
+        return ONVIFDevice.GetDPAddresses().run(this.config)
     }
 
     /**
@@ -1325,7 +1325,7 @@ export class Device {
      *   remote DP address(es) through the SetDPAddresses command.
      */
     SetDPAddresses(DPAddress: NetworkHost) {
-        return Device.SetDPAddresses(DPAddress).run(this.config)
+        return ONVIFDevice.SetDPAddresses(DPAddress).run(this.config)
     }
 
     /**
@@ -1335,7 +1335,7 @@ export class Device {
      *   endpoint reference.
      */
     GetEndpointReference() {
-        return Device.GetEndpointReference().run(this.config)
+        return ONVIFDevice.GetEndpointReference().run(this.config)
     }
 
     /**
@@ -1345,7 +1345,7 @@ export class Device {
      *   The algorithm to use for deriving the password is described in section 5.12.2.1 of the core specification.
      */
     GetRemoteUser() {
-        return Device.GetRemoteUser().run(this.config)
+        return ONVIFDevice.GetRemoteUser().run(this.config)
     }
 
     /**
@@ -1357,7 +1357,7 @@ export class Device {
      *   To remove the remote user SetRemoteUser should be called without the RemoteUser parameter.
      */
     SetRemoteUser(RemoteUser: RemoteUser) {
-        return Device.SetRemoteUser(RemoteUser).run(this.config)
+        return ONVIFDevice.SetRemoteUser(RemoteUser).run(this.config)
     }
 
     /**
@@ -1366,7 +1366,7 @@ export class Device {
      *   token through the GetUsers command.
      */
     GetUsers() {
-        return Device.GetUsers().run(this.config)
+        return ONVIFDevice.GetUsers().run(this.config)
     }
 
     /**
@@ -1379,7 +1379,7 @@ export class Device {
      *   equivalent' of length 28 bytes, as described in section 3.1.2 of the ONVIF security white paper.
      */
     CreateUsers(User: User) {
-        return Device.CreateUsers(User).run(this.config)
+        return ONVIFDevice.CreateUsers(User).run(this.config)
     }
 
     /**
@@ -1389,7 +1389,7 @@ export class Device {
      *   fault message shall be returned and no users be deleted.
      */
     DeleteUsers(Username: string) {
-        return Device.DeleteUsers(Username).run(this.config)
+        return ONVIFDevice.DeleteUsers(Username).run(this.config)
     }
 
     /**
@@ -1398,7 +1398,7 @@ export class Device {
      *   Either all change requests are processed successfully or a fault message shall be returned and no change requests be processed.
      */
     SetUser(User: User) {
-        return Device.SetUser(User).run(this.config)
+        return ONVIFDevice.SetUser(User).run(this.config)
     }
 
     /**
@@ -1408,7 +1408,7 @@ export class Device {
      *   device shall provide a URL for WSDL and schema download through the GetWsdlUrl command.
      */
     GetWsdlUrl() {
-        return Device.GetWsdlUrl().run(this.config)
+        return ONVIFDevice.GetWsdlUrl().run(this.config)
     }
 
     /**
@@ -1416,7 +1416,7 @@ export class Device {
      *    For capabilities of individual services refer to the GetServiceCapabilities methods.
      */
     GetCapabilities(Category: CapabilityCategory) {
-        return Device.GetCapabilities(Category).run(this.config)
+        return ONVIFDevice.GetCapabilities(Category).run(this.config)
     }
 
     /**
@@ -1424,7 +1424,7 @@ export class Device {
      *   return its hostname configurations through the GetHostname command.
      */
     GetHostname() {
-        return Device.GetHostname().run(this.config)
+        return ONVIFDevice.GetHostname().run(this.config)
     }
 
     /**
@@ -1435,14 +1435,14 @@ export class Device {
      *   
      */
     SetHostname(Name: string) {
-        return Device.SetHostname(Name).run(this.config)
+        return ONVIFDevice.SetHostname(Name).run(this.config)
     }
 
     /**
      * This operation controls whether the hostname is set manually or retrieved via DHCP.
      */
     SetHostnameFromDHCP(FromDHCP: boolean) {
-        return Device.SetHostnameFromDHCP(FromDHCP).run(this.config)
+        return ONVIFDevice.SetHostnameFromDHCP(FromDHCP).run(this.config)
     }
 
     /**
@@ -1450,7 +1450,7 @@ export class Device {
      *   configurations through the GetDNS command.
      */
     GetDNS() {
-        return Device.GetDNS().run(this.config)
+        return ONVIFDevice.GetDNS().run(this.config)
     }
 
     /**
@@ -1458,7 +1458,7 @@ export class Device {
      *   configurations through the SetDNS command.
      */
     SetDNS(FromDHCP: boolean, SearchDomain: string, DNSManual: IPAddress) {
-        return Device.SetDNS(FromDHCP,SearchDomain,DNSManual).run(this.config)
+        return ONVIFDevice.SetDNS(FromDHCP,SearchDomain,DNSManual).run(this.config)
     }
 
     /**
@@ -1466,7 +1466,7 @@ export class Device {
      *   possible to get the NTP server settings through the GetNTP command.
      */
     GetNTP() {
-        return Device.GetNTP().run(this.config)
+        return ONVIFDevice.GetNTP().run(this.config)
     }
 
     /**
@@ -1478,7 +1478,7 @@ export class Device {
      *   
      */
     SetNTP(FromDHCP: boolean, NTPManual: NetworkHost) {
-        return Device.SetNTP(FromDHCP,NTPManual).run(this.config)
+        return ONVIFDevice.SetNTP(FromDHCP,NTPManual).run(this.config)
     }
 
     /**
@@ -1487,7 +1487,7 @@ export class Device {
      *   and TTL through the GetDynamicDNS command.
      */
     GetDynamicDNS() {
-        return Device.GetDynamicDNS().run(this.config)
+        return ONVIFDevice.GetDynamicDNS().run(this.config)
     }
 
     /**
@@ -1496,7 +1496,7 @@ export class Device {
      *   and TTL through the SetDynamicDNS command.
      */
     SetDynamicDNS(Type: DynamicDNSType, Name: DNSName, TTL: string) {
-        return Device.SetDynamicDNS(Type,Name,TTL).run(this.config)
+        return ONVIFDevice.SetDynamicDNS(Type,Name,TTL).run(this.config)
     }
 
     /**
@@ -1505,7 +1505,7 @@ export class Device {
      *   type through the GetNetworkInterfaces command.
      */
     GetNetworkInterfaces() {
-        return Device.GetNetworkInterfaces().run(this.config)
+        return ONVIFDevice.GetNetworkInterfaces().run(this.config)
     }
 
     /**
@@ -1517,7 +1517,7 @@ export class Device {
      *   request.
      */
     SetNetworkInterfaces(InterfaceToken: ReferenceToken, NetworkInterface: NetworkInterfaceSetConfiguration) {
-        return Device.SetNetworkInterfaces(InterfaceToken,NetworkInterface).run(this.config)
+        return ONVIFDevice.SetNetworkInterfaces(InterfaceToken,NetworkInterface).run(this.config)
     }
 
     /**
@@ -1525,7 +1525,7 @@ export class Device {
      *   GetNetworkProtocols command returning configured network protocols.
      */
     GetNetworkProtocols() {
-        return Device.GetNetworkProtocols().run(this.config)
+        return ONVIFDevice.GetNetworkProtocols().run(this.config)
     }
 
     /**
@@ -1533,7 +1533,7 @@ export class Device {
      *   configuration of defined network protocols through the SetNetworkProtocols command.
      */
     SetNetworkProtocols(NetworkProtocols: NetworkProtocol) {
-        return Device.SetNetworkProtocols(NetworkProtocols).run(this.config)
+        return ONVIFDevice.SetNetworkProtocols(NetworkProtocols).run(this.config)
     }
 
     /**
@@ -1541,7 +1541,7 @@ export class Device {
      *   GetNetworkDefaultGateway command returning configured default gateway address(es).
      */
     GetNetworkDefaultGateway() {
-        return Device.GetNetworkDefaultGateway().run(this.config)
+        return ONVIFDevice.GetNetworkDefaultGateway().run(this.config)
     }
 
     /**
@@ -1549,7 +1549,7 @@ export class Device {
      *   configuration of default gateway through the SetNetworkDefaultGateway command.
      */
     SetNetworkDefaultGateway(IPv4Address: IPv4Address, IPv6Address: IPv6Address) {
-        return Device.SetNetworkDefaultGateway(IPv4Address,IPv6Address).run(this.config)
+        return ONVIFDevice.SetNetworkDefaultGateway(IPv4Address,IPv6Address).run(this.config)
     }
 
     /**
@@ -1559,14 +1559,14 @@ export class Device {
      *   Devices supporting zero configuration on more than one interface shall use the extension to list the additional interface settings.
      */
     GetZeroConfiguration() {
-        return Device.GetZeroConfiguration().run(this.config)
+        return ONVIFDevice.GetZeroConfiguration().run(this.config)
     }
 
     /**
      * This operation sets the zero-configuration. Use GetCapalities to get if zero-zero-configuration is supported or not.
      */
     SetZeroConfiguration(InterfaceToken: ReferenceToken, Enabled: boolean) {
-        return Device.SetZeroConfiguration(InterfaceToken,Enabled).run(this.config)
+        return ONVIFDevice.SetZeroConfiguration(InterfaceToken,Enabled).run(this.config)
     }
 
     /**
@@ -1575,7 +1575,7 @@ export class Device {
      *   device shall support the GetIPAddressFilter command.
      */
     GetIPAddressFilter() {
-        return Device.GetIPAddressFilter().run(this.config)
+        return ONVIFDevice.GetIPAddressFilter().run(this.config)
     }
 
     /**
@@ -1585,7 +1585,7 @@ export class Device {
      *   command.
      */
     SetIPAddressFilter(IPAddressFilter: IPAddressFilter) {
-        return Device.SetIPAddressFilter(IPAddressFilter).run(this.config)
+        return ONVIFDevice.SetIPAddressFilter(IPAddressFilter).run(this.config)
     }
 
     /**
@@ -1594,7 +1594,7 @@ export class Device {
      *   shall support adding of IP filtering addresses through the AddIPAddressFilter command.
      */
     AddIPAddressFilter(IPAddressFilter: IPAddressFilter) {
-        return Device.AddIPAddressFilter(IPAddressFilter).run(this.config)
+        return ONVIFDevice.AddIPAddressFilter(IPAddressFilter).run(this.config)
     }
 
     /**
@@ -1603,7 +1603,7 @@ export class Device {
      *   shall support deletion of IP filtering addresses through the RemoveIPAddressFilter command.
      */
     RemoveIPAddressFilter(IPAddressFilter: IPAddressFilter) {
-        return Device.RemoveIPAddressFilter(IPAddressFilter).run(this.config)
+        return ONVIFDevice.RemoveIPAddressFilter(IPAddressFilter).run(this.config)
     }
 
     /**
@@ -1617,7 +1617,7 @@ export class Device {
      *   shall support this command.
      */
     GetAccessPolicy() {
-        return Device.GetAccessPolicy().run(this.config)
+        return ONVIFDevice.GetAccessPolicy().run(this.config)
     }
 
     /**
@@ -1626,7 +1626,7 @@ export class Device {
      *   based on WS-Security authentication, then the device shall support this command.
      */
     SetAccessPolicy(PolicyFile: BinaryData) {
-        return Device.SetAccessPolicy(PolicyFile).run(this.config)
+        return ONVIFDevice.SetAccessPolicy(PolicyFile).run(this.config)
     }
 
     /**
@@ -1641,7 +1641,7 @@ export class Device {
      *   given).
      */
     CreateCertificate(CertificateID: string, Subject: string, ValidNotBefore: string, ValidNotAfter: string) {
-        return Device.CreateCertificate(CertificateID,Subject,ValidNotBefore,ValidNotAfter).run(this.config)
+        return ONVIFDevice.CreateCertificate(CertificateID,Subject,ValidNotBefore,ValidNotAfter).run(this.config)
     }
 
     /**
@@ -1654,7 +1654,7 @@ export class Device {
      *   rules.
      */
     GetCertificates() {
-        return Device.GetCertificates().run(this.config)
+        return ONVIFDevice.GetCertificates().run(this.config)
     }
 
     /**
@@ -1663,7 +1663,7 @@ export class Device {
      *   support this command.
      */
     GetCertificatesStatus() {
-        return Device.GetCertificatesStatus().run(this.config)
+        return ONVIFDevice.GetCertificatesStatus().run(this.config)
     }
 
     /**
@@ -1672,7 +1672,7 @@ export class Device {
      *   Typically only one device server certificate is allowed to be enabled at a time.
      */
     SetCertificatesStatus(CertificateStatus: CertificateStatus) {
-        return Device.SetCertificatesStatus(CertificateStatus).run(this.config)
+        return ONVIFDevice.SetCertificatesStatus(CertificateStatus).run(this.config)
     }
 
     /**
@@ -1683,7 +1683,7 @@ export class Device {
      *   message shall be returned without deleting any certificate.
      */
     DeleteCertificates(CertificateID: string) {
-        return Device.DeleteCertificates(CertificateID).run(this.config)
+        return ONVIFDevice.DeleteCertificates(CertificateID).run(this.config)
     }
 
     /**
@@ -1697,7 +1697,7 @@ export class Device {
      *   using client certificate shall support this command.
      */
     GetPkcs10Request(CertificateID: string, Subject: string, Attributes: BinaryData) {
-        return Device.GetPkcs10Request(CertificateID,Subject,Attributes).run(this.config)
+        return ONVIFDevice.GetPkcs10Request(CertificateID,Subject,Attributes).run(this.config)
     }
 
     /**
@@ -1717,7 +1717,7 @@ export class Device {
      *   historical reasons NVTCertificate.
      */
     LoadCertificates(NVTCertificate: Certificate) {
-        return Device.LoadCertificates(NVTCertificate).run(this.config)
+        return ONVIFDevice.LoadCertificates(NVTCertificate).run(this.config)
     }
 
     /**
@@ -1726,7 +1726,7 @@ export class Device {
      *   support this command.
      */
     GetClientCertificateMode() {
-        return Device.GetClientCertificateMode().run(this.config)
+        return ONVIFDevice.GetClientCertificateMode().run(this.config)
     }
 
     /**
@@ -1735,7 +1735,7 @@ export class Device {
      *   support this command.
      */
     SetClientCertificateMode(Enabled: boolean) {
-        return Device.SetClientCertificateMode(Enabled).run(this.config)
+        return ONVIFDevice.SetClientCertificateMode(Enabled).run(this.config)
     }
 
     /**
@@ -1743,7 +1743,7 @@ export class Device {
      *   This method has been depricated with version 2.0. Refer to the DeviceIO service.
      */
     GetRelayOutputs() {
-        return Device.GetRelayOutputs().run(this.config)
+        return ONVIFDevice.GetRelayOutputs().run(this.config)
     }
 
     /**
@@ -1751,7 +1751,7 @@ export class Device {
      *   This method has been depricated with version 2.0. Refer to the DeviceIO service.
      */
     SetRelayOutputSettings(RelayOutputToken: ReferenceToken, Properties: RelayOutputSettings) {
-        return Device.SetRelayOutputSettings(RelayOutputToken,Properties).run(this.config)
+        return ONVIFDevice.SetRelayOutputSettings(RelayOutputToken,Properties).run(this.config)
     }
 
     /**
@@ -1759,7 +1759,7 @@ export class Device {
      *   This method has been depricated with version 2.0. Refer to the DeviceIO service.
      */
     SetRelayOutputState(RelayOutputToken: ReferenceToken, LogicalState: RelayLogicalState) {
-        return Device.SetRelayOutputState(RelayOutputToken,LogicalState).run(this.config)
+        return ONVIFDevice.SetRelayOutputState(RelayOutputToken,LogicalState).run(this.config)
     }
 
     /**
@@ -1782,7 +1782,7 @@ export class Device {
      *   A device that indicates auxiliary service capability shall support this command.
      */
     SendAuxiliaryCommand(AuxiliaryCommand: AuxiliaryData) {
-        return Device.SendAuxiliaryCommand(AuxiliaryCommand).run(this.config)
+        return ONVIFDevice.SendAuxiliaryCommand(AuxiliaryCommand).run(this.config)
     }
 
     /**
@@ -1794,7 +1794,7 @@ export class Device {
      *   be encoded using ASN.1 [X.681], [X.682], [X.683] DER [X.690] encoding rules.
      */
     GetCACertificates() {
-        return Device.GetCACertificates().run(this.config)
+        return ONVIFDevice.GetCACertificates().run(this.config)
     }
 
     /**
@@ -1813,7 +1813,7 @@ export class Device {
      *   operation should make sure that the private key is sufficiently protected.
      */
     LoadCertificateWithPrivateKey(CertificateWithPrivateKey: CertificateWithPrivateKey) {
-        return Device.LoadCertificateWithPrivateKey(CertificateWithPrivateKey).run(this.config)
+        return ONVIFDevice.LoadCertificateWithPrivateKey(CertificateWithPrivateKey).run(this.config)
     }
 
     /**
@@ -1825,7 +1825,7 @@ export class Device {
      *   A device that supports either TLS or IEEE 802.1X should support this command.
      */
     GetCertificateInformation(CertificateID: string) {
-        return Device.GetCertificateInformation(CertificateID).run(this.config)
+        return ONVIFDevice.GetCertificateInformation(CertificateID).run(this.config)
     }
 
     /**
@@ -1840,7 +1840,7 @@ export class Device {
      *   message shall be returned without loading any CA certificate.
      */
     LoadCACertificates(CACertificate: Certificate) {
-        return Device.LoadCACertificates(CACertificate).run(this.config)
+        return ONVIFDevice.LoadCACertificates(CACertificate).run(this.config)
     }
 
     /**
@@ -1851,7 +1851,7 @@ export class Device {
      *   conflict.
      */
     CreateDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
-        return Device.CreateDot1XConfiguration(Dot1XConfiguration).run(this.config)
+        return ONVIFDevice.CreateDot1XConfiguration(Dot1XConfiguration).run(this.config)
     }
 
     /**
@@ -1860,7 +1860,7 @@ export class Device {
      *   the device. A device that support IEEE 802.1X shall support this command.
      */
     SetDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
-        return Device.SetDot1XConfiguration(Dot1XConfiguration).run(this.config)
+        return ONVIFDevice.SetDot1XConfiguration(Dot1XConfiguration).run(this.config)
     }
 
     /**
@@ -1871,7 +1871,7 @@ export class Device {
      *   not, the device shall not include the Password element in the response.
      */
     GetDot1XConfiguration(Dot1XConfigurationToken: ReferenceToken) {
-        return Device.GetDot1XConfiguration(Dot1XConfigurationToken).run(this.config)
+        return ONVIFDevice.GetDot1XConfiguration(Dot1XConfigurationToken).run(this.config)
     }
 
     /**
@@ -1883,7 +1883,7 @@ export class Device {
      *   not, the device shall not include the Password element in the response.
      */
     GetDot1XConfigurations() {
-        return Device.GetDot1XConfigurations().run(this.config)
+        return ONVIFDevice.GetDot1XConfigurations().run(this.config)
     }
 
     /**
@@ -1892,7 +1892,7 @@ export class Device {
      *   A device that support IEEE 802.1X shall support this command.
      */
     DeleteDot1XConfiguration(Dot1XConfigurationToken: ReferenceToken) {
-        return Device.DeleteDot1XConfiguration(Dot1XConfigurationToken).run(this.config)
+        return ONVIFDevice.DeleteDot1XConfiguration(Dot1XConfigurationToken).run(this.config)
     }
 
     /**
@@ -1900,7 +1900,7 @@ export class Device {
      *   this operation.
      */
     GetDot11Capabilities() {
-        return Device.GetDot11Capabilities().run(this.config)
+        return ONVIFDevice.GetDot11Capabilities().run(this.config)
     }
 
     /**
@@ -1908,7 +1908,7 @@ export class Device {
      *   command.
      */
     GetDot11Status(InterfaceToken: ReferenceToken) {
-        return Device.GetDot11Status(InterfaceToken).run(this.config)
+        return ONVIFDevice.GetDot11Status(InterfaceToken).run(this.config)
     }
 
     /**
@@ -1916,7 +1916,7 @@ export class Device {
      *   support this operation.
      */
     ScanAvailableDot11Networks(InterfaceToken: ReferenceToken) {
-        return Device.ScanAvailableDot11Networks(InterfaceToken).run(this.config)
+        return ONVIFDevice.ScanAvailableDot11Networks(InterfaceToken).run(this.config)
     }
 
     /**
@@ -1934,7 +1934,7 @@ export class Device {
      *   command.
      */
     GetSystemUris() {
-        return Device.GetSystemUris().run(this.config)
+        return ONVIFDevice.GetSystemUris().run(this.config)
     }
 
     /**
@@ -1956,7 +1956,7 @@ export class Device {
      *   The value of the Content-Type header in the HTTP POST request shall be “application/octetstream”.
      */
     StartFirmwareUpgrade() {
-        return Device.StartFirmwareUpgrade().run(this.config)
+        return ONVIFDevice.StartFirmwareUpgrade().run(this.config)
     }
 
     /**
@@ -1978,7 +1978,7 @@ export class Device {
      *   The value of the Content-Type header in the HTTP POST request shall be “application/octetstream”.
      */
     StartSystemRestore() {
-        return Device.StartSystemRestore().run(this.config)
+        return ONVIFDevice.StartSystemRestore().run(this.config)
     }
 
     /**
@@ -1987,7 +1987,7 @@ export class Device {
      *   
      */
     GetStorageConfigurations() {
-        return Device.GetStorageConfigurations().run(this.config)
+        return ONVIFDevice.GetStorageConfigurations().run(this.config)
     }
 
     /**
@@ -1997,7 +1997,7 @@ export class Device {
      *   
      */
     CreateStorageConfiguration(StorageConfiguration: any) {
-        return Device.CreateStorageConfiguration(StorageConfiguration).run(this.config)
+        return ONVIFDevice.CreateStorageConfiguration(StorageConfiguration).run(this.config)
     }
 
     /**
@@ -2006,7 +2006,7 @@ export class Device {
      *   
      */
     GetStorageConfiguration(Token: ReferenceToken) {
-        return Device.GetStorageConfiguration(Token).run(this.config)
+        return ONVIFDevice.GetStorageConfiguration(Token).run(this.config)
     }
 
     /**
@@ -2015,7 +2015,7 @@ export class Device {
      *   
      */
     SetStorageConfiguration(StorageConfiguration: any) {
-        return Device.SetStorageConfiguration(StorageConfiguration).run(this.config)
+        return ONVIFDevice.SetStorageConfiguration(StorageConfiguration).run(this.config)
     }
 
     /**
@@ -2024,7 +2024,7 @@ export class Device {
      *   
      */
     DeleteStorageConfiguration(Token: ReferenceToken) {
-        return Device.DeleteStorageConfiguration(Token).run(this.config)
+        return ONVIFDevice.DeleteStorageConfiguration(Token).run(this.config)
     }
 
     /**
@@ -2033,7 +2033,7 @@ export class Device {
      *   
      */
     GetGeoLocation() {
-        return Device.GetGeoLocation().run(this.config)
+        return ONVIFDevice.GetGeoLocation().run(this.config)
     }
 
     /**
@@ -2042,7 +2042,7 @@ export class Device {
      *   
      */
     SetGeoLocation(Location: LocationEntity) {
-        return Device.SetGeoLocation(Location).run(this.config)
+        return ONVIFDevice.SetGeoLocation(Location).run(this.config)
     }
 
     /**
@@ -2051,6 +2051,6 @@ export class Device {
      *   
      */
     DeleteGeoLocation(Location: LocationEntity) {
-        return Device.DeleteGeoLocation(Location).run(this.config)
+        return ONVIFDevice.DeleteGeoLocation(Location).run(this.config)
     }
 }

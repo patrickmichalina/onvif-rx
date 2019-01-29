@@ -27,7 +27,7 @@
 
 **● DynamicRecordings**: *`boolean`*
 
-*Defined in [api/types.ts:1704](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1704)*
+*Defined in [api/types.ts:1704](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1704)*
 
 ___
 <a id="dynamictracks"></a>
@@ -36,7 +36,7 @@ ___
 
 **● DynamicTracks**: *`boolean`*
 
-*Defined in [api/types.ts:1705](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1705)*
+*Defined in [api/types.ts:1705](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1705)*
 
 ___
 <a id="maxstringlength"></a>
@@ -45,7 +45,7 @@ ___
 
 **● MaxStringLength**: *`number`*
 
-*Defined in [api/types.ts:1706](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1706)*
+*Defined in [api/types.ts:1706](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1706)*
 
 ___
 <a id="mediaprofilesource"></a>
@@ -54,7 +54,7 @@ ___
 
 **● MediaProfileSource**: *`boolean`*
 
-*Defined in [api/types.ts:1703](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1703)*
+*Defined in [api/types.ts:1703](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1703)*
 
 ___
 <a id="receiversource"></a>
@@ -63,7 +63,7 @@ ___
 
 **● ReceiverSource**: *`boolean`*
 
-*Defined in [api/types.ts:1702](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1702)*
+*Defined in [api/types.ts:1702](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1702)*
 
 ___
 <a id="xaddr"></a>
@@ -72,7 +72,7 @@ ___
 
 **● XAddr**: *`string`*
 
-*Defined in [api/types.ts:1701](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1701)*
+*Defined in [api/types.ts:1701](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1701)*
 
 ___
 

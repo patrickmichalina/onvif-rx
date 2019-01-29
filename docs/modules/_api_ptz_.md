@@ -6,7 +6,7 @@
 
 ### Classes
 
-* [PTZ](../classes/_api_ptz_.ptz.md)
+* [ONVIFPTZ](../classes/_api_ptz_.onvifptz.md)
 
 ---
 

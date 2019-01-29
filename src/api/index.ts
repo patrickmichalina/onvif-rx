@@ -1,30 +1,30 @@
-import { Device } from "./device";
-import { Media } from "./media";
-import { Analytics } from "./analytics";
-import { Display } from "./display";
-import { Imaging } from "./imaging";
-import { Provisioning } from "./provisioning";
-import { PTZ } from "./ptz";
-import { Receiver } from "./receiver";
-import { Recording } from "./recording";
-import { Replay } from "./replay";
-import { Search } from "./search";
-import { AdvancedSecurity } from "./advancedsecurity";
+import { ONVIFDevice } from "./device";
+import { ONVIFMedia } from "./media";
+import { ONVIFAnalytics } from "./analytics";
+import { ONVIFDisplay } from "./display";
+import { ONVIFImaging } from "./imaging";
+import { ONVIFProvisioning } from "./provisioning";
+import { ONVIFPTZ } from "./ptz";
+import { ONVIFReceiver } from "./receiver";
+import { ONVIFRecording } from "./recording";
+import { ONVIFReplay } from "./replay";
+import { ONVIFSearch } from "./search";
+import { ONVIFAdvancedSecurity } from "./advancedsecurity";
 import { IDeviceConfig } from "../config";
 
 export class ManagedONVIFApi {
-    public Device = new Device(this.config);
-    public Media = new Media(this.config);
-    public Analytics = new Analytics(this.config);
-    public Display = new Display(this.config);
-    public Imaging = new Imaging(this.config);
-    public Provisioning = new Provisioning(this.config);
-    public PTZ = new PTZ(this.config);
-    public Receiver = new Receiver(this.config);
-    public Recording = new Recording(this.config);
-    public Replay = new Replay(this.config);
-    public Search = new Search(this.config);
-    public AdvancedSecurity = new AdvancedSecurity(this.config);
+    public Device = new ONVIFDevice(this.config);
+    public Media = new ONVIFMedia(this.config);
+    public Analytics = new ONVIFAnalytics(this.config);
+    public Display = new ONVIFDisplay(this.config);
+    public Imaging = new ONVIFImaging(this.config);
+    public Provisioning = new ONVIFProvisioning(this.config);
+    public PTZ = new ONVIFPTZ(this.config);
+    public Receiver = new ONVIFReceiver(this.config);
+    public Recording = new ONVIFRecording(this.config);
+    public Replay = new ONVIFReplay(this.config);
+    public Search = new ONVIFSearch(this.config);
+    public AdvancedSecurity = new ONVIFAdvancedSecurity(this.config);
 
     constructor(private config: IDeviceConfig) {
     }

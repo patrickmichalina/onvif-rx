@@ -26,7 +26,7 @@ Indicates if the address is an IPv4 or IPv6 address.
 
 **● IPv4Address**: *[IPv4Address](_api_types_.ipaddress.md#ipv4address)*
 
-*Defined in [api/types.ts:1168](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1168)*
+*Defined in [api/types.ts:1168](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1168)*
 
 ___
 <a id="ipv6address"></a>
@@ -35,7 +35,7 @@ ___
 
 **● IPv6Address**: *[IPv6Address](_api_types_.ipaddress.md#ipv6address)*
 
-*Defined in [api/types.ts:1169](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1169)*
+*Defined in [api/types.ts:1169](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1169)*
 
 ___
 <a id="type"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Type**: *[IPType](../enums/_api_types_.iptype.md)*
 
-*Defined in [api/types.ts:1167](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1167)*
+*Defined in [api/types.ts:1167](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1167)*
 
 ___
 

@@ -2,7 +2,7 @@ import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequ
 import { IDeviceConfig } from "../config";
 import "./types";
 
-export class AdvancedSecurity {
+export class ONVIFAdvancedSecurity {
     constructor(private config: IDeviceConfig) {
     }
 
@@ -719,7 +719,7 @@ export class AdvancedSecurity {
      * Returns the capabilities of the security configuraiton service. The result is returned in a typed answer.
      */
     GetServiceCapabilities() {
-        return AdvancedSecurity.GetServiceCapabilities().run(this.config)
+        return ONVIFAdvancedSecurity.GetServiceCapabilities().run(this.config)
     }
 
     /**
@@ -737,7 +737,7 @@ export class AdvancedSecurity {
      *   
      */
     CreateRSAKeyPair() {
-        return AdvancedSecurity.CreateRSAKeyPair().run(this.config)
+        return ONVIFAdvancedSecurity.CreateRSAKeyPair().run(this.config)
     }
 
     /**
@@ -750,7 +750,7 @@ export class AdvancedSecurity {
      *         
      */
     UploadKeyPairInPKCS8() {
-        return AdvancedSecurity.UploadKeyPairInPKCS8().run(this.config)
+        return ONVIFAdvancedSecurity.UploadKeyPairInPKCS8().run(this.config)
     }
 
     /**
@@ -772,7 +772,7 @@ export class AdvancedSecurity {
      *         
      */
     UploadCertificateWithPrivateKeyInPKCS12() {
-        return AdvancedSecurity.UploadCertificateWithPrivateKeyInPKCS12().run(this.config)
+        return ONVIFAdvancedSecurity.UploadCertificateWithPrivateKeyInPKCS12().run(this.config)
     }
 
     /**
@@ -783,7 +783,7 @@ export class AdvancedSecurity {
      *   
      */
     GetKeyStatus() {
-        return AdvancedSecurity.GetKeyStatus().run(this.config)
+        return ONVIFAdvancedSecurity.GetKeyStatus().run(this.config)
     }
 
     /**
@@ -795,7 +795,7 @@ export class AdvancedSecurity {
      *   
      */
     GetPrivateKeyStatus() {
-        return AdvancedSecurity.GetPrivateKeyStatus().run(this.config)
+        return ONVIFAdvancedSecurity.GetPrivateKeyStatus().run(this.config)
     }
 
     /**
@@ -806,7 +806,7 @@ export class AdvancedSecurity {
      *   
      */
     GetAllKeys() {
-        return AdvancedSecurity.GetAllKeys().run(this.config)
+        return ONVIFAdvancedSecurity.GetAllKeys().run(this.config)
     }
 
     /**
@@ -820,7 +820,7 @@ export class AdvancedSecurity {
      *   
      */
     DeleteKey() {
-        return AdvancedSecurity.DeleteKey().run(this.config)
+        return ONVIFAdvancedSecurity.DeleteKey().run(this.config)
     }
 
     /**
@@ -840,7 +840,7 @@ export class AdvancedSecurity {
      *   
      */
     CreatePKCS10CSR() {
-        return AdvancedSecurity.CreatePKCS10CSR().run(this.config)
+        return ONVIFAdvancedSecurity.CreatePKCS10CSR().run(this.config)
     }
 
     /**
@@ -863,7 +863,7 @@ export class AdvancedSecurity {
      *   
      */
     CreateSelfSignedCertificate() {
-        return AdvancedSecurity.CreateSelfSignedCertificate().run(this.config)
+        return ONVIFAdvancedSecurity.CreateSelfSignedCertificate().run(this.config)
     }
 
     /**
@@ -900,7 +900,7 @@ export class AdvancedSecurity {
      *   
      */
     UploadCertificate() {
-        return AdvancedSecurity.UploadCertificate().run(this.config)
+        return ONVIFAdvancedSecurity.UploadCertificate().run(this.config)
     }
 
     /**
@@ -911,7 +911,7 @@ export class AdvancedSecurity {
      *   
      */
     GetCertificate() {
-        return AdvancedSecurity.GetCertificate().run(this.config)
+        return ONVIFAdvancedSecurity.GetCertificate().run(this.config)
     }
 
     /**
@@ -922,7 +922,7 @@ export class AdvancedSecurity {
      *   
      */
     GetAllCertificates() {
-        return AdvancedSecurity.GetAllCertificates().run(this.config)
+        return ONVIFAdvancedSecurity.GetAllCertificates().run(this.config)
     }
 
     /**
@@ -936,7 +936,7 @@ export class AdvancedSecurity {
      *   
      */
     DeleteCertificate() {
-        return AdvancedSecurity.DeleteCertificate().run(this.config)
+        return ONVIFAdvancedSecurity.DeleteCertificate().run(this.config)
     }
 
     /**
@@ -953,7 +953,7 @@ export class AdvancedSecurity {
      *   
      */
     CreateCertificationPath() {
-        return AdvancedSecurity.CreateCertificationPath().run(this.config)
+        return ONVIFAdvancedSecurity.CreateCertificationPath().run(this.config)
     }
 
     /**
@@ -964,7 +964,7 @@ export class AdvancedSecurity {
      *   
      */
     GetCertificationPath() {
-        return AdvancedSecurity.GetCertificationPath().run(this.config)
+        return ONVIFAdvancedSecurity.GetCertificationPath().run(this.config)
     }
 
     /**
@@ -975,7 +975,7 @@ export class AdvancedSecurity {
      *   
      */
     GetAllCertificationPaths() {
-        return AdvancedSecurity.GetAllCertificationPaths().run(this.config)
+        return ONVIFAdvancedSecurity.GetAllCertificationPaths().run(this.config)
     }
 
     /**
@@ -991,7 +991,7 @@ export class AdvancedSecurity {
      *   
      */
     DeleteCertificationPath() {
-        return AdvancedSecurity.DeleteCertificationPath().run(this.config)
+        return ONVIFAdvancedSecurity.DeleteCertificationPath().run(this.config)
     }
 
     /**
@@ -1000,7 +1000,7 @@ export class AdvancedSecurity {
      *         
      */
     UploadPassphrase() {
-        return AdvancedSecurity.UploadPassphrase().run(this.config)
+        return ONVIFAdvancedSecurity.UploadPassphrase().run(this.config)
     }
 
     /**
@@ -1011,7 +1011,7 @@ export class AdvancedSecurity {
      *         
      */
     GetAllPassphrases() {
-        return AdvancedSecurity.GetAllPassphrases().run(this.config)
+        return ONVIFAdvancedSecurity.GetAllPassphrases().run(this.config)
     }
 
     /**
@@ -1020,7 +1020,7 @@ export class AdvancedSecurity {
      *         
      */
     DeletePassphrase() {
-        return AdvancedSecurity.DeletePassphrase().run(this.config)
+        return ONVIFAdvancedSecurity.DeletePassphrase().run(this.config)
     }
 
     /**
@@ -1032,7 +1032,7 @@ export class AdvancedSecurity {
      *         
      */
     UploadCRL() {
-        return AdvancedSecurity.UploadCRL().run(this.config)
+        return ONVIFAdvancedSecurity.UploadCRL().run(this.config)
     }
 
     /**
@@ -1042,7 +1042,7 @@ export class AdvancedSecurity {
      *         
      */
     GetCRL() {
-        return AdvancedSecurity.GetCRL().run(this.config)
+        return ONVIFAdvancedSecurity.GetCRL().run(this.config)
     }
 
     /**
@@ -1052,7 +1052,7 @@ export class AdvancedSecurity {
      *         
      */
     GetAllCRLs() {
-        return AdvancedSecurity.GetAllCRLs().run(this.config)
+        return ONVIFAdvancedSecurity.GetAllCRLs().run(this.config)
     }
 
     /**
@@ -1064,7 +1064,7 @@ export class AdvancedSecurity {
      *         
      */
     DeleteCRL() {
-        return AdvancedSecurity.DeleteCRL().run(this.config)
+        return ONVIFAdvancedSecurity.DeleteCRL().run(this.config)
     }
 
     /**
@@ -1078,7 +1078,7 @@ export class AdvancedSecurity {
      *         
      */
     CreateCertPathValidationPolicy() {
-        return AdvancedSecurity.CreateCertPathValidationPolicy().run(this.config)
+        return ONVIFAdvancedSecurity.CreateCertPathValidationPolicy().run(this.config)
     }
 
     /**
@@ -1088,7 +1088,7 @@ export class AdvancedSecurity {
      *         
      */
     GetCertPathValidationPolicy() {
-        return AdvancedSecurity.GetCertPathValidationPolicy().run(this.config)
+        return ONVIFAdvancedSecurity.GetCertPathValidationPolicy().run(this.config)
     }
 
     /**
@@ -1098,7 +1098,7 @@ export class AdvancedSecurity {
      *         
      */
     GetAllCertPathValidationPolicies() {
-        return AdvancedSecurity.GetAllCertPathValidationPolicies().run(this.config)
+        return ONVIFAdvancedSecurity.GetAllCertPathValidationPolicies().run(this.config)
     }
 
     /**
@@ -1110,7 +1110,7 @@ export class AdvancedSecurity {
      *         
      */
     DeleteCertPathValidationPolicy() {
-        return AdvancedSecurity.DeleteCertPathValidationPolicy().run(this.config)
+        return ONVIFAdvancedSecurity.DeleteCertPathValidationPolicy().run(this.config)
     }
 
     /**
@@ -1133,7 +1133,7 @@ export class AdvancedSecurity {
      *   
      */
     AddServerCertificateAssignment() {
-        return AdvancedSecurity.AddServerCertificateAssignment().run(this.config)
+        return ONVIFAdvancedSecurity.AddServerCertificateAssignment().run(this.config)
     }
 
     /**
@@ -1143,7 +1143,7 @@ export class AdvancedSecurity {
      *   
      */
     RemoveServerCertificateAssignment() {
-        return AdvancedSecurity.RemoveServerCertificateAssignment().run(this.config)
+        return ONVIFAdvancedSecurity.RemoveServerCertificateAssignment().run(this.config)
     }
 
     /**
@@ -1167,7 +1167,7 @@ export class AdvancedSecurity {
      *   
      */
     ReplaceServerCertificateAssignment() {
-        return AdvancedSecurity.ReplaceServerCertificateAssignment().run(this.config)
+        return ONVIFAdvancedSecurity.ReplaceServerCertificateAssignment().run(this.config)
     }
 
     /**
@@ -1180,7 +1180,7 @@ export class AdvancedSecurity {
      *   
      */
     SetEnabledTLSVersions() {
-        return AdvancedSecurity.SetEnabledTLSVersions().run(this.config)
+        return ONVIFAdvancedSecurity.SetEnabledTLSVersions().run(this.config)
     }
 
     /**
@@ -1189,7 +1189,7 @@ export class AdvancedSecurity {
      *   
      */
     GetEnabledTLSVersions() {
-        return AdvancedSecurity.GetEnabledTLSVersions().run(this.config)
+        return ONVIFAdvancedSecurity.GetEnabledTLSVersions().run(this.config)
     }
 
     /**
@@ -1200,7 +1200,7 @@ export class AdvancedSecurity {
      *   
      */
     GetAssignedServerCertificates() {
-        return AdvancedSecurity.GetAssignedServerCertificates().run(this.config)
+        return ONVIFAdvancedSecurity.GetAssignedServerCertificates().run(this.config)
     }
 
     /**
@@ -1212,7 +1212,7 @@ export class AdvancedSecurity {
      *         
      */
     SetClientAuthenticationRequired() {
-        return AdvancedSecurity.SetClientAuthenticationRequired().run(this.config)
+        return ONVIFAdvancedSecurity.SetClientAuthenticationRequired().run(this.config)
     }
 
     /**
@@ -1221,7 +1221,7 @@ export class AdvancedSecurity {
      *         
      */
     GetClientAuthenticationRequired() {
-        return AdvancedSecurity.GetClientAuthenticationRequired().run(this.config)
+        return ONVIFAdvancedSecurity.GetClientAuthenticationRequired().run(this.config)
     }
 
     /**
@@ -1232,7 +1232,7 @@ export class AdvancedSecurity {
      *         
      */
     AddCertPathValidationPolicyAssignment() {
-        return AdvancedSecurity.AddCertPathValidationPolicyAssignment().run(this.config)
+        return ONVIFAdvancedSecurity.AddCertPathValidationPolicyAssignment().run(this.config)
     }
 
     /**
@@ -1242,7 +1242,7 @@ export class AdvancedSecurity {
      *         
      */
     RemoveCertPathValidationPolicyAssignment() {
-        return AdvancedSecurity.RemoveCertPathValidationPolicyAssignment().run(this.config)
+        return ONVIFAdvancedSecurity.RemoveCertPathValidationPolicyAssignment().run(this.config)
     }
 
     /**
@@ -1253,7 +1253,7 @@ export class AdvancedSecurity {
      *         
      */
     ReplaceCertPathValidationPolicyAssignment() {
-        return AdvancedSecurity.ReplaceCertPathValidationPolicyAssignment().run(this.config)
+        return ONVIFAdvancedSecurity.ReplaceCertPathValidationPolicyAssignment().run(this.config)
     }
 
     /**
@@ -1262,7 +1262,7 @@ export class AdvancedSecurity {
      *         
      */
     GetAssignedCertPathValidationPolicies() {
-        return AdvancedSecurity.GetAssignedCertPathValidationPolicies().run(this.config)
+        return ONVIFAdvancedSecurity.GetAssignedCertPathValidationPolicies().run(this.config)
     }
 
     /**
@@ -1271,7 +1271,7 @@ export class AdvancedSecurity {
      *   
      */
     AddDot1XConfiguration() {
-        return AdvancedSecurity.AddDot1XConfiguration().run(this.config)
+        return ONVIFAdvancedSecurity.AddDot1XConfiguration().run(this.config)
     }
 
     /**
@@ -1280,7 +1280,7 @@ export class AdvancedSecurity {
      *   
      */
     GetAllDot1XConfigurations() {
-        return AdvancedSecurity.GetAllDot1XConfigurations().run(this.config)
+        return ONVIFAdvancedSecurity.GetAllDot1XConfigurations().run(this.config)
     }
 
     /**
@@ -1289,7 +1289,7 @@ export class AdvancedSecurity {
      *   
      */
     GetDot1XConfiguration() {
-        return AdvancedSecurity.GetDot1XConfiguration().run(this.config)
+        return ONVIFAdvancedSecurity.GetDot1XConfiguration().run(this.config)
     }
 
     /**
@@ -1298,7 +1298,7 @@ export class AdvancedSecurity {
      *   
      */
     DeleteDot1XConfiguration() {
-        return AdvancedSecurity.DeleteDot1XConfiguration().run(this.config)
+        return ONVIFAdvancedSecurity.DeleteDot1XConfiguration().run(this.config)
     }
 
     /**
@@ -1307,7 +1307,7 @@ export class AdvancedSecurity {
      *   
      */
     SetNetworkInterfaceDot1XConfiguration() {
-        return AdvancedSecurity.SetNetworkInterfaceDot1XConfiguration().run(this.config)
+        return ONVIFAdvancedSecurity.SetNetworkInterfaceDot1XConfiguration().run(this.config)
     }
 
     /**
@@ -1316,7 +1316,7 @@ export class AdvancedSecurity {
      *   
      */
     GetNetworkInterfaceDot1XConfiguration() {
-        return AdvancedSecurity.GetNetworkInterfaceDot1XConfiguration().run(this.config)
+        return ONVIFAdvancedSecurity.GetNetworkInterfaceDot1XConfiguration().run(this.config)
     }
 
     /**
@@ -1325,6 +1325,6 @@ export class AdvancedSecurity {
      *   
      */
     DeleteNetworkInterfaceDot1XConfiguration() {
-        return AdvancedSecurity.DeleteNetworkInterfaceDot1XConfiguration().run(this.config)
+        return ONVIFAdvancedSecurity.DeleteNetworkInterfaceDot1XConfiguration().run(this.config)
     }
 }

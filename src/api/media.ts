@@ -2,7 +2,7 @@ import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequ
 import { IDeviceConfig } from "../config";
 import { Name, ReferenceToken, VideoSourceConfiguration, VideoEncoderConfiguration, AudioSourceConfiguration, AudioEncoderConfiguration, VideoAnalyticsConfiguration, MetadataConfiguration, AudioOutputConfiguration, AudioDecoderConfiguration, StreamSetup, OSDConfiguration } from "./types";
 
-export class Media {
+export class ONVIFMedia {
     constructor(private config: IDeviceConfig) {
     }
 
@@ -830,28 +830,28 @@ export class Media {
      * Returns the capabilities of the media service. The result is returned in a typed answer.
      */
     GetServiceCapabilities() {
-        return Media.GetServiceCapabilities().run(this.config)
+        return ONVIFMedia.GetServiceCapabilities().run(this.config)
     }
 
     /**
      * This command lists all available physical video inputs of the device.
      */
     GetVideoSources() {
-        return Media.GetVideoSources().run(this.config)
+        return ONVIFMedia.GetVideoSources().run(this.config)
     }
 
     /**
      * This command lists all available physical audio inputs of the device.
      */
     GetAudioSources() {
-        return Media.GetAudioSources().run(this.config)
+        return ONVIFMedia.GetAudioSources().run(this.config)
     }
 
     /**
      * This command lists all available physical audio outputs of the device.
      */
     GetAudioOutputs() {
-        return Media.GetAudioOutputs().run(this.config)
+        return ONVIFMedia.GetAudioOutputs().run(this.config)
     }
 
     /**
@@ -860,14 +860,14 @@ export class Media {
      *   returned Profile.
      */
     CreateProfile(Name: Name, Token: ReferenceToken) {
-        return Media.CreateProfile(Name,Token).run(this.config)
+        return ONVIFMedia.CreateProfile(Name,Token).run(this.config)
     }
 
     /**
      * If the profile token is already known, a profile can be fetched through the GetProfile command.
      */
     GetProfile(ProfileToken: ReferenceToken) {
-        return Media.GetProfile(ProfileToken).run(this.config)
+        return ONVIFMedia.GetProfile(ProfileToken).run(this.config)
     }
 
     /**
@@ -877,7 +877,7 @@ export class Media {
      *   know the media profile in order to use the command.
      */
     GetProfiles() {
-        return Media.GetProfiles().run(this.config)
+        return ONVIFMedia.GetProfiles().run(this.config)
     }
 
     /**
@@ -888,7 +888,7 @@ export class Media {
      *   
      */
     AddVideoEncoderConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return Media.AddVideoEncoderConfiguration(ProfileToken,ConfigurationToken).run(this.config)
+        return ONVIFMedia.AddVideoEncoderConfiguration(ProfileToken,ConfigurationToken).run(this.config)
     }
 
     /**
@@ -896,7 +896,7 @@ export class Media {
      *   media profile does not contain a VideoEncoderConfiguration, the operation has no effect. The removal shall be persistent.
      */
     RemoveVideoEncoderConfiguration(ProfileToken: ReferenceToken) {
-        return Media.RemoveVideoEncoderConfiguration(ProfileToken).run(this.config)
+        return ONVIFMedia.RemoveVideoEncoderConfiguration(ProfileToken).run(this.config)
     }
 
     /**
@@ -904,7 +904,7 @@ export class Media {
      *   configuration exists in the media profile, it will be replaced. The change shall be persistent.
      */
     AddVideoSourceConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return Media.AddVideoSourceConfiguration(ProfileToken,ConfigurationToken).run(this.config)
+        return ONVIFMedia.AddVideoSourceConfiguration(ProfileToken,ConfigurationToken).run(this.config)
     }
 
     /**
@@ -913,7 +913,7 @@ export class Media {
      *   VideoEncoderConfiguration from the media profile.
      */
     RemoveVideoSourceConfiguration(ProfileToken: ReferenceToken) {
-        return Media.RemoveVideoSourceConfiguration(ProfileToken).run(this.config)
+        return ONVIFMedia.RemoveVideoSourceConfiguration(ProfileToken).run(this.config)
     }
 
     /**
@@ -924,7 +924,7 @@ export class Media {
      *   
      */
     AddAudioEncoderConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return Media.AddAudioEncoderConfiguration(ProfileToken,ConfigurationToken).run(this.config)
+        return ONVIFMedia.AddAudioEncoderConfiguration(ProfileToken,ConfigurationToken).run(this.config)
     }
 
     /**
@@ -933,7 +933,7 @@ export class Media {
      *   The removal shall be persistent.
      */
     RemoveAudioEncoderConfiguration(ProfileToken: ReferenceToken) {
-        return Media.RemoveAudioEncoderConfiguration(ProfileToken).run(this.config)
+        return ONVIFMedia.RemoveAudioEncoderConfiguration(ProfileToken).run(this.config)
     }
 
     /**
@@ -941,7 +941,7 @@ export class Media {
      *   configuration exists in the media profile, it will be replaced. The change shall be persistent.
      */
     AddAudioSourceConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return Media.AddAudioSourceConfiguration(ProfileToken,ConfigurationToken).run(this.config)
+        return ONVIFMedia.AddAudioSourceConfiguration(ProfileToken,ConfigurationToken).run(this.config)
     }
 
     /**
@@ -951,7 +951,7 @@ export class Media {
      *   AudioEncoderConfiguration from the media profile.
      */
     RemoveAudioSourceConfiguration(ProfileToken: ReferenceToken) {
-        return Media.RemoveAudioSourceConfiguration(ProfileToken).run(this.config)
+        return ONVIFMedia.RemoveAudioSourceConfiguration(ProfileToken).run(this.config)
     }
 
     /**
@@ -961,7 +961,7 @@ export class Media {
      *   PTZ movement.
      */
     AddPTZConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return Media.AddPTZConfiguration(ProfileToken,ConfigurationToken).run(this.config)
+        return ONVIFMedia.AddPTZConfiguration(ProfileToken,ConfigurationToken).run(this.config)
     }
 
     /**
@@ -969,7 +969,7 @@ export class Media {
      *   does not contain a PTZConfiguration, the operation has no effect. The removal shall be persistent.
      */
     RemovePTZConfiguration(ProfileToken: ReferenceToken) {
-        return Media.RemovePTZConfiguration(ProfileToken).run(this.config)
+        return ONVIFMedia.RemovePTZConfiguration(ProfileToken).run(this.config)
     }
 
     /**
@@ -979,7 +979,7 @@ export class Media {
      *   configuration before a video source configuration.
      */
     AddVideoAnalyticsConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return Media.AddVideoAnalyticsConfiguration(ProfileToken,ConfigurationToken).run(this.config)
+        return ONVIFMedia.AddVideoAnalyticsConfiguration(ProfileToken,ConfigurationToken).run(this.config)
     }
 
     /**
@@ -987,105 +987,105 @@ export class Media {
      *   The removal shall be persistent.
      */
     RemoveVideoAnalyticsConfiguration(ProfileToken: ReferenceToken) {
-        return Media.RemoveVideoAnalyticsConfiguration(ProfileToken).run(this.config)
+        return ONVIFMedia.RemoveVideoAnalyticsConfiguration(ProfileToken).run(this.config)
     }
 
     /**
      * This operation adds a Metadata configuration to an existing media profile. If a configuration exists in the media profile, it will be replaced. The change shall be persistent. Adding a MetadataConfiguration to a Profile means that streams using that profile contain metadata. Metadata can consist of events, PTZ status, and/or video analytics data.
      */
     AddMetadataConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return Media.AddMetadataConfiguration(ProfileToken,ConfigurationToken).run(this.config)
+        return ONVIFMedia.AddMetadataConfiguration(ProfileToken,ConfigurationToken).run(this.config)
     }
 
     /**
      * This operation removes a MetadataConfiguration from an existing media profile. If the media profile does not contain a MetadataConfiguration, the operation has no effect. The removal shall be persistent.
      */
     RemoveMetadataConfiguration(ProfileToken: ReferenceToken) {
-        return Media.RemoveMetadataConfiguration(ProfileToken).run(this.config)
+        return ONVIFMedia.RemoveMetadataConfiguration(ProfileToken).run(this.config)
     }
 
     /**
      * This operation adds an AudioOutputConfiguration to an existing media profile. If a configuration exists in the media profile, it will be replaced. The change shall be persistent.
      */
     AddAudioOutputConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return Media.AddAudioOutputConfiguration(ProfileToken,ConfigurationToken).run(this.config)
+        return ONVIFMedia.AddAudioOutputConfiguration(ProfileToken,ConfigurationToken).run(this.config)
     }
 
     /**
      * This operation removes an AudioOutputConfiguration from an existing media profile. If the media profile does not contain an AudioOutputConfiguration, the operation has no effect. The removal shall be persistent.
      */
     RemoveAudioOutputConfiguration(ProfileToken: ReferenceToken) {
-        return Media.RemoveAudioOutputConfiguration(ProfileToken).run(this.config)
+        return ONVIFMedia.RemoveAudioOutputConfiguration(ProfileToken).run(this.config)
     }
 
     /**
      * This operation adds an AudioDecoderConfiguration to an existing media profile. If a configuration exists in the media profile, it shall be replaced. The change shall be persistent.
      */
     AddAudioDecoderConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return Media.AddAudioDecoderConfiguration(ProfileToken,ConfigurationToken).run(this.config)
+        return ONVIFMedia.AddAudioDecoderConfiguration(ProfileToken,ConfigurationToken).run(this.config)
     }
 
     /**
      * This operation removes an AudioDecoderConfiguration from an existing media profile. If the media profile does not contain an AudioDecoderConfiguration, the operation has no effect. The removal shall be persistent.
      */
     RemoveAudioDecoderConfiguration(ProfileToken: ReferenceToken) {
-        return Media.RemoveAudioDecoderConfiguration(ProfileToken).run(this.config)
+        return ONVIFMedia.RemoveAudioDecoderConfiguration(ProfileToken).run(this.config)
     }
 
     /**
      * This operation deletes a profile. This change shall always be persistent. Deletion of a profile is only possible for non-fixed profiles
      */
     DeleteProfile(ProfileToken: ReferenceToken) {
-        return Media.DeleteProfile(ProfileToken).run(this.config)
+        return ONVIFMedia.DeleteProfile(ProfileToken).run(this.config)
     }
 
     /**
      * This operation lists all existing video source configurations for a device. The client need not know anything about the video source configurations in order to use the command.
      */
     GetVideoSourceConfigurations() {
-        return Media.GetVideoSourceConfigurations().run(this.config)
+        return ONVIFMedia.GetVideoSourceConfigurations().run(this.config)
     }
 
     /**
      * This operation lists all existing video encoder configurations of a device. This command lists all configured video encoder configurations in a device. The client need not know anything apriori about the video encoder configurations in order to use the command.
      */
     GetVideoEncoderConfigurations() {
-        return Media.GetVideoEncoderConfigurations().run(this.config)
+        return ONVIFMedia.GetVideoEncoderConfigurations().run(this.config)
     }
 
     /**
      * This operation lists all existing audio source configurations of a device. This command lists all audio source configurations in a device. The client need not know anything apriori about the audio source configurations in order to use the command.
      */
     GetAudioSourceConfigurations() {
-        return Media.GetAudioSourceConfigurations().run(this.config)
+        return ONVIFMedia.GetAudioSourceConfigurations().run(this.config)
     }
 
     /**
      * This operation lists all existing device audio encoder configurations. The client need not know anything apriori about the audio encoder configurations in order to use the command.
      */
     GetAudioEncoderConfigurations() {
-        return Media.GetAudioEncoderConfigurations().run(this.config)
+        return ONVIFMedia.GetAudioEncoderConfigurations().run(this.config)
     }
 
     /**
      * This operation lists all video analytics configurations of a device. This command lists all configured video analytics in a device. The client need not know anything apriori about the video analytics in order to use the command.
      */
     GetVideoAnalyticsConfigurations() {
-        return Media.GetVideoAnalyticsConfigurations().run(this.config)
+        return ONVIFMedia.GetVideoAnalyticsConfigurations().run(this.config)
     }
 
     /**
      * This operation lists all existing metadata configurations. The client need not know anything apriori about the metadata in order to use the command.
      */
     GetMetadataConfigurations() {
-        return Media.GetMetadataConfigurations().run(this.config)
+        return ONVIFMedia.GetMetadataConfigurations().run(this.config)
     }
 
     /**
      * This command lists all existing AudioOutputConfigurations of a device. The NVC need not know anything apriori about the audio configurations to use this command.
      */
     GetAudioOutputConfigurations() {
-        return Media.GetAudioOutputConfigurations().run(this.config)
+        return ONVIFMedia.GetAudioOutputConfigurations().run(this.config)
     }
 
     /**
@@ -1093,70 +1093,70 @@ export class Media {
      *   use this command.
      */
     GetAudioDecoderConfigurations() {
-        return Media.GetAudioDecoderConfigurations().run(this.config)
+        return ONVIFMedia.GetAudioDecoderConfigurations().run(this.config)
     }
 
     /**
      * If the video source configuration token is already known, the video source configuration can be fetched through the GetVideoSourceConfiguration command.
      */
     GetVideoSourceConfiguration(ConfigurationToken: ReferenceToken) {
-        return Media.GetVideoSourceConfiguration(ConfigurationToken).run(this.config)
+        return ONVIFMedia.GetVideoSourceConfiguration(ConfigurationToken).run(this.config)
     }
 
     /**
      * If the video encoder configuration token is already known, the encoder configuration can be fetched through the GetVideoEncoderConfiguration command.
      */
     GetVideoEncoderConfiguration(ConfigurationToken: ReferenceToken) {
-        return Media.GetVideoEncoderConfiguration(ConfigurationToken).run(this.config)
+        return ONVIFMedia.GetVideoEncoderConfiguration(ConfigurationToken).run(this.config)
     }
 
     /**
      * The GetAudioSourceConfiguration command fetches the audio source configurations if the audio source configuration token is already known. An
      */
     GetAudioSourceConfiguration(ConfigurationToken: ReferenceToken) {
-        return Media.GetAudioSourceConfiguration(ConfigurationToken).run(this.config)
+        return ONVIFMedia.GetAudioSourceConfiguration(ConfigurationToken).run(this.config)
     }
 
     /**
      * The GetAudioEncoderConfiguration command fetches the encoder configuration if the audio encoder configuration token is known.
      */
     GetAudioEncoderConfiguration(ConfigurationToken: ReferenceToken) {
-        return Media.GetAudioEncoderConfiguration(ConfigurationToken).run(this.config)
+        return ONVIFMedia.GetAudioEncoderConfiguration(ConfigurationToken).run(this.config)
     }
 
     /**
      * The GetVideoAnalyticsConfiguration command fetches the video analytics configuration if the video analytics token is known.
      */
     GetVideoAnalyticsConfiguration(ConfigurationToken: ReferenceToken) {
-        return Media.GetVideoAnalyticsConfiguration(ConfigurationToken).run(this.config)
+        return ONVIFMedia.GetVideoAnalyticsConfiguration(ConfigurationToken).run(this.config)
     }
 
     /**
      * The GetMetadataConfiguration command fetches the metadata configuration if the metadata token is known.
      */
     GetMetadataConfiguration(ConfigurationToken: ReferenceToken) {
-        return Media.GetMetadataConfiguration(ConfigurationToken).run(this.config)
+        return ONVIFMedia.GetMetadataConfiguration(ConfigurationToken).run(this.config)
     }
 
     /**
      * If the audio output configuration token is already known, the output configuration can be fetched through the GetAudioOutputConfiguration command.
      */
     GetAudioOutputConfiguration(ConfigurationToken: ReferenceToken) {
-        return Media.GetAudioOutputConfiguration(ConfigurationToken).run(this.config)
+        return ONVIFMedia.GetAudioOutputConfiguration(ConfigurationToken).run(this.config)
     }
 
     /**
      * If the audio decoder configuration token is already known, the decoder configuration can be fetched through the GetAudioDecoderConfiguration command.
      */
     GetAudioDecoderConfiguration(ConfigurationToken: ReferenceToken) {
-        return Media.GetAudioDecoderConfiguration(ConfigurationToken).run(this.config)
+        return ONVIFMedia.GetAudioDecoderConfiguration(ConfigurationToken).run(this.config)
     }
 
     /**
      * This operation lists all the video encoder configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddVideoEncoderConfiguration command on the media profile. The result will vary depending on the capabilities, configurations and settings in the device.
      */
     GetCompatibleVideoEncoderConfigurations(ProfileToken: ReferenceToken) {
-        return Media.GetCompatibleVideoEncoderConfigurations(ProfileToken).run(this.config)
+        return ONVIFMedia.GetCompatibleVideoEncoderConfigurations(ProfileToken).run(this.config)
     }
 
     /**
@@ -1166,35 +1166,35 @@ export class Media {
      *   will vary depending on the capabilities, configurations and settings in the device.
      */
     GetCompatibleVideoSourceConfigurations(ProfileToken: ReferenceToken) {
-        return Media.GetCompatibleVideoSourceConfigurations(ProfileToken).run(this.config)
+        return ONVIFMedia.GetCompatibleVideoSourceConfigurations(ProfileToken).run(this.config)
     }
 
     /**
      * This operation requests all audio encoder configurations of a device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddAudioSourceConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
      */
     GetCompatibleAudioEncoderConfigurations(ProfileToken: ReferenceToken) {
-        return Media.GetCompatibleAudioEncoderConfigurations(ProfileToken).run(this.config)
+        return ONVIFMedia.GetCompatibleAudioEncoderConfigurations(ProfileToken).run(this.config)
     }
 
     /**
      * This operation requests all audio source configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddAudioEncoderConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
      */
     GetCompatibleAudioSourceConfigurations(ProfileToken: ReferenceToken) {
-        return Media.GetCompatibleAudioSourceConfigurations(ProfileToken).run(this.config)
+        return ONVIFMedia.GetCompatibleAudioSourceConfigurations(ProfileToken).run(this.config)
     }
 
     /**
      * This operation requests all video analytic configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddVideoAnalyticsConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
      */
     GetCompatibleVideoAnalyticsConfigurations(ProfileToken: ReferenceToken) {
-        return Media.GetCompatibleVideoAnalyticsConfigurations(ProfileToken).run(this.config)
+        return ONVIFMedia.GetCompatibleVideoAnalyticsConfigurations(ProfileToken).run(this.config)
     }
 
     /**
      * This operation requests all the metadata configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddMetadataConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
      */
     GetCompatibleMetadataConfigurations(ProfileToken: ReferenceToken) {
-        return Media.GetCompatibleMetadataConfigurations(ProfileToken).run(this.config)
+        return ONVIFMedia.GetCompatibleMetadataConfigurations(ProfileToken).run(this.config)
     }
 
     /**
@@ -1202,28 +1202,28 @@ export class Media {
      *   AddAudioOutputConfiguration command.
      */
     GetCompatibleAudioOutputConfigurations(ProfileToken: ReferenceToken) {
-        return Media.GetCompatibleAudioOutputConfigurations(ProfileToken).run(this.config)
+        return ONVIFMedia.GetCompatibleAudioOutputConfigurations(ProfileToken).run(this.config)
     }
 
     /**
      * This operation lists all the audio decoder configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddAudioDecoderConfiguration command on the media profile.
      */
     GetCompatibleAudioDecoderConfigurations(ProfileToken: ReferenceToken) {
-        return Media.GetCompatibleAudioDecoderConfigurations(ProfileToken).run(this.config)
+        return ONVIFMedia.GetCompatibleAudioDecoderConfigurations(ProfileToken).run(this.config)
     }
 
     /**
      * This operation modifies a video source configuration. The ForcePersistence flag indicates if the changes shall remain after reboot of the device. Running streams using this configuration may be immediately updated according to the new settings. The changes are not guaranteed to take effect unless the client requests a new stream URI and restarts any affected stream. NVC methods for changing a running stream are out of scope for this specification.
      */
     SetVideoSourceConfiguration(Configuration: VideoSourceConfiguration, ForcePersistence: boolean) {
-        return Media.SetVideoSourceConfiguration(Configuration,ForcePersistence).run(this.config)
+        return ONVIFMedia.SetVideoSourceConfiguration(Configuration,ForcePersistence).run(this.config)
     }
 
     /**
      * This operation modifies a video encoder configuration. The ForcePersistence flag indicates if the changes shall remain after reboot of the device. Changes in the Multicast settings shall always be persistent. Running streams using this configuration may be immediately updated according to the new settings. The changes are not guaranteed to take effect unless the client requests a new stream URI and restarts any affected stream. NVC methods for changing a running stream are out of scope for this specification. SessionTimeout is provided as a hint for keeping rtsp session by a device. If necessary the device may adapt parameter values for SessionTimeout elements without returning an error. For the time between keep alive calls the client shall adhere to the timeout value signaled via RTSP.
      */
     SetVideoEncoderConfiguration(Configuration: VideoEncoderConfiguration, ForcePersistence: boolean) {
-        return Media.SetVideoEncoderConfiguration(Configuration,ForcePersistence).run(this.config)
+        return ONVIFMedia.SetVideoEncoderConfiguration(Configuration,ForcePersistence).run(this.config)
     }
 
     /**
@@ -1234,7 +1234,7 @@ export class Media {
      *   NVC methods for changing a running stream are out of scope for this specification.
      */
     SetAudioSourceConfiguration(Configuration: AudioSourceConfiguration, ForcePersistence: boolean) {
-        return Media.SetAudioSourceConfiguration(Configuration,ForcePersistence).run(this.config)
+        return ONVIFMedia.SetAudioSourceConfiguration(Configuration,ForcePersistence).run(this.config)
     }
 
     /**
@@ -1245,7 +1245,7 @@ export class Media {
      *   running stream are out of scope for this specification.
      */
     SetAudioEncoderConfiguration(Configuration: AudioEncoderConfiguration, ForcePersistence: boolean) {
-        return Media.SetAudioEncoderConfiguration(Configuration,ForcePersistence).run(this.config)
+        return ONVIFMedia.SetAudioEncoderConfiguration(Configuration,ForcePersistence).run(this.config)
     }
 
     /**
@@ -1257,7 +1257,7 @@ export class Media {
      *   video analytics configuration token.
      */
     SetVideoAnalyticsConfiguration(Configuration: VideoAnalyticsConfiguration, ForcePersistence: boolean) {
-        return Media.SetVideoAnalyticsConfiguration(Configuration,ForcePersistence).run(this.config)
+        return ONVIFMedia.SetVideoAnalyticsConfiguration(Configuration,ForcePersistence).run(this.config)
     }
 
     /**
@@ -1269,7 +1269,7 @@ export class Media {
      *   running stream are out of scope for this specification.
      */
     SetMetadataConfiguration(Configuration: MetadataConfiguration, ForcePersistence: boolean) {
-        return Media.SetMetadataConfiguration(Configuration,ForcePersistence).run(this.config)
+        return ONVIFMedia.SetMetadataConfiguration(Configuration,ForcePersistence).run(this.config)
     }
 
     /**
@@ -1277,7 +1277,7 @@ export class Media {
      *   the changes shall remain after reboot of the device.
      */
     SetAudioOutputConfiguration(Configuration: AudioOutputConfiguration, ForcePersistence: boolean) {
-        return Media.SetAudioOutputConfiguration(Configuration,ForcePersistence).run(this.config)
+        return ONVIFMedia.SetAudioOutputConfiguration(Configuration,ForcePersistence).run(this.config)
     }
 
     /**
@@ -1285,7 +1285,7 @@ export class Media {
      *   the changes shall remain after reboot of the device.
      */
     SetAudioDecoderConfiguration(Configuration: AudioDecoderConfiguration, ForcePersistence: boolean) {
-        return Media.SetAudioDecoderConfiguration(Configuration,ForcePersistence).run(this.config)
+        return ONVIFMedia.SetAudioDecoderConfiguration(Configuration,ForcePersistence).run(this.config)
     }
 
     /**
@@ -1295,7 +1295,7 @@ export class Media {
      *   that media profile.
      */
     GetVideoSourceConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return Media.GetVideoSourceConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
+        return ONVIFMedia.GetVideoSourceConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
     /**
@@ -1309,7 +1309,7 @@ export class Media {
      *   
      */
     GetVideoEncoderConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return Media.GetVideoEncoderConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
+        return ONVIFMedia.GetVideoEncoderConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
     /**
@@ -1319,7 +1319,7 @@ export class Media {
      *   that media profile.
      */
     GetAudioSourceConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return Media.GetAudioSourceConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
+        return ONVIFMedia.GetAudioSourceConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
     /**
@@ -1327,21 +1327,21 @@ export class Media {
      *   reconfigured.
      */
     GetAudioEncoderConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return Media.GetAudioEncoderConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
+        return ONVIFMedia.GetAudioEncoderConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
     /**
      * This operation returns the available options (supported values and ranges for metadata configuration parameters) for changing the metadata configuration.
      */
     GetMetadataConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return Media.GetMetadataConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
+        return ONVIFMedia.GetMetadataConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
     /**
      * This operation returns the available options (supported values and ranges for audio output configuration parameters) for configuring an audio output.
      */
     GetAudioOutputConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return Media.GetAudioOutputConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
+        return ONVIFMedia.GetAudioOutputConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
     /**
@@ -1349,7 +1349,7 @@ export class Media {
      *   device.
      */
     GetAudioDecoderConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
-        return Media.GetAudioDecoderConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
+        return ONVIFMedia.GetAudioDecoderConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
     /**
@@ -1358,7 +1358,7 @@ export class Media {
      *   Configuration.
      */
     GetGuaranteedNumberOfVideoEncoderInstances(ConfigurationToken: ReferenceToken) {
-        return Media.GetGuaranteedNumberOfVideoEncoderInstances(ConfigurationToken).run(this.config)
+        return ONVIFMedia.GetGuaranteedNumberOfVideoEncoderInstances(ConfigurationToken).run(this.config)
     }
 
     /**
@@ -1379,7 +1379,7 @@ export class Media {
      *   128 octets.
      */
     GetStreamUri(StreamSetup: StreamSetup, ProfileToken: ReferenceToken) {
-        return Media.GetStreamUri(StreamSetup,ProfileToken).run(this.config)
+        return ONVIFMedia.GetStreamUri(StreamSetup,ProfileToken).run(this.config)
     }
 
     /**
@@ -1391,14 +1391,14 @@ export class Media {
      *   respectively.
      */
     StartMulticastStreaming(ProfileToken: ReferenceToken) {
-        return Media.StartMulticastStreaming(ProfileToken).run(this.config)
+        return ONVIFMedia.StartMulticastStreaming(ProfileToken).run(this.config)
     }
 
     /**
      * This command stop multicast streaming using a specified media profile of a device
      */
     StopMulticastStreaming(ProfileToken: ReferenceToken) {
-        return Media.StopMulticastStreaming(ProfileToken).run(this.config)
+        return ONVIFMedia.StopMulticastStreaming(ProfileToken).run(this.config)
     }
 
     /**
@@ -1415,7 +1415,7 @@ export class Media {
      *   the PTZ position shall be repeated within the metadata stream.
      */
     SetSynchronizationPoint(ProfileToken: ReferenceToken) {
-        return Media.SetSynchronizationPoint(ProfileToken).run(this.config)
+        return ONVIFMedia.SetSynchronizationPoint(ProfileToken).run(this.config)
     }
 
     /**
@@ -1429,62 +1429,62 @@ export class Media {
      *   image will be updated automatically and independent from calls to GetSnapshotUri.
      */
     GetSnapshotUri(ProfileToken: ReferenceToken) {
-        return Media.GetSnapshotUri(ProfileToken).run(this.config)
+        return ONVIFMedia.GetSnapshotUri(ProfileToken).run(this.config)
     }
 
     /**
      * A device returns the information for current video source mode and settable video source modes of specified video source. A device that indicates a capability of  VideoSourceModes shall support this command.
      */
     GetVideoSourceModes(VideoSourceToken: ReferenceToken) {
-        return Media.GetVideoSourceModes(VideoSourceToken).run(this.config)
+        return ONVIFMedia.GetVideoSourceModes(VideoSourceToken).run(this.config)
     }
 
     /**
      * SetVideoSourceMode changes the media profile structure relating to video source for the specified video source mode. A device that indicates a capability of VideoSourceModes shall support this command. The behavior after changing the mode is not defined in this specification.
      */
     SetVideoSourceMode(VideoSourceToken: ReferenceToken, VideoSourceModeToken: ReferenceToken) {
-        return Media.SetVideoSourceMode(VideoSourceToken,VideoSourceModeToken).run(this.config)
+        return ONVIFMedia.SetVideoSourceMode(VideoSourceToken,VideoSourceModeToken).run(this.config)
     }
 
     /**
      * Get the OSDs.
      */
     GetOSDs(ConfigurationToken: ReferenceToken) {
-        return Media.GetOSDs(ConfigurationToken).run(this.config)
+        return ONVIFMedia.GetOSDs(ConfigurationToken).run(this.config)
     }
 
     /**
      * Get the OSD.
      */
     GetOSD(OSDToken: ReferenceToken) {
-        return Media.GetOSD(OSDToken).run(this.config)
+        return ONVIFMedia.GetOSD(OSDToken).run(this.config)
     }
 
     /**
      * Get the OSD Options.
      */
     GetOSDOptions(ConfigurationToken: ReferenceToken) {
-        return Media.GetOSDOptions(ConfigurationToken).run(this.config)
+        return ONVIFMedia.GetOSDOptions(ConfigurationToken).run(this.config)
     }
 
     /**
      * Set the OSD
      */
     SetOSD(OSD: OSDConfiguration) {
-        return Media.SetOSD(OSD).run(this.config)
+        return ONVIFMedia.SetOSD(OSD).run(this.config)
     }
 
     /**
      * Create the OSD.
      */
     CreateOSD(OSD: OSDConfiguration) {
-        return Media.CreateOSD(OSD).run(this.config)
+        return ONVIFMedia.CreateOSD(OSD).run(this.config)
     }
 
     /**
      * Delete the OSD.
      */
     DeleteOSD(OSDToken: ReferenceToken) {
-        return Media.DeleteOSD(OSDToken).run(this.config)
+        return ONVIFMedia.DeleteOSD(OSDToken).run(this.config)
     }
 }

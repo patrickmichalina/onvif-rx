@@ -28,7 +28,7 @@ Representation of a physical video outputs.
 
 **● AspectRatio**: *`number`*
 
-*Defined in [api/types.ts:841](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L841)*
+*Defined in [api/types.ts:841](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L841)*
 
 ___
 <a id="extension"></a>
@@ -37,7 +37,7 @@ ___
 
 **● Extension**: *[VideoOutputExtension](_api_types_.videooutputextension.md)*
 
-*Defined in [api/types.ts:842](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L842)*
+*Defined in [api/types.ts:842](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L842)*
 
 ___
 <a id="layout"></a>
@@ -46,7 +46,7 @@ ___
 
 **● Layout**: *[Layout](_api_types_.layout.md)*
 
-*Defined in [api/types.ts:838](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L838)*
+*Defined in [api/types.ts:838](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L838)*
 
 ___
 <a id="refreshrate"></a>
@@ -55,7 +55,7 @@ ___
 
 **● RefreshRate**: *`number`*
 
-*Defined in [api/types.ts:840](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L840)*
+*Defined in [api/types.ts:840](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L840)*
 
 ___
 <a id="resolution"></a>
@@ -64,7 +64,7 @@ ___
 
 **● Resolution**: *[VideoResolution](_api_types_.videoresolution.md)*
 
-*Defined in [api/types.ts:839](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L839)*
+*Defined in [api/types.ts:839](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L839)*
 
 ___
 

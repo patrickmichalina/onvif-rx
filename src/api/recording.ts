@@ -2,7 +2,7 @@ import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequ
 import { IDeviceConfig } from "../config";
 import { RecordingConfiguration, RecordingReference, TrackConfiguration, TrackReference, RecordingJobConfiguration, RecordingJobReference, RecordingJobMode, SearchScope, StorageReferencePath, ReferenceToken } from "./types";
 
-export class Recording {
+export class ONVIFRecording {
     constructor(private config: IDeviceConfig) {
     }
 
@@ -248,7 +248,7 @@ export class Recording {
      * Returns the capabilities of the recording service. The result is returned in a typed answer.
      */
     GetServiceCapabilities() {
-        return Recording.GetServiceCapabilities().run(this.config)
+        return ONVIFRecording.GetServiceCapabilities().run(this.config)
     }
 
     /**
@@ -270,7 +270,7 @@ export class Recording {
      *   
      */
     CreateRecording(RecordingConfiguration: RecordingConfiguration) {
-        return Recording.CreateRecording(RecordingConfiguration).run(this.config)
+        return ONVIFRecording.CreateRecording(RecordingConfiguration).run(this.config)
     }
 
     /**
@@ -284,7 +284,7 @@ export class Recording {
      *   
      */
     DeleteRecording(RecordingToken: RecordingReference) {
-        return Recording.DeleteRecording(RecordingToken).run(this.config)
+        return ONVIFRecording.DeleteRecording(RecordingToken).run(this.config)
     }
 
     /**
@@ -292,28 +292,28 @@ export class Recording {
      *   shall include a list of all the tracks for each recording.
      */
     GetRecordings() {
-        return Recording.GetRecordings().run(this.config)
+        return ONVIFRecording.GetRecordings().run(this.config)
     }
 
     /**
      * SetRecordingConfiguration shall change the configuration of a recording.
      */
     SetRecordingConfiguration(RecordingToken: RecordingReference, RecordingConfiguration: RecordingConfiguration) {
-        return Recording.SetRecordingConfiguration(RecordingToken,RecordingConfiguration).run(this.config)
+        return ONVIFRecording.SetRecordingConfiguration(RecordingToken,RecordingConfiguration).run(this.config)
     }
 
     /**
      * GetRecordingConfiguration shall retrieve the recording configuration for a recording.
      */
     GetRecordingConfiguration(RecordingToken: RecordingReference) {
-        return Recording.GetRecordingConfiguration(RecordingToken).run(this.config)
+        return ONVIFRecording.GetRecordingConfiguration(RecordingToken).run(this.config)
     }
 
     /**
      * GetRecordingOptions returns information for a recording identified by the RecordingToken. The information includes the number of additonal tracks as well as recording jobs that can be configured.
      */
     GetRecordingOptions(RecordingToken: RecordingReference) {
-        return Recording.GetRecordingOptions(RecordingToken).run(this.config)
+        return ONVIFRecording.GetRecordingOptions(RecordingToken).run(this.config)
     }
 
     /**
@@ -324,7 +324,7 @@ export class Recording {
      *   
      */
     CreateTrack(RecordingToken: RecordingReference, TrackConfiguration: TrackConfiguration) {
-        return Recording.CreateTrack(RecordingToken,TrackConfiguration).run(this.config)
+        return ONVIFRecording.CreateTrack(RecordingToken,TrackConfiguration).run(this.config)
     }
 
     /**
@@ -333,21 +333,21 @@ export class Recording {
      *   TRUE.
      */
     DeleteTrack(RecordingToken: RecordingReference, TrackToken: TrackReference) {
-        return Recording.DeleteTrack(RecordingToken,TrackToken).run(this.config)
+        return ONVIFRecording.DeleteTrack(RecordingToken,TrackToken).run(this.config)
     }
 
     /**
      * GetTrackConfiguration shall retrieve the configuration for a specific track.
      */
     GetTrackConfiguration(RecordingToken: RecordingReference, TrackToken: TrackReference) {
-        return Recording.GetTrackConfiguration(RecordingToken,TrackToken).run(this.config)
+        return ONVIFRecording.GetTrackConfiguration(RecordingToken,TrackToken).run(this.config)
     }
 
     /**
      * SetTrackConfiguration shall change the configuration of a track.
      */
     SetTrackConfiguration(RecordingToken: RecordingReference, TrackToken: TrackReference, TrackConfiguration: TrackConfiguration) {
-        return Recording.SetTrackConfiguration(RecordingToken,TrackToken,TrackConfiguration).run(this.config)
+        return ONVIFRecording.SetTrackConfiguration(RecordingToken,TrackToken,TrackConfiguration).run(this.config)
     }
 
     /**
@@ -359,7 +359,7 @@ export class Recording {
      *   
      */
     CreateRecordingJob(JobConfiguration: RecordingJobConfiguration) {
-        return Recording.CreateRecordingJob(JobConfiguration).run(this.config)
+        return ONVIFRecording.CreateRecordingJob(JobConfiguration).run(this.config)
     }
 
     /**
@@ -369,14 +369,14 @@ export class Recording {
      *   other recording job.
      */
     DeleteRecordingJob(JobToken: RecordingJobReference) {
-        return Recording.DeleteRecordingJob(JobToken).run(this.config)
+        return ONVIFRecording.DeleteRecordingJob(JobToken).run(this.config)
     }
 
     /**
      * GetRecordingJobs shall return a list of all the recording jobs in the device.
      */
     GetRecordingJobs() {
-        return Recording.GetRecordingJobs().run(this.config)
+        return ONVIFRecording.GetRecordingJobs().run(this.config)
     }
 
     /**
@@ -386,14 +386,14 @@ export class Recording {
      *   
      */
     SetRecordingJobConfiguration(JobToken: RecordingJobReference, JobConfiguration: RecordingJobConfiguration) {
-        return Recording.SetRecordingJobConfiguration(JobToken,JobConfiguration).run(this.config)
+        return ONVIFRecording.SetRecordingJobConfiguration(JobToken,JobConfiguration).run(this.config)
     }
 
     /**
      * GetRecordingJobConfiguration shall return the current configuration for a recording job.
      */
     GetRecordingJobConfiguration(JobToken: RecordingJobReference) {
-        return Recording.GetRecordingJobConfiguration(JobToken).run(this.config)
+        return ONVIFRecording.GetRecordingJobConfiguration(JobToken).run(this.config)
     }
 
     /**
@@ -402,7 +402,7 @@ export class Recording {
      *   mode.
      */
     SetRecordingJobMode(JobToken: RecordingJobReference, Mode: RecordingJobMode) {
-        return Recording.SetRecordingJobMode(JobToken,Mode).run(this.config)
+        return ONVIFRecording.SetRecordingJobMode(JobToken,Mode).run(this.config)
     }
 
     /**
@@ -410,7 +410,7 @@ export class Recording {
      *   and state for each track of the recording job.
      */
     GetRecordingJobState(JobToken: RecordingJobReference) {
-        return Recording.GetRecordingJobState(JobToken).run(this.config)
+        return ONVIFRecording.GetRecordingJobState(JobToken).run(this.config)
     }
 
     /**
@@ -419,7 +419,7 @@ export class Recording {
      *   
      */
     ExportRecordedData(SearchScope: SearchScope, FileFormat: string, StorageDestination: StorageReferencePath, StartPoint: string, EndPoint: string) {
-        return Recording.ExportRecordedData(SearchScope,FileFormat,StorageDestination,StartPoint,EndPoint).run(this.config)
+        return ONVIFRecording.ExportRecordedData(SearchScope,FileFormat,StorageDestination,StartPoint,EndPoint).run(this.config)
     }
 
     /**
@@ -428,7 +428,7 @@ export class Recording {
      *   
      */
     StopExportRecordedData(OperationToken: ReferenceToken) {
-        return Recording.StopExportRecordedData(OperationToken).run(this.config)
+        return ONVIFRecording.StopExportRecordedData(OperationToken).run(this.config)
     }
 
     /**
@@ -437,6 +437,6 @@ export class Recording {
      *   
      */
     GetExportRecordedDataState(OperationToken: ReferenceToken) {
-        return Recording.GetExportRecordedDataState(OperationToken).run(this.config)
+        return ONVIFRecording.GetExportRecordedDataState(OperationToken).run(this.config)
     }
 }

@@ -1,79 +1,79 @@
-[onvif-rx](../README.md) > ["api/ptz"](../modules/_api_ptz_.md) > [PTZ](../classes/_api_ptz_.ptz.md)
+[onvif-rx](../README.md) > ["api/ptz"](../modules/_api_ptz_.md) > [ONVIFPTZ](../classes/_api_ptz_.onvifptz.md)
 
-# Class: PTZ
+# Class: ONVIFPTZ
 
 ## Hierarchy
 
-**PTZ**
+**ONVIFPTZ**
 
 ## Index
 
 ### Constructors
 
-* [constructor](_api_ptz_.ptz.md#constructor)
+* [constructor](_api_ptz_.onvifptz.md#constructor)
 
 ### Properties
 
-* [config](_api_ptz_.ptz.md#config)
+* [config](_api_ptz_.onvifptz.md#config)
 
 ### Methods
 
-* [AbsoluteMove](_api_ptz_.ptz.md#absolutemove)
-* [ContinuousMove](_api_ptz_.ptz.md#continuousmove)
-* [CreatePresetTour](_api_ptz_.ptz.md#createpresettour)
-* [GeoMove](_api_ptz_.ptz.md#geomove)
-* [GetCompatibleConfigurations](_api_ptz_.ptz.md#getcompatibleconfigurations)
-* [GetConfiguration](_api_ptz_.ptz.md#getconfiguration)
-* [GetConfigurationOptions](_api_ptz_.ptz.md#getconfigurationoptions)
-* [GetConfigurations](_api_ptz_.ptz.md#getconfigurations)
-* [GetNode](_api_ptz_.ptz.md#getnode)
-* [GetNodes](_api_ptz_.ptz.md#getnodes)
-* [GetPresetTour](_api_ptz_.ptz.md#getpresettour)
-* [GetPresetTourOptions](_api_ptz_.ptz.md#getpresettouroptions)
-* [GetPresetTours](_api_ptz_.ptz.md#getpresettours)
-* [GetPresets](_api_ptz_.ptz.md#getpresets)
-* [GetServiceCapabilities](_api_ptz_.ptz.md#getservicecapabilities)
-* [GetStatus](_api_ptz_.ptz.md#getstatus)
-* [GotoHomePosition](_api_ptz_.ptz.md#gotohomeposition)
-* [GotoPreset](_api_ptz_.ptz.md#gotopreset)
-* [ModifyPresetTour](_api_ptz_.ptz.md#modifypresettour)
-* [OperatePresetTour](_api_ptz_.ptz.md#operatepresettour)
-* [RelativeMove](_api_ptz_.ptz.md#relativemove)
-* [RemovePreset](_api_ptz_.ptz.md#removepreset)
-* [RemovePresetTour](_api_ptz_.ptz.md#removepresettour)
-* [SendAuxiliaryCommand](_api_ptz_.ptz.md#sendauxiliarycommand)
-* [SetConfiguration](_api_ptz_.ptz.md#setconfiguration)
-* [SetHomePosition](_api_ptz_.ptz.md#sethomeposition)
-* [SetPreset](_api_ptz_.ptz.md#setpreset)
-* [Stop](_api_ptz_.ptz.md#stop)
-* [AbsoluteMove](_api_ptz_.ptz.md#absolutemove-1)
-* [ContinuousMove](_api_ptz_.ptz.md#continuousmove-1)
-* [CreatePresetTour](_api_ptz_.ptz.md#createpresettour-1)
-* [GeoMove](_api_ptz_.ptz.md#geomove-1)
-* [GetCompatibleConfigurations](_api_ptz_.ptz.md#getcompatibleconfigurations-1)
-* [GetConfiguration](_api_ptz_.ptz.md#getconfiguration-1)
-* [GetConfigurationOptions](_api_ptz_.ptz.md#getconfigurationoptions-1)
-* [GetConfigurations](_api_ptz_.ptz.md#getconfigurations-1)
-* [GetNode](_api_ptz_.ptz.md#getnode-1)
-* [GetNodes](_api_ptz_.ptz.md#getnodes-1)
-* [GetPresetTour](_api_ptz_.ptz.md#getpresettour-1)
-* [GetPresetTourOptions](_api_ptz_.ptz.md#getpresettouroptions-1)
-* [GetPresetTours](_api_ptz_.ptz.md#getpresettours-1)
-* [GetPresets](_api_ptz_.ptz.md#getpresets-1)
-* [GetServiceCapabilities](_api_ptz_.ptz.md#getservicecapabilities-1)
-* [GetStatus](_api_ptz_.ptz.md#getstatus-1)
-* [GotoHomePosition](_api_ptz_.ptz.md#gotohomeposition-1)
-* [GotoPreset](_api_ptz_.ptz.md#gotopreset-1)
-* [ModifyPresetTour](_api_ptz_.ptz.md#modifypresettour-1)
-* [OperatePresetTour](_api_ptz_.ptz.md#operatepresettour-1)
-* [RelativeMove](_api_ptz_.ptz.md#relativemove-1)
-* [RemovePreset](_api_ptz_.ptz.md#removepreset-1)
-* [RemovePresetTour](_api_ptz_.ptz.md#removepresettour-1)
-* [SendAuxiliaryCommand](_api_ptz_.ptz.md#sendauxiliarycommand-1)
-* [SetConfiguration](_api_ptz_.ptz.md#setconfiguration-1)
-* [SetHomePosition](_api_ptz_.ptz.md#sethomeposition-1)
-* [SetPreset](_api_ptz_.ptz.md#setpreset-1)
-* [Stop](_api_ptz_.ptz.md#stop-1)
+* [AbsoluteMove](_api_ptz_.onvifptz.md#absolutemove)
+* [ContinuousMove](_api_ptz_.onvifptz.md#continuousmove)
+* [CreatePresetTour](_api_ptz_.onvifptz.md#createpresettour)
+* [GeoMove](_api_ptz_.onvifptz.md#geomove)
+* [GetCompatibleConfigurations](_api_ptz_.onvifptz.md#getcompatibleconfigurations)
+* [GetConfiguration](_api_ptz_.onvifptz.md#getconfiguration)
+* [GetConfigurationOptions](_api_ptz_.onvifptz.md#getconfigurationoptions)
+* [GetConfigurations](_api_ptz_.onvifptz.md#getconfigurations)
+* [GetNode](_api_ptz_.onvifptz.md#getnode)
+* [GetNodes](_api_ptz_.onvifptz.md#getnodes)
+* [GetPresetTour](_api_ptz_.onvifptz.md#getpresettour)
+* [GetPresetTourOptions](_api_ptz_.onvifptz.md#getpresettouroptions)
+* [GetPresetTours](_api_ptz_.onvifptz.md#getpresettours)
+* [GetPresets](_api_ptz_.onvifptz.md#getpresets)
+* [GetServiceCapabilities](_api_ptz_.onvifptz.md#getservicecapabilities)
+* [GetStatus](_api_ptz_.onvifptz.md#getstatus)
+* [GotoHomePosition](_api_ptz_.onvifptz.md#gotohomeposition)
+* [GotoPreset](_api_ptz_.onvifptz.md#gotopreset)
+* [ModifyPresetTour](_api_ptz_.onvifptz.md#modifypresettour)
+* [OperatePresetTour](_api_ptz_.onvifptz.md#operatepresettour)
+* [RelativeMove](_api_ptz_.onvifptz.md#relativemove)
+* [RemovePreset](_api_ptz_.onvifptz.md#removepreset)
+* [RemovePresetTour](_api_ptz_.onvifptz.md#removepresettour)
+* [SendAuxiliaryCommand](_api_ptz_.onvifptz.md#sendauxiliarycommand)
+* [SetConfiguration](_api_ptz_.onvifptz.md#setconfiguration)
+* [SetHomePosition](_api_ptz_.onvifptz.md#sethomeposition)
+* [SetPreset](_api_ptz_.onvifptz.md#setpreset)
+* [Stop](_api_ptz_.onvifptz.md#stop)
+* [AbsoluteMove](_api_ptz_.onvifptz.md#absolutemove-1)
+* [ContinuousMove](_api_ptz_.onvifptz.md#continuousmove-1)
+* [CreatePresetTour](_api_ptz_.onvifptz.md#createpresettour-1)
+* [GeoMove](_api_ptz_.onvifptz.md#geomove-1)
+* [GetCompatibleConfigurations](_api_ptz_.onvifptz.md#getcompatibleconfigurations-1)
+* [GetConfiguration](_api_ptz_.onvifptz.md#getconfiguration-1)
+* [GetConfigurationOptions](_api_ptz_.onvifptz.md#getconfigurationoptions-1)
+* [GetConfigurations](_api_ptz_.onvifptz.md#getconfigurations-1)
+* [GetNode](_api_ptz_.onvifptz.md#getnode-1)
+* [GetNodes](_api_ptz_.onvifptz.md#getnodes-1)
+* [GetPresetTour](_api_ptz_.onvifptz.md#getpresettour-1)
+* [GetPresetTourOptions](_api_ptz_.onvifptz.md#getpresettouroptions-1)
+* [GetPresetTours](_api_ptz_.onvifptz.md#getpresettours-1)
+* [GetPresets](_api_ptz_.onvifptz.md#getpresets-1)
+* [GetServiceCapabilities](_api_ptz_.onvifptz.md#getservicecapabilities-1)
+* [GetStatus](_api_ptz_.onvifptz.md#getstatus-1)
+* [GotoHomePosition](_api_ptz_.onvifptz.md#gotohomeposition-1)
+* [GotoPreset](_api_ptz_.onvifptz.md#gotopreset-1)
+* [ModifyPresetTour](_api_ptz_.onvifptz.md#modifypresettour-1)
+* [OperatePresetTour](_api_ptz_.onvifptz.md#operatepresettour-1)
+* [RelativeMove](_api_ptz_.onvifptz.md#relativemove-1)
+* [RemovePreset](_api_ptz_.onvifptz.md#removepreset-1)
+* [RemovePresetTour](_api_ptz_.onvifptz.md#removepresettour-1)
+* [SendAuxiliaryCommand](_api_ptz_.onvifptz.md#sendauxiliarycommand-1)
+* [SetConfiguration](_api_ptz_.onvifptz.md#setconfiguration-1)
+* [SetHomePosition](_api_ptz_.onvifptz.md#sethomeposition-1)
+* [SetPreset](_api_ptz_.onvifptz.md#setpreset-1)
+* [Stop](_api_ptz_.onvifptz.md#stop-1)
 
 ---
 
@@ -83,9 +83,9 @@
 
 ###  constructor
 
-⊕ **new PTZ**(config: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*): [PTZ](_api_ptz_.ptz.md)
+⊕ **new ONVIFPTZ**(config: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*): [ONVIFPTZ](_api_ptz_.onvifptz.md)
 
-*Defined in [api/ptz.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L5)*
+*Defined in [api/ptz.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L5)*
 
 **Parameters:**
 
@@ -93,7 +93,7 @@
 | ------ | ------ |
 | config | [IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md) |
 
-**Returns:** [PTZ](_api_ptz_.ptz.md)
+**Returns:** [ONVIFPTZ](_api_ptz_.onvifptz.md)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 **● config**: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*
 
-*Defined in [api/ptz.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L6)*
+*Defined in [api/ptz.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L6)*
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 ▸ **AbsoluteMove**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Position: *[PTZVector](../interfaces/_api_types_.ptzvector.md)*, Speed: *[PTZSpeed](../interfaces/_api_types_.ptzspeed.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:578](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L578)*
+*Defined in [api/ptz.ts:578](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L578)*
 
 Operation to move pan,tilt or zoom to a absolute destination. The speed argument is optional. If an x/y speed value is given it is up to the device to either use the x value as absolute resoluting speed vector or to map x and y to the component speed. If the speed argument is omitted, the default speed set by the PTZConfiguration will be used.
 
@@ -138,7 +138,7 @@ ___
 
 ▸ **ContinuousMove**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Velocity: *[PTZSpeed](../interfaces/_api_types_.ptzspeed.md)*, Timeout: *`string`*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:547](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L547)*
+*Defined in [api/ptz.ts:547](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L547)*
 
 Operation for continuous Pan/Tilt and Zoom movements. The operation is supported if the PTZNode supports at least one continuous Pan/Tilt or Zoom space. If the space argument is omitted, the default space set by the PTZConfiguration will be used.
 
@@ -159,7 +159,7 @@ ___
 
 ▸ **CreatePresetTour**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:627](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L627)*
+*Defined in [api/ptz.ts:627](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L627)*
 
 Operation to create a preset tour for the selected media profile.
 
@@ -178,7 +178,7 @@ ___
 
 ▸ **GeoMove**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Target: *[GeoLocation](../interfaces/_api_types_.geolocation.md)*, Speed: *[PTZSpeed](../interfaces/_api_types_.ptzspeed.md)*, AreaHeight: *`number`*, AreaWidth: *`number`*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:591](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L591)*
+*Defined in [api/ptz.ts:591](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L591)*
 
 Operation to move pan,tilt or zoom to point to a destination based on the geolocation of the target. The speed argument is optional. If an x/y speed value is given it is up to the device to either use the x value as absolute resoluting speed vector or to map x and y to the component speed. If the speed argument is omitted, the default speed set by the PTZConfiguration will be used. The area height and area dwidth parameters are optional, they can be used independently and may be used by the device to automatically determine the best zoom level to show the target.
 
@@ -201,7 +201,7 @@ ___
 
 ▸ **GetCompatibleConfigurations**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:659](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L659)*
+*Defined in [api/ptz.ts:659](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L659)*
 
 Operation to get all available PTZConfigurations that can be added to the referenced media profile. A device providing more than one PTZConfiguration or more than one VideoSourceConfiguration or which has any other resource interdependency between PTZConfiguration entities and other resources listable in a media profile should implement this operation. PTZConfiguration entities returned by this operation shall not fail on adding them to the referenced media profile.
 
@@ -220,7 +220,7 @@ ___
 
 ▸ **GetConfiguration**(PTZConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:413](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L413)*
+*Defined in [api/ptz.ts:413](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L413)*
 
 Get a specific PTZconfiguration from the device, identified by its reference token or name.
 
@@ -241,7 +241,7 @@ ___
 
 ▸ **GetConfigurationOptions**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:460](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L460)*
+*Defined in [api/ptz.ts:460](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L460)*
 
 List supported coordinate systems including their range limitations. Therefore, the options MAY differ depending on whether the PTZ Configuration is assigned to a Profile containing a Video Source Configuration. In that case, the options may additionally contain coordinate systems referring to the image coordinate system described by the Video Source Configuration. If the PTZ Node supports continuous movements, it shall return a Timeout Range within which Timeouts are accepted by the PTZ Node.
 
@@ -260,7 +260,7 @@ ___
 
 ▸ **GetConfigurations**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:437](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L437)*
+*Defined in [api/ptz.ts:437](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L437)*
 
 ```
       Get all the existing PTZConfigurations from the device.
@@ -277,7 +277,7 @@ ___
 
 ▸ **GetNode**(NodeToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:390](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L390)*
+*Defined in [api/ptz.ts:390](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L390)*
 
 Get a specific PTZ Node identified by a reference token or a name.
 
@@ -296,7 +296,7 @@ ___
 
 ▸ **GetNodes**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:381](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L381)*
+*Defined in [api/ptz.ts:381](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L381)*
 
 Get the descriptions of the available PTZ Nodes.
 
@@ -311,7 +311,7 @@ ___
 
 ▸ **GetPresetTour**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetTourToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:613](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L613)*
+*Defined in [api/ptz.ts:613](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L613)*
 
 Operation to request a specific PTZ preset tour in the selected media profile.
 
@@ -331,7 +331,7 @@ ___
 
 ▸ **GetPresetTourOptions**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetTourToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:620](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L620)*
+*Defined in [api/ptz.ts:620](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L620)*
 
 Operation to request available options to configure PTZ preset tour.
 
@@ -351,7 +351,7 @@ ___
 
 ▸ **GetPresetTours**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:606](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L606)*
+*Defined in [api/ptz.ts:606](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L606)*
 
 Operation to request PTZ preset tours in the selected media profiles.
 
@@ -370,7 +370,7 @@ ___
 
 ▸ **GetPresets**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:482](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L482)*
+*Defined in [api/ptz.ts:482](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L482)*
 
 ```
       Operation to request all PTZ presets for the PTZNode
@@ -393,7 +393,7 @@ ___
 
 ▸ **GetServiceCapabilities**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:367](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L367)*
+*Defined in [api/ptz.ts:367](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L367)*
 
 Returns the capabilities of the PTZ service. The result is returned in a typed answer.
 
@@ -406,7 +406,7 @@ ___
 
 ▸ **GetStatus**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:567](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L567)*
+*Defined in [api/ptz.ts:567](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L567)*
 
 Operation to request PTZ status for the Node in the selected profile.
 
@@ -425,7 +425,7 @@ ___
 
 ▸ **GotoHomePosition**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Speed: *[PTZSpeed](../interfaces/_api_types_.ptzspeed.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:530](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L530)*
+*Defined in [api/ptz.ts:530](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L530)*
 
 ```
       Operation to move the PTZ device to it's "home" position. The operation is supported if the HomeSupported element in the PTZNode is true.
@@ -447,7 +447,7 @@ ___
 
 ▸ **GotoPreset**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Speed: *[PTZSpeed](../interfaces/_api_types_.ptzspeed.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:522](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L522)*
+*Defined in [api/ptz.ts:522](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L522)*
 
 ```
       Operation to go to a saved preset position for the
@@ -472,7 +472,7 @@ ___
 
 ▸ **ModifyPresetTour**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetTour: *[PresetTour](../interfaces/_api_types_.presettour.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:634](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L634)*
+*Defined in [api/ptz.ts:634](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L634)*
 
 Operation to modify a preset tour for the selected media profile.
 
@@ -492,7 +492,7 @@ ___
 
 ▸ **OperatePresetTour**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetTourToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Operation: *[PTZPresetTourOperation](../enums/_api_types_.ptzpresettouroperation.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:641](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L641)*
+*Defined in [api/ptz.ts:641](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L641)*
 
 Operation to perform specific operation on the preset tour in selected media profile.
 
@@ -513,7 +513,7 @@ ___
 
 ▸ **RelativeMove**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Translation: *[PTZVector](../interfaces/_api_types_.ptzvector.md)*, Speed: *[PTZSpeed](../interfaces/_api_types_.ptzspeed.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:558](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L558)*
+*Defined in [api/ptz.ts:558](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L558)*
 
 Operation for Relative Pan/Tilt and Zoom Move. The operation is supported if the PTZNode supports at least one relative Pan/Tilt or Zoom space. The speed argument is optional. If an x/y speed value is given it is up to the device to either use the x value as absolute resoluting speed vector or to map x and y to the component speed. If the speed argument is omitted, the default speed set by the PTZConfiguration will be used.
 
@@ -534,7 +534,7 @@ ___
 
 ▸ **RemovePreset**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:512](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L512)*
+*Defined in [api/ptz.ts:512](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L512)*
 
 ```
       Operation to remove a PTZ preset for the Node in
@@ -561,7 +561,7 @@ ___
 
 ▸ **RemovePresetTour**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetTourToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:648](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L648)*
+*Defined in [api/ptz.ts:648](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L648)*
 
 Operation to delete a specific preset tour from the media profile.
 
@@ -581,7 +581,7 @@ ___
 
 ▸ **SendAuxiliaryCommand**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, AuxiliaryData: *[AuxiliaryData]()*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:472](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L472)*
+*Defined in [api/ptz.ts:472](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L472)*
 
 ```
       Operation to send auxiliary commands to the PTZ device
@@ -606,7 +606,7 @@ ___
 
 ▸ **SetConfiguration**(PTZConfiguration: *[PTZConfiguration](../interfaces/_api_types_.ptzconfiguration.md)*, ForcePersistence: *`boolean`*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:446](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L446)*
+*Defined in [api/ptz.ts:446](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L446)*
 
 ```
       Set/update a existing PTZConfiguration on the device.
@@ -628,7 +628,7 @@ ___
 
 ▸ **SetHomePosition**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:540](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L540)*
+*Defined in [api/ptz.ts:540](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L540)*
 
 Operation to save current position as the home position. The SetHomePosition command returns with a failure if the “home” position is fixed and cannot be overwritten. If the SetHomePosition is successful, it is possible to recall the Home Position with the GotoHomePosition command.
 
@@ -647,7 +647,7 @@ ___
 
 ▸ **SetPreset**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetName: *`string`*, PresetToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:498](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L498)*
+*Defined in [api/ptz.ts:498](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L498)*
 
 The SetPreset command saves the current device position parameters so that the device can move to the saved preset position through the GotoPreset operation. In order to create a new preset, the SetPresetRequest contains no PresetToken. If creation is successful, the Response contains the PresetToken which uniquely identifies the Preset. An existing Preset can be overwritten by specifying the PresetToken of the corresponding Preset. In both cases (overwriting or creation) an optional PresetName can be specified. The operation fails if the PTZ device is moving during the SetPreset operation. The device MAY internally save additional states such as imaging properties in the PTZ Preset which then should be recalled in the GotoPreset operation.
 
@@ -668,7 +668,7 @@ ___
 
 ▸ **Stop**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PanTilt: *`boolean`*, Zoom: *`boolean`*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
 
-*Defined in [api/ptz.ts:599](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L599)*
+*Defined in [api/ptz.ts:599](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L599)*
 
 Operation to stop ongoing pan, tilt and zoom movements of absolute relative and continuous type. If no stop argument for pan, tilt or zoom is set, the device will stop all ongoing pan, tilt and zoom movements.
 
@@ -689,7 +689,7 @@ ___
 
 ▸ **AbsoluteMove**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Position: *[PTZVector](../interfaces/_api_types_.ptzvector.md)*, Speed?: *[PTZSpeed](../interfaces/_api_types_.ptzspeed.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:257](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L257)*
+*Defined in [api/ptz.ts:257](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L257)*
 
 Operation to move pan,tilt or zoom to a absolute destination. The speed argument is optional. If an x/y speed value is given it is up to the device to either use the x value as absolute resoluting speed vector or to map x and y to the component speed. If the speed argument is omitted, the default speed set by the PTZConfiguration will be used.
 
@@ -710,7 +710,7 @@ ___
 
 ▸ **ContinuousMove**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Velocity: *[PTZSpeed](../interfaces/_api_types_.ptzspeed.md)*, Timeout?: *`undefined` \| `string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:220](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L220)*
+*Defined in [api/ptz.ts:220](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L220)*
 
 Operation for continuous Pan/Tilt and Zoom movements. The operation is supported if the PTZNode supports at least one continuous Pan/Tilt or Zoom space. If the space argument is omitted, the default space set by the PTZConfiguration will be used.
 
@@ -731,7 +731,7 @@ ___
 
 ▸ **CreatePresetTour**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:318](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L318)*
+*Defined in [api/ptz.ts:318](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L318)*
 
 Operation to create a preset tour for the selected media profile.
 
@@ -750,7 +750,7 @@ ___
 
 ▸ **GeoMove**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Target: *[GeoLocation](../interfaces/_api_types_.geolocation.md)*, Speed?: *[PTZSpeed](../interfaces/_api_types_.ptzspeed.md)*, AreaHeight?: *`undefined` \| `number`*, AreaWidth?: *`undefined` \| `number`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:272](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L272)*
+*Defined in [api/ptz.ts:272](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L272)*
 
 Operation to move pan,tilt or zoom to point to a destination based on the geolocation of the target. The speed argument is optional. If an x/y speed value is given it is up to the device to either use the x value as absolute resoluting speed vector or to map x and y to the component speed. If the speed argument is omitted, the default speed set by the PTZConfiguration will be used. The area height and area dwidth parameters are optional, they can be used independently and may be used by the device to automatically determine the best zoom level to show the target.
 
@@ -773,7 +773,7 @@ ___
 
 ▸ **GetCompatibleConfigurations**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:358](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L358)*
+*Defined in [api/ptz.ts:358](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L358)*
 
 Operation to get all available PTZConfigurations that can be added to the referenced media profile. A device providing more than one PTZConfiguration or more than one VideoSourceConfiguration or which has any other resource interdependency between PTZConfiguration entities and other resources listable in a media profile should implement this operation. PTZConfiguration entities returned by this operation shall not fail on adding them to the referenced media profile.
 
@@ -792,7 +792,7 @@ ___
 
 ▸ **GetConfiguration**(PTZConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:64](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L64)*
+*Defined in [api/ptz.ts:64](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L64)*
 
 Get a specific PTZconfiguration from the device, identified by its reference token or name.
 
@@ -813,7 +813,7 @@ ___
 
 ▸ **GetConfigurationOptions**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:117](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L117)*
+*Defined in [api/ptz.ts:117](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L117)*
 
 List supported coordinate systems including their range limitations. Therefore, the options MAY differ depending on whether the PTZ Configuration is assigned to a Profile containing a Video Source Configuration. In that case, the options may additionally contain coordinate systems referring to the image coordinate system described by the Video Source Configuration. If the PTZ Node supports continuous movements, it shall return a Timeout Range within which Timeouts are accepted by the PTZ Node.
 
@@ -832,7 +832,7 @@ ___
 
 ▸ **GetConfigurations**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:90](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L90)*
+*Defined in [api/ptz.ts:90](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L90)*
 
 ```
       Get all the existing PTZConfigurations from the device.
@@ -849,7 +849,7 @@ ___
 
 ▸ **GetNode**(NodeToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:39](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L39)*
+*Defined in [api/ptz.ts:39](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L39)*
 
 Get a specific PTZ Node identified by a reference token or a name.
 
@@ -868,7 +868,7 @@ ___
 
 ▸ **GetNodes**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:28](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L28)*
+*Defined in [api/ptz.ts:28](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L28)*
 
 Get the descriptions of the available PTZ Nodes.
 
@@ -883,7 +883,7 @@ ___
 
 ▸ **GetPresetTour**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetTourToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:300](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L300)*
+*Defined in [api/ptz.ts:300](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L300)*
 
 Operation to request a specific PTZ preset tour in the selected media profile.
 
@@ -903,7 +903,7 @@ ___
 
 ▸ **GetPresetTourOptions**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetTourToken?: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:309](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L309)*
+*Defined in [api/ptz.ts:309](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L309)*
 
 Operation to request available options to configure PTZ preset tour.
 
@@ -923,7 +923,7 @@ ___
 
 ▸ **GetPresetTours**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:291](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L291)*
+*Defined in [api/ptz.ts:291](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L291)*
 
 Operation to request PTZ preset tours in the selected media profiles.
 
@@ -942,7 +942,7 @@ ___
 
 ▸ **GetPresets**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:143](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L143)*
+*Defined in [api/ptz.ts:143](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L143)*
 
 ```
       Operation to request all PTZ presets for the PTZNode
@@ -965,7 +965,7 @@ ___
 
 ▸ **GetServiceCapabilities**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L12)*
+*Defined in [api/ptz.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L12)*
 
 Returns the capabilities of the PTZ service. The result is returned in a typed answer.
 
@@ -978,7 +978,7 @@ ___
 
 ▸ **GetStatus**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:244](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L244)*
+*Defined in [api/ptz.ts:244](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L244)*
 
 Operation to request PTZ status for the Node in the selected profile.
 
@@ -997,7 +997,7 @@ ___
 
 ▸ **GotoHomePosition**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Speed?: *[PTZSpeed](../interfaces/_api_types_.ptzspeed.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:199](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L199)*
+*Defined in [api/ptz.ts:199](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L199)*
 
 ```
       Operation to move the PTZ device to it's "home" position. The operation is supported if the HomeSupported element in the PTZNode is true.
@@ -1019,7 +1019,7 @@ ___
 
 ▸ **GotoPreset**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Speed?: *[PTZSpeed](../interfaces/_api_types_.ptzspeed.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:189](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L189)*
+*Defined in [api/ptz.ts:189](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L189)*
 
 ```
       Operation to go to a saved preset position for the
@@ -1044,7 +1044,7 @@ ___
 
 ▸ **ModifyPresetTour**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetTour: *[PresetTour](../interfaces/_api_types_.presettour.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:327](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L327)*
+*Defined in [api/ptz.ts:327](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L327)*
 
 Operation to modify a preset tour for the selected media profile.
 
@@ -1064,7 +1064,7 @@ ___
 
 ▸ **OperatePresetTour**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetTourToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Operation: *[PTZPresetTourOperation](../enums/_api_types_.ptzpresettouroperation.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:336](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L336)*
+*Defined in [api/ptz.ts:336](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L336)*
 
 Operation to perform specific operation on the preset tour in selected media profile.
 
@@ -1085,7 +1085,7 @@ ___
 
 ▸ **RelativeMove**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Translation: *[PTZVector](../interfaces/_api_types_.ptzvector.md)*, Speed?: *[PTZSpeed](../interfaces/_api_types_.ptzspeed.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:233](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L233)*
+*Defined in [api/ptz.ts:233](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L233)*
 
 Operation for Relative Pan/Tilt and Zoom Move. The operation is supported if the PTZNode supports at least one relative Pan/Tilt or Zoom space. The speed argument is optional. If an x/y speed value is given it is up to the device to either use the x value as absolute resoluting speed vector or to map x and y to the component speed. If the speed argument is omitted, the default speed set by the PTZConfiguration will be used.
 
@@ -1106,7 +1106,7 @@ ___
 
 ▸ **RemovePreset**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:177](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L177)*
+*Defined in [api/ptz.ts:177](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L177)*
 
 ```
       Operation to remove a PTZ preset for the Node in
@@ -1133,7 +1133,7 @@ ___
 
 ▸ **RemovePresetTour**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetTourToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:345](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L345)*
+*Defined in [api/ptz.ts:345](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L345)*
 
 Operation to delete a specific preset tour from the media profile.
 
@@ -1153,7 +1153,7 @@ ___
 
 ▸ **SendAuxiliaryCommand**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, AuxiliaryData: *[AuxiliaryData]()*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:131](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L131)*
+*Defined in [api/ptz.ts:131](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L131)*
 
 ```
       Operation to send auxiliary commands to the PTZ device
@@ -1178,7 +1178,7 @@ ___
 
 ▸ **SetConfiguration**(PTZConfiguration: *[PTZConfiguration](../interfaces/_api_types_.ptzconfiguration.md)*, ForcePersistence: *`boolean`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:101](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L101)*
+*Defined in [api/ptz.ts:101](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L101)*
 
 ```
       Set/update a existing PTZConfiguration on the device.
@@ -1200,7 +1200,7 @@ ___
 
 ▸ **SetHomePosition**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:211](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L211)*
+*Defined in [api/ptz.ts:211](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L211)*
 
 Operation to save current position as the home position. The SetHomePosition command returns with a failure if the “home” position is fixed and cannot be overwritten. If the SetHomePosition is successful, it is possible to recall the Home Position with the GotoHomePosition command.
 
@@ -1219,7 +1219,7 @@ ___
 
 ▸ **SetPreset**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PresetName?: *`undefined` \| `string`*, PresetToken?: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:161](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L161)*
+*Defined in [api/ptz.ts:161](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L161)*
 
 The SetPreset command saves the current device position parameters so that the device can move to the saved preset position through the GotoPreset operation. In order to create a new preset, the SetPresetRequest contains no PresetToken. If creation is successful, the Response contains the PresetToken which uniquely identifies the Preset. An existing Preset can be overwritten by specifying the PresetToken of the corresponding Preset. In both cases (overwriting or creation) an optional PresetName can be specified. The operation fails if the PTZ device is moving during the SetPreset operation. The device MAY internally save additional states such as imaging properties in the PTZ Preset which then should be recalled in the GotoPreset operation.
 
@@ -1240,7 +1240,7 @@ ___
 
 ▸ **Stop**(ProfileToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, PanTilt?: *`undefined` \| `false` \| `true`*, Zoom?: *`undefined` \| `false` \| `true`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
 
-*Defined in [api/ptz.ts:282](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/ptz.ts#L282)*
+*Defined in [api/ptz.ts:282](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/ptz.ts#L282)*
 
 Operation to stop ongoing pan, tilt and zoom movements of absolute relative and continuous type. If no stop argument for pan, tilt or zoom is set, the device will stop all ongoing pan, tilt and zoom movements.
 

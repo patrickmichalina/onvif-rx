@@ -2,7 +2,7 @@ import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequ
 import { IDeviceConfig } from "../config";
 import { ReferenceToken, ReceiverConfiguration, ReceiverMode } from "./types";
 
-export class Receiver {
+export class ONVIFReceiver {
     constructor(private config: IDeviceConfig) {
     }
 
@@ -102,7 +102,7 @@ export class Receiver {
      * Returns the capabilities of the receiver service. The result is returned in a typed answer.
      */
     GetServiceCapabilities() {
-        return Receiver.GetServiceCapabilities().run(this.config)
+        return ONVIFReceiver.GetServiceCapabilities().run(this.config)
     }
 
     /**
@@ -111,7 +111,7 @@ export class Receiver {
      *   
      */
     GetReceivers() {
-        return Receiver.GetReceivers().run(this.config)
+        return ONVIFReceiver.GetReceivers().run(this.config)
     }
 
     /**
@@ -120,7 +120,7 @@ export class Receiver {
      *   
      */
     GetReceiver(ReceiverToken: ReferenceToken) {
-        return Receiver.GetReceiver(ReceiverToken).run(this.config)
+        return ONVIFReceiver.GetReceiver(ReceiverToken).run(this.config)
     }
 
     /**
@@ -130,7 +130,7 @@ export class Receiver {
      *   
      */
     CreateReceiver(Configuration: ReceiverConfiguration) {
-        return Receiver.CreateReceiver(Configuration).run(this.config)
+        return ONVIFReceiver.CreateReceiver(Configuration).run(this.config)
     }
 
     /**
@@ -141,7 +141,7 @@ export class Receiver {
      *   
      */
     DeleteReceiver(ReceiverToken: ReferenceToken) {
-        return Receiver.DeleteReceiver(ReceiverToken).run(this.config)
+        return ONVIFReceiver.DeleteReceiver(ReceiverToken).run(this.config)
     }
 
     /**
@@ -150,7 +150,7 @@ export class Receiver {
      *   
      */
     ConfigureReceiver(ReceiverToken: ReferenceToken, Configuration: ReceiverConfiguration) {
-        return Receiver.ConfigureReceiver(ReceiverToken,Configuration).run(this.config)
+        return ONVIFReceiver.ConfigureReceiver(ReceiverToken,Configuration).run(this.config)
     }
 
     /**
@@ -160,7 +160,7 @@ export class Receiver {
      *   
      */
     SetReceiverMode(ReceiverToken: ReferenceToken, Mode: ReceiverMode) {
-        return Receiver.SetReceiverMode(ReceiverToken,Mode).run(this.config)
+        return ONVIFReceiver.SetReceiverMode(ReceiverToken,Mode).run(this.config)
     }
 
     /**
@@ -171,6 +171,6 @@ export class Receiver {
      *   
      */
     GetReceiverState(ReceiverToken: ReferenceToken) {
-        return Receiver.GetReceiverState(ReceiverToken).run(this.config)
+        return ONVIFReceiver.GetReceiverState(ReceiverToken).run(this.config)
     }
 }

@@ -26,7 +26,7 @@ Optional configuration of the Audio output.
 
 **● AudioDecoderConfiguration**: *[AudioDecoderConfiguration](_api_types_.audiodecoderconfiguration.md)*
 
-*Defined in [api/types.ts:382](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L382)*
+*Defined in [api/types.ts:382](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L382)*
 
 ___
 <a id="audiooutputconfiguration"></a>
@@ -35,7 +35,7 @@ ___
 
 **● AudioOutputConfiguration**: *[AudioOutputConfiguration](_api_types_.audiooutputconfiguration.md)*
 
-*Defined in [api/types.ts:381](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L381)*
+*Defined in [api/types.ts:381](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L381)*
 
 ___
 <a id="extension"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Extension**: *[ProfileExtension2](_api_types_.profileextension2.md)*
 
-*Defined in [api/types.ts:383](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L383)*
+*Defined in [api/types.ts:383](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L383)*
 
 ___
 

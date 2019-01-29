@@ -19,7 +19,7 @@
 
 **FrameRate**:  = "FrameRate"
 
-*Defined in [api/types.ts:5121](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L5121)*
+*Defined in [api/types.ts:5121](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5121)*
 
 ___
 <a id="lownoise"></a>
@@ -28,7 +28,7 @@ ___
 
 **LowNoise**:  = "LowNoise"
 
-*Defined in [api/types.ts:5117](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L5117)*
+*Defined in [api/types.ts:5117](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5117)*
 
 ___
 

@@ -28,7 +28,7 @@
 
 **● URI**: *`string`*
 
-*Defined in [api/types.ts:2257](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2257)*
+*Defined in [api/types.ts:2257](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2257)*
 
 ___
 <a id="xrange"></a>
@@ -37,7 +37,7 @@ ___
 
 **● XRange**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2258](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2258)*
+*Defined in [api/types.ts:2258](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2258)*
 
 ___
 <a id="yrange"></a>
@@ -46,7 +46,7 @@ ___
 
 **● YRange**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2259](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2259)*
+*Defined in [api/types.ts:2259](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2259)*
 
 ___
 

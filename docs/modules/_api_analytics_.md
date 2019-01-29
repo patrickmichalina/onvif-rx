@@ -6,7 +6,7 @@
 
 ### Classes
 
-* [Analytics](../classes/_api_analytics_.analytics.md)
+* [ONVIFAnalytics](../classes/_api_analytics_.onvifanalytics.md)
 
 ---
 

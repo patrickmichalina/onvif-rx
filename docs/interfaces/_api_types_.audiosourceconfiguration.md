@@ -24,7 +24,7 @@ Token of the Audio Source the configuration applies to
 
 **● SourceToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:689](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L689)*
+*Defined in [api/types.ts:689](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L689)*
 
 ___
 

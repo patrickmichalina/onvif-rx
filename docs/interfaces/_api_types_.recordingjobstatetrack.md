@@ -27,7 +27,7 @@ Identifies the track of the data source that provides the data.
 
 **● Destination**: *[TrackReference](../modules/_api_types_.md#trackreference)*
 
-*Defined in [api/types.ts:3765](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3765)*
+*Defined in [api/types.ts:3765](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3765)*
 
 ___
 <a id="error"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Error**: *`string`*
 
-*Defined in [api/types.ts:3766](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3766)*
+*Defined in [api/types.ts:3766](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3766)*
 
 ___
 <a id="sourcetag"></a>
@@ -45,7 +45,7 @@ ___
 
 **● SourceTag**: *`string`*
 
-*Defined in [api/types.ts:3764](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3764)*
+*Defined in [api/types.ts:3764](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3764)*
 
 ___
 <a id="state"></a>
@@ -54,7 +54,7 @@ ___
 
 **● State**: *[RecordingJobState](../modules/_api_types_.md#recordingjobstate)*
 
-*Defined in [api/types.ts:3767](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3767)*
+*Defined in [api/types.ts:3767](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3767)*
 
 ___
 

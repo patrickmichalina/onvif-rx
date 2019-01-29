@@ -20,7 +20,7 @@
 
 **HTTP**:  = "HTTP"
 
-*Defined in [api/types.ts:4615](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4615)*
+*Defined in [api/types.ts:4615](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4615)*
 
 ___
 <a id="https"></a>
@@ -29,7 +29,7 @@ ___
 
 **HTTPS**:  = "HTTPS"
 
-*Defined in [api/types.ts:4619](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4619)*
+*Defined in [api/types.ts:4619](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4619)*
 
 ___
 <a id="rtsp"></a>
@@ -38,7 +38,7 @@ ___
 
 **RTSP**:  = "RTSP"
 
-*Defined in [api/types.ts:4623](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4623)*
+*Defined in [api/types.ts:4623](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4623)*
 
 ___
 

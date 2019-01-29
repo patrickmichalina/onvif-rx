@@ -19,7 +19,7 @@
 
 **active**:  = "active"
 
-*Defined in [api/types.ts:4917](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4917)*
+*Defined in [api/types.ts:4917](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4917)*
 
 ___
 <a id="inactive"></a>
@@ -28,7 +28,7 @@ ___
 
 **inactive**:  = "inactive"
 
-*Defined in [api/types.ts:4921](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4921)*
+*Defined in [api/types.ts:4921](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4921)*
 
 ___
 

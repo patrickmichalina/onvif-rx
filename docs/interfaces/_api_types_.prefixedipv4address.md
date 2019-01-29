@@ -25,7 +25,7 @@ IPv4 address
 
 **● Address**: *[IPv4Address](../modules/_api_types_.md#ipv4address)*
 
-*Defined in [api/types.ts:1176](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1176)*
+*Defined in [api/types.ts:1176](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1176)*
 
 ___
 <a id="prefixlength"></a>
@@ -34,7 +34,7 @@ ___
 
 **● PrefixLength**: *`number`*
 
-*Defined in [api/types.ts:1177](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1177)*
+*Defined in [api/types.ts:1177](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1177)*
 
 ___
 

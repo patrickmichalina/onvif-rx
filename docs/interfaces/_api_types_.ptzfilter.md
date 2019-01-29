@@ -25,7 +25,7 @@ True if the metadata stream shall contain the PTZ status (IDLE, MOVING or UNKNOW
 
 **● Position**: *`boolean`*
 
-*Defined in [api/types.ts:784](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L784)*
+*Defined in [api/types.ts:784](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L784)*
 
 ___
 <a id="status"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Status**: *`boolean`*
 
-*Defined in [api/types.ts:783](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L783)*
+*Defined in [api/types.ts:783](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L783)*
 
 ___
 

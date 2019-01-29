@@ -28,7 +28,7 @@
 
 **Ƭ IEncodeBase64**: *`function`*
 
-*Defined in [config/interfaces.ts:11](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/interfaces.ts#L11)*
+*Defined in [config/interfaces.ts:11](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L11)*
 
 #### Type declaration
 ▸(str: *`string`*): `string`
@@ -48,7 +48,7 @@ ___
 
 **Ƭ INonce**: *`function`*
 
-*Defined in [config/interfaces.ts:13](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/interfaces.ts#L13)*
+*Defined in [config/interfaces.ts:13](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L13)*
 
 #### Type declaration
 ▸(size?: *`undefined` \| `number`*): `string`
@@ -68,7 +68,7 @@ ___
 
 **Ƭ ISha1Digest**: *`function`*
 
-*Defined in [config/interfaces.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/interfaces.ts#L12)*
+*Defined in [config/interfaces.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L12)*
 
 #### Type declaration
 ▸(str: *`string`*): `string`
@@ -88,7 +88,7 @@ ___
 
 **Ƭ ITransport**: *`function`*
 
-*Defined in [config/interfaces.ts:9](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/config/interfaces.ts#L9)*
+*Defined in [config/interfaces.ts:9](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L9)*
 
 #### Type declaration
 ▸(body: *`string`*): `function`

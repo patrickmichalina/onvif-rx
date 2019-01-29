@@ -29,7 +29,7 @@ Device service URI.
 
 **● Extension**: *[DeviceCapabilitiesExtension](_api_types_.devicecapabilitiesextension.md)*
 
-*Defined in [api/types.ts:1485](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1485)*
+*Defined in [api/types.ts:1485](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1485)*
 
 ___
 <a id="io"></a>
@@ -38,7 +38,7 @@ ___
 
 **● IO**: *[IOCapabilities](_api_types_.iocapabilities.md)*
 
-*Defined in [api/types.ts:1483](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1483)*
+*Defined in [api/types.ts:1483](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1483)*
 
 ___
 <a id="network"></a>
@@ -47,7 +47,7 @@ ___
 
 **● Network**: *[NetworkCapabilities](_api_types_.networkcapabilities.md)*
 
-*Defined in [api/types.ts:1481](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1481)*
+*Defined in [api/types.ts:1481](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1481)*
 
 ___
 <a id="security"></a>
@@ -56,7 +56,7 @@ ___
 
 **● Security**: *[SecurityCapabilities](_api_types_.securitycapabilities.md)*
 
-*Defined in [api/types.ts:1484](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1484)*
+*Defined in [api/types.ts:1484](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1484)*
 
 ___
 <a id="system"></a>
@@ -65,7 +65,7 @@ ___
 
 **● System**: *[SystemCapabilities](_api_types_.systemcapabilities.md)*
 
-*Defined in [api/types.ts:1482](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1482)*
+*Defined in [api/types.ts:1482](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1482)*
 
 ___
 <a id="xaddr"></a>
@@ -74,7 +74,7 @@ ___
 
 **● XAddr**: *`string`*
 
-*Defined in [api/types.ts:1480](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1480)*
+*Defined in [api/types.ts:1480](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1480)*
 
 ___
 

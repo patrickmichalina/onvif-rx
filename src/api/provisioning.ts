@@ -2,7 +2,7 @@ import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequ
 import { IDeviceConfig } from "../config";
 import "./types";
 
-export class Provisioning {
+export class ONVIFProvisioning {
     constructor(private config: IDeviceConfig) {
     }
 
@@ -82,55 +82,55 @@ export class Provisioning {
      * Returns the capabilities of the provisioning service.
      */
     GetServiceCapabilities() {
-        return Provisioning.GetServiceCapabilities().run(this.config)
+        return ONVIFProvisioning.GetServiceCapabilities().run(this.config)
     }
 
     /**
      * Moves device on the pan axis.
      */
     PanMove() {
-        return Provisioning.PanMove().run(this.config)
+        return ONVIFProvisioning.PanMove().run(this.config)
     }
 
     /**
      * Moves device on the tilt axis.
      */
     TiltMove() {
-        return Provisioning.TiltMove().run(this.config)
+        return ONVIFProvisioning.TiltMove().run(this.config)
     }
 
     /**
      * Moves device on the zoom axis.
      */
     ZoomMove() {
-        return Provisioning.ZoomMove().run(this.config)
+        return ONVIFProvisioning.ZoomMove().run(this.config)
     }
 
     /**
      * Moves device on the roll axis.
      */
     RollMove() {
-        return Provisioning.RollMove().run(this.config)
+        return ONVIFProvisioning.RollMove().run(this.config)
     }
 
     /**
      * Moves device on the focus axis.
      */
     FocusMove() {
-        return Provisioning.FocusMove().run(this.config)
+        return ONVIFProvisioning.FocusMove().run(this.config)
     }
 
     /**
      * Stops device motion on all axes.
      */
     Stop() {
-        return Provisioning.Stop().run(this.config)
+        return ONVIFProvisioning.Stop().run(this.config)
     }
 
     /**
      * Returns the lifetime move counts.
      */
     GetUsage() {
-        return Provisioning.GetUsage().run(this.config)
+        return ONVIFProvisioning.GetUsage().run(this.config)
     }
 }

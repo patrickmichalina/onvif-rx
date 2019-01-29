@@ -25,7 +25,7 @@ Exported file name and export progress information
 
 **● Extension**: *[ArrayOfFileProgressExtension](_api_types_.arrayoffileprogressextension.md)*
 
-*Defined in [api/types.ts:4156](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4156)*
+*Defined in [api/types.ts:4156](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4156)*
 
 ___
 <a id="fileprogress"></a>
@@ -34,7 +34,7 @@ ___
 
 **● FileProgress**: *[FileProgress](_api_types_.fileprogress.md)*
 
-*Defined in [api/types.ts:4155](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L4155)*
+*Defined in [api/types.ts:4155](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4155)*
 
 ___
 

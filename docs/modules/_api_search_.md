@@ -6,7 +6,7 @@
 
 ### Classes
 
-* [Search](../classes/_api_search_.search.md)
+* [ONVIFSearch](../classes/_api_search_.onvifsearch.md)
 
 ---
 

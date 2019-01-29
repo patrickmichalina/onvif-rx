@@ -25,7 +25,7 @@ Certificate id.
 
 **● CertificateID**: *`string`*
 
-*Defined in [api/types.ts:1919](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1919)*
+*Defined in [api/types.ts:1919](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1919)*
 
 ___
 <a id="status"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Status**: *`boolean`*
 
-*Defined in [api/types.ts:1920](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1920)*
+*Defined in [api/types.ts:1920](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1920)*
 
 ___
 

@@ -6,7 +6,7 @@
 
 ### Classes
 
-* [Provisioning](../classes/_api_provisioning_.provisioning.md)
+* [ONVIFProvisioning](../classes/_api_provisioning_.onvifprovisioning.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 ### Classes
 
-* [Media](../classes/_api_media_.media.md)
+* [ONVIFMedia](../classes/_api_media_.onvifmedia.md)
 
 ---
 

@@ -6,7 +6,7 @@
 
 ### Classes
 
-* [Display](../classes/_api_display_.display.md)
+* [ONVIFDisplay](../classes/_api_display_.onvifdisplay.md)
 
 ---
 

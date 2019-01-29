@@ -25,7 +25,7 @@ This case should never happen.
 
 **Initiated**:  = "Initiated"
 
-*Defined in [api/types.ts:5377](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L5377)*
+*Defined in [api/types.ts:5377](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5377)*
 
 ___
 <a id="recording"></a>
@@ -34,7 +34,7 @@ ___
 
 **Recording**:  = "Recording"
 
-*Defined in [api/types.ts:5381](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L5381)*
+*Defined in [api/types.ts:5381](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5381)*
 
 ___
 <a id="removed"></a>
@@ -43,7 +43,7 @@ ___
 
 **Removed**:  = "Removed"
 
-*Defined in [api/types.ts:5393](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L5393)*
+*Defined in [api/types.ts:5393](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5393)*
 
 ___
 <a id="removing"></a>
@@ -52,7 +52,7 @@ ___
 
 **Removing**:  = "Removing"
 
-*Defined in [api/types.ts:5389](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L5389)*
+*Defined in [api/types.ts:5389](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5389)*
 
 ___
 <a id="stopped"></a>
@@ -61,7 +61,7 @@ ___
 
 **Stopped**:  = "Stopped"
 
-*Defined in [api/types.ts:5385](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L5385)*
+*Defined in [api/types.ts:5385](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5385)*
 
 ___
 <a id="unknown"></a>
@@ -70,7 +70,7 @@ ___
 
 **Unknown**:  = "Unknown"
 
-*Defined in [api/types.ts:5397](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L5397)*
+*Defined in [api/types.ts:5397](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5397)*
 
 This case should never happen.
 

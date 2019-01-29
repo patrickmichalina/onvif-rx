@@ -27,7 +27,7 @@ Location on earth.
 
 **● GeoLocation**: *[GeoLocation](_api_types_.geolocation.md)*
 
-*Defined in [api/types.ts:250](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L250)*
+*Defined in [api/types.ts:250](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L250)*
 
 ___
 <a id="geoorientation"></a>
@@ -36,7 +36,7 @@ ___
 
 **● GeoOrientation**: *[GeoOrientation](_api_types_.geoorientation.md)*
 
-*Defined in [api/types.ts:251](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L251)*
+*Defined in [api/types.ts:251](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L251)*
 
 ___
 <a id="locallocation"></a>
@@ -45,7 +45,7 @@ ___
 
 **● LocalLocation**: *[LocalLocation](_api_types_.locallocation.md)*
 
-*Defined in [api/types.ts:252](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L252)*
+*Defined in [api/types.ts:252](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L252)*
 
 ___
 <a id="localorientation"></a>
@@ -54,7 +54,7 @@ ___
 
 **● LocalOrientation**: *[LocalOrientation](_api_types_.localorientation.md)*
 
-*Defined in [api/types.ts:253](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L253)*
+*Defined in [api/types.ts:253](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L253)*
 
 ___
 

@@ -27,7 +27,7 @@ Parameter to set autofocus near limit (unit: meter).
 
 **● AutoFocusMode**: *[AutoFocusMode](../enums/_api_types_.autofocusmode.md)*
 
-*Defined in [api/types.ts:2443](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2443)*
+*Defined in [api/types.ts:2443](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2443)*
 
 ___
 <a id="defaultspeed"></a>
@@ -36,7 +36,7 @@ ___
 
 **● DefaultSpeed**: *`number`*
 
-*Defined in [api/types.ts:2444](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2444)*
+*Defined in [api/types.ts:2444](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2444)*
 
 ___
 <a id="farlimit"></a>
@@ -45,7 +45,7 @@ ___
 
 **● FarLimit**: *`number`*
 
-*Defined in [api/types.ts:2446](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2446)*
+*Defined in [api/types.ts:2446](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2446)*
 
 ___
 <a id="nearlimit"></a>
@@ -54,7 +54,7 @@ ___
 
 **● NearLimit**: *`number`*
 
-*Defined in [api/types.ts:2445](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2445)*
+*Defined in [api/types.ts:2445](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2445)*
 
 ___
 

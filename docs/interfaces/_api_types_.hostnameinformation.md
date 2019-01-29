@@ -26,7 +26,7 @@ Indicates whether the hostname is obtained from DHCP or not.
 
 **● Extension**: *[HostnameInformationExtension](_api_types_.hostnameinformationextension.md)*
 
-*Defined in [api/types.ts:1194](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1194)*
+*Defined in [api/types.ts:1194](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1194)*
 
 ___
 <a id="fromdhcp"></a>
@@ -35,7 +35,7 @@ ___
 
 **● FromDHCP**: *`boolean`*
 
-*Defined in [api/types.ts:1192](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1192)*
+*Defined in [api/types.ts:1192](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1192)*
 
 ___
 <a id="name"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Name**: *`string`*
 
-*Defined in [api/types.ts:1193](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1193)*
+*Defined in [api/types.ts:1193](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1193)*
 
 ___
 

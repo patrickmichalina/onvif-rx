@@ -30,7 +30,7 @@ Indicates whether router advertisment is used.
 
 **● AcceptRouterAdvert**: *`boolean`*
 
-*Defined in [api/types.ts:1115](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1115)*
+*Defined in [api/types.ts:1115](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1115)*
 
 ___
 <a id="dhcp"></a>
@@ -39,7 +39,7 @@ ___
 
 **● DHCP**: *[IPv6DHCPConfiguration](../enums/_api_types_.ipv6dhcpconfiguration.md)*
 
-*Defined in [api/types.ts:1116](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1116)*
+*Defined in [api/types.ts:1116](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1116)*
 
 ___
 <a id="extension"></a>
@@ -48,7 +48,7 @@ ___
 
 **● Extension**: *[IPv6ConfigurationExtension](_api_types_.ipv6configurationextension.md)*
 
-*Defined in [api/types.ts:1121](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1121)*
+*Defined in [api/types.ts:1121](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1121)*
 
 ___
 <a id="fromdhcp"></a>
@@ -57,7 +57,7 @@ ___
 
 **● FromDHCP**: *[PrefixedIPv6Address](_api_types_.prefixedipv6address.md)*
 
-*Defined in [api/types.ts:1119](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1119)*
+*Defined in [api/types.ts:1119](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1119)*
 
 ___
 <a id="fromra"></a>
@@ -66,7 +66,7 @@ ___
 
 **● FromRA**: *[PrefixedIPv6Address](_api_types_.prefixedipv6address.md)*
 
-*Defined in [api/types.ts:1120](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1120)*
+*Defined in [api/types.ts:1120](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1120)*
 
 ___
 <a id="linklocal"></a>
@@ -75,7 +75,7 @@ ___
 
 **● LinkLocal**: *[PrefixedIPv6Address](_api_types_.prefixedipv6address.md)*
 
-*Defined in [api/types.ts:1118](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1118)*
+*Defined in [api/types.ts:1118](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1118)*
 
 ___
 <a id="manual"></a>
@@ -84,7 +84,7 @@ ___
 
 **● Manual**: *[PrefixedIPv6Address](_api_types_.prefixedipv6address.md)*
 
-*Defined in [api/types.ts:1117](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L1117)*
+*Defined in [api/types.ts:1117](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1117)*
 
 ___
 

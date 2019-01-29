@@ -26,7 +26,7 @@
 
 **● Speed**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2657](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L2657)*
+*Defined in [api/types.ts:2657](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2657)*
 
 ___
 

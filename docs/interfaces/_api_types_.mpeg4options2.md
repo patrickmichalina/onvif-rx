@@ -24,7 +24,7 @@ Supported range of encoded bitrate in kbps.
 
 **● BitrateRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:627](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L627)*
+*Defined in [api/types.ts:627](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L627)*
 
 ___
 

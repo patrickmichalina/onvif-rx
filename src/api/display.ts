@@ -2,7 +2,7 @@ import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequ
 import { IDeviceConfig } from "../config";
 import { ReferenceToken, Layout, PaneConfiguration } from "./types";
 
-export class Display {
+export class ONVIFDisplay {
     constructor(private config: IDeviceConfig) {
     }
 
@@ -121,7 +121,7 @@ export class Display {
      * Returns the capabilities of the display service. The result is returned in a typed answer.
      */
     GetServiceCapabilities() {
-        return Display.GetServiceCapabilities().run(this.config)
+        return ONVIFDisplay.GetServiceCapabilities().run(this.config)
     }
 
     /**
@@ -130,7 +130,7 @@ export class Display {
      *   their associated display areas.
      */
     GetLayout(VideoOutput: ReferenceToken) {
-        return Display.GetLayout(VideoOutput).run(this.config)
+        return ONVIFDisplay.GetLayout(VideoOutput).run(this.config)
     }
 
     /**
@@ -142,7 +142,7 @@ export class Display {
      *   
      */
     SetLayout(VideoOutput: ReferenceToken, Layout: Layout) {
-        return Display.SetLayout(VideoOutput,Layout).run(this.config)
+        return ONVIFDisplay.SetLayout(VideoOutput,Layout).run(this.config)
     }
 
     /**
@@ -151,7 +151,7 @@ export class Display {
      *   returns both, Layout and Coding Capabilities, of a VideoOutput.
      */
     GetDisplayOptions(VideoOutput: ReferenceToken) {
-        return Display.GetDisplayOptions(VideoOutput).run(this.config)
+        return ONVIFDisplay.GetDisplayOptions(VideoOutput).run(this.config)
     }
 
     /**
@@ -162,14 +162,14 @@ export class Display {
      *   not be established.
      */
     GetPaneConfigurations(VideoOutput: ReferenceToken) {
-        return Display.GetPaneConfigurations(VideoOutput).run(this.config)
+        return ONVIFDisplay.GetPaneConfigurations(VideoOutput).run(this.config)
     }
 
     /**
      * Retrieve the pane configuration for a pane token.
      */
     GetPaneConfiguration(VideoOutput: ReferenceToken, Pane: ReferenceToken) {
-        return Display.GetPaneConfiguration(VideoOutput,Pane).run(this.config)
+        return ONVIFDisplay.GetPaneConfiguration(VideoOutput,Pane).run(this.config)
     }
 
     /**
@@ -178,14 +178,14 @@ export class Display {
      *   Use DeletePaneConfiguration to remove pane configurations.
      */
     SetPaneConfigurations(VideoOutput: ReferenceToken, PaneConfiguration: PaneConfiguration) {
-        return Display.SetPaneConfigurations(VideoOutput,PaneConfiguration).run(this.config)
+        return ONVIFDisplay.SetPaneConfigurations(VideoOutput,PaneConfiguration).run(this.config)
     }
 
     /**
      * This command changes the configuration of the specified pane (tbd)
      */
     SetPaneConfiguration(VideoOutput: ReferenceToken, PaneConfiguration: PaneConfiguration) {
-        return Display.SetPaneConfiguration(VideoOutput,PaneConfiguration).run(this.config)
+        return ONVIFDisplay.SetPaneConfiguration(VideoOutput,PaneConfiguration).run(this.config)
     }
 
     /**
@@ -195,7 +195,7 @@ export class Display {
      *   
      */
     CreatePaneConfiguration(VideoOutput: ReferenceToken, PaneConfiguration: PaneConfiguration) {
-        return Display.CreatePaneConfiguration(VideoOutput,PaneConfiguration).run(this.config)
+        return ONVIFDisplay.CreatePaneConfiguration(VideoOutput,PaneConfiguration).run(this.config)
     }
 
     /**
@@ -205,6 +205,6 @@ export class Display {
      *   
      */
     DeletePaneConfiguration(VideoOutput: ReferenceToken, PaneToken: ReferenceToken) {
-        return Display.DeletePaneConfiguration(VideoOutput,PaneToken).run(this.config)
+        return ONVIFDisplay.DeletePaneConfiguration(VideoOutput,PaneToken).run(this.config)
     }
 }

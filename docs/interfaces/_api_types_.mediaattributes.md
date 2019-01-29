@@ -27,7 +27,7 @@ A set of media attributes valid for a recording at a point in time or for a time
 
 **● From**: *`string`*
 
-*Defined in [api/types.ts:3589](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3589)*
+*Defined in [api/types.ts:3589](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3589)*
 
 ___
 <a id="recordingtoken"></a>
@@ -36,7 +36,7 @@ ___
 
 **● RecordingToken**: *[RecordingReference](../modules/_api_types_.md#recordingreference)*
 
-*Defined in [api/types.ts:3587](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3587)*
+*Defined in [api/types.ts:3587](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3587)*
 
 ___
 <a id="trackattributes"></a>
@@ -45,7 +45,7 @@ ___
 
 **● TrackAttributes**: *[TrackAttributes](_api_types_.trackattributes.md)*
 
-*Defined in [api/types.ts:3588](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3588)*
+*Defined in [api/types.ts:3588](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3588)*
 
 ___
 <a id="until"></a>
@@ -54,7 +54,7 @@ ___
 
 **● Until**: *`string`*
 
-*Defined in [api/types.ts:3590](https://github.com/patrickmichalina/onvif-rx/blob/1596479/src/api/types.ts#L3590)*
+*Defined in [api/types.ts:3590](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3590)*
 
 ___
 
