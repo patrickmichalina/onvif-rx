@@ -11,7 +11,7 @@ export class Display {
      */
     static GetServiceCapabilities() {
         return createStandardRequestBodyFromString(generateRequestElements('tls:GetServiceCapabilities')([])())
-                        .map(mapResponseXmlToJson<any>('tls:GetServiceCapabilitiesResponse')())
+                        .map(mapResponseXmlToJson<any>('tls:GetServiceCapabilitiesResponse'))
                       
     }
 
@@ -22,7 +22,7 @@ export class Display {
      */
     static GetLayout(VideoOutput: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tls:GetLayout')(['VideoOutput'])(VideoOutput))
-                        .map(mapResponseXmlToJson<any>('tls:GetLayoutResponse')())
+                        .map(mapResponseXmlToJson<any>('tls:GetLayoutResponse'))
                       
     }
 
@@ -36,7 +36,7 @@ export class Display {
      */
     static SetLayout(VideoOutput: ReferenceToken, Layout: Layout) {
         return createStandardRequestBodyFromString(generateRequestElements('tls:SetLayout')(['VideoOutput','Layout'])(VideoOutput,Layout))
-                        .map(mapResponseXmlToJson<any>('tls:SetLayoutResponse')())
+                        .map(mapResponseXmlToJson<any>('tls:SetLayoutResponse'))
                       
     }
 
@@ -47,7 +47,7 @@ export class Display {
      */
     static GetDisplayOptions(VideoOutput: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tls:GetDisplayOptions')(['VideoOutput'])(VideoOutput))
-                        .map(mapResponseXmlToJson<any>('tls:GetDisplayOptionsResponse')())
+                        .map(mapResponseXmlToJson<any>('tls:GetDisplayOptionsResponse'))
                       
     }
 
@@ -60,7 +60,7 @@ export class Display {
      */
     static GetPaneConfigurations(VideoOutput: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tls:GetPaneConfigurations')(['VideoOutput'])(VideoOutput))
-                        .map(mapResponseXmlToJson<any>('tls:GetPaneConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('tls:GetPaneConfigurationsResponse'))
                       
     }
 
@@ -69,7 +69,7 @@ export class Display {
      */
     static GetPaneConfiguration(VideoOutput: ReferenceToken, Pane: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tls:GetPaneConfiguration')(['VideoOutput','Pane'])(VideoOutput,Pane))
-                        .map(mapResponseXmlToJson<any>('tls:GetPaneConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tls:GetPaneConfigurationResponse'))
                       
     }
 
@@ -80,7 +80,7 @@ export class Display {
      */
     static SetPaneConfigurations(VideoOutput: ReferenceToken, PaneConfiguration: PaneConfiguration) {
         return createStandardRequestBodyFromString(generateRequestElements('tls:SetPaneConfigurations')(['VideoOutput','PaneConfiguration'])(VideoOutput,PaneConfiguration))
-                        .map(mapResponseXmlToJson<any>('tls:SetPaneConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('tls:SetPaneConfigurationsResponse'))
                       
     }
 
@@ -89,7 +89,7 @@ export class Display {
      */
     static SetPaneConfiguration(VideoOutput: ReferenceToken, PaneConfiguration: PaneConfiguration) {
         return createStandardRequestBodyFromString(generateRequestElements('tls:SetPaneConfiguration')(['VideoOutput','PaneConfiguration'])(VideoOutput,PaneConfiguration))
-                        .map(mapResponseXmlToJson<any>('tls:SetPaneConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tls:SetPaneConfigurationResponse'))
                       
     }
 
@@ -101,7 +101,7 @@ export class Display {
      */
     static CreatePaneConfiguration(VideoOutput: ReferenceToken, PaneConfiguration: PaneConfiguration) {
         return createStandardRequestBodyFromString(generateRequestElements('tls:CreatePaneConfiguration')(['VideoOutput','PaneConfiguration'])(VideoOutput,PaneConfiguration))
-                        .map(mapResponseXmlToJson<any>('tls:CreatePaneConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tls:CreatePaneConfigurationResponse'))
                       
     }
 
@@ -113,7 +113,7 @@ export class Display {
      */
     static DeletePaneConfiguration(VideoOutput: ReferenceToken, PaneToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tls:DeletePaneConfiguration')(['VideoOutput','PaneToken'])(VideoOutput,PaneToken))
-                        .map(mapResponseXmlToJson<any>('tls:DeletePaneConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tls:DeletePaneConfigurationResponse'))
                       
     }
 

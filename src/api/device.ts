@@ -11,7 +11,7 @@ export class Device {
      */
     static GetServices(IncludeCapability: boolean) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetServices')(['IncludeCapability'])(IncludeCapability))
-                        .map(mapResponseXmlToJson<any>('tds:GetServicesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetServicesResponse'))
                       
     }
 
@@ -20,7 +20,7 @@ export class Device {
      */
     static GetServiceCapabilities() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetServiceCapabilities')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetServiceCapabilitiesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetServiceCapabilitiesResponse'))
                       
     }
 
@@ -29,7 +29,7 @@ export class Device {
      */
     static GetDeviceInformation() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetDeviceInformation')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetDeviceInformationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetDeviceInformationResponse'))
                       
     }
 
@@ -46,7 +46,7 @@ export class Device {
      */
     static SetSystemDateAndTime(DateTimeType: SetDateTimeType, DaylightSavings: boolean, TimeZone?: TimeZone, UTCDateTime?: DateTime) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetSystemDateAndTime')(['DateTimeType','DaylightSavings','TimeZone','UTCDateTime'])(DateTimeType,DaylightSavings,TimeZone,UTCDateTime))
-                        .map(mapResponseXmlToJson<any>('tds:SetSystemDateAndTimeResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetSystemDateAndTimeResponse'))
                       
     }
 
@@ -58,7 +58,7 @@ export class Device {
      */
     static GetSystemDateAndTime() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemDateAndTime')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetSystemDateAndTimeResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetSystemDateAndTimeResponse'))
                       
     }
 
@@ -67,7 +67,7 @@ export class Device {
      */
     static SetSystemFactoryDefault(FactoryDefault: FactoryDefaultType) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetSystemFactoryDefault')(['FactoryDefault'])(FactoryDefault))
-                        .map(mapResponseXmlToJson<any>('tds:SetSystemFactoryDefaultResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetSystemFactoryDefaultResponse'))
                       
     }
 
@@ -79,7 +79,7 @@ export class Device {
      */
     static UpgradeSystemFirmware(Firmware: AttachmentData) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:UpgradeSystemFirmware')(['Firmware'])(Firmware))
-                        .map(mapResponseXmlToJson<any>('tds:UpgradeSystemFirmwareResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:UpgradeSystemFirmwareResponse'))
                       
     }
 
@@ -88,7 +88,7 @@ export class Device {
      */
     static SystemReboot() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SystemReboot')([])())
-                        .map(mapResponseXmlToJson<any>('tds:SystemRebootResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SystemRebootResponse'))
                       
     }
 
@@ -101,7 +101,7 @@ export class Device {
      */
     static RestoreSystem(BackupFiles: BackupFile) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:RestoreSystem')(['BackupFiles'])(BackupFiles))
-                        .map(mapResponseXmlToJson<any>('tds:RestoreSystemResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:RestoreSystemResponse'))
                       
     }
 
@@ -113,7 +113,7 @@ export class Device {
      */
     static GetSystemBackup() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemBackup')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetSystemBackupResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetSystemBackupResponse'))
                       
     }
 
@@ -122,7 +122,7 @@ export class Device {
      */
     static GetSystemLog(LogType: SystemLogType) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemLog')(['LogType'])(LogType))
-                        .map(mapResponseXmlToJson<any>('tds:GetSystemLogResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetSystemLogResponse'))
                       
     }
 
@@ -131,7 +131,7 @@ export class Device {
      */
     static GetSystemSupportInformation() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemSupportInformation')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetSystemSupportInformationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetSystemSupportInformationResponse'))
                       
     }
 
@@ -149,7 +149,7 @@ export class Device {
      */
     static GetScopes() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetScopes')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetScopesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetScopesResponse'))
                       
     }
 
@@ -162,7 +162,7 @@ export class Device {
      */
     static SetScopes(Scopes: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetScopes')(['Scopes'])(Scopes))
-                        .map(mapResponseXmlToJson<any>('tds:SetScopesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetScopesResponse'))
                       
     }
 
@@ -173,7 +173,7 @@ export class Device {
      */
     static AddScopes(ScopeItem: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:AddScopes')(['ScopeItem'])(ScopeItem))
-                        .map(mapResponseXmlToJson<any>('tds:AddScopesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:AddScopesResponse'))
                       
     }
 
@@ -186,7 +186,7 @@ export class Device {
      */
     static RemoveScopes(ScopeItem: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:RemoveScopes')(['ScopeItem'])(ScopeItem))
-                        .map(mapResponseXmlToJson<any>('tds:RemoveScopesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:RemoveScopesResponse'))
                       
     }
 
@@ -197,7 +197,7 @@ export class Device {
      */
     static GetDiscoveryMode() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetDiscoveryMode')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetDiscoveryModeResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetDiscoveryModeResponse'))
                       
     }
 
@@ -208,7 +208,7 @@ export class Device {
      */
     static SetDiscoveryMode(DiscoveryMode: DiscoveryMode) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetDiscoveryMode')(['DiscoveryMode'])(DiscoveryMode))
-                        .map(mapResponseXmlToJson<any>('tds:SetDiscoveryModeResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetDiscoveryModeResponse'))
                       
     }
 
@@ -220,7 +220,7 @@ export class Device {
      */
     static GetRemoteDiscoveryMode() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetRemoteDiscoveryMode')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetRemoteDiscoveryModeResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetRemoteDiscoveryModeResponse'))
                       
     }
 
@@ -232,7 +232,7 @@ export class Device {
      */
     static SetRemoteDiscoveryMode(RemoteDiscoveryMode: DiscoveryMode) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetRemoteDiscoveryMode')(['RemoteDiscoveryMode'])(RemoteDiscoveryMode))
-                        .map(mapResponseXmlToJson<any>('tds:SetRemoteDiscoveryModeResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetRemoteDiscoveryModeResponse'))
                       
     }
 
@@ -243,7 +243,7 @@ export class Device {
      */
     static GetDPAddresses() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetDPAddresses')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetDPAddressesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetDPAddressesResponse'))
                       
     }
 
@@ -254,7 +254,7 @@ export class Device {
      */
     static SetDPAddresses(DPAddress?: NetworkHost) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetDPAddresses')(['DPAddress'])(DPAddress))
-                        .map(mapResponseXmlToJson<any>('tds:SetDPAddressesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetDPAddressesResponse'))
                       
     }
 
@@ -266,7 +266,7 @@ export class Device {
      */
     static GetEndpointReference() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetEndpointReference')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetEndpointReferenceResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetEndpointReferenceResponse'))
                       
     }
 
@@ -278,7 +278,7 @@ export class Device {
      */
     static GetRemoteUser() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetRemoteUser')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetRemoteUserResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetRemoteUserResponse'))
                       
     }
 
@@ -292,7 +292,7 @@ export class Device {
      */
     static SetRemoteUser(RemoteUser?: RemoteUser) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetRemoteUser')(['RemoteUser'])(RemoteUser))
-                        .map(mapResponseXmlToJson<any>('tds:SetRemoteUserResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetRemoteUserResponse'))
                       
     }
 
@@ -303,7 +303,7 @@ export class Device {
      */
     static GetUsers() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetUsers')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetUsersResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetUsersResponse'))
                       
     }
 
@@ -318,7 +318,7 @@ export class Device {
      */
     static CreateUsers(User: User) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:CreateUsers')(['User'])(User))
-                        .map(mapResponseXmlToJson<any>('tds:CreateUsersResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:CreateUsersResponse'))
                       
     }
 
@@ -330,7 +330,7 @@ export class Device {
      */
     static DeleteUsers(Username: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteUsers')(['Username'])(Username))
-                        .map(mapResponseXmlToJson<any>('tds:DeleteUsersResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:DeleteUsersResponse'))
                       
     }
 
@@ -341,7 +341,7 @@ export class Device {
      */
     static SetUser(User: User) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetUser')(['User'])(User))
-                        .map(mapResponseXmlToJson<any>('tds:SetUserResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetUserResponse'))
                       
     }
 
@@ -353,7 +353,7 @@ export class Device {
      */
     static GetWsdlUrl() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetWsdlUrl')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetWsdlUrlResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetWsdlUrlResponse'))
                       
     }
 
@@ -362,9 +362,8 @@ export class Device {
      *    For capabilities of individual services refer to the GetServiceCapabilities methods.
      */
     static GetCapabilities(Category?: CapabilityCategory) {
-        console.log(generateRequestElements('tds:GetCapabilities')(['Category'])(Category))
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetCapabilities')(['Category'])(Category))
-                        .map(mapResponseXmlToJson<any>('tds:GetCapabilitiesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetCapabilitiesResponse'))
                       
     }
 
@@ -374,7 +373,7 @@ export class Device {
      */
     static GetHostname() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetHostname')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetHostnameResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetHostnameResponse'))
                       
     }
 
@@ -387,7 +386,7 @@ export class Device {
      */
     static SetHostname(Name: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetHostname')(['Name'])(Name))
-                        .map(mapResponseXmlToJson<any>('tds:SetHostnameResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetHostnameResponse'))
                       
     }
 
@@ -396,7 +395,7 @@ export class Device {
      */
     static SetHostnameFromDHCP(FromDHCP: boolean) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetHostnameFromDHCP')(['FromDHCP'])(FromDHCP))
-                        .map(mapResponseXmlToJson<any>('tds:SetHostnameFromDHCPResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetHostnameFromDHCPResponse'))
                       
     }
 
@@ -406,7 +405,7 @@ export class Device {
      */
     static GetDNS() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetDNS')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetDNSResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetDNSResponse'))
                       
     }
 
@@ -416,7 +415,7 @@ export class Device {
      */
     static SetDNS(FromDHCP: boolean, SearchDomain?: string, DNSManual?: IPAddress) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetDNS')(['FromDHCP','SearchDomain','DNSManual'])(FromDHCP,SearchDomain,DNSManual))
-                        .map(mapResponseXmlToJson<any>('tds:SetDNSResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetDNSResponse'))
                       
     }
 
@@ -426,7 +425,7 @@ export class Device {
      */
     static GetNTP() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetNTP')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetNTPResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetNTPResponse'))
                       
     }
 
@@ -440,7 +439,7 @@ export class Device {
      */
     static SetNTP(FromDHCP: boolean, NTPManual?: NetworkHost) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetNTP')(['FromDHCP','NTPManual'])(FromDHCP,NTPManual))
-                        .map(mapResponseXmlToJson<any>('tds:SetNTPResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetNTPResponse'))
                       
     }
 
@@ -451,7 +450,7 @@ export class Device {
      */
     static GetDynamicDNS() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetDynamicDNS')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetDynamicDNSResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetDynamicDNSResponse'))
                       
     }
 
@@ -462,7 +461,7 @@ export class Device {
      */
     static SetDynamicDNS(Type: DynamicDNSType, Name?: DNSName, TTL?: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetDynamicDNS')(['Type','Name','TTL'])(Type,Name,TTL))
-                        .map(mapResponseXmlToJson<any>('tds:SetDynamicDNSResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetDynamicDNSResponse'))
                       
     }
 
@@ -473,7 +472,7 @@ export class Device {
      */
     static GetNetworkInterfaces() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetNetworkInterfaces')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetNetworkInterfacesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetNetworkInterfacesResponse'))
                       
     }
 
@@ -487,7 +486,7 @@ export class Device {
      */
     static SetNetworkInterfaces(InterfaceToken: ReferenceToken, NetworkInterface: NetworkInterfaceSetConfiguration) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetNetworkInterfaces')(['InterfaceToken','NetworkInterface'])(InterfaceToken,NetworkInterface))
-                        .map(mapResponseXmlToJson<any>('tds:SetNetworkInterfacesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetNetworkInterfacesResponse'))
                       
     }
 
@@ -497,7 +496,7 @@ export class Device {
      */
     static GetNetworkProtocols() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetNetworkProtocols')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetNetworkProtocolsResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetNetworkProtocolsResponse'))
                       
     }
 
@@ -507,7 +506,7 @@ export class Device {
      */
     static SetNetworkProtocols(NetworkProtocols: NetworkProtocol) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetNetworkProtocols')(['NetworkProtocols'])(NetworkProtocols))
-                        .map(mapResponseXmlToJson<any>('tds:SetNetworkProtocolsResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetNetworkProtocolsResponse'))
                       
     }
 
@@ -517,7 +516,7 @@ export class Device {
      */
     static GetNetworkDefaultGateway() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetNetworkDefaultGateway')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetNetworkDefaultGatewayResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetNetworkDefaultGatewayResponse'))
                       
     }
 
@@ -527,7 +526,7 @@ export class Device {
      */
     static SetNetworkDefaultGateway(IPv4Address?: IPv4Address, IPv6Address?: IPv6Address) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetNetworkDefaultGateway')(['IPv4Address','IPv6Address'])(IPv4Address,IPv6Address))
-                        .map(mapResponseXmlToJson<any>('tds:SetNetworkDefaultGatewayResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetNetworkDefaultGatewayResponse'))
                       
     }
 
@@ -539,7 +538,7 @@ export class Device {
      */
     static GetZeroConfiguration() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetZeroConfiguration')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetZeroConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetZeroConfigurationResponse'))
                       
     }
 
@@ -548,7 +547,7 @@ export class Device {
      */
     static SetZeroConfiguration(InterfaceToken: ReferenceToken, Enabled: boolean) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetZeroConfiguration')(['InterfaceToken','Enabled'])(InterfaceToken,Enabled))
-                        .map(mapResponseXmlToJson<any>('tds:SetZeroConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetZeroConfigurationResponse'))
                       
     }
 
@@ -559,7 +558,7 @@ export class Device {
      */
     static GetIPAddressFilter() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetIPAddressFilter')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetIPAddressFilterResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetIPAddressFilterResponse'))
                       
     }
 
@@ -571,7 +570,7 @@ export class Device {
      */
     static SetIPAddressFilter(IPAddressFilter: IPAddressFilter) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetIPAddressFilter')(['IPAddressFilter'])(IPAddressFilter))
-                        .map(mapResponseXmlToJson<any>('tds:SetIPAddressFilterResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetIPAddressFilterResponse'))
                       
     }
 
@@ -582,7 +581,7 @@ export class Device {
      */
     static AddIPAddressFilter(IPAddressFilter: IPAddressFilter) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:AddIPAddressFilter')(['IPAddressFilter'])(IPAddressFilter))
-                        .map(mapResponseXmlToJson<any>('tds:AddIPAddressFilterResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:AddIPAddressFilterResponse'))
                       
     }
 
@@ -593,7 +592,7 @@ export class Device {
      */
     static RemoveIPAddressFilter(IPAddressFilter: IPAddressFilter) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:RemoveIPAddressFilter')(['IPAddressFilter'])(IPAddressFilter))
-                        .map(mapResponseXmlToJson<any>('tds:RemoveIPAddressFilterResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:RemoveIPAddressFilterResponse'))
                       
     }
 
@@ -609,7 +608,7 @@ export class Device {
      */
     static GetAccessPolicy() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetAccessPolicy')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetAccessPolicyResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetAccessPolicyResponse'))
                       
     }
 
@@ -620,7 +619,7 @@ export class Device {
      */
     static SetAccessPolicy(PolicyFile: BinaryData) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetAccessPolicy')(['PolicyFile'])(PolicyFile))
-                        .map(mapResponseXmlToJson<any>('tds:SetAccessPolicyResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetAccessPolicyResponse'))
                       
     }
 
@@ -637,7 +636,7 @@ export class Device {
      */
     static CreateCertificate(CertificateID?: string, Subject?: string, ValidNotBefore?: string, ValidNotAfter?: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:CreateCertificate')(['CertificateID','Subject','ValidNotBefore','ValidNotAfter'])(CertificateID,Subject,ValidNotBefore,ValidNotAfter))
-                        .map(mapResponseXmlToJson<any>('tds:CreateCertificateResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:CreateCertificateResponse'))
                       
     }
 
@@ -652,7 +651,7 @@ export class Device {
      */
     static GetCertificates() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificates')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetCertificatesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetCertificatesResponse'))
                       
     }
 
@@ -663,7 +662,7 @@ export class Device {
      */
     static GetCertificatesStatus() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificatesStatus')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetCertificatesStatusResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetCertificatesStatusResponse'))
                       
     }
 
@@ -674,7 +673,7 @@ export class Device {
      */
     static SetCertificatesStatus(CertificateStatus?: CertificateStatus) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetCertificatesStatus')(['CertificateStatus'])(CertificateStatus))
-                        .map(mapResponseXmlToJson<any>('tds:SetCertificatesStatusResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetCertificatesStatusResponse'))
                       
     }
 
@@ -687,7 +686,7 @@ export class Device {
      */
     static DeleteCertificates(CertificateID: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteCertificates')(['CertificateID'])(CertificateID))
-                        .map(mapResponseXmlToJson<any>('tds:DeleteCertificatesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:DeleteCertificatesResponse'))
                       
     }
 
@@ -703,7 +702,7 @@ export class Device {
      */
     static GetPkcs10Request(CertificateID: string, Subject?: string, Attributes?: BinaryData) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetPkcs10Request')(['CertificateID','Subject','Attributes'])(CertificateID,Subject,Attributes))
-                        .map(mapResponseXmlToJson<any>('tds:GetPkcs10RequestResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetPkcs10RequestResponse'))
                       
     }
 
@@ -725,7 +724,7 @@ export class Device {
      */
     static LoadCertificates(NVTCertificate: Certificate) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCertificates')(['NVTCertificate'])(NVTCertificate))
-                        .map(mapResponseXmlToJson<any>('tds:LoadCertificatesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:LoadCertificatesResponse'))
                       
     }
 
@@ -736,7 +735,7 @@ export class Device {
      */
     static GetClientCertificateMode() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetClientCertificateMode')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetClientCertificateModeResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetClientCertificateModeResponse'))
                       
     }
 
@@ -747,7 +746,7 @@ export class Device {
      */
     static SetClientCertificateMode(Enabled: boolean) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetClientCertificateMode')(['Enabled'])(Enabled))
-                        .map(mapResponseXmlToJson<any>('tds:SetClientCertificateModeResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetClientCertificateModeResponse'))
                       
     }
 
@@ -757,7 +756,7 @@ export class Device {
      */
     static GetRelayOutputs() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetRelayOutputs')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetRelayOutputsResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetRelayOutputsResponse'))
                       
     }
 
@@ -767,7 +766,7 @@ export class Device {
      */
     static SetRelayOutputSettings(RelayOutputToken: ReferenceToken, Properties: RelayOutputSettings) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetRelayOutputSettings')(['RelayOutputToken','Properties'])(RelayOutputToken,Properties))
-                        .map(mapResponseXmlToJson<any>('tds:SetRelayOutputSettingsResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetRelayOutputSettingsResponse'))
                       
     }
 
@@ -777,7 +776,7 @@ export class Device {
      */
     static SetRelayOutputState(RelayOutputToken: ReferenceToken, LogicalState: RelayLogicalState) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetRelayOutputState')(['RelayOutputToken','LogicalState'])(RelayOutputToken,LogicalState))
-                        .map(mapResponseXmlToJson<any>('tds:SetRelayOutputStateResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetRelayOutputStateResponse'))
                       
     }
 
@@ -802,7 +801,7 @@ export class Device {
      */
     static SendAuxiliaryCommand(AuxiliaryCommand: AuxiliaryData) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SendAuxiliaryCommand')(['AuxiliaryCommand'])(AuxiliaryCommand))
-                        .map(mapResponseXmlToJson<any>('tds:SendAuxiliaryCommandResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SendAuxiliaryCommandResponse'))
                       
     }
 
@@ -816,7 +815,7 @@ export class Device {
      */
     static GetCACertificates() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetCACertificates')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetCACertificatesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetCACertificatesResponse'))
                       
     }
 
@@ -837,7 +836,7 @@ export class Device {
      */
     static LoadCertificateWithPrivateKey(CertificateWithPrivateKey: CertificateWithPrivateKey) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCertificateWithPrivateKey')(['CertificateWithPrivateKey'])(CertificateWithPrivateKey))
-                        .map(mapResponseXmlToJson<any>('tds:LoadCertificateWithPrivateKeyResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:LoadCertificateWithPrivateKeyResponse'))
                       
     }
 
@@ -851,7 +850,7 @@ export class Device {
      */
     static GetCertificateInformation(CertificateID: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificateInformation')(['CertificateID'])(CertificateID))
-                        .map(mapResponseXmlToJson<any>('tds:GetCertificateInformationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetCertificateInformationResponse'))
                       
     }
 
@@ -868,7 +867,7 @@ export class Device {
      */
     static LoadCACertificates(CACertificate: Certificate) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCACertificates')(['CACertificate'])(CACertificate))
-                        .map(mapResponseXmlToJson<any>('tds:LoadCACertificatesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:LoadCACertificatesResponse'))
                       
     }
 
@@ -881,7 +880,7 @@ export class Device {
      */
     static CreateDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:CreateDot1XConfiguration')(['Dot1XConfiguration'])(Dot1XConfiguration))
-                        .map(mapResponseXmlToJson<any>('tds:CreateDot1XConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:CreateDot1XConfigurationResponse'))
                       
     }
 
@@ -892,7 +891,7 @@ export class Device {
      */
     static SetDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetDot1XConfiguration')(['Dot1XConfiguration'])(Dot1XConfiguration))
-                        .map(mapResponseXmlToJson<any>('tds:SetDot1XConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetDot1XConfigurationResponse'))
                       
     }
 
@@ -905,7 +904,7 @@ export class Device {
      */
     static GetDot1XConfiguration(Dot1XConfigurationToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot1XConfiguration')(['Dot1XConfigurationToken'])(Dot1XConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('tds:GetDot1XConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetDot1XConfigurationResponse'))
                       
     }
 
@@ -919,7 +918,7 @@ export class Device {
      */
     static GetDot1XConfigurations() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot1XConfigurations')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetDot1XConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetDot1XConfigurationsResponse'))
                       
     }
 
@@ -930,7 +929,7 @@ export class Device {
      */
     static DeleteDot1XConfiguration(Dot1XConfigurationToken?: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteDot1XConfiguration')(['Dot1XConfigurationToken'])(Dot1XConfigurationToken))
-                        .map(mapResponseXmlToJson<any>('tds:DeleteDot1XConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:DeleteDot1XConfigurationResponse'))
                       
     }
 
@@ -940,7 +939,7 @@ export class Device {
      */
     static GetDot11Capabilities() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot11Capabilities')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetDot11CapabilitiesResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetDot11CapabilitiesResponse'))
                       
     }
 
@@ -950,7 +949,7 @@ export class Device {
      */
     static GetDot11Status(InterfaceToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot11Status')(['InterfaceToken'])(InterfaceToken))
-                        .map(mapResponseXmlToJson<any>('tds:GetDot11StatusResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetDot11StatusResponse'))
                       
     }
 
@@ -960,7 +959,7 @@ export class Device {
      */
     static ScanAvailableDot11Networks(InterfaceToken: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:ScanAvailableDot11Networks')(['InterfaceToken'])(InterfaceToken))
-                        .map(mapResponseXmlToJson<any>('tds:ScanAvailableDot11NetworksResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:ScanAvailableDot11NetworksResponse'))
                       
     }
 
@@ -980,7 +979,7 @@ export class Device {
      */
     static GetSystemUris() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemUris')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetSystemUrisResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetSystemUrisResponse'))
                       
     }
 
@@ -1004,7 +1003,7 @@ export class Device {
      */
     static StartFirmwareUpgrade() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:StartFirmwareUpgrade')([])())
-                        .map(mapResponseXmlToJson<any>('tds:StartFirmwareUpgradeResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:StartFirmwareUpgradeResponse'))
                       
     }
 
@@ -1028,7 +1027,7 @@ export class Device {
      */
     static StartSystemRestore() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:StartSystemRestore')([])())
-                        .map(mapResponseXmlToJson<any>('tds:StartSystemRestoreResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:StartSystemRestoreResponse'))
                       
     }
 
@@ -1039,7 +1038,7 @@ export class Device {
      */
     static GetStorageConfigurations() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetStorageConfigurations')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetStorageConfigurationsResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetStorageConfigurationsResponse'))
                       
     }
 
@@ -1051,7 +1050,7 @@ export class Device {
      */
     static CreateStorageConfiguration(StorageConfiguration: any) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:CreateStorageConfiguration')(['StorageConfiguration'])(StorageConfiguration))
-                        .map(mapResponseXmlToJson<any>('tds:CreateStorageConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:CreateStorageConfigurationResponse'))
                       
     }
 
@@ -1062,7 +1061,7 @@ export class Device {
      */
     static GetStorageConfiguration(Token: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetStorageConfiguration')(['Token'])(Token))
-                        .map(mapResponseXmlToJson<any>('tds:GetStorageConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetStorageConfigurationResponse'))
                       
     }
 
@@ -1073,7 +1072,7 @@ export class Device {
      */
     static SetStorageConfiguration(StorageConfiguration: any) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetStorageConfiguration')(['StorageConfiguration'])(StorageConfiguration))
-                        .map(mapResponseXmlToJson<any>('tds:SetStorageConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetStorageConfigurationResponse'))
                       
     }
 
@@ -1084,7 +1083,7 @@ export class Device {
      */
     static DeleteStorageConfiguration(Token: ReferenceToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteStorageConfiguration')(['Token'])(Token))
-                        .map(mapResponseXmlToJson<any>('tds:DeleteStorageConfigurationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:DeleteStorageConfigurationResponse'))
                       
     }
 
@@ -1095,7 +1094,7 @@ export class Device {
      */
     static GetGeoLocation() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetGeoLocation')([])())
-                        .map(mapResponseXmlToJson<any>('tds:GetGeoLocationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:GetGeoLocationResponse'))
                       
     }
 
@@ -1106,7 +1105,7 @@ export class Device {
      */
     static SetGeoLocation(Location: LocationEntity) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetGeoLocation')(['Location'])(Location))
-                        .map(mapResponseXmlToJson<any>('tds:SetGeoLocationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:SetGeoLocationResponse'))
                       
     }
 
@@ -1117,7 +1116,7 @@ export class Device {
      */
     static DeleteGeoLocation(Location: LocationEntity) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteGeoLocation')(['Location'])(Location))
-                        .map(mapResponseXmlToJson<any>('tds:DeleteGeoLocationResponse')())
+                        .map(mapResponseXmlToJson<any>('tds:DeleteGeoLocationResponse'))
                       
     }
 

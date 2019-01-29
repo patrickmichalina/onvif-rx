@@ -11,7 +11,7 @@ export class Search {
      */
     static GetServiceCapabilities() {
         return createStandardRequestBodyFromString(generateRequestElements('tse:GetServiceCapabilities')([])())
-                        .map(mapResponseXmlToJson<any>('tse:GetServiceCapabilitiesResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:GetServiceCapabilitiesResponse'))
                       
     }
 
@@ -21,7 +21,7 @@ export class Search {
      */
     static GetRecordingSummary() {
         return createStandardRequestBodyFromString(generateRequestElements('tse:GetRecordingSummary')([])())
-                        .map(mapResponseXmlToJson<any>('tse:GetRecordingSummaryResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:GetRecordingSummaryResponse'))
                       
     }
 
@@ -31,7 +31,7 @@ export class Search {
      */
     static GetRecordingInformation(RecordingToken: RecordingReference) {
         return createStandardRequestBodyFromString(generateRequestElements('tse:GetRecordingInformation')(['RecordingToken'])(RecordingToken))
-                        .map(mapResponseXmlToJson<any>('tse:GetRecordingInformationResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:GetRecordingInformationResponse'))
                       
     }
 
@@ -45,7 +45,7 @@ export class Search {
      */
     static GetMediaAttributes(Time: string, RecordingTokens?: RecordingReference) {
         return createStandardRequestBodyFromString(generateRequestElements('tse:GetMediaAttributes')(['Time','RecordingTokens'])(Time,RecordingTokens))
-                        .map(mapResponseXmlToJson<any>('tse:GetMediaAttributesResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:GetMediaAttributesResponse'))
                       
     }
 
@@ -66,7 +66,7 @@ export class Search {
      */
     static FindRecordings(Scope: SearchScope, KeepAliveTime: string, MaxMatches?: number) {
         return createStandardRequestBodyFromString(generateRequestElements('tse:FindRecordings')(['Scope','KeepAliveTime','MaxMatches'])(Scope,KeepAliveTime,MaxMatches))
-                        .map(mapResponseXmlToJson<any>('tse:FindRecordingsResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:FindRecordingsResponse'))
                       
     }
 
@@ -87,7 +87,7 @@ export class Search {
      */
     static GetRecordingSearchResults(SearchToken: JobToken, MinResults?: number, MaxResults?: number, WaitTime?: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tse:GetRecordingSearchResults')(['SearchToken','MinResults','MaxResults','WaitTime'])(SearchToken,MinResults,MaxResults,WaitTime))
-                        .map(mapResponseXmlToJson<any>('tse:GetRecordingSearchResultsResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:GetRecordingSearchResultsResponse'))
                       
     }
 
@@ -110,7 +110,7 @@ export class Search {
      */
     static FindEvents(StartPoint: string, Scope: SearchScope, SearchFilter: EventFilter, IncludeStartState: boolean, KeepAliveTime: string, EndPoint?: string, MaxMatches?: number) {
         return createStandardRequestBodyFromString(generateRequestElements('tse:FindEvents')(['StartPoint','Scope','SearchFilter','IncludeStartState','KeepAliveTime','EndPoint','MaxMatches'])(StartPoint,Scope,SearchFilter,IncludeStartState,KeepAliveTime,EndPoint,MaxMatches))
-                        .map(mapResponseXmlToJson<any>('tse:FindEventsResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:FindEventsResponse'))
                       
     }
 
@@ -130,7 +130,7 @@ export class Search {
      */
     static GetEventSearchResults(SearchToken: JobToken, MinResults?: number, MaxResults?: number, WaitTime?: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tse:GetEventSearchResults')(['SearchToken','MinResults','MaxResults','WaitTime'])(SearchToken,MinResults,MaxResults,WaitTime))
-                        .map(mapResponseXmlToJson<any>('tse:GetEventSearchResultsResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:GetEventSearchResultsResponse'))
                       
     }
 
@@ -152,7 +152,7 @@ export class Search {
      */
     static FindPTZPosition(StartPoint: string, Scope: SearchScope, SearchFilter: PTZPositionFilter, KeepAliveTime: string, EndPoint?: string, MaxMatches?: number) {
         return createStandardRequestBodyFromString(generateRequestElements('tse:FindPTZPosition')(['StartPoint','Scope','SearchFilter','KeepAliveTime','EndPoint','MaxMatches'])(StartPoint,Scope,SearchFilter,KeepAliveTime,EndPoint,MaxMatches))
-                        .map(mapResponseXmlToJson<any>('tse:FindPTZPositionResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:FindPTZPositionResponse'))
                       
     }
 
@@ -173,7 +173,7 @@ export class Search {
      */
     static GetPTZPositionSearchResults(SearchToken: JobToken, MinResults?: number, MaxResults?: number, WaitTime?: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tse:GetPTZPositionSearchResults')(['SearchToken','MinResults','MaxResults','WaitTime'])(SearchToken,MinResults,MaxResults,WaitTime))
-                        .map(mapResponseXmlToJson<any>('tse:GetPTZPositionSearchResultsResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:GetPTZPositionSearchResultsResponse'))
                       
     }
 
@@ -182,7 +182,7 @@ export class Search {
      */
     static GetSearchState(SearchToken: JobToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tse:GetSearchState')(['SearchToken'])(SearchToken))
-                        .map(mapResponseXmlToJson<any>('tse:GetSearchStateResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:GetSearchStateResponse'))
                       
     }
 
@@ -199,7 +199,7 @@ export class Search {
      */
     static EndSearch(SearchToken: JobToken) {
         return createStandardRequestBodyFromString(generateRequestElements('tse:EndSearch')(['SearchToken'])(SearchToken))
-                        .map(mapResponseXmlToJson<any>('tse:EndSearchResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:EndSearchResponse'))
                       
     }
 
@@ -221,7 +221,7 @@ export class Search {
      */
     static FindMetadata(StartPoint: string, Scope: SearchScope, MetadataFilter: MetadataFilter, KeepAliveTime: string, EndPoint?: string, MaxMatches?: number) {
         return createStandardRequestBodyFromString(generateRequestElements('tse:FindMetadata')(['StartPoint','Scope','MetadataFilter','KeepAliveTime','EndPoint','MaxMatches'])(StartPoint,Scope,MetadataFilter,KeepAliveTime,EndPoint,MaxMatches))
-                        .map(mapResponseXmlToJson<any>('tse:FindMetadataResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:FindMetadataResponse'))
                       
     }
 
@@ -242,7 +242,7 @@ export class Search {
      */
     static GetMetadataSearchResults(SearchToken: JobToken, MinResults?: number, MaxResults?: number, WaitTime?: string) {
         return createStandardRequestBodyFromString(generateRequestElements('tse:GetMetadataSearchResults')(['SearchToken','MinResults','MaxResults','WaitTime'])(SearchToken,MinResults,MaxResults,WaitTime))
-                        .map(mapResponseXmlToJson<any>('tse:GetMetadataSearchResultsResponse')())
+                        .map(mapResponseXmlToJson<any>('tse:GetMetadataSearchResultsResponse'))
                       
     }
 

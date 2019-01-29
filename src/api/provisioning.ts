@@ -11,7 +11,7 @@ export class Provisioning {
      */
     static GetServiceCapabilities() {
         return createStandardRequestBodyFromString(generateRequestElements('tpv:GetServiceCapabilities')([])())
-                        .map(mapResponseXmlToJson<any>('tpv:GetServiceCapabilitiesResponse')())
+                        .map(mapResponseXmlToJson<any>('tpv:GetServiceCapabilitiesResponse'))
                       
     }
 
@@ -20,7 +20,7 @@ export class Provisioning {
      */
     static PanMove() {
         return createStandardRequestBodyFromString(generateRequestElements('tpv:PanMove')([])())
-                        .map(mapResponseXmlToJson<any>('tpv:PanMoveResponse')())
+                        .map(mapResponseXmlToJson<any>('tpv:PanMoveResponse'))
                       
     }
 
@@ -29,7 +29,7 @@ export class Provisioning {
      */
     static TiltMove() {
         return createStandardRequestBodyFromString(generateRequestElements('tpv:TiltMove')([])())
-                        .map(mapResponseXmlToJson<any>('tpv:TiltMoveResponse')())
+                        .map(mapResponseXmlToJson<any>('tpv:TiltMoveResponse'))
                       
     }
 
@@ -38,7 +38,7 @@ export class Provisioning {
      */
     static ZoomMove() {
         return createStandardRequestBodyFromString(generateRequestElements('tpv:ZoomMove')([])())
-                        .map(mapResponseXmlToJson<any>('tpv:ZoomMoveResponse')())
+                        .map(mapResponseXmlToJson<any>('tpv:ZoomMoveResponse'))
                       
     }
 
@@ -47,7 +47,7 @@ export class Provisioning {
      */
     static RollMove() {
         return createStandardRequestBodyFromString(generateRequestElements('tpv:RollMove')([])())
-                        .map(mapResponseXmlToJson<any>('tpv:RollMoveResponse')())
+                        .map(mapResponseXmlToJson<any>('tpv:RollMoveResponse'))
                       
     }
 
@@ -56,7 +56,7 @@ export class Provisioning {
      */
     static FocusMove() {
         return createStandardRequestBodyFromString(generateRequestElements('tpv:FocusMove')([])())
-                        .map(mapResponseXmlToJson<any>('tpv:FocusMoveResponse')())
+                        .map(mapResponseXmlToJson<any>('tpv:FocusMoveResponse'))
                       
     }
 
@@ -65,7 +65,7 @@ export class Provisioning {
      */
     static Stop() {
         return createStandardRequestBodyFromString(generateRequestElements('tpv:Stop')([])())
-                        .map(mapResponseXmlToJson<any>('tpv:StopResponse')())
+                        .map(mapResponseXmlToJson<any>('tpv:StopResponse'))
                       
     }
 
@@ -74,7 +74,7 @@ export class Provisioning {
      */
     static GetUsage() {
         return createStandardRequestBodyFromString(generateRequestElements('tpv:GetUsage')([])())
-                        .map(mapResponseXmlToJson<any>('tpv:GetUsageResponse')())
+                        .map(mapResponseXmlToJson<any>('tpv:GetUsageResponse'))
                       
     }
 

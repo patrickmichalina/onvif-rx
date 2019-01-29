@@ -117,7 +117,7 @@ generateTypes()
               docs: [{ description: action.documentation.replace(/\*/g, '') }],
               name: action.actionName,
               bodyText: `return createStandardRequestBodyFromString(generateRequestElements('${action.soapRequestNode}')([${action.input.parameters.map(a => `'${a.name}'`).join(',')}])(${action.input.parameters.map(a => a.name).join(',')}))
-                .map(mapResponseXmlToJson<any>('${action.output.ref}')())
+                .map(mapResponseXmlToJson<any>('${action.output.ref}'))
               `,
               parameters: action.input.parameters
                 .map<ParameterDeclarationStructure>(p => {
