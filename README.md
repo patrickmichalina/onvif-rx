@@ -72,25 +72,29 @@ const device = createManagedDeviceInNode({
 device.api.Device.GetUsers()
   .toPromise()
   .then(res=> {
-    res.match({
+    res.match({ // results are wrapped in a managed object for safer processing
       ok: console.log, // successful response object
       fail: r => console.log(r.status, r.statusMessage) // request failure object
     })
   }) 
+
+// output
+// { User: { Username: 'admin', UserLevel: 'Administrator' } }
 ```
 
 ### Ad Hoc Usage
 ```ts
 import { Device } from 'onvif-rx'
 
-const device = createManagedDeviceInNode({
-  deviceUrl: 'http://192.168.1.11/onvif/device_service',
-  password: 'admin',
-  username: '1234'
-})
-
 Device.GetUsers()
-  .run({}) // requires config
+  .run({
+    system: DEFAULT_NODE_ENV,
+    deviceUrl: 'http://192.168.1.11/onvif/device_service',
+    user: maybe({
+      username: 'admin',
+      password: '1234'
+    })
+  })
   .toPromise()
   .then(res=> {
     res.match({
