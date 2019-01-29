@@ -5,6 +5,13 @@ import { map } from 'rxjs/operators'
 import { createUserToken } from './auth'
 import { xml2json } from 'xml-js'
 
+export interface IResultStructure<T> {
+  readonly json: T
+  readonly xml: string
+}
+
+export type IOnvifResult = IResult<IXmlContainer, ITransportPayoad>
+
 export enum XMLNS {
   S11 = 'xmlns:S11="http://www.w3.org/2003/05/soap-envelope"',
   wsse = 'xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"',
@@ -41,31 +48,18 @@ export enum XMLNS {
   wsa5 = 'xmlns:wsa5="http://www.w3.org/2005/08/addressing"'
 }
 
-export interface ITransportPayloadXml {
-  readonly body: Document
-  readonly statusMessage: string
-  readonly status: number
-}
-
-export type IOnvifNetworkResponse<T> = Observable<IResult<T, ITransportPayloadXml>>
-
 const parseXml =
   (parser: DOMParser) =>
-    (payload: ITransportPayoad): ITransportPayloadXml => {
-      // console.log(payload.body)
-      return {
-        ...payload,
-        body: parser.parseFromString(payload.body, 'text/xml')
-      }
-    }
+    (xmlString: string): Document =>
+      parser.parseFromString(xmlString, 'text/xml')
+
+const nsstr = () => Object.keys(XMLNS).map((k: any) => XMLNS[k])
 
 export enum SOAP_NODE {
   Header = 'S11:Header',
   Envelope = 'S11:Envelope',
   Body = 'S11:Body'
 }
-
-const nsstr = () => Object.keys(XMLNS).map((k: any) => XMLNS[k])
 
 export const soapShell =
   (rawBody: string) =>
@@ -80,23 +74,26 @@ export const mapResponseXmlToJson =
   <T>(node: string) =>
     (source: Observable<IOnvifResult>) =>
       source.pipe(
-        map(a => a.map(b => {
+        map(a => a.map<IResultStructure<T>>(b => {
           const split = node.split(':')
           const nodeKey = maybe(split[1]).valueOr(node)
-          const soapNsPrefix = b.documentElement.lookupPrefix(b.documentElement.namespaceURI)
+          const soapNsPrefix = b.xmlDocument.documentElement.lookupPrefix(b.xmlDocument.documentElement.namespaceURI)
 
-          const parsed = JSON.parse(xml2json(b as any, {
+          const parsed = JSON.parse(xml2json(b.xmlString, {
             compact: true,
             spaces: 2,
             ignoreAttributes: true,
             elementNameFn: d => maybe(d.split(':')[1]).valueOr(d)
           }))
 
-          const resultObject = parsed['Envelope']
+          const json = parsed['Envelope']
             ? parsed['Envelope']['Body'][nodeKey]
             : parsed[`${soapNsPrefix}:Envelope`][`${soapNsPrefix}:Body`][nodeKey]
 
-          return resultObject as T
+          return {
+            json,
+            xml: b.xmlString
+          }
         })))
 
 export const mapResponseObsToProperty =
@@ -104,21 +101,46 @@ export const mapResponseObsToProperty =
     (source: Observable<IResult<A, E>>) =>
       source.pipe(map(a => a.map(propSelectFn)))
 
-type IOnvifResult = IResult<Document, ITransportPayloadXml>
+export interface IXmlContainer {
+  readonly xmlString: string
+  readonly xmlDocument: Document
+}
+
+// tslint:disable-next-line:readonly-array
+export const generateRequestElements = (reqNode: string) => (parameterNodes: string[]) => (...params: any[]) => {
+  return !params.length
+    ? `<${reqNode} />`
+    : `<${reqNode}>${params.map((param, index) => {
+      const type = typeof param
+      const insertIntoRootNode = (inner: string) => `<${parameterNodes[index]}>${inner}</${parameterNodes[index]}>`
+
+      switch (type) {
+        case 'undefined': return ''
+        case 'boolean': return insertIntoRootNode(param)
+        case 'object': return insertIntoRootNode(Object.keys(param).reduce((acc, key) => {
+          const val = (param as any)[key]
+          return val
+            ? (acc || '') + `<${key}>${(param as any)[key]}</${key}>`
+            : (acc || '')
+        }, ''))
+        default: return insertIntoRootNode(param)
+      }
+    }).join('')}</${reqNode}>`
+}
 
 export const createStandardRequestBody =
   (body: string) =>
     reader<IDeviceConfig, Observable<IOnvifResult>>(config => {
       const gen = (body: string) => config.system.transport(body)(config.deviceUrl)
-        .pipe(map(parseXml(config.system.parser)))
         .pipe(map(response => {
+          const xmlDocument = parseXml(config.system.parser)(response.body)
           const tmp = (XMLNS.S11.split('=').pop() || '').replace(/"/g, '')
-          const subcode = maybe(response.body.getElementsByTagNameNS(tmp, 'Subcode').item(0)).flatMapAuto(a => a.textContent)
-          const reason = maybe(response.body.getElementsByTagNameNS(tmp, 'Reason').item(0)).flatMapAuto(a => a.textContent)
+          const subcode = maybe(xmlDocument.getElementsByTagNameNS(tmp, 'Subcode').item(0)).flatMapAuto(a => a.textContent)
+          const reason = maybe(xmlDocument.getElementsByTagNameNS(tmp, 'Reason').item(0)).flatMapAuto(a => a.textContent)
 
           return response.status === 200 && !reason.valueOrUndefined()
-            ? ok(response.body)
-            : fail<Document, ITransportPayloadXml>({
+            ? ok<IXmlContainer, ITransportPayoad>({ xmlString: response.body, xmlDocument })
+            : fail<IXmlContainer, ITransportPayoad>({
               ...response,
               statusMessage: (reason.valueOrUndefined() || subcode.valueOr(response.statusMessage)).trim()
             })
@@ -146,25 +168,3 @@ export const createDeviceRequestBodyFromString =
 export const createMediaRequestBodyFromString =
   (key: string) =>
     createSimpleRequestBodyFromString(`trt:${key}`)
-
-// tslint:disable-next-line:readonly-array
-export const generateRequestElements = (reqNode: string) => (parameterNodes: string[]) => (...params: any[]) => {
-  return !params.length
-    ? `<${reqNode} />`
-    : `<${reqNode}>${params.map((param, index) => {
-      const type = typeof param
-      const insertIntoRootNode = (inner: string) => `<${parameterNodes[index]}>${inner}</${parameterNodes[index]}>`
-
-      switch (type) {
-        case 'undefined': return ''
-        case 'boolean': return insertIntoRootNode(param)
-        case 'object': return insertIntoRootNode(Object.keys(param).reduce((acc, key) => {
-          const val = (param as any)[key]
-          return val
-            ? (acc || '') + `<${key}>${(param as any)[key]}</${key}>`
-            : (acc || '')
-        }, ''))
-        default: return insertIntoRootNode(param)
-      }
-    }).join('')}</${reqNode}>`
-}

@@ -50,7 +50,7 @@ For more information about the TypeScript API checkout the [generated API docs](
 
 - [x] Generate API with typings and docs from WSDL's and XSD's
 - [x] Execute simple (parameter-less) requests
-- [ ] Execute requests with paremeters
+- [x] Execute requests with paremeters
 
 ## Node Installation
 This package is designed to be run in both the browser and node environments.
@@ -88,13 +88,10 @@ device.api.Device.GetUsers()
   .toPromise()
   .then(res=> {
     res.match({ // results are wrapped in a managed object for safer processing
-      ok: console.log, // successful response object
-      fail: r => console.log(r.status, r.statusMessage) // request failure object
+      ok: success => console.log(success.json), // successful response object
+      fail: railure => console.log(railure.status, railure.statusMessage) // request failure object
     })
   }) 
-
-// output
-// { User: { Username: 'admin', UserLevel: 'Administrator' } }
 ```
 
 ### Ad Hoc Usage
@@ -106,7 +103,7 @@ Device.GetUsers()
   .run({
     system: DEFAULT_NODE_ENV,
     deviceUrl: 'http://192.168.1.11/onvif/device_service',
-    user: maybe({ // currenlty requires a wrapper object, will improve in the future
+    user: maybe({ // currently requires a wrapper object, will improve in the future
       username: 'admin',
       password: '1234'
     })
@@ -114,11 +111,8 @@ Device.GetUsers()
   .toPromise()
   .then(res=> {
     res.match({
-      ok: console.log, // successful response object
-      fail: r => console.log(r.status, r.statusMessage) // request failure object
+      ok: success => console.log(success.json), // successful response object
+      fail: railure => console.log(railure.status, railure.statusMessage) // request failure object
     })
   }) 
-
-// output
-// { User: { Username: 'admin', UserLevel: 'Administrator' } }
 ```
