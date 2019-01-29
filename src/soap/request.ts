@@ -82,9 +82,10 @@ export const mapResponseXmlToJson =
           const parsed = JSON.parse(xml2json(b.xmlString, {
             compact: true,
             spaces: 2,
-            ignoreAttributes: true,
-            elementNameFn: d => maybe(d.split(':')[1]).valueOr(d)
-          }))
+            nativeType: true,
+            nativeTypeAttributes: true,
+            elementNameFn: (d: string) => maybe(d.split(':')[1]).valueOr(d)
+          } as any))
 
           const json = parsed['Envelope']
             ? parsed['Envelope']['Body'][nodeKey]
