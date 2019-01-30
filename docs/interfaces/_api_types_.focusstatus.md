@@ -28,7 +28,7 @@
 
 **● Error**: *`string`*
 
-*Defined in [api/types.ts:2436](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2436)*
+*Defined in [api/types.ts:2436](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2436)*
 
 ___
 <a id="movestatus"></a>
@@ -37,7 +37,7 @@ ___
 
 **● MoveStatus**: *[MoveStatus](../enums/_api_types_.movestatus.md)*
 
-*Defined in [api/types.ts:2435](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2435)*
+*Defined in [api/types.ts:2435](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2435)*
 
 ___
 <a id="position"></a>
@@ -46,7 +46,7 @@ ___
 
 **● Position**: *`number`*
 
-*Defined in [api/types.ts:2434](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2434)*
+*Defined in [api/types.ts:2434](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2434)*
 
 ___
 

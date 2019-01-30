@@ -19,7 +19,7 @@
 
 **Full**:  = "Full"
 
-*Defined in [api/types.ts:4579](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4579)*
+*Defined in [api/types.ts:4579](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4579)*
 
 ___
 <a id="half"></a>
@@ -28,7 +28,7 @@ ___
 
 **Half**:  = "Half"
 
-*Defined in [api/types.ts:4583](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4583)*
+*Defined in [api/types.ts:4583](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4583)*
 
 ___
 

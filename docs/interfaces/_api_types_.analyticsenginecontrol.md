@@ -30,7 +30,7 @@ Token of the analytics engine (AnalyticsEngine) being controlled.
 
 **● EngineConfigToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3873](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3873)*
+*Defined in [api/types.ts:3873](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3873)*
 
 ___
 <a id="enginetoken"></a>
@@ -39,7 +39,7 @@ ___
 
 **● EngineToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3872](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3872)*
+*Defined in [api/types.ts:3872](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3872)*
 
 ___
 <a id="inputtoken"></a>
@@ -48,7 +48,7 @@ ___
 
 **● InputToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3874](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3874)*
+*Defined in [api/types.ts:3874](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3874)*
 
 ___
 <a id="mode"></a>
@@ -57,7 +57,7 @@ ___
 
 **● Mode**: *[ModeOfOperation](../enums/_api_types_.modeofoperation.md)*
 
-*Defined in [api/types.ts:3878](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3878)*
+*Defined in [api/types.ts:3878](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3878)*
 
 ___
 <a id="multicast"></a>
@@ -66,7 +66,7 @@ ___
 
 **● Multicast**: *[MulticastConfiguration](_api_types_.multicastconfiguration.md)*
 
-*Defined in [api/types.ts:3876](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3876)*
+*Defined in [api/types.ts:3876](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3876)*
 
 ___
 <a id="receivertoken"></a>
@@ -75,7 +75,7 @@ ___
 
 **● ReceiverToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3875](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3875)*
+*Defined in [api/types.ts:3875](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3875)*
 
 ___
 <a id="subscription"></a>
@@ -84,7 +84,7 @@ ___
 
 **● Subscription**: *[Config](_api_types_.config.md)*
 
-*Defined in [api/types.ts:3877](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3877)*
+*Defined in [api/types.ts:3877](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3877)*
 
 ___
 

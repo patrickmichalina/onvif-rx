@@ -27,7 +27,7 @@
 
 **● Configuration**: *[ReceiverConfiguration](_api_types_.receiverconfiguration.md)*
 
-*Defined in [api/types.ts:3393](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3393)*
+*Defined in [api/types.ts:3393](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3393)*
 
 ___
 <a id="token"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Token**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3392](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3392)*
+*Defined in [api/types.ts:3392](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3392)*
 
 ___
 

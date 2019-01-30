@@ -26,7 +26,7 @@ Indicates whether or not IPv4 is enabled.
 
 **● DHCP**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1289](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1289)*
+*Defined in [api/types.ts:1289](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1289)*
 
 ___
 <a id="enabled"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Enabled**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1287](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1287)*
+*Defined in [api/types.ts:1287](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1287)*
 
 ___
 <a id="manual"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Manual**: *[PrefixedIPv4Address](_api_types_.prefixedipv4address.md)*
 
-*Defined in [api/types.ts:1288](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1288)*
+*Defined in [api/types.ts:1288](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1288)*
 
 ___
 

@@ -26,7 +26,7 @@ Indicates that there can be PTZ data in the metadata track in the specified time
 
 **● CanContainAnalytics**: *`boolean`*
 
-*Defined in [api/types.ts:3635](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3635)*
+*Defined in [api/types.ts:3635](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3635)*
 
 ___
 <a id="cancontainnotifications"></a>
@@ -35,7 +35,7 @@ ___
 
 **● CanContainNotifications**: *`boolean`*
 
-*Defined in [api/types.ts:3636](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3636)*
+*Defined in [api/types.ts:3636](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3636)*
 
 ___
 <a id="cancontainptz"></a>
@@ -44,7 +44,7 @@ ___
 
 **● CanContainPTZ**: *`boolean`*
 
-*Defined in [api/types.ts:3634](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3634)*
+*Defined in [api/types.ts:3634](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3634)*
 
 ___
 

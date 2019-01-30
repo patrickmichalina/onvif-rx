@@ -23,7 +23,7 @@
 
 **● Extension**: *[RuleEngineConfigurationExtension](_api_types_.ruleengineconfigurationextension.md)*
 
-*Defined in [api/types.ts:3197](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3197)*
+*Defined in [api/types.ts:3197](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3197)*
 
 ___
 <a id="rule"></a>
@@ -32,7 +32,7 @@ ___
 
 **● Rule**: *[Config](_api_types_.config.md)*
 
-*Defined in [api/types.ts:3196](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3196)*
+*Defined in [api/types.ts:3196](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3196)*
 
 ___
 

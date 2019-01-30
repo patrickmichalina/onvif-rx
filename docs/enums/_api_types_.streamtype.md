@@ -19,7 +19,7 @@
 
 **RTP-Multicast**:  = "RTP-Multicast"
 
-*Defined in [api/types.ts:4519](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4519)*
+*Defined in [api/types.ts:4519](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4519)*
 
 ___
 <a id="rtp_unicast"></a>
@@ -28,7 +28,7 @@ ___
 
 **RTP-Unicast**:  = "RTP-Unicast"
 
-*Defined in [api/types.ts:4515](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4515)*
+*Defined in [api/types.ts:4515](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4515)*
 
 ___
 

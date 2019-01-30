@@ -29,7 +29,7 @@
 
 **● detail**: *[detail](_api_types_.fault.md#detail)*
 
-*Defined in [api/types.ts:4209](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4209)*
+*Defined in [api/types.ts:4209](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4209)*
 
 ___
 <a id="faultactor"></a>
@@ -38,7 +38,7 @@ ___
 
 **● faultactor**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:4208](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4208)*
+*Defined in [api/types.ts:4208](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4208)*
 
 ___
 <a id="faultcode"></a>
@@ -47,7 +47,7 @@ ___
 
 **● faultcode**: *`any`*
 
-*Defined in [api/types.ts:4206](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4206)*
+*Defined in [api/types.ts:4206](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4206)*
 
 ___
 <a id="faultstring"></a>
@@ -56,7 +56,7 @@ ___
 
 **● faultstring**: *`string`*
 
-*Defined in [api/types.ts:4207](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4207)*
+*Defined in [api/types.ts:4207](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4207)*
 
 ___
 

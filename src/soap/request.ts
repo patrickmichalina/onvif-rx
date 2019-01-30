@@ -111,13 +111,17 @@ export const generateRequestElements = (reqNode: string) => (params: any) => {
   const reducer = (obj: any) => (base: string) => (value?: string): any => Object
     .keys(obj)
     .reduce((acc, key) => {
+      const modded = key.includes('_')
+        ? key.replace('_', ':')
+        : `tt:${key}`
+
       const value = typeof obj[key] === 'string'
         ? obj[key]
         : undefined
 
       return value
-        ? acc.replace('><', `><${key}>${value}</${key}><`)
-        : acc.replace('><', '>' + reducer(obj[key])(key)() + '<')
+        ? acc.replace('><', `><${modded}>${value}</${modded}><`)
+        : acc.replace('><', '>' + reducer(obj[key])(modded)() + '<')
     }, value ? `<${base}>${value}</${base}>` : `<${base}></${base}>`)
 
   return reducer(params)(reqNode)()

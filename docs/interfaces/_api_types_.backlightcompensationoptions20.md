@@ -27,7 +27,7 @@
 
 **● Level**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2951](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2951)*
+*Defined in [api/types.ts:2951](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2951)*
 
 ___
 <a id="mode"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Mode**: *[BacklightCompensationMode](../enums/_api_types_.backlightcompensationmode.md)*
 
-*Defined in [api/types.ts:2950](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2950)*
+*Defined in [api/types.ts:2950](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2950)*
 
 ___
 

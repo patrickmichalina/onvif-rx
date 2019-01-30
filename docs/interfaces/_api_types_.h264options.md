@@ -28,7 +28,7 @@ List of supported image sizes.
 
 **● EncodingIntervalRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:637](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L637)*
+*Defined in [api/types.ts:637](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L637)*
 
 ___
 <a id="frameraterange"></a>
@@ -37,7 +37,7 @@ ___
 
 **● FrameRateRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:636](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L636)*
+*Defined in [api/types.ts:636](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L636)*
 
 ___
 <a id="govlengthrange"></a>
@@ -46,7 +46,7 @@ ___
 
 **● GovLengthRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:635](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L635)*
+*Defined in [api/types.ts:635](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L635)*
 
 ___
 <a id="h264profilessupported"></a>
@@ -55,7 +55,7 @@ ___
 
 **● H264ProfilesSupported**: *[H264Profile](../enums/_api_types_.h264profile.md)*
 
-*Defined in [api/types.ts:638](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L638)*
+*Defined in [api/types.ts:638](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L638)*
 
 ___
 <a id="resolutionsavailable"></a>
@@ -64,7 +64,7 @@ ___
 
 **● ResolutionsAvailable**: *[VideoResolution](_api_types_.videoresolution.md)*
 
-*Defined in [api/types.ts:634](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L634)*
+*Defined in [api/types.ts:634](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L634)*
 
 ___
 

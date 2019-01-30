@@ -27,7 +27,7 @@
 
 **● Extension**: *[ImagingStatus20Extension](_api_types_.imagingstatus20extension.md)*
 
-*Defined in [api/types.ts:2676](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2676)*
+*Defined in [api/types.ts:2676](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2676)*
 
 ___
 <a id="focusstatus20"></a>
@@ -36,7 +36,7 @@ ___
 
 **● FocusStatus20**: *[FocusStatus20](_api_types_.imagingstatus20.md#focusstatus20)*
 
-*Defined in [api/types.ts:2675](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2675)*
+*Defined in [api/types.ts:2675](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2675)*
 
 ___
 

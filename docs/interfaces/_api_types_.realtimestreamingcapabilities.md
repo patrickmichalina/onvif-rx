@@ -27,7 +27,7 @@ Indicates whether or not RTP multicast is supported.
 
 **● Extension**: *[RealTimeStreamingCapabilitiesExtension](_api_types_.realtimestreamingcapabilitiesextension.md)*
 
-*Defined in [api/types.ts:1551](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1551)*
+*Defined in [api/types.ts:1551](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1551)*
 
 ___
 <a id="rtpmulticast"></a>
@@ -36,7 +36,7 @@ ___
 
 **● RTPMulticast**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1548](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1548)*
+*Defined in [api/types.ts:1548](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1548)*
 
 ___
 <a id="rtp_rtsp_tcp"></a>
@@ -45,7 +45,7 @@ ___
 
 **● RTP_RTSP_TCP**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1550](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1550)*
+*Defined in [api/types.ts:1550](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1550)*
 
 ___
 <a id="rtp_tcp"></a>
@@ -54,7 +54,7 @@ ___
 
 **● RTP_TCP**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1549](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1549)*
+*Defined in [api/types.ts:1549](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1549)*
 
 ___
 

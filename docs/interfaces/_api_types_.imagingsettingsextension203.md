@@ -27,7 +27,7 @@ Optional element to configure Image Contrast Compensation.
 
 **● Defogging**: *[Defogging](_api_types_.imagingsettingsextension203.md#defogging)*
 
-*Defined in [api/types.ts:2741](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2741)*
+*Defined in [api/types.ts:2741](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2741)*
 
 ___
 <a id="extension"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Extension**: *[ImagingSettingsExtension204](_api_types_.imagingsettingsextension204.md)*
 
-*Defined in [api/types.ts:2743](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2743)*
+*Defined in [api/types.ts:2743](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2743)*
 
 ___
 <a id="noisereduction"></a>
@@ -45,7 +45,7 @@ ___
 
 **● NoiseReduction**: *[NoiseReduction](_api_types_.imagingsettingsextension203.md#noisereduction)*
 
-*Defined in [api/types.ts:2742](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2742)*
+*Defined in [api/types.ts:2742](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2742)*
 
 ___
 <a id="tonecompensation"></a>
@@ -54,7 +54,7 @@ ___
 
 **● ToneCompensation**: *[ToneCompensation](_api_types_.imagingsettingsextension203.md#tonecompensation)*
 
-*Defined in [api/types.ts:2740](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2740)*
+*Defined in [api/types.ts:2740](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2740)*
 
 ___
 

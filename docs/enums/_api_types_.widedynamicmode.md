@@ -19,7 +19,7 @@
 
 **OFF**:  = "OFF"
 
-*Defined in [api/types.ts:5089](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5089)*
+*Defined in [api/types.ts:5089](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5089)*
 
 ___
 <a id="on"></a>
@@ -28,7 +28,7 @@ ___
 
 **ON**:  = "ON"
 
-*Defined in [api/types.ts:5093](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5093)*
+*Defined in [api/types.ts:5093](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5093)*
 
 ___
 

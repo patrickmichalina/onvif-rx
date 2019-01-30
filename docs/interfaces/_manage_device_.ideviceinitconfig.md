@@ -24,7 +24,7 @@
 
 **● deviceUrl**: *`string`*
 
-*Defined in [manage/device.ts:13](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/manage/device.ts#L13)*
+*Defined in [manage/device.ts:13](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/manage/device.ts#L13)*
 
 ___
 <a id="password"></a>
@@ -33,7 +33,7 @@ ___
 
 **● password**: *`undefined` \| `string`*
 
-*Defined in [manage/device.ts:15](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/manage/device.ts#L15)*
+*Defined in [manage/device.ts:15](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/manage/device.ts#L15)*
 
 ___
 <a id="username"></a>
@@ -42,7 +42,7 @@ ___
 
 **● username**: *`undefined` \| `string`*
 
-*Defined in [manage/device.ts:14](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/manage/device.ts#L14)*
+*Defined in [manage/device.ts:14](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/manage/device.ts#L14)*
 
 ___
 

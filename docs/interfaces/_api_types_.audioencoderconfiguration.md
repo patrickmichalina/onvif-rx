@@ -28,7 +28,7 @@ Audio codec used for encoding the audio input (either G.711, G.726 or AAC)
 
 **● Bitrate**: *`number`*
 
-*Defined in [api/types.ts:711](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L711)*
+*Defined in [api/types.ts:711](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L711)*
 
 ___
 <a id="encoding"></a>
@@ -37,7 +37,7 @@ ___
 
 **● Encoding**: *[AudioEncoding](../enums/_api_types_.audioencoding.md)*
 
-*Defined in [api/types.ts:710](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L710)*
+*Defined in [api/types.ts:710](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L710)*
 
 ___
 <a id="multicast"></a>
@@ -46,7 +46,7 @@ ___
 
 **● Multicast**: *[MulticastConfiguration](_api_types_.multicastconfiguration.md)*
 
-*Defined in [api/types.ts:713](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L713)*
+*Defined in [api/types.ts:713](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L713)*
 
 ___
 <a id="samplerate"></a>
@@ -55,7 +55,7 @@ ___
 
 **● SampleRate**: *`number`*
 
-*Defined in [api/types.ts:712](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L712)*
+*Defined in [api/types.ts:712](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L712)*
 
 ___
 <a id="sessiontimeout"></a>
@@ -64,7 +64,7 @@ ___
 
 **● SessionTimeout**: *`string`*
 
-*Defined in [api/types.ts:714](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L714)*
+*Defined in [api/types.ts:714](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L714)*
 
 ___
 

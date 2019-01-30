@@ -24,7 +24,7 @@ Maximum number of profiles.
 
 **● MaximumNumberOfProfiles**: *`number`*
 
-*Defined in [api/types.ts:1564](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1564)*
+*Defined in [api/types.ts:1564](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1564)*
 
 ___
 

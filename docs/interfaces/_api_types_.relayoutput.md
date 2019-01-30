@@ -22,7 +22,7 @@
 
 **● Properties**: *[RelayOutputSettings](_api_types_.relayoutputsettings.md)*
 
-*Defined in [api/types.ts:2029](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2029)*
+*Defined in [api/types.ts:2029](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2029)*
 
 ___
 

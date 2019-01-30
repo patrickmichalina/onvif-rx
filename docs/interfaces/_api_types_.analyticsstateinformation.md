@@ -25,7 +25,7 @@ Token of the control object whose status is requested.
 
 **● AnalyticsEngineControlToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3885](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3885)*
+*Defined in [api/types.ts:3885](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3885)*
 
 ___
 <a id="state"></a>
@@ -34,7 +34,7 @@ ___
 
 **● State**: *[AnalyticsState](_api_types_.analyticsstate.md)*
 
-*Defined in [api/types.ts:3886](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3886)*
+*Defined in [api/types.ts:3886](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3886)*
 
 ___
 

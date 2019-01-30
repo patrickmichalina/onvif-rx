@@ -22,7 +22,7 @@
 
 **● api**: *[ManagedONVIFApi](../classes/_api_index_.managedonvifapi.md)*
 
-*Defined in [manage/device.ts:9](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/manage/device.ts#L9)*
+*Defined in [manage/device.ts:9](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/manage/device.ts#L9)*
 
 ONVIF standard API
 

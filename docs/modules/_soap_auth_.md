@@ -28,7 +28,7 @@
 
 ▸ **createUserToken**(timeDifference?: *`number`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `IMaybe`<`string`>>
 
-*Defined in [soap/auth.ts:42](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/auth.ts#L42)*
+*Defined in [soap/auth.ts:42](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L42)*
 
 **Parameters:**
 
@@ -45,7 +45,7 @@ ___
 
 ▸ **onvifDigest**(dateIsoString: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `IMaybe`<[IDigestBag](../interfaces/_soap_auth_.idigestbag.md)>>
 
-*Defined in [soap/auth.ts:16](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/auth.ts#L16)*
+*Defined in [soap/auth.ts:16](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L16)*
 
 **Parameters:**
 
@@ -65,7 +65,7 @@ ___
 
 **TOKENS**: *`object`*
 
-*Defined in [soap/auth.ts:33](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/auth.ts#L33)*
+*Defined in [soap/auth.ts:33](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L33)*
 
 <a id="tokens.cr"></a>
 
@@ -73,7 +73,7 @@ ___
 
 **● cr**: *`string`* = "wsu:Created"
 
-*Defined in [soap/auth.ts:39](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/auth.ts#L39)*
+*Defined in [soap/auth.ts:39](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L39)*
 
 ___
 <a id="tokens.nc"></a>
@@ -82,7 +82,7 @@ ___
 
 **● nc**: *`string`* = "wsse:Nonce"
 
-*Defined in [soap/auth.ts:38](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/auth.ts#L38)*
+*Defined in [soap/auth.ts:38](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L38)*
 
 ___
 <a id="tokens.pw"></a>
@@ -91,7 +91,7 @@ ___
 
 **● pw**: *`string`* = "wsse:Password"
 
-*Defined in [soap/auth.ts:37](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/auth.ts#L37)*
+*Defined in [soap/auth.ts:37](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L37)*
 
 ___
 <a id="tokens.s"></a>
@@ -100,7 +100,7 @@ ___
 
 **● s**: *`string`* = "wsse:Security"
 
-*Defined in [soap/auth.ts:34](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/auth.ts#L34)*
+*Defined in [soap/auth.ts:34](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L34)*
 
 ___
 <a id="tokens.un"></a>
@@ -109,7 +109,7 @@ ___
 
 **● un**: *`string`* = "wsse:Username"
 
-*Defined in [soap/auth.ts:36](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/auth.ts#L36)*
+*Defined in [soap/auth.ts:36](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L36)*
 
 ___
 <a id="tokens.unt"></a>
@@ -118,7 +118,7 @@ ___
 
 **● unt**: *`string`* = "wsse:UsernameToken"
 
-*Defined in [soap/auth.ts:35](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/auth.ts#L35)*
+*Defined in [soap/auth.ts:35](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L35)*
 
 ___
 

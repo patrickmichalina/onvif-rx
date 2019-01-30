@@ -25,7 +25,7 @@ Range of duration greater equal Min duration and less equal Max duration.
 
 **● Max**: *`string`*
 
-*Defined in [api/types.ts:299](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L299)*
+*Defined in [api/types.ts:299](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L299)*
 
 ___
 <a id="min"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Min**: *`string`*
 
-*Defined in [api/types.ts:298](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L298)*
+*Defined in [api/types.ts:298](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L298)*
 
 ___
 

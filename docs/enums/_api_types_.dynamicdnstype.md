@@ -20,7 +20,7 @@
 
 **ClientUpdates**:  = "ClientUpdates"
 
-*Defined in [api/types.ts:4683](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4683)*
+*Defined in [api/types.ts:4683](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4683)*
 
 ___
 <a id="noupdate"></a>
@@ -29,7 +29,7 @@ ___
 
 **NoUpdate**:  = "NoUpdate"
 
-*Defined in [api/types.ts:4679](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4679)*
+*Defined in [api/types.ts:4679](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4679)*
 
 ___
 <a id="serverupdates"></a>
@@ -38,7 +38,7 @@ ___
 
 **ServerUpdates**:  = "ServerUpdates"
 
-*Defined in [api/types.ts:4687](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4687)*
+*Defined in [api/types.ts:4687](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4687)*
 
 ___
 

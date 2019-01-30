@@ -25,7 +25,7 @@ Options of parameters for adjustment of Ir cut filter auto mode.
 
 **● Extension**: *[ImagingOptions20Extension3](_api_types_.imagingoptions20extension3.md)*
 
-*Defined in [api/types.ts:2886](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2886)*
+*Defined in [api/types.ts:2886](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2886)*
 
 ___
 <a id="ircutfilterautoadjustment"></a>
@@ -34,7 +34,7 @@ ___
 
 **● IrCutFilterAutoAdjustment**: *[IrCutFilterAutoAdjustmentOptions](_api_types_.ircutfilterautoadjustmentoptions.md)*
 
-*Defined in [api/types.ts:2885](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2885)*
+*Defined in [api/types.ts:2885](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2885)*
 
 ___
 

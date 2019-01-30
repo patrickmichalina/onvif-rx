@@ -35,7 +35,7 @@
 
 **● AbsolutePanTiltPositionSpace**: *[Space2DDescription](_api_types_.space2ddescription.md)*
 
-*Defined in [api/types.ts:2234](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2234)*
+*Defined in [api/types.ts:2234](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2234)*
 
 ___
 <a id="absolutezoompositionspace"></a>
@@ -44,7 +44,7 @@ ___
 
 **● AbsoluteZoomPositionSpace**: *[Space1DDescription](_api_types_.space1ddescription.md)*
 
-*Defined in [api/types.ts:2235](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2235)*
+*Defined in [api/types.ts:2235](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2235)*
 
 ___
 <a id="continuouspantiltvelocityspace"></a>
@@ -53,7 +53,7 @@ ___
 
 **● ContinuousPanTiltVelocitySpace**: *[Space2DDescription](_api_types_.space2ddescription.md)*
 
-*Defined in [api/types.ts:2238](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2238)*
+*Defined in [api/types.ts:2238](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2238)*
 
 ___
 <a id="continuouszoomvelocityspace"></a>
@@ -62,7 +62,7 @@ ___
 
 **● ContinuousZoomVelocitySpace**: *[Space1DDescription](_api_types_.space1ddescription.md)*
 
-*Defined in [api/types.ts:2239](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2239)*
+*Defined in [api/types.ts:2239](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2239)*
 
 ___
 <a id="extension"></a>
@@ -71,7 +71,7 @@ ___
 
 **● Extension**: *[PTZSpacesExtension](_api_types_.ptzspacesextension.md)*
 
-*Defined in [api/types.ts:2242](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2242)*
+*Defined in [api/types.ts:2242](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2242)*
 
 ___
 <a id="pantiltspeedspace"></a>
@@ -80,7 +80,7 @@ ___
 
 **● PanTiltSpeedSpace**: *[Space1DDescription](_api_types_.space1ddescription.md)*
 
-*Defined in [api/types.ts:2240](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2240)*
+*Defined in [api/types.ts:2240](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2240)*
 
 ___
 <a id="relativepantilttranslationspace"></a>
@@ -89,7 +89,7 @@ ___
 
 **● RelativePanTiltTranslationSpace**: *[Space2DDescription](_api_types_.space2ddescription.md)*
 
-*Defined in [api/types.ts:2236](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2236)*
+*Defined in [api/types.ts:2236](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2236)*
 
 ___
 <a id="relativezoomtranslationspace"></a>
@@ -98,7 +98,7 @@ ___
 
 **● RelativeZoomTranslationSpace**: *[Space1DDescription](_api_types_.space1ddescription.md)*
 
-*Defined in [api/types.ts:2237](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2237)*
+*Defined in [api/types.ts:2237](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2237)*
 
 ___
 <a id="zoomspeedspace"></a>
@@ -107,7 +107,7 @@ ___
 
 **● ZoomSpeedSpace**: *[Space1DDescription](_api_types_.space1ddescription.md)*
 
-*Defined in [api/types.ts:2241](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2241)*
+*Defined in [api/types.ts:2241](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2241)*
 
 ___
 

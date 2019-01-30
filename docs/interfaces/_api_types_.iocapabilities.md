@@ -26,7 +26,7 @@ Number of input connectors.
 
 **● Extension**: *[IOCapabilitiesExtension](_api_types_.iocapabilitiesextension.md)*
 
-*Defined in [api/types.ts:1510](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1510)*
+*Defined in [api/types.ts:1510](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1510)*
 
 ___
 <a id="inputconnectors"></a>
@@ -35,7 +35,7 @@ ___
 
 **● InputConnectors**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:1508](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1508)*
+*Defined in [api/types.ts:1508](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1508)*
 
 ___
 <a id="relayoutputs"></a>
@@ -44,7 +44,7 @@ ___
 
 **● RelayOutputs**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:1509](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1509)*
+*Defined in [api/types.ts:1509](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1509)*
 
 ___
 

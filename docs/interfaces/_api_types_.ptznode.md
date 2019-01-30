@@ -31,7 +31,7 @@
 
 **● AuxiliaryCommands**: *[AuxiliaryData](../modules/_api_types_.md#auxiliarydata)*
 
-*Defined in [api/types.ts:2050](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2050)*
+*Defined in [api/types.ts:2050](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2050)*
 
 ___
 <a id="extension"></a>
@@ -40,7 +40,7 @@ ___
 
 **● Extension**: *[PTZNodeExtension](_api_types_.ptznodeextension.md)*
 
-*Defined in [api/types.ts:2051](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2051)*
+*Defined in [api/types.ts:2051](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2051)*
 
 ___
 <a id="homesupported"></a>
@@ -49,7 +49,7 @@ ___
 
 **● HomeSupported**: *`boolean`*
 
-*Defined in [api/types.ts:2049](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2049)*
+*Defined in [api/types.ts:2049](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2049)*
 
 ___
 <a id="maximumnumberofpresets"></a>
@@ -58,7 +58,7 @@ ___
 
 **● MaximumNumberOfPresets**: *`number`*
 
-*Defined in [api/types.ts:2048](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2048)*
+*Defined in [api/types.ts:2048](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2048)*
 
 ___
 <a id="name"></a>
@@ -67,7 +67,7 @@ ___
 
 **● Name**: *[Name](_api_types_.ptznode.md#name)*
 
-*Defined in [api/types.ts:2046](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2046)*
+*Defined in [api/types.ts:2046](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2046)*
 
 ___
 <a id="supportedptzspaces"></a>
@@ -76,7 +76,7 @@ ___
 
 **● SupportedPTZSpaces**: *[PTZSpaces](_api_types_.ptzspaces.md)*
 
-*Defined in [api/types.ts:2047](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2047)*
+*Defined in [api/types.ts:2047](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2047)*
 
 ___
 

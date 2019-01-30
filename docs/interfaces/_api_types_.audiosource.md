@@ -24,7 +24,7 @@ Representation of a physical audio input.
 
 **● Channels**: *`number`*
 
-*Defined in [api/types.ts:350](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L350)*
+*Defined in [api/types.ts:350](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L350)*
 
 ___
 

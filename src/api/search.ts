@@ -30,7 +30,7 @@ export class ONVIFSearch {
      *   is mandatory to support for a device implementing the recording search service.
      */
     static GetRecordingInformation(RecordingToken: RecordingReference) {
-        return createStandardRequestBodyFromString(generateRequestElements('tse:GetRecordingInformation')({RecordingToken}))
+        return createStandardRequestBodyFromString(generateRequestElements('tse:GetRecordingInformation')({tse_RecordingToken:RecordingToken}))
                         .map(mapResponseXmlToJson<any>('tse:GetRecordingInformationResponse'))
                       
     }
@@ -44,7 +44,7 @@ export class ONVIFSearch {
      *   recording search service.
      */
     static GetMediaAttributes(Time: string, RecordingTokens?: RecordingReference) {
-        return createStandardRequestBodyFromString(generateRequestElements('tse:GetMediaAttributes')({Time,RecordingTokens}))
+        return createStandardRequestBodyFromString(generateRequestElements('tse:GetMediaAttributes')({tse_Time:Time,tse_RecordingTokens:RecordingTokens}))
                         .map(mapResponseXmlToJson<any>('tse:GetMediaAttributesResponse'))
                       
     }
@@ -65,7 +65,7 @@ export class ONVIFSearch {
      *   search service.
      */
     static FindRecordings(Scope: SearchScope, KeepAliveTime: string, MaxMatches?: number) {
-        return createStandardRequestBodyFromString(generateRequestElements('tse:FindRecordings')({Scope,KeepAliveTime,MaxMatches}))
+        return createStandardRequestBodyFromString(generateRequestElements('tse:FindRecordings')({tse_Scope:Scope,tse_KeepAliveTime:KeepAliveTime,tse_MaxMatches:MaxMatches}))
                         .map(mapResponseXmlToJson<any>('tse:FindRecordingsResponse'))
                       
     }
@@ -86,7 +86,7 @@ export class ONVIFSearch {
      *   This operation is mandatory to support for a device implementing the recording search service.
      */
     static GetRecordingSearchResults(SearchToken: JobToken, MinResults?: number, MaxResults?: number, WaitTime?: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tse:GetRecordingSearchResults')({SearchToken,MinResults,MaxResults,WaitTime}))
+        return createStandardRequestBodyFromString(generateRequestElements('tse:GetRecordingSearchResults')({tse_SearchToken:SearchToken,tse_MinResults:MinResults,tse_MaxResults:MaxResults,tse_WaitTime:WaitTime}))
                         .map(mapResponseXmlToJson<any>('tse:GetRecordingSearchResultsResponse'))
                       
     }
@@ -109,7 +109,7 @@ export class ONVIFSearch {
      *   recording search service.
      */
     static FindEvents(StartPoint: string, Scope: SearchScope, SearchFilter: EventFilter, IncludeStartState: boolean, KeepAliveTime: string, EndPoint?: string, MaxMatches?: number) {
-        return createStandardRequestBodyFromString(generateRequestElements('tse:FindEvents')({StartPoint,Scope,SearchFilter,IncludeStartState,KeepAliveTime,EndPoint,MaxMatches}))
+        return createStandardRequestBodyFromString(generateRequestElements('tse:FindEvents')({tse_StartPoint:StartPoint,tse_Scope:Scope,tse_SearchFilter:SearchFilter,tse_IncludeStartState:IncludeStartState,tse_KeepAliveTime:KeepAliveTime,tse_EndPoint:EndPoint,tse_MaxMatches:MaxMatches}))
                         .map(mapResponseXmlToJson<any>('tse:FindEventsResponse'))
                       
     }
@@ -129,7 +129,7 @@ export class ONVIFSearch {
      *   This operation is mandatory to support for a device implementing the recording search service.
      */
     static GetEventSearchResults(SearchToken: JobToken, MinResults?: number, MaxResults?: number, WaitTime?: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tse:GetEventSearchResults')({SearchToken,MinResults,MaxResults,WaitTime}))
+        return createStandardRequestBodyFromString(generateRequestElements('tse:GetEventSearchResults')({tse_SearchToken:SearchToken,tse_MinResults:MinResults,tse_MaxResults:MaxResults,tse_WaitTime:WaitTime}))
                         .map(mapResponseXmlToJson<any>('tse:GetEventSearchResultsResponse'))
                       
     }
@@ -151,7 +151,7 @@ export class ONVIFSearch {
      *   track in any recording on the device.
      */
     static FindPTZPosition(StartPoint: string, Scope: SearchScope, SearchFilter: PTZPositionFilter, KeepAliveTime: string, EndPoint?: string, MaxMatches?: number) {
-        return createStandardRequestBodyFromString(generateRequestElements('tse:FindPTZPosition')({StartPoint,Scope,SearchFilter,KeepAliveTime,EndPoint,MaxMatches}))
+        return createStandardRequestBodyFromString(generateRequestElements('tse:FindPTZPosition')({tse_StartPoint:StartPoint,tse_Scope:Scope,tse_SearchFilter:SearchFilter,tse_KeepAliveTime:KeepAliveTime,tse_EndPoint:EndPoint,tse_MaxMatches:MaxMatches}))
                         .map(mapResponseXmlToJson<any>('tse:FindPTZPositionResponse'))
                       
     }
@@ -172,7 +172,7 @@ export class ONVIFSearch {
      *   track in any recording on the device.
      */
     static GetPTZPositionSearchResults(SearchToken: JobToken, MinResults?: number, MaxResults?: number, WaitTime?: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tse:GetPTZPositionSearchResults')({SearchToken,MinResults,MaxResults,WaitTime}))
+        return createStandardRequestBodyFromString(generateRequestElements('tse:GetPTZPositionSearchResults')({tse_SearchToken:SearchToken,tse_MinResults:MinResults,tse_MaxResults:MaxResults,tse_WaitTime:WaitTime}))
                         .map(mapResponseXmlToJson<any>('tse:GetPTZPositionSearchResultsResponse'))
                       
     }
@@ -181,7 +181,7 @@ export class ONVIFSearch {
      * GetSearchState returns the current state of the specified search session. This command is deprecated .
      */
     static GetSearchState(SearchToken: JobToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tse:GetSearchState')({SearchToken}))
+        return createStandardRequestBodyFromString(generateRequestElements('tse:GetSearchState')({tse_SearchToken:SearchToken}))
                         .map(mapResponseXmlToJson<any>('tse:GetSearchStateResponse'))
                       
     }
@@ -198,7 +198,7 @@ export class ONVIFSearch {
      *   
      */
     static EndSearch(SearchToken: JobToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tse:EndSearch')({SearchToken}))
+        return createStandardRequestBodyFromString(generateRequestElements('tse:EndSearch')({tse_SearchToken:SearchToken}))
                         .map(mapResponseXmlToJson<any>('tse:EndSearchResponse'))
                       
     }
@@ -220,7 +220,7 @@ export class ONVIFSearch {
      *   SearchCapabilities structure return by the GetCapabilities command in the Device service.
      */
     static FindMetadata(StartPoint: string, Scope: SearchScope, MetadataFilter: MetadataFilter, KeepAliveTime: string, EndPoint?: string, MaxMatches?: number) {
-        return createStandardRequestBodyFromString(generateRequestElements('tse:FindMetadata')({StartPoint,Scope,MetadataFilter,KeepAliveTime,EndPoint,MaxMatches}))
+        return createStandardRequestBodyFromString(generateRequestElements('tse:FindMetadata')({tse_StartPoint:StartPoint,tse_Scope:Scope,tse_MetadataFilter:MetadataFilter,tse_KeepAliveTime:KeepAliveTime,tse_EndPoint:EndPoint,tse_MaxMatches:MaxMatches}))
                         .map(mapResponseXmlToJson<any>('tse:FindMetadataResponse'))
                       
     }
@@ -241,7 +241,7 @@ export class ONVIFSearch {
      *   SearchCapabilities structure return by the GetCapabilities command in the Device service.
      */
     static GetMetadataSearchResults(SearchToken: JobToken, MinResults?: number, MaxResults?: number, WaitTime?: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tse:GetMetadataSearchResults')({SearchToken,MinResults,MaxResults,WaitTime}))
+        return createStandardRequestBodyFromString(generateRequestElements('tse:GetMetadataSearchResults')({tse_SearchToken:SearchToken,tse_MinResults:MinResults,tse_MaxResults:MaxResults,tse_WaitTime:WaitTime}))
                         .map(mapResponseXmlToJson<any>('tse:GetMetadataSearchResultsResponse'))
                       
     }

@@ -24,7 +24,7 @@ Scene orientation modes supported by the device for this configuration.
 
 **● SceneOrientationMode**: *[SceneOrientationMode](_api_types_.videosourceconfigurationoptionsextension2.md#sceneorientationmode)*
 
-*Defined in [api/types.ts:494](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L494)*
+*Defined in [api/types.ts:494](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L494)*
 
 ___
 

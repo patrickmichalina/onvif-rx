@@ -1,5 +1,6 @@
 import { Project, Scope, ParameterDeclarationStructure } from 'ts-simple-ast'
 import { generateActions, generateTypes } from './exec'
+import { maybe } from 'typescript-monads'
 
 // initialize
 const project = new Project({})
@@ -113,13 +114,21 @@ generateTypes()
             parameters: [{ name: 'config', type: 'IDeviceConfig', scope: Scope.Private }]
           }],
           methods: [...group.actions.map(action => {
-            const ps = action.input.parameters.map(a => a.name).join(',')
+            const ps = action.input.parameters.reduce((acc, curr) => {
+              const key = maybe(action.soapRequestNode.split(':')[0]).map(a => `${a}_${curr.name}`).valueOr('')
+              return {
+                ...acc,
+                [key]: curr.name
+              }
+            }, {} as any)
 
+            const d = JSON.stringify(ps).replace(/"/g, '')
+            
             return {
               isStatic: true,
               docs: [{ description: action.documentation.replace(/\*/g, '') }],
               name: action.actionName,
-              bodyText: `return createStandardRequestBodyFromString(generateRequestElements('${action.soapRequestNode}')({${ps}}))
+              bodyText: `return createStandardRequestBodyFromString(generateRequestElements('${action.soapRequestNode}')(${d}))
                 .map(mapResponseXmlToJson<any>('${action.output.ref}'))
               `,
               parameters: action.input.parameters

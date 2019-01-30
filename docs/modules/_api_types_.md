@@ -583,7 +583,7 @@
 
 **Ƭ AudioClassType**: *`string`*
 
-*Defined in [api/types.ts:113](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L113)*
+*Defined in [api/types.ts:113](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L113)*
 
 ```
       AudioClassType acceptable values are;
@@ -597,7 +597,7 @@ ___
 
 **Ƭ AuxiliaryData**: *`string`*
 
-*Defined in [api/types.ts:66](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L66)*
+*Defined in [api/types.ts:66](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L66)*
 
 ___
 <a id="dnsname"></a>
@@ -606,7 +606,7 @@ ___
 
 **Ƭ DNSName**: *`string`*
 
-*Defined in [api/types.ts:46](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L46)*
+*Defined in [api/types.ts:46](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L46)*
 
 ___
 <a id="description"></a>
@@ -615,7 +615,7 @@ ___
 
 **Ƭ Description**: *`string`*
 
-*Defined in [api/types.ts:86](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L86)*
+*Defined in [api/types.ts:86](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L86)*
 
 ___
 <a id="domain"></a>
@@ -624,7 +624,7 @@ ___
 
 **Ƭ Domain**: *`string`*
 
-*Defined in [api/types.ts:50](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L50)*
+*Defined in [api/types.ts:50](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L50)*
 
 ___
 <a id="dot11psk"></a>
@@ -633,7 +633,7 @@ ___
 
 **Ƭ Dot11PSK**: *`string`*
 
-*Defined in [api/types.ts:58](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L58)*
+*Defined in [api/types.ts:58](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L58)*
 
 ___
 <a id="dot11pskpassphrase"></a>
@@ -642,7 +642,7 @@ ___
 
 **Ƭ Dot11PSKPassphrase**: *`string`*
 
-*Defined in [api/types.ts:62](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L62)*
+*Defined in [api/types.ts:62](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L62)*
 
 ___
 <a id="dot11ssidtype"></a>
@@ -651,7 +651,7 @@ ___
 
 **Ƭ Dot11SSIDType**: *`string`*
 
-*Defined in [api/types.ts:54](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L54)*
+*Defined in [api/types.ts:54](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L54)*
 
 ___
 <a id="floatattrlist"></a>
@@ -660,7 +660,7 @@ ___
 
 **Ƭ FloatAttrList**: *`ReadonlyArray`<`number`>*
 
-*Defined in [api/types.ts:18](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L18)*
+*Defined in [api/types.ts:18](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L18)*
 
 ___
 <a id="hwaddress"></a>
@@ -669,7 +669,7 @@ ___
 
 **Ƭ HwAddress**: *`string`*
 
-*Defined in [api/types.ts:42](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L42)*
+*Defined in [api/types.ts:42](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L42)*
 
 ___
 <a id="ipv4address"></a>
@@ -678,7 +678,7 @@ ___
 
 **Ƭ IPv4Address**: *`string`*
 
-*Defined in [api/types.ts:34](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L34)*
+*Defined in [api/types.ts:34](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L34)*
 
 ___
 <a id="ipv6address"></a>
@@ -687,7 +687,7 @@ ___
 
 **Ƭ IPv6Address**: *`string`*
 
-*Defined in [api/types.ts:38](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L38)*
+*Defined in [api/types.ts:38](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L38)*
 
 ___
 <a id="intattrlist"></a>
@@ -696,7 +696,7 @@ ___
 
 **Ƭ IntAttrList**: *`ReadonlyArray`<`number`>*
 
-*Defined in [api/types.ts:14](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L14)*
+*Defined in [api/types.ts:14](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L14)*
 
 ___
 <a id="jobtoken"></a>
@@ -705,7 +705,7 @@ ___
 
 **Ƭ JobToken**: *[ReferenceToken](_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:94](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L94)*
+*Defined in [api/types.ts:94](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L94)*
 
 ___
 <a id="name"></a>
@@ -714,7 +714,7 @@ ___
 
 **Ƭ Name**: *`string`*
 
-*Defined in [api/types.ts:10](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L10)*
+*Defined in [api/types.ts:10](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L10)*
 
 User readable name. Length up to 64 characters.
 
@@ -725,7 +725,7 @@ ___
 
 **Ƭ NetworkInterfaceConfigPriority**: *`number`*
 
-*Defined in [api/types.ts:30](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L30)*
+*Defined in [api/types.ts:30](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L30)*
 
 ___
 <a id="receiverreference"></a>
@@ -734,7 +734,7 @@ ___
 
 **Ƭ ReceiverReference**: *[ReferenceToken](_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:74](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L74)*
+*Defined in [api/types.ts:74](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L74)*
 
 ___
 <a id="recordingjobmode"></a>
@@ -743,7 +743,7 @@ ___
 
 **Ƭ RecordingJobMode**: *`string`*
 
-*Defined in [api/types.ts:102](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L102)*
+*Defined in [api/types.ts:102](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L102)*
 
 ___
 <a id="recordingjobreference"></a>
@@ -752,7 +752,7 @@ ___
 
 **Ƭ RecordingJobReference**: *[ReferenceToken](_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:98](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L98)*
+*Defined in [api/types.ts:98](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L98)*
 
 ___
 <a id="recordingjobstate"></a>
@@ -761,7 +761,7 @@ ___
 
 **Ƭ RecordingJobState**: *`string`*
 
-*Defined in [api/types.ts:106](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L106)*
+*Defined in [api/types.ts:106](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L106)*
 
 ___
 <a id="recordingreference"></a>
@@ -770,7 +770,7 @@ ___
 
 **Ƭ RecordingReference**: *[ReferenceToken](_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:78](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L78)*
+*Defined in [api/types.ts:78](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L78)*
 
 ___
 <a id="referencetoken"></a>
@@ -779,7 +779,7 @@ ___
 
 **Ƭ ReferenceToken**: *`string`*
 
-*Defined in [api/types.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L6)*
+*Defined in [api/types.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L6)*
 
 Unique identifier for a physical or logical resource. Tokens should be assigned such that they are unique within a device. Tokens must be at least unique within its class. Length up to 64 characters.
 
@@ -790,7 +790,7 @@ ___
 
 **Ƭ ReferenceTokenList**: *`ReadonlyArray`<[ReferenceToken](_api_types_.md#referencetoken)>*
 
-*Defined in [api/types.ts:26](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L26)*
+*Defined in [api/types.ts:26](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L26)*
 
 ___
 <a id="stringattrlist"></a>
@@ -799,7 +799,7 @@ ___
 
 **Ƭ StringAttrList**: *`ReadonlyArray`<`string`>*
 
-*Defined in [api/types.ts:22](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L22)*
+*Defined in [api/types.ts:22](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L22)*
 
 ___
 <a id="topicnamespacelocation"></a>
@@ -808,7 +808,7 @@ ___
 
 **Ƭ TopicNamespaceLocation**: *`string`*
 
-*Defined in [api/types.ts:70](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L70)*
+*Defined in [api/types.ts:70](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L70)*
 
 ___
 <a id="trackreference"></a>
@@ -817,7 +817,7 @@ ___
 
 **Ƭ TrackReference**: *[ReferenceToken](_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:82](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L82)*
+*Defined in [api/types.ts:82](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L82)*
 
 ___
 <a id="xpathexpression"></a>
@@ -826,7 +826,7 @@ ___
 
 **Ƭ XPathExpression**: *`string`*
 
-*Defined in [api/types.ts:90](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L90)*
+*Defined in [api/types.ts:90](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L90)*
 
 ___
 <a id="encodingstyle"></a>
@@ -835,7 +835,7 @@ ___
 
 **Ƭ encodingStyle**: *`ReadonlyArray`<`string`>*
 
-*Defined in [api/types.ts:119](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L119)*
+*Defined in [api/types.ts:119](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L119)*
 
 ```
     'encodingStyle' indicates any canonicalization conventions followed in the contents of the containing element.  For example, the value 'http://schemas.xmlsoap.org/soap/encoding/' indicates the pattern described in SOAP specification

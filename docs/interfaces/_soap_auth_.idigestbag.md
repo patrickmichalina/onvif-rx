@@ -25,7 +25,7 @@
 
 **● dateIsoString**: *`string`*
 
-*Defined in [soap/auth.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/auth.ts#L5)*
+*Defined in [soap/auth.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L5)*
 
 ___
 <a id="digest64"></a>
@@ -34,7 +34,7 @@ ___
 
 **● digest64**: *`string`*
 
-*Defined in [soap/auth.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/auth.ts#L7)*
+*Defined in [soap/auth.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L7)*
 
 ___
 <a id="noncebase64"></a>
@@ -43,7 +43,7 @@ ___
 
 **● nonceBase64**: *`string`*
 
-*Defined in [soap/auth.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/auth.ts#L6)*
+*Defined in [soap/auth.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L6)*
 
 ___
 <a id="username"></a>
@@ -52,7 +52,7 @@ ___
 
 **● username**: *`string`*
 
-*Defined in [soap/auth.ts:8](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/auth.ts#L8)*
+*Defined in [soap/auth.ts:8](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L8)*
 
 ___
 

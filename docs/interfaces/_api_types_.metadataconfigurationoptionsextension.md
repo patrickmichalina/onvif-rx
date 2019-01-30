@@ -25,7 +25,7 @@ List of supported metadata compression type. Its options shall be chosen from tt
 
 **● CompressionType**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:807](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L807)*
+*Defined in [api/types.ts:807](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L807)*
 
 ___
 <a id="extension"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Extension**: *[MetadataConfigurationOptionsExtension2](_api_types_.metadataconfigurationoptionsextension2.md)*
 
-*Defined in [api/types.ts:808](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L808)*
+*Defined in [api/types.ts:808](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L808)*
 
 ___
 
