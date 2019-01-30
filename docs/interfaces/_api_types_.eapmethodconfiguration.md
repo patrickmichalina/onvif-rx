@@ -22,29 +22,29 @@ Confgiuration information for TLS Method.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[EapMethodExtension](_api_types_.eapmethodextension.md)*
 
-*Defined in [api/types.ts:1988](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1988)*
+*Defined in [api/types.ts:1988](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1988)*
 
 ___
 <a id="password"></a>
 
-###  Password
+### `<Optional>` Password
 
-**● Password**: *`string`*
+**● Password**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1987](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1987)*
+*Defined in [api/types.ts:1987](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1987)*
 
 ___
 <a id="tlsconfiguration"></a>
 
-###  TLSConfiguration
+### `<Optional>` TLSConfiguration
 
-**● TLSConfiguration**: *[TLSConfiguration](_api_types_.tlsconfiguration.md)*
+**● TLSConfiguration**: *[TLSConfiguration](_api_types_.eapmethodconfiguration.md#tlsconfiguration)*
 
-*Defined in [api/types.ts:1986](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1986)*
+*Defined in [api/types.ts:1986](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1986)*
 
 ___
 

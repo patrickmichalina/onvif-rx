@@ -21,11 +21,11 @@ The state of the search when the result is returned. Indicates if there can be m
 
 <a id="recordinginformation"></a>
 
-###  RecordingInformation
+### `<Optional>` RecordingInformation
 
-**● RecordingInformation**: *[RecordingInformation](_api_types_.recordinginformation.md)*
+**● RecordingInformation**: *[RecordingInformation](_api_types_.findrecordingresultlist.md#recordinginformation)*
 
-*Defined in [api/types.ts:3484](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3484)*
+*Defined in [api/types.ts:3484](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3484)*
 
 ___
 <a id="searchstate"></a>
@@ -34,7 +34,7 @@ ___
 
 **● SearchState**: *[SearchState](../enums/_api_types_.searchstate.md)*
 
-*Defined in [api/types.ts:3483](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3483)*
+*Defined in [api/types.ts:3483](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3483)*
 
 ___
 

@@ -24,11 +24,11 @@ Average bitrate in kbps.
 
 <a id="bitrate"></a>
 
-###  Bitrate
+### `<Optional>` Bitrate
 
-**● Bitrate**: *`number`*
+**● Bitrate**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:3614](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3614)*
+*Defined in [api/types.ts:3614](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3614)*
 
 ___
 <a id="encoding"></a>
@@ -37,7 +37,7 @@ ___
 
 **● Encoding**: *`string`*
 
-*Defined in [api/types.ts:3617](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3617)*
+*Defined in [api/types.ts:3617](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3617)*
 
 ___
 <a id="framerate"></a>
@@ -46,7 +46,7 @@ ___
 
 **● Framerate**: *`number`*
 
-*Defined in [api/types.ts:3618](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3618)*
+*Defined in [api/types.ts:3618](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3618)*
 
 ___
 <a id="height"></a>
@@ -55,7 +55,7 @@ ___
 
 **● Height**: *`number`*
 
-*Defined in [api/types.ts:3616](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3616)*
+*Defined in [api/types.ts:3616](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3616)*
 
 ___
 <a id="width"></a>
@@ -64,7 +64,7 @@ ___
 
 **● Width**: *`number`*
 
-*Defined in [api/types.ts:3615](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3615)*
+*Defined in [api/types.ts:3615](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3615)*
 
 ___
 

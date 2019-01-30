@@ -33,83 +33,83 @@
 
 <a id="defaultabsolutepanttiltpositionspace"></a>
 
-###  DefaultAbsolutePantTiltPositionSpace
+### `<Optional>` DefaultAbsolutePantTiltPositionSpace
 
-**● DefaultAbsolutePantTiltPositionSpace**: *`string`*
+**● DefaultAbsolutePantTiltPositionSpace**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:2092](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2092)*
+*Defined in [api/types.ts:2092](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2092)*
 
 ___
 <a id="defaultabsolutezoompositionspace"></a>
 
-###  DefaultAbsoluteZoomPositionSpace
+### `<Optional>` DefaultAbsoluteZoomPositionSpace
 
-**● DefaultAbsoluteZoomPositionSpace**: *`string`*
+**● DefaultAbsoluteZoomPositionSpace**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:2093](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2093)*
+*Defined in [api/types.ts:2093](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2093)*
 
 ___
 <a id="defaultcontinuouspantiltvelocityspace"></a>
 
-###  DefaultContinuousPanTiltVelocitySpace
+### `<Optional>` DefaultContinuousPanTiltVelocitySpace
 
-**● DefaultContinuousPanTiltVelocitySpace**: *`string`*
+**● DefaultContinuousPanTiltVelocitySpace**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:2096](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2096)*
+*Defined in [api/types.ts:2096](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2096)*
 
 ___
 <a id="defaultcontinuouszoomvelocityspace"></a>
 
-###  DefaultContinuousZoomVelocitySpace
+### `<Optional>` DefaultContinuousZoomVelocitySpace
 
-**● DefaultContinuousZoomVelocitySpace**: *`string`*
+**● DefaultContinuousZoomVelocitySpace**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:2097](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2097)*
+*Defined in [api/types.ts:2097](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2097)*
 
 ___
 <a id="defaultptzspeed"></a>
 
-###  DefaultPTZSpeed
+### `<Optional>` DefaultPTZSpeed
 
 **● DefaultPTZSpeed**: *[PTZSpeed](_api_types_.ptzspeed.md)*
 
-*Defined in [api/types.ts:2098](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2098)*
+*Defined in [api/types.ts:2098](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2098)*
 
 ___
 <a id="defaultptztimeout"></a>
 
-###  DefaultPTZTimeout
+### `<Optional>` DefaultPTZTimeout
 
-**● DefaultPTZTimeout**: *`string`*
+**● DefaultPTZTimeout**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:2099](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2099)*
+*Defined in [api/types.ts:2099](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2099)*
 
 ___
 <a id="defaultrelativepantilttranslationspace"></a>
 
-###  DefaultRelativePanTiltTranslationSpace
+### `<Optional>` DefaultRelativePanTiltTranslationSpace
 
-**● DefaultRelativePanTiltTranslationSpace**: *`string`*
+**● DefaultRelativePanTiltTranslationSpace**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:2094](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2094)*
+*Defined in [api/types.ts:2094](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2094)*
 
 ___
 <a id="defaultrelativezoomtranslationspace"></a>
 
-###  DefaultRelativeZoomTranslationSpace
+### `<Optional>` DefaultRelativeZoomTranslationSpace
 
-**● DefaultRelativeZoomTranslationSpace**: *`string`*
+**● DefaultRelativeZoomTranslationSpace**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:2095](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2095)*
+*Defined in [api/types.ts:2095](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2095)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[PTZConfigurationExtension](_api_types_.ptzconfigurationextension.md)*
 
-*Defined in [api/types.ts:2102](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2102)*
+*Defined in [api/types.ts:2102](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2102)*
 
 ___
 <a id="nodetoken"></a>
@@ -118,25 +118,25 @@ ___
 
 **● NodeToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:2091](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2091)*
+*Defined in [api/types.ts:2091](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2091)*
 
 ___
 <a id="pantiltlimits"></a>
 
-###  PanTiltLimits
+### `<Optional>` PanTiltLimits
 
-**● PanTiltLimits**: *[PanTiltLimits](_api_types_.pantiltlimits.md)*
+**● PanTiltLimits**: *[PanTiltLimits](_api_types_.ptzconfiguration.md#pantiltlimits)*
 
-*Defined in [api/types.ts:2100](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2100)*
+*Defined in [api/types.ts:2100](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2100)*
 
 ___
 <a id="zoomlimits"></a>
 
-###  ZoomLimits
+### `<Optional>` ZoomLimits
 
-**● ZoomLimits**: *[ZoomLimits](_api_types_.zoomlimits.md)*
+**● ZoomLimits**: *[ZoomLimits](_api_types_.ptzconfiguration.md#zoomlimits)*
 
-*Defined in [api/types.ts:2101](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2101)*
+*Defined in [api/types.ts:2101](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2101)*
 
 ___
 

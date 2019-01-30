@@ -14,7 +14,7 @@ export class ONVIFAnalytics {
      *   
      */
     static GetSupportedRules(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tan:GetSupportedRules')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetSupportedRules')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('tan:GetSupportedRulesResponse'))
                       
     }
@@ -33,7 +33,7 @@ export class ONVIFAnalytics {
      *   
      */
     static CreateRules(ConfigurationToken: ReferenceToken, Rule: Config) {
-        return createStandardRequestBodyFromString(generateRequestElements('tan:CreateRules')(['ConfigurationToken','Rule'])(ConfigurationToken,Rule))
+        return createStandardRequestBodyFromString(generateRequestElements('tan:CreateRules')({ConfigurationToken,Rule}))
                         .map(mapResponseXmlToJson<any>('tan:CreateRulesResponse'))
                       
     }
@@ -44,7 +44,7 @@ export class ONVIFAnalytics {
      *   
      */
     static DeleteRules(ConfigurationToken: ReferenceToken, RuleName: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tan:DeleteRules')(['ConfigurationToken','RuleName'])(ConfigurationToken,RuleName))
+        return createStandardRequestBodyFromString(generateRequestElements('tan:DeleteRules')({ConfigurationToken,RuleName}))
                         .map(mapResponseXmlToJson<any>('tan:DeleteRulesResponse'))
                       
     }
@@ -55,7 +55,7 @@ export class ONVIFAnalytics {
      *   
      */
     static GetRules(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tan:GetRules')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetRules')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('tan:GetRulesResponse'))
                       
     }
@@ -66,7 +66,7 @@ export class ONVIFAnalytics {
      *   
      */
     static GetRuleOptions(ConfigurationToken: ReferenceToken, RuleType?: any) {
-        return createStandardRequestBodyFromString(generateRequestElements('tan:GetRuleOptions')(['ConfigurationToken','RuleType'])(ConfigurationToken,RuleType))
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetRuleOptions')({ConfigurationToken,RuleType}))
                         .map(mapResponseXmlToJson<any>('tan:GetRuleOptionsResponse'))
                       
     }
@@ -77,7 +77,7 @@ export class ONVIFAnalytics {
      *   
      */
     static ModifyRules(ConfigurationToken: ReferenceToken, Rule: Config) {
-        return createStandardRequestBodyFromString(generateRequestElements('tan:ModifyRules')(['ConfigurationToken','Rule'])(ConfigurationToken,Rule))
+        return createStandardRequestBodyFromString(generateRequestElements('tan:ModifyRules')({ConfigurationToken,Rule}))
                         .map(mapResponseXmlToJson<any>('tan:ModifyRulesResponse'))
                       
     }
@@ -86,7 +86,7 @@ export class ONVIFAnalytics {
      * Returns the capabilities of the analytics service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString(generateRequestElements('tan:GetServiceCapabilities')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetServiceCapabilities')({}))
                         .map(mapResponseXmlToJson<any>('tan:GetServiceCapabilitiesResponse'))
                       
     }
@@ -99,7 +99,7 @@ export class ONVIFAnalytics {
      *   
      */
     static GetSupportedAnalyticsModules(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tan:GetSupportedAnalyticsModules')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetSupportedAnalyticsModules')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('tan:GetSupportedAnalyticsModulesResponse'))
                       
     }
@@ -110,7 +110,7 @@ export class ONVIFAnalytics {
      *   
      */
     static GetAnalyticsModuleOptions(ConfigurationToken: ReferenceToken, Type?: any) {
-        return createStandardRequestBodyFromString(generateRequestElements('tan:GetAnalyticsModuleOptions')(['ConfigurationToken','Type'])(ConfigurationToken,Type))
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetAnalyticsModuleOptions')({ConfigurationToken,Type}))
                         .map(mapResponseXmlToJson<any>('tan:GetAnalyticsModuleOptionsResponse'))
                       
     }
@@ -136,7 +136,7 @@ export class ONVIFAnalytics {
      *   
      */
     static CreateAnalyticsModules(ConfigurationToken: ReferenceToken, AnalyticsModule: Config) {
-        return createStandardRequestBodyFromString(generateRequestElements('tan:CreateAnalyticsModules')(['ConfigurationToken','AnalyticsModule'])(ConfigurationToken,AnalyticsModule))
+        return createStandardRequestBodyFromString(generateRequestElements('tan:CreateAnalyticsModules')({ConfigurationToken,AnalyticsModule}))
                         .map(mapResponseXmlToJson<any>('tan:CreateAnalyticsModulesResponse'))
                       
     }
@@ -147,7 +147,7 @@ export class ONVIFAnalytics {
      *   
      */
     static DeleteAnalyticsModules(ConfigurationToken: ReferenceToken, AnalyticsModuleName: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tan:DeleteAnalyticsModules')(['ConfigurationToken','AnalyticsModuleName'])(ConfigurationToken,AnalyticsModuleName))
+        return createStandardRequestBodyFromString(generateRequestElements('tan:DeleteAnalyticsModules')({ConfigurationToken,AnalyticsModuleName}))
                         .map(mapResponseXmlToJson<any>('tan:DeleteAnalyticsModulesResponse'))
                       
     }
@@ -158,7 +158,7 @@ export class ONVIFAnalytics {
      *   
      */
     static GetAnalyticsModules(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tan:GetAnalyticsModules')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetAnalyticsModules')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('tan:GetAnalyticsModulesResponse'))
                       
     }
@@ -170,7 +170,7 @@ export class ONVIFAnalytics {
      *   
      */
     static ModifyAnalyticsModules(ConfigurationToken: ReferenceToken, AnalyticsModule: Config) {
-        return createStandardRequestBodyFromString(generateRequestElements('tan:ModifyAnalyticsModules')(['ConfigurationToken','AnalyticsModule'])(ConfigurationToken,AnalyticsModule))
+        return createStandardRequestBodyFromString(generateRequestElements('tan:ModifyAnalyticsModules')({ConfigurationToken,AnalyticsModule}))
                         .map(mapResponseXmlToJson<any>('tan:ModifyAnalyticsModulesResponse'))
                       
     }

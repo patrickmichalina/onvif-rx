@@ -23,38 +23,38 @@ Indicates whether or not IPv6 is enabled.
 
 <a id="acceptrouteradvert"></a>
 
-###  AcceptRouterAdvert
+### `<Optional>` AcceptRouterAdvert
 
-**● AcceptRouterAdvert**: *`boolean`*
+**● AcceptRouterAdvert**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1278](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1278)*
+*Defined in [api/types.ts:1278](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1278)*
 
 ___
 <a id="dhcp"></a>
 
-###  DHCP
+### `<Optional>` DHCP
 
 **● DHCP**: *[IPv6DHCPConfiguration](../enums/_api_types_.ipv6dhcpconfiguration.md)*
 
-*Defined in [api/types.ts:1280](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1280)*
+*Defined in [api/types.ts:1280](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1280)*
 
 ___
 <a id="enabled"></a>
 
-###  Enabled
+### `<Optional>` Enabled
 
-**● Enabled**: *`boolean`*
+**● Enabled**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1277](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1277)*
+*Defined in [api/types.ts:1277](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1277)*
 
 ___
 <a id="manual"></a>
 
-###  Manual
+### `<Optional>` Manual
 
 **● Manual**: *[PrefixedIPv6Address](_api_types_.prefixedipv6address.md)*
 
-*Defined in [api/types.ts:1279](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1279)*
+*Defined in [api/types.ts:1279](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1279)*
 
 ___
 

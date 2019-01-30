@@ -28,7 +28,7 @@ Type of the track: "Video", "Audio" or "Metadata". The track shall only be able 
 
 **● DataFrom**: *`string`*
 
-*Defined in [api/types.ts:3579](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3579)*
+*Defined in [api/types.ts:3579](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3579)*
 
 ___
 <a id="datato"></a>
@@ -37,7 +37,7 @@ ___
 
 **● DataTo**: *`string`*
 
-*Defined in [api/types.ts:3580](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3580)*
+*Defined in [api/types.ts:3580](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3580)*
 
 ___
 <a id="description"></a>
@@ -46,7 +46,7 @@ ___
 
 **● Description**: *[Description](_api_types_.trackinformation.md#description)*
 
-*Defined in [api/types.ts:3578](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3578)*
+*Defined in [api/types.ts:3578](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3578)*
 
 ___
 <a id="tracktoken"></a>
@@ -55,7 +55,7 @@ ___
 
 **● TrackToken**: *[TrackReference](../modules/_api_types_.md#trackreference)*
 
-*Defined in [api/types.ts:3576](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3576)*
+*Defined in [api/types.ts:3576](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3576)*
 
 ___
 <a id="tracktype"></a>
@@ -64,7 +64,7 @@ ___
 
 **● TrackType**: *[TrackType](../enums/_api_types_.tracktype.md)*
 
-*Defined in [api/types.ts:3577](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3577)*
+*Defined in [api/types.ts:3577](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3577)*
 
 ___
 

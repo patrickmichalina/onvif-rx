@@ -26,56 +26,56 @@ List of supported OSD text type. When a device indicates the supported number re
 
 <a id="backgroundcolor"></a>
 
-###  BackgroundColor
+### `<Optional>` BackgroundColor
 
 **● BackgroundColor**: *[OSDColorOptions](_api_types_.osdcoloroptions.md)*
 
-*Defined in [api/types.ts:4077](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4077)*
+*Defined in [api/types.ts:4077](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4077)*
 
 ___
 <a id="dateformat"></a>
 
-###  DateFormat
+### `<Optional>` DateFormat
 
-**● DateFormat**: *`string`*
+**● DateFormat**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:4074](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4074)*
+*Defined in [api/types.ts:4074](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4074)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[OSDTextOptionsExtension](_api_types_.osdtextoptionsextension.md)*
 
-*Defined in [api/types.ts:4078](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4078)*
+*Defined in [api/types.ts:4078](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4078)*
 
 ___
 <a id="fontcolor"></a>
 
-###  FontColor
+### `<Optional>` FontColor
 
 **● FontColor**: *[OSDColorOptions](_api_types_.osdcoloroptions.md)*
 
-*Defined in [api/types.ts:4076](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4076)*
+*Defined in [api/types.ts:4076](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4076)*
 
 ___
 <a id="fontsizerange"></a>
 
-###  FontSizeRange
+### `<Optional>` FontSizeRange
 
 **● FontSizeRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:4073](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4073)*
+*Defined in [api/types.ts:4073](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4073)*
 
 ___
 <a id="timeformat"></a>
 
-###  TimeFormat
+### `<Optional>` TimeFormat
 
-**● TimeFormat**: *`string`*
+**● TimeFormat**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:4075](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4075)*
+*Defined in [api/types.ts:4075](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4075)*
 
 ___
 <a id="type"></a>
@@ -84,7 +84,7 @@ ___
 
 **● Type**: *`string`*
 
-*Defined in [api/types.ts:4072](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4072)*
+*Defined in [api/types.ts:4072](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4072)*
 
 ___
 

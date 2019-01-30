@@ -107,26 +107,20 @@ export interface IXmlContainer {
   readonly xmlDocument: Document
 }
 
-// tslint:disable-next-line:readonly-array
-export const generateRequestElements = (reqNode: string) => (parameterNodes: string[]) => (...params: any[]) => {
-  return !params.length
-    ? `<${reqNode} />`
-    : `<${reqNode}>${params.map((param, index) => {
-      const type = typeof param
-      const insertIntoRootNode = (inner: string) => `<${parameterNodes[index]}>${inner}</${parameterNodes[index]}>`
+export const generateRequestElements = (reqNode: string) => (params: any) => {
+  const reducer = (obj: any) => (base: string) => (value?: string): any => Object
+    .keys(obj)
+    .reduce((acc, key) => {
+      const value = typeof obj[key] === 'string'
+        ? obj[key]
+        : undefined
 
-      switch (type) {
-        case 'undefined': return ''
-        case 'boolean': return insertIntoRootNode(param)
-        case 'object': return insertIntoRootNode(Object.keys(param).reduce((acc, key) => {
-          const val = (param as any)[key]
-          return val
-            ? (acc || '') + `<${key}>${(param as any)[key]}</${key}>`
-            : (acc || '')
-        }, ''))
-        default: return insertIntoRootNode(param)
-      }
-    }).join('')}</${reqNode}>`
+      return value
+        ? acc.replace('><', `><${key}>${value}</${key}><`)
+        : acc.replace('><', '>' + reducer(obj[key])(key)() + '<')
+    }, value ? `<${base}>${value}</${base}>` : `<${base}></${base}>`)
+
+  return reducer(params)(reqNode)()
 }
 
 export const createStandardRequestBody =

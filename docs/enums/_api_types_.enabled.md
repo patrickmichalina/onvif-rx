@@ -19,7 +19,7 @@
 
 **DISABLED**:  = "DISABLED"
 
-*Defined in [api/types.ts:5149](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5149)*
+*Defined in [api/types.ts:5149](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5149)*
 
 ___
 <a id="enabled"></a>
@@ -28,7 +28,7 @@ ___
 
 **ENABLED**:  = "ENABLED"
 
-*Defined in [api/types.ts:5145](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5145)*
+*Defined in [api/types.ts:5145](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5145)*
 
 ___
 

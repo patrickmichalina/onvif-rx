@@ -10,7 +10,7 @@ export class ONVIFDisplay {
      * Returns the capabilities of the display service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString(generateRequestElements('tls:GetServiceCapabilities')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tls:GetServiceCapabilities')({}))
                         .map(mapResponseXmlToJson<any>('tls:GetServiceCapabilitiesResponse'))
                       
     }
@@ -21,7 +21,7 @@ export class ONVIFDisplay {
      *   their associated display areas.
      */
     static GetLayout(VideoOutput: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tls:GetLayout')(['VideoOutput'])(VideoOutput))
+        return createStandardRequestBodyFromString(generateRequestElements('tls:GetLayout')({VideoOutput}))
                         .map(mapResponseXmlToJson<any>('tls:GetLayoutResponse'))
                       
     }
@@ -35,7 +35,7 @@ export class ONVIFDisplay {
      *   
      */
     static SetLayout(VideoOutput: ReferenceToken, Layout: Layout) {
-        return createStandardRequestBodyFromString(generateRequestElements('tls:SetLayout')(['VideoOutput','Layout'])(VideoOutput,Layout))
+        return createStandardRequestBodyFromString(generateRequestElements('tls:SetLayout')({VideoOutput,Layout}))
                         .map(mapResponseXmlToJson<any>('tls:SetLayoutResponse'))
                       
     }
@@ -46,7 +46,7 @@ export class ONVIFDisplay {
      *   returns both, Layout and Coding Capabilities, of a VideoOutput.
      */
     static GetDisplayOptions(VideoOutput: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tls:GetDisplayOptions')(['VideoOutput'])(VideoOutput))
+        return createStandardRequestBodyFromString(generateRequestElements('tls:GetDisplayOptions')({VideoOutput}))
                         .map(mapResponseXmlToJson<any>('tls:GetDisplayOptionsResponse'))
                       
     }
@@ -59,7 +59,7 @@ export class ONVIFDisplay {
      *   not be established.
      */
     static GetPaneConfigurations(VideoOutput: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tls:GetPaneConfigurations')(['VideoOutput'])(VideoOutput))
+        return createStandardRequestBodyFromString(generateRequestElements('tls:GetPaneConfigurations')({VideoOutput}))
                         .map(mapResponseXmlToJson<any>('tls:GetPaneConfigurationsResponse'))
                       
     }
@@ -68,7 +68,7 @@ export class ONVIFDisplay {
      * Retrieve the pane configuration for a pane token.
      */
     static GetPaneConfiguration(VideoOutput: ReferenceToken, Pane: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tls:GetPaneConfiguration')(['VideoOutput','Pane'])(VideoOutput,Pane))
+        return createStandardRequestBodyFromString(generateRequestElements('tls:GetPaneConfiguration')({VideoOutput,Pane}))
                         .map(mapResponseXmlToJson<any>('tls:GetPaneConfigurationResponse'))
                       
     }
@@ -79,7 +79,7 @@ export class ONVIFDisplay {
      *   Use DeletePaneConfiguration to remove pane configurations.
      */
     static SetPaneConfigurations(VideoOutput: ReferenceToken, PaneConfiguration: PaneConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('tls:SetPaneConfigurations')(['VideoOutput','PaneConfiguration'])(VideoOutput,PaneConfiguration))
+        return createStandardRequestBodyFromString(generateRequestElements('tls:SetPaneConfigurations')({VideoOutput,PaneConfiguration}))
                         .map(mapResponseXmlToJson<any>('tls:SetPaneConfigurationsResponse'))
                       
     }
@@ -88,7 +88,7 @@ export class ONVIFDisplay {
      * This command changes the configuration of the specified pane (tbd)
      */
     static SetPaneConfiguration(VideoOutput: ReferenceToken, PaneConfiguration: PaneConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('tls:SetPaneConfiguration')(['VideoOutput','PaneConfiguration'])(VideoOutput,PaneConfiguration))
+        return createStandardRequestBodyFromString(generateRequestElements('tls:SetPaneConfiguration')({VideoOutput,PaneConfiguration}))
                         .map(mapResponseXmlToJson<any>('tls:SetPaneConfigurationResponse'))
                       
     }
@@ -100,7 +100,7 @@ export class ONVIFDisplay {
      *   
      */
     static CreatePaneConfiguration(VideoOutput: ReferenceToken, PaneConfiguration: PaneConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('tls:CreatePaneConfiguration')(['VideoOutput','PaneConfiguration'])(VideoOutput,PaneConfiguration))
+        return createStandardRequestBodyFromString(generateRequestElements('tls:CreatePaneConfiguration')({VideoOutput,PaneConfiguration}))
                         .map(mapResponseXmlToJson<any>('tls:CreatePaneConfigurationResponse'))
                       
     }
@@ -112,7 +112,7 @@ export class ONVIFDisplay {
      *   
      */
     static DeletePaneConfiguration(VideoOutput: ReferenceToken, PaneToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tls:DeletePaneConfiguration')(['VideoOutput','PaneToken'])(VideoOutput,PaneToken))
+        return createStandardRequestBodyFromString(generateRequestElements('tls:DeletePaneConfiguration')({VideoOutput,PaneToken}))
                         .map(mapResponseXmlToJson<any>('tls:DeletePaneConfigurationResponse'))
                       
     }

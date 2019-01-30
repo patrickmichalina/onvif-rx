@@ -37,83 +37,83 @@
 
 <a id="exposuretime"></a>
 
-###  ExposureTime
+### `<Optional>` ExposureTime
 
 **● ExposureTime**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2972](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2972)*
+*Defined in [api/types.ts:2972](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2972)*
 
 ___
 <a id="gain"></a>
 
-###  Gain
+### `<Optional>` Gain
 
 **● Gain**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2973](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2973)*
+*Defined in [api/types.ts:2973](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2973)*
 
 ___
 <a id="iris"></a>
 
-###  Iris
+### `<Optional>` Iris
 
 **● Iris**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2974](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2974)*
+*Defined in [api/types.ts:2974](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2974)*
 
 ___
 <a id="maxexposuretime"></a>
 
-###  MaxExposureTime
+### `<Optional>` MaxExposureTime
 
 **● MaxExposureTime**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2967](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2967)*
+*Defined in [api/types.ts:2967](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2967)*
 
 ___
 <a id="maxgain"></a>
 
-###  MaxGain
+### `<Optional>` MaxGain
 
 **● MaxGain**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2969](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2969)*
+*Defined in [api/types.ts:2969](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2969)*
 
 ___
 <a id="maxiris"></a>
 
-###  MaxIris
+### `<Optional>` MaxIris
 
 **● MaxIris**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2971](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2971)*
+*Defined in [api/types.ts:2971](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2971)*
 
 ___
 <a id="minexposuretime"></a>
 
-###  MinExposureTime
+### `<Optional>` MinExposureTime
 
 **● MinExposureTime**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2966](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2966)*
+*Defined in [api/types.ts:2966](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2966)*
 
 ___
 <a id="mingain"></a>
 
-###  MinGain
+### `<Optional>` MinGain
 
 **● MinGain**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2968](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2968)*
+*Defined in [api/types.ts:2968](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2968)*
 
 ___
 <a id="miniris"></a>
 
-###  MinIris
+### `<Optional>` MinIris
 
 **● MinIris**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2970](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2970)*
+*Defined in [api/types.ts:2970](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2970)*
 
 ___
 <a id="mode"></a>
@@ -122,16 +122,16 @@ ___
 
 **● Mode**: *[ExposureMode](../enums/_api_types_.exposuremode.md)*
 
-*Defined in [api/types.ts:2964](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2964)*
+*Defined in [api/types.ts:2964](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2964)*
 
 ___
 <a id="priority"></a>
 
-###  Priority
+### `<Optional>` Priority
 
 **● Priority**: *[ExposurePriority](../enums/_api_types_.exposurepriority.md)*
 
-*Defined in [api/types.ts:2965](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2965)*
+*Defined in [api/types.ts:2965](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2965)*
 
 ___
 

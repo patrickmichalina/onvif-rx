@@ -23,20 +23,20 @@
 
 <a id="name"></a>
 
-###  Name
+### `<Optional>` Name
 
 **● Name**: *[Name](_api_types_.ptzpreset.md#name)*
 
-*Defined in [api/types.ts:2286](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2286)*
+*Defined in [api/types.ts:2286](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2286)*
 
 ___
 <a id="ptzposition"></a>
 
-###  PTZPosition
+### `<Optional>` PTZPosition
 
 **● PTZPosition**: *[PTZVector](_api_types_.ptzvector.md)*
 
-*Defined in [api/types.ts:2287](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2287)*
+*Defined in [api/types.ts:2287](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2287)*
 
 ___
 

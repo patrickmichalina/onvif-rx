@@ -32,101 +32,101 @@
 
 <a id="backlightcompensation"></a>
 
-###  BacklightCompensation
+### `<Optional>` BacklightCompensation
 
 **● BacklightCompensation**: *[BacklightCompensationOptions20](_api_types_.backlightcompensationoptions20.md)*
 
-*Defined in [api/types.ts:2860](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2860)*
+*Defined in [api/types.ts:2860](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2860)*
 
 ___
 <a id="brightness"></a>
 
-###  Brightness
+### `<Optional>` Brightness
 
 **● Brightness**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2861](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2861)*
+*Defined in [api/types.ts:2861](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2861)*
 
 ___
 <a id="colorsaturation"></a>
 
-###  ColorSaturation
+### `<Optional>` ColorSaturation
 
 **● ColorSaturation**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2862](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2862)*
+*Defined in [api/types.ts:2862](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2862)*
 
 ___
 <a id="contrast"></a>
 
-###  Contrast
+### `<Optional>` Contrast
 
 **● Contrast**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2863](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2863)*
+*Defined in [api/types.ts:2863](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2863)*
 
 ___
 <a id="exposure"></a>
 
-###  Exposure
+### `<Optional>` Exposure
 
 **● Exposure**: *[ExposureOptions20](_api_types_.exposureoptions20.md)*
 
-*Defined in [api/types.ts:2864](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2864)*
+*Defined in [api/types.ts:2864](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2864)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[ImagingOptions20Extension](_api_types_.imagingoptions20extension.md)*
 
-*Defined in [api/types.ts:2870](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2870)*
+*Defined in [api/types.ts:2870](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2870)*
 
 ___
 <a id="focus"></a>
 
-###  Focus
+### `<Optional>` Focus
 
 **● Focus**: *[FocusOptions20](_api_types_.focusoptions20.md)*
 
-*Defined in [api/types.ts:2865](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2865)*
+*Defined in [api/types.ts:2865](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2865)*
 
 ___
 <a id="ircutfiltermodes"></a>
 
-###  IrCutFilterModes
+### `<Optional>` IrCutFilterModes
 
 **● IrCutFilterModes**: *[IrCutFilterMode](../enums/_api_types_.ircutfiltermode.md)*
 
-*Defined in [api/types.ts:2866](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2866)*
+*Defined in [api/types.ts:2866](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2866)*
 
 ___
 <a id="sharpness"></a>
 
-###  Sharpness
+### `<Optional>` Sharpness
 
 **● Sharpness**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2867](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2867)*
+*Defined in [api/types.ts:2867](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2867)*
 
 ___
 <a id="whitebalance"></a>
 
-###  WhiteBalance
+### `<Optional>` WhiteBalance
 
 **● WhiteBalance**: *[WhiteBalanceOptions20](_api_types_.whitebalanceoptions20.md)*
 
-*Defined in [api/types.ts:2869](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2869)*
+*Defined in [api/types.ts:2869](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2869)*
 
 ___
 <a id="widedynamicrange"></a>
 
-###  WideDynamicRange
+### `<Optional>` WideDynamicRange
 
 **● WideDynamicRange**: *[WideDynamicRangeOptions20](_api_types_.widedynamicrangeoptions20.md)*
 
-*Defined in [api/types.ts:2868](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2868)*
+*Defined in [api/types.ts:2868](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2868)*
 
 ___
 

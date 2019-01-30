@@ -21,11 +21,11 @@ The state of the search when the result is returned. Indicates if there can be m
 
 <a id="result"></a>
 
-###  Result
+### `<Optional>` Result
 
 **● Result**: *[FindMetadataResult](_api_types_.findmetadataresult.md)*
 
-*Defined in [api/types.ts:3529](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3529)*
+*Defined in [api/types.ts:3529](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3529)*
 
 ___
 <a id="searchstate"></a>
@@ -34,7 +34,7 @@ ___
 
 **● SearchState**: *[SearchState](../enums/_api_types_.searchstate.md)*
 
-*Defined in [api/types.ts:3528](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3528)*
+*Defined in [api/types.ts:3528](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3528)*
 
 ___
 

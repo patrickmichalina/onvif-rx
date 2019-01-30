@@ -86,7 +86,6 @@ export const parseOnvifXsdForTypeInfo = (xmlDoc: Document): ParsedXsd => {
       }
     })
 
-
   const complexTypes = Array.from(xmlDoc.getElementsByTagNameNS(NS, 'complexType'))
     .filter(complexType => complexType.getAttribute('name'))
     .map(complexType => {
@@ -98,7 +97,7 @@ export const parseOnvifXsdForTypeInfo = (xmlDoc: Document): ParsedXsd => {
           const type = maybe(elm.getAttribute('type')).flatMapAuto(a => a.split(':').pop())
             .map(typeConvert)
             .valueOr('')
-          const minOccurs = elm.getAttribute('minOccurs')
+          const minOccurs = maybe(elm.getAttribute('minOccurs')).map(a => parseInt(a) === 0).valueOr(false)
           return {
             name,
             type,

@@ -26,7 +26,7 @@ Information about the source of the recording.
 
 **● Content**: *[Description](../modules/_api_types_.md#description)*
 
-*Defined in [api/types.ts:3644](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3644)*
+*Defined in [api/types.ts:3644](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3644)*
 
 ___
 <a id="maximumretentiontime"></a>
@@ -35,7 +35,7 @@ ___
 
 **● MaximumRetentionTime**: *`string`*
 
-*Defined in [api/types.ts:3645](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3645)*
+*Defined in [api/types.ts:3645](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3645)*
 
 ___
 <a id="source"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Source**: *[RecordingSourceInformation](_api_types_.recordingsourceinformation.md)*
 
-*Defined in [api/types.ts:3643](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3643)*
+*Defined in [api/types.ts:3643](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3643)*
 
 ___
 

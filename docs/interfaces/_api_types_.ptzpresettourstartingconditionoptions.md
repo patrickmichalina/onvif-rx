@@ -23,38 +23,38 @@ Supported range of Recurring Time.
 
 <a id="direction"></a>
 
-###  Direction
+### `<Optional>` Direction
 
 **● Direction**: *[PTZPresetTourDirection](../enums/_api_types_.ptzpresettourdirection.md)*
 
-*Defined in [api/types.ts:2411](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2411)*
+*Defined in [api/types.ts:2411](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2411)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[PTZPresetTourStartingConditionOptionsExtension](_api_types_.ptzpresettourstartingconditionoptionsextension.md)*
 
-*Defined in [api/types.ts:2412](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2412)*
+*Defined in [api/types.ts:2412](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2412)*
 
 ___
 <a id="recurringduration"></a>
 
-###  RecurringDuration
+### `<Optional>` RecurringDuration
 
 **● RecurringDuration**: *[DurationRange](_api_types_.durationrange.md)*
 
-*Defined in [api/types.ts:2410](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2410)*
+*Defined in [api/types.ts:2410](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2410)*
 
 ___
 <a id="recurringtime"></a>
 
-###  RecurringTime
+### `<Optional>` RecurringTime
 
 **● RecurringTime**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:2409](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2409)*
+*Defined in [api/types.ts:2409](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2409)*
 
 ___
 

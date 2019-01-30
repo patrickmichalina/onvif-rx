@@ -23,38 +23,38 @@ This field shall be a reference to the source of the data. The type of the sourc
 
 <a id="autocreatereceiver"></a>
 
-###  AutoCreateReceiver
+### `<Optional>` AutoCreateReceiver
 
-**● AutoCreateReceiver**: *`boolean`*
+**● AutoCreateReceiver**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:3708](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3708)*
+*Defined in [api/types.ts:3708](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3708)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[RecordingJobSourceExtension](_api_types_.recordingjobsourceextension.md)*
 
-*Defined in [api/types.ts:3710](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3710)*
+*Defined in [api/types.ts:3710](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3710)*
 
 ___
 <a id="sourcetoken"></a>
 
-###  SourceToken
+### `<Optional>` SourceToken
 
 **● SourceToken**: *[SourceReference](_api_types_.sourcereference.md)*
 
-*Defined in [api/types.ts:3707](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3707)*
+*Defined in [api/types.ts:3707](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3707)*
 
 ___
 <a id="tracks"></a>
 
-###  Tracks
+### `<Optional>` Tracks
 
 **● Tracks**: *[RecordingJobTrack](_api_types_.recordingjobtrack.md)*
 
-*Defined in [api/types.ts:3709](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3709)*
+*Defined in [api/types.ts:3709](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3709)*
 
 ___
 

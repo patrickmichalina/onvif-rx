@@ -26,7 +26,7 @@
 
 **● SessionTimeout**: *`string`*
 
-*Defined in [api/types.ts:3784](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3784)*
+*Defined in [api/types.ts:3784](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3784)*
 
 ___
 

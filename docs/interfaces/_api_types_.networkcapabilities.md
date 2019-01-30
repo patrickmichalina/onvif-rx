@@ -24,47 +24,47 @@ Indicates whether or not IP filtering is supported.
 
 <a id="dyndns"></a>
 
-###  DynDNS
+### `<Optional>` DynDNS
 
-**● DynDNS**: *`boolean`*
+**● DynDNS**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1574](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1574)*
+*Defined in [api/types.ts:1574](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1574)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[NetworkCapabilitiesExtension](_api_types_.networkcapabilitiesextension.md)*
 
-*Defined in [api/types.ts:1575](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1575)*
+*Defined in [api/types.ts:1575](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1575)*
 
 ___
 <a id="ipfilter"></a>
 
-###  IPFilter
+### `<Optional>` IPFilter
 
-**● IPFilter**: *`boolean`*
+**● IPFilter**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1571](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1571)*
+*Defined in [api/types.ts:1571](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1571)*
 
 ___
 <a id="ipversion6"></a>
 
-###  IPVersion6
+### `<Optional>` IPVersion6
 
-**● IPVersion6**: *`boolean`*
+**● IPVersion6**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1573](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1573)*
+*Defined in [api/types.ts:1573](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1573)*
 
 ___
 <a id="zeroconfiguration"></a>
 
-###  ZeroConfiguration
+### `<Optional>` ZeroConfiguration
 
-**● ZeroConfiguration**: *`boolean`*
+**● ZeroConfiguration**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1572](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1572)*
+*Defined in [api/types.ts:1572](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1572)*
 
 ___
 

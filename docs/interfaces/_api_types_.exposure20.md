@@ -31,83 +31,83 @@ Type describing the exposure settings.
 
 <a id="exposuretime"></a>
 
-###  ExposureTime
+### `<Optional>` ExposureTime
 
-**● ExposureTime**: *`number`*
+**● ExposureTime**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2812](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2812)*
+*Defined in [api/types.ts:2812](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2812)*
 
 ___
 <a id="gain"></a>
 
-###  Gain
+### `<Optional>` Gain
 
-**● Gain**: *`number`*
+**● Gain**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2813](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2813)*
+*Defined in [api/types.ts:2813](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2813)*
 
 ___
 <a id="iris"></a>
 
-###  Iris
+### `<Optional>` Iris
 
-**● Iris**: *`number`*
+**● Iris**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2814](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2814)*
+*Defined in [api/types.ts:2814](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2814)*
 
 ___
 <a id="maxexposuretime"></a>
 
-###  MaxExposureTime
+### `<Optional>` MaxExposureTime
 
-**● MaxExposureTime**: *`number`*
+**● MaxExposureTime**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2807](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2807)*
+*Defined in [api/types.ts:2807](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2807)*
 
 ___
 <a id="maxgain"></a>
 
-###  MaxGain
+### `<Optional>` MaxGain
 
-**● MaxGain**: *`number`*
+**● MaxGain**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2809](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2809)*
+*Defined in [api/types.ts:2809](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2809)*
 
 ___
 <a id="maxiris"></a>
 
-###  MaxIris
+### `<Optional>` MaxIris
 
-**● MaxIris**: *`number`*
+**● MaxIris**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2811](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2811)*
+*Defined in [api/types.ts:2811](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2811)*
 
 ___
 <a id="minexposuretime"></a>
 
-###  MinExposureTime
+### `<Optional>` MinExposureTime
 
-**● MinExposureTime**: *`number`*
+**● MinExposureTime**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2806](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2806)*
+*Defined in [api/types.ts:2806](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2806)*
 
 ___
 <a id="mingain"></a>
 
-###  MinGain
+### `<Optional>` MinGain
 
-**● MinGain**: *`number`*
+**● MinGain**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2808](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2808)*
+*Defined in [api/types.ts:2808](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2808)*
 
 ___
 <a id="miniris"></a>
 
-###  MinIris
+### `<Optional>` MinIris
 
-**● MinIris**: *`number`*
+**● MinIris**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2810](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2810)*
+*Defined in [api/types.ts:2810](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2810)*
 
 ___
 <a id="mode"></a>
@@ -116,25 +116,25 @@ ___
 
 **● Mode**: *[ExposureMode](../enums/_api_types_.exposuremode.md)*
 
-*Defined in [api/types.ts:2803](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2803)*
+*Defined in [api/types.ts:2803](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2803)*
 
 ___
 <a id="priority"></a>
 
-###  Priority
+### `<Optional>` Priority
 
 **● Priority**: *[ExposurePriority](../enums/_api_types_.exposurepriority.md)*
 
-*Defined in [api/types.ts:2804](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2804)*
+*Defined in [api/types.ts:2804](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2804)*
 
 ___
 <a id="window"></a>
 
-###  Window
+### `<Optional>` Window
 
 **● Window**: *[Rectangle](_api_types_.rectangle.md)*
 
-*Defined in [api/types.ts:2805](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2805)*
+*Defined in [api/types.ts:2805](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2805)*
 
 ___
 

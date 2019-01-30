@@ -21,20 +21,20 @@ Optional element to configure Image Stabilization feature.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[ImagingSettingsExtension202](_api_types_.imagingsettingsextension202.md)*
 
-*Defined in [api/types.ts:2725](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2725)*
+*Defined in [api/types.ts:2725](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2725)*
 
 ___
 <a id="imagestabilization"></a>
 
-###  ImageStabilization
+### `<Optional>` ImageStabilization
 
-**● ImageStabilization**: *[ImageStabilization](_api_types_.imagestabilization.md)*
+**● ImageStabilization**: *[ImageStabilization](_api_types_.imagingsettingsextension20.md#imagestabilization)*
 
-*Defined in [api/types.ts:2724](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2724)*
+*Defined in [api/types.ts:2724](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2724)*
 
 ___
 

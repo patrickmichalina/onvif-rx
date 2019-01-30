@@ -20,7 +20,7 @@
 
 **Changed**:  = "Changed"
 
-*Defined in [api/types.ts:5279](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5279)*
+*Defined in [api/types.ts:5279](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5279)*
 
 ___
 <a id="deleted"></a>
@@ -29,7 +29,7 @@ ___
 
 **Deleted**:  = "Deleted"
 
-*Defined in [api/types.ts:5275](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5275)*
+*Defined in [api/types.ts:5275](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5275)*
 
 ___
 <a id="initialized"></a>
@@ -38,7 +38,7 @@ ___
 
 **Initialized**:  = "Initialized"
 
-*Defined in [api/types.ts:5271](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5271)*
+*Defined in [api/types.ts:5271](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5271)*
 
 ___
 

@@ -27,34 +27,34 @@ List of manually added IPv4 addresses.
 
 **● DHCP**: *`boolean`*
 
-*Defined in [api/types.ts:1108](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1108)*
+*Defined in [api/types.ts:1108](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1108)*
 
 ___
 <a id="fromdhcp"></a>
 
-###  FromDHCP
+### `<Optional>` FromDHCP
 
 **● FromDHCP**: *[PrefixedIPv4Address](_api_types_.prefixedipv4address.md)*
 
-*Defined in [api/types.ts:1107](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1107)*
+*Defined in [api/types.ts:1107](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1107)*
 
 ___
 <a id="linklocal"></a>
 
-###  LinkLocal
+### `<Optional>` LinkLocal
 
 **● LinkLocal**: *[PrefixedIPv4Address](_api_types_.prefixedipv4address.md)*
 
-*Defined in [api/types.ts:1106](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1106)*
+*Defined in [api/types.ts:1106](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1106)*
 
 ___
 <a id="manual"></a>
 
-###  Manual
+### `<Optional>` Manual
 
 **● Manual**: *[PrefixedIPv4Address](_api_types_.prefixedipv4address.md)*
 
-*Defined in [api/types.ts:1105](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1105)*
+*Defined in [api/types.ts:1105](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1105)*
 
 ___
 

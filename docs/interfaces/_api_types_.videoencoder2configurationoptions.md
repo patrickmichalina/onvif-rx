@@ -27,7 +27,7 @@ Video Media Subtype for the video format. For definitions see tt:VideoEncodingMi
 
 **● BitrateRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:682](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L682)*
+*Defined in [api/types.ts:682](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L682)*
 
 ___
 <a id="encoding"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Encoding**: *`string`*
 
-*Defined in [api/types.ts:679](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L679)*
+*Defined in [api/types.ts:679](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L679)*
 
 ___
 <a id="qualityrange"></a>
@@ -45,7 +45,7 @@ ___
 
 **● QualityRange**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:680](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L680)*
+*Defined in [api/types.ts:680](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L680)*
 
 ___
 <a id="resolutionsavailable"></a>
@@ -54,7 +54,7 @@ ___
 
 **● ResolutionsAvailable**: *[VideoResolution2](_api_types_.videoresolution2.md)*
 
-*Defined in [api/types.ts:681](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L681)*
+*Defined in [api/types.ts:681](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L681)*
 
 ___
 

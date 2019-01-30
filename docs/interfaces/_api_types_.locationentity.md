@@ -23,38 +23,38 @@ Location on earth.
 
 <a id="geolocation"></a>
 
-###  GeoLocation
+### `<Optional>` GeoLocation
 
-**● GeoLocation**: *[GeoLocation](_api_types_.geolocation.md)*
+**● GeoLocation**: *[GeoLocation](_api_types_.locationentity.md#geolocation)*
 
-*Defined in [api/types.ts:250](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L250)*
+*Defined in [api/types.ts:250](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L250)*
 
 ___
 <a id="geoorientation"></a>
 
-###  GeoOrientation
+### `<Optional>` GeoOrientation
 
-**● GeoOrientation**: *[GeoOrientation](_api_types_.geoorientation.md)*
+**● GeoOrientation**: *[GeoOrientation](_api_types_.locationentity.md#geoorientation)*
 
-*Defined in [api/types.ts:251](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L251)*
+*Defined in [api/types.ts:251](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L251)*
 
 ___
 <a id="locallocation"></a>
 
-###  LocalLocation
+### `<Optional>` LocalLocation
 
-**● LocalLocation**: *[LocalLocation](_api_types_.locallocation.md)*
+**● LocalLocation**: *[LocalLocation](_api_types_.locationentity.md#locallocation)*
 
-*Defined in [api/types.ts:252](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L252)*
+*Defined in [api/types.ts:252](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L252)*
 
 ___
 <a id="localorientation"></a>
 
-###  LocalOrientation
+### `<Optional>` LocalOrientation
 
-**● LocalOrientation**: *[LocalOrientation](_api_types_.localorientation.md)*
+**● LocalOrientation**: *[LocalOrientation](_api_types_.locationentity.md#localorientation)*
 
-*Defined in [api/types.ts:253](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L253)*
+*Defined in [api/types.ts:253](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L253)*
 
 ___
 

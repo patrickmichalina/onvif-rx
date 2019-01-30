@@ -21,20 +21,20 @@ IPv4 address string.
 
 <a id="ipv4address"></a>
 
-###  IPv4Address
+### `<Optional>` IPv4Address
 
 **● IPv4Address**: *[IPv4Address](_api_types_.networkgateway.md#ipv4address)*
 
-*Defined in [api/types.ts:1296](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1296)*
+*Defined in [api/types.ts:1296](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1296)*
 
 ___
 <a id="ipv6address"></a>
 
-###  IPv6Address
+### `<Optional>` IPv6Address
 
 **● IPv6Address**: *[IPv6Address](_api_types_.networkgateway.md#ipv6address)*
 
-*Defined in [api/types.ts:1297](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1297)*
+*Defined in [api/types.ts:1297](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1297)*
 
 ___
 

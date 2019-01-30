@@ -33,65 +33,65 @@
 
 <a id="backgroundcolor"></a>
 
-###  BackgroundColor
+### `<Optional>` BackgroundColor
 
 **● BackgroundColor**: *[OSDColor](_api_types_.osdcolor.md)*
 
-*Defined in [api/types.ts:4006](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4006)*
+*Defined in [api/types.ts:4006](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4006)*
 
 ___
 <a id="dateformat"></a>
 
-###  DateFormat
+### `<Optional>` DateFormat
 
-**● DateFormat**: *`string`*
+**● DateFormat**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:4002](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4002)*
+*Defined in [api/types.ts:4002](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4002)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[OSDTextConfigurationExtension](_api_types_.osdtextconfigurationextension.md)*
 
-*Defined in [api/types.ts:4008](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4008)*
+*Defined in [api/types.ts:4008](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4008)*
 
 ___
 <a id="fontcolor"></a>
 
-###  FontColor
+### `<Optional>` FontColor
 
 **● FontColor**: *[OSDColor](_api_types_.osdcolor.md)*
 
-*Defined in [api/types.ts:4005](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4005)*
+*Defined in [api/types.ts:4005](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4005)*
 
 ___
 <a id="fontsize"></a>
 
-###  FontSize
+### `<Optional>` FontSize
 
-**● FontSize**: *`number`*
+**● FontSize**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:4004](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4004)*
+*Defined in [api/types.ts:4004](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4004)*
 
 ___
 <a id="plaintext"></a>
 
-###  PlainText
+### `<Optional>` PlainText
 
-**● PlainText**: *`string`*
+**● PlainText**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:4007](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4007)*
+*Defined in [api/types.ts:4007](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4007)*
 
 ___
 <a id="timeformat"></a>
 
-###  TimeFormat
+### `<Optional>` TimeFormat
 
-**● TimeFormat**: *`string`*
+**● TimeFormat**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:4003](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4003)*
+*Defined in [api/types.ts:4003](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4003)*
 
 ___
 <a id="type"></a>
@@ -100,7 +100,7 @@ ___
 
 **● Type**: *`string`*
 
-*Defined in [api/types.ts:4001](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4001)*
+*Defined in [api/types.ts:4001](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4001)*
 
 ___
 

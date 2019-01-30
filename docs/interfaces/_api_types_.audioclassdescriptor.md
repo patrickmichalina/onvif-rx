@@ -21,20 +21,20 @@ Array of audio class label and class probability
 
 <a id="classcandidate"></a>
 
-###  ClassCandidate
+### `<Optional>` ClassCandidate
 
 **● ClassCandidate**: *[AudioClassCandidate](_api_types_.audioclasscandidate.md)*
 
-*Defined in [api/types.ts:3925](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3925)*
+*Defined in [api/types.ts:3925](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3925)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[AudioClassDescriptorExtension](_api_types_.audioclassdescriptorextension.md)*
 
-*Defined in [api/types.ts:3926](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3926)*
+*Defined in [api/types.ts:3926](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3926)*
 
 ___
 

@@ -25,7 +25,7 @@ Indication that the SetLayout command supports only predefined layouts.
 
 **● FixedLayout**: *`boolean`*
 
-*Defined in [api/types.ts:1694](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1694)*
+*Defined in [api/types.ts:1694](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1694)*
 
 ___
 <a id="xaddr"></a>
@@ -34,7 +34,7 @@ ___
 
 **● XAddr**: *`string`*
 
-*Defined in [api/types.ts:1693](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1693)*
+*Defined in [api/types.ts:1693](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1693)*
 
 ___
 

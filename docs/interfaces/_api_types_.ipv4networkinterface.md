@@ -25,7 +25,7 @@ Indicates whether or not IPv4 is enabled.
 
 **● Config**: *[IPv4Configuration](_api_types_.ipv4configuration.md)*
 
-*Defined in [api/types.ts:1098](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1098)*
+*Defined in [api/types.ts:1098](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1098)*
 
 ___
 <a id="enabled"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Enabled**: *`boolean`*
 
-*Defined in [api/types.ts:1097](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1097)*
+*Defined in [api/types.ts:1097](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1097)*
 
 ___
 

@@ -27,7 +27,7 @@ Stable Uri to be used for requesting the media stream
 
 **● InvalidAfterConnect**: *`boolean`*
 
-*Defined in [api/types.ts:1011](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1011)*
+*Defined in [api/types.ts:1011](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1011)*
 
 ___
 <a id="invalidafterreboot"></a>
@@ -36,7 +36,7 @@ ___
 
 **● InvalidAfterReboot**: *`boolean`*
 
-*Defined in [api/types.ts:1012](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1012)*
+*Defined in [api/types.ts:1012](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1012)*
 
 ___
 <a id="timeout"></a>
@@ -45,7 +45,7 @@ ___
 
 **● Timeout**: *`string`*
 
-*Defined in [api/types.ts:1013](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1013)*
+*Defined in [api/types.ts:1013](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1013)*
 
 ___
 <a id="uri"></a>
@@ -54,7 +54,7 @@ ___
 
 **● Uri**: *`string`*
 
-*Defined in [api/types.ts:1010](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1010)*
+*Defined in [api/types.ts:1010](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1010)*
 
 ___
 

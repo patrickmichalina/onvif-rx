@@ -20,29 +20,29 @@
 
 <a id="dot11"></a>
 
-###  Dot11
+### `<Optional>` Dot11
 
 **● Dot11**: *[Dot11Configuration](_api_types_.dot11configuration.md)*
 
-*Defined in [api/types.ts:1269](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1269)*
+*Defined in [api/types.ts:1269](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1269)*
 
 ___
 <a id="dot3"></a>
 
-###  Dot3
+### `<Optional>` Dot3
 
 **● Dot3**: *[Dot3Configuration](_api_types_.dot3configuration.md)*
 
-*Defined in [api/types.ts:1268](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1268)*
+*Defined in [api/types.ts:1268](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1268)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[NetworkInterfaceSetConfigurationExtension2](_api_types_.networkinterfacesetconfigurationextension2.md)*
 
-*Defined in [api/types.ts:1270](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1270)*
+*Defined in [api/types.ts:1270](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1270)*
 
 ___
 

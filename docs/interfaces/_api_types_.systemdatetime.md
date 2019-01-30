@@ -29,7 +29,7 @@ General date time inforamtion returned by the GetSystemDateTime method.
 
 **● DateTimeType**: *[SetDateTimeType](../enums/_api_types_.setdatetimetype.md)*
 
-*Defined in [api/types.ts:1807](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1807)*
+*Defined in [api/types.ts:1807](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1807)*
 
 ___
 <a id="daylightsavings"></a>
@@ -38,43 +38,43 @@ ___
 
 **● DaylightSavings**: *`boolean`*
 
-*Defined in [api/types.ts:1808](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1808)*
+*Defined in [api/types.ts:1808](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1808)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[SystemDateTimeExtension](_api_types_.systemdatetimeextension.md)*
 
-*Defined in [api/types.ts:1812](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1812)*
+*Defined in [api/types.ts:1812](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1812)*
 
 ___
 <a id="localdatetime"></a>
 
-###  LocalDateTime
+### `<Optional>` LocalDateTime
 
 **● LocalDateTime**: *[DateTime](_api_types_.datetime.md)*
 
-*Defined in [api/types.ts:1811](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1811)*
+*Defined in [api/types.ts:1811](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1811)*
 
 ___
 <a id="timezone"></a>
 
-###  TimeZone
+### `<Optional>` TimeZone
 
-**● TimeZone**: *[TimeZone](_api_types_.timezone.md)*
+**● TimeZone**: *[TimeZone](_api_types_.systemdatetime.md#timezone)*
 
-*Defined in [api/types.ts:1809](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1809)*
+*Defined in [api/types.ts:1809](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1809)*
 
 ___
 <a id="utcdatetime"></a>
 
-###  UTCDateTime
+### `<Optional>` UTCDateTime
 
 **● UTCDateTime**: *[DateTime](_api_types_.datetime.md)*
 
-*Defined in [api/types.ts:1810](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1810)*
+*Defined in [api/types.ts:1810](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1810)*
 
 ___
 

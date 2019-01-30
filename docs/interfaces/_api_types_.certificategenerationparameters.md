@@ -22,47 +22,47 @@
 
 <a id="certificateid"></a>
 
-###  CertificateID
+### `<Optional>` CertificateID
 
-**● CertificateID**: *`string`*
+**● CertificateID**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1894](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1894)*
+*Defined in [api/types.ts:1894](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1894)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[CertificateGenerationParametersExtension](_api_types_.certificategenerationparametersextension.md)*
 
-*Defined in [api/types.ts:1898](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1898)*
+*Defined in [api/types.ts:1898](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1898)*
 
 ___
 <a id="subject"></a>
 
-###  Subject
+### `<Optional>` Subject
 
-**● Subject**: *`string`*
+**● Subject**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1895](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1895)*
+*Defined in [api/types.ts:1895](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1895)*
 
 ___
 <a id="validnotafter"></a>
 
-###  ValidNotAfter
+### `<Optional>` ValidNotAfter
 
-**● ValidNotAfter**: *`string`*
+**● ValidNotAfter**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1897](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1897)*
+*Defined in [api/types.ts:1897](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1897)*
 
 ___
 <a id="validnotbefore"></a>
 
-###  ValidNotBefore
+### `<Optional>` ValidNotBefore
 
-**● ValidNotBefore**: *`string`*
+**● ValidNotBefore**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1896](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1896)*
+*Defined in [api/types.ts:1896](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1896)*
 
 ___
 

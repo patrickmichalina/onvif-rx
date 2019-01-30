@@ -21,20 +21,20 @@ Optional element to configure rotation of captured image. What resolutions a dev
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[VideoSourceConfigurationExtension2](_api_types_.videosourceconfigurationextension2.md)*
 
-*Defined in [api/types.ts:419](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L419)*
+*Defined in [api/types.ts:419](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L419)*
 
 ___
 <a id="rotate"></a>
 
-###  Rotate
+### `<Optional>` Rotate
 
-**● Rotate**: *[Rotate](_api_types_.rotate.md)*
+**● Rotate**: *[Rotate](_api_types_.videosourceconfigurationextension.md#rotate)*
 
-*Defined in [api/types.ts:418](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L418)*
+*Defined in [api/types.ts:418](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L418)*
 
 ___
 

@@ -19,20 +19,20 @@
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[AnalyticsEngineInputInfoExtension](_api_types_.analyticsengineinputinfoextension.md)*
 
-*Defined in [api/types.ts:3821](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3821)*
+*Defined in [api/types.ts:3821](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3821)*
 
 ___
 <a id="inputinfo"></a>
 
-###  InputInfo
+### `<Optional>` InputInfo
 
 **● InputInfo**: *[Config](_api_types_.config.md)*
 
-*Defined in [api/types.ts:3820](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3820)*
+*Defined in [api/types.ts:3820](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3820)*
 
 ___
 

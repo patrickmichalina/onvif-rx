@@ -23,7 +23,7 @@
 
 ▸ **createManagedDevice**(config: *[IDeviceInitConfig](../interfaces/_manage_device_.ideviceinitconfig.md)*): `IReader`<[ISystemConfig](../interfaces/_config_interfaces_.isystemconfig.md), [IManagedDevice](../interfaces/_manage_device_.imanageddevice.md)>
 
-*Defined in [manage/device.ts:18](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/manage/device.ts#L18)*
+*Defined in [manage/device.ts:18](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/manage/device.ts#L18)*
 
 **Parameters:**
 

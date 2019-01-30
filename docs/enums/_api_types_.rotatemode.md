@@ -22,7 +22,7 @@ Enable the Rotate feature. Degree of rotation is specified Degree parameter.
 
 **AUTO**:  = "AUTO"
 
-*Defined in [api/types.ts:4269](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4269)*
+*Defined in [api/types.ts:4269](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4269)*
 
 Rotate feature is automatically activated by the device.
 
@@ -33,7 +33,7 @@ ___
 
 **OFF**:  = "OFF"
 
-*Defined in [api/types.ts:4261](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4261)*
+*Defined in [api/types.ts:4261](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4261)*
 
 Enable the Rotate feature. Degree of rotation is specified Degree parameter.
 
@@ -44,7 +44,7 @@ ___
 
 **ON**:  = "ON"
 
-*Defined in [api/types.ts:4265](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4265)*
+*Defined in [api/types.ts:4265](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4265)*
 
 Disable the Rotate feature.
 

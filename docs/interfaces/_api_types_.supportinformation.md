@@ -21,20 +21,20 @@ The support information as attachment data.
 
 <a id="binary"></a>
 
-###  Binary
+### `<Optional>` Binary
 
 **● Binary**: *[AttachmentData](_api_types_.attachmentdata.md)*
 
-*Defined in [api/types.ts:1763](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1763)*
+*Defined in [api/types.ts:1763](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1763)*
 
 ___
 <a id="string"></a>
 
-###  String
+### `<Optional>` String
 
-**● String**: *`string`*
+**● String**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1764](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1764)*
+*Defined in [api/types.ts:1764](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1764)*
 
 ___
 

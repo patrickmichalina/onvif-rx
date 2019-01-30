@@ -23,38 +23,38 @@ A structure for defining a limited scope when searching in recorded data.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[SearchScopeExtension](_api_types_.searchscopeextension.md)*
 
-*Defined in [api/types.ts:3448](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3448)*
+*Defined in [api/types.ts:3448](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3448)*
 
 ___
 <a id="includedrecordings"></a>
 
-###  IncludedRecordings
+### `<Optional>` IncludedRecordings
 
 **● IncludedRecordings**: *[RecordingReference](../modules/_api_types_.md#recordingreference)*
 
-*Defined in [api/types.ts:3446](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3446)*
+*Defined in [api/types.ts:3446](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3446)*
 
 ___
 <a id="includedsources"></a>
 
-###  IncludedSources
+### `<Optional>` IncludedSources
 
 **● IncludedSources**: *[SourceReference](_api_types_.sourcereference.md)*
 
-*Defined in [api/types.ts:3445](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3445)*
+*Defined in [api/types.ts:3445](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3445)*
 
 ___
 <a id="recordinginformationfilter"></a>
 
-###  RecordingInformationFilter
+### `<Optional>` RecordingInformationFilter
 
 **● RecordingInformationFilter**: *[XPathExpression](../modules/_api_types_.md#xpathexpression)*
 
-*Defined in [api/types.ts:3447](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3447)*
+*Defined in [api/types.ts:3447](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3447)*
 
 ___
 

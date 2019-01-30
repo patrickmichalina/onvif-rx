@@ -37,38 +37,38 @@
 
 <a id="audioencoderconfiguration"></a>
 
-###  AudioEncoderConfiguration
+### `<Optional>` AudioEncoderConfiguration
 
-**● AudioEncoderConfiguration**: *[AudioEncoderConfiguration](_api_types_.audioencoderconfiguration.md)*
+**● AudioEncoderConfiguration**: *[AudioEncoderConfiguration](_api_types_.profile.md#audioencoderconfiguration)*
 
-*Defined in [api/types.ts:370](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L370)*
+*Defined in [api/types.ts:370](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L370)*
 
 ___
 <a id="audiosourceconfiguration"></a>
 
-###  AudioSourceConfiguration
+### `<Optional>` AudioSourceConfiguration
 
-**● AudioSourceConfiguration**: *[AudioSourceConfiguration](_api_types_.audiosourceconfiguration.md)*
+**● AudioSourceConfiguration**: *[AudioSourceConfiguration](_api_types_.profile.md#audiosourceconfiguration)*
 
-*Defined in [api/types.ts:368](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L368)*
+*Defined in [api/types.ts:368](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L368)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[ProfileExtension](_api_types_.profileextension.md)*
 
-*Defined in [api/types.ts:374](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L374)*
+*Defined in [api/types.ts:374](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L374)*
 
 ___
 <a id="metadataconfiguration"></a>
 
-###  MetadataConfiguration
+### `<Optional>` MetadataConfiguration
 
-**● MetadataConfiguration**: *[MetadataConfiguration](_api_types_.metadataconfiguration.md)*
+**● MetadataConfiguration**: *[MetadataConfiguration](_api_types_.profile.md#metadataconfiguration)*
 
-*Defined in [api/types.ts:373](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L373)*
+*Defined in [api/types.ts:373](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L373)*
 
 ___
 <a id="name"></a>
@@ -77,43 +77,43 @@ ___
 
 **● Name**: *[Name](_api_types_.profile.md#name)*
 
-*Defined in [api/types.ts:366](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L366)*
+*Defined in [api/types.ts:366](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L366)*
 
 ___
 <a id="ptzconfiguration"></a>
 
-###  PTZConfiguration
+### `<Optional>` PTZConfiguration
 
-**● PTZConfiguration**: *[PTZConfiguration](_api_types_.ptzconfiguration.md)*
+**● PTZConfiguration**: *[PTZConfiguration](_api_types_.profile.md#ptzconfiguration)*
 
-*Defined in [api/types.ts:372](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L372)*
+*Defined in [api/types.ts:372](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L372)*
 
 ___
 <a id="videoanalyticsconfiguration"></a>
 
-###  VideoAnalyticsConfiguration
+### `<Optional>` VideoAnalyticsConfiguration
 
-**● VideoAnalyticsConfiguration**: *[VideoAnalyticsConfiguration](_api_types_.videoanalyticsconfiguration.md)*
+**● VideoAnalyticsConfiguration**: *[VideoAnalyticsConfiguration](_api_types_.profile.md#videoanalyticsconfiguration)*
 
-*Defined in [api/types.ts:371](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L371)*
+*Defined in [api/types.ts:371](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L371)*
 
 ___
 <a id="videoencoderconfiguration"></a>
 
-###  VideoEncoderConfiguration
+### `<Optional>` VideoEncoderConfiguration
 
-**● VideoEncoderConfiguration**: *[VideoEncoderConfiguration](_api_types_.videoencoderconfiguration.md)*
+**● VideoEncoderConfiguration**: *[VideoEncoderConfiguration](_api_types_.profile.md#videoencoderconfiguration)*
 
-*Defined in [api/types.ts:369](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L369)*
+*Defined in [api/types.ts:369](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L369)*
 
 ___
 <a id="videosourceconfiguration"></a>
 
-###  VideoSourceConfiguration
+### `<Optional>` VideoSourceConfiguration
 
-**● VideoSourceConfiguration**: *[VideoSourceConfiguration](_api_types_.videosourceconfiguration.md)*
+**● VideoSourceConfiguration**: *[VideoSourceConfiguration](_api_types_.profile.md#videosourceconfiguration)*
 
-*Defined in [api/types.ts:367](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L367)*
+*Defined in [api/types.ts:367](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L367)*
 
 ___
 

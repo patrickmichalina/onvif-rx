@@ -20,11 +20,11 @@ List of values.
 
 <a id="items"></a>
 
-###  Items
+### `<Optional>` Items
 
-**● Items**: *`number`*
+**● Items**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:306](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L306)*
+*Defined in [api/types.ts:306](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L306)*
 
 ___
 

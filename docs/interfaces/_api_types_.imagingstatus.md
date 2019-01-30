@@ -22,7 +22,7 @@
 
 **● FocusStatus**: *[FocusStatus](_api_types_.focusstatus.md)*
 
-*Defined in [api/types.ts:2425](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2425)*
+*Defined in [api/types.ts:2425](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2425)*
 
 ___
 

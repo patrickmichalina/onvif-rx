@@ -37,7 +37,7 @@
 
 ⊕ **new ONVIFReplay**(config: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*): [ONVIFReplay](_api_replay_.onvifreplay.md)
 
-*Defined in [api/replay.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L5)*
+*Defined in [api/replay.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/replay.ts#L5)*
 
 **Parameters:**
 
@@ -57,7 +57,7 @@ ___
 
 **● config**: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*
 
-*Defined in [api/replay.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L6)*
+*Defined in [api/replay.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/replay.ts#L6)*
 
 ___
 
@@ -67,22 +67,22 @@ ___
 
 ###  GetReplayConfiguration
 
-▸ **GetReplayConfiguration**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetReplayConfiguration**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/replay.ts:81](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L81)*
+*Defined in [api/replay.ts:81](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/replay.ts#L81)*
 
 Returns the current configuration of the replay service. This operation is mandatory.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getreplayuri"></a>
 
 ###  GetReplayUri
 
-▸ **GetReplayUri**(StreamSetup: *[StreamSetup](../interfaces/_api_types_.streamsetup.md)*, RecordingToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetReplayUri**(StreamSetup: *[StreamSetup](../interfaces/_api_types_.streamsetup.md)*, RecordingToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/replay.ts:71](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L71)*
+*Defined in [api/replay.ts:71](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/replay.ts#L71)*
 
 Requests a URI that can be used to initiate playback of a recorded stream using RTSP as the control protocol. The URI is valid only as it is specified in the response. This operation is mandatory.
 
@@ -93,29 +93,29 @@ Requests a URI that can be used to initiate playback of a recorded stream using 
 | StreamSetup | [StreamSetup](../interfaces/_api_types_.streamsetup.md) |
 | RecordingToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getservicecapabilities"></a>
 
 ###  GetServiceCapabilities
 
-▸ **GetServiceCapabilities**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetServiceCapabilities**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/replay.ts:59](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L59)*
+*Defined in [api/replay.ts:59](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/replay.ts#L59)*
 
 Returns the capabilities of the replay service. The result is returned in a typed answer.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="setreplayconfiguration"></a>
 
 ###  SetReplayConfiguration
 
-▸ **SetReplayConfiguration**(Configuration: *[ReplayConfiguration](../interfaces/_api_types_.replayconfiguration.md)*): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **SetReplayConfiguration**(Configuration: *[ReplayConfiguration](../interfaces/_api_types_.replayconfiguration.md)*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/replay.ts:91](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L91)*
+*Defined in [api/replay.ts:91](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/replay.ts#L91)*
 
 Changes the current configuration of the replay service. This operation is mandatory.
 
@@ -125,29 +125,29 @@ Changes the current configuration of the replay service. This operation is manda
 | ------ | ------ |
 | Configuration | [ReplayConfiguration](../interfaces/_api_types_.replayconfiguration.md) |
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getreplayconfiguration-1"></a>
 
 ### `<Static>` GetReplayConfiguration
 
-▸ **GetReplayConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetReplayConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/replay.ts:38](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L38)*
+*Defined in [api/replay.ts:38](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/replay.ts#L38)*
 
 Returns the current configuration of the replay service. This operation is mandatory.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getreplayuri-1"></a>
 
 ### `<Static>` GetReplayUri
 
-▸ **GetReplayUri**(StreamSetup: *[StreamSetup](../interfaces/_api_types_.streamsetup.md)*, RecordingToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetReplayUri**(StreamSetup: *[StreamSetup](../interfaces/_api_types_.streamsetup.md)*, RecordingToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/replay.ts:26](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L26)*
+*Defined in [api/replay.ts:26](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/replay.ts#L26)*
 
 Requests a URI that can be used to initiate playback of a recorded stream using RTSP as the control protocol. The URI is valid only as it is specified in the response. This operation is mandatory.
 
@@ -158,29 +158,29 @@ Requests a URI that can be used to initiate playback of a recorded stream using 
 | StreamSetup | [StreamSetup](../interfaces/_api_types_.streamsetup.md) |
 | RecordingToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getservicecapabilities-1"></a>
 
 ### `<Static>` GetServiceCapabilities
 
-▸ **GetServiceCapabilities**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetServiceCapabilities**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/replay.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L12)*
+*Defined in [api/replay.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/replay.ts#L12)*
 
 Returns the capabilities of the replay service. The result is returned in a typed answer.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="setreplayconfiguration-1"></a>
 
 ### `<Static>` SetReplayConfiguration
 
-▸ **SetReplayConfiguration**(Configuration: *[ReplayConfiguration](../interfaces/_api_types_.replayconfiguration.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **SetReplayConfiguration**(Configuration: *[ReplayConfiguration](../interfaces/_api_types_.replayconfiguration.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/replay.ts:50](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/replay.ts#L50)*
+*Defined in [api/replay.ts:50](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/replay.ts#L50)*
 
 Changes the current configuration of the replay service. This operation is mandatory.
 
@@ -190,7 +190,7 @@ Changes the current configuration of the replay service. This operation is manda
 | ------ | ------ |
 | Configuration | [ReplayConfiguration](../interfaces/_api_types_.replayconfiguration.md) |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 

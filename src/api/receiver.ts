@@ -10,7 +10,7 @@ export class ONVIFReceiver {
      * Returns the capabilities of the receiver service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString(generateRequestElements('trv:GetServiceCapabilities')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trv:GetServiceCapabilities')({}))
                         .map(mapResponseXmlToJson<any>('trv:GetServiceCapabilitiesResponse'))
                       
     }
@@ -21,7 +21,7 @@ export class ONVIFReceiver {
      *   
      */
     static GetReceivers() {
-        return createStandardRequestBodyFromString(generateRequestElements('trv:GetReceivers')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trv:GetReceivers')({}))
                         .map(mapResponseXmlToJson<any>('trv:GetReceiversResponse'))
                       
     }
@@ -32,7 +32,7 @@ export class ONVIFReceiver {
      *   
      */
     static GetReceiver(ReceiverToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trv:GetReceiver')(['ReceiverToken'])(ReceiverToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trv:GetReceiver')({ReceiverToken}))
                         .map(mapResponseXmlToJson<any>('trv:GetReceiverResponse'))
                       
     }
@@ -44,7 +44,7 @@ export class ONVIFReceiver {
      *   
      */
     static CreateReceiver(Configuration: ReceiverConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('trv:CreateReceiver')(['Configuration'])(Configuration))
+        return createStandardRequestBodyFromString(generateRequestElements('trv:CreateReceiver')({Configuration}))
                         .map(mapResponseXmlToJson<any>('trv:CreateReceiverResponse'))
                       
     }
@@ -57,7 +57,7 @@ export class ONVIFReceiver {
      *   
      */
     static DeleteReceiver(ReceiverToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trv:DeleteReceiver')(['ReceiverToken'])(ReceiverToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trv:DeleteReceiver')({ReceiverToken}))
                         .map(mapResponseXmlToJson<any>('trv:DeleteReceiverResponse'))
                       
     }
@@ -68,7 +68,7 @@ export class ONVIFReceiver {
      *   
      */
     static ConfigureReceiver(ReceiverToken: ReferenceToken, Configuration: ReceiverConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('trv:ConfigureReceiver')(['ReceiverToken','Configuration'])(ReceiverToken,Configuration))
+        return createStandardRequestBodyFromString(generateRequestElements('trv:ConfigureReceiver')({ReceiverToken,Configuration}))
                         .map(mapResponseXmlToJson<any>('trv:ConfigureReceiverResponse'))
                       
     }
@@ -80,7 +80,7 @@ export class ONVIFReceiver {
      *   
      */
     static SetReceiverMode(ReceiverToken: ReferenceToken, Mode: ReceiverMode) {
-        return createStandardRequestBodyFromString(generateRequestElements('trv:SetReceiverMode')(['ReceiverToken','Mode'])(ReceiverToken,Mode))
+        return createStandardRequestBodyFromString(generateRequestElements('trv:SetReceiverMode')({ReceiverToken,Mode}))
                         .map(mapResponseXmlToJson<any>('trv:SetReceiverModeResponse'))
                       
     }
@@ -93,7 +93,7 @@ export class ONVIFReceiver {
      *   
      */
     static GetReceiverState(ReceiverToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trv:GetReceiverState')(['ReceiverToken'])(ReceiverToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trv:GetReceiverState')({ReceiverToken}))
                         .map(mapResponseXmlToJson<any>('trv:GetReceiverStateResponse'))
                       
     }

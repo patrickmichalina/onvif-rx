@@ -21,11 +21,11 @@ The state of the search when the result is returned. Indicates if there can be m
 
 <a id="result"></a>
 
-###  Result
+### `<Optional>` Result
 
 **● Result**: *[FindPTZPositionResult](_api_types_.findptzpositionresult.md)*
 
-*Defined in [api/types.ts:3511](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3511)*
+*Defined in [api/types.ts:3511](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3511)*
 
 ___
 <a id="searchstate"></a>
@@ -34,7 +34,7 @@ ___
 
 **● SearchState**: *[SearchState](../enums/_api_types_.searchstate.md)*
 
-*Defined in [api/types.ts:3510](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3510)*
+*Defined in [api/types.ts:3510](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3510)*
 
 ___
 

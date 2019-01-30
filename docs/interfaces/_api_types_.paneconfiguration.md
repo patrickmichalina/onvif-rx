@@ -25,47 +25,47 @@ Configuration of the streaming and coding settings of a Video window.
 
 <a id="audioencoderconfiguration"></a>
 
-###  AudioEncoderConfiguration
+### `<Optional>` AudioEncoderConfiguration
 
-**● AudioEncoderConfiguration**: *[AudioEncoderConfiguration](_api_types_.audioencoderconfiguration.md)*
+**● AudioEncoderConfiguration**: *[AudioEncoderConfiguration](_api_types_.paneconfiguration.md#audioencoderconfiguration)*
 
-*Defined in [api/types.ts:3322](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3322)*
+*Defined in [api/types.ts:3322](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3322)*
 
 ___
 <a id="audiooutputtoken"></a>
 
-###  AudioOutputToken
+### `<Optional>` AudioOutputToken
 
 **● AudioOutputToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3320](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3320)*
+*Defined in [api/types.ts:3320](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3320)*
 
 ___
 <a id="audiosourcetoken"></a>
 
-###  AudioSourceToken
+### `<Optional>` AudioSourceToken
 
 **● AudioSourceToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3321](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3321)*
+*Defined in [api/types.ts:3321](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3321)*
 
 ___
 <a id="panename"></a>
 
-###  PaneName
+### `<Optional>` PaneName
 
-**● PaneName**: *`string`*
+**● PaneName**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:3319](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3319)*
+*Defined in [api/types.ts:3319](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3319)*
 
 ___
 <a id="receivertoken"></a>
 
-###  ReceiverToken
+### `<Optional>` ReceiverToken
 
 **● ReceiverToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3323](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3323)*
+*Defined in [api/types.ts:3323](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3323)*
 
 ___
 <a id="token"></a>
@@ -74,7 +74,7 @@ ___
 
 **● Token**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3324](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3324)*
+*Defined in [api/types.ts:3324](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3324)*
 
 ___
 

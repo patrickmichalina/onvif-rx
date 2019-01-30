@@ -24,7 +24,7 @@ Contains Rule MotionExpression configuration
 
 **● MotionExpression**: *[MotionExpression](_api_types_.motionexpression.md)*
 
-*Defined in [api/types.ts:3305](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3305)*
+*Defined in [api/types.ts:3305](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3305)*
 
 ___
 

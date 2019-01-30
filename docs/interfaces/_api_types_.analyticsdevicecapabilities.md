@@ -22,20 +22,20 @@ Obsolete property.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[AnalyticsDeviceExtension](_api_types_.analyticsdeviceextension.md)*
 
-*Defined in [api/types.ts:1742](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1742)*
+*Defined in [api/types.ts:1742](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1742)*
 
 ___
 <a id="rulesupport"></a>
 
-###  RuleSupport
+### `<Optional>` RuleSupport
 
-**● RuleSupport**: *`boolean`*
+**● RuleSupport**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1741](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1741)*
+*Defined in [api/types.ts:1741](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1741)*
 
 ___
 <a id="xaddr"></a>
@@ -44,7 +44,7 @@ ___
 
 **● XAddr**: *`string`*
 
-*Defined in [api/types.ts:1740](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1740)*
+*Defined in [api/types.ts:1740](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1740)*
 
 ___
 

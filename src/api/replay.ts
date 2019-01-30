@@ -10,7 +10,7 @@ export class ONVIFReplay {
      * Returns the capabilities of the replay service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString(generateRequestElements('trp:GetServiceCapabilities')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trp:GetServiceCapabilities')({}))
                         .map(mapResponseXmlToJson<any>('trp:GetServiceCapabilitiesResponse'))
                       
     }
@@ -24,7 +24,7 @@ export class ONVIFReplay {
      *   
      */
     static GetReplayUri(StreamSetup: StreamSetup, RecordingToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trp:GetReplayUri')(['StreamSetup','RecordingToken'])(StreamSetup,RecordingToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trp:GetReplayUri')({StreamSetup,RecordingToken}))
                         .map(mapResponseXmlToJson<any>('trp:GetReplayUriResponse'))
                       
     }
@@ -36,7 +36,7 @@ export class ONVIFReplay {
      *   
      */
     static GetReplayConfiguration() {
-        return createStandardRequestBodyFromString(generateRequestElements('trp:GetReplayConfiguration')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trp:GetReplayConfiguration')({}))
                         .map(mapResponseXmlToJson<any>('trp:GetReplayConfigurationResponse'))
                       
     }
@@ -48,7 +48,7 @@ export class ONVIFReplay {
      *   
      */
     static SetReplayConfiguration(Configuration: ReplayConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('trp:SetReplayConfiguration')(['Configuration'])(Configuration))
+        return createStandardRequestBodyFromString(generateRequestElements('trp:SetReplayConfiguration')({Configuration}))
                         .map(mapResponseXmlToJson<any>('trp:SetReplayConfigurationResponse'))
                       
     }

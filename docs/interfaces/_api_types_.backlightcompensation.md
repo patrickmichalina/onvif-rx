@@ -25,7 +25,7 @@ Backlight compensation mode (on/off).
 
 **● Level**: *`number`*
 
-*Defined in [api/types.ts:2511](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2511)*
+*Defined in [api/types.ts:2511](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2511)*
 
 ___
 <a id="mode"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Mode**: *[BacklightCompensationMode](../enums/_api_types_.backlightcompensationmode.md)*
 
-*Defined in [api/types.ts:2510](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2510)*
+*Defined in [api/types.ts:2510](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2510)*
 
 ___
 

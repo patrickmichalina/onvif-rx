@@ -22,29 +22,29 @@ Indicates whether or not IPv4 is enabled.
 
 <a id="dhcp"></a>
 
-###  DHCP
+### `<Optional>` DHCP
 
-**● DHCP**: *`boolean`*
+**● DHCP**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1289](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1289)*
+*Defined in [api/types.ts:1289](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1289)*
 
 ___
 <a id="enabled"></a>
 
-###  Enabled
+### `<Optional>` Enabled
 
-**● Enabled**: *`boolean`*
+**● Enabled**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1287](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1287)*
+*Defined in [api/types.ts:1287](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1287)*
 
 ___
 <a id="manual"></a>
 
-###  Manual
+### `<Optional>` Manual
 
 **● Manual**: *[PrefixedIPv4Address](_api_types_.prefixedipv4address.md)*
 
-*Defined in [api/types.ts:1288](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1288)*
+*Defined in [api/types.ts:1288](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1288)*
 
 ___
 

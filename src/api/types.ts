@@ -148,8 +148,8 @@ export interface Vector1D {
  * Pan and tilt position. The x component corresponds to pan and the y component to tilt.
  */
 export interface PTZVector {
-    readonly 'PanTilt': Vector2D;
-    readonly 'Zoom': Vector1D;
+    readonly 'PanTilt'?: Vector2D;
+    readonly 'Zoom'?: Vector1D;
 }
 
 /**
@@ -158,9 +158,9 @@ export interface PTZVector {
  *           
  */
 export interface PTZStatus {
-    readonly 'Position': PTZVector;
-    readonly 'MoveStatus': PTZMoveStatus;
-    readonly 'Error': string;
+    readonly 'Position'?: PTZVector;
+    readonly 'MoveStatus'?: PTZMoveStatus;
+    readonly 'Error'?: string;
     readonly 'UtcTime': string;
 }
 
@@ -169,8 +169,8 @@ export interface PTZStatus {
  *           
  */
 export interface PTZMoveStatus {
-    readonly 'PanTilt': MoveStatus;
-    readonly 'Zoom': MoveStatus;
+    readonly 'PanTilt'?: MoveStatus;
+    readonly 'Zoom'?: MoveStatus;
 }
 
 /**
@@ -208,9 +208,9 @@ export interface ColorCovariance {
  * 
  */
 export interface Transformation {
-    readonly 'Translate': Vector;
-    readonly 'Scale': Vector;
-    readonly 'Extension': TransformationExtension;
+    readonly 'Translate'?: Vector;
+    readonly 'Scale'?: Vector;
+    readonly 'Extension'?: TransformationExtension;
 }
 
 /**
@@ -247,10 +247,10 @@ export interface LocalOrientation {
  * Location on earth.
  */
 export interface LocationEntity {
-    readonly 'GeoLocation': GeoLocation;
-    readonly 'GeoOrientation': GeoOrientation;
-    readonly 'LocalLocation': LocalLocation;
-    readonly 'LocalOrientation': LocalOrientation;
+    readonly 'GeoLocation'?: GeoLocation;
+    readonly 'GeoOrientation'?: GeoOrientation;
+    readonly 'LocalLocation'?: LocalLocation;
+    readonly 'LocalOrientation'?: LocalOrientation;
 }
 
 /**
@@ -303,14 +303,14 @@ export interface DurationRange {
  * List of values.
  */
 export interface IntList {
-    readonly 'Items': number;
+    readonly 'Items'?: number;
 }
 
 /**
  * 
  */
 export interface FloatList {
-    readonly 'Items': number;
+    readonly 'Items'?: number;
 }
 
 /**
@@ -325,16 +325,16 @@ export interface AnyHolder {
 export interface VideoSource {
     readonly 'Framerate': number;
     readonly 'Resolution': VideoResolution;
-    readonly 'Imaging': ImagingSettings;
-    readonly 'Extension': VideoSourceExtension;
+    readonly 'Imaging'?: ImagingSettings;
+    readonly 'Extension'?: VideoSourceExtension;
 }
 
 /**
  * Optional configuration of the image sensor. To be used if imaging service 2.00 is supported.
  */
 export interface VideoSourceExtension {
-    readonly 'Imaging': ImagingSettings20;
-    readonly 'Extension': VideoSourceExtension2;
+    readonly 'Imaging'?: ImagingSettings20;
+    readonly 'Extension'?: VideoSourceExtension2;
 }
 
 /**
@@ -364,23 +364,23 @@ export interface AudioSource {
  */
 export interface Profile {
     readonly 'Name': Name;
-    readonly 'VideoSourceConfiguration': VideoSourceConfiguration;
-    readonly 'AudioSourceConfiguration': AudioSourceConfiguration;
-    readonly 'VideoEncoderConfiguration': VideoEncoderConfiguration;
-    readonly 'AudioEncoderConfiguration': AudioEncoderConfiguration;
-    readonly 'VideoAnalyticsConfiguration': VideoAnalyticsConfiguration;
-    readonly 'PTZConfiguration': PTZConfiguration;
-    readonly 'MetadataConfiguration': MetadataConfiguration;
-    readonly 'Extension': ProfileExtension;
+    readonly 'VideoSourceConfiguration'?: VideoSourceConfiguration;
+    readonly 'AudioSourceConfiguration'?: AudioSourceConfiguration;
+    readonly 'VideoEncoderConfiguration'?: VideoEncoderConfiguration;
+    readonly 'AudioEncoderConfiguration'?: AudioEncoderConfiguration;
+    readonly 'VideoAnalyticsConfiguration'?: VideoAnalyticsConfiguration;
+    readonly 'PTZConfiguration'?: PTZConfiguration;
+    readonly 'MetadataConfiguration'?: MetadataConfiguration;
+    readonly 'Extension'?: ProfileExtension;
 }
 
 /**
  * Optional configuration of the Audio output.
  */
 export interface ProfileExtension {
-    readonly 'AudioOutputConfiguration': AudioOutputConfiguration;
-    readonly 'AudioDecoderConfiguration': AudioDecoderConfiguration;
-    readonly 'Extension': ProfileExtension2;
+    readonly 'AudioOutputConfiguration'?: AudioOutputConfiguration;
+    readonly 'AudioDecoderConfiguration'?: AudioDecoderConfiguration;
+    readonly 'Extension'?: ProfileExtension2;
 }
 
 /**
@@ -403,7 +403,7 @@ export interface ConfigurationEntity {
 export interface VideoSourceConfiguration {
     readonly 'SourceToken': ReferenceToken;
     readonly 'Bounds': IntRectangle;
-    readonly 'Extension': VideoSourceConfigurationExtension;
+    readonly 'Extension'?: VideoSourceConfigurationExtension;
 }
 
 /**
@@ -415,16 +415,16 @@ export interface VideoSourceConfiguration {
  * 					
  */
 export interface VideoSourceConfigurationExtension {
-    readonly 'Rotate': Rotate;
-    readonly 'Extension': VideoSourceConfigurationExtension2;
+    readonly 'Rotate'?: Rotate;
+    readonly 'Extension'?: VideoSourceConfigurationExtension2;
 }
 
 /**
  * Optional element describing the geometric lens distortion. Multiple instances for future variable lens support.
  */
 export interface VideoSourceConfigurationExtension2 {
-    readonly 'LensDescription': LensDescription;
-    readonly 'SceneOrientation': SceneOrientation;
+    readonly 'LensDescription'?: LensDescription;
+    readonly 'SceneOrientation'?: SceneOrientation;
 }
 
 /**
@@ -432,8 +432,8 @@ export interface VideoSourceConfigurationExtension2 {
  */
 export interface Rotate {
     readonly 'Mode': RotateMode;
-    readonly 'Degree': number;
-    readonly 'Extension': RotateExtension;
+    readonly 'Degree'?: number;
+    readonly 'Extension'?: RotateExtension;
 }
 
 /**
@@ -448,7 +448,7 @@ export interface RotateExtension {
 export interface LensProjection {
     readonly 'Angle': number;
     readonly 'Radius': number;
-    readonly 'Transmittance': number;
+    readonly 'Transmittance'?: number;
 }
 
 /**
@@ -476,22 +476,22 @@ export interface LensDescription {
 export interface VideoSourceConfigurationOptions {
     readonly 'BoundsRange': IntRectangleRange;
     readonly 'VideoSourceTokensAvailable': ReferenceToken;
-    readonly 'Extension': VideoSourceConfigurationOptionsExtension;
+    readonly 'Extension'?: VideoSourceConfigurationOptionsExtension;
 }
 
 /**
  * Options of parameters for Rotation feature.
  */
 export interface VideoSourceConfigurationOptionsExtension {
-    readonly 'Rotate': RotateOptions;
-    readonly 'Extension': VideoSourceConfigurationOptionsExtension2;
+    readonly 'Rotate'?: RotateOptions;
+    readonly 'Extension'?: VideoSourceConfigurationOptionsExtension2;
 }
 
 /**
  * Scene orientation modes supported by the device for this configuration.
  */
 export interface VideoSourceConfigurationOptionsExtension2 {
-    readonly 'SceneOrientationMode': SceneOrientationMode;
+    readonly 'SceneOrientationMode'?: SceneOrientationMode;
 }
 
 /**
@@ -499,8 +499,8 @@ export interface VideoSourceConfigurationOptionsExtension2 {
  */
 export interface RotateOptions {
     readonly 'Mode': RotateMode;
-    readonly 'DegreeList': IntList;
-    readonly 'Extension': RotateOptionsExtension;
+    readonly 'DegreeList'?: IntList;
+    readonly 'Extension'?: RotateOptionsExtension;
 }
 
 /**
@@ -516,7 +516,7 @@ export interface RotateOptionsExtension {
  */
 export interface SceneOrientation {
     readonly 'Mode': SceneOrientationMode;
-    readonly 'Orientation': string;
+    readonly 'Orientation'?: string;
 }
 
 /**
@@ -526,9 +526,9 @@ export interface VideoEncoderConfiguration {
     readonly 'Encoding': VideoEncoding;
     readonly 'Resolution': VideoResolution;
     readonly 'Quality': number;
-    readonly 'RateControl': VideoRateControl;
-    readonly 'MPEG4': Mpeg4Configuration;
-    readonly 'H264': H264Configuration;
+    readonly 'RateControl'?: VideoRateControl;
+    readonly 'MPEG4'?: Mpeg4Configuration;
+    readonly 'H264'?: H264Configuration;
     readonly 'Multicast': MulticastConfiguration;
     readonly 'SessionTimeout': string;
 }
@@ -571,20 +571,20 @@ export interface H264Configuration {
  */
 export interface VideoEncoderConfigurationOptions {
     readonly 'QualityRange': IntRange;
-    readonly 'JPEG': JpegOptions;
-    readonly 'MPEG4': Mpeg4Options;
-    readonly 'H264': H264Options;
-    readonly 'Extension': VideoEncoderOptionsExtension;
+    readonly 'JPEG'?: JpegOptions;
+    readonly 'MPEG4'?: Mpeg4Options;
+    readonly 'H264'?: H264Options;
+    readonly 'Extension'?: VideoEncoderOptionsExtension;
 }
 
 /**
  * Optional JPEG encoder settings ranges.
  */
 export interface VideoEncoderOptionsExtension {
-    readonly 'JPEG': JpegOptions2;
-    readonly 'MPEG4': Mpeg4Options2;
-    readonly 'H264': H264Options2;
-    readonly 'Extension': VideoEncoderOptionsExtension2;
+    readonly 'JPEG'?: JpegOptions2;
+    readonly 'MPEG4'?: Mpeg4Options2;
+    readonly 'H264'?: H264Options2;
+    readonly 'Extension'?: VideoEncoderOptionsExtension2;
 }
 
 /**
@@ -651,8 +651,8 @@ export interface H264Options2 {
 export interface VideoEncoder2Configuration {
     readonly 'Encoding': string;
     readonly 'Resolution': VideoResolution2;
-    readonly 'RateControl': VideoRateControl2;
-    readonly 'Multicast': MulticastConfiguration;
+    readonly 'RateControl'?: VideoRateControl2;
+    readonly 'Multicast'?: MulticastConfiguration;
     readonly 'Quality': number;
 }
 
@@ -694,7 +694,7 @@ export interface AudioSourceConfiguration {
  */
 export interface AudioSourceConfigurationOptions {
     readonly 'InputTokensAvailable': ReferenceToken;
-    readonly 'Extension': AudioSourceOptionsExtension;
+    readonly 'Extension'?: AudioSourceOptionsExtension;
 }
 
 /**
@@ -718,7 +718,7 @@ export interface AudioEncoderConfiguration {
  * list of supported AudioEncoderConfigurations
  */
 export interface AudioEncoderConfigurationOptions {
-    readonly 'Options': AudioEncoderConfigurationOption;
+    readonly 'Options'?: AudioEncoderConfigurationOption;
 }
 
 /**
@@ -735,7 +735,7 @@ export interface AudioEncoderConfigurationOption {
  */
 export interface AudioEncoder2Configuration {
     readonly 'Encoding': string;
-    readonly 'Multicast': MulticastConfiguration;
+    readonly 'Multicast'?: MulticastConfiguration;
     readonly 'Bitrate': number;
     readonly 'SampleRate': number;
 }
@@ -761,13 +761,13 @@ export interface VideoAnalyticsConfiguration {
  * optional element to configure which PTZ related data is to include in the metadata stream
  */
 export interface MetadataConfiguration {
-    readonly 'PTZStatus': PTZFilter;
-    readonly 'Events': EventSubscription;
-    readonly 'Analytics': boolean;
+    readonly 'PTZStatus'?: PTZFilter;
+    readonly 'Events'?: EventSubscription;
+    readonly 'Analytics'?: boolean;
     readonly 'Multicast': MulticastConfiguration;
     readonly 'SessionTimeout': string;
-    readonly 'AnalyticsEngineConfiguration': AnalyticsEngineConfiguration;
-    readonly 'Extension': MetadataConfigurationExtension;
+    readonly 'AnalyticsEngineConfiguration'?: AnalyticsEngineConfiguration;
+    readonly 'Extension'?: MetadataConfigurationExtension;
 }
 
 /**
@@ -788,8 +788,8 @@ export interface PTZFilter {
  * Subcription handling in the same way as base notification subscription.
  */
 export interface EventSubscription {
-    readonly 'Filter': any;
-    readonly 'SubscriptionPolicy': any;
+    readonly 'Filter'?: any;
+    readonly 'SubscriptionPolicy'?: any;
 }
 
 /**
@@ -797,15 +797,15 @@ export interface EventSubscription {
  */
 export interface MetadataConfigurationOptions {
     readonly 'PTZStatusFilterOptions': PTZStatusFilterOptions;
-    readonly 'Extension': MetadataConfigurationOptionsExtension;
+    readonly 'Extension'?: MetadataConfigurationOptionsExtension;
 }
 
 /**
  * List of supported metadata compression type. Its options shall be chosen from tt:MetadataCompressionType.
  */
 export interface MetadataConfigurationOptionsExtension {
-    readonly 'CompressionType': string;
-    readonly 'Extension': MetadataConfigurationOptionsExtension2;
+    readonly 'CompressionType'?: string;
+    readonly 'Extension'?: MetadataConfigurationOptionsExtension2;
 }
 
 /**
@@ -820,9 +820,9 @@ export interface MetadataConfigurationOptionsExtension2 {
 export interface PTZStatusFilterOptions {
     readonly 'PanTiltStatusSupported': boolean;
     readonly 'ZoomStatusSupported': boolean;
-    readonly 'PanTiltPositionSupported': boolean;
-    readonly 'ZoomPositionSupported': boolean;
-    readonly 'Extension': PTZStatusFilterOptionsExtension;
+    readonly 'PanTiltPositionSupported'?: boolean;
+    readonly 'ZoomPositionSupported'?: boolean;
+    readonly 'Extension'?: PTZStatusFilterOptionsExtension;
 }
 
 /**
@@ -836,10 +836,10 @@ export interface PTZStatusFilterOptionsExtension {
  */
 export interface VideoOutput {
     readonly 'Layout': Layout;
-    readonly 'Resolution': VideoResolution;
-    readonly 'RefreshRate': number;
-    readonly 'AspectRatio': number;
-    readonly 'Extension': VideoOutputExtension;
+    readonly 'Resolution'?: VideoResolution;
+    readonly 'RefreshRate'?: number;
+    readonly 'AspectRatio'?: number;
+    readonly 'Extension'?: VideoOutputExtension;
 }
 
 /**
@@ -865,10 +865,10 @@ export interface VideoOutputConfigurationOptions {
  * If the device is able to decode Jpeg streams this element describes the supported codecs and configurations
  */
 export interface VideoDecoderConfigurationOptions {
-    readonly 'JpegDecOptions': JpegDecOptions;
-    readonly 'H264DecOptions': H264DecOptions;
-    readonly 'Mpeg4DecOptions': Mpeg4DecOptions;
-    readonly 'Extension': VideoDecoderConfigurationOptionsExtension;
+    readonly 'JpegDecOptions'?: JpegDecOptions;
+    readonly 'H264DecOptions'?: H264DecOptions;
+    readonly 'Mpeg4DecOptions'?: Mpeg4DecOptions;
+    readonly 'Extension'?: VideoDecoderConfigurationOptionsExtension;
 }
 
 /**
@@ -917,7 +917,7 @@ export interface AudioOutput {
  */
 export interface AudioOutputConfiguration {
     readonly 'OutputToken': ReferenceToken;
-    readonly 'SendPrimacy': string;
+    readonly 'SendPrimacy'?: string;
     readonly 'OutputLevel': number;
 }
 
@@ -926,7 +926,7 @@ export interface AudioOutputConfiguration {
  */
 export interface AudioOutputConfigurationOptions {
     readonly 'OutputTokensAvailable': ReferenceToken;
-    readonly 'SendPrimacyOptions': string;
+    readonly 'SendPrimacyOptions'?: string;
     readonly 'OutputLevelRange': IntRange;
 }
 
@@ -941,10 +941,10 @@ export interface AudioDecoderConfiguration {
  * If the device is able to decode AAC encoded audio this section describes the supported configurations
  */
 export interface AudioDecoderConfigurationOptions {
-    readonly 'AACDecOptions': AACDecOptions;
-    readonly 'G711DecOptions': G711DecOptions;
-    readonly 'G726DecOptions': G726DecOptions;
-    readonly 'Extension': AudioDecoderConfigurationOptionsExtension;
+    readonly 'AACDecOptions'?: AACDecOptions;
+    readonly 'G711DecOptions'?: G711DecOptions;
+    readonly 'G726DecOptions'?: G726DecOptions;
+    readonly 'Extension'?: AudioDecoderConfigurationOptionsExtension;
 }
 
 /**
@@ -1000,7 +1000,7 @@ export interface StreamSetup {
  */
 export interface Transport {
     readonly 'Protocol': TransportProtocol;
-    readonly 'Tunnel': Transport;
+    readonly 'Tunnel'?: Transport;
 }
 
 /**
@@ -1026,11 +1026,11 @@ export interface Scope {
  */
 export interface NetworkInterface {
     readonly 'Enabled': boolean;
-    readonly 'Info': NetworkInterfaceInfo;
-    readonly 'Link': NetworkInterfaceLink;
-    readonly 'IPv4': IPv4NetworkInterface;
-    readonly 'IPv6': IPv6NetworkInterface;
-    readonly 'Extension': NetworkInterfaceExtension;
+    readonly 'Info'?: NetworkInterfaceInfo;
+    readonly 'Link'?: NetworkInterfaceLink;
+    readonly 'IPv4'?: IPv4NetworkInterface;
+    readonly 'IPv6'?: IPv6NetworkInterface;
+    readonly 'Extension'?: NetworkInterfaceExtension;
 }
 
 /**
@@ -1038,9 +1038,9 @@ export interface NetworkInterface {
  */
 export interface NetworkInterfaceExtension {
     readonly 'InterfaceType': any;
-    readonly 'Dot3': Dot3Configuration;
-    readonly 'Dot11': Dot11Configuration;
-    readonly 'Extension': NetworkInterfaceExtension2;
+    readonly 'Dot3'?: Dot3Configuration;
+    readonly 'Dot11'?: Dot11Configuration;
+    readonly 'Extension'?: NetworkInterfaceExtension2;
 }
 
 /**
@@ -1077,9 +1077,9 @@ export interface NetworkInterfaceConnectionSetting {
  * Network interface name, for example eth0.
  */
 export interface NetworkInterfaceInfo {
-    readonly 'Name': string;
+    readonly 'Name'?: string;
     readonly 'HwAddress': HwAddress;
-    readonly 'MTU': number;
+    readonly 'MTU'?: number;
 }
 
 /**
@@ -1087,7 +1087,7 @@ export interface NetworkInterfaceInfo {
  */
 export interface IPv6NetworkInterface {
     readonly 'Enabled': boolean;
-    readonly 'Config': IPv6Configuration;
+    readonly 'Config'?: IPv6Configuration;
 }
 
 /**
@@ -1102,9 +1102,9 @@ export interface IPv4NetworkInterface {
  * List of manually added IPv4 addresses.
  */
 export interface IPv4Configuration {
-    readonly 'Manual': PrefixedIPv4Address;
-    readonly 'LinkLocal': PrefixedIPv4Address;
-    readonly 'FromDHCP': PrefixedIPv4Address;
+    readonly 'Manual'?: PrefixedIPv4Address;
+    readonly 'LinkLocal'?: PrefixedIPv4Address;
+    readonly 'FromDHCP'?: PrefixedIPv4Address;
     readonly 'DHCP': boolean;
 }
 
@@ -1112,13 +1112,13 @@ export interface IPv4Configuration {
  * Indicates whether router advertisment is used.
  */
 export interface IPv6Configuration {
-    readonly 'AcceptRouterAdvert': boolean;
+    readonly 'AcceptRouterAdvert'?: boolean;
     readonly 'DHCP': IPv6DHCPConfiguration;
-    readonly 'Manual': PrefixedIPv6Address;
-    readonly 'LinkLocal': PrefixedIPv6Address;
-    readonly 'FromDHCP': PrefixedIPv6Address;
-    readonly 'FromRA': PrefixedIPv6Address;
-    readonly 'Extension': IPv6ConfigurationExtension;
+    readonly 'Manual'?: PrefixedIPv6Address;
+    readonly 'LinkLocal'?: PrefixedIPv6Address;
+    readonly 'FromDHCP'?: PrefixedIPv6Address;
+    readonly 'FromRA'?: PrefixedIPv6Address;
+    readonly 'Extension'?: IPv6ConfigurationExtension;
 }
 
 /**
@@ -1134,7 +1134,7 @@ export interface NetworkProtocol {
     readonly 'Name': NetworkProtocolType;
     readonly 'Enabled': boolean;
     readonly 'Port': number;
-    readonly 'Extension': NetworkProtocolExtension;
+    readonly 'Extension'?: NetworkProtocolExtension;
 }
 
 /**
@@ -1148,10 +1148,10 @@ export interface NetworkProtocolExtension {
  */
 export interface NetworkHost {
     readonly 'Type': NetworkHostType;
-    readonly 'IPv4Address': IPv4Address;
-    readonly 'IPv6Address': IPv6Address;
-    readonly 'DNSname': DNSName;
-    readonly 'Extension': NetworkHostExtension;
+    readonly 'IPv4Address'?: IPv4Address;
+    readonly 'IPv6Address'?: IPv6Address;
+    readonly 'DNSname'?: DNSName;
+    readonly 'Extension'?: NetworkHostExtension;
 }
 
 /**
@@ -1165,8 +1165,8 @@ export interface NetworkHostExtension {
  */
 export interface IPAddress {
     readonly 'Type': IPType;
-    readonly 'IPv4Address': IPv4Address;
-    readonly 'IPv6Address': IPv6Address;
+    readonly 'IPv4Address'?: IPv4Address;
+    readonly 'IPv6Address'?: IPv6Address;
 }
 
 /**
@@ -1190,8 +1190,8 @@ export interface PrefixedIPv6Address {
  */
 export interface HostnameInformation {
     readonly 'FromDHCP': boolean;
-    readonly 'Name': string;
-    readonly 'Extension': HostnameInformationExtension;
+    readonly 'Name'?: string;
+    readonly 'Extension'?: HostnameInformationExtension;
 }
 
 /**
@@ -1205,10 +1205,10 @@ export interface HostnameInformationExtension {
  */
 export interface DNSInformation {
     readonly 'FromDHCP': boolean;
-    readonly 'SearchDomain': string;
-    readonly 'DNSFromDHCP': IPAddress;
-    readonly 'DNSManual': IPAddress;
-    readonly 'Extension': DNSInformationExtension;
+    readonly 'SearchDomain'?: string;
+    readonly 'DNSFromDHCP'?: IPAddress;
+    readonly 'DNSManual'?: IPAddress;
+    readonly 'Extension'?: DNSInformationExtension;
 }
 
 /**
@@ -1222,9 +1222,9 @@ export interface DNSInformationExtension {
  */
 export interface NTPInformation {
     readonly 'FromDHCP': boolean;
-    readonly 'NTPFromDHCP': NetworkHost;
-    readonly 'NTPManual': NetworkHost;
-    readonly 'Extension': NTPInformationExtension;
+    readonly 'NTPFromDHCP'?: NetworkHost;
+    readonly 'NTPManual'?: NetworkHost;
+    readonly 'Extension'?: NTPInformationExtension;
 }
 
 /**
@@ -1238,9 +1238,9 @@ export interface NTPInformationExtension {
  */
 export interface DynamicDNSInformation {
     readonly 'Type': DynamicDNSType;
-    readonly 'Name': DNSName;
-    readonly 'TTL': string;
-    readonly 'Extension': DynamicDNSInformationExtension;
+    readonly 'Name'?: DNSName;
+    readonly 'TTL'?: string;
+    readonly 'Extension'?: DynamicDNSInformationExtension;
 }
 
 /**
@@ -1253,48 +1253,48 @@ export interface DynamicDNSInformationExtension {
  * Indicates whether or not an interface is enabled.
  */
 export interface NetworkInterfaceSetConfiguration {
-    readonly 'Enabled': boolean;
-    readonly 'Link': NetworkInterfaceConnectionSetting;
-    readonly 'MTU': number;
-    readonly 'IPv4': IPv4NetworkInterfaceSetConfiguration;
-    readonly 'IPv6': IPv6NetworkInterfaceSetConfiguration;
-    readonly 'Extension': NetworkInterfaceSetConfigurationExtension;
+    readonly 'Enabled'?: boolean;
+    readonly 'Link'?: NetworkInterfaceConnectionSetting;
+    readonly 'MTU'?: number;
+    readonly 'IPv4'?: IPv4NetworkInterfaceSetConfiguration;
+    readonly 'IPv6'?: IPv6NetworkInterfaceSetConfiguration;
+    readonly 'Extension'?: NetworkInterfaceSetConfigurationExtension;
 }
 
 /**
  * 
  */
 export interface NetworkInterfaceSetConfigurationExtension {
-    readonly 'Dot3': Dot3Configuration;
-    readonly 'Dot11': Dot11Configuration;
-    readonly 'Extension': NetworkInterfaceSetConfigurationExtension2;
+    readonly 'Dot3'?: Dot3Configuration;
+    readonly 'Dot11'?: Dot11Configuration;
+    readonly 'Extension'?: NetworkInterfaceSetConfigurationExtension2;
 }
 
 /**
  * Indicates whether or not IPv6 is enabled.
  */
 export interface IPv6NetworkInterfaceSetConfiguration {
-    readonly 'Enabled': boolean;
-    readonly 'AcceptRouterAdvert': boolean;
-    readonly 'Manual': PrefixedIPv6Address;
-    readonly 'DHCP': IPv6DHCPConfiguration;
+    readonly 'Enabled'?: boolean;
+    readonly 'AcceptRouterAdvert'?: boolean;
+    readonly 'Manual'?: PrefixedIPv6Address;
+    readonly 'DHCP'?: IPv6DHCPConfiguration;
 }
 
 /**
  * Indicates whether or not IPv4 is enabled.
  */
 export interface IPv4NetworkInterfaceSetConfiguration {
-    readonly 'Enabled': boolean;
-    readonly 'Manual': PrefixedIPv4Address;
-    readonly 'DHCP': boolean;
+    readonly 'Enabled'?: boolean;
+    readonly 'Manual'?: PrefixedIPv4Address;
+    readonly 'DHCP'?: boolean;
 }
 
 /**
  * IPv4 address string.
  */
 export interface NetworkGateway {
-    readonly 'IPv4Address': IPv4Address;
-    readonly 'IPv6Address': IPv6Address;
+    readonly 'IPv4Address'?: IPv4Address;
+    readonly 'IPv6Address'?: IPv6Address;
 }
 
 /**
@@ -1303,16 +1303,16 @@ export interface NetworkGateway {
 export interface NetworkZeroConfiguration {
     readonly 'InterfaceToken': ReferenceToken;
     readonly 'Enabled': boolean;
-    readonly 'Addresses': IPv4Address;
-    readonly 'Extension': NetworkZeroConfigurationExtension;
+    readonly 'Addresses'?: IPv4Address;
+    readonly 'Extension'?: NetworkZeroConfigurationExtension;
 }
 
 /**
  * Optional array holding the configuration for the second and possibly further interfaces.
  */
 export interface NetworkZeroConfigurationExtension {
-    readonly 'Additional': NetworkZeroConfiguration;
-    readonly 'Extension': NetworkZeroConfigurationExtension2;
+    readonly 'Additional'?: NetworkZeroConfiguration;
+    readonly 'Extension'?: NetworkZeroConfigurationExtension2;
 }
 
 /**
@@ -1326,9 +1326,9 @@ export interface NetworkZeroConfigurationExtension2 {
  */
 export interface IPAddressFilter {
     readonly 'Type': IPAddressFilterType;
-    readonly 'IPv4Address': PrefixedIPv4Address;
-    readonly 'IPv6Address': PrefixedIPv6Address;
-    readonly 'Extension': IPAddressFilterExtension;
+    readonly 'IPv4Address'?: PrefixedIPv4Address;
+    readonly 'IPv6Address'?: PrefixedIPv6Address;
+    readonly 'Extension'?: IPAddressFilterExtension;
 }
 
 /**
@@ -1353,10 +1353,10 @@ export interface Dot11Configuration {
  */
 export interface Dot11SecurityConfiguration {
     readonly 'Mode': Dot11SecurityMode;
-    readonly 'Algorithm': Dot11Cipher;
-    readonly 'PSK': Dot11PSKSet;
-    readonly 'Dot1X': ReferenceToken;
-    readonly 'Extension': Dot11SecurityConfigurationExtension;
+    readonly 'Algorithm'?: Dot11Cipher;
+    readonly 'PSK'?: Dot11PSKSet;
+    readonly 'Dot1X'?: ReferenceToken;
+    readonly 'Extension'?: Dot11SecurityConfigurationExtension;
 }
 
 /**
@@ -1372,9 +1372,9 @@ export interface Dot11SecurityConfigurationExtension {
  * 				
  */
 export interface Dot11PSKSet {
-    readonly 'Key': Dot11PSK;
-    readonly 'Passphrase': Dot11PSKPassphrase;
-    readonly 'Extension': Dot11PSKSetExtension;
+    readonly 'Key'?: Dot11PSK;
+    readonly 'Passphrase'?: Dot11PSKPassphrase;
+    readonly 'Extension'?: Dot11PSKSetExtension;
 }
 
 /**
@@ -1405,10 +1405,10 @@ export interface Dot11Capabilities {
  */
 export interface Dot11Status {
     readonly 'SSID': Dot11SSIDType;
-    readonly 'BSSID': string;
-    readonly 'PairCipher': Dot11Cipher;
-    readonly 'GroupCipher': Dot11Cipher;
-    readonly 'SignalStrength': Dot11SignalStrength;
+    readonly 'BSSID'?: string;
+    readonly 'PairCipher'?: Dot11Cipher;
+    readonly 'GroupCipher'?: Dot11Cipher;
+    readonly 'SignalStrength'?: Dot11SignalStrength;
     readonly 'ActiveConfigAlias': ReferenceToken;
 }
 
@@ -1417,12 +1417,12 @@ export interface Dot11Status {
  */
 export interface Dot11AvailableNetworks {
     readonly 'SSID': Dot11SSIDType;
-    readonly 'BSSID': string;
-    readonly 'AuthAndMangementSuite': Dot11AuthAndMangementSuite;
-    readonly 'PairCipher': Dot11Cipher;
-    readonly 'GroupCipher': Dot11Cipher;
-    readonly 'SignalStrength': Dot11SignalStrength;
-    readonly 'Extension': Dot11AvailableNetworksExtension;
+    readonly 'BSSID'?: string;
+    readonly 'AuthAndMangementSuite'?: Dot11AuthAndMangementSuite;
+    readonly 'PairCipher'?: Dot11Cipher;
+    readonly 'GroupCipher'?: Dot11Cipher;
+    readonly 'SignalStrength'?: Dot11SignalStrength;
+    readonly 'Extension'?: Dot11AvailableNetworksExtension;
 }
 
 /**
@@ -1435,27 +1435,27 @@ export interface Dot11AvailableNetworksExtension {
  * Analytics capabilities
  */
 export interface Capabilities {
-    readonly 'Analytics': AnalyticsCapabilities;
-    readonly 'Device': DeviceCapabilities;
-    readonly 'Events': EventCapabilities;
-    readonly 'Imaging': ImagingCapabilities;
-    readonly 'Media': MediaCapabilities;
-    readonly 'PTZ': PTZCapabilities;
-    readonly 'Extension': CapabilitiesExtension;
+    readonly 'Analytics'?: AnalyticsCapabilities;
+    readonly 'Device'?: DeviceCapabilities;
+    readonly 'Events'?: EventCapabilities;
+    readonly 'Imaging'?: ImagingCapabilities;
+    readonly 'Media'?: MediaCapabilities;
+    readonly 'PTZ'?: PTZCapabilities;
+    readonly 'Extension'?: CapabilitiesExtension;
 }
 
 /**
  * 
  */
 export interface CapabilitiesExtension {
-    readonly 'DeviceIO': DeviceIOCapabilities;
-    readonly 'Display': DisplayCapabilities;
-    readonly 'Recording': RecordingCapabilities;
-    readonly 'Search': SearchCapabilities;
-    readonly 'Replay': ReplayCapabilities;
-    readonly 'Receiver': ReceiverCapabilities;
-    readonly 'AnalyticsDevice': AnalyticsDeviceCapabilities;
-    readonly 'Extensions': CapabilitiesExtension2;
+    readonly 'DeviceIO'?: DeviceIOCapabilities;
+    readonly 'Display'?: DisplayCapabilities;
+    readonly 'Recording'?: RecordingCapabilities;
+    readonly 'Search'?: SearchCapabilities;
+    readonly 'Replay'?: ReplayCapabilities;
+    readonly 'Receiver'?: ReceiverCapabilities;
+    readonly 'AnalyticsDevice'?: AnalyticsDeviceCapabilities;
+    readonly 'Extensions'?: CapabilitiesExtension2;
 }
 
 /**
@@ -1478,11 +1478,11 @@ export interface AnalyticsCapabilities {
  */
 export interface DeviceCapabilities {
     readonly 'XAddr': string;
-    readonly 'Network': NetworkCapabilities;
-    readonly 'System': SystemCapabilities;
-    readonly 'IO': IOCapabilities;
-    readonly 'Security': SecurityCapabilities;
-    readonly 'Extension': DeviceCapabilitiesExtension;
+    readonly 'Network'?: NetworkCapabilities;
+    readonly 'System'?: SystemCapabilities;
+    readonly 'IO'?: IOCapabilities;
+    readonly 'Security'?: SecurityCapabilities;
+    readonly 'Extension'?: DeviceCapabilitiesExtension;
 }
 
 /**
@@ -1505,17 +1505,17 @@ export interface EventCapabilities {
  * Number of input connectors.
  */
 export interface IOCapabilities {
-    readonly 'InputConnectors': number;
-    readonly 'RelayOutputs': number;
-    readonly 'Extension': IOCapabilitiesExtension;
+    readonly 'InputConnectors'?: number;
+    readonly 'RelayOutputs'?: number;
+    readonly 'Extension'?: IOCapabilitiesExtension;
 }
 
 /**
  * 
  */
 export interface IOCapabilitiesExtension {
-    readonly 'Auxiliary': boolean;
-    readonly 'AuxiliaryCommands': AuxiliaryData;
+    readonly 'Auxiliary'?: boolean;
+    readonly 'AuxiliaryCommands'?: AuxiliaryData;
     readonly 'Extension': IOCapabilitiesExtension2;
 }
 
@@ -1531,7 +1531,7 @@ export interface IOCapabilitiesExtension2 {
 export interface MediaCapabilities {
     readonly 'XAddr': string;
     readonly 'StreamingCapabilities': RealTimeStreamingCapabilities;
-    readonly 'Extension': MediaCapabilitiesExtension;
+    readonly 'Extension'?: MediaCapabilitiesExtension;
 }
 
 /**
@@ -1545,10 +1545,10 @@ export interface MediaCapabilitiesExtension {
  * Indicates whether or not RTP multicast is supported.
  */
 export interface RealTimeStreamingCapabilities {
-    readonly 'RTPMulticast': boolean;
-    readonly 'RTP_TCP': boolean;
-    readonly 'RTP_RTSP_TCP': boolean;
-    readonly 'Extension': RealTimeStreamingCapabilitiesExtension;
+    readonly 'RTPMulticast'?: boolean;
+    readonly 'RTP_TCP'?: boolean;
+    readonly 'RTP_RTSP_TCP'?: boolean;
+    readonly 'Extension'?: RealTimeStreamingCapabilitiesExtension;
 }
 
 /**
@@ -1568,19 +1568,19 @@ export interface ProfileCapabilities {
  * Indicates whether or not IP filtering is supported.
  */
 export interface NetworkCapabilities {
-    readonly 'IPFilter': boolean;
-    readonly 'ZeroConfiguration': boolean;
-    readonly 'IPVersion6': boolean;
-    readonly 'DynDNS': boolean;
-    readonly 'Extension': NetworkCapabilitiesExtension;
+    readonly 'IPFilter'?: boolean;
+    readonly 'ZeroConfiguration'?: boolean;
+    readonly 'IPVersion6'?: boolean;
+    readonly 'DynDNS'?: boolean;
+    readonly 'Extension'?: NetworkCapabilitiesExtension;
 }
 
 /**
  * 
  */
 export interface NetworkCapabilitiesExtension {
-    readonly 'Dot11Configuration': boolean;
-    readonly 'Extension': NetworkCapabilitiesExtension2;
+    readonly 'Dot11Configuration'?: boolean;
+    readonly 'Extension'?: NetworkCapabilitiesExtension2;
 }
 
 /**
@@ -1601,7 +1601,7 @@ export interface SecurityCapabilities {
     readonly 'SAMLToken': boolean;
     readonly 'KerberosToken': boolean;
     readonly 'RELToken': boolean;
-    readonly 'Extension': SecurityCapabilitiesExtension;
+    readonly 'Extension'?: SecurityCapabilitiesExtension;
 }
 
 /**
@@ -1609,7 +1609,7 @@ export interface SecurityCapabilities {
  */
 export interface SecurityCapabilitiesExtension {
     readonly 'TLS1.0': boolean;
-    readonly 'Extension': SecurityCapabilitiesExtension2;
+    readonly 'Extension'?: SecurityCapabilitiesExtension2;
 }
 
 /**
@@ -1617,7 +1617,7 @@ export interface SecurityCapabilitiesExtension {
  */
 export interface SecurityCapabilitiesExtension2 {
     readonly 'Dot1X': boolean;
-    readonly 'SupportedEAPMethod': number;
+    readonly 'SupportedEAPMethod'?: number;
     readonly 'RemoteUserHandling': boolean;
 }
 
@@ -1632,18 +1632,18 @@ export interface SystemCapabilities {
     readonly 'SystemLogging': boolean;
     readonly 'FirmwareUpgrade': boolean;
     readonly 'SupportedVersions': OnvifVersion;
-    readonly 'Extension': SystemCapabilitiesExtension;
+    readonly 'Extension'?: SystemCapabilitiesExtension;
 }
 
 /**
  * 
  */
 export interface SystemCapabilitiesExtension {
-    readonly 'HttpFirmwareUpgrade': boolean;
-    readonly 'HttpSystemBackup': boolean;
-    readonly 'HttpSystemLogging': boolean;
-    readonly 'HttpSupportInformation': boolean;
-    readonly 'Extension': SystemCapabilitiesExtension2;
+    readonly 'HttpFirmwareUpgrade'?: boolean;
+    readonly 'HttpSystemBackup'?: boolean;
+    readonly 'HttpSystemLogging'?: boolean;
+    readonly 'HttpSupportInformation'?: boolean;
+    readonly 'Extension'?: SystemCapabilitiesExtension2;
 }
 
 /**
@@ -1738,8 +1738,8 @@ export interface ReceiverCapabilities {
  */
 export interface AnalyticsDeviceCapabilities {
     readonly 'XAddr': string;
-    readonly 'RuleSupport': boolean;
-    readonly 'Extension': AnalyticsDeviceExtension;
+    readonly 'RuleSupport'?: boolean;
+    readonly 'Extension'?: AnalyticsDeviceExtension;
 }
 
 /**
@@ -1752,16 +1752,16 @@ export interface AnalyticsDeviceExtension {
  * The log information as attachment data.
  */
 export interface SystemLog {
-    readonly 'Binary': AttachmentData;
-    readonly 'String': string;
+    readonly 'Binary'?: AttachmentData;
+    readonly 'String'?: string;
 }
 
 /**
  * The support information as attachment data.
  */
 export interface SupportInformation {
-    readonly 'Binary': AttachmentData;
-    readonly 'String': string;
+    readonly 'Binary'?: AttachmentData;
+    readonly 'String'?: string;
 }
 
 /**
@@ -1789,7 +1789,7 @@ export interface BackupFile {
  * 
  */
 export interface SystemLogUriList {
-    readonly 'SystemLog': SystemLogUri;
+    readonly 'SystemLog'?: SystemLogUri;
 }
 
 /**
@@ -1806,10 +1806,10 @@ export interface SystemLogUri {
 export interface SystemDateTime {
     readonly 'DateTimeType': SetDateTimeType;
     readonly 'DaylightSavings': boolean;
-    readonly 'TimeZone': TimeZone;
-    readonly 'UTCDateTime': DateTime;
-    readonly 'LocalDateTime': DateTime;
-    readonly 'Extension': SystemDateTimeExtension;
+    readonly 'TimeZone'?: TimeZone;
+    readonly 'UTCDateTime'?: DateTime;
+    readonly 'LocalDateTime'?: DateTime;
+    readonly 'Extension'?: SystemDateTimeExtension;
 }
 
 /**
@@ -1867,7 +1867,7 @@ export interface TimeZone {
  */
 export interface RemoteUser {
     readonly 'Username': string;
-    readonly 'Password': string;
+    readonly 'Password'?: string;
     readonly 'UseDerivedPassword': boolean;
 }
 
@@ -1876,9 +1876,9 @@ export interface RemoteUser {
  */
 export interface User {
     readonly 'Username': string;
-    readonly 'Password': string;
+    readonly 'Password'?: string;
     readonly 'UserLevel': UserLevel;
-    readonly 'Extension': UserExtension;
+    readonly 'Extension'?: UserExtension;
 }
 
 /**
@@ -1891,11 +1891,11 @@ export interface UserExtension {
  * 
  */
 export interface CertificateGenerationParameters {
-    readonly 'CertificateID': string;
-    readonly 'Subject': string;
-    readonly 'ValidNotBefore': string;
-    readonly 'ValidNotAfter': string;
-    readonly 'Extension': CertificateGenerationParametersExtension;
+    readonly 'CertificateID'?: string;
+    readonly 'Subject'?: string;
+    readonly 'ValidNotBefore'?: string;
+    readonly 'ValidNotAfter'?: string;
+    readonly 'Extension'?: CertificateGenerationParametersExtension;
 }
 
 /**
@@ -1924,7 +1924,7 @@ export interface CertificateStatus {
  * 
  */
 export interface CertificateWithPrivateKey {
-    readonly 'CertificateID': string;
+    readonly 'CertificateID'?: string;
     readonly 'Certificate': BinaryData;
     readonly 'PrivateKey': BinaryData;
 }
@@ -1934,16 +1934,16 @@ export interface CertificateWithPrivateKey {
  */
 export interface CertificateInformation {
     readonly 'CertificateID': string;
-    readonly 'IssuerDN': string;
-    readonly 'SubjectDN': string;
-    readonly 'KeyUsage': CertificateUsage;
-    readonly 'ExtendedKeyUsage': CertificateUsage;
-    readonly 'KeyLength': number;
-    readonly 'Version': string;
-    readonly 'SerialNum': string;
-    readonly 'SignatureAlgorithm': string;
-    readonly 'Validity': DateTimeRange;
-    readonly 'Extension': CertificateInformationExtension;
+    readonly 'IssuerDN'?: string;
+    readonly 'SubjectDN'?: string;
+    readonly 'KeyUsage'?: CertificateUsage;
+    readonly 'ExtendedKeyUsage'?: CertificateUsage;
+    readonly 'KeyLength'?: number;
+    readonly 'Version'?: string;
+    readonly 'SerialNum'?: string;
+    readonly 'SignatureAlgorithm'?: string;
+    readonly 'Validity'?: DateTimeRange;
+    readonly 'Extension'?: CertificateInformationExtension;
 }
 
 /**
@@ -1966,11 +1966,11 @@ export interface CertificateInformationExtension {
 export interface Dot1XConfiguration {
     readonly 'Dot1XConfigurationToken': ReferenceToken;
     readonly 'Identity': string;
-    readonly 'AnonymousID': string;
+    readonly 'AnonymousID'?: string;
     readonly 'EAPMethod': number;
-    readonly 'CACertificateID': string;
-    readonly 'EAPMethodConfiguration': EAPMethodConfiguration;
-    readonly 'Extension': Dot1XConfigurationExtension;
+    readonly 'CACertificateID'?: string;
+    readonly 'EAPMethodConfiguration'?: EAPMethodConfiguration;
+    readonly 'Extension'?: Dot1XConfigurationExtension;
 }
 
 /**
@@ -1983,9 +1983,9 @@ export interface Dot1XConfigurationExtension {
  * Confgiuration information for TLS Method.
  */
 export interface EAPMethodConfiguration {
-    readonly 'TLSConfiguration': TLSConfiguration;
-    readonly 'Password': string;
-    readonly 'Extension': EapMethodExtension;
+    readonly 'TLSConfiguration'?: TLSConfiguration;
+    readonly 'Password'?: string;
+    readonly 'Extension'?: EapMethodExtension;
 }
 
 /**
@@ -2043,12 +2043,12 @@ export interface DigitalInput {
  *               
  */
 export interface PTZNode {
-    readonly 'Name': Name;
+    readonly 'Name'?: Name;
     readonly 'SupportedPTZSpaces': PTZSpaces;
     readonly 'MaximumNumberOfPresets': number;
     readonly 'HomeSupported': boolean;
-    readonly 'AuxiliaryCommands': AuxiliaryData;
-    readonly 'Extension': PTZNodeExtension;
+    readonly 'AuxiliaryCommands'?: AuxiliaryData;
+    readonly 'Extension'?: PTZNodeExtension;
 }
 
 /**
@@ -2057,8 +2057,8 @@ export interface PTZNode {
  *           
  */
 export interface PTZNodeExtension {
-    readonly 'SupportedPresetTour': PTZPresetTourSupported;
-    readonly 'Extension': PTZNodeExtension2;
+    readonly 'SupportedPresetTour'?: PTZPresetTourSupported;
+    readonly 'Extension'?: PTZNodeExtension2;
 }
 
 /**
@@ -2072,8 +2072,8 @@ export interface PTZNodeExtension2 {
  */
 export interface PTZPresetTourSupported {
     readonly 'MaximumNumberOfPresetTours': number;
-    readonly 'PTZPresetTourOperation': PTZPresetTourOperation;
-    readonly 'Extension': PTZPresetTourSupportedExtension;
+    readonly 'PTZPresetTourOperation'?: PTZPresetTourOperation;
+    readonly 'Extension'?: PTZPresetTourSupportedExtension;
 }
 
 /**
@@ -2089,25 +2089,25 @@ export interface PTZPresetTourSupportedExtension {
  */
 export interface PTZConfiguration {
     readonly 'NodeToken': ReferenceToken;
-    readonly 'DefaultAbsolutePantTiltPositionSpace': string;
-    readonly 'DefaultAbsoluteZoomPositionSpace': string;
-    readonly 'DefaultRelativePanTiltTranslationSpace': string;
-    readonly 'DefaultRelativeZoomTranslationSpace': string;
-    readonly 'DefaultContinuousPanTiltVelocitySpace': string;
-    readonly 'DefaultContinuousZoomVelocitySpace': string;
-    readonly 'DefaultPTZSpeed': PTZSpeed;
-    readonly 'DefaultPTZTimeout': string;
-    readonly 'PanTiltLimits': PanTiltLimits;
-    readonly 'ZoomLimits': ZoomLimits;
-    readonly 'Extension': PTZConfigurationExtension;
+    readonly 'DefaultAbsolutePantTiltPositionSpace'?: string;
+    readonly 'DefaultAbsoluteZoomPositionSpace'?: string;
+    readonly 'DefaultRelativePanTiltTranslationSpace'?: string;
+    readonly 'DefaultRelativeZoomTranslationSpace'?: string;
+    readonly 'DefaultContinuousPanTiltVelocitySpace'?: string;
+    readonly 'DefaultContinuousZoomVelocitySpace'?: string;
+    readonly 'DefaultPTZSpeed'?: PTZSpeed;
+    readonly 'DefaultPTZTimeout'?: string;
+    readonly 'PanTiltLimits'?: PanTiltLimits;
+    readonly 'ZoomLimits'?: ZoomLimits;
+    readonly 'Extension'?: PTZConfigurationExtension;
 }
 
 /**
  * Optional element to configure PT Control Direction related features.
  */
 export interface PTZConfigurationExtension {
-    readonly 'PTControlDirection': PTControlDirection;
-    readonly 'Extension': PTZConfigurationExtension2;
+    readonly 'PTControlDirection'?: PTControlDirection;
+    readonly 'Extension'?: PTZConfigurationExtension2;
 }
 
 /**
@@ -2120,9 +2120,9 @@ export interface PTZConfigurationExtension2 {
  * Optional element to configure related parameters for E-Flip.
  */
 export interface PTControlDirection {
-    readonly 'EFlip': EFlip;
-    readonly 'Reverse': Reverse;
-    readonly 'Extension': PTControlDirectionExtension;
+    readonly 'EFlip'?: EFlip;
+    readonly 'Reverse'?: Reverse;
+    readonly 'Extension'?: PTControlDirectionExtension;
 }
 
 /**
@@ -2153,8 +2153,8 @@ export interface Reverse {
 export interface PTZConfigurationOptions {
     readonly 'Spaces': PTZSpaces;
     readonly 'PTZTimeout': DurationRange;
-    readonly 'PTControlDirection': PTControlDirectionOptions;
-    readonly 'Extension': PTZConfigurationOptions2;
+    readonly 'PTControlDirection'?: PTControlDirectionOptions;
+    readonly 'Extension'?: PTZConfigurationOptions2;
 }
 
 /**
@@ -2167,9 +2167,9 @@ export interface PTZConfigurationOptions2 {
  * Supported options for EFlip feature.
  */
 export interface PTControlDirectionOptions {
-    readonly 'EFlip': EFlipOptions;
-    readonly 'Reverse': ReverseOptions;
-    readonly 'Extension': PTControlDirectionOptionsExtension;
+    readonly 'EFlip'?: EFlipOptions;
+    readonly 'Reverse'?: ReverseOptions;
+    readonly 'Extension'?: PTControlDirectionOptionsExtension;
 }
 
 /**
@@ -2182,8 +2182,8 @@ export interface PTControlDirectionOptionsExtension {
  * Options of EFlip mode parameter.
  */
 export interface EFlipOptions {
-    readonly 'Mode': EFlipMode;
-    readonly 'Extension': EFlipOptionsExtension;
+    readonly 'Mode'?: EFlipMode;
+    readonly 'Extension'?: EFlipOptionsExtension;
 }
 
 /**
@@ -2196,8 +2196,8 @@ export interface EFlipOptionsExtension {
  * Options of Reverse mode parameter.
  */
 export interface ReverseOptions {
-    readonly 'Mode': ReverseMode;
-    readonly 'Extension': ReverseOptionsExtension;
+    readonly 'Mode'?: ReverseMode;
+    readonly 'Extension'?: ReverseOptionsExtension;
 }
 
 /**
@@ -2231,15 +2231,15 @@ export interface ZoomLimits {
  *           
  */
 export interface PTZSpaces {
-    readonly 'AbsolutePanTiltPositionSpace': Space2DDescription;
-    readonly 'AbsoluteZoomPositionSpace': Space1DDescription;
-    readonly 'RelativePanTiltTranslationSpace': Space2DDescription;
-    readonly 'RelativeZoomTranslationSpace': Space1DDescription;
-    readonly 'ContinuousPanTiltVelocitySpace': Space2DDescription;
-    readonly 'ContinuousZoomVelocitySpace': Space1DDescription;
-    readonly 'PanTiltSpeedSpace': Space1DDescription;
-    readonly 'ZoomSpeedSpace': Space1DDescription;
-    readonly 'Extension': PTZSpacesExtension;
+    readonly 'AbsolutePanTiltPositionSpace'?: Space2DDescription;
+    readonly 'AbsoluteZoomPositionSpace'?: Space1DDescription;
+    readonly 'RelativePanTiltTranslationSpace'?: Space2DDescription;
+    readonly 'RelativeZoomTranslationSpace'?: Space1DDescription;
+    readonly 'ContinuousPanTiltVelocitySpace'?: Space2DDescription;
+    readonly 'ContinuousZoomVelocitySpace'?: Space1DDescription;
+    readonly 'PanTiltSpeedSpace'?: Space1DDescription;
+    readonly 'ZoomSpeedSpace'?: Space1DDescription;
+    readonly 'Extension'?: PTZSpacesExtension;
 }
 
 /**
@@ -2273,8 +2273,8 @@ export interface Space1DDescription {
  * Pan and tilt speed. The x component corresponds to pan and the y component to tilt. If omitted in a request, the current (if any) PanTilt movement should not be affected. 
  */
 export interface PTZSpeed {
-    readonly 'PanTilt': Vector2D;
-    readonly 'Zoom': Vector1D;
+    readonly 'PanTilt'?: Vector2D;
+    readonly 'Zoom'?: Vector1D;
 }
 
 /**
@@ -2283,20 +2283,20 @@ export interface PTZSpeed {
  *           
  */
 export interface PTZPreset {
-    readonly 'Name': Name;
-    readonly 'PTZPosition': PTZVector;
+    readonly 'Name'?: Name;
+    readonly 'PTZPosition'?: PTZVector;
 }
 
 /**
  * Readable name of the preset tour.
  */
 export interface PresetTour {
-    readonly 'Name': Name;
+    readonly 'Name'?: Name;
     readonly 'Status': PTZPresetTourStatus;
     readonly 'AutoStart': boolean;
     readonly 'StartingCondition': PTZPresetTourStartingCondition;
-    readonly 'TourSpot': PTZPresetTourSpot;
-    readonly 'Extension': PTZPresetTourExtension;
+    readonly 'TourSpot'?: PTZPresetTourSpot;
+    readonly 'Extension'?: PTZPresetTourExtension;
 }
 
 /**
@@ -2310,9 +2310,9 @@ export interface PTZPresetTourExtension {
  */
 export interface PTZPresetTourSpot {
     readonly 'PresetDetail': PTZPresetTourPresetDetail;
-    readonly 'Speed': PTZSpeed;
-    readonly 'StayTime': string;
-    readonly 'Extension': PTZPresetTourSpotExtension;
+    readonly 'Speed'?: PTZSpeed;
+    readonly 'StayTime'?: string;
+    readonly 'Extension'?: PTZPresetTourSpotExtension;
 }
 
 /**
@@ -2342,8 +2342,8 @@ export interface PTZPresetTourTypeExtension {
  */
 export interface PTZPresetTourStatus {
     readonly 'State': PTZPresetTourState;
-    readonly 'CurrentTourSpot': PTZPresetTourSpot;
-    readonly 'Extension': PTZPresetTourStatusExtension;
+    readonly 'CurrentTourSpot'?: PTZPresetTourSpot;
+    readonly 'Extension'?: PTZPresetTourStatusExtension;
 }
 
 /**
@@ -2356,10 +2356,10 @@ export interface PTZPresetTourStatusExtension {
  * Optional parameter to specify how many times the preset tour is recurred.
  */
 export interface PTZPresetTourStartingCondition {
-    readonly 'RecurringTime': number;
-    readonly 'RecurringDuration': string;
-    readonly 'Direction': PTZPresetTourDirection;
-    readonly 'Extension': PTZPresetTourStartingConditionExtension;
+    readonly 'RecurringTime'?: number;
+    readonly 'RecurringDuration'?: string;
+    readonly 'Direction'?: PTZPresetTourDirection;
+    readonly 'Extension'?: PTZPresetTourStartingConditionExtension;
 }
 
 /**
@@ -2389,11 +2389,11 @@ export interface PTZPresetTourSpotOptions {
  * A list of available Preset Tokens for tour spots.
  */
 export interface PTZPresetTourPresetDetailOptions {
-    readonly 'PresetToken': ReferenceToken;
-    readonly 'Home': boolean;
-    readonly 'PanTiltPositionSpace': Space2DDescription;
-    readonly 'ZoomPositionSpace': Space1DDescription;
-    readonly 'Extension': PTZPresetTourPresetDetailOptionsExtension;
+    readonly 'PresetToken'?: ReferenceToken;
+    readonly 'Home'?: boolean;
+    readonly 'PanTiltPositionSpace'?: Space2DDescription;
+    readonly 'ZoomPositionSpace'?: Space1DDescription;
+    readonly 'Extension'?: PTZPresetTourPresetDetailOptionsExtension;
 }
 
 /**
@@ -2406,10 +2406,10 @@ export interface PTZPresetTourPresetDetailOptionsExtension {
  * Supported range of Recurring Time.
  */
 export interface PTZPresetTourStartingConditionOptions {
-    readonly 'RecurringTime': IntRange;
-    readonly 'RecurringDuration': DurationRange;
-    readonly 'Direction': PTZPresetTourDirection;
-    readonly 'Extension': PTZPresetTourStartingConditionOptionsExtension;
+    readonly 'RecurringTime'?: IntRange;
+    readonly 'RecurringDuration'?: DurationRange;
+    readonly 'Direction'?: PTZPresetTourDirection;
+    readonly 'Extension'?: PTZPresetTourStartingConditionOptionsExtension;
 }
 
 /**
@@ -2450,17 +2450,17 @@ export interface FocusConfiguration {
  * Enabled/disabled BLC mode (on/off).
  */
 export interface ImagingSettings {
-    readonly 'BacklightCompensation': BacklightCompensation;
-    readonly 'Brightness': number;
-    readonly 'ColorSaturation': number;
-    readonly 'Contrast': number;
-    readonly 'Exposure': Exposure;
-    readonly 'Focus': FocusConfiguration;
-    readonly 'IrCutFilter': IrCutFilterMode;
-    readonly 'Sharpness': number;
-    readonly 'WideDynamicRange': WideDynamicRange;
-    readonly 'WhiteBalance': WhiteBalance;
-    readonly 'Extension': ImagingSettingsExtension;
+    readonly 'BacklightCompensation'?: BacklightCompensation;
+    readonly 'Brightness'?: number;
+    readonly 'ColorSaturation'?: number;
+    readonly 'Contrast'?: number;
+    readonly 'Exposure'?: Exposure;
+    readonly 'Focus'?: FocusConfiguration;
+    readonly 'IrCutFilter'?: IrCutFilterMode;
+    readonly 'Sharpness'?: number;
+    readonly 'WideDynamicRange'?: WideDynamicRange;
+    readonly 'WhiteBalance'?: WhiteBalance;
+    readonly 'Extension'?: ImagingSettingsExtension;
 }
 
 /**
@@ -2547,7 +2547,7 @@ export interface BacklightCompensationOptions {
  * 
  */
 export interface FocusOptions {
-    readonly 'AutoFocusModes': AutoFocusMode;
+    readonly 'AutoFocusModes'?: AutoFocusMode;
     readonly 'DefaultSpeed': FloatRange;
     readonly 'NearLimit': FloatRange;
     readonly 'FarLimit': FloatRange;
@@ -2585,9 +2585,9 @@ export interface WhiteBalanceOptions {
  * 				
  */
 export interface FocusMove {
-    readonly 'Absolute': AbsoluteFocus;
-    readonly 'Relative': RelativeFocus;
-    readonly 'Continuous': ContinuousFocus;
+    readonly 'Absolute'?: AbsoluteFocus;
+    readonly 'Relative'?: RelativeFocus;
+    readonly 'Continuous'?: ContinuousFocus;
 }
 
 /**
@@ -2597,7 +2597,7 @@ export interface FocusMove {
  */
 export interface AbsoluteFocus {
     readonly 'Position': number;
-    readonly 'Speed': number;
+    readonly 'Speed'?: number;
 }
 
 /**
@@ -2607,7 +2607,7 @@ export interface AbsoluteFocus {
  */
 export interface RelativeFocus {
     readonly 'Distance': number;
-    readonly 'Speed': number;
+    readonly 'Speed'?: number;
 }
 
 /**
@@ -2623,9 +2623,9 @@ export interface ContinuousFocus {
  * 
  */
 export interface MoveOptions {
-    readonly 'Absolute': AbsoluteFocusOptions;
-    readonly 'Relative': RelativeFocusOptions;
-    readonly 'Continuous': ContinuousFocusOptions;
+    readonly 'Absolute'?: AbsoluteFocusOptions;
+    readonly 'Relative'?: RelativeFocusOptions;
+    readonly 'Continuous'?: ContinuousFocusOptions;
 }
 
 /**
@@ -2635,7 +2635,7 @@ export interface MoveOptions {
  */
 export interface AbsoluteFocusOptions {
     readonly 'Position': FloatRange;
-    readonly 'Speed': FloatRange;
+    readonly 'Speed'?: FloatRange;
 }
 
 /**
@@ -2672,8 +2672,8 @@ export interface WhiteBalance {
  * 				
  */
 export interface ImagingStatus20 {
-    readonly 'FocusStatus20': FocusStatus20;
-    readonly 'Extension': ImagingStatus20Extension;
+    readonly 'FocusStatus20'?: FocusStatus20;
+    readonly 'Extension'?: ImagingStatus20Extension;
 }
 
 /**
@@ -2690,8 +2690,8 @@ export interface ImagingStatus20Extension {
 export interface FocusStatus20 {
     readonly 'Position': number;
     readonly 'MoveStatus': MoveStatus;
-    readonly 'Error': string;
-    readonly 'Extension': FocusStatus20Extension;
+    readonly 'Error'?: string;
+    readonly 'Extension'?: FocusStatus20Extension;
 }
 
 /**
@@ -2704,43 +2704,43 @@ export interface FocusStatus20Extension {
  * Type describing the ImagingSettings of a VideoSource. The supported options and ranges can be obtained via the GetOptions command.
  */
 export interface ImagingSettings20 {
-    readonly 'BacklightCompensation': BacklightCompensation20;
-    readonly 'Brightness': number;
-    readonly 'ColorSaturation': number;
-    readonly 'Contrast': number;
-    readonly 'Exposure': Exposure20;
-    readonly 'Focus': FocusConfiguration20;
-    readonly 'IrCutFilter': IrCutFilterMode;
-    readonly 'Sharpness': number;
-    readonly 'WideDynamicRange': WideDynamicRange20;
-    readonly 'WhiteBalance': WhiteBalance20;
-    readonly 'Extension': ImagingSettingsExtension20;
+    readonly 'BacklightCompensation'?: BacklightCompensation20;
+    readonly 'Brightness'?: number;
+    readonly 'ColorSaturation'?: number;
+    readonly 'Contrast'?: number;
+    readonly 'Exposure'?: Exposure20;
+    readonly 'Focus'?: FocusConfiguration20;
+    readonly 'IrCutFilter'?: IrCutFilterMode;
+    readonly 'Sharpness'?: number;
+    readonly 'WideDynamicRange'?: WideDynamicRange20;
+    readonly 'WhiteBalance'?: WhiteBalance20;
+    readonly 'Extension'?: ImagingSettingsExtension20;
 }
 
 /**
  * Optional element to configure Image Stabilization feature.
  */
 export interface ImagingSettingsExtension20 {
-    readonly 'ImageStabilization': ImageStabilization;
-    readonly 'Extension': ImagingSettingsExtension202;
+    readonly 'ImageStabilization'?: ImageStabilization;
+    readonly 'Extension'?: ImagingSettingsExtension202;
 }
 
 /**
  * An optional parameter applied to only auto mode to adjust timing of toggling Ir cut filter.
  */
 export interface ImagingSettingsExtension202 {
-    readonly 'IrCutFilterAutoAdjustment': IrCutFilterAutoAdjustment;
-    readonly 'Extension': ImagingSettingsExtension203;
+    readonly 'IrCutFilterAutoAdjustment'?: IrCutFilterAutoAdjustment;
+    readonly 'Extension'?: ImagingSettingsExtension203;
 }
 
 /**
  * Optional element to configure Image Contrast Compensation.
  */
 export interface ImagingSettingsExtension203 {
-    readonly 'ToneCompensation': ToneCompensation;
-    readonly 'Defogging': Defogging;
-    readonly 'NoiseReduction': NoiseReduction;
-    readonly 'Extension': ImagingSettingsExtension204;
+    readonly 'ToneCompensation'?: ToneCompensation;
+    readonly 'Defogging'?: Defogging;
+    readonly 'NoiseReduction'?: NoiseReduction;
+    readonly 'Extension'?: ImagingSettingsExtension204;
 }
 
 /**
@@ -2754,8 +2754,8 @@ export interface ImagingSettingsExtension204 {
  */
 export interface ImageStabilization {
     readonly 'Mode': ImageStabilizationMode;
-    readonly 'Level': number;
-    readonly 'Extension': ImageStabilizationExtension;
+    readonly 'Level'?: number;
+    readonly 'Extension'?: ImageStabilizationExtension;
 }
 
 /**
@@ -2769,9 +2769,9 @@ export interface ImageStabilizationExtension {
  */
 export interface IrCutFilterAutoAdjustment {
     readonly 'BoundaryType': string;
-    readonly 'BoundaryOffset': number;
-    readonly 'ResponseTime': string;
-    readonly 'Extension': IrCutFilterAutoAdjustmentExtension;
+    readonly 'BoundaryOffset'?: number;
+    readonly 'ResponseTime'?: string;
+    readonly 'Extension'?: IrCutFilterAutoAdjustmentExtension;
 }
 
 /**
@@ -2785,7 +2785,7 @@ export interface IrCutFilterAutoAdjustmentExtension {
  */
 export interface WideDynamicRange20 {
     readonly 'Mode': WideDynamicMode;
-    readonly 'Level': number;
+    readonly 'Level'?: number;
 }
 
 /**
@@ -2793,7 +2793,7 @@ export interface WideDynamicRange20 {
  */
 export interface BacklightCompensation20 {
     readonly 'Mode': BacklightCompensationMode;
-    readonly 'Level': number;
+    readonly 'Level'?: number;
 }
 
 /**
@@ -2801,17 +2801,17 @@ export interface BacklightCompensation20 {
  */
 export interface Exposure20 {
     readonly 'Mode': ExposureMode;
-    readonly 'Priority': ExposurePriority;
-    readonly 'Window': Rectangle;
-    readonly 'MinExposureTime': number;
-    readonly 'MaxExposureTime': number;
-    readonly 'MinGain': number;
-    readonly 'MaxGain': number;
-    readonly 'MinIris': number;
-    readonly 'MaxIris': number;
-    readonly 'ExposureTime': number;
-    readonly 'Gain': number;
-    readonly 'Iris': number;
+    readonly 'Priority'?: ExposurePriority;
+    readonly 'Window'?: Rectangle;
+    readonly 'MinExposureTime'?: number;
+    readonly 'MaxExposureTime'?: number;
+    readonly 'MinGain'?: number;
+    readonly 'MaxGain'?: number;
+    readonly 'MinIris'?: number;
+    readonly 'MaxIris'?: number;
+    readonly 'ExposureTime'?: number;
+    readonly 'Gain'?: number;
+    readonly 'Iris'?: number;
 }
 
 /**
@@ -2819,8 +2819,8 @@ export interface Exposure20 {
  */
 export interface ToneCompensation {
     readonly 'Mode': string;
-    readonly 'Level': number;
-    readonly 'Extension': ToneCompensationExtension;
+    readonly 'Level'?: number;
+    readonly 'Extension'?: ToneCompensationExtension;
 }
 
 /**
@@ -2834,8 +2834,8 @@ export interface ToneCompensationExtension {
  */
 export interface Defogging {
     readonly 'Mode': string;
-    readonly 'Level': number;
-    readonly 'Extension': DefoggingExtension;
+    readonly 'Level'?: number;
+    readonly 'Extension'?: DefoggingExtension;
 }
 
 /**
@@ -2857,43 +2857,43 @@ export interface NoiseReduction {
  * 				
  */
 export interface ImagingOptions20 {
-    readonly 'BacklightCompensation': BacklightCompensationOptions20;
-    readonly 'Brightness': FloatRange;
-    readonly 'ColorSaturation': FloatRange;
-    readonly 'Contrast': FloatRange;
-    readonly 'Exposure': ExposureOptions20;
-    readonly 'Focus': FocusOptions20;
-    readonly 'IrCutFilterModes': IrCutFilterMode;
-    readonly 'Sharpness': FloatRange;
-    readonly 'WideDynamicRange': WideDynamicRangeOptions20;
-    readonly 'WhiteBalance': WhiteBalanceOptions20;
-    readonly 'Extension': ImagingOptions20Extension;
+    readonly 'BacklightCompensation'?: BacklightCompensationOptions20;
+    readonly 'Brightness'?: FloatRange;
+    readonly 'ColorSaturation'?: FloatRange;
+    readonly 'Contrast'?: FloatRange;
+    readonly 'Exposure'?: ExposureOptions20;
+    readonly 'Focus'?: FocusOptions20;
+    readonly 'IrCutFilterModes'?: IrCutFilterMode;
+    readonly 'Sharpness'?: FloatRange;
+    readonly 'WideDynamicRange'?: WideDynamicRangeOptions20;
+    readonly 'WhiteBalance'?: WhiteBalanceOptions20;
+    readonly 'Extension'?: ImagingOptions20Extension;
 }
 
 /**
  * Options of parameters for Image Stabilization feature.
  */
 export interface ImagingOptions20Extension {
-    readonly 'ImageStabilization': ImageStabilizationOptions;
-    readonly 'Extension': ImagingOptions20Extension2;
+    readonly 'ImageStabilization'?: ImageStabilizationOptions;
+    readonly 'Extension'?: ImagingOptions20Extension2;
 }
 
 /**
  * Options of parameters for adjustment of Ir cut filter auto mode.
  */
 export interface ImagingOptions20Extension2 {
-    readonly 'IrCutFilterAutoAdjustment': IrCutFilterAutoAdjustmentOptions;
-    readonly 'Extension': ImagingOptions20Extension3;
+    readonly 'IrCutFilterAutoAdjustment'?: IrCutFilterAutoAdjustmentOptions;
+    readonly 'Extension'?: ImagingOptions20Extension3;
 }
 
 /**
  * Options of parameters for Tone Compensation feature.
  */
 export interface ImagingOptions20Extension3 {
-    readonly 'ToneCompensationOptions': ToneCompensationOptions;
-    readonly 'DefoggingOptions': DefoggingOptions;
-    readonly 'NoiseReductionOptions': NoiseReductionOptions;
-    readonly 'Extension': ImagingOptions20Extension4;
+    readonly 'ToneCompensationOptions'?: ToneCompensationOptions;
+    readonly 'DefoggingOptions'?: DefoggingOptions;
+    readonly 'NoiseReductionOptions'?: NoiseReductionOptions;
+    readonly 'Extension'?: ImagingOptions20Extension4;
 }
 
 /**
@@ -2907,8 +2907,8 @@ export interface ImagingOptions20Extension4 {
  */
 export interface ImageStabilizationOptions {
     readonly 'Mode': ImageStabilizationMode;
-    readonly 'Level': FloatRange;
-    readonly 'Extension': ImageStabilizationOptionsExtension;
+    readonly 'Level'?: FloatRange;
+    readonly 'Extension'?: ImageStabilizationOptionsExtension;
 }
 
 /**
@@ -2922,9 +2922,9 @@ export interface ImageStabilizationOptionsExtension {
  */
 export interface IrCutFilterAutoAdjustmentOptions {
     readonly 'BoundaryType': string;
-    readonly 'BoundaryOffset': boolean;
-    readonly 'ResponseTimeRange': DurationRange;
-    readonly 'Extension': IrCutFilterAutoAdjustmentOptionsExtension;
+    readonly 'BoundaryOffset'?: boolean;
+    readonly 'ResponseTimeRange'?: DurationRange;
+    readonly 'Extension'?: IrCutFilterAutoAdjustmentOptionsExtension;
 }
 
 /**
@@ -2938,7 +2938,7 @@ export interface IrCutFilterAutoAdjustmentOptionsExtension {
  */
 export interface WideDynamicRangeOptions20 {
     readonly 'Mode': WideDynamicMode;
-    readonly 'Level': FloatRange;
+    readonly 'Level'?: FloatRange;
 }
 
 /**
@@ -2948,7 +2948,7 @@ export interface WideDynamicRangeOptions20 {
  */
 export interface BacklightCompensationOptions20 {
     readonly 'Mode': BacklightCompensationMode;
-    readonly 'Level': FloatRange;
+    readonly 'Level'?: FloatRange;
 }
 
 /**
@@ -2962,16 +2962,16 @@ export interface BacklightCompensationOptions20 {
  */
 export interface ExposureOptions20 {
     readonly 'Mode': ExposureMode;
-    readonly 'Priority': ExposurePriority;
-    readonly 'MinExposureTime': FloatRange;
-    readonly 'MaxExposureTime': FloatRange;
-    readonly 'MinGain': FloatRange;
-    readonly 'MaxGain': FloatRange;
-    readonly 'MinIris': FloatRange;
-    readonly 'MaxIris': FloatRange;
-    readonly 'ExposureTime': FloatRange;
-    readonly 'Gain': FloatRange;
-    readonly 'Iris': FloatRange;
+    readonly 'Priority'?: ExposurePriority;
+    readonly 'MinExposureTime'?: FloatRange;
+    readonly 'MaxExposureTime'?: FloatRange;
+    readonly 'MinGain'?: FloatRange;
+    readonly 'MaxGain'?: FloatRange;
+    readonly 'MinIris'?: FloatRange;
+    readonly 'MaxIris'?: FloatRange;
+    readonly 'ExposureTime'?: FloatRange;
+    readonly 'Gain'?: FloatRange;
+    readonly 'Iris'?: FloatRange;
 }
 
 /**
@@ -2980,9 +2980,9 @@ export interface ExposureOptions20 {
  * 				
  */
 export interface MoveOptions20 {
-    readonly 'Absolute': AbsoluteFocusOptions;
-    readonly 'Relative': RelativeFocusOptions20;
-    readonly 'Continuous': ContinuousFocusOptions;
+    readonly 'Absolute'?: AbsoluteFocusOptions;
+    readonly 'Relative'?: RelativeFocusOptions20;
+    readonly 'Continuous'?: ContinuousFocusOptions;
 }
 
 /**
@@ -2992,7 +2992,7 @@ export interface MoveOptions20 {
  */
 export interface RelativeFocusOptions20 {
     readonly 'Distance': FloatRange;
-    readonly 'Speed': FloatRange;
+    readonly 'Speed'?: FloatRange;
 }
 
 /**
@@ -3002,9 +3002,9 @@ export interface RelativeFocusOptions20 {
  */
 export interface WhiteBalance20 {
     readonly 'Mode': WhiteBalanceMode;
-    readonly 'CrGain': number;
-    readonly 'CbGain': number;
-    readonly 'Extension': WhiteBalance20Extension;
+    readonly 'CrGain'?: number;
+    readonly 'CbGain'?: number;
+    readonly 'Extension'?: WhiteBalance20Extension;
 }
 
 /**
@@ -3025,10 +3025,10 @@ export interface WhiteBalance20Extension {
  */
 export interface FocusConfiguration20 {
     readonly 'AutoFocusMode': AutoFocusMode;
-    readonly 'DefaultSpeed': number;
-    readonly 'NearLimit': number;
-    readonly 'FarLimit': number;
-    readonly 'Extension': FocusConfiguration20Extension;
+    readonly 'DefaultSpeed'?: number;
+    readonly 'NearLimit'?: number;
+    readonly 'FarLimit'?: number;
+    readonly 'Extension'?: FocusConfiguration20Extension;
 }
 
 /**
@@ -3048,9 +3048,9 @@ export interface FocusConfiguration20Extension {
  */
 export interface WhiteBalanceOptions20 {
     readonly 'Mode': WhiteBalanceMode;
-    readonly 'YrGain': FloatRange;
-    readonly 'YbGain': FloatRange;
-    readonly 'Extension': WhiteBalanceOptions20Extension;
+    readonly 'YrGain'?: FloatRange;
+    readonly 'YbGain'?: FloatRange;
+    readonly 'Extension'?: WhiteBalanceOptions20Extension;
 }
 
 /**
@@ -3069,11 +3069,11 @@ export interface WhiteBalanceOptions20Extension {
  * 					
  */
 export interface FocusOptions20 {
-    readonly 'AutoFocusModes': AutoFocusMode;
-    readonly 'DefaultSpeed': FloatRange;
-    readonly 'NearLimit': FloatRange;
-    readonly 'FarLimit': FloatRange;
-    readonly 'Extension': FocusOptions20Extension;
+    readonly 'AutoFocusModes'?: AutoFocusMode;
+    readonly 'DefaultSpeed'?: FloatRange;
+    readonly 'NearLimit'?: FloatRange;
+    readonly 'FarLimit'?: FloatRange;
+    readonly 'Extension'?: FocusOptions20Extension;
 }
 
 /**
@@ -3118,9 +3118,9 @@ export interface MessageExtension {
  * 		
  */
 export interface ItemList {
-    readonly 'SimpleItem': any;
-    readonly 'ElementItem': any;
-    readonly 'Extension': ItemListExtension;
+    readonly 'SimpleItem'?: any;
+    readonly 'ElementItem'?: any;
+    readonly 'Extension'?: ItemListExtension;
 }
 
 /**
@@ -3137,10 +3137,10 @@ export interface ItemListExtension {
  * 				
  */
 export interface MessageDescription {
-    readonly 'Source': ItemListDescription;
-    readonly 'Key': ItemListDescription;
-    readonly 'Data': ItemListDescription;
-    readonly 'Extension': MessageDescriptionExtension;
+    readonly 'Source'?: ItemListDescription;
+    readonly 'Key'?: ItemListDescription;
+    readonly 'Data'?: ItemListDescription;
+    readonly 'Extension'?: MessageDescriptionExtension;
 }
 
 /**
@@ -3157,9 +3157,9 @@ export interface MessageDescriptionExtension {
  * 		
  */
 export interface ItemListDescription {
-    readonly 'SimpleItemDescription': any;
-    readonly 'ElementItemDescription': any;
-    readonly 'Extension': ItemListDescriptionExtension;
+    readonly 'SimpleItemDescription'?: any;
+    readonly 'ElementItemDescription'?: any;
+    readonly 'Extension'?: ItemListDescriptionExtension;
 }
 
 /**
@@ -3179,8 +3179,8 @@ export interface Polyline {
  * 
  */
 export interface AnalyticsEngineConfiguration {
-    readonly 'AnalyticsModule': Config;
-    readonly 'Extension': AnalyticsEngineConfigurationExtension;
+    readonly 'AnalyticsModule'?: Config;
+    readonly 'Extension'?: AnalyticsEngineConfigurationExtension;
 }
 
 /**
@@ -3193,8 +3193,8 @@ export interface AnalyticsEngineConfigurationExtension {
  * 
  */
 export interface RuleEngineConfiguration {
-    readonly 'Rule': Config;
-    readonly 'Extension': RuleEngineConfigurationExtension;
+    readonly 'Rule'?: Config;
+    readonly 'Extension'?: RuleEngineConfigurationExtension;
 }
 
 /**
@@ -3219,9 +3219,9 @@ export interface Config {
  */
 export interface ConfigDescription {
     readonly 'Parameters': ItemListDescription;
-    readonly 'Messages': any;
+    readonly 'Messages'?: any;
     readonly 'ParentTopic': string;
-    readonly 'Extension': ConfigDescriptionExtension;
+    readonly 'Extension'?: ConfigDescriptionExtension;
 }
 
 /**
@@ -3234,9 +3234,9 @@ export interface ConfigDescriptionExtension {
  * Lists the location of all schemas that are referenced in the rules.
  */
 export interface SupportedRules {
-    readonly 'RuleContentSchemaLocation': string;
-    readonly 'RuleDescription': ConfigDescription;
-    readonly 'Extension': SupportedRulesExtension;
+    readonly 'RuleContentSchemaLocation'?: string;
+    readonly 'RuleDescription'?: ConfigDescription;
+    readonly 'Extension'?: SupportedRulesExtension;
 }
 
 /**
@@ -3252,9 +3252,9 @@ export interface SupportedRulesExtension {
  *         the ONVIF schema file MUST be explicitly listed.
  */
 export interface SupportedAnalyticsModules {
-    readonly 'AnalyticsModuleContentSchemaLocation': string;
-    readonly 'AnalyticsModuleDescription': ConfigDescription;
-    readonly 'Extension': SupportedAnalyticsModulesExtension;
+    readonly 'AnalyticsModuleContentSchemaLocation'?: string;
+    readonly 'AnalyticsModuleDescription'?: ConfigDescription;
+    readonly 'Extension'?: SupportedAnalyticsModulesExtension;
 }
 
 /**
@@ -3275,7 +3275,7 @@ export interface PolygonConfiguration {
  */
 export interface PolylineArray {
     readonly 'Segment': Polyline;
-    readonly 'Extension': PolylineArrayExtension;
+    readonly 'Extension'?: PolylineArrayExtension;
 }
 
 /**
@@ -3316,11 +3316,11 @@ export interface CellLayout {
  * Configuration of the streaming and coding settings of a Video window.
  */
 export interface PaneConfiguration {
-    readonly 'PaneName': string;
-    readonly 'AudioOutputToken': ReferenceToken;
-    readonly 'AudioSourceToken': ReferenceToken;
-    readonly 'AudioEncoderConfiguration': AudioEncoderConfiguration;
-    readonly 'ReceiverToken': ReferenceToken;
+    readonly 'PaneName'?: string;
+    readonly 'AudioOutputToken'?: ReferenceToken;
+    readonly 'AudioSourceToken'?: ReferenceToken;
+    readonly 'AudioEncoderConfiguration'?: AudioEncoderConfiguration;
+    readonly 'ReceiverToken'?: ReferenceToken;
     readonly 'Token': ReferenceToken;
 }
 
@@ -3337,7 +3337,7 @@ export interface PaneLayout {
  */
 export interface Layout {
     readonly 'PaneLayout': PaneLayout;
-    readonly 'Extension': LayoutExtension;
+    readonly 'Extension'?: LayoutExtension;
 }
 
 /**
@@ -3350,8 +3350,8 @@ export interface LayoutExtension {
  * This type contains the Audio and Video coding capabilities of a display service.
  */
 export interface CodingCapabilities {
-    readonly 'AudioEncodingCapabilities': AudioEncoderConfigurationOptions;
-    readonly 'AudioDecodingCapabilities': AudioDecoderConfigurationOptions;
+    readonly 'AudioEncodingCapabilities'?: AudioEncoderConfigurationOptions;
+    readonly 'AudioDecodingCapabilities'?: AudioDecoderConfigurationOptions;
     readonly 'VideoDecodingCapabilities': VideoDecoderConfigurationOptions;
 }
 
@@ -3360,7 +3360,7 @@ export interface CodingCapabilities {
  */
 export interface LayoutOptions {
     readonly 'PaneLayoutOptions': PaneLayoutOptions;
-    readonly 'Extension': LayoutOptionsExtension;
+    readonly 'Extension'?: LayoutOptionsExtension;
 }
 
 /**
@@ -3374,7 +3374,7 @@ export interface LayoutOptionsExtension {
  */
 export interface PaneLayoutOptions {
     readonly 'Area': Rectangle;
-    readonly 'Extension': PaneOptionExtension;
+    readonly 'Extension'?: PaneOptionExtension;
 }
 
 /**
@@ -3442,10 +3442,10 @@ export interface RecordingSummary {
  * A structure for defining a limited scope when searching in recorded data.
  */
 export interface SearchScope {
-    readonly 'IncludedSources': SourceReference;
-    readonly 'IncludedRecordings': RecordingReference;
-    readonly 'RecordingInformationFilter': XPathExpression;
-    readonly 'Extension': SearchScopeExtension;
+    readonly 'IncludedSources'?: SourceReference;
+    readonly 'IncludedRecordings'?: RecordingReference;
+    readonly 'RecordingInformationFilter'?: XPathExpression;
+    readonly 'Extension'?: SearchScopeExtension;
 }
 
 /**
@@ -3481,7 +3481,7 @@ export interface MetadataFilter {
  */
 export interface FindRecordingResultList {
     readonly 'SearchState': SearchState;
-    readonly 'RecordingInformation': RecordingInformation;
+    readonly 'RecordingInformation'?: RecordingInformation;
 }
 
 /**
@@ -3489,7 +3489,7 @@ export interface FindRecordingResultList {
  */
 export interface FindEventResultList {
     readonly 'SearchState': SearchState;
-    readonly 'Result': FindEventResult;
+    readonly 'Result'?: FindEventResult;
 }
 
 /**
@@ -3508,7 +3508,7 @@ export interface FindEventResult {
  */
 export interface FindPTZPositionResultList {
     readonly 'SearchState': SearchState;
-    readonly 'Result': FindPTZPositionResult;
+    readonly 'Result'?: FindPTZPositionResult;
 }
 
 /**
@@ -3526,7 +3526,7 @@ export interface FindPTZPositionResult {
  */
 export interface FindMetadataResultList {
     readonly 'SearchState': SearchState;
-    readonly 'Result': FindMetadataResult;
+    readonly 'Result'?: FindMetadataResult;
 }
 
 /**
@@ -3548,10 +3548,10 @@ export interface FindMetadataResult {
 export interface RecordingInformation {
     readonly 'RecordingToken': RecordingReference;
     readonly 'Source': RecordingSourceInformation;
-    readonly 'EarliestRecording': string;
-    readonly 'LatestRecording': string;
+    readonly 'EarliestRecording'?: string;
+    readonly 'LatestRecording'?: string;
     readonly 'Content': Description;
-    readonly 'Track': TrackInformation;
+    readonly 'Track'?: TrackInformation;
     readonly 'RecordingStatus': RecordingStatus;
 }
 
@@ -3585,7 +3585,7 @@ export interface TrackInformation {
  */
 export interface MediaAttributes {
     readonly 'RecordingToken': RecordingReference;
-    readonly 'TrackAttributes': TrackAttributes;
+    readonly 'TrackAttributes'?: TrackAttributes;
     readonly 'From': string;
     readonly 'Until': string;
 }
@@ -3595,10 +3595,10 @@ export interface MediaAttributes {
  */
 export interface TrackAttributes {
     readonly 'TrackInformation': TrackInformation;
-    readonly 'VideoAttributes': VideoAttributes;
-    readonly 'AudioAttributes': AudioAttributes;
-    readonly 'MetadataAttributes': MetadataAttributes;
-    readonly 'Extension': TrackAttributesExtension;
+    readonly 'VideoAttributes'?: VideoAttributes;
+    readonly 'AudioAttributes'?: AudioAttributes;
+    readonly 'MetadataAttributes'?: MetadataAttributes;
+    readonly 'Extension'?: TrackAttributesExtension;
 }
 
 /**
@@ -3611,7 +3611,7 @@ export interface TrackAttributesExtension {
  * Average bitrate in kbps.
  */
 export interface VideoAttributes {
-    readonly 'Bitrate': number;
+    readonly 'Bitrate'?: number;
     readonly 'Width': number;
     readonly 'Height': number;
     readonly 'Encoding': string;
@@ -3622,7 +3622,7 @@ export interface VideoAttributes {
  * The bitrate in kbps.
  */
 export interface AudioAttributes {
-    readonly 'Bitrate': number;
+    readonly 'Bitrate'?: number;
     readonly 'Encoding': string;
     readonly 'Samplerate': number;
 }
@@ -3667,7 +3667,7 @@ export interface GetRecordingsResponseItem {
  * Configuration of a track.
  */
 export interface GetTracksResponseList {
-    readonly 'Track': GetTracksResponseItem;
+    readonly 'Track'?: GetTracksResponseItem;
 }
 
 /**
@@ -3685,8 +3685,8 @@ export interface RecordingJobConfiguration {
     readonly 'RecordingToken': RecordingReference;
     readonly 'Mode': RecordingJobMode;
     readonly 'Priority': number;
-    readonly 'Source': RecordingJobSource;
-    readonly 'Extension': RecordingJobConfigurationExtension;
+    readonly 'Source'?: RecordingJobSource;
+    readonly 'Extension'?: RecordingJobConfigurationExtension;
 }
 
 /**
@@ -3704,10 +3704,10 @@ export interface RecordingJobConfigurationExtension {
  * 				device to obtain data from a profile that exists on the local device.
  */
 export interface RecordingJobSource {
-    readonly 'SourceToken': SourceReference;
-    readonly 'AutoCreateReceiver': boolean;
-    readonly 'Tracks': RecordingJobTrack;
-    readonly 'Extension': RecordingJobSourceExtension;
+    readonly 'SourceToken'?: SourceReference;
+    readonly 'AutoCreateReceiver'?: boolean;
+    readonly 'Tracks'?: RecordingJobTrack;
+    readonly 'Extension'?: RecordingJobSourceExtension;
 }
 
 /**
@@ -3731,8 +3731,8 @@ export interface RecordingJobTrack {
 export interface RecordingJobStateInformation {
     readonly 'RecordingToken': RecordingReference;
     readonly 'State': RecordingJobState;
-    readonly 'Sources': RecordingJobStateSource;
-    readonly 'Extension': RecordingJobStateInformationExtension;
+    readonly 'Sources'?: RecordingJobStateSource;
+    readonly 'Extension'?: RecordingJobStateInformationExtension;
 }
 
 /**
@@ -3754,7 +3754,7 @@ export interface RecordingJobStateSource {
  * 
  */
 export interface RecordingJobStateTracks {
-    readonly 'Track': RecordingJobStateTrack;
+    readonly 'Track'?: RecordingJobStateTrack;
 }
 
 /**
@@ -3763,7 +3763,7 @@ export interface RecordingJobStateTracks {
 export interface RecordingJobStateTrack {
     readonly 'SourceTag': string;
     readonly 'Destination': TrackReference;
-    readonly 'Error': string;
+    readonly 'Error'?: string;
     readonly 'State': RecordingJobState;
 }
 
@@ -3796,7 +3796,7 @@ export interface AnalyticsEngine {
  */
 export interface AnalyticsDeviceEngineConfiguration {
     readonly 'EngineConfiguration': EngineConfiguration;
-    readonly 'Extension': AnalyticsDeviceEngineConfigurationExtension;
+    readonly 'Extension'?: AnalyticsDeviceEngineConfigurationExtension;
 }
 
 /**
@@ -3817,8 +3817,8 @@ export interface EngineConfiguration {
  * 
  */
 export interface AnalyticsEngineInputInfo {
-    readonly 'InputInfo': Config;
-    readonly 'Extension': AnalyticsEngineInputInfoExtension;
+    readonly 'InputInfo'?: Config;
+    readonly 'Extension'?: AnalyticsEngineInputInfoExtension;
 }
 
 /**
@@ -3842,7 +3842,7 @@ export interface AnalyticsEngineInput {
 export interface SourceIdentification {
     readonly 'Name': string;
     readonly 'Token': ReferenceToken;
-    readonly 'Extension': SourceIdentificationExtension;
+    readonly 'Extension'?: SourceIdentificationExtension;
 }
 
 /**
@@ -3855,8 +3855,8 @@ export interface SourceIdentificationExtension {
  * 
  */
 export interface MetadataInput {
-    readonly 'MetadataConfig': Config;
-    readonly 'Extension': MetadataInputExtension;
+    readonly 'MetadataConfig'?: Config;
+    readonly 'Extension'?: MetadataInputExtension;
 }
 
 /**
@@ -3873,7 +3873,7 @@ export interface AnalyticsEngineControl {
     readonly 'EngineConfigToken': ReferenceToken;
     readonly 'InputToken': ReferenceToken;
     readonly 'ReceiverToken': ReferenceToken;
-    readonly 'Multicast': MulticastConfiguration;
+    readonly 'Multicast'?: MulticastConfiguration;
     readonly 'Subscription': Config;
     readonly 'Mode': ModeOfOperation;
 }
@@ -3890,7 +3890,7 @@ export interface AnalyticsStateInformation {
  * 
  */
 export interface AnalyticsState {
-    readonly 'Error': string;
+    readonly 'Error'?: string;
     readonly 'State': string;
 }
 
@@ -3898,10 +3898,10 @@ export interface AnalyticsState {
  * Action Engine Event Payload data structure contains the information about the ONVIF command invocations. Since this event could be generated by other or proprietary actions, the command invocation specific fields are defined as optional and additional extension mechanism is provided for future or additional action definitions.
  */
 export interface ActionEngineEventPayload {
-    readonly 'RequestInfo': Envelope;
-    readonly 'ResponseInfo': Envelope;
-    readonly 'Fault': Fault;
-    readonly 'Extension': ActionEngineEventPayloadExtension;
+    readonly 'RequestInfo'?: Envelope;
+    readonly 'ResponseInfo'?: Envelope;
+    readonly 'Fault'?: Fault;
+    readonly 'Extension'?: ActionEngineEventPayloadExtension;
 }
 
 /**
@@ -3922,8 +3922,8 @@ export interface AudioClassCandidate {
  * Array of audio class label and class probability
  */
 export interface AudioClassDescriptor {
-    readonly 'ClassCandidate': AudioClassCandidate;
-    readonly 'Extension': AudioClassDescriptorExtension;
+    readonly 'ClassCandidate'?: AudioClassCandidate;
+    readonly 'Extension'?: AudioClassDescriptorExtension;
 }
 
 /**
@@ -3944,8 +3944,8 @@ export interface ActiveConnection {
  * 
  */
 export interface ProfileStatus {
-    readonly 'ActiveConnections': ActiveConnection;
-    readonly 'Extension': ProfileStatusExtension;
+    readonly 'ActiveConnections'?: ActiveConnection;
+    readonly 'Extension'?: ProfileStatusExtension;
 }
 
 /**
@@ -3970,8 +3970,8 @@ export interface OSDReference {
  */
 export interface OSDPosConfiguration {
     readonly 'Type': string;
-    readonly 'Pos': Vector;
-    readonly 'Extension': OSDPosConfigurationExtension;
+    readonly 'Pos'?: Vector;
+    readonly 'Extension'?: OSDPosConfigurationExtension;
 }
 
 /**
@@ -3999,13 +3999,13 @@ export interface OSDColor {
  */
 export interface OSDTextConfiguration {
     readonly 'Type': string;
-    readonly 'DateFormat': string;
-    readonly 'TimeFormat': string;
-    readonly 'FontSize': number;
-    readonly 'FontColor': OSDColor;
-    readonly 'BackgroundColor': OSDColor;
-    readonly 'PlainText': string;
-    readonly 'Extension': OSDTextConfigurationExtension;
+    readonly 'DateFormat'?: string;
+    readonly 'TimeFormat'?: string;
+    readonly 'FontSize'?: number;
+    readonly 'FontColor'?: OSDColor;
+    readonly 'BackgroundColor'?: OSDColor;
+    readonly 'PlainText'?: string;
+    readonly 'Extension'?: OSDTextConfigurationExtension;
 }
 
 /**
@@ -4019,7 +4019,7 @@ export interface OSDTextConfigurationExtension {
  */
 export interface OSDImgConfiguration {
     readonly 'ImgPath': string;
-    readonly 'Extension': OSDImgConfigurationExtension;
+    readonly 'Extension'?: OSDImgConfigurationExtension;
 }
 
 /**
@@ -4054,9 +4054,9 @@ export interface ColorOptions {
  * Describe the option of the color and its transparency.
  */
 export interface OSDColorOptions {
-    readonly 'Color': ColorOptions;
-    readonly 'Transparent': IntRange;
-    readonly 'Extension': OSDColorOptionsExtension;
+    readonly 'Color'?: ColorOptions;
+    readonly 'Transparent'?: IntRange;
+    readonly 'Extension'?: OSDColorOptionsExtension;
 }
 
 /**
@@ -4070,12 +4070,12 @@ export interface OSDColorOptionsExtension {
  */
 export interface OSDTextOptions {
     readonly 'Type': string;
-    readonly 'FontSizeRange': IntRange;
-    readonly 'DateFormat': string;
-    readonly 'TimeFormat': string;
-    readonly 'FontColor': OSDColorOptions;
-    readonly 'BackgroundColor': OSDColorOptions;
-    readonly 'Extension': OSDTextOptionsExtension;
+    readonly 'FontSizeRange'?: IntRange;
+    readonly 'DateFormat'?: string;
+    readonly 'TimeFormat'?: string;
+    readonly 'FontColor'?: OSDColorOptions;
+    readonly 'BackgroundColor'?: OSDColorOptions;
+    readonly 'Extension'?: OSDTextOptionsExtension;
 }
 
 /**
@@ -4089,7 +4089,7 @@ export interface OSDTextOptionsExtension {
  */
 export interface OSDImgOptions {
     readonly 'ImagePath': string;
-    readonly 'Extension': OSDImgOptionsExtension;
+    readonly 'Extension'?: OSDImgOptionsExtension;
 }
 
 /**
@@ -4105,9 +4105,9 @@ export interface OSDConfiguration {
     readonly 'VideoSourceConfigurationToken': OSDReference;
     readonly 'Type': OSDType;
     readonly 'Position': OSDPosConfiguration;
-    readonly 'TextString': OSDTextConfiguration;
-    readonly 'Image': OSDImgConfiguration;
-    readonly 'Extension': OSDConfigurationExtension;
+    readonly 'TextString'?: OSDTextConfiguration;
+    readonly 'Image'?: OSDImgConfiguration;
+    readonly 'Extension'?: OSDConfigurationExtension;
 }
 
 /**
@@ -4129,9 +4129,9 @@ export interface OSDConfigurationOptions {
     readonly 'MaximumNumberOfOSDs': MaximumNumberOfOSDs;
     readonly 'Type': OSDType;
     readonly 'PositionOption': string;
-    readonly 'TextOption': OSDTextOptions;
-    readonly 'ImageOption': OSDImgOptions;
-    readonly 'Extension': OSDConfigurationOptionsExtension;
+    readonly 'TextOption'?: OSDTextOptions;
+    readonly 'ImageOption'?: OSDImgOptions;
+    readonly 'Extension'?: OSDConfigurationOptionsExtension;
 }
 
 /**
@@ -4152,8 +4152,8 @@ export interface FileProgress {
  * Exported file name and export progress information
  */
 export interface ArrayOfFileProgress {
-    readonly 'FileProgress': FileProgress;
-    readonly 'Extension': ArrayOfFileProgressExtension;
+    readonly 'FileProgress'?: FileProgress;
+    readonly 'Extension'?: ArrayOfFileProgressExtension;
 }
 
 /**
@@ -4167,8 +4167,8 @@ export interface ArrayOfFileProgressExtension {
  */
 export interface StorageReferencePath {
     readonly 'StorageToken': ReferenceToken;
-    readonly 'RelativePath': string;
-    readonly 'Extension': StorageReferencePathExtension;
+    readonly 'RelativePath'?: string;
+    readonly 'Extension'?: StorageReferencePathExtension;
 }
 
 /**
@@ -4205,8 +4205,8 @@ export interface Body {
 export interface Fault {
     readonly 'faultcode': any;
     readonly 'faultstring': string;
-    readonly 'faultactor': string;
-    readonly 'detail': detail;
+    readonly 'faultactor'?: string;
+    readonly 'detail'?: detail;
 }
 
 /**

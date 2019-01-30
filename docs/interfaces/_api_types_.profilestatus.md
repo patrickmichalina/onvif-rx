@@ -19,20 +19,20 @@
 
 <a id="activeconnections"></a>
 
-###  ActiveConnections
+### `<Optional>` ActiveConnections
 
 **● ActiveConnections**: *[ActiveConnection](_api_types_.activeconnection.md)*
 
-*Defined in [api/types.ts:3947](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3947)*
+*Defined in [api/types.ts:3947](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3947)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[ProfileStatusExtension](_api_types_.profilestatusextension.md)*
 
-*Defined in [api/types.ts:3948](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3948)*
+*Defined in [api/types.ts:3948](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3948)*
 
 ___
 

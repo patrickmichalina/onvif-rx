@@ -25,7 +25,7 @@ Certificate id.
 
 **● Certificate**: *[BinaryData](_api_types_.binarydata.md)*
 
-*Defined in [api/types.ts:1912](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1912)*
+*Defined in [api/types.ts:1912](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1912)*
 
 ___
 <a id="certificateid"></a>
@@ -34,7 +34,7 @@ ___
 
 **● CertificateID**: *`string`*
 
-*Defined in [api/types.ts:1911](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1911)*
+*Defined in [api/types.ts:1911](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1911)*
 
 ___
 

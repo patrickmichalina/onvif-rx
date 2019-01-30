@@ -21,20 +21,20 @@ Options of Reverse mode parameter.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[ReverseOptionsExtension](_api_types_.reverseoptionsextension.md)*
 
-*Defined in [api/types.ts:2200](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2200)*
+*Defined in [api/types.ts:2200](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2200)*
 
 ___
 <a id="mode"></a>
 
-###  Mode
+### `<Optional>` Mode
 
 **● Mode**: *[ReverseMode](../enums/_api_types_.reversemode.md)*
 
-*Defined in [api/types.ts:2199](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2199)*
+*Defined in [api/types.ts:2199](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2199)*
 
 ___
 

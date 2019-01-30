@@ -25,7 +25,7 @@ Defines if a multicast or unicast stream is requested
 
 **● Stream**: *[StreamType](../enums/_api_types_.streamtype.md)*
 
-*Defined in [api/types.ts:994](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L994)*
+*Defined in [api/types.ts:994](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L994)*
 
 ___
 <a id="transport"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Transport**: *[Transport](_api_types_.transport.md)*
 
-*Defined in [api/types.ts:995](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L995)*
+*Defined in [api/types.ts:995](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L995)*
 
 ___
 

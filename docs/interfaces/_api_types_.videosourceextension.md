@@ -21,20 +21,20 @@ Optional configuration of the image sensor. To be used if imaging service 2.00 i
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[VideoSourceExtension2](_api_types_.videosourceextension2.md)*
 
-*Defined in [api/types.ts:337](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L337)*
+*Defined in [api/types.ts:337](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L337)*
 
 ___
 <a id="imaging"></a>
 
-###  Imaging
+### `<Optional>` Imaging
 
 **● Imaging**: *[ImagingSettings20](_api_types_.imagingsettings20.md)*
 
-*Defined in [api/types.ts:336](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L336)*
+*Defined in [api/types.ts:336](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L336)*
 
 ___
 

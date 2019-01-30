@@ -20,11 +20,11 @@ list of supported AudioEncoderConfigurations
 
 <a id="options"></a>
 
-###  Options
+### `<Optional>` Options
 
 **● Options**: *[AudioEncoderConfigurationOption](_api_types_.audioencoderconfigurationoption.md)*
 
-*Defined in [api/types.ts:721](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L721)*
+*Defined in [api/types.ts:721](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L721)*
 
 ___
 

@@ -10,7 +10,7 @@ export class ONVIFMedia {
      * Returns the capabilities of the media service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetServiceCapabilities')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetServiceCapabilities')({}))
                         .map(mapResponseXmlToJson<any>('trt:GetServiceCapabilitiesResponse'))
                       
     }
@@ -19,7 +19,7 @@ export class ONVIFMedia {
      * This command lists all available physical video inputs of the device.
      */
     static GetVideoSources() {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSources')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSources')({}))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoSourcesResponse'))
                       
     }
@@ -28,7 +28,7 @@ export class ONVIFMedia {
      * This command lists all available physical audio inputs of the device.
      */
     static GetAudioSources() {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSources')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSources')({}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioSourcesResponse'))
                       
     }
@@ -37,7 +37,7 @@ export class ONVIFMedia {
      * This command lists all available physical audio outputs of the device.
      */
     static GetAudioOutputs() {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputs')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputs')({}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioOutputsResponse'))
                       
     }
@@ -48,7 +48,7 @@ export class ONVIFMedia {
      *   returned Profile.
      */
     static CreateProfile(Name: Name, Token?: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:CreateProfile')(['Name','Token'])(Name,Token))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:CreateProfile')({Name,Token}))
                         .map(mapResponseXmlToJson<any>('trt:CreateProfileResponse'))
                       
     }
@@ -57,7 +57,7 @@ export class ONVIFMedia {
      * If the profile token is already known, a profile can be fetched through the GetProfile command.
      */
     static GetProfile(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetProfile')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetProfile')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetProfileResponse'))
                       
     }
@@ -69,7 +69,7 @@ export class ONVIFMedia {
      *   know the media profile in order to use the command.
      */
     static GetProfiles() {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetProfiles')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetProfiles')({}))
                         .map(mapResponseXmlToJson<any>('trt:GetProfilesResponse'))
                       
     }
@@ -82,7 +82,7 @@ export class ONVIFMedia {
      *   
      */
     static AddVideoEncoderConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:AddVideoEncoderConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddVideoEncoderConfiguration')({ProfileToken,ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:AddVideoEncoderConfigurationResponse'))
                       
     }
@@ -92,7 +92,7 @@ export class ONVIFMedia {
      *   media profile does not contain a VideoEncoderConfiguration, the operation has no effect. The removal shall be persistent.
      */
     static RemoveVideoEncoderConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveVideoEncoderConfiguration')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveVideoEncoderConfiguration')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:RemoveVideoEncoderConfigurationResponse'))
                       
     }
@@ -102,7 +102,7 @@ export class ONVIFMedia {
      *   configuration exists in the media profile, it will be replaced. The change shall be persistent.
      */
     static AddVideoSourceConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:AddVideoSourceConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddVideoSourceConfiguration')({ProfileToken,ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:AddVideoSourceConfigurationResponse'))
                       
     }
@@ -113,7 +113,7 @@ export class ONVIFMedia {
      *   VideoEncoderConfiguration from the media profile.
      */
     static RemoveVideoSourceConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveVideoSourceConfiguration')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveVideoSourceConfiguration')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:RemoveVideoSourceConfigurationResponse'))
                       
     }
@@ -126,7 +126,7 @@ export class ONVIFMedia {
      *   
      */
     static AddAudioEncoderConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioEncoderConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioEncoderConfiguration')({ProfileToken,ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:AddAudioEncoderConfigurationResponse'))
                       
     }
@@ -137,7 +137,7 @@ export class ONVIFMedia {
      *   The removal shall be persistent.
      */
     static RemoveAudioEncoderConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioEncoderConfiguration')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioEncoderConfiguration')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:RemoveAudioEncoderConfigurationResponse'))
                       
     }
@@ -147,7 +147,7 @@ export class ONVIFMedia {
      *   configuration exists in the media profile, it will be replaced. The change shall be persistent.
      */
     static AddAudioSourceConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioSourceConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioSourceConfiguration')({ProfileToken,ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:AddAudioSourceConfigurationResponse'))
                       
     }
@@ -159,7 +159,7 @@ export class ONVIFMedia {
      *   AudioEncoderConfiguration from the media profile.
      */
     static RemoveAudioSourceConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioSourceConfiguration')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioSourceConfiguration')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:RemoveAudioSourceConfigurationResponse'))
                       
     }
@@ -171,7 +171,7 @@ export class ONVIFMedia {
      *   PTZ movement.
      */
     static AddPTZConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:AddPTZConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddPTZConfiguration')({ProfileToken,ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:AddPTZConfigurationResponse'))
                       
     }
@@ -181,7 +181,7 @@ export class ONVIFMedia {
      *   does not contain a PTZConfiguration, the operation has no effect. The removal shall be persistent.
      */
     static RemovePTZConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:RemovePTZConfiguration')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemovePTZConfiguration')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:RemovePTZConfigurationResponse'))
                       
     }
@@ -193,7 +193,7 @@ export class ONVIFMedia {
      *   configuration before a video source configuration.
      */
     static AddVideoAnalyticsConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:AddVideoAnalyticsConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddVideoAnalyticsConfiguration')({ProfileToken,ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:AddVideoAnalyticsConfigurationResponse'))
                       
     }
@@ -203,7 +203,7 @@ export class ONVIFMedia {
      *   The removal shall be persistent.
      */
     static RemoveVideoAnalyticsConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveVideoAnalyticsConfiguration')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveVideoAnalyticsConfiguration')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:RemoveVideoAnalyticsConfigurationResponse'))
                       
     }
@@ -212,7 +212,7 @@ export class ONVIFMedia {
      * This operation adds a Metadata configuration to an existing media profile. If a configuration exists in the media profile, it will be replaced. The change shall be persistent. Adding a MetadataConfiguration to a Profile means that streams using that profile contain metadata. Metadata can consist of events, PTZ status, and/or video analytics data.
      */
     static AddMetadataConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:AddMetadataConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddMetadataConfiguration')({ProfileToken,ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:AddMetadataConfigurationResponse'))
                       
     }
@@ -221,7 +221,7 @@ export class ONVIFMedia {
      * This operation removes a MetadataConfiguration from an existing media profile. If the media profile does not contain a MetadataConfiguration, the operation has no effect. The removal shall be persistent.
      */
     static RemoveMetadataConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveMetadataConfiguration')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveMetadataConfiguration')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:RemoveMetadataConfigurationResponse'))
                       
     }
@@ -230,7 +230,7 @@ export class ONVIFMedia {
      * This operation adds an AudioOutputConfiguration to an existing media profile. If a configuration exists in the media profile, it will be replaced. The change shall be persistent.
      */
     static AddAudioOutputConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioOutputConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioOutputConfiguration')({ProfileToken,ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:AddAudioOutputConfigurationResponse'))
                       
     }
@@ -239,7 +239,7 @@ export class ONVIFMedia {
      * This operation removes an AudioOutputConfiguration from an existing media profile. If the media profile does not contain an AudioOutputConfiguration, the operation has no effect. The removal shall be persistent.
      */
     static RemoveAudioOutputConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioOutputConfiguration')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioOutputConfiguration')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:RemoveAudioOutputConfigurationResponse'))
                       
     }
@@ -248,7 +248,7 @@ export class ONVIFMedia {
      * This operation adds an AudioDecoderConfiguration to an existing media profile. If a configuration exists in the media profile, it shall be replaced. The change shall be persistent.
      */
     static AddAudioDecoderConfiguration(ProfileToken: ReferenceToken, ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioDecoderConfiguration')(['ProfileToken','ConfigurationToken'])(ProfileToken,ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:AddAudioDecoderConfiguration')({ProfileToken,ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:AddAudioDecoderConfigurationResponse'))
                       
     }
@@ -257,7 +257,7 @@ export class ONVIFMedia {
      * This operation removes an AudioDecoderConfiguration from an existing media profile. If the media profile does not contain an AudioDecoderConfiguration, the operation has no effect. The removal shall be persistent.
      */
     static RemoveAudioDecoderConfiguration(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioDecoderConfiguration')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:RemoveAudioDecoderConfiguration')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:RemoveAudioDecoderConfigurationResponse'))
                       
     }
@@ -266,7 +266,7 @@ export class ONVIFMedia {
      * This operation deletes a profile. This change shall always be persistent. Deletion of a profile is only possible for non-fixed profiles
      */
     static DeleteProfile(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:DeleteProfile')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:DeleteProfile')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:DeleteProfileResponse'))
                       
     }
@@ -275,7 +275,7 @@ export class ONVIFMedia {
      * This operation lists all existing video source configurations for a device. The client need not know anything about the video source configurations in order to use the command.
      */
     static GetVideoSourceConfigurations() {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceConfigurations')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceConfigurations')({}))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoSourceConfigurationsResponse'))
                       
     }
@@ -284,7 +284,7 @@ export class ONVIFMedia {
      * This operation lists all existing video encoder configurations of a device. This command lists all configured video encoder configurations in a device. The client need not know anything apriori about the video encoder configurations in order to use the command.
      */
     static GetVideoEncoderConfigurations() {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoEncoderConfigurations')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoEncoderConfigurations')({}))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoEncoderConfigurationsResponse'))
                       
     }
@@ -293,7 +293,7 @@ export class ONVIFMedia {
      * This operation lists all existing audio source configurations of a device. This command lists all audio source configurations in a device. The client need not know anything apriori about the audio source configurations in order to use the command.
      */
     static GetAudioSourceConfigurations() {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSourceConfigurations')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSourceConfigurations')({}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioSourceConfigurationsResponse'))
                       
     }
@@ -302,7 +302,7 @@ export class ONVIFMedia {
      * This operation lists all existing device audio encoder configurations. The client need not know anything apriori about the audio encoder configurations in order to use the command.
      */
     static GetAudioEncoderConfigurations() {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioEncoderConfigurations')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioEncoderConfigurations')({}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioEncoderConfigurationsResponse'))
                       
     }
@@ -311,7 +311,7 @@ export class ONVIFMedia {
      * This operation lists all video analytics configurations of a device. This command lists all configured video analytics in a device. The client need not know anything apriori about the video analytics in order to use the command.
      */
     static GetVideoAnalyticsConfigurations() {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoAnalyticsConfigurations')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoAnalyticsConfigurations')({}))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoAnalyticsConfigurationsResponse'))
                       
     }
@@ -320,7 +320,7 @@ export class ONVIFMedia {
      * This operation lists all existing metadata configurations. The client need not know anything apriori about the metadata in order to use the command.
      */
     static GetMetadataConfigurations() {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetMetadataConfigurations')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetMetadataConfigurations')({}))
                         .map(mapResponseXmlToJson<any>('trt:GetMetadataConfigurationsResponse'))
                       
     }
@@ -329,7 +329,7 @@ export class ONVIFMedia {
      * This command lists all existing AudioOutputConfigurations of a device. The NVC need not know anything apriori about the audio configurations to use this command.
      */
     static GetAudioOutputConfigurations() {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputConfigurations')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputConfigurations')({}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioOutputConfigurationsResponse'))
                       
     }
@@ -339,7 +339,7 @@ export class ONVIFMedia {
      *   use this command.
      */
     static GetAudioDecoderConfigurations() {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioDecoderConfigurations')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioDecoderConfigurations')({}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioDecoderConfigurationsResponse'))
                       
     }
@@ -348,7 +348,7 @@ export class ONVIFMedia {
      * If the video source configuration token is already known, the video source configuration can be fetched through the GetVideoSourceConfiguration command.
      */
     static GetVideoSourceConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceConfiguration')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceConfiguration')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoSourceConfigurationResponse'))
                       
     }
@@ -357,7 +357,7 @@ export class ONVIFMedia {
      * If the video encoder configuration token is already known, the encoder configuration can be fetched through the GetVideoEncoderConfiguration command.
      */
     static GetVideoEncoderConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoEncoderConfiguration')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoEncoderConfiguration')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoEncoderConfigurationResponse'))
                       
     }
@@ -366,7 +366,7 @@ export class ONVIFMedia {
      * The GetAudioSourceConfiguration command fetches the audio source configurations if the audio source configuration token is already known. An
      */
     static GetAudioSourceConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSourceConfiguration')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSourceConfiguration')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioSourceConfigurationResponse'))
                       
     }
@@ -375,7 +375,7 @@ export class ONVIFMedia {
      * The GetAudioEncoderConfiguration command fetches the encoder configuration if the audio encoder configuration token is known.
      */
     static GetAudioEncoderConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioEncoderConfiguration')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioEncoderConfiguration')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioEncoderConfigurationResponse'))
                       
     }
@@ -384,7 +384,7 @@ export class ONVIFMedia {
      * The GetVideoAnalyticsConfiguration command fetches the video analytics configuration if the video analytics token is known.
      */
     static GetVideoAnalyticsConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoAnalyticsConfiguration')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoAnalyticsConfiguration')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoAnalyticsConfigurationResponse'))
                       
     }
@@ -393,7 +393,7 @@ export class ONVIFMedia {
      * The GetMetadataConfiguration command fetches the metadata configuration if the metadata token is known.
      */
     static GetMetadataConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetMetadataConfiguration')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetMetadataConfiguration')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetMetadataConfigurationResponse'))
                       
     }
@@ -402,7 +402,7 @@ export class ONVIFMedia {
      * If the audio output configuration token is already known, the output configuration can be fetched through the GetAudioOutputConfiguration command.
      */
     static GetAudioOutputConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputConfiguration')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputConfiguration')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioOutputConfigurationResponse'))
                       
     }
@@ -411,7 +411,7 @@ export class ONVIFMedia {
      * If the audio decoder configuration token is already known, the decoder configuration can be fetched through the GetAudioDecoderConfiguration command.
      */
     static GetAudioDecoderConfiguration(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioDecoderConfiguration')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioDecoderConfiguration')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioDecoderConfigurationResponse'))
                       
     }
@@ -420,7 +420,7 @@ export class ONVIFMedia {
      * This operation lists all the video encoder configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddVideoEncoderConfiguration command on the media profile. The result will vary depending on the capabilities, configurations and settings in the device.
      */
     static GetCompatibleVideoEncoderConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleVideoEncoderConfigurations')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleVideoEncoderConfigurations')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleVideoEncoderConfigurationsResponse'))
                       
     }
@@ -432,7 +432,7 @@ export class ONVIFMedia {
      *   will vary depending on the capabilities, configurations and settings in the device.
      */
     static GetCompatibleVideoSourceConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleVideoSourceConfigurations')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleVideoSourceConfigurations')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleVideoSourceConfigurationsResponse'))
                       
     }
@@ -441,7 +441,7 @@ export class ONVIFMedia {
      * This operation requests all audio encoder configurations of a device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddAudioSourceConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
      */
     static GetCompatibleAudioEncoderConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioEncoderConfigurations')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioEncoderConfigurations')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioEncoderConfigurationsResponse'))
                       
     }
@@ -450,7 +450,7 @@ export class ONVIFMedia {
      * This operation requests all audio source configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddAudioEncoderConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
      */
     static GetCompatibleAudioSourceConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioSourceConfigurations')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioSourceConfigurations')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioSourceConfigurationsResponse'))
                       
     }
@@ -459,7 +459,7 @@ export class ONVIFMedia {
      * This operation requests all video analytic configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddVideoAnalyticsConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
      */
     static GetCompatibleVideoAnalyticsConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleVideoAnalyticsConfigurations')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleVideoAnalyticsConfigurations')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleVideoAnalyticsConfigurationsResponse'))
                       
     }
@@ -468,7 +468,7 @@ export class ONVIFMedia {
      * This operation requests all the metadata configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddMetadataConfiguration command on the media profile. The result varies depending on the capabilities, configurations and settings in the device.
      */
     static GetCompatibleMetadataConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleMetadataConfigurations')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleMetadataConfigurations')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleMetadataConfigurationsResponse'))
                       
     }
@@ -478,7 +478,7 @@ export class ONVIFMedia {
      *   AddAudioOutputConfiguration command.
      */
     static GetCompatibleAudioOutputConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioOutputConfigurations')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioOutputConfigurations')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioOutputConfigurationsResponse'))
                       
     }
@@ -487,7 +487,7 @@ export class ONVIFMedia {
      * This operation lists all the audio decoder configurations of the device that are compatible with a certain media profile. Each of the returned configurations shall be a valid input parameter for the AddAudioDecoderConfiguration command on the media profile.
      */
     static GetCompatibleAudioDecoderConfigurations(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioDecoderConfigurations')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetCompatibleAudioDecoderConfigurations')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetCompatibleAudioDecoderConfigurationsResponse'))
                       
     }
@@ -496,7 +496,7 @@ export class ONVIFMedia {
      * This operation modifies a video source configuration. The ForcePersistence flag indicates if the changes shall remain after reboot of the device. Running streams using this configuration may be immediately updated according to the new settings. The changes are not guaranteed to take effect unless the client requests a new stream URI and restarts any affected stream. NVC methods for changing a running stream are out of scope for this specification.
      */
     static SetVideoSourceConfiguration(Configuration: VideoSourceConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoSourceConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoSourceConfiguration')({Configuration,ForcePersistence}))
                         .map(mapResponseXmlToJson<any>('trt:SetVideoSourceConfigurationResponse'))
                       
     }
@@ -505,7 +505,7 @@ export class ONVIFMedia {
      * This operation modifies a video encoder configuration. The ForcePersistence flag indicates if the changes shall remain after reboot of the device. Changes in the Multicast settings shall always be persistent. Running streams using this configuration may be immediately updated according to the new settings. The changes are not guaranteed to take effect unless the client requests a new stream URI and restarts any affected stream. NVC methods for changing a running stream are out of scope for this specification. SessionTimeout is provided as a hint for keeping rtsp session by a device. If necessary the device may adapt parameter values for SessionTimeout elements without returning an error. For the time between keep alive calls the client shall adhere to the timeout value signaled via RTSP.
      */
     static SetVideoEncoderConfiguration(Configuration: VideoEncoderConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoEncoderConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoEncoderConfiguration')({Configuration,ForcePersistence}))
                         .map(mapResponseXmlToJson<any>('trt:SetVideoEncoderConfigurationResponse'))
                       
     }
@@ -518,7 +518,7 @@ export class ONVIFMedia {
      *   NVC methods for changing a running stream are out of scope for this specification.
      */
     static SetAudioSourceConfiguration(Configuration: AudioSourceConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioSourceConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioSourceConfiguration')({Configuration,ForcePersistence}))
                         .map(mapResponseXmlToJson<any>('trt:SetAudioSourceConfigurationResponse'))
                       
     }
@@ -531,7 +531,7 @@ export class ONVIFMedia {
      *   running stream are out of scope for this specification.
      */
     static SetAudioEncoderConfiguration(Configuration: AudioEncoderConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioEncoderConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioEncoderConfiguration')({Configuration,ForcePersistence}))
                         .map(mapResponseXmlToJson<any>('trt:SetAudioEncoderConfigurationResponse'))
                       
     }
@@ -545,7 +545,7 @@ export class ONVIFMedia {
      *   video analytics configuration token.
      */
     static SetVideoAnalyticsConfiguration(Configuration: VideoAnalyticsConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoAnalyticsConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoAnalyticsConfiguration')({Configuration,ForcePersistence}))
                         .map(mapResponseXmlToJson<any>('trt:SetVideoAnalyticsConfigurationResponse'))
                       
     }
@@ -559,7 +559,7 @@ export class ONVIFMedia {
      *   running stream are out of scope for this specification.
      */
     static SetMetadataConfiguration(Configuration: MetadataConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:SetMetadataConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetMetadataConfiguration')({Configuration,ForcePersistence}))
                         .map(mapResponseXmlToJson<any>('trt:SetMetadataConfigurationResponse'))
                       
     }
@@ -569,7 +569,7 @@ export class ONVIFMedia {
      *   the changes shall remain after reboot of the device.
      */
     static SetAudioOutputConfiguration(Configuration: AudioOutputConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioOutputConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioOutputConfiguration')({Configuration,ForcePersistence}))
                         .map(mapResponseXmlToJson<any>('trt:SetAudioOutputConfigurationResponse'))
                       
     }
@@ -579,7 +579,7 @@ export class ONVIFMedia {
      *   the changes shall remain after reboot of the device.
      */
     static SetAudioDecoderConfiguration(Configuration: AudioDecoderConfiguration, ForcePersistence: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioDecoderConfiguration')(['Configuration','ForcePersistence'])(Configuration,ForcePersistence))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetAudioDecoderConfiguration')({Configuration,ForcePersistence}))
                         .map(mapResponseXmlToJson<any>('trt:SetAudioDecoderConfigurationResponse'))
                       
     }
@@ -591,7 +591,7 @@ export class ONVIFMedia {
      *   that media profile.
      */
     static GetVideoSourceConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceConfigurationOptions')({ConfigurationToken,ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoSourceConfigurationOptionsResponse'))
                       
     }
@@ -607,7 +607,7 @@ export class ONVIFMedia {
      *   
      */
     static GetVideoEncoderConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoEncoderConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoEncoderConfigurationOptions')({ConfigurationToken,ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoEncoderConfigurationOptionsResponse'))
                       
     }
@@ -619,7 +619,7 @@ export class ONVIFMedia {
      *   that media profile.
      */
     static GetAudioSourceConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSourceConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioSourceConfigurationOptions')({ConfigurationToken,ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioSourceConfigurationOptionsResponse'))
                       
     }
@@ -629,7 +629,7 @@ export class ONVIFMedia {
      *   reconfigured.
      */
     static GetAudioEncoderConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioEncoderConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioEncoderConfigurationOptions')({ConfigurationToken,ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioEncoderConfigurationOptionsResponse'))
                       
     }
@@ -638,7 +638,7 @@ export class ONVIFMedia {
      * This operation returns the available options (supported values and ranges for metadata configuration parameters) for changing the metadata configuration.
      */
     static GetMetadataConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetMetadataConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetMetadataConfigurationOptions')({ConfigurationToken,ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetMetadataConfigurationOptionsResponse'))
                       
     }
@@ -647,7 +647,7 @@ export class ONVIFMedia {
      * This operation returns the available options (supported values and ranges for audio output configuration parameters) for configuring an audio output.
      */
     static GetAudioOutputConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioOutputConfigurationOptions')({ConfigurationToken,ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioOutputConfigurationOptionsResponse'))
                       
     }
@@ -657,7 +657,7 @@ export class ONVIFMedia {
      *   device.
      */
     static GetAudioDecoderConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioDecoderConfigurationOptions')(['ConfigurationToken','ProfileToken'])(ConfigurationToken,ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetAudioDecoderConfigurationOptions')({ConfigurationToken,ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetAudioDecoderConfigurationOptionsResponse'))
                       
     }
@@ -668,7 +668,7 @@ export class ONVIFMedia {
      *   Configuration.
      */
     static GetGuaranteedNumberOfVideoEncoderInstances(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetGuaranteedNumberOfVideoEncoderInstances')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetGuaranteedNumberOfVideoEncoderInstances')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetGuaranteedNumberOfVideoEncoderInstancesResponse'))
                       
     }
@@ -691,7 +691,7 @@ export class ONVIFMedia {
      *   128 octets.
      */
     static GetStreamUri(StreamSetup: StreamSetup, ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetStreamUri')(['StreamSetup','ProfileToken'])(StreamSetup,ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetStreamUri')({StreamSetup,ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetStreamUriResponse'))
                       
     }
@@ -705,7 +705,7 @@ export class ONVIFMedia {
      *   respectively.
      */
     static StartMulticastStreaming(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:StartMulticastStreaming')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:StartMulticastStreaming')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:StartMulticastStreamingResponse'))
                       
     }
@@ -714,7 +714,7 @@ export class ONVIFMedia {
      * This command stop multicast streaming using a specified media profile of a device
      */
     static StopMulticastStreaming(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:StopMulticastStreaming')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:StopMulticastStreaming')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:StopMulticastStreamingResponse'))
                       
     }
@@ -733,7 +733,7 @@ export class ONVIFMedia {
      *   the PTZ position shall be repeated within the metadata stream.
      */
     static SetSynchronizationPoint(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:SetSynchronizationPoint')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetSynchronizationPoint')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:SetSynchronizationPointResponse'))
                       
     }
@@ -749,7 +749,7 @@ export class ONVIFMedia {
      *   image will be updated automatically and independent from calls to GetSnapshotUri.
      */
     static GetSnapshotUri(ProfileToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetSnapshotUri')(['ProfileToken'])(ProfileToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetSnapshotUri')({ProfileToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetSnapshotUriResponse'))
                       
     }
@@ -758,7 +758,7 @@ export class ONVIFMedia {
      * A device returns the information for current video source mode and settable video source modes of specified video source. A device that indicates a capability of  VideoSourceModes shall support this command.
      */
     static GetVideoSourceModes(VideoSourceToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceModes')(['VideoSourceToken'])(VideoSourceToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetVideoSourceModes')({VideoSourceToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetVideoSourceModesResponse'))
                       
     }
@@ -767,7 +767,7 @@ export class ONVIFMedia {
      * SetVideoSourceMode changes the media profile structure relating to video source for the specified video source mode. A device that indicates a capability of VideoSourceModes shall support this command. The behavior after changing the mode is not defined in this specification.
      */
     static SetVideoSourceMode(VideoSourceToken: ReferenceToken, VideoSourceModeToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoSourceMode')(['VideoSourceToken','VideoSourceModeToken'])(VideoSourceToken,VideoSourceModeToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetVideoSourceMode')({VideoSourceToken,VideoSourceModeToken}))
                         .map(mapResponseXmlToJson<any>('trt:SetVideoSourceModeResponse'))
                       
     }
@@ -776,7 +776,7 @@ export class ONVIFMedia {
      * Get the OSDs.
      */
     static GetOSDs(ConfigurationToken?: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetOSDs')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetOSDs')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetOSDsResponse'))
                       
     }
@@ -785,7 +785,7 @@ export class ONVIFMedia {
      * Get the OSD.
      */
     static GetOSD(OSDToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetOSD')(['OSDToken'])(OSDToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetOSD')({OSDToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetOSDResponse'))
                       
     }
@@ -794,7 +794,7 @@ export class ONVIFMedia {
      * Get the OSD Options.
      */
     static GetOSDOptions(ConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:GetOSDOptions')(['ConfigurationToken'])(ConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:GetOSDOptions')({ConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('trt:GetOSDOptionsResponse'))
                       
     }
@@ -803,7 +803,7 @@ export class ONVIFMedia {
      * Set the OSD
      */
     static SetOSD(OSD: OSDConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:SetOSD')(['OSD'])(OSD))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:SetOSD')({OSD}))
                         .map(mapResponseXmlToJson<any>('trt:SetOSDResponse'))
                       
     }
@@ -812,7 +812,7 @@ export class ONVIFMedia {
      * Create the OSD.
      */
     static CreateOSD(OSD: OSDConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:CreateOSD')(['OSD'])(OSD))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:CreateOSD')({OSD}))
                         .map(mapResponseXmlToJson<any>('trt:CreateOSDResponse'))
                       
     }
@@ -821,7 +821,7 @@ export class ONVIFMedia {
      * Delete the OSD.
      */
     static DeleteOSD(OSDToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trt:DeleteOSD')(['OSDToken'])(OSDToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trt:DeleteOSD')({OSDToken}))
                         .map(mapResponseXmlToJson<any>('trt:DeleteOSDResponse'))
                       
     }

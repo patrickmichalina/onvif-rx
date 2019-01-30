@@ -18,11 +18,11 @@
 
 <a id="items"></a>
 
-###  Items
+### `<Optional>` Items
 
-**● Items**: *`number`*
+**● Items**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:313](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L313)*
+*Defined in [api/types.ts:313](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L313)*
 
 ___
 

@@ -10,7 +10,7 @@ export class ONVIFRecording {
      * Returns the capabilities of the recording service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:GetServiceCapabilities')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetServiceCapabilities')({}))
                         .map(mapResponseXmlToJson<any>('trc:GetServiceCapabilitiesResponse'))
                       
     }
@@ -34,7 +34,7 @@ export class ONVIFRecording {
      *   
      */
     static CreateRecording(RecordingConfiguration: RecordingConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:CreateRecording')(['RecordingConfiguration'])(RecordingConfiguration))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:CreateRecording')({RecordingConfiguration}))
                         .map(mapResponseXmlToJson<any>('trc:CreateRecordingResponse'))
                       
     }
@@ -50,7 +50,7 @@ export class ONVIFRecording {
      *   
      */
     static DeleteRecording(RecordingToken: RecordingReference) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:DeleteRecording')(['RecordingToken'])(RecordingToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:DeleteRecording')({RecordingToken}))
                         .map(mapResponseXmlToJson<any>('trc:DeleteRecordingResponse'))
                       
     }
@@ -60,7 +60,7 @@ export class ONVIFRecording {
      *   shall include a list of all the tracks for each recording.
      */
     static GetRecordings() {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordings')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordings')({}))
                         .map(mapResponseXmlToJson<any>('trc:GetRecordingsResponse'))
                       
     }
@@ -69,7 +69,7 @@ export class ONVIFRecording {
      * SetRecordingConfiguration shall change the configuration of a recording.
      */
     static SetRecordingConfiguration(RecordingToken: RecordingReference, RecordingConfiguration: RecordingConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:SetRecordingConfiguration')(['RecordingToken','RecordingConfiguration'])(RecordingToken,RecordingConfiguration))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:SetRecordingConfiguration')({RecordingToken,RecordingConfiguration}))
                         .map(mapResponseXmlToJson<any>('trc:SetRecordingConfigurationResponse'))
                       
     }
@@ -78,7 +78,7 @@ export class ONVIFRecording {
      * GetRecordingConfiguration shall retrieve the recording configuration for a recording.
      */
     static GetRecordingConfiguration(RecordingToken: RecordingReference) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingConfiguration')(['RecordingToken'])(RecordingToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingConfiguration')({RecordingToken}))
                         .map(mapResponseXmlToJson<any>('trc:GetRecordingConfigurationResponse'))
                       
     }
@@ -87,7 +87,7 @@ export class ONVIFRecording {
      * GetRecordingOptions returns information for a recording identified by the RecordingToken. The information includes the number of additonal tracks as well as recording jobs that can be configured.
      */
     static GetRecordingOptions(RecordingToken: RecordingReference) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingOptions')(['RecordingToken'])(RecordingToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingOptions')({RecordingToken}))
                         .map(mapResponseXmlToJson<any>('trc:GetRecordingOptionsResponse'))
                       
     }
@@ -100,7 +100,7 @@ export class ONVIFRecording {
      *   
      */
     static CreateTrack(RecordingToken: RecordingReference, TrackConfiguration: TrackConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:CreateTrack')(['RecordingToken','TrackConfiguration'])(RecordingToken,TrackConfiguration))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:CreateTrack')({RecordingToken,TrackConfiguration}))
                         .map(mapResponseXmlToJson<any>('trc:CreateTrackResponse'))
                       
     }
@@ -111,7 +111,7 @@ export class ONVIFRecording {
      *   TRUE.
      */
     static DeleteTrack(RecordingToken: RecordingReference, TrackToken: TrackReference) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:DeleteTrack')(['RecordingToken','TrackToken'])(RecordingToken,TrackToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:DeleteTrack')({RecordingToken,TrackToken}))
                         .map(mapResponseXmlToJson<any>('trc:DeleteTrackResponse'))
                       
     }
@@ -120,7 +120,7 @@ export class ONVIFRecording {
      * GetTrackConfiguration shall retrieve the configuration for a specific track.
      */
     static GetTrackConfiguration(RecordingToken: RecordingReference, TrackToken: TrackReference) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:GetTrackConfiguration')(['RecordingToken','TrackToken'])(RecordingToken,TrackToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetTrackConfiguration')({RecordingToken,TrackToken}))
                         .map(mapResponseXmlToJson<any>('trc:GetTrackConfigurationResponse'))
                       
     }
@@ -129,7 +129,7 @@ export class ONVIFRecording {
      * SetTrackConfiguration shall change the configuration of a track.
      */
     static SetTrackConfiguration(RecordingToken: RecordingReference, TrackToken: TrackReference, TrackConfiguration: TrackConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:SetTrackConfiguration')(['RecordingToken','TrackToken','TrackConfiguration'])(RecordingToken,TrackToken,TrackConfiguration))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:SetTrackConfiguration')({RecordingToken,TrackToken,TrackConfiguration}))
                         .map(mapResponseXmlToJson<any>('trc:SetTrackConfigurationResponse'))
                       
     }
@@ -143,7 +143,7 @@ export class ONVIFRecording {
      *   
      */
     static CreateRecordingJob(JobConfiguration: RecordingJobConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:CreateRecordingJob')(['JobConfiguration'])(JobConfiguration))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:CreateRecordingJob')({JobConfiguration}))
                         .map(mapResponseXmlToJson<any>('trc:CreateRecordingJobResponse'))
                       
     }
@@ -155,7 +155,7 @@ export class ONVIFRecording {
      *   other recording job.
      */
     static DeleteRecordingJob(JobToken: RecordingJobReference) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:DeleteRecordingJob')(['JobToken'])(JobToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:DeleteRecordingJob')({JobToken}))
                         .map(mapResponseXmlToJson<any>('trc:DeleteRecordingJobResponse'))
                       
     }
@@ -164,7 +164,7 @@ export class ONVIFRecording {
      * GetRecordingJobs shall return a list of all the recording jobs in the device.
      */
     static GetRecordingJobs() {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingJobs')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingJobs')({}))
                         .map(mapResponseXmlToJson<any>('trc:GetRecordingJobsResponse'))
                       
     }
@@ -176,7 +176,7 @@ export class ONVIFRecording {
      *   
      */
     static SetRecordingJobConfiguration(JobToken: RecordingJobReference, JobConfiguration: RecordingJobConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:SetRecordingJobConfiguration')(['JobToken','JobConfiguration'])(JobToken,JobConfiguration))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:SetRecordingJobConfiguration')({JobToken,JobConfiguration}))
                         .map(mapResponseXmlToJson<any>('trc:SetRecordingJobConfigurationResponse'))
                       
     }
@@ -185,7 +185,7 @@ export class ONVIFRecording {
      * GetRecordingJobConfiguration shall return the current configuration for a recording job.
      */
     static GetRecordingJobConfiguration(JobToken: RecordingJobReference) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingJobConfiguration')(['JobToken'])(JobToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingJobConfiguration')({JobToken}))
                         .map(mapResponseXmlToJson<any>('trc:GetRecordingJobConfigurationResponse'))
                       
     }
@@ -196,7 +196,7 @@ export class ONVIFRecording {
      *   mode.
      */
     static SetRecordingJobMode(JobToken: RecordingJobReference, Mode: RecordingJobMode) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:SetRecordingJobMode')(['JobToken','Mode'])(JobToken,Mode))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:SetRecordingJobMode')({JobToken,Mode}))
                         .map(mapResponseXmlToJson<any>('trc:SetRecordingJobModeResponse'))
                       
     }
@@ -206,7 +206,7 @@ export class ONVIFRecording {
      *   and state for each track of the recording job.
      */
     static GetRecordingJobState(JobToken: RecordingJobReference) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingJobState')(['JobToken'])(JobToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetRecordingJobState')({JobToken}))
                         .map(mapResponseXmlToJson<any>('trc:GetRecordingJobStateResponse'))
                       
     }
@@ -217,7 +217,7 @@ export class ONVIFRecording {
      *   
      */
     static ExportRecordedData(SearchScope: SearchScope, FileFormat: string, StorageDestination: StorageReferencePath, StartPoint?: string, EndPoint?: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:ExportRecordedData')(['SearchScope','FileFormat','StorageDestination','StartPoint','EndPoint'])(SearchScope,FileFormat,StorageDestination,StartPoint,EndPoint))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:ExportRecordedData')({SearchScope,FileFormat,StorageDestination,StartPoint,EndPoint}))
                         .map(mapResponseXmlToJson<any>('trc:ExportRecordedDataResponse'))
                       
     }
@@ -228,7 +228,7 @@ export class ONVIFRecording {
      *   
      */
     static StopExportRecordedData(OperationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:StopExportRecordedData')(['OperationToken'])(OperationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:StopExportRecordedData')({OperationToken}))
                         .map(mapResponseXmlToJson<any>('trc:StopExportRecordedDataResponse'))
                       
     }
@@ -239,7 +239,7 @@ export class ONVIFRecording {
      *   
      */
     static GetExportRecordedDataState(OperationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trc:GetExportRecordedDataState')(['OperationToken'])(OperationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('trc:GetExportRecordedDataState')({OperationToken}))
                         .map(mapResponseXmlToJson<any>('trc:GetExportRecordedDataStateResponse'))
                       
     }

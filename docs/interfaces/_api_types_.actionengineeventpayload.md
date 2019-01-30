@@ -23,38 +23,38 @@ Action Engine Event Payload data structure contains the information about the ON
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[ActionEngineEventPayloadExtension](_api_types_.actionengineeventpayloadextension.md)*
 
-*Defined in [api/types.ts:3904](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3904)*
+*Defined in [api/types.ts:3904](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3904)*
 
 ___
 <a id="fault"></a>
 
-###  Fault
+### `<Optional>` Fault
 
-**● Fault**: *[Fault](_api_types_.fault.md)*
+**● Fault**: *[Fault](_api_types_.actionengineeventpayload.md#fault)*
 
-*Defined in [api/types.ts:3903](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3903)*
+*Defined in [api/types.ts:3903](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3903)*
 
 ___
 <a id="requestinfo"></a>
 
-###  RequestInfo
+### `<Optional>` RequestInfo
 
 **● RequestInfo**: *[Envelope](_api_types_.envelope.md)*
 
-*Defined in [api/types.ts:3901](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3901)*
+*Defined in [api/types.ts:3901](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3901)*
 
 ___
 <a id="responseinfo"></a>
 
-###  ResponseInfo
+### `<Optional>` ResponseInfo
 
 **● ResponseInfo**: *[Envelope](_api_types_.envelope.md)*
 
-*Defined in [api/types.ts:3902](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3902)*
+*Defined in [api/types.ts:3902](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3902)*
 
 ___
 

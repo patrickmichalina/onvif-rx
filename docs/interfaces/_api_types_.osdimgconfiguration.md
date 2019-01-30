@@ -21,11 +21,11 @@ The URI of the image which to be displayed.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[OSDImgConfigurationExtension](_api_types_.osdimgconfigurationextension.md)*
 
-*Defined in [api/types.ts:4022](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4022)*
+*Defined in [api/types.ts:4022](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4022)*
 
 ___
 <a id="imgpath"></a>
@@ -34,7 +34,7 @@ ___
 
 **● ImgPath**: *`string`*
 
-*Defined in [api/types.ts:4021](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4021)*
+*Defined in [api/types.ts:4021](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4021)*
 
 ___
 

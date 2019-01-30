@@ -23,11 +23,11 @@ Indicates if NTP information is to be retrieved by using DHCP.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[NTPInformationExtension](_api_types_.ntpinformationextension.md)*
 
-*Defined in [api/types.ts:1227](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1227)*
+*Defined in [api/types.ts:1227](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1227)*
 
 ___
 <a id="fromdhcp"></a>
@@ -36,25 +36,25 @@ ___
 
 **● FromDHCP**: *`boolean`*
 
-*Defined in [api/types.ts:1224](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1224)*
+*Defined in [api/types.ts:1224](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1224)*
 
 ___
 <a id="ntpfromdhcp"></a>
 
-###  NTPFromDHCP
+### `<Optional>` NTPFromDHCP
 
 **● NTPFromDHCP**: *[NetworkHost](_api_types_.networkhost.md)*
 
-*Defined in [api/types.ts:1225](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1225)*
+*Defined in [api/types.ts:1225](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1225)*
 
 ___
 <a id="ntpmanual"></a>
 
-###  NTPManual
+### `<Optional>` NTPManual
 
 **● NTPManual**: *[NetworkHost](_api_types_.networkhost.md)*
 
-*Defined in [api/types.ts:1226](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1226)*
+*Defined in [api/types.ts:1226](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1226)*
 
 ___
 

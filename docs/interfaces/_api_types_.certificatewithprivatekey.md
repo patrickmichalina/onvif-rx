@@ -24,16 +24,16 @@
 
 **● Certificate**: *[BinaryData](_api_types_.binarydata.md)*
 
-*Defined in [api/types.ts:1928](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1928)*
+*Defined in [api/types.ts:1928](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1928)*
 
 ___
 <a id="certificateid"></a>
 
-###  CertificateID
+### `<Optional>` CertificateID
 
-**● CertificateID**: *`string`*
+**● CertificateID**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1927](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1927)*
+*Defined in [api/types.ts:1927](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1927)*
 
 ___
 <a id="privatekey"></a>
@@ -42,7 +42,7 @@ ___
 
 **● PrivateKey**: *[BinaryData](_api_types_.binarydata.md)*
 
-*Defined in [api/types.ts:1929](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1929)*
+*Defined in [api/types.ts:1929](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1929)*
 
 ___
 

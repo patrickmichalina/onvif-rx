@@ -21,7 +21,7 @@
 
 **Common**:  = "Common"
 
-*Defined in [api/types.ts:5213](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5213)*
+*Defined in [api/types.ts:5213](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5213)*
 
 ___
 <a id="extended"></a>
@@ -30,7 +30,7 @@ ___
 
 **Extended**:  = "Extended"
 
-*Defined in [api/types.ts:5225](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5225)*
+*Defined in [api/types.ts:5225](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5225)*
 
 ___
 <a id="tooff"></a>
@@ -39,7 +39,7 @@ ___
 
 **ToOff**:  = "ToOff"
 
-*Defined in [api/types.ts:5221](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5221)*
+*Defined in [api/types.ts:5221](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5221)*
 
 ___
 <a id="toon"></a>
@@ -48,7 +48,7 @@ ___
 
 **ToOn**:  = "ToOn"
 
-*Defined in [api/types.ts:5217](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5217)*
+*Defined in [api/types.ts:5217](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5217)*
 
 ___
 

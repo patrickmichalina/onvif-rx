@@ -23,7 +23,7 @@ This value is deprecated.
 
 **HTTP**:  = "HTTP"
 
-*Defined in [api/types.ts:4541](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4541)*
+*Defined in [api/types.ts:4541](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4541)*
 
 ___
 <a id="rtsp"></a>
@@ -32,7 +32,7 @@ ___
 
 **RTSP**:  = "RTSP"
 
-*Defined in [api/types.ts:4537](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4537)*
+*Defined in [api/types.ts:4537](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4537)*
 
 ___
 <a id="tcp"></a>
@@ -41,7 +41,7 @@ ___
 
 **TCP**:  = "TCP"
 
-*Defined in [api/types.ts:4533](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4533)*
+*Defined in [api/types.ts:4533](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4533)*
 
 This value is deprecated.
 
@@ -52,7 +52,7 @@ ___
 
 **UDP**:  = "UDP"
 
-*Defined in [api/types.ts:4529](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4529)*
+*Defined in [api/types.ts:4529](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4529)*
 
 ___
 

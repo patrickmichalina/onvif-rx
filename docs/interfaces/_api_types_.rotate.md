@@ -22,20 +22,20 @@ Parameter to enable/disable Rotation feature.
 
 <a id="degree"></a>
 
-###  Degree
+### `<Optional>` Degree
 
-**● Degree**: *`number`*
+**● Degree**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:435](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L435)*
+*Defined in [api/types.ts:435](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L435)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[RotateExtension](_api_types_.rotateextension.md)*
 
-*Defined in [api/types.ts:436](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L436)*
+*Defined in [api/types.ts:436](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L436)*
 
 ___
 <a id="mode"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Mode**: *[RotateMode](../enums/_api_types_.rotatemode.md)*
 
-*Defined in [api/types.ts:434](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L434)*
+*Defined in [api/types.ts:434](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L434)*
 
 ___
 
