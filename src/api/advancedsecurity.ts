@@ -10,7 +10,7 @@ export class ONVIFAdvancedSecurity {
      * Returns the capabilities of the security configuraiton service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetServiceCapabilities')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetServiceCapabilities')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetServiceCapabilitiesResponse'))
                       
     }
@@ -30,7 +30,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static CreateRSAKeyPair() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:CreateRSAKeyPair')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:CreateRSAKeyPair')({}))
                         .map(mapResponseXmlToJson<any>('tas:CreateRSAKeyPairResponse'))
                       
     }
@@ -45,7 +45,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static UploadKeyPairInPKCS8() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:UploadKeyPairInPKCS8')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:UploadKeyPairInPKCS8')({}))
                         .map(mapResponseXmlToJson<any>('tas:UploadKeyPairInPKCS8Response'))
                       
     }
@@ -69,7 +69,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static UploadCertificateWithPrivateKeyInPKCS12() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:UploadCertificateWithPrivateKeyInPKCS12')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:UploadCertificateWithPrivateKeyInPKCS12')({}))
                         .map(mapResponseXmlToJson<any>('tas:UploadCertificateWithPrivateKeyInPKCS12Response'))
                       
     }
@@ -82,7 +82,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static GetKeyStatus() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetKeyStatus')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetKeyStatus')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetKeyStatusResponse'))
                       
     }
@@ -96,7 +96,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static GetPrivateKeyStatus() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetPrivateKeyStatus')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetPrivateKeyStatus')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetPrivateKeyStatusResponse'))
                       
     }
@@ -109,7 +109,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static GetAllKeys() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllKeys')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllKeys')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetAllKeysResponse'))
                       
     }
@@ -125,7 +125,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static DeleteKey() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteKey')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteKey')({}))
                         .map(mapResponseXmlToJson<any>('tas:DeleteKeyResponse'))
                       
     }
@@ -147,7 +147,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static CreatePKCS10CSR() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:CreatePKCS10CSR')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:CreatePKCS10CSR')({}))
                         .map(mapResponseXmlToJson<any>('tas:CreatePKCS10CSRResponse'))
                       
     }
@@ -172,7 +172,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static CreateSelfSignedCertificate() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:CreateSelfSignedCertificate')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:CreateSelfSignedCertificate')({}))
                         .map(mapResponseXmlToJson<any>('tas:CreateSelfSignedCertificateResponse'))
                       
     }
@@ -211,7 +211,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static UploadCertificate() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:UploadCertificate')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:UploadCertificate')({}))
                         .map(mapResponseXmlToJson<any>('tas:UploadCertificateResponse'))
                       
     }
@@ -224,7 +224,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static GetCertificate() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetCertificate')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetCertificate')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetCertificateResponse'))
                       
     }
@@ -237,7 +237,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static GetAllCertificates() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllCertificates')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllCertificates')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetAllCertificatesResponse'))
                       
     }
@@ -253,7 +253,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static DeleteCertificate() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteCertificate')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteCertificate')({}))
                         .map(mapResponseXmlToJson<any>('tas:DeleteCertificateResponse'))
                       
     }
@@ -272,7 +272,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static CreateCertificationPath() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:CreateCertificationPath')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:CreateCertificationPath')({}))
                         .map(mapResponseXmlToJson<any>('tas:CreateCertificationPathResponse'))
                       
     }
@@ -285,7 +285,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static GetCertificationPath() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetCertificationPath')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetCertificationPath')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetCertificationPathResponse'))
                       
     }
@@ -298,7 +298,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static GetAllCertificationPaths() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllCertificationPaths')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllCertificationPaths')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetAllCertificationPathsResponse'))
                       
     }
@@ -316,7 +316,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static DeleteCertificationPath() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteCertificationPath')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteCertificationPath')({}))
                         .map(mapResponseXmlToJson<any>('tas:DeleteCertificationPathResponse'))
                       
     }
@@ -327,7 +327,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static UploadPassphrase() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:UploadPassphrase')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:UploadPassphrase')({}))
                         .map(mapResponseXmlToJson<any>('tas:UploadPassphraseResponse'))
                       
     }
@@ -340,7 +340,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static GetAllPassphrases() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllPassphrases')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllPassphrases')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetAllPassphrasesResponse'))
                       
     }
@@ -351,7 +351,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static DeletePassphrase() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:DeletePassphrase')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:DeletePassphrase')({}))
                         .map(mapResponseXmlToJson<any>('tas:DeletePassphraseResponse'))
                       
     }
@@ -365,7 +365,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static UploadCRL() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:UploadCRL')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:UploadCRL')({}))
                         .map(mapResponseXmlToJson<any>('tas:UploadCRLResponse'))
                       
     }
@@ -377,7 +377,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static GetCRL() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetCRL')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetCRL')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetCRLResponse'))
                       
     }
@@ -389,7 +389,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static GetAllCRLs() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllCRLs')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllCRLs')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetAllCRLsResponse'))
                       
     }
@@ -403,7 +403,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static DeleteCRL() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteCRL')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteCRL')({}))
                         .map(mapResponseXmlToJson<any>('tas:DeleteCRLResponse'))
                       
     }
@@ -419,7 +419,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static CreateCertPathValidationPolicy() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:CreateCertPathValidationPolicy')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:CreateCertPathValidationPolicy')({}))
                         .map(mapResponseXmlToJson<any>('tas:CreateCertPathValidationPolicyResponse'))
                       
     }
@@ -431,7 +431,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static GetCertPathValidationPolicy() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetCertPathValidationPolicy')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetCertPathValidationPolicy')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetCertPathValidationPolicyResponse'))
                       
     }
@@ -443,7 +443,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static GetAllCertPathValidationPolicies() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllCertPathValidationPolicies')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllCertPathValidationPolicies')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetAllCertPathValidationPoliciesResponse'))
                       
     }
@@ -457,7 +457,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static DeleteCertPathValidationPolicy() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteCertPathValidationPolicy')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteCertPathValidationPolicy')({}))
                         .map(mapResponseXmlToJson<any>('tas:DeleteCertPathValidationPolicyResponse'))
                       
     }
@@ -482,7 +482,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static AddServerCertificateAssignment() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:AddServerCertificateAssignment')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:AddServerCertificateAssignment')({}))
                         .map(mapResponseXmlToJson<any>('tas:AddServerCertificateAssignmentResponse'))
                       
     }
@@ -494,7 +494,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static RemoveServerCertificateAssignment() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:RemoveServerCertificateAssignment')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:RemoveServerCertificateAssignment')({}))
                         .map(mapResponseXmlToJson<any>('tas:RemoveServerCertificateAssignmentResponse'))
                       
     }
@@ -520,7 +520,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static ReplaceServerCertificateAssignment() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:ReplaceServerCertificateAssignment')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:ReplaceServerCertificateAssignment')({}))
                         .map(mapResponseXmlToJson<any>('tas:ReplaceServerCertificateAssignmentResponse'))
                       
     }
@@ -535,7 +535,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static SetEnabledTLSVersions() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:SetEnabledTLSVersions')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:SetEnabledTLSVersions')({}))
                         .map(mapResponseXmlToJson<any>('tas:SetEnabledTLSVersionsResponse'))
                       
     }
@@ -546,7 +546,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static GetEnabledTLSVersions() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetEnabledTLSVersions')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetEnabledTLSVersions')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetEnabledTLSVersionsResponse'))
                       
     }
@@ -559,7 +559,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static GetAssignedServerCertificates() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAssignedServerCertificates')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAssignedServerCertificates')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetAssignedServerCertificatesResponse'))
                       
     }
@@ -573,7 +573,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static SetClientAuthenticationRequired() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:SetClientAuthenticationRequired')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:SetClientAuthenticationRequired')({}))
                         .map(mapResponseXmlToJson<any>('tas:SetClientAuthenticationRequiredResponse'))
                       
     }
@@ -584,7 +584,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static GetClientAuthenticationRequired() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetClientAuthenticationRequired')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetClientAuthenticationRequired')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetClientAuthenticationRequiredResponse'))
                       
     }
@@ -597,7 +597,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static AddCertPathValidationPolicyAssignment() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:AddCertPathValidationPolicyAssignment')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:AddCertPathValidationPolicyAssignment')({}))
                         .map(mapResponseXmlToJson<any>('tas:AddCertPathValidationPolicyAssignmentResponse'))
                       
     }
@@ -609,7 +609,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static RemoveCertPathValidationPolicyAssignment() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:RemoveCertPathValidationPolicyAssignment')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:RemoveCertPathValidationPolicyAssignment')({}))
                         .map(mapResponseXmlToJson<any>('tas:RemoveCertPathValidationPolicyAssignmentResponse'))
                       
     }
@@ -622,7 +622,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static ReplaceCertPathValidationPolicyAssignment() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:ReplaceCertPathValidationPolicyAssignment')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:ReplaceCertPathValidationPolicyAssignment')({}))
                         .map(mapResponseXmlToJson<any>('tas:ReplaceCertPathValidationPolicyAssignmentResponse'))
                       
     }
@@ -633,7 +633,7 @@ export class ONVIFAdvancedSecurity {
      *         
      */
     static GetAssignedCertPathValidationPolicies() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAssignedCertPathValidationPolicies')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAssignedCertPathValidationPolicies')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetAssignedCertPathValidationPoliciesResponse'))
                       
     }
@@ -644,7 +644,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static AddDot1XConfiguration() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:AddDot1XConfiguration')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:AddDot1XConfiguration')({}))
                         .map(mapResponseXmlToJson<any>('tas:AddDot1XConfigurationResponse'))
                       
     }
@@ -655,7 +655,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static GetAllDot1XConfigurations() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllDot1XConfigurations')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetAllDot1XConfigurations')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetAllDot1XConfigurationsResponse'))
                       
     }
@@ -666,7 +666,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static GetDot1XConfiguration() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetDot1XConfiguration')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetDot1XConfiguration')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetDot1XConfigurationResponse'))
                       
     }
@@ -677,7 +677,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static DeleteDot1XConfiguration() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteDot1XConfiguration')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteDot1XConfiguration')({}))
                         .map(mapResponseXmlToJson<any>('tas:DeleteDot1XConfigurationResponse'))
                       
     }
@@ -688,7 +688,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static SetNetworkInterfaceDot1XConfiguration() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:SetNetworkInterfaceDot1XConfiguration')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:SetNetworkInterfaceDot1XConfiguration')({}))
                         .map(mapResponseXmlToJson<any>('tas:SetNetworkInterfaceDot1XConfigurationResponse'))
                       
     }
@@ -699,7 +699,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static GetNetworkInterfaceDot1XConfiguration() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:GetNetworkInterfaceDot1XConfiguration')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetNetworkInterfaceDot1XConfiguration')({}))
                         .map(mapResponseXmlToJson<any>('tas:GetNetworkInterfaceDot1XConfigurationResponse'))
                       
     }
@@ -710,7 +710,7 @@ export class ONVIFAdvancedSecurity {
      *   
      */
     static DeleteNetworkInterfaceDot1XConfiguration() {
-        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteNetworkInterfaceDot1XConfiguration')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tas:DeleteNetworkInterfaceDot1XConfiguration')({}))
                         .map(mapResponseXmlToJson<any>('tas:DeleteNetworkInterfaceDot1XConfigurationResponse'))
                       
     }

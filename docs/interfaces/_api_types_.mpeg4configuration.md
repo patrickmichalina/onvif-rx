@@ -25,7 +25,7 @@ Determines the interval in which the I-Frames will be coded. An entry of 1 indic
 
 **● GovLength**: *`number`*
 
-*Defined in [api/types.ts:557](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L557)*
+*Defined in [api/types.ts:557](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L557)*
 
 ___
 <a id="mpeg4profile"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Mpeg4Profile**: *[Mpeg4Profile](../enums/_api_types_.mpeg4profile.md)*
 
-*Defined in [api/types.ts:558](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L558)*
+*Defined in [api/types.ts:558](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L558)*
 
 ___
 

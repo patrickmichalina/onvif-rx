@@ -22,7 +22,7 @@
 
 **● MetadataStreamFilter**: *[XPathExpression](../modules/_api_types_.md#xpathexpression)*
 
-*Defined in [api/types.ts:3476](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3476)*
+*Defined in [api/types.ts:3476](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3476)*
 
 ___
 

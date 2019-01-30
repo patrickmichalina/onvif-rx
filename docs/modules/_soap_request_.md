@@ -11,11 +11,11 @@
 
 ### Interfaces
 
-* [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)
+* [IResultStructure](../interfaces/_soap_request_.iresultstructure.md)
+* [IXmlContainer](../interfaces/_soap_request_.ixmlcontainer.md)
 
 ### Type aliases
 
-* [IOnvifNetworkResponse](_soap_request_.md#ionvifnetworkresponse)
 * [IOnvifResult](_soap_request_.md#ionvifresult)
 
 ### Functions
@@ -36,22 +36,13 @@
 
 ## Type aliases
 
-<a id="ionvifnetworkresponse"></a>
-
-###  IOnvifNetworkResponse
-
-**Ƭ IOnvifNetworkResponse**: *`Observable`<`IResult`<`T`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>*
-
-*Defined in [soap/request.ts:50](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L50)*
-
-___
 <a id="ionvifresult"></a>
 
 ###  IOnvifResult
 
-**Ƭ IOnvifResult**: *`IResult`<`Document`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>*
+**Ƭ IOnvifResult**: *`IResult`<[IXmlContainer](../interfaces/_soap_request_.ixmlcontainer.md), [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>*
 
-*Defined in [soap/request.ts:107](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L107)*
+*Defined in [soap/request.ts:13](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/request.ts#L13)*
 
 ___
 
@@ -61,9 +52,9 @@ ___
 
 ### `<Const>` createDeviceRequestBodyFromString
 
-▸ **createDeviceRequestBodyFromString**(key: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`Document`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **createDeviceRequestBodyFromString**(key: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IXmlContainer](../interfaces/_soap_request_.ixmlcontainer.md), [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [soap/request.ts:142](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L142)*
+*Defined in [soap/request.ts:159](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/request.ts#L159)*
 
 **Parameters:**
 
@@ -71,16 +62,16 @@ ___
 | ------ | ------ |
 | key | `string` |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`Document`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IXmlContainer](../interfaces/_soap_request_.ixmlcontainer.md), [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="createmediarequestbodyfromstring"></a>
 
 ### `<Const>` createMediaRequestBodyFromString
 
-▸ **createMediaRequestBodyFromString**(key: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`Document`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **createMediaRequestBodyFromString**(key: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IXmlContainer](../interfaces/_soap_request_.ixmlcontainer.md), [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [soap/request.ts:146](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L146)*
+*Defined in [soap/request.ts:163](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/request.ts#L163)*
 
 **Parameters:**
 
@@ -88,16 +79,16 @@ ___
 | ------ | ------ |
 | key | `string` |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`Document`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IXmlContainer](../interfaces/_soap_request_.ixmlcontainer.md), [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="createsimplerequestbodyfromstring"></a>
 
 ### `<Const>` createSimpleRequestBodyFromString
 
-▸ **createSimpleRequestBodyFromString**(key: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`Document`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **createSimpleRequestBodyFromString**(key: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IXmlContainer](../interfaces/_soap_request_.ixmlcontainer.md), [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [soap/request.ts:138](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L138)*
+*Defined in [soap/request.ts:155](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/request.ts#L155)*
 
 **Parameters:**
 
@@ -105,16 +96,16 @@ ___
 | ------ | ------ |
 | key | `string` |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`Document`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IXmlContainer](../interfaces/_soap_request_.ixmlcontainer.md), [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="createstandardrequestbody"></a>
 
 ### `<Const>` createStandardRequestBody
 
-▸ **createStandardRequestBody**(body: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`Document`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **createStandardRequestBody**(body: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IXmlContainer](../interfaces/_soap_request_.ixmlcontainer.md), [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [soap/request.ts:109](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L109)*
+*Defined in [soap/request.ts:126](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/request.ts#L126)*
 
 **Parameters:**
 
@@ -122,16 +113,16 @@ ___
 | ------ | ------ |
 | body | `string` |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`Document`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IXmlContainer](../interfaces/_soap_request_.ixmlcontainer.md), [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="createstandardrequestbodyfromstring"></a>
 
 ### `<Const>` createStandardRequestBodyFromString
 
-▸ **createStandardRequestBodyFromString**(body: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`Document`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **createStandardRequestBodyFromString**(body: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IXmlContainer](../interfaces/_soap_request_.ixmlcontainer.md), [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [soap/request.ts:134](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L134)*
+*Defined in [soap/request.ts:151](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/request.ts#L151)*
 
 **Parameters:**
 
@@ -139,7 +130,7 @@ ___
 | ------ | ------ |
 | body | `string` |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`Document`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IXmlContainer](../interfaces/_soap_request_.ixmlcontainer.md), [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="generaterequestelements"></a>
@@ -148,7 +139,7 @@ ___
 
 ▸ **generateRequestElements**(reqNode: *`string`*): `(Anonymous function)`
 
-*Defined in [soap/request.ts:151](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L151)*
+*Defined in [soap/request.ts:110](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/request.ts#L110)*
 
 **Parameters:**
 
@@ -165,7 +156,7 @@ ___
 
 ▸ **mapResponseObsToProperty**<`A`,`B`,`E`>(propSelectFn: *`function`*): `(Anonymous function)`
 
-*Defined in [soap/request.ts:102](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L102)*
+*Defined in [soap/request.ts:100](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/request.ts#L100)*
 
 **Type parameters:**
 
@@ -187,7 +178,7 @@ ___
 
 ▸ **mapResponseXmlToJson**<`T`>(node: *`string`*): `(Anonymous function)`
 
-*Defined in [soap/request.ts:79](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L79)*
+*Defined in [soap/request.ts:73](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/request.ts#L73)*
 
 **Type parameters:**
 
@@ -207,7 +198,7 @@ ___
 
 ▸ **nsstr**(): `string`[]
 
-*Defined in [soap/request.ts:68](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L68)*
+*Defined in [soap/request.ts:56](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/request.ts#L56)*
 
 **Returns:** `string`[]
 
@@ -218,7 +209,7 @@ ___
 
 ▸ **parseXml**(parser: *`DOMParser`*): `(Anonymous function)`
 
-*Defined in [soap/request.ts:52](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L52)*
+*Defined in [soap/request.ts:51](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/request.ts#L51)*
 
 **Parameters:**
 
@@ -235,7 +226,7 @@ ___
 
 ▸ **soapShell**(rawBody: *`string`*): `(Anonymous function)`
 
-*Defined in [soap/request.ts:70](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/soap/request.ts#L70)*
+*Defined in [soap/request.ts:64](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/soap/request.ts#L64)*
 
 **Parameters:**
 

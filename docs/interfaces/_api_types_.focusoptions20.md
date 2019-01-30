@@ -31,47 +31,47 @@
 
 <a id="autofocusmodes"></a>
 
-###  AutoFocusModes
+### `<Optional>` AutoFocusModes
 
 **● AutoFocusModes**: *[AutoFocusMode](../enums/_api_types_.autofocusmode.md)*
 
-*Defined in [api/types.ts:3072](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3072)*
+*Defined in [api/types.ts:3072](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3072)*
 
 ___
 <a id="defaultspeed"></a>
 
-###  DefaultSpeed
+### `<Optional>` DefaultSpeed
 
 **● DefaultSpeed**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:3073](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3073)*
+*Defined in [api/types.ts:3073](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3073)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[FocusOptions20Extension](_api_types_.focusoptions20extension.md)*
 
-*Defined in [api/types.ts:3076](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3076)*
+*Defined in [api/types.ts:3076](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3076)*
 
 ___
 <a id="farlimit"></a>
 
-###  FarLimit
+### `<Optional>` FarLimit
 
 **● FarLimit**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:3075](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3075)*
+*Defined in [api/types.ts:3075](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3075)*
 
 ___
 <a id="nearlimit"></a>
 
-###  NearLimit
+### `<Optional>` NearLimit
 
 **● NearLimit**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:3074](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3074)*
+*Defined in [api/types.ts:3074](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3074)*
 
 ___
 

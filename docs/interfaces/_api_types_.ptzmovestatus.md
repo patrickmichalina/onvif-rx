@@ -19,20 +19,20 @@
 
 <a id="pantilt"></a>
 
-###  PanTilt
+### `<Optional>` PanTilt
 
 **● PanTilt**: *[MoveStatus](../enums/_api_types_.movestatus.md)*
 
-*Defined in [api/types.ts:172](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L172)*
+*Defined in [api/types.ts:172](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L172)*
 
 ___
 <a id="zoom"></a>
 
-###  Zoom
+### `<Optional>` Zoom
 
 **● Zoom**: *[MoveStatus](../enums/_api_types_.movestatus.md)*
 
-*Defined in [api/types.ts:173](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L173)*
+*Defined in [api/types.ts:173](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L173)*
 
 ___
 

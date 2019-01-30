@@ -23,11 +23,11 @@ Identification of the recording that the recording job records to.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[RecordingJobStateInformationExtension](_api_types_.recordingjobstateinformationextension.md)*
 
-*Defined in [api/types.ts:3735](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3735)*
+*Defined in [api/types.ts:3735](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3735)*
 
 ___
 <a id="recordingtoken"></a>
@@ -36,16 +36,16 @@ ___
 
 **● RecordingToken**: *[RecordingReference](../modules/_api_types_.md#recordingreference)*
 
-*Defined in [api/types.ts:3732](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3732)*
+*Defined in [api/types.ts:3732](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3732)*
 
 ___
 <a id="sources"></a>
 
-###  Sources
+### `<Optional>` Sources
 
 **● Sources**: *[RecordingJobStateSource](_api_types_.recordingjobstatesource.md)*
 
-*Defined in [api/types.ts:3734](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3734)*
+*Defined in [api/types.ts:3734](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3734)*
 
 ___
 <a id="state"></a>
@@ -54,7 +54,7 @@ ___
 
 **● State**: *[RecordingJobState](../modules/_api_types_.md#recordingjobstate)*
 
-*Defined in [api/types.ts:3733](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3733)*
+*Defined in [api/types.ts:3733](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3733)*
 
 ___
 

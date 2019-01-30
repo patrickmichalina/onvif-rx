@@ -26,29 +26,29 @@
 
 <a id="elementitemdescription"></a>
 
-###  ElementItemDescription
+### `<Optional>` ElementItemDescription
 
 **● ElementItemDescription**: *`any`*
 
-*Defined in [api/types.ts:3161](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3161)*
+*Defined in [api/types.ts:3161](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3161)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[ItemListDescriptionExtension](_api_types_.itemlistdescriptionextension.md)*
 
-*Defined in [api/types.ts:3162](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3162)*
+*Defined in [api/types.ts:3162](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3162)*
 
 ___
 <a id="simpleitemdescription"></a>
 
-###  SimpleItemDescription
+### `<Optional>` SimpleItemDescription
 
 **● SimpleItemDescription**: *`any`*
 
-*Defined in [api/types.ts:3160](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3160)*
+*Defined in [api/types.ts:3160](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3160)*
 
 ___
 

@@ -24,11 +24,11 @@ Identifies the recording to which this job shall store the received data.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[RecordingJobConfigurationExtension](_api_types_.recordingjobconfigurationextension.md)*
 
-*Defined in [api/types.ts:3689](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3689)*
+*Defined in [api/types.ts:3689](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3689)*
 
 ___
 <a id="mode"></a>
@@ -37,7 +37,7 @@ ___
 
 **● Mode**: *[RecordingJobMode](../modules/_api_types_.md#recordingjobmode)*
 
-*Defined in [api/types.ts:3686](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3686)*
+*Defined in [api/types.ts:3686](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3686)*
 
 ___
 <a id="priority"></a>
@@ -46,7 +46,7 @@ ___
 
 **● Priority**: *`number`*
 
-*Defined in [api/types.ts:3687](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3687)*
+*Defined in [api/types.ts:3687](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3687)*
 
 ___
 <a id="recordingtoken"></a>
@@ -55,16 +55,16 @@ ___
 
 **● RecordingToken**: *[RecordingReference](../modules/_api_types_.md#recordingreference)*
 
-*Defined in [api/types.ts:3685](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3685)*
+*Defined in [api/types.ts:3685](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3685)*
 
 ___
 <a id="source"></a>
 
-###  Source
+### `<Optional>` Source
 
 **● Source**: *[RecordingJobSource](_api_types_.recordingjobsource.md)*
 
-*Defined in [api/types.ts:3688](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3688)*
+*Defined in [api/types.ts:3688](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3688)*
 
 ___
 

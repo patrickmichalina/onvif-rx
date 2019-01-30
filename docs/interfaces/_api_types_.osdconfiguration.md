@@ -25,20 +25,20 @@ Reference to the video source configuration.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[OSDConfigurationExtension](_api_types_.osdconfigurationextension.md)*
 
-*Defined in [api/types.ts:4110](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4110)*
+*Defined in [api/types.ts:4110](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4110)*
 
 ___
 <a id="image"></a>
 
-###  Image
+### `<Optional>` Image
 
 **● Image**: *[OSDImgConfiguration](_api_types_.osdimgconfiguration.md)*
 
-*Defined in [api/types.ts:4109](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4109)*
+*Defined in [api/types.ts:4109](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4109)*
 
 ___
 <a id="position"></a>
@@ -47,16 +47,16 @@ ___
 
 **● Position**: *[OSDPosConfiguration](_api_types_.osdposconfiguration.md)*
 
-*Defined in [api/types.ts:4107](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4107)*
+*Defined in [api/types.ts:4107](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4107)*
 
 ___
 <a id="textstring"></a>
 
-###  TextString
+### `<Optional>` TextString
 
 **● TextString**: *[OSDTextConfiguration](_api_types_.osdtextconfiguration.md)*
 
-*Defined in [api/types.ts:4108](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4108)*
+*Defined in [api/types.ts:4108](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4108)*
 
 ___
 <a id="type"></a>
@@ -65,7 +65,7 @@ ___
 
 **● Type**: *[OSDType](../enums/_api_types_.osdtype.md)*
 
-*Defined in [api/types.ts:4106](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4106)*
+*Defined in [api/types.ts:4106](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4106)*
 
 ___
 <a id="videosourceconfigurationtoken"></a>
@@ -74,7 +74,7 @@ ___
 
 **● VideoSourceConfigurationToken**: *[OSDReference](_api_types_.osdreference.md)*
 
-*Defined in [api/types.ts:4105](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4105)*
+*Defined in [api/types.ts:4105](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4105)*
 
 ___
 

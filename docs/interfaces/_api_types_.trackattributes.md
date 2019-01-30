@@ -24,29 +24,29 @@ The basic information about the track. Note that a track may represent a single 
 
 <a id="audioattributes"></a>
 
-###  AudioAttributes
+### `<Optional>` AudioAttributes
 
-**● AudioAttributes**: *[AudioAttributes](_api_types_.audioattributes.md)*
+**● AudioAttributes**: *[AudioAttributes](_api_types_.trackattributes.md#audioattributes)*
 
-*Defined in [api/types.ts:3599](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3599)*
+*Defined in [api/types.ts:3599](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3599)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[TrackAttributesExtension](_api_types_.trackattributesextension.md)*
 
-*Defined in [api/types.ts:3601](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3601)*
+*Defined in [api/types.ts:3601](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3601)*
 
 ___
 <a id="metadataattributes"></a>
 
-###  MetadataAttributes
+### `<Optional>` MetadataAttributes
 
-**● MetadataAttributes**: *[MetadataAttributes](_api_types_.metadataattributes.md)*
+**● MetadataAttributes**: *[MetadataAttributes](_api_types_.trackattributes.md#metadataattributes)*
 
-*Defined in [api/types.ts:3600](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3600)*
+*Defined in [api/types.ts:3600](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3600)*
 
 ___
 <a id="trackinformation"></a>
@@ -55,16 +55,16 @@ ___
 
 **● TrackInformation**: *[TrackInformation](_api_types_.trackinformation.md)*
 
-*Defined in [api/types.ts:3597](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3597)*
+*Defined in [api/types.ts:3597](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3597)*
 
 ___
 <a id="videoattributes"></a>
 
-###  VideoAttributes
+### `<Optional>` VideoAttributes
 
-**● VideoAttributes**: *[VideoAttributes](_api_types_.videoattributes.md)*
+**● VideoAttributes**: *[VideoAttributes](_api_types_.trackattributes.md#videoattributes)*
 
-*Defined in [api/types.ts:3598](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3598)*
+*Defined in [api/types.ts:3598](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3598)*
 
 ___
 

@@ -10,7 +10,7 @@ export class ONVIFDevice {
      * Returns information about services on the device.
      */
     static GetServices(IncludeCapability: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetServices')(['IncludeCapability'])(IncludeCapability))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetServices')({IncludeCapability}))
                         .map(mapResponseXmlToJson<any>('tds:GetServicesResponse'))
                       
     }
@@ -19,7 +19,7 @@ export class ONVIFDevice {
      * Returns the capabilities of the device service. The result is returned in a typed answer.
      */
     static GetServiceCapabilities() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetServiceCapabilities')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetServiceCapabilities')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetServiceCapabilitiesResponse'))
                       
     }
@@ -28,7 +28,7 @@ export class ONVIFDevice {
      * This operation gets basic device information from the device.
      */
     static GetDeviceInformation() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDeviceInformation')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDeviceInformation')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetDeviceInformationResponse'))
                       
     }
@@ -45,7 +45,7 @@ export class ONVIFDevice {
      *   
      */
     static SetSystemDateAndTime(DateTimeType: SetDateTimeType, DaylightSavings: boolean, TimeZone?: TimeZone, UTCDateTime?: DateTime) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetSystemDateAndTime')(['DateTimeType','DaylightSavings','TimeZone','UTCDateTime'])(DateTimeType,DaylightSavings,TimeZone,UTCDateTime))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetSystemDateAndTime')({DateTimeType,DaylightSavings,TimeZone,UTCDateTime}))
                         .map(mapResponseXmlToJson<any>('tds:SetSystemDateAndTimeResponse'))
                       
     }
@@ -57,7 +57,7 @@ export class ONVIFDevice {
      *   A device shall provide the UTCDateTime information.
      */
     static GetSystemDateAndTime() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemDateAndTime')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemDateAndTime')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetSystemDateAndTimeResponse'))
                       
     }
@@ -66,7 +66,7 @@ export class ONVIFDevice {
      * This operation reloads the parameters on the device to their factory default values.
      */
     static SetSystemFactoryDefault(FactoryDefault: FactoryDefaultType) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetSystemFactoryDefault')(['FactoryDefault'])(FactoryDefault))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetSystemFactoryDefault')({FactoryDefault}))
                         .map(mapResponseXmlToJson<any>('tds:SetSystemFactoryDefaultResponse'))
                       
     }
@@ -78,7 +78,7 @@ export class ONVIFDevice {
      *   outside the scope of this standard.
      */
     static UpgradeSystemFirmware(Firmware: AttachmentData) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:UpgradeSystemFirmware')(['Firmware'])(Firmware))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:UpgradeSystemFirmware')({Firmware}))
                         .map(mapResponseXmlToJson<any>('tds:UpgradeSystemFirmwareResponse'))
                       
     }
@@ -87,7 +87,7 @@ export class ONVIFDevice {
      * This operation reboots the device.
      */
     static SystemReboot() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SystemReboot')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SystemReboot')({}))
                         .map(mapResponseXmlToJson<any>('tds:SystemRebootResponse'))
                       
     }
@@ -100,7 +100,7 @@ export class ONVIFDevice {
      *   the GetSystemBackup command.
      */
     static RestoreSystem(BackupFiles: BackupFile) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:RestoreSystem')(['BackupFiles'])(BackupFiles))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:RestoreSystem')({BackupFiles}))
                         .map(mapResponseXmlToJson<any>('tds:RestoreSystemResponse'))
                       
     }
@@ -112,7 +112,7 @@ export class ONVIFDevice {
      *   The exact format of the backup configuration files is outside the scope of this standard.
      */
     static GetSystemBackup() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemBackup')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemBackup')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetSystemBackupResponse'))
                       
     }
@@ -121,7 +121,7 @@ export class ONVIFDevice {
      * This operation gets a system log from the device. The exact format of the system logs is outside the scope of this standard.
      */
     static GetSystemLog(LogType: SystemLogType) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemLog')(['LogType'])(LogType))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemLog')({LogType}))
                         .map(mapResponseXmlToJson<any>('tds:GetSystemLogResponse'))
                       
     }
@@ -130,7 +130,7 @@ export class ONVIFDevice {
      * This operation gets arbitary device diagnostics information from the device.
      */
     static GetSystemSupportInformation() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemSupportInformation')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemSupportInformation')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetSystemSupportInformationResponse'))
                       
     }
@@ -148,7 +148,7 @@ export class ONVIFDevice {
      *   the device shall return a non-empty scope list in the response.
      */
     static GetScopes() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetScopes')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetScopes')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetScopesResponse'))
                       
     }
@@ -161,7 +161,7 @@ export class ONVIFDevice {
      *   support configuration of discovery scope parameters through the SetScopes command.
      */
     static SetScopes(Scopes: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetScopes')(['Scopes'])(Scopes))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetScopes')({Scopes}))
                         .map(mapResponseXmlToJson<any>('tds:SetScopesResponse'))
                       
     }
@@ -172,7 +172,7 @@ export class ONVIFDevice {
      *   support addition of discovery scope parameters through the AddScopes command.
      */
     static AddScopes(ScopeItem: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:AddScopes')(['ScopeItem'])(ScopeItem))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:AddScopes')({ScopeItem}))
                         .map(mapResponseXmlToJson<any>('tds:AddScopesResponse'))
                       
     }
@@ -185,7 +185,7 @@ export class ONVIFDevice {
      *   Table
      */
     static RemoveScopes(ScopeItem: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:RemoveScopes')(['ScopeItem'])(ScopeItem))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:RemoveScopes')({ScopeItem}))
                         .map(mapResponseXmlToJson<any>('tds:RemoveScopesResponse'))
                       
     }
@@ -196,7 +196,7 @@ export class ONVIFDevice {
      *   setting through the GetDiscoveryMode command.
      */
     static GetDiscoveryMode() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDiscoveryMode')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDiscoveryMode')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetDiscoveryModeResponse'))
                       
     }
@@ -207,7 +207,7 @@ export class ONVIFDevice {
      *   the discovery mode setting through the SetDiscoveryMode command.
      */
     static SetDiscoveryMode(DiscoveryMode: DiscoveryMode) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetDiscoveryMode')(['DiscoveryMode'])(DiscoveryMode))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetDiscoveryMode')({DiscoveryMode}))
                         .map(mapResponseXmlToJson<any>('tds:SetDiscoveryModeResponse'))
                       
     }
@@ -219,7 +219,7 @@ export class ONVIFDevice {
      *   command.
      */
     static GetRemoteDiscoveryMode() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetRemoteDiscoveryMode')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetRemoteDiscoveryMode')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetRemoteDiscoveryModeResponse'))
                       
     }
@@ -231,7 +231,7 @@ export class ONVIFDevice {
      *   SetRemoteDiscoveryMode command.
      */
     static SetRemoteDiscoveryMode(RemoteDiscoveryMode: DiscoveryMode) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetRemoteDiscoveryMode')(['RemoteDiscoveryMode'])(RemoteDiscoveryMode))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetRemoteDiscoveryMode')({RemoteDiscoveryMode}))
                         .map(mapResponseXmlToJson<any>('tds:SetRemoteDiscoveryModeResponse'))
                       
     }
@@ -242,7 +242,7 @@ export class ONVIFDevice {
      *   DP address(es) through the GetDPAddresses command.
      */
     static GetDPAddresses() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDPAddresses')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDPAddresses')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetDPAddressesResponse'))
                       
     }
@@ -253,7 +253,7 @@ export class ONVIFDevice {
      *   remote DP address(es) through the SetDPAddresses command.
      */
     static SetDPAddresses(DPAddress?: NetworkHost) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetDPAddresses')(['DPAddress'])(DPAddress))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetDPAddresses')({DPAddress}))
                         .map(mapResponseXmlToJson<any>('tds:SetDPAddressesResponse'))
                       
     }
@@ -265,7 +265,7 @@ export class ONVIFDevice {
      *   endpoint reference.
      */
     static GetEndpointReference() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetEndpointReference')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetEndpointReference')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetEndpointReferenceResponse'))
                       
     }
@@ -277,7 +277,7 @@ export class ONVIFDevice {
      *   The algorithm to use for deriving the password is described in section 5.12.2.1 of the core specification.
      */
     static GetRemoteUser() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetRemoteUser')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetRemoteUser')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetRemoteUserResponse'))
                       
     }
@@ -291,7 +291,7 @@ export class ONVIFDevice {
      *   To remove the remote user SetRemoteUser should be called without the RemoteUser parameter.
      */
     static SetRemoteUser(RemoteUser?: RemoteUser) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetRemoteUser')(['RemoteUser'])(RemoteUser))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetRemoteUser')({RemoteUser}))
                         .map(mapResponseXmlToJson<any>('tds:SetRemoteUserResponse'))
                       
     }
@@ -302,7 +302,7 @@ export class ONVIFDevice {
      *   token through the GetUsers command.
      */
     static GetUsers() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetUsers')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetUsers')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetUsersResponse'))
                       
     }
@@ -317,7 +317,7 @@ export class ONVIFDevice {
      *   equivalent' of length 28 bytes, as described in section 3.1.2 of the ONVIF security white paper.
      */
     static CreateUsers(User: User) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:CreateUsers')(['User'])(User))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:CreateUsers')({User}))
                         .map(mapResponseXmlToJson<any>('tds:CreateUsersResponse'))
                       
     }
@@ -329,7 +329,7 @@ export class ONVIFDevice {
      *   fault message shall be returned and no users be deleted.
      */
     static DeleteUsers(Username: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteUsers')(['Username'])(Username))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteUsers')({Username}))
                         .map(mapResponseXmlToJson<any>('tds:DeleteUsersResponse'))
                       
     }
@@ -340,7 +340,7 @@ export class ONVIFDevice {
      *   Either all change requests are processed successfully or a fault message shall be returned and no change requests be processed.
      */
     static SetUser(User: User) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetUser')(['User'])(User))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetUser')({User}))
                         .map(mapResponseXmlToJson<any>('tds:SetUserResponse'))
                       
     }
@@ -352,7 +352,7 @@ export class ONVIFDevice {
      *   device shall provide a URL for WSDL and schema download through the GetWsdlUrl command.
      */
     static GetWsdlUrl() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetWsdlUrl')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetWsdlUrl')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetWsdlUrlResponse'))
                       
     }
@@ -362,7 +362,7 @@ export class ONVIFDevice {
      *    For capabilities of individual services refer to the GetServiceCapabilities methods.
      */
     static GetCapabilities(Category?: CapabilityCategory) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCapabilities')(['Category'])(Category))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCapabilities')({Category}))
                         .map(mapResponseXmlToJson<any>('tds:GetCapabilitiesResponse'))
                       
     }
@@ -372,7 +372,7 @@ export class ONVIFDevice {
      *   return its hostname configurations through the GetHostname command.
      */
     static GetHostname() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetHostname')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetHostname')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetHostnameResponse'))
                       
     }
@@ -385,7 +385,7 @@ export class ONVIFDevice {
      *   
      */
     static SetHostname(Name: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetHostname')(['Name'])(Name))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetHostname')({Name}))
                         .map(mapResponseXmlToJson<any>('tds:SetHostnameResponse'))
                       
     }
@@ -394,7 +394,7 @@ export class ONVIFDevice {
      * This operation controls whether the hostname is set manually or retrieved via DHCP.
      */
     static SetHostnameFromDHCP(FromDHCP: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetHostnameFromDHCP')(['FromDHCP'])(FromDHCP))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetHostnameFromDHCP')({FromDHCP}))
                         .map(mapResponseXmlToJson<any>('tds:SetHostnameFromDHCPResponse'))
                       
     }
@@ -404,7 +404,7 @@ export class ONVIFDevice {
      *   configurations through the GetDNS command.
      */
     static GetDNS() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDNS')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDNS')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetDNSResponse'))
                       
     }
@@ -414,7 +414,7 @@ export class ONVIFDevice {
      *   configurations through the SetDNS command.
      */
     static SetDNS(FromDHCP: boolean, SearchDomain?: string, DNSManual?: IPAddress) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetDNS')(['FromDHCP','SearchDomain','DNSManual'])(FromDHCP,SearchDomain,DNSManual))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetDNS')({FromDHCP,SearchDomain,DNSManual}))
                         .map(mapResponseXmlToJson<any>('tds:SetDNSResponse'))
                       
     }
@@ -424,7 +424,7 @@ export class ONVIFDevice {
      *   possible to get the NTP server settings through the GetNTP command.
      */
     static GetNTP() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetNTP')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetNTP')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetNTPResponse'))
                       
     }
@@ -438,7 +438,7 @@ export class ONVIFDevice {
      *   
      */
     static SetNTP(FromDHCP: boolean, NTPManual?: NetworkHost) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetNTP')(['FromDHCP','NTPManual'])(FromDHCP,NTPManual))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetNTP')({FromDHCP,NTPManual}))
                         .map(mapResponseXmlToJson<any>('tds:SetNTPResponse'))
                       
     }
@@ -449,7 +449,7 @@ export class ONVIFDevice {
      *   and TTL through the GetDynamicDNS command.
      */
     static GetDynamicDNS() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDynamicDNS')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDynamicDNS')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetDynamicDNSResponse'))
                       
     }
@@ -460,7 +460,7 @@ export class ONVIFDevice {
      *   and TTL through the SetDynamicDNS command.
      */
     static SetDynamicDNS(Type: DynamicDNSType, Name?: DNSName, TTL?: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetDynamicDNS')(['Type','Name','TTL'])(Type,Name,TTL))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetDynamicDNS')({Type,Name,TTL}))
                         .map(mapResponseXmlToJson<any>('tds:SetDynamicDNSResponse'))
                       
     }
@@ -471,7 +471,7 @@ export class ONVIFDevice {
      *   type through the GetNetworkInterfaces command.
      */
     static GetNetworkInterfaces() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetNetworkInterfaces')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetNetworkInterfaces')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetNetworkInterfacesResponse'))
                       
     }
@@ -485,7 +485,7 @@ export class ONVIFDevice {
      *   request.
      */
     static SetNetworkInterfaces(InterfaceToken: ReferenceToken, NetworkInterface: NetworkInterfaceSetConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetNetworkInterfaces')(['InterfaceToken','NetworkInterface'])(InterfaceToken,NetworkInterface))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetNetworkInterfaces')({InterfaceToken,NetworkInterface}))
                         .map(mapResponseXmlToJson<any>('tds:SetNetworkInterfacesResponse'))
                       
     }
@@ -495,7 +495,7 @@ export class ONVIFDevice {
      *   GetNetworkProtocols command returning configured network protocols.
      */
     static GetNetworkProtocols() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetNetworkProtocols')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetNetworkProtocols')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetNetworkProtocolsResponse'))
                       
     }
@@ -505,7 +505,7 @@ export class ONVIFDevice {
      *   configuration of defined network protocols through the SetNetworkProtocols command.
      */
     static SetNetworkProtocols(NetworkProtocols: NetworkProtocol) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetNetworkProtocols')(['NetworkProtocols'])(NetworkProtocols))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetNetworkProtocols')({NetworkProtocols}))
                         .map(mapResponseXmlToJson<any>('tds:SetNetworkProtocolsResponse'))
                       
     }
@@ -515,7 +515,7 @@ export class ONVIFDevice {
      *   GetNetworkDefaultGateway command returning configured default gateway address(es).
      */
     static GetNetworkDefaultGateway() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetNetworkDefaultGateway')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetNetworkDefaultGateway')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetNetworkDefaultGatewayResponse'))
                       
     }
@@ -525,7 +525,7 @@ export class ONVIFDevice {
      *   configuration of default gateway through the SetNetworkDefaultGateway command.
      */
     static SetNetworkDefaultGateway(IPv4Address?: IPv4Address, IPv6Address?: IPv6Address) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetNetworkDefaultGateway')(['IPv4Address','IPv6Address'])(IPv4Address,IPv6Address))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetNetworkDefaultGateway')({IPv4Address,IPv6Address}))
                         .map(mapResponseXmlToJson<any>('tds:SetNetworkDefaultGatewayResponse'))
                       
     }
@@ -537,7 +537,7 @@ export class ONVIFDevice {
      *   Devices supporting zero configuration on more than one interface shall use the extension to list the additional interface settings.
      */
     static GetZeroConfiguration() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetZeroConfiguration')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetZeroConfiguration')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetZeroConfigurationResponse'))
                       
     }
@@ -546,7 +546,7 @@ export class ONVIFDevice {
      * This operation sets the zero-configuration. Use GetCapalities to get if zero-zero-configuration is supported or not.
      */
     static SetZeroConfiguration(InterfaceToken: ReferenceToken, Enabled: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetZeroConfiguration')(['InterfaceToken','Enabled'])(InterfaceToken,Enabled))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetZeroConfiguration')({InterfaceToken,Enabled}))
                         .map(mapResponseXmlToJson<any>('tds:SetZeroConfigurationResponse'))
                       
     }
@@ -557,7 +557,7 @@ export class ONVIFDevice {
      *   device shall support the GetIPAddressFilter command.
      */
     static GetIPAddressFilter() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetIPAddressFilter')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetIPAddressFilter')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetIPAddressFilterResponse'))
                       
     }
@@ -569,7 +569,7 @@ export class ONVIFDevice {
      *   command.
      */
     static SetIPAddressFilter(IPAddressFilter: IPAddressFilter) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetIPAddressFilter')(['IPAddressFilter'])(IPAddressFilter))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetIPAddressFilter')({IPAddressFilter}))
                         .map(mapResponseXmlToJson<any>('tds:SetIPAddressFilterResponse'))
                       
     }
@@ -580,7 +580,7 @@ export class ONVIFDevice {
      *   shall support adding of IP filtering addresses through the AddIPAddressFilter command.
      */
     static AddIPAddressFilter(IPAddressFilter: IPAddressFilter) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:AddIPAddressFilter')(['IPAddressFilter'])(IPAddressFilter))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:AddIPAddressFilter')({IPAddressFilter}))
                         .map(mapResponseXmlToJson<any>('tds:AddIPAddressFilterResponse'))
                       
     }
@@ -591,7 +591,7 @@ export class ONVIFDevice {
      *   shall support deletion of IP filtering addresses through the RemoveIPAddressFilter command.
      */
     static RemoveIPAddressFilter(IPAddressFilter: IPAddressFilter) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:RemoveIPAddressFilter')(['IPAddressFilter'])(IPAddressFilter))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:RemoveIPAddressFilter')({IPAddressFilter}))
                         .map(mapResponseXmlToJson<any>('tds:RemoveIPAddressFilterResponse'))
                       
     }
@@ -607,7 +607,7 @@ export class ONVIFDevice {
      *   shall support this command.
      */
     static GetAccessPolicy() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetAccessPolicy')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetAccessPolicy')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetAccessPolicyResponse'))
                       
     }
@@ -618,7 +618,7 @@ export class ONVIFDevice {
      *   based on WS-Security authentication, then the device shall support this command.
      */
     static SetAccessPolicy(PolicyFile: BinaryData) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetAccessPolicy')(['PolicyFile'])(PolicyFile))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetAccessPolicy')({PolicyFile}))
                         .map(mapResponseXmlToJson<any>('tds:SetAccessPolicyResponse'))
                       
     }
@@ -635,7 +635,7 @@ export class ONVIFDevice {
      *   given).
      */
     static CreateCertificate(CertificateID?: string, Subject?: string, ValidNotBefore?: string, ValidNotAfter?: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:CreateCertificate')(['CertificateID','Subject','ValidNotBefore','ValidNotAfter'])(CertificateID,Subject,ValidNotBefore,ValidNotAfter))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:CreateCertificate')({CertificateID,Subject,ValidNotBefore,ValidNotAfter}))
                         .map(mapResponseXmlToJson<any>('tds:CreateCertificateResponse'))
                       
     }
@@ -650,7 +650,7 @@ export class ONVIFDevice {
      *   rules.
      */
     static GetCertificates() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificates')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificates')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetCertificatesResponse'))
                       
     }
@@ -661,7 +661,7 @@ export class ONVIFDevice {
      *   support this command.
      */
     static GetCertificatesStatus() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificatesStatus')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificatesStatus')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetCertificatesStatusResponse'))
                       
     }
@@ -672,7 +672,7 @@ export class ONVIFDevice {
      *   Typically only one device server certificate is allowed to be enabled at a time.
      */
     static SetCertificatesStatus(CertificateStatus?: CertificateStatus) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetCertificatesStatus')(['CertificateStatus'])(CertificateStatus))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetCertificatesStatus')({CertificateStatus}))
                         .map(mapResponseXmlToJson<any>('tds:SetCertificatesStatusResponse'))
                       
     }
@@ -685,7 +685,7 @@ export class ONVIFDevice {
      *   message shall be returned without deleting any certificate.
      */
     static DeleteCertificates(CertificateID: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteCertificates')(['CertificateID'])(CertificateID))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteCertificates')({CertificateID}))
                         .map(mapResponseXmlToJson<any>('tds:DeleteCertificatesResponse'))
                       
     }
@@ -701,7 +701,7 @@ export class ONVIFDevice {
      *   using client certificate shall support this command.
      */
     static GetPkcs10Request(CertificateID: string, Subject?: string, Attributes?: BinaryData) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetPkcs10Request')(['CertificateID','Subject','Attributes'])(CertificateID,Subject,Attributes))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetPkcs10Request')({CertificateID,Subject,Attributes}))
                         .map(mapResponseXmlToJson<any>('tds:GetPkcs10RequestResponse'))
                       
     }
@@ -723,7 +723,7 @@ export class ONVIFDevice {
      *   historical reasons NVTCertificate.
      */
     static LoadCertificates(NVTCertificate: Certificate) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCertificates')(['NVTCertificate'])(NVTCertificate))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCertificates')({NVTCertificate}))
                         .map(mapResponseXmlToJson<any>('tds:LoadCertificatesResponse'))
                       
     }
@@ -734,7 +734,7 @@ export class ONVIFDevice {
      *   support this command.
      */
     static GetClientCertificateMode() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetClientCertificateMode')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetClientCertificateMode')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetClientCertificateModeResponse'))
                       
     }
@@ -745,7 +745,7 @@ export class ONVIFDevice {
      *   support this command.
      */
     static SetClientCertificateMode(Enabled: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetClientCertificateMode')(['Enabled'])(Enabled))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetClientCertificateMode')({Enabled}))
                         .map(mapResponseXmlToJson<any>('tds:SetClientCertificateModeResponse'))
                       
     }
@@ -755,7 +755,7 @@ export class ONVIFDevice {
      *   This method has been depricated with version 2.0. Refer to the DeviceIO service.
      */
     static GetRelayOutputs() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetRelayOutputs')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetRelayOutputs')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetRelayOutputsResponse'))
                       
     }
@@ -765,7 +765,7 @@ export class ONVIFDevice {
      *   This method has been depricated with version 2.0. Refer to the DeviceIO service.
      */
     static SetRelayOutputSettings(RelayOutputToken: ReferenceToken, Properties: RelayOutputSettings) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetRelayOutputSettings')(['RelayOutputToken','Properties'])(RelayOutputToken,Properties))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetRelayOutputSettings')({RelayOutputToken,Properties}))
                         .map(mapResponseXmlToJson<any>('tds:SetRelayOutputSettingsResponse'))
                       
     }
@@ -775,7 +775,7 @@ export class ONVIFDevice {
      *   This method has been depricated with version 2.0. Refer to the DeviceIO service.
      */
     static SetRelayOutputState(RelayOutputToken: ReferenceToken, LogicalState: RelayLogicalState) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetRelayOutputState')(['RelayOutputToken','LogicalState'])(RelayOutputToken,LogicalState))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetRelayOutputState')({RelayOutputToken,LogicalState}))
                         .map(mapResponseXmlToJson<any>('tds:SetRelayOutputStateResponse'))
                       
     }
@@ -800,7 +800,7 @@ export class ONVIFDevice {
      *   A device that indicates auxiliary service capability shall support this command.
      */
     static SendAuxiliaryCommand(AuxiliaryCommand: AuxiliaryData) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SendAuxiliaryCommand')(['AuxiliaryCommand'])(AuxiliaryCommand))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SendAuxiliaryCommand')({AuxiliaryCommand}))
                         .map(mapResponseXmlToJson<any>('tds:SendAuxiliaryCommandResponse'))
                       
     }
@@ -814,7 +814,7 @@ export class ONVIFDevice {
      *   be encoded using ASN.1 [X.681], [X.682], [X.683] DER [X.690] encoding rules.
      */
     static GetCACertificates() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCACertificates')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCACertificates')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetCACertificatesResponse'))
                       
     }
@@ -835,7 +835,7 @@ export class ONVIFDevice {
      *   operation should make sure that the private key is sufficiently protected.
      */
     static LoadCertificateWithPrivateKey(CertificateWithPrivateKey: CertificateWithPrivateKey) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCertificateWithPrivateKey')(['CertificateWithPrivateKey'])(CertificateWithPrivateKey))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCertificateWithPrivateKey')({CertificateWithPrivateKey}))
                         .map(mapResponseXmlToJson<any>('tds:LoadCertificateWithPrivateKeyResponse'))
                       
     }
@@ -849,7 +849,7 @@ export class ONVIFDevice {
      *   A device that supports either TLS or IEEE 802.1X should support this command.
      */
     static GetCertificateInformation(CertificateID: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificateInformation')(['CertificateID'])(CertificateID))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificateInformation')({CertificateID}))
                         .map(mapResponseXmlToJson<any>('tds:GetCertificateInformationResponse'))
                       
     }
@@ -866,7 +866,7 @@ export class ONVIFDevice {
      *   message shall be returned without loading any CA certificate.
      */
     static LoadCACertificates(CACertificate: Certificate) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCACertificates')(['CACertificate'])(CACertificate))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCACertificates')({CACertificate}))
                         .map(mapResponseXmlToJson<any>('tds:LoadCACertificatesResponse'))
                       
     }
@@ -879,7 +879,7 @@ export class ONVIFDevice {
      *   conflict.
      */
     static CreateDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:CreateDot1XConfiguration')(['Dot1XConfiguration'])(Dot1XConfiguration))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:CreateDot1XConfiguration')({Dot1XConfiguration}))
                         .map(mapResponseXmlToJson<any>('tds:CreateDot1XConfigurationResponse'))
                       
     }
@@ -890,7 +890,7 @@ export class ONVIFDevice {
      *   the device. A device that support IEEE 802.1X shall support this command.
      */
     static SetDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetDot1XConfiguration')(['Dot1XConfiguration'])(Dot1XConfiguration))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetDot1XConfiguration')({Dot1XConfiguration}))
                         .map(mapResponseXmlToJson<any>('tds:SetDot1XConfigurationResponse'))
                       
     }
@@ -903,7 +903,7 @@ export class ONVIFDevice {
      *   not, the device shall not include the Password element in the response.
      */
     static GetDot1XConfiguration(Dot1XConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot1XConfiguration')(['Dot1XConfigurationToken'])(Dot1XConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot1XConfiguration')({Dot1XConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('tds:GetDot1XConfigurationResponse'))
                       
     }
@@ -917,7 +917,7 @@ export class ONVIFDevice {
      *   not, the device shall not include the Password element in the response.
      */
     static GetDot1XConfigurations() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot1XConfigurations')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot1XConfigurations')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetDot1XConfigurationsResponse'))
                       
     }
@@ -928,7 +928,7 @@ export class ONVIFDevice {
      *   A device that support IEEE 802.1X shall support this command.
      */
     static DeleteDot1XConfiguration(Dot1XConfigurationToken?: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteDot1XConfiguration')(['Dot1XConfigurationToken'])(Dot1XConfigurationToken))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteDot1XConfiguration')({Dot1XConfigurationToken}))
                         .map(mapResponseXmlToJson<any>('tds:DeleteDot1XConfigurationResponse'))
                       
     }
@@ -938,7 +938,7 @@ export class ONVIFDevice {
      *   this operation.
      */
     static GetDot11Capabilities() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot11Capabilities')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot11Capabilities')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetDot11CapabilitiesResponse'))
                       
     }
@@ -948,7 +948,7 @@ export class ONVIFDevice {
      *   command.
      */
     static GetDot11Status(InterfaceToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot11Status')(['InterfaceToken'])(InterfaceToken))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot11Status')({InterfaceToken}))
                         .map(mapResponseXmlToJson<any>('tds:GetDot11StatusResponse'))
                       
     }
@@ -958,7 +958,7 @@ export class ONVIFDevice {
      *   support this operation.
      */
     static ScanAvailableDot11Networks(InterfaceToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:ScanAvailableDot11Networks')(['InterfaceToken'])(InterfaceToken))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:ScanAvailableDot11Networks')({InterfaceToken}))
                         .map(mapResponseXmlToJson<any>('tds:ScanAvailableDot11NetworksResponse'))
                       
     }
@@ -978,7 +978,7 @@ export class ONVIFDevice {
      *   command.
      */
     static GetSystemUris() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemUris')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetSystemUris')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetSystemUrisResponse'))
                       
     }
@@ -1002,7 +1002,7 @@ export class ONVIFDevice {
      *   The value of the Content-Type header in the HTTP POST request shall be “application/octetstream”.
      */
     static StartFirmwareUpgrade() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:StartFirmwareUpgrade')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:StartFirmwareUpgrade')({}))
                         .map(mapResponseXmlToJson<any>('tds:StartFirmwareUpgradeResponse'))
                       
     }
@@ -1026,7 +1026,7 @@ export class ONVIFDevice {
      *   The value of the Content-Type header in the HTTP POST request shall be “application/octetstream”.
      */
     static StartSystemRestore() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:StartSystemRestore')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:StartSystemRestore')({}))
                         .map(mapResponseXmlToJson<any>('tds:StartSystemRestoreResponse'))
                       
     }
@@ -1037,7 +1037,7 @@ export class ONVIFDevice {
      *   
      */
     static GetStorageConfigurations() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetStorageConfigurations')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetStorageConfigurations')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetStorageConfigurationsResponse'))
                       
     }
@@ -1049,7 +1049,7 @@ export class ONVIFDevice {
      *   
      */
     static CreateStorageConfiguration(StorageConfiguration: any) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:CreateStorageConfiguration')(['StorageConfiguration'])(StorageConfiguration))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:CreateStorageConfiguration')({StorageConfiguration}))
                         .map(mapResponseXmlToJson<any>('tds:CreateStorageConfigurationResponse'))
                       
     }
@@ -1060,7 +1060,7 @@ export class ONVIFDevice {
      *   
      */
     static GetStorageConfiguration(Token: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetStorageConfiguration')(['Token'])(Token))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetStorageConfiguration')({Token}))
                         .map(mapResponseXmlToJson<any>('tds:GetStorageConfigurationResponse'))
                       
     }
@@ -1071,7 +1071,7 @@ export class ONVIFDevice {
      *   
      */
     static SetStorageConfiguration(StorageConfiguration: any) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetStorageConfiguration')(['StorageConfiguration'])(StorageConfiguration))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetStorageConfiguration')({StorageConfiguration}))
                         .map(mapResponseXmlToJson<any>('tds:SetStorageConfigurationResponse'))
                       
     }
@@ -1082,7 +1082,7 @@ export class ONVIFDevice {
      *   
      */
     static DeleteStorageConfiguration(Token: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteStorageConfiguration')(['Token'])(Token))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteStorageConfiguration')({Token}))
                         .map(mapResponseXmlToJson<any>('tds:DeleteStorageConfigurationResponse'))
                       
     }
@@ -1093,7 +1093,7 @@ export class ONVIFDevice {
      *   
      */
     static GetGeoLocation() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetGeoLocation')([])())
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetGeoLocation')({}))
                         .map(mapResponseXmlToJson<any>('tds:GetGeoLocationResponse'))
                       
     }
@@ -1104,7 +1104,7 @@ export class ONVIFDevice {
      *   
      */
     static SetGeoLocation(Location: LocationEntity) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetGeoLocation')(['Location'])(Location))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetGeoLocation')({Location}))
                         .map(mapResponseXmlToJson<any>('tds:SetGeoLocationResponse'))
                       
     }
@@ -1115,7 +1115,7 @@ export class ONVIFDevice {
      *   
      */
     static DeleteGeoLocation(Location: LocationEntity) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteGeoLocation')(['Location'])(Location))
+        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteGeoLocation')({Location}))
                         .map(mapResponseXmlToJson<any>('tds:DeleteGeoLocationResponse'))
                       
     }

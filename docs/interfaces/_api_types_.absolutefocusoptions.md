@@ -27,16 +27,16 @@
 
 **● Position**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2637](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2637)*
+*Defined in [api/types.ts:2637](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2637)*
 
 ___
 <a id="speed"></a>
 
-###  Speed
+### `<Optional>` Speed
 
 **● Speed**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2638](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2638)*
+*Defined in [api/types.ts:2638](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2638)*
 
 ___
 

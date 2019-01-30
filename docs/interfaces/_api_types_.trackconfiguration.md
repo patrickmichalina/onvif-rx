@@ -25,7 +25,7 @@ Type of the track. It shall be equal to the strings “Video”, “Audio” or 
 
 **● Description**: *[Description](_api_types_.trackconfiguration.md#description)*
 
-*Defined in [api/types.ts:3654](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3654)*
+*Defined in [api/types.ts:3654](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3654)*
 
 ___
 <a id="tracktype"></a>
@@ -34,7 +34,7 @@ ___
 
 **● TrackType**: *[TrackType](../enums/_api_types_.tracktype.md)*
 
-*Defined in [api/types.ts:3653](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3653)*
+*Defined in [api/types.ts:3653](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3653)*
 
 ___
 

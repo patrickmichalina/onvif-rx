@@ -22,20 +22,20 @@ Indicates state of this preset tour by Idle/Touring/Paused.
 
 <a id="currenttourspot"></a>
 
-###  CurrentTourSpot
+### `<Optional>` CurrentTourSpot
 
 **● CurrentTourSpot**: *[PTZPresetTourSpot](_api_types_.ptzpresettourspot.md)*
 
-*Defined in [api/types.ts:2345](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2345)*
+*Defined in [api/types.ts:2345](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2345)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[PTZPresetTourStatusExtension](_api_types_.ptzpresettourstatusextension.md)*
 
-*Defined in [api/types.ts:2346](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2346)*
+*Defined in [api/types.ts:2346](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2346)*
 
 ___
 <a id="state"></a>
@@ -44,7 +44,7 @@ ___
 
 **● State**: *[PTZPresetTourState](../enums/_api_types_.ptzpresettourstate.md)*
 
-*Defined in [api/types.ts:2344](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2344)*
+*Defined in [api/types.ts:2344](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2344)*
 
 ___
 

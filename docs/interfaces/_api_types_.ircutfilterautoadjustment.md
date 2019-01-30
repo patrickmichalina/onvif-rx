@@ -23,11 +23,11 @@ Specifies which boundaries to automatically toggle Ir cut filter following param
 
 <a id="boundaryoffset"></a>
 
-###  BoundaryOffset
+### `<Optional>` BoundaryOffset
 
-**● BoundaryOffset**: *`number`*
+**● BoundaryOffset**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2772](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2772)*
+*Defined in [api/types.ts:2772](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2772)*
 
 ___
 <a id="boundarytype"></a>
@@ -36,25 +36,25 @@ ___
 
 **● BoundaryType**: *`string`*
 
-*Defined in [api/types.ts:2771](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2771)*
+*Defined in [api/types.ts:2771](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2771)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[IrCutFilterAutoAdjustmentExtension](_api_types_.ircutfilterautoadjustmentextension.md)*
 
-*Defined in [api/types.ts:2774](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2774)*
+*Defined in [api/types.ts:2774](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2774)*
 
 ___
 <a id="responsetime"></a>
 
-###  ResponseTime
+### `<Optional>` ResponseTime
 
-**● ResponseTime**: *`string`*
+**● ResponseTime**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:2773](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2773)*
+*Defined in [api/types.ts:2773](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2773)*
 
 ___
 

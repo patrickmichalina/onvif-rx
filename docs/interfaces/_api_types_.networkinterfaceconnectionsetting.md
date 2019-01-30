@@ -26,7 +26,7 @@ Auto negotiation on/off.
 
 **● AutoNegotiation**: *`boolean`*
 
-*Defined in [api/types.ts:1071](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1071)*
+*Defined in [api/types.ts:1071](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1071)*
 
 ___
 <a id="duplex"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Duplex**: *[Duplex](../enums/_api_types_.duplex.md)*
 
-*Defined in [api/types.ts:1073](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1073)*
+*Defined in [api/types.ts:1073](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1073)*
 
 ___
 <a id="speed"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Speed**: *`number`*
 
-*Defined in [api/types.ts:1072](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1072)*
+*Defined in [api/types.ts:1072](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1072)*
 
 ___
 

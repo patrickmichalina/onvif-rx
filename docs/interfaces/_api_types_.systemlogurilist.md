@@ -18,11 +18,11 @@
 
 <a id="systemlog"></a>
 
-###  SystemLog
+### `<Optional>` SystemLog
 
 **● SystemLog**: *[SystemLogUri](_api_types_.systemloguri.md)*
 
-*Defined in [api/types.ts:1792](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1792)*
+*Defined in [api/types.ts:1792](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1792)*
 
 ___
 

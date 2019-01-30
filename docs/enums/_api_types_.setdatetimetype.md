@@ -21,7 +21,7 @@ Indicates that the date and time are set manually.
 
 **Manual**:  = "Manual"
 
-*Defined in [api/types.ts:4877](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4877)*
+*Defined in [api/types.ts:4877](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4877)*
 
 Indicates that the date and time are set manually.
 
@@ -32,7 +32,7 @@ ___
 
 **NTP**:  = "NTP"
 
-*Defined in [api/types.ts:4881](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4881)*
+*Defined in [api/types.ts:4881](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4881)*
 
 Indicates that the date and time are set through NTP
 

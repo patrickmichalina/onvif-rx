@@ -24,7 +24,7 @@
 
 **● Mode**: *[WhiteBalanceMode](../enums/_api_types_.whitebalancemode.md)*
 
-*Defined in [api/types.ts:2577](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2577)*
+*Defined in [api/types.ts:2577](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2577)*
 
 ___
 <a id="ybgain"></a>
@@ -33,7 +33,7 @@ ___
 
 **● YbGain**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2579](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2579)*
+*Defined in [api/types.ts:2579](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2579)*
 
 ___
 <a id="yrgain"></a>
@@ -42,7 +42,7 @@ ___
 
 **● YrGain**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2578](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2578)*
+*Defined in [api/types.ts:2578](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2578)*
 
 ___
 

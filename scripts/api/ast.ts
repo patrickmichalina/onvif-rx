@@ -40,8 +40,9 @@ generateTypes()
           properties: m.properties.map((a: any) => {
             return {
               isReadonly: true,
+              hasQuestionToken: a.minOccurs,
               name: `'${a.name}'` as string,
-              type: a.type as string
+              type: a.type as string,
             }
           })
         }
@@ -112,11 +113,13 @@ generateTypes()
             parameters: [{ name: 'config', type: 'IDeviceConfig', scope: Scope.Private }]
           }],
           methods: [...group.actions.map(action => {
+            const ps = action.input.parameters.map(a => a.name).join(',')
+
             return {
               isStatic: true,
               docs: [{ description: action.documentation.replace(/\*/g, '') }],
               name: action.actionName,
-              bodyText: `return createStandardRequestBodyFromString(generateRequestElements('${action.soapRequestNode}')([${action.input.parameters.map(a => `'${a.name}'`).join(',')}])(${action.input.parameters.map(a => a.name).join(',')}))
+              bodyText: `return createStandardRequestBodyFromString(generateRequestElements('${action.soapRequestNode}')({${ps}}))
                 .map(mapResponseXmlToJson<any>('${action.output.ref}'))
               `,
               parameters: action.input.parameters

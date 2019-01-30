@@ -22,29 +22,29 @@ It optionally contains a list of URLs that provide the location of schema files.
 
 <a id="analyticsmodulecontentschemalocation"></a>
 
-###  AnalyticsModuleContentSchemaLocation
+### `<Optional>` AnalyticsModuleContentSchemaLocation
 
-**● AnalyticsModuleContentSchemaLocation**: *`string`*
+**● AnalyticsModuleContentSchemaLocation**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:3255](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3255)*
+*Defined in [api/types.ts:3255](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3255)*
 
 ___
 <a id="analyticsmoduledescription"></a>
 
-###  AnalyticsModuleDescription
+### `<Optional>` AnalyticsModuleDescription
 
 **● AnalyticsModuleDescription**: *[ConfigDescription](_api_types_.configdescription.md)*
 
-*Defined in [api/types.ts:3256](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3256)*
+*Defined in [api/types.ts:3256](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3256)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[SupportedAnalyticsModulesExtension](_api_types_.supportedanalyticsmodulesextension.md)*
 
-*Defined in [api/types.ts:3257](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3257)*
+*Defined in [api/types.ts:3257](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3257)*
 
 ___
 

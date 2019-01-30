@@ -25,29 +25,29 @@
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[Dot11PSKSetExtension](_api_types_.dot11psksetextension.md)*
 
-*Defined in [api/types.ts:1377](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1377)*
+*Defined in [api/types.ts:1377](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1377)*
 
 ___
 <a id="key"></a>
 
-###  Key
+### `<Optional>` Key
 
 **● Key**: *[Dot11PSK](../modules/_api_types_.md#dot11psk)*
 
-*Defined in [api/types.ts:1375](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1375)*
+*Defined in [api/types.ts:1375](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1375)*
 
 ___
 <a id="passphrase"></a>
 
-###  Passphrase
+### `<Optional>` Passphrase
 
 **● Passphrase**: *[Dot11PSKPassphrase](../modules/_api_types_.md#dot11pskpassphrase)*
 
-*Defined in [api/types.ts:1376](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1376)*
+*Defined in [api/types.ts:1376](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1376)*
 
 ___
 

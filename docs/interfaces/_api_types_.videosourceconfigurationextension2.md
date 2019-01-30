@@ -21,20 +21,20 @@ Optional element describing the geometric lens distortion. Multiple instances fo
 
 <a id="lensdescription"></a>
 
-###  LensDescription
+### `<Optional>` LensDescription
 
-**● LensDescription**: *[LensDescription](_api_types_.lensdescription.md)*
+**● LensDescription**: *[LensDescription](_api_types_.videosourceconfigurationextension2.md#lensdescription)*
 
-*Defined in [api/types.ts:426](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L426)*
+*Defined in [api/types.ts:426](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L426)*
 
 ___
 <a id="sceneorientation"></a>
 
-###  SceneOrientation
+### `<Optional>` SceneOrientation
 
-**● SceneOrientation**: *[SceneOrientation](_api_types_.sceneorientation.md)*
+**● SceneOrientation**: *[SceneOrientation](_api_types_.videosourceconfigurationextension2.md#sceneorientation)*
 
-*Defined in [api/types.ts:427](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L427)*
+*Defined in [api/types.ts:427](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L427)*
 
 ___
 

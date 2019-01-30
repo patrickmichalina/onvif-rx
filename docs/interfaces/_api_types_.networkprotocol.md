@@ -27,16 +27,16 @@ Network protocol type string.
 
 **● Enabled**: *`boolean`*
 
-*Defined in [api/types.ts:1135](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1135)*
+*Defined in [api/types.ts:1135](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1135)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[NetworkProtocolExtension](_api_types_.networkprotocolextension.md)*
 
-*Defined in [api/types.ts:1137](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1137)*
+*Defined in [api/types.ts:1137](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1137)*
 
 ___
 <a id="name"></a>
@@ -45,7 +45,7 @@ ___
 
 **● Name**: *[NetworkProtocolType](../enums/_api_types_.networkprotocoltype.md)*
 
-*Defined in [api/types.ts:1134](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1134)*
+*Defined in [api/types.ts:1134](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1134)*
 
 ___
 <a id="port"></a>
@@ -54,7 +54,7 @@ ___
 
 **● Port**: *`number`*
 
-*Defined in [api/types.ts:1136](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1136)*
+*Defined in [api/types.ts:1136](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1136)*
 
 ___
 

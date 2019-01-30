@@ -22,29 +22,29 @@ Supported options for EFlip feature.
 
 <a id="eflip"></a>
 
-###  EFlip
+### `<Optional>` EFlip
 
 **● EFlip**: *[EFlipOptions](_api_types_.eflipoptions.md)*
 
-*Defined in [api/types.ts:2170](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2170)*
+*Defined in [api/types.ts:2170](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2170)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[PTControlDirectionOptionsExtension](_api_types_.ptcontroldirectionoptionsextension.md)*
 
-*Defined in [api/types.ts:2172](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2172)*
+*Defined in [api/types.ts:2172](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2172)*
 
 ___
 <a id="reverse"></a>
 
-###  Reverse
+### `<Optional>` Reverse
 
 **● Reverse**: *[ReverseOptions](_api_types_.reverseoptions.md)*
 
-*Defined in [api/types.ts:2171](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2171)*
+*Defined in [api/types.ts:2171](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2171)*
 
 ___
 

@@ -23,29 +23,29 @@ Dynamic DNS type.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[DynamicDNSInformationExtension](_api_types_.dynamicdnsinformationextension.md)*
 
-*Defined in [api/types.ts:1243](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1243)*
+*Defined in [api/types.ts:1243](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1243)*
 
 ___
 <a id="name"></a>
 
-###  Name
+### `<Optional>` Name
 
 **● Name**: *[DNSName](../modules/_api_types_.md#dnsname)*
 
-*Defined in [api/types.ts:1241](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1241)*
+*Defined in [api/types.ts:1241](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1241)*
 
 ___
 <a id="ttl"></a>
 
-###  TTL
+### `<Optional>` TTL
 
-**● TTL**: *`string`*
+**● TTL**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1242](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1242)*
+*Defined in [api/types.ts:1242](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1242)*
 
 ___
 <a id="type"></a>
@@ -54,7 +54,7 @@ ___
 
 **● Type**: *[DynamicDNSType](../enums/_api_types_.dynamicdnstype.md)*
 
-*Defined in [api/types.ts:1240](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1240)*
+*Defined in [api/types.ts:1240](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1240)*
 
 ___
 

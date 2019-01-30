@@ -22,20 +22,20 @@ Parameter to enable/disable or automatic ToneCompensation feature. Its options s
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[ToneCompensationExtension](_api_types_.tonecompensationextension.md)*
 
-*Defined in [api/types.ts:2823](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2823)*
+*Defined in [api/types.ts:2823](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2823)*
 
 ___
 <a id="level"></a>
 
-###  Level
+### `<Optional>` Level
 
-**● Level**: *`number`*
+**● Level**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2822](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2822)*
+*Defined in [api/types.ts:2822](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2822)*
 
 ___
 <a id="mode"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Mode**: *`string`*
 
-*Defined in [api/types.ts:2821](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2821)*
+*Defined in [api/types.ts:2821](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2821)*
 
 ___
 

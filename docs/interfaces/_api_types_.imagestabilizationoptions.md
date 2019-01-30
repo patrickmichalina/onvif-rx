@@ -22,20 +22,20 @@ Supported options of Image Stabilization mode parameter.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[ImageStabilizationOptionsExtension](_api_types_.imagestabilizationoptionsextension.md)*
 
-*Defined in [api/types.ts:2911](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2911)*
+*Defined in [api/types.ts:2911](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2911)*
 
 ___
 <a id="level"></a>
 
-###  Level
+### `<Optional>` Level
 
 **● Level**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2910](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2910)*
+*Defined in [api/types.ts:2910](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2910)*
 
 ___
 <a id="mode"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Mode**: *[ImageStabilizationMode](../enums/_api_types_.imagestabilizationmode.md)*
 
-*Defined in [api/types.ts:2909](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2909)*
+*Defined in [api/types.ts:2909](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2909)*
 
 ___
 

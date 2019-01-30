@@ -24,7 +24,7 @@
 
 **● body**: *`string`*
 
-*Defined in [config/interfaces.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L5)*
+*Defined in [config/interfaces.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/config/interfaces.ts#L5)*
 
 ___
 <a id="status"></a>
@@ -33,7 +33,7 @@ ___
 
 **● status**: *`number`*
 
-*Defined in [config/interfaces.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L7)*
+*Defined in [config/interfaces.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/config/interfaces.ts#L7)*
 
 ___
 <a id="statusmessage"></a>
@@ -42,7 +42,7 @@ ___
 
 **● statusMessage**: *`string`*
 
-*Defined in [config/interfaces.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/config/interfaces.ts#L6)*
+*Defined in [config/interfaces.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/config/interfaces.ts#L6)*
 
 ___
 

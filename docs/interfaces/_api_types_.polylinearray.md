@@ -21,11 +21,11 @@ Contains array of Polyline
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[PolylineArrayExtension](_api_types_.polylinearrayextension.md)*
 
-*Defined in [api/types.ts:3278](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3278)*
+*Defined in [api/types.ts:3278](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3278)*
 
 ___
 <a id="segment"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Segment**: *[Polyline](_api_types_.polyline.md)*
 
-*Defined in [api/types.ts:3277](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3277)*
+*Defined in [api/types.ts:3277](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3277)*
 
 ___
 

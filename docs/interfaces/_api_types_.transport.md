@@ -25,16 +25,16 @@ Defines the network protocol for streaming, either UDP=RTP/UDP, RTSP=RTP/RTSP/TC
 
 **● Protocol**: *[TransportProtocol](../enums/_api_types_.transportprotocol.md)*
 
-*Defined in [api/types.ts:1002](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1002)*
+*Defined in [api/types.ts:1002](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1002)*
 
 ___
 <a id="tunnel"></a>
 
-###  Tunnel
+### `<Optional>` Tunnel
 
 **● Tunnel**: *[Transport](_api_types_.transport.md)*
 
-*Defined in [api/types.ts:1003](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1003)*
+*Defined in [api/types.ts:1003](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1003)*
 
 ___
 

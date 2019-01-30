@@ -22,20 +22,20 @@ identifier of an existing Storage Configuration.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[StorageReferencePathExtension](_api_types_.storagereferencepathextension.md)*
 
-*Defined in [api/types.ts:4171](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4171)*
+*Defined in [api/types.ts:4171](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4171)*
 
 ___
 <a id="relativepath"></a>
 
-###  RelativePath
+### `<Optional>` RelativePath
 
-**● RelativePath**: *`string`*
+**● RelativePath**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:4170](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4170)*
+*Defined in [api/types.ts:4170](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4170)*
 
 ___
 <a id="storagetoken"></a>
@@ -44,7 +44,7 @@ ___
 
 **● StorageToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:4169](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4169)*
+*Defined in [api/types.ts:4169](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4169)*
 
 ___
 

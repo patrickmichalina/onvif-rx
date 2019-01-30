@@ -25,7 +25,7 @@ Describe the option of the color supported. Either list each color or define the
 
 **● ColorList**: *[Color](_api_types_.color.md)*
 
-*Defined in [api/types.ts:4049](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4049)*
+*Defined in [api/types.ts:4049](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4049)*
 
 ___
 <a id="colorspacerange"></a>
@@ -34,7 +34,7 @@ ___
 
 **● ColorspaceRange**: *[ColorspaceRange](_api_types_.colorspacerange.md)*
 
-*Defined in [api/types.ts:4050](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4050)*
+*Defined in [api/types.ts:4050](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4050)*
 
 ___
 

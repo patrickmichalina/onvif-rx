@@ -22,20 +22,20 @@ This type contains the Audio and Video coding capabilities of a display service.
 
 <a id="audiodecodingcapabilities"></a>
 
-###  AudioDecodingCapabilities
+### `<Optional>` AudioDecodingCapabilities
 
 **● AudioDecodingCapabilities**: *[AudioDecoderConfigurationOptions](_api_types_.audiodecoderconfigurationoptions.md)*
 
-*Defined in [api/types.ts:3354](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3354)*
+*Defined in [api/types.ts:3354](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3354)*
 
 ___
 <a id="audioencodingcapabilities"></a>
 
-###  AudioEncodingCapabilities
+### `<Optional>` AudioEncodingCapabilities
 
 **● AudioEncodingCapabilities**: *[AudioEncoderConfigurationOptions](_api_types_.audioencoderconfigurationoptions.md)*
 
-*Defined in [api/types.ts:3353](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3353)*
+*Defined in [api/types.ts:3353](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3353)*
 
 ___
 <a id="videodecodingcapabilities"></a>
@@ -44,7 +44,7 @@ ___
 
 **● VideoDecodingCapabilities**: *[VideoDecoderConfigurationOptions](_api_types_.videodecoderconfigurationoptions.md)*
 
-*Defined in [api/types.ts:3355](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3355)*
+*Defined in [api/types.ts:3355](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3355)*
 
 ___
 

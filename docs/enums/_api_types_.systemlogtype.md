@@ -21,7 +21,7 @@ Enumeration describing the available system log modes.
 
 **Access**:  = "Access"
 
-*Defined in [api/types.ts:4853](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4853)*
+*Defined in [api/types.ts:4853](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4853)*
 
 Indicates that a access log is requested.
 
@@ -32,7 +32,7 @@ ___
 
 **System**:  = "System"
 
-*Defined in [api/types.ts:4849](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4849)*
+*Defined in [api/types.ts:4849](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4849)*
 
 Indicates that a system log is requested.
 

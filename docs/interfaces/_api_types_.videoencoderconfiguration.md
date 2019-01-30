@@ -31,25 +31,25 @@ Used video codec, either Jpeg, H.264 or Mpeg4
 
 **● Encoding**: *[VideoEncoding](../enums/_api_types_.videoencoding.md)*
 
-*Defined in [api/types.ts:526](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L526)*
+*Defined in [api/types.ts:526](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L526)*
 
 ___
 <a id="h264"></a>
 
-###  H264
+### `<Optional>` H264
 
 **● H264**: *[H264Configuration](_api_types_.h264configuration.md)*
 
-*Defined in [api/types.ts:531](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L531)*
+*Defined in [api/types.ts:531](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L531)*
 
 ___
 <a id="mpeg4"></a>
 
-###  MPEG4
+### `<Optional>` MPEG4
 
 **● MPEG4**: *[Mpeg4Configuration](_api_types_.mpeg4configuration.md)*
 
-*Defined in [api/types.ts:530](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L530)*
+*Defined in [api/types.ts:530](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L530)*
 
 ___
 <a id="multicast"></a>
@@ -58,7 +58,7 @@ ___
 
 **● Multicast**: *[MulticastConfiguration](_api_types_.multicastconfiguration.md)*
 
-*Defined in [api/types.ts:532](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L532)*
+*Defined in [api/types.ts:532](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L532)*
 
 ___
 <a id="quality"></a>
@@ -67,16 +67,16 @@ ___
 
 **● Quality**: *`number`*
 
-*Defined in [api/types.ts:528](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L528)*
+*Defined in [api/types.ts:528](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L528)*
 
 ___
 <a id="ratecontrol"></a>
 
-###  RateControl
+### `<Optional>` RateControl
 
 **● RateControl**: *[VideoRateControl](_api_types_.videoratecontrol.md)*
 
-*Defined in [api/types.ts:529](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L529)*
+*Defined in [api/types.ts:529](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L529)*
 
 ___
 <a id="resolution"></a>
@@ -85,7 +85,7 @@ ___
 
 **● Resolution**: *[VideoResolution](_api_types_.videoresolution.md)*
 
-*Defined in [api/types.ts:527](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L527)*
+*Defined in [api/types.ts:527](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L527)*
 
 ___
 <a id="sessiontimeout"></a>
@@ -94,7 +94,7 @@ ___
 
 **● SessionTimeout**: *`string`*
 
-*Defined in [api/types.ts:533](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L533)*
+*Defined in [api/types.ts:533](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L533)*
 
 ___
 

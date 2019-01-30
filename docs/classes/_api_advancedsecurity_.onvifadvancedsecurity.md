@@ -125,7 +125,7 @@
 
 ⊕ **new ONVIFAdvancedSecurity**(config: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*): [ONVIFAdvancedSecurity](_api_advancedsecurity_.onvifadvancedsecurity.md)
 
-*Defined in [api/advancedsecurity.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L5)*
+*Defined in [api/advancedsecurity.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L5)*
 
 **Parameters:**
 
@@ -145,7 +145,7 @@ ___
 
 **● config**: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*
 
-*Defined in [api/advancedsecurity.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L6)*
+*Defined in [api/advancedsecurity.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L6)*
 
 ___
 
@@ -155,9 +155,9 @@ ___
 
 ###  AddCertPathValidationPolicyAssignment
 
-▸ **AddCertPathValidationPolicyAssignment**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **AddCertPathValidationPolicyAssignment**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1234](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1234)*
+*Defined in [api/advancedsecurity.ts:1234](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1234)*
 
 ```
       This operation assigns a certification path validation policy to the TLS server on the device. The TLS server shall enforce the policy when authenticating TLS clients and consider a client authentic if and only if the algorithm returns valid.
@@ -165,44 +165,44 @@ ___
       A TLS server may use different certification path validation policies to authenticate clients. Therefore more than one certification path validation policy may be assigned to the TLS server. If the maximum number of certification path validation policies that may be assigned to the  TLS server simultaneously is reached, the device shall produce a MaximumNumberOfTLSCertPathValidationPoliciesReached fault and shall not assign the requested certification path validation policy to the TLS server.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="adddot1xconfiguration"></a>
 
 ###  AddDot1XConfiguration
 
-▸ **AddDot1XConfiguration**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **AddDot1XConfiguration**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1273](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1273)*
+*Defined in [api/advancedsecurity.ts:1273](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1273)*
 
 (to be written)
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="addservercertificateassignment"></a>
 
 ###  AddServerCertificateAssignment
 
-▸ **AddServerCertificateAssignment**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **AddServerCertificateAssignment**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1135](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1135)*
+*Defined in [api/advancedsecurity.ts:1135](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1135)*
 
 This operation assigns a key pair and certificate along with a certification path (certificate chain) to the TLS server on the device. The TLS server shall use this information for key exchange during the TLS handshake, particularly for constructing server certificate messages as specified in RFC 4346 and RFC 2246.
 
 Certification paths are identified by their certification path IDs in the keystore. The first certificate in the certification path must be the TLS server certificate. Since each certificate has exactly one associated key pair, a reference to the key pair that is associated with the server certificate is not supplied explicitly. Devices shall obtain the private key or results of operations under the private key by suitable internal interaction with the keystore. If a device chooses to perform a TLS key exchange based on the supplied certification path, it shall use the key pair that is associated with the server certificate for key exchange and transmit the certification path to TLS clients as-is, i.e., the device shall not check conformance of the certification path to RFC 4346 norRFC 2246. In order to use the server certificate during the TLS handshake, the corresponding private key is required. Therefore, if the key pair that is associated with the server certificate, i.e., the first certificate in the certification path, does not have an associated private key, the NoPrivateKey fault is produced and the certification path is not associated to the TLS server. A TLS server may present different certification paths to different clients during the TLS handshake instead of presenting the same certification path to all clients. Therefore more than one certification path may be assigned to the TLS server. If the maximum number of certification paths that may be assigned to the TLS server simultaneously is reached, the device shall generate a MaximumNumberOfCertificationPathsReached fault and the requested certification path shall not be assigned to the TLS server.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="createcertpathvalidationpolicy"></a>
 
 ###  CreateCertPathValidationPolicy
 
-▸ **CreateCertPathValidationPolicy**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **CreateCertPathValidationPolicy**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1080](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1080)*
+*Defined in [api/advancedsecurity.ts:1080](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1080)*
 
 ```
       This operation creates a certification path validation policy.
@@ -213,31 +213,31 @@ ___
       If the device cannot process the supplied certification path validation parameters, the device shall produce a CertPathValidationParameters fault and shall not create a certification path validation policy.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="createcertificationpath"></a>
 
 ###  CreateCertificationPath
 
-▸ **CreateCertificationPath**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **CreateCertificationPath**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:955](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L955)*
+*Defined in [api/advancedsecurity.ts:955](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L955)*
 
 This operation creates a sequence of certificates that may be used, e.g., for certification path validation or for TLS server authentication. Certification paths are uniquely identified using certification path IDs. Certificates are uniquely identified using certificate IDs. A certification path contains a sequence of certificate IDs. If there is a certificate ID in the sequence of supplied certificate IDs for which no certificate exists in the device’s keystore, the corresponding fault shall be produced and no certification path shall be created.
 
 The signature of each certificate in the certification path except for the last one must be verifiable with the public key contained in the next certificate in the path. If there is a certificate ID in the request other than the last ID for which the corresponding certificate cannot be verified with the public key in the certificate identified by the next certificate ID, an InvalidCertificateChain fault shall be produced and no certification path shall be created.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="createpkcs10csr"></a>
 
 ###  CreatePKCS10CSR
 
-▸ **CreatePKCS10CSR**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **CreatePKCS10CSR**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:842](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L842)*
+*Defined in [api/advancedsecurity.ts:842](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L842)*
 
 This operation generates a DER-encoded PKCS#10 v1.7 certification request (sometimes also called certificate signing request or CSR) as specified in RFC 2986 for a public key on the device. The key pair that contains the public key for which a certification request shall be produced is specified by its key ID. If no key is stored under the requested KeyID or the key specified by the requested KeyID is not an asymmetric key pair, an invalid key ID fault shall be produced and no CSR shall be generated.
 
@@ -245,29 +245,29 @@ A device that supports this command shall as minimum support the sha-1WithRSAEnc
 
 If the public key identified by the requested Key ID is an invalid input to the specified signature algorithm, a KeySignatureAlgorithmMismatch fault shall be produced and no CSR shall be generated. If the key pair does not have status ok, a device shall produce an InvalidKeyStatus fault and no CSR shall be generated.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="creatersakeypair"></a>
 
 ###  CreateRSAKeyPair
 
-▸ **CreateRSAKeyPair**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **CreateRSAKeyPair**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:739](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L739)*
+*Defined in [api/advancedsecurity.ts:739](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L739)*
 
 This operation triggers the asynchronous generation of an RSA key pair of a particular key length (specified as the number of bits) as specified in \[RFC 3447\], with a suitable key generation mechanism on the device. Keys, especially RSA key pairs, are uniquely identified using key IDs. If the device does not have not enough storage capacity for storing the key pair to be created, the maximum number of keys reached fault shall be produced and no key pair shall be generated. Otherwise, the operation generates a keyID for the new key and associates the generating status to it. Immediately after key generation has started, the device shall return the keyID to the client and continue to generate the key pair. The client may query the device with the GetKeyStatus operation whether the generation has finished. The client may also subscribe to Key Status events to be notified about key status changes. The device also returns a best-effort estimate of how much time it requires to create the key pair. A client may use this information as an indication how long to wait before querying the device whether key generation is completed. After the key has been successfully created, the device shall assign it the ok status. If the key generation fails, the device shall assign the key the corrupt status.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="createselfsignedcertificate"></a>
 
 ###  CreateSelfSignedCertificate
 
-▸ **CreateSelfSignedCertificate**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **CreateSelfSignedCertificate**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:865](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L865)*
+*Defined in [api/advancedsecurity.ts:865](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L865)*
 
 This operation generates for a public key on the device a self-signed X.509 certificate that complies to RFC 5280. The X509Version parameter specifies the version of X.509 that the generated certificate shall comply to. A device that supports this command shall support the generation of X.509v3 certificates as specified in RFC 5280 and may additionally be able to handle other X.509 certificate formats as indicated by the X.509Versions capability. The key pair that contains the public key for which a self-signed certificate shall be produced is specified by its key pair ID. The subject parameter describes the entity that the public key belongs to. If the key pair does not have status ok, a device shall produce an InvalidKeyStatus fault and no certificate shall be generated.
 
@@ -275,16 +275,16 @@ The signature algorithm parameter determines which signature algorithm shall be 
 
 Certificates are uniquely identified using certificate IDs. If the command was successful, the device generates a new ID for the generated certificate and returns this ID. If the device does not have not enough storage capacity for storing the certificate to be created, the maximum number of certificates reached fault shall be produced and no certificate shall be generated.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="deletecrl"></a>
 
 ###  DeleteCRL
 
-▸ **DeleteCRL**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **DeleteCRL**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1066](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1066)*
+*Defined in [api/advancedsecurity.ts:1066](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1066)*
 
 ```
       This operation deletes a certificate revocation list (CRL) from the keystore on the device.
@@ -293,16 +293,16 @@ ___
       After a CRL has been successfully deleted, a device may assign its former ID to other CRLs.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="deletecertpathvalidationpolicy"></a>
 
 ###  DeleteCertPathValidationPolicy
 
-▸ **DeleteCertPathValidationPolicy**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **DeleteCertPathValidationPolicy**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1112](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1112)*
+*Defined in [api/advancedsecurity.ts:1112](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1112)*
 
 ```
       This operation deletes a certification path validation policy from the keystore on the device.
@@ -311,180 +311,180 @@ ___
       After the certification path validation policy has been deleted, the device may assign its former ID to other certification path validation policies.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="deletecertificate"></a>
 
 ###  DeleteCertificate
 
-▸ **DeleteCertificate**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **DeleteCertificate**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:938](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L938)*
+*Defined in [api/advancedsecurity.ts:938](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L938)*
 
 This operation deletes a certificate from the device’s keystore. The operation shall not delete the public key that is contained in the certificate from the keystore. Certificates are uniquely identified using certificate IDs. If no certificate is stored under the requested certificate ID in the keystore, an InvalidArgVal fault is produced. If there is a certificate under the requested certificate ID stored in the keystore and the certificate could not be deleted, a CertificateDeletion fault is produced. If a reference exists for the specified certificate, the certificate shall not be deleted and the corresponding fault shall be produced. After a certificate has been successfully deleted, the device may assign its former ID to other certificates.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="deletecertificationpath"></a>
 
 ###  DeleteCertificationPath
 
-▸ **DeleteCertificationPath**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **DeleteCertificationPath**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:993](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L993)*
+*Defined in [api/advancedsecurity.ts:993](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L993)*
 
 This operation deletes a certification path from the device’s keystore. This operation shall not delete the certificates that are referenced by the certification path. Certification paths are uniquely identified using certification path IDs. If no certification path is stored under the requested certification path ID in the keystore, an InvalidArgVal fault is produced. If there is a certification path under the requested certification path ID stored in the keystore and the certification path could not be deleted, a CertificationPathDeletion fault is produced. If a reference exists for the specified certification path, the certification path shall not be deleted and the corresponding fault shall be produced. After a certification path is successfully deleted, the device may assign its former ID to other certification paths.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="deletedot1xconfiguration"></a>
 
 ###  DeleteDot1XConfiguration
 
-▸ **DeleteDot1XConfiguration**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **DeleteDot1XConfiguration**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1300](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1300)*
+*Defined in [api/advancedsecurity.ts:1300](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1300)*
 
 (to be written)
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="deletekey"></a>
 
 ###  DeleteKey
 
-▸ **DeleteKey**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **DeleteKey**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:822](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L822)*
+*Defined in [api/advancedsecurity.ts:822](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L822)*
 
 This operation deletes a key from the device’s keystore. Keys are uniquely identified using key IDs. If no key is stored under the requested key ID in the keystore, a device shall produce an InvalidArgVal fault. If a reference exists for the specified key, a device shall produce the corresponding fault and shall not delete the key. If there is a key under the requested key ID stored in the keystore and the key could not be deleted, a device shall produce a KeyDeletion fault. If the key has the status generating, a device shall abort the generation of the key and delete from the keystore all data generated for this key. After a key is successfully deleted, the device may assign its former ID to other keys.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="deletenetworkinterfacedot1xconfiguration"></a>
 
 ###  DeleteNetworkInterfaceDot1XConfiguration
 
-▸ **DeleteNetworkInterfaceDot1XConfiguration**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **DeleteNetworkInterfaceDot1XConfiguration**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1327](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1327)*
+*Defined in [api/advancedsecurity.ts:1327](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1327)*
 
 (to be written)
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="deletepassphrase"></a>
 
 ###  DeletePassphrase
 
-▸ **DeletePassphrase**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **DeletePassphrase**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1022](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1022)*
+*Defined in [api/advancedsecurity.ts:1022](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1022)*
 
 ```
       This operation deletes a passphrase from the keystore of the device.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getallcrls"></a>
 
 ###  GetAllCRLs
 
-▸ **GetAllCRLs**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetAllCRLs**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1054](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1054)*
+*Defined in [api/advancedsecurity.ts:1054](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1054)*
 
 ```
       This operation returns all certificate revocation lists (CRLs) that are stored in the keystore on the device.
       If no certificate revocation list is stored in the device’s keystore, an empty list is returned.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getallcertpathvalidationpolicies"></a>
 
 ###  GetAllCertPathValidationPolicies
 
-▸ **GetAllCertPathValidationPolicies**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetAllCertPathValidationPolicies**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1100](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1100)*
+*Defined in [api/advancedsecurity.ts:1100](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1100)*
 
 ```
       This operation returns all certification path validation policies that are stored in the keystore on the device.
       If no certification path validation policy is stored in the device’s keystore, an empty list is returned.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getallcertificates"></a>
 
 ###  GetAllCertificates
 
-▸ **GetAllCertificates**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetAllCertificates**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:924](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L924)*
+*Defined in [api/advancedsecurity.ts:924](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L924)*
 
 This operation returns the IDs of all certificates that are stored in the device’s keystore. This operation may be used, e.g., if a client lost track of which certificates are present on the device. If no certificate is stored in the device’s keystore, an empty list is returned.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getallcertificationpaths"></a>
 
 ###  GetAllCertificationPaths
 
-▸ **GetAllCertificationPaths**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetAllCertificationPaths**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:977](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L977)*
+*Defined in [api/advancedsecurity.ts:977](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L977)*
 
 This operation returns the IDs of all certification paths that are stored in the device’s keystore. This operation may be used, e.g., if a client lost track of which certificates are present on the device. If no certification path is stored on the device, an empty list is returned.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getalldot1xconfigurations"></a>
 
 ###  GetAllDot1XConfigurations
 
-▸ **GetAllDot1XConfigurations**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetAllDot1XConfigurations**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1282](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1282)*
+*Defined in [api/advancedsecurity.ts:1282](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1282)*
 
 (to be written)
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getallkeys"></a>
 
 ###  GetAllKeys
 
-▸ **GetAllKeys**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetAllKeys**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:808](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L808)*
+*Defined in [api/advancedsecurity.ts:808](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L808)*
 
 This operation returns information about all keys that are stored in the device’s keystore. This operation may be used, e.g., if a client lost track of which keys are present on the device. If no key is stored on the device, an empty list is returned.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getallpassphrases"></a>
 
 ###  GetAllPassphrases
 
-▸ **GetAllPassphrases**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetAllPassphrases**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1013](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1013)*
+*Defined in [api/advancedsecurity.ts:1013](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1013)*
 
 ```
       This operation returns information about all passphrases that are stored in the keystore of the device.
@@ -492,224 +492,224 @@ ___
       If no passphrase is stored on the device, the device shall return an empty list.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getassignedcertpathvalidationpolicies"></a>
 
 ###  GetAssignedCertPathValidationPolicies
 
-▸ **GetAssignedCertPathValidationPolicies**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetAssignedCertPathValidationPolicies**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1264](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1264)*
+*Defined in [api/advancedsecurity.ts:1264](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1264)*
 
 ```
       This operation returns the IDs of all certification path validation policies that are assigned to the TLS server on the device.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getassignedservercertificates"></a>
 
 ###  GetAssignedServerCertificates
 
-▸ **GetAssignedServerCertificates**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetAssignedServerCertificates**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1202](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1202)*
+*Defined in [api/advancedsecurity.ts:1202](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1202)*
 
 This operation returns the IDs of all key pairs and certificates (including certification paths) that are assigned to the TLS server on the device. This operation may be used, e.g., if a client lost track of the certification path assignments on the device. If no certification path is assigned to the TLS server, an empty list is returned.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getcrl"></a>
 
 ###  GetCRL
 
-▸ **GetCRL**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetCRL**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1044](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1044)*
+*Defined in [api/advancedsecurity.ts:1044](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1044)*
 
 ```
       This operation returns a specific certificate revocation list (CRL) from the keystore on the device.
       Certification revocation lists are uniquely identified using CRLIDs. If no CRL is stored under the requested CRLID, the device shall produce a CRLID fault.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getcertpathvalidationpolicy"></a>
 
 ###  GetCertPathValidationPolicy
 
-▸ **GetCertPathValidationPolicy**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetCertPathValidationPolicy**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1090](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1090)*
+*Defined in [api/advancedsecurity.ts:1090](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1090)*
 
 ```
       This operation returns a certification path validation policy from the keystore on the device.
       Certification path validation policies are uniquely identified using certification path validation policy IDs. If no certification path validation policy is stored under the requested certification path validation policy ID, the device shall produce a CertPathValidationPolicyID fault.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getcertificate"></a>
 
 ###  GetCertificate
 
-▸ **GetCertificate**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetCertificate**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:913](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L913)*
+*Defined in [api/advancedsecurity.ts:913](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L913)*
 
 This operation returns a specific certificate from the device’s keystore. Certificates are uniquely identified using certificate IDs. If no certificate is stored under the requested certificate ID in the keystore, an InvalidArgVal fault is produced. It shall be noted that this command does not return the private key that is associated to the public key in the certificate.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getcertificationpath"></a>
 
 ###  GetCertificationPath
 
-▸ **GetCertificationPath**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetCertificationPath**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:966](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L966)*
+*Defined in [api/advancedsecurity.ts:966](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L966)*
 
 This operation returns a specific certification path from the device’s keystore. Certification paths are uniquely identified using certification path IDs. If no certification path is stored under the requested ID in the keystore, an InvalidArgVal fault is produced.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getclientauthenticationrequired"></a>
 
 ###  GetClientAuthenticationRequired
 
-▸ **GetClientAuthenticationRequired**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetClientAuthenticationRequired**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1223](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1223)*
+*Defined in [api/advancedsecurity.ts:1223](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1223)*
 
 ```
       This operation returns whether TLS client authentication is active.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getdot1xconfiguration"></a>
 
 ###  GetDot1XConfiguration
 
-▸ **GetDot1XConfiguration**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetDot1XConfiguration**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1291](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1291)*
+*Defined in [api/advancedsecurity.ts:1291](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1291)*
 
 (to be written)
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getenabledtlsversions"></a>
 
 ###  GetEnabledTLSVersions
 
-▸ **GetEnabledTLSVersions**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetEnabledTLSVersions**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1191](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1191)*
+*Defined in [api/advancedsecurity.ts:1191](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1191)*
 
 This operation retrieves the version(s) of TLS which are currently enabled on the device.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getkeystatus"></a>
 
 ###  GetKeyStatus
 
-▸ **GetKeyStatus**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetKeyStatus**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:785](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L785)*
+*Defined in [api/advancedsecurity.ts:785](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L785)*
 
 This operation returns the status of a key. Keys are uniquely identified using key IDs. If no key is stored under the requested key ID in the keystore, an InvalidKeyID fault is produced. Otherwise, the status of the key is returned.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getnetworkinterfacedot1xconfiguration"></a>
 
 ###  GetNetworkInterfaceDot1XConfiguration
 
-▸ **GetNetworkInterfaceDot1XConfiguration**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetNetworkInterfaceDot1XConfiguration**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1318](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1318)*
+*Defined in [api/advancedsecurity.ts:1318](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1318)*
 
 (to be written)
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getprivatekeystatus"></a>
 
 ###  GetPrivateKeyStatus
 
-▸ **GetPrivateKeyStatus**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetPrivateKeyStatus**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:797](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L797)*
+*Defined in [api/advancedsecurity.ts:797](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L797)*
 
 This operation returns whether a key pair contains a private key. Keys are uniquely identified using key IDs. If no key is stored under the requested key ID in the keystore or the key identified by the requested key ID does not identify a key pair, the device shall produce an InvalidKeyID fault. Otherwise, this operation returns true if the key pair identified by the key ID contains a private key, and false otherwise.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="getservicecapabilities"></a>
 
 ###  GetServiceCapabilities
 
-▸ **GetServiceCapabilities**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **GetServiceCapabilities**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:721](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L721)*
+*Defined in [api/advancedsecurity.ts:721](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L721)*
 
 Returns the capabilities of the security configuraiton service. The result is returned in a typed answer.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="removecertpathvalidationpolicyassignment"></a>
 
 ###  RemoveCertPathValidationPolicyAssignment
 
-▸ **RemoveCertPathValidationPolicyAssignment**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **RemoveCertPathValidationPolicyAssignment**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1244](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1244)*
+*Defined in [api/advancedsecurity.ts:1244](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1244)*
 
 ```
       This operation removes a certification path validation policy assignment from the TLS server on the device.
       If the certification path validation policy identified by the requested CertPathValidationPolicyID is not associated to the TLS server, the device shall produce a CertPathValidationPolicy fault.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="removeservercertificateassignment"></a>
 
 ###  RemoveServerCertificateAssignment
 
-▸ **RemoveServerCertificateAssignment**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **RemoveServerCertificateAssignment**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1145](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1145)*
+*Defined in [api/advancedsecurity.ts:1145](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1145)*
 
 This operation removes a key pair and certificate assignment (including certification path) to the TLS server on the device. Certification paths are identified using certification path IDs. If the supplied certification path ID is not associated to the TLS server, an InvalidArgVal fault is produced.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="replacecertpathvalidationpolicyassignment"></a>
 
 ###  ReplaceCertPathValidationPolicyAssignment
 
-▸ **ReplaceCertPathValidationPolicyAssignment**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **ReplaceCertPathValidationPolicyAssignment**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1255](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1255)*
+*Defined in [api/advancedsecurity.ts:1255](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1255)*
 
 ```
       This operation replaces a certification path validation policy assignment to the TLS server on the device with another certification path validation policy assignment.
@@ -717,16 +717,16 @@ ___
       If no certification path validation policy exists under the requested NewCertPathValidationPolicyID in the device’s keystore, the device shall produce a NewCertPathValidationPolicyID fault and shall not remove the association of the old certification path validation policy to the TLS server.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="replaceservercertificateassignment"></a>
 
 ###  ReplaceServerCertificateAssignment
 
-▸ **ReplaceServerCertificateAssignment**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **ReplaceServerCertificateAssignment**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1169](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1169)*
+*Defined in [api/advancedsecurity.ts:1169](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1169)*
 
 This operation replaces an existing key pair and certificate assignment to the TLS server on the device by a new key pair and certificate assignment (including certification paths).
 
@@ -734,16 +734,16 @@ After the replacement, the TLS server shall use the new certificate and certific
 
 Certification paths are identified using certification path IDs. If the supplied old certification path ID is not associated to the TLS server, or no certification path exists under the new certification path ID, the corresponding InvalidArgVal faults are produced and the associations are unchanged. The first certificate in the new certification path must be the TLS server certificate. Since each certificate has exactly one associated key pair, a reference to the key pair that is associated with the new server certificate is not supplied explicitly. Devices shall obtain the private key or results of operations under the private key by suitable internal interaction with the keystore. If a device chooses to perform a TLS key exchange based on the new certification path, it shall use the key pair that is associated with the server certificate for key exchange and transmit the certification path to TLS clients as-is, i.e., the device shall not check conformance of the certification path to RFC 4346 norRFC 2246. In order to use the server certificate during the TLS handshake, the corresponding private key is required. Therefore, if the key pair that is associated with the server certificate, i.e., the first certificate in the certification path, does not have an associated private key, the NoPrivateKey fault is produced and the certification path is not associated to the TLS server.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="setclientauthenticationrequired"></a>
 
 ###  SetClientAuthenticationRequired
 
-▸ **SetClientAuthenticationRequired**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **SetClientAuthenticationRequired**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1214](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1214)*
+*Defined in [api/advancedsecurity.ts:1214](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1214)*
 
 ```
       This operation activates or deactivates TLS client authentication for the TLS server on the device.
@@ -752,42 +752,42 @@ ___
       The device shall execute this command regardless of the TLS enabled/disabled state configured in the ONVIF Device Management Service.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="setenabledtlsversions"></a>
 
 ###  SetEnabledTLSVersions
 
-▸ **SetEnabledTLSVersions**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **SetEnabledTLSVersions**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1182](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1182)*
+*Defined in [api/advancedsecurity.ts:1182](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1182)*
 
 This operation sets the version(s) of TLS which the device shall use. Valid values are taken from the TLSServerSupported capability. A client initiates a TLS session by sending a ClientHello with the hightest TLS version it supports. This suggests to the server that the client can accept any TLS version up to and including that version. The server then chooses the TLS version to use. This is generally the highest TLS version the server supports that is within the range of the client. For example, if a ClientHello indicates TLS version 1.1, the server can proceed with TLS 1.0 or TLS 1.1. In the event that an ONVIF installation wishes to disable certain version(s) of TLS, it may do so with this operation. For example, to disable TLS 1.0 on a device signaling support for TLS versions 1.0, 1.1, and 1.2, the enabled version list may be set to "1.1 1.2", omitting 1.0. If a client then attempts to connect with a ClientHello containing TLS 1.0, the server shall send a "protocol\_version" alert message and close the connection. This handshake indicates to the client that TLS 1.0 is not supported by the server. The client must try again with a higher TLS version suggestion. An empty list is not permitted. Disabling all versions of TLS is not the intent of this operation. See AddServerCertificateAssignment and RemoveServerCertificateAssignment.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="setnetworkinterfacedot1xconfiguration"></a>
 
 ###  SetNetworkInterfaceDot1XConfiguration
 
-▸ **SetNetworkInterfaceDot1XConfiguration**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **SetNetworkInterfaceDot1XConfiguration**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1309](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1309)*
+*Defined in [api/advancedsecurity.ts:1309](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1309)*
 
 (to be written)
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="uploadcrl"></a>
 
 ###  UploadCRL
 
-▸ **UploadCRL**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **UploadCRL**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1034](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1034)*
+*Defined in [api/advancedsecurity.ts:1034](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1034)*
 
 ```
       This operation uploads a certificate revocation list (CRL) as specified in [RFC 5280] to the keystore on the device.
@@ -796,16 +796,16 @@ ___
       If the device does not support the signature algorithm that was used to sign the supplied CRL, the device shall produce an UnsupportedSignatureAlgorithm fault and shall not store the supplied CRL.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="uploadcertificate"></a>
 
 ###  UploadCertificate
 
-▸ **UploadCertificate**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **UploadCertificate**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:902](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L902)*
+*Defined in [api/advancedsecurity.ts:902](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L902)*
 
 This operation uploads an X.509 certificate as specified by \[RFC 5280\] in DER encoding and the public key in the certificate to a device’s keystore. A device that supports this command shall be able to handle X.509v3 certificates as specified in RFC 5280 and may additionally be able to handle other X.509 certificate formats as indicated by the X.509Versions capability. A device that supports this command shall support sha1-WithRSAEncryption as certificate signature algorithm.
 
@@ -815,16 +815,16 @@ The uploaded certificate has to be linked to a key pair in the keystore. If no p
 
 If the device does not have not enough storage capacity for storing the certificate to be uploaded, the maximum number of certificates reached fault shall be produced and no certificate shall be uploaded. If the device does not have not enough storage capacity for storing the key pair that eventually has to be created, the device shall generate a maximum number of keys reached fault. Furthermore the device shall not generate a key pair and no certificate shall be stored.
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="uploadcertificatewithprivatekeyinpkcs12"></a>
 
 ###  UploadCertificateWithPrivateKeyInPKCS12
 
-▸ **UploadCertificateWithPrivateKeyInPKCS12**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **UploadCertificateWithPrivateKeyInPKCS12**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:774](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L774)*
+*Defined in [api/advancedsecurity.ts:774](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L774)*
 
 ```
       This operation uploads a certification path consisting of X.509 certificates as specified by [RFC 5280] in DER encoding along with a private key to a device’s keystore.
@@ -843,16 +843,16 @@ ___
       If an EncryptionPassphraseID is supplied, but a KeyBag is provided instead of a PKCS8ShroudedKeyBag, the device shall ignore the supplied EncryptionPassphraseID when processing the KeyBag.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="uploadkeypairinpkcs8"></a>
 
 ###  UploadKeyPairInPKCS8
 
-▸ **UploadKeyPairInPKCS8**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **UploadKeyPairInPKCS8**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:752](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L752)*
+*Defined in [api/advancedsecurity.ts:752](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L752)*
 
 ```
       This operation uploads a key pair in a PKCS#8 data structure as specified in [RFC 5958, RFC 5959].
@@ -862,31 +862,31 @@ ___
       OneAsymmetricKey ASN.1 structure which contains both the private key and the corresponding public key.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="uploadpassphrase"></a>
 
 ###  UploadPassphrase
 
-▸ **UploadPassphrase**(): `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+▸ **UploadPassphrase**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
-*Defined in [api/advancedsecurity.ts:1002](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L1002)*
+*Defined in [api/advancedsecurity.ts:1002](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L1002)*
 
 ```
       This operation uploads a passphrase to the keystore of the device.
 ```
 
-**Returns:** `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>
+**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
 
 ___
 <a id="addcertpathvalidationpolicyassignment-1"></a>
 
 ### `<Static>` AddCertPathValidationPolicyAssignment
 
-▸ **AddCertPathValidationPolicyAssignment**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **AddCertPathValidationPolicyAssignment**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:599](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L599)*
+*Defined in [api/advancedsecurity.ts:599](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L599)*
 
 ```
       This operation assigns a certification path validation policy to the TLS server on the device. The TLS server shall enforce the policy when authenticating TLS clients and consider a client authentic if and only if the algorithm returns valid.
@@ -894,44 +894,44 @@ ___
       A TLS server may use different certification path validation policies to authenticate clients. Therefore more than one certification path validation policy may be assigned to the TLS server. If the maximum number of certification path validation policies that may be assigned to the  TLS server simultaneously is reached, the device shall produce a MaximumNumberOfTLSCertPathValidationPoliciesReached fault and shall not assign the requested certification path validation policy to the TLS server.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="adddot1xconfiguration-1"></a>
 
 ### `<Static>` AddDot1XConfiguration
 
-▸ **AddDot1XConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **AddDot1XConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:646](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L646)*
+*Defined in [api/advancedsecurity.ts:646](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L646)*
 
 (to be written)
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="addservercertificateassignment-1"></a>
 
 ### `<Static>` AddServerCertificateAssignment
 
-▸ **AddServerCertificateAssignment**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **AddServerCertificateAssignment**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:484](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L484)*
+*Defined in [api/advancedsecurity.ts:484](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L484)*
 
 This operation assigns a key pair and certificate along with a certification path (certificate chain) to the TLS server on the device. The TLS server shall use this information for key exchange during the TLS handshake, particularly for constructing server certificate messages as specified in RFC 4346 and RFC 2246.
 
 Certification paths are identified by their certification path IDs in the keystore. The first certificate in the certification path must be the TLS server certificate. Since each certificate has exactly one associated key pair, a reference to the key pair that is associated with the server certificate is not supplied explicitly. Devices shall obtain the private key or results of operations under the private key by suitable internal interaction with the keystore. If a device chooses to perform a TLS key exchange based on the supplied certification path, it shall use the key pair that is associated with the server certificate for key exchange and transmit the certification path to TLS clients as-is, i.e., the device shall not check conformance of the certification path to RFC 4346 norRFC 2246. In order to use the server certificate during the TLS handshake, the corresponding private key is required. Therefore, if the key pair that is associated with the server certificate, i.e., the first certificate in the certification path, does not have an associated private key, the NoPrivateKey fault is produced and the certification path is not associated to the TLS server. A TLS server may present different certification paths to different clients during the TLS handshake instead of presenting the same certification path to all clients. Therefore more than one certification path may be assigned to the TLS server. If the maximum number of certification paths that may be assigned to the TLS server simultaneously is reached, the device shall generate a MaximumNumberOfCertificationPathsReached fault and the requested certification path shall not be assigned to the TLS server.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="createcertpathvalidationpolicy-1"></a>
 
 ### `<Static>` CreateCertPathValidationPolicy
 
-▸ **CreateCertPathValidationPolicy**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **CreateCertPathValidationPolicy**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:421](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L421)*
+*Defined in [api/advancedsecurity.ts:421](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L421)*
 
 ```
       This operation creates a certification path validation policy.
@@ -942,31 +942,31 @@ ___
       If the device cannot process the supplied certification path validation parameters, the device shall produce a CertPathValidationParameters fault and shall not create a certification path validation policy.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="createcertificationpath-1"></a>
 
 ### `<Static>` CreateCertificationPath
 
-▸ **CreateCertificationPath**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **CreateCertificationPath**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:274](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L274)*
+*Defined in [api/advancedsecurity.ts:274](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L274)*
 
 This operation creates a sequence of certificates that may be used, e.g., for certification path validation or for TLS server authentication. Certification paths are uniquely identified using certification path IDs. Certificates are uniquely identified using certificate IDs. A certification path contains a sequence of certificate IDs. If there is a certificate ID in the sequence of supplied certificate IDs for which no certificate exists in the device’s keystore, the corresponding fault shall be produced and no certification path shall be created.
 
 The signature of each certificate in the certification path except for the last one must be verifiable with the public key contained in the next certificate in the path. If there is a certificate ID in the request other than the last ID for which the corresponding certificate cannot be verified with the public key in the certificate identified by the next certificate ID, an InvalidCertificateChain fault shall be produced and no certification path shall be created.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="createpkcs10csr-1"></a>
 
 ### `<Static>` CreatePKCS10CSR
 
-▸ **CreatePKCS10CSR**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **CreatePKCS10CSR**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:149](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L149)*
+*Defined in [api/advancedsecurity.ts:149](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L149)*
 
 This operation generates a DER-encoded PKCS#10 v1.7 certification request (sometimes also called certificate signing request or CSR) as specified in RFC 2986 for a public key on the device. The key pair that contains the public key for which a certification request shall be produced is specified by its key ID. If no key is stored under the requested KeyID or the key specified by the requested KeyID is not an asymmetric key pair, an invalid key ID fault shall be produced and no CSR shall be generated.
 
@@ -974,29 +974,29 @@ A device that supports this command shall as minimum support the sha-1WithRSAEnc
 
 If the public key identified by the requested Key ID is an invalid input to the specified signature algorithm, a KeySignatureAlgorithmMismatch fault shall be produced and no CSR shall be generated. If the key pair does not have status ok, a device shall produce an InvalidKeyStatus fault and no CSR shall be generated.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="creatersakeypair-1"></a>
 
 ### `<Static>` CreateRSAKeyPair
 
-▸ **CreateRSAKeyPair**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **CreateRSAKeyPair**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:32](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L32)*
+*Defined in [api/advancedsecurity.ts:32](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L32)*
 
 This operation triggers the asynchronous generation of an RSA key pair of a particular key length (specified as the number of bits) as specified in \[RFC 3447\], with a suitable key generation mechanism on the device. Keys, especially RSA key pairs, are uniquely identified using key IDs. If the device does not have not enough storage capacity for storing the key pair to be created, the maximum number of keys reached fault shall be produced and no key pair shall be generated. Otherwise, the operation generates a keyID for the new key and associates the generating status to it. Immediately after key generation has started, the device shall return the keyID to the client and continue to generate the key pair. The client may query the device with the GetKeyStatus operation whether the generation has finished. The client may also subscribe to Key Status events to be notified about key status changes. The device also returns a best-effort estimate of how much time it requires to create the key pair. A client may use this information as an indication how long to wait before querying the device whether key generation is completed. After the key has been successfully created, the device shall assign it the ok status. If the key generation fails, the device shall assign the key the corrupt status.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="createselfsignedcertificate-1"></a>
 
 ### `<Static>` CreateSelfSignedCertificate
 
-▸ **CreateSelfSignedCertificate**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **CreateSelfSignedCertificate**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:174](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L174)*
+*Defined in [api/advancedsecurity.ts:174](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L174)*
 
 This operation generates for a public key on the device a self-signed X.509 certificate that complies to RFC 5280. The X509Version parameter specifies the version of X.509 that the generated certificate shall comply to. A device that supports this command shall support the generation of X.509v3 certificates as specified in RFC 5280 and may additionally be able to handle other X.509 certificate formats as indicated by the X.509Versions capability. The key pair that contains the public key for which a self-signed certificate shall be produced is specified by its key pair ID. The subject parameter describes the entity that the public key belongs to. If the key pair does not have status ok, a device shall produce an InvalidKeyStatus fault and no certificate shall be generated.
 
@@ -1004,16 +1004,16 @@ The signature algorithm parameter determines which signature algorithm shall be 
 
 Certificates are uniquely identified using certificate IDs. If the command was successful, the device generates a new ID for the generated certificate and returns this ID. If the device does not have not enough storage capacity for storing the certificate to be created, the maximum number of certificates reached fault shall be produced and no certificate shall be generated.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="deletecrl-1"></a>
 
 ### `<Static>` DeleteCRL
 
-▸ **DeleteCRL**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **DeleteCRL**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:405](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L405)*
+*Defined in [api/advancedsecurity.ts:405](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L405)*
 
 ```
       This operation deletes a certificate revocation list (CRL) from the keystore on the device.
@@ -1022,16 +1022,16 @@ ___
       After a CRL has been successfully deleted, a device may assign its former ID to other CRLs.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="deletecertpathvalidationpolicy-1"></a>
 
 ### `<Static>` DeleteCertPathValidationPolicy
 
-▸ **DeleteCertPathValidationPolicy**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **DeleteCertPathValidationPolicy**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:459](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L459)*
+*Defined in [api/advancedsecurity.ts:459](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L459)*
 
 ```
       This operation deletes a certification path validation policy from the keystore on the device.
@@ -1040,180 +1040,180 @@ ___
       After the certification path validation policy has been deleted, the device may assign its former ID to other certification path validation policies.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="deletecertificate-1"></a>
 
 ### `<Static>` DeleteCertificate
 
-▸ **DeleteCertificate**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **DeleteCertificate**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:255](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L255)*
+*Defined in [api/advancedsecurity.ts:255](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L255)*
 
 This operation deletes a certificate from the device’s keystore. The operation shall not delete the public key that is contained in the certificate from the keystore. Certificates are uniquely identified using certificate IDs. If no certificate is stored under the requested certificate ID in the keystore, an InvalidArgVal fault is produced. If there is a certificate under the requested certificate ID stored in the keystore and the certificate could not be deleted, a CertificateDeletion fault is produced. If a reference exists for the specified certificate, the certificate shall not be deleted and the corresponding fault shall be produced. After a certificate has been successfully deleted, the device may assign its former ID to other certificates.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="deletecertificationpath-1"></a>
 
 ### `<Static>` DeleteCertificationPath
 
-▸ **DeleteCertificationPath**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **DeleteCertificationPath**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:318](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L318)*
+*Defined in [api/advancedsecurity.ts:318](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L318)*
 
 This operation deletes a certification path from the device’s keystore. This operation shall not delete the certificates that are referenced by the certification path. Certification paths are uniquely identified using certification path IDs. If no certification path is stored under the requested certification path ID in the keystore, an InvalidArgVal fault is produced. If there is a certification path under the requested certification path ID stored in the keystore and the certification path could not be deleted, a CertificationPathDeletion fault is produced. If a reference exists for the specified certification path, the certification path shall not be deleted and the corresponding fault shall be produced. After a certification path is successfully deleted, the device may assign its former ID to other certification paths.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="deletedot1xconfiguration-1"></a>
 
 ### `<Static>` DeleteDot1XConfiguration
 
-▸ **DeleteDot1XConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **DeleteDot1XConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:679](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L679)*
+*Defined in [api/advancedsecurity.ts:679](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L679)*
 
 (to be written)
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="deletekey-1"></a>
 
 ### `<Static>` DeleteKey
 
-▸ **DeleteKey**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **DeleteKey**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:127](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L127)*
+*Defined in [api/advancedsecurity.ts:127](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L127)*
 
 This operation deletes a key from the device’s keystore. Keys are uniquely identified using key IDs. If no key is stored under the requested key ID in the keystore, a device shall produce an InvalidArgVal fault. If a reference exists for the specified key, a device shall produce the corresponding fault and shall not delete the key. If there is a key under the requested key ID stored in the keystore and the key could not be deleted, a device shall produce a KeyDeletion fault. If the key has the status generating, a device shall abort the generation of the key and delete from the keystore all data generated for this key. After a key is successfully deleted, the device may assign its former ID to other keys.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="deletenetworkinterfacedot1xconfiguration-1"></a>
 
 ### `<Static>` DeleteNetworkInterfaceDot1XConfiguration
 
-▸ **DeleteNetworkInterfaceDot1XConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **DeleteNetworkInterfaceDot1XConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:712](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L712)*
+*Defined in [api/advancedsecurity.ts:712](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L712)*
 
 (to be written)
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="deletepassphrase-1"></a>
 
 ### `<Static>` DeletePassphrase
 
-▸ **DeletePassphrase**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **DeletePassphrase**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:353](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L353)*
+*Defined in [api/advancedsecurity.ts:353](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L353)*
 
 ```
       This operation deletes a passphrase from the keystore of the device.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getallcrls-1"></a>
 
 ### `<Static>` GetAllCRLs
 
-▸ **GetAllCRLs**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetAllCRLs**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:391](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L391)*
+*Defined in [api/advancedsecurity.ts:391](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L391)*
 
 ```
       This operation returns all certificate revocation lists (CRLs) that are stored in the keystore on the device.
       If no certificate revocation list is stored in the device’s keystore, an empty list is returned.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getallcertpathvalidationpolicies-1"></a>
 
 ### `<Static>` GetAllCertPathValidationPolicies
 
-▸ **GetAllCertPathValidationPolicies**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetAllCertPathValidationPolicies**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:445](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L445)*
+*Defined in [api/advancedsecurity.ts:445](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L445)*
 
 ```
       This operation returns all certification path validation policies that are stored in the keystore on the device.
       If no certification path validation policy is stored in the device’s keystore, an empty list is returned.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getallcertificates-1"></a>
 
 ### `<Static>` GetAllCertificates
 
-▸ **GetAllCertificates**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetAllCertificates**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:239](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L239)*
+*Defined in [api/advancedsecurity.ts:239](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L239)*
 
 This operation returns the IDs of all certificates that are stored in the device’s keystore. This operation may be used, e.g., if a client lost track of which certificates are present on the device. If no certificate is stored in the device’s keystore, an empty list is returned.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getallcertificationpaths-1"></a>
 
 ### `<Static>` GetAllCertificationPaths
 
-▸ **GetAllCertificationPaths**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetAllCertificationPaths**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:300](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L300)*
+*Defined in [api/advancedsecurity.ts:300](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L300)*
 
 This operation returns the IDs of all certification paths that are stored in the device’s keystore. This operation may be used, e.g., if a client lost track of which certificates are present on the device. If no certification path is stored on the device, an empty list is returned.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getalldot1xconfigurations-1"></a>
 
 ### `<Static>` GetAllDot1XConfigurations
 
-▸ **GetAllDot1XConfigurations**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetAllDot1XConfigurations**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:657](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L657)*
+*Defined in [api/advancedsecurity.ts:657](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L657)*
 
 (to be written)
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getallkeys-1"></a>
 
 ### `<Static>` GetAllKeys
 
-▸ **GetAllKeys**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetAllKeys**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:111](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L111)*
+*Defined in [api/advancedsecurity.ts:111](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L111)*
 
 This operation returns information about all keys that are stored in the device’s keystore. This operation may be used, e.g., if a client lost track of which keys are present on the device. If no key is stored on the device, an empty list is returned.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getallpassphrases-1"></a>
 
 ### `<Static>` GetAllPassphrases
 
-▸ **GetAllPassphrases**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetAllPassphrases**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:342](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L342)*
+*Defined in [api/advancedsecurity.ts:342](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L342)*
 
 ```
       This operation returns information about all passphrases that are stored in the keystore of the device.
@@ -1221,224 +1221,224 @@ ___
       If no passphrase is stored on the device, the device shall return an empty list.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getassignedcertpathvalidationpolicies-1"></a>
 
 ### `<Static>` GetAssignedCertPathValidationPolicies
 
-▸ **GetAssignedCertPathValidationPolicies**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetAssignedCertPathValidationPolicies**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:635](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L635)*
+*Defined in [api/advancedsecurity.ts:635](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L635)*
 
 ```
       This operation returns the IDs of all certification path validation policies that are assigned to the TLS server on the device.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getassignedservercertificates-1"></a>
 
 ### `<Static>` GetAssignedServerCertificates
 
-▸ **GetAssignedServerCertificates**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetAssignedServerCertificates**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:561](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L561)*
+*Defined in [api/advancedsecurity.ts:561](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L561)*
 
 This operation returns the IDs of all key pairs and certificates (including certification paths) that are assigned to the TLS server on the device. This operation may be used, e.g., if a client lost track of the certification path assignments on the device. If no certification path is assigned to the TLS server, an empty list is returned.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getcrl-1"></a>
 
 ### `<Static>` GetCRL
 
-▸ **GetCRL**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetCRL**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:379](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L379)*
+*Defined in [api/advancedsecurity.ts:379](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L379)*
 
 ```
       This operation returns a specific certificate revocation list (CRL) from the keystore on the device.
       Certification revocation lists are uniquely identified using CRLIDs. If no CRL is stored under the requested CRLID, the device shall produce a CRLID fault.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getcertpathvalidationpolicy-1"></a>
 
 ### `<Static>` GetCertPathValidationPolicy
 
-▸ **GetCertPathValidationPolicy**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetCertPathValidationPolicy**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:433](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L433)*
+*Defined in [api/advancedsecurity.ts:433](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L433)*
 
 ```
       This operation returns a certification path validation policy from the keystore on the device.
       Certification path validation policies are uniquely identified using certification path validation policy IDs. If no certification path validation policy is stored under the requested certification path validation policy ID, the device shall produce a CertPathValidationPolicyID fault.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getcertificate-1"></a>
 
 ### `<Static>` GetCertificate
 
-▸ **GetCertificate**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetCertificate**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:226](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L226)*
+*Defined in [api/advancedsecurity.ts:226](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L226)*
 
 This operation returns a specific certificate from the device’s keystore. Certificates are uniquely identified using certificate IDs. If no certificate is stored under the requested certificate ID in the keystore, an InvalidArgVal fault is produced. It shall be noted that this command does not return the private key that is associated to the public key in the certificate.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getcertificationpath-1"></a>
 
 ### `<Static>` GetCertificationPath
 
-▸ **GetCertificationPath**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetCertificationPath**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:287](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L287)*
+*Defined in [api/advancedsecurity.ts:287](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L287)*
 
 This operation returns a specific certification path from the device’s keystore. Certification paths are uniquely identified using certification path IDs. If no certification path is stored under the requested ID in the keystore, an InvalidArgVal fault is produced.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getclientauthenticationrequired-1"></a>
 
 ### `<Static>` GetClientAuthenticationRequired
 
-▸ **GetClientAuthenticationRequired**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetClientAuthenticationRequired**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:586](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L586)*
+*Defined in [api/advancedsecurity.ts:586](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L586)*
 
 ```
       This operation returns whether TLS client authentication is active.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getdot1xconfiguration-1"></a>
 
 ### `<Static>` GetDot1XConfiguration
 
-▸ **GetDot1XConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetDot1XConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:668](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L668)*
+*Defined in [api/advancedsecurity.ts:668](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L668)*
 
 (to be written)
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getenabledtlsversions-1"></a>
 
 ### `<Static>` GetEnabledTLSVersions
 
-▸ **GetEnabledTLSVersions**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetEnabledTLSVersions**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:548](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L548)*
+*Defined in [api/advancedsecurity.ts:548](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L548)*
 
 This operation retrieves the version(s) of TLS which are currently enabled on the device.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getkeystatus-1"></a>
 
 ### `<Static>` GetKeyStatus
 
-▸ **GetKeyStatus**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetKeyStatus**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:84](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L84)*
+*Defined in [api/advancedsecurity.ts:84](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L84)*
 
 This operation returns the status of a key. Keys are uniquely identified using key IDs. If no key is stored under the requested key ID in the keystore, an InvalidKeyID fault is produced. Otherwise, the status of the key is returned.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getnetworkinterfacedot1xconfiguration-1"></a>
 
 ### `<Static>` GetNetworkInterfaceDot1XConfiguration
 
-▸ **GetNetworkInterfaceDot1XConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetNetworkInterfaceDot1XConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:701](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L701)*
+*Defined in [api/advancedsecurity.ts:701](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L701)*
 
 (to be written)
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getprivatekeystatus-1"></a>
 
 ### `<Static>` GetPrivateKeyStatus
 
-▸ **GetPrivateKeyStatus**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetPrivateKeyStatus**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:98](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L98)*
+*Defined in [api/advancedsecurity.ts:98](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L98)*
 
 This operation returns whether a key pair contains a private key. Keys are uniquely identified using key IDs. If no key is stored under the requested key ID in the keystore or the key identified by the requested key ID does not identify a key pair, the device shall produce an InvalidKeyID fault. Otherwise, this operation returns true if the key pair identified by the key ID contains a private key, and false otherwise.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="getservicecapabilities-1"></a>
 
 ### `<Static>` GetServiceCapabilities
 
-▸ **GetServiceCapabilities**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **GetServiceCapabilities**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L12)*
+*Defined in [api/advancedsecurity.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L12)*
 
 Returns the capabilities of the security configuraiton service. The result is returned in a typed answer.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="removecertpathvalidationpolicyassignment-1"></a>
 
 ### `<Static>` RemoveCertPathValidationPolicyAssignment
 
-▸ **RemoveCertPathValidationPolicyAssignment**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **RemoveCertPathValidationPolicyAssignment**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:611](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L611)*
+*Defined in [api/advancedsecurity.ts:611](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L611)*
 
 ```
       This operation removes a certification path validation policy assignment from the TLS server on the device.
       If the certification path validation policy identified by the requested CertPathValidationPolicyID is not associated to the TLS server, the device shall produce a CertPathValidationPolicy fault.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="removeservercertificateassignment-1"></a>
 
 ### `<Static>` RemoveServerCertificateAssignment
 
-▸ **RemoveServerCertificateAssignment**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **RemoveServerCertificateAssignment**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:496](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L496)*
+*Defined in [api/advancedsecurity.ts:496](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L496)*
 
 This operation removes a key pair and certificate assignment (including certification path) to the TLS server on the device. Certification paths are identified using certification path IDs. If the supplied certification path ID is not associated to the TLS server, an InvalidArgVal fault is produced.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="replacecertpathvalidationpolicyassignment-1"></a>
 
 ### `<Static>` ReplaceCertPathValidationPolicyAssignment
 
-▸ **ReplaceCertPathValidationPolicyAssignment**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **ReplaceCertPathValidationPolicyAssignment**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:624](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L624)*
+*Defined in [api/advancedsecurity.ts:624](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L624)*
 
 ```
       This operation replaces a certification path validation policy assignment to the TLS server on the device with another certification path validation policy assignment.
@@ -1446,16 +1446,16 @@ ___
       If no certification path validation policy exists under the requested NewCertPathValidationPolicyID in the device’s keystore, the device shall produce a NewCertPathValidationPolicyID fault and shall not remove the association of the old certification path validation policy to the TLS server.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="replaceservercertificateassignment-1"></a>
 
 ### `<Static>` ReplaceServerCertificateAssignment
 
-▸ **ReplaceServerCertificateAssignment**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **ReplaceServerCertificateAssignment**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:522](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L522)*
+*Defined in [api/advancedsecurity.ts:522](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L522)*
 
 This operation replaces an existing key pair and certificate assignment to the TLS server on the device by a new key pair and certificate assignment (including certification paths).
 
@@ -1463,16 +1463,16 @@ After the replacement, the TLS server shall use the new certificate and certific
 
 Certification paths are identified using certification path IDs. If the supplied old certification path ID is not associated to the TLS server, or no certification path exists under the new certification path ID, the corresponding InvalidArgVal faults are produced and the associations are unchanged. The first certificate in the new certification path must be the TLS server certificate. Since each certificate has exactly one associated key pair, a reference to the key pair that is associated with the new server certificate is not supplied explicitly. Devices shall obtain the private key or results of operations under the private key by suitable internal interaction with the keystore. If a device chooses to perform a TLS key exchange based on the new certification path, it shall use the key pair that is associated with the server certificate for key exchange and transmit the certification path to TLS clients as-is, i.e., the device shall not check conformance of the certification path to RFC 4346 norRFC 2246. In order to use the server certificate during the TLS handshake, the corresponding private key is required. Therefore, if the key pair that is associated with the server certificate, i.e., the first certificate in the certification path, does not have an associated private key, the NoPrivateKey fault is produced and the certification path is not associated to the TLS server.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="setclientauthenticationrequired-1"></a>
 
 ### `<Static>` SetClientAuthenticationRequired
 
-▸ **SetClientAuthenticationRequired**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **SetClientAuthenticationRequired**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:575](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L575)*
+*Defined in [api/advancedsecurity.ts:575](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L575)*
 
 ```
       This operation activates or deactivates TLS client authentication for the TLS server on the device.
@@ -1481,42 +1481,42 @@ ___
       The device shall execute this command regardless of the TLS enabled/disabled state configured in the ONVIF Device Management Service.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="setenabledtlsversions-1"></a>
 
 ### `<Static>` SetEnabledTLSVersions
 
-▸ **SetEnabledTLSVersions**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **SetEnabledTLSVersions**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:537](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L537)*
+*Defined in [api/advancedsecurity.ts:537](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L537)*
 
 This operation sets the version(s) of TLS which the device shall use. Valid values are taken from the TLSServerSupported capability. A client initiates a TLS session by sending a ClientHello with the hightest TLS version it supports. This suggests to the server that the client can accept any TLS version up to and including that version. The server then chooses the TLS version to use. This is generally the highest TLS version the server supports that is within the range of the client. For example, if a ClientHello indicates TLS version 1.1, the server can proceed with TLS 1.0 or TLS 1.1. In the event that an ONVIF installation wishes to disable certain version(s) of TLS, it may do so with this operation. For example, to disable TLS 1.0 on a device signaling support for TLS versions 1.0, 1.1, and 1.2, the enabled version list may be set to "1.1 1.2", omitting 1.0. If a client then attempts to connect with a ClientHello containing TLS 1.0, the server shall send a "protocol\_version" alert message and close the connection. This handshake indicates to the client that TLS 1.0 is not supported by the server. The client must try again with a higher TLS version suggestion. An empty list is not permitted. Disabling all versions of TLS is not the intent of this operation. See AddServerCertificateAssignment and RemoveServerCertificateAssignment.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="setnetworkinterfacedot1xconfiguration-1"></a>
 
 ### `<Static>` SetNetworkInterfaceDot1XConfiguration
 
-▸ **SetNetworkInterfaceDot1XConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **SetNetworkInterfaceDot1XConfiguration**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:690](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L690)*
+*Defined in [api/advancedsecurity.ts:690](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L690)*
 
 (to be written)
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="uploadcrl-1"></a>
 
 ### `<Static>` UploadCRL
 
-▸ **UploadCRL**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **UploadCRL**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:367](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L367)*
+*Defined in [api/advancedsecurity.ts:367](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L367)*
 
 ```
       This operation uploads a certificate revocation list (CRL) as specified in [RFC 5280] to the keystore on the device.
@@ -1525,16 +1525,16 @@ ___
       If the device does not support the signature algorithm that was used to sign the supplied CRL, the device shall produce an UnsupportedSignatureAlgorithm fault and shall not store the supplied CRL.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="uploadcertificate-1"></a>
 
 ### `<Static>` UploadCertificate
 
-▸ **UploadCertificate**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **UploadCertificate**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:213](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L213)*
+*Defined in [api/advancedsecurity.ts:213](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L213)*
 
 This operation uploads an X.509 certificate as specified by \[RFC 5280\] in DER encoding and the public key in the certificate to a device’s keystore. A device that supports this command shall be able to handle X.509v3 certificates as specified in RFC 5280 and may additionally be able to handle other X.509 certificate formats as indicated by the X.509Versions capability. A device that supports this command shall support sha1-WithRSAEncryption as certificate signature algorithm.
 
@@ -1544,16 +1544,16 @@ The uploaded certificate has to be linked to a key pair in the keystore. If no p
 
 If the device does not have not enough storage capacity for storing the certificate to be uploaded, the maximum number of certificates reached fault shall be produced and no certificate shall be uploaded. If the device does not have not enough storage capacity for storing the key pair that eventually has to be created, the device shall generate a maximum number of keys reached fault. Furthermore the device shall not generate a key pair and no certificate shall be stored.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="uploadcertificatewithprivatekeyinpkcs12-1"></a>
 
 ### `<Static>` UploadCertificateWithPrivateKeyInPKCS12
 
-▸ **UploadCertificateWithPrivateKeyInPKCS12**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **UploadCertificateWithPrivateKeyInPKCS12**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:71](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L71)*
+*Defined in [api/advancedsecurity.ts:71](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L71)*
 
 ```
       This operation uploads a certification path consisting of X.509 certificates as specified by [RFC 5280] in DER encoding along with a private key to a device’s keystore.
@@ -1572,16 +1572,16 @@ ___
       If an EncryptionPassphraseID is supplied, but a KeyBag is provided instead of a PKCS8ShroudedKeyBag, the device shall ignore the supplied EncryptionPassphraseID when processing the KeyBag.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="uploadkeypairinpkcs8-1"></a>
 
 ### `<Static>` UploadKeyPairInPKCS8
 
-▸ **UploadKeyPairInPKCS8**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **UploadKeyPairInPKCS8**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:47](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L47)*
+*Defined in [api/advancedsecurity.ts:47](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L47)*
 
 ```
       This operation uploads a key pair in a PKCS#8 data structure as specified in [RFC 5958, RFC 5959].
@@ -1591,22 +1591,22 @@ ___
       OneAsymmetricKey ASN.1 structure which contains both the private key and the corresponding public key.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 <a id="uploadpassphrase-1"></a>
 
 ### `<Static>` UploadPassphrase
 
-▸ **UploadPassphrase**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+▸ **UploadPassphrase**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
-*Defined in [api/advancedsecurity.ts:329](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/advancedsecurity.ts#L329)*
+*Defined in [api/advancedsecurity.ts:329](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/advancedsecurity.ts#L329)*
 
 ```
       This operation uploads a passphrase to the keystore of the device.
 ```
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<`any`, [ITransportPayloadXml](../interfaces/_soap_request_.itransportpayloadxml.md)>>>
+**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
 
 ___
 

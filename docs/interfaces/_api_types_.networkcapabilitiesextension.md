@@ -19,20 +19,20 @@
 
 <a id="dot11configuration"></a>
 
-###  Dot11Configuration
+### `<Optional>` Dot11Configuration
 
-**● Dot11Configuration**: *`boolean`*
+**● Dot11Configuration**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1582](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1582)*
+*Defined in [api/types.ts:1582](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1582)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[NetworkCapabilitiesExtension2](_api_types_.networkcapabilitiesextension2.md)*
 
-*Defined in [api/types.ts:1583](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1583)*
+*Defined in [api/types.ts:1583](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1583)*
 
 ___
 

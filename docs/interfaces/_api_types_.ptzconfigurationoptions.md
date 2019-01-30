@@ -25,20 +25,20 @@
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[PTZConfigurationOptions2](_api_types_.ptzconfigurationoptions2.md)*
 
-*Defined in [api/types.ts:2157](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2157)*
+*Defined in [api/types.ts:2157](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2157)*
 
 ___
 <a id="ptcontroldirection"></a>
 
-###  PTControlDirection
+### `<Optional>` PTControlDirection
 
 **● PTControlDirection**: *[PTControlDirectionOptions](_api_types_.ptcontroldirectionoptions.md)*
 
-*Defined in [api/types.ts:2156](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2156)*
+*Defined in [api/types.ts:2156](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2156)*
 
 ___
 <a id="ptztimeout"></a>
@@ -47,7 +47,7 @@ ___
 
 **● PTZTimeout**: *[DurationRange](_api_types_.durationrange.md)*
 
-*Defined in [api/types.ts:2155](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2155)*
+*Defined in [api/types.ts:2155](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2155)*
 
 ___
 <a id="spaces"></a>
@@ -56,7 +56,7 @@ ___
 
 **● Spaces**: *[PTZSpaces](_api_types_.ptzspaces.md)*
 
-*Defined in [api/types.ts:2154](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2154)*
+*Defined in [api/types.ts:2154](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2154)*
 
 ___
 

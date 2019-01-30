@@ -20,20 +20,20 @@
 
 <a id="auxiliary"></a>
 
-###  Auxiliary
+### `<Optional>` Auxiliary
 
-**● Auxiliary**: *`boolean`*
+**● Auxiliary**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1517](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1517)*
+*Defined in [api/types.ts:1517](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1517)*
 
 ___
 <a id="auxiliarycommands"></a>
 
-###  AuxiliaryCommands
+### `<Optional>` AuxiliaryCommands
 
 **● AuxiliaryCommands**: *[AuxiliaryData](../modules/_api_types_.md#auxiliarydata)*
 
-*Defined in [api/types.ts:1518](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1518)*
+*Defined in [api/types.ts:1518](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1518)*
 
 ___
 <a id="extension"></a>
@@ -42,7 +42,7 @@ ___
 
 **● Extension**: *[IOCapabilitiesExtension2](_api_types_.iocapabilitiesextension2.md)*
 
-*Defined in [api/types.ts:1519](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1519)*
+*Defined in [api/types.ts:1519](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1519)*
 
 ___
 

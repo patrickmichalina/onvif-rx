@@ -25,29 +25,29 @@
 
 <a id="error"></a>
 
-###  Error
+### `<Optional>` Error
 
-**● Error**: *`string`*
+**● Error**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:163](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L163)*
+*Defined in [api/types.ts:163](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L163)*
 
 ___
 <a id="movestatus"></a>
 
-###  MoveStatus
+### `<Optional>` MoveStatus
 
 **● MoveStatus**: *[PTZMoveStatus](_api_types_.ptzmovestatus.md)*
 
-*Defined in [api/types.ts:162](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L162)*
+*Defined in [api/types.ts:162](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L162)*
 
 ___
 <a id="position"></a>
 
-###  Position
+### `<Optional>` Position
 
 **● Position**: *[PTZVector](_api_types_.ptzvector.md)*
 
-*Defined in [api/types.ts:161](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L161)*
+*Defined in [api/types.ts:161](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L161)*
 
 ___
 <a id="utctime"></a>
@@ -56,7 +56,7 @@ ___
 
 **● UtcTime**: *`string`*
 
-*Defined in [api/types.ts:164](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L164)*
+*Defined in [api/types.ts:164](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L164)*
 
 ___
 

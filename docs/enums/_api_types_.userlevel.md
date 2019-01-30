@@ -22,7 +22,7 @@
 
 **Administrator**:  = "Administrator"
 
-*Defined in [api/types.ts:4891](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4891)*
+*Defined in [api/types.ts:4891](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4891)*
 
 ___
 <a id="anonymous"></a>
@@ -31,7 +31,7 @@ ___
 
 **Anonymous**:  = "Anonymous"
 
-*Defined in [api/types.ts:4903](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4903)*
+*Defined in [api/types.ts:4903](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4903)*
 
 ___
 <a id="extended"></a>
@@ -40,7 +40,7 @@ ___
 
 **Extended**:  = "Extended"
 
-*Defined in [api/types.ts:4907](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4907)*
+*Defined in [api/types.ts:4907](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4907)*
 
 ___
 <a id="operator"></a>
@@ -49,7 +49,7 @@ ___
 
 **Operator**:  = "Operator"
 
-*Defined in [api/types.ts:4895](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4895)*
+*Defined in [api/types.ts:4895](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4895)*
 
 ___
 <a id="user"></a>
@@ -58,7 +58,7 @@ ___
 
 **User**:  = "User"
 
-*Defined in [api/types.ts:4899](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4899)*
+*Defined in [api/types.ts:4899](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4899)*
 
 ___
 

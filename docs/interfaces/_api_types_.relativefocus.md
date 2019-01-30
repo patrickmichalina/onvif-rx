@@ -27,16 +27,16 @@
 
 **● Distance**: *`number`*
 
-*Defined in [api/types.ts:2609](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2609)*
+*Defined in [api/types.ts:2609](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2609)*
 
 ___
 <a id="speed"></a>
 
-###  Speed
+### `<Optional>` Speed
 
-**● Speed**: *`number`*
+**● Speed**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2610](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2610)*
+*Defined in [api/types.ts:2610](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2610)*
 
 ___
 

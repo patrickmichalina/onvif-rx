@@ -23,16 +23,16 @@
 
 **● EngineConfiguration**: *[EngineConfiguration](_api_types_.engineconfiguration.md)*
 
-*Defined in [api/types.ts:3798](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3798)*
+*Defined in [api/types.ts:3798](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3798)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[AnalyticsDeviceEngineConfigurationExtension](_api_types_.analyticsdeviceengineconfigurationextension.md)*
 
-*Defined in [api/types.ts:3799](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3799)*
+*Defined in [api/types.ts:3799](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3799)*
 
 ___
 

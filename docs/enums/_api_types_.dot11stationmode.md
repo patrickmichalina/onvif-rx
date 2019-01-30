@@ -20,7 +20,7 @@
 
 **Ad-hoc**:  = "Ad-hoc"
 
-*Defined in [api/types.ts:4697](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4697)*
+*Defined in [api/types.ts:4697](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4697)*
 
 ___
 <a id="extended"></a>
@@ -29,7 +29,7 @@ ___
 
 **Extended**:  = "Extended"
 
-*Defined in [api/types.ts:4705](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4705)*
+*Defined in [api/types.ts:4705](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4705)*
 
 ___
 <a id="infrastructure"></a>
@@ -38,7 +38,7 @@ ___
 
 **Infrastructure**:  = "Infrastructure"
 
-*Defined in [api/types.ts:4701](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4701)*
+*Defined in [api/types.ts:4701](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4701)*
 
 ___
 

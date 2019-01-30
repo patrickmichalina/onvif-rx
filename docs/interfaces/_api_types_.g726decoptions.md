@@ -25,7 +25,7 @@ List of supported bitrates in kbps
 
 **● Bitrate**: *[IntList](_api_types_.intlist.md)*
 
-*Defined in [api/types.ts:970](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L970)*
+*Defined in [api/types.ts:970](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L970)*
 
 ___
 <a id="sampleraterange"></a>
@@ -34,7 +34,7 @@ ___
 
 **● SampleRateRange**: *[IntList](_api_types_.intlist.md)*
 
-*Defined in [api/types.ts:971](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L971)*
+*Defined in [api/types.ts:971](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L971)*
 
 ___
 

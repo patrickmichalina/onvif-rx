@@ -23,38 +23,38 @@ Set of tokens producing this message. The list may only contain SimpleItemDescri
 
 <a id="data"></a>
 
-###  Data
+### `<Optional>` Data
 
 **● Data**: *[ItemListDescription](_api_types_.itemlistdescription.md)*
 
-*Defined in [api/types.ts:3142](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3142)*
+*Defined in [api/types.ts:3142](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3142)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[MessageDescriptionExtension](_api_types_.messagedescriptionextension.md)*
 
-*Defined in [api/types.ts:3143](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3143)*
+*Defined in [api/types.ts:3143](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3143)*
 
 ___
 <a id="key"></a>
 
-###  Key
+### `<Optional>` Key
 
 **● Key**: *[ItemListDescription](_api_types_.itemlistdescription.md)*
 
-*Defined in [api/types.ts:3141](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3141)*
+*Defined in [api/types.ts:3141](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3141)*
 
 ___
 <a id="source"></a>
 
-###  Source
+### `<Optional>` Source
 
 **● Source**: *[ItemListDescription](_api_types_.itemlistdescription.md)*
 
-*Defined in [api/types.ts:3140](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3140)*
+*Defined in [api/types.ts:3140](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3140)*
 
 ___
 

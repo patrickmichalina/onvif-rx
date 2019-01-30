@@ -24,7 +24,7 @@
 
 **AdvancedSimple**:  = "AdvancedSimple"
 
-*Defined in [api/types.ts:4431](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4431)*
+*Defined in [api/types.ts:4431](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4431)*
 
 ___
 <a id="baseline"></a>
@@ -33,7 +33,7 @@ ___
 
 **Baseline**:  = "Baseline"
 
-*Defined in [api/types.ts:4435](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4435)*
+*Defined in [api/types.ts:4435](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4435)*
 
 ___
 <a id="extended"></a>
@@ -42,7 +42,7 @@ ___
 
 **Extended**:  = "Extended"
 
-*Defined in [api/types.ts:4447](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4447)*
+*Defined in [api/types.ts:4447](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4447)*
 
 ___
 <a id="high"></a>
@@ -51,7 +51,7 @@ ___
 
 **High**:  = "High"
 
-*Defined in [api/types.ts:4451](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4451)*
+*Defined in [api/types.ts:4451](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4451)*
 
 ___
 <a id="main"></a>
@@ -60,7 +60,7 @@ ___
 
 **Main**:  = "Main"
 
-*Defined in [api/types.ts:4439](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4439)*
+*Defined in [api/types.ts:4439](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4439)*
 
 ___
 <a id="main10"></a>
@@ -69,7 +69,7 @@ ___
 
 **Main10**:  = "Main10"
 
-*Defined in [api/types.ts:4443](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4443)*
+*Defined in [api/types.ts:4443](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4443)*
 
 ___
 <a id="simple"></a>
@@ -78,7 +78,7 @@ ___
 
 **Simple**:  = "Simple"
 
-*Defined in [api/types.ts:4427](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4427)*
+*Defined in [api/types.ts:4427](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4427)*
 
 ___
 

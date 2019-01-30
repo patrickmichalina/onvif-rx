@@ -34,97 +34,97 @@ Validity Range is from "NotBefore" to "NotAfter"; the corresponding DateTimeRang
 
 **● CertificateID**: *`string`*
 
-*Defined in [api/types.ts:1936](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1936)*
+*Defined in [api/types.ts:1936](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1936)*
 
 ___
 <a id="extendedkeyusage"></a>
 
-###  ExtendedKeyUsage
+### `<Optional>` ExtendedKeyUsage
 
 **● ExtendedKeyUsage**: *[CertificateUsage](_api_types_.certificateusage.md)*
 
-*Defined in [api/types.ts:1940](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1940)*
+*Defined in [api/types.ts:1940](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1940)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[CertificateInformationExtension](_api_types_.certificateinformationextension.md)*
 
-*Defined in [api/types.ts:1946](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1946)*
+*Defined in [api/types.ts:1946](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1946)*
 
 ___
 <a id="issuerdn"></a>
 
-###  IssuerDN
+### `<Optional>` IssuerDN
 
-**● IssuerDN**: *`string`*
+**● IssuerDN**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1937](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1937)*
+*Defined in [api/types.ts:1937](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1937)*
 
 ___
 <a id="keylength"></a>
 
-###  KeyLength
+### `<Optional>` KeyLength
 
-**● KeyLength**: *`number`*
+**● KeyLength**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:1941](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1941)*
+*Defined in [api/types.ts:1941](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1941)*
 
 ___
 <a id="keyusage"></a>
 
-###  KeyUsage
+### `<Optional>` KeyUsage
 
 **● KeyUsage**: *[CertificateUsage](_api_types_.certificateusage.md)*
 
-*Defined in [api/types.ts:1939](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1939)*
+*Defined in [api/types.ts:1939](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1939)*
 
 ___
 <a id="serialnum"></a>
 
-###  SerialNum
+### `<Optional>` SerialNum
 
-**● SerialNum**: *`string`*
+**● SerialNum**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1943](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1943)*
+*Defined in [api/types.ts:1943](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1943)*
 
 ___
 <a id="signaturealgorithm"></a>
 
-###  SignatureAlgorithm
+### `<Optional>` SignatureAlgorithm
 
-**● SignatureAlgorithm**: *`string`*
+**● SignatureAlgorithm**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1944](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1944)*
+*Defined in [api/types.ts:1944](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1944)*
 
 ___
 <a id="subjectdn"></a>
 
-###  SubjectDN
+### `<Optional>` SubjectDN
 
-**● SubjectDN**: *`string`*
+**● SubjectDN**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1938](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1938)*
+*Defined in [api/types.ts:1938](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1938)*
 
 ___
 <a id="validity"></a>
 
-###  Validity
+### `<Optional>` Validity
 
 **● Validity**: *[DateTimeRange](_api_types_.datetimerange.md)*
 
-*Defined in [api/types.ts:1945](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1945)*
+*Defined in [api/types.ts:1945](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1945)*
 
 ___
 <a id="version"></a>
 
-###  Version
+### `<Optional>` Version
 
-**● Version**: *`string`*
+**● Version**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1942](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1942)*
+*Defined in [api/types.ts:1942](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1942)*
 
 ___
 

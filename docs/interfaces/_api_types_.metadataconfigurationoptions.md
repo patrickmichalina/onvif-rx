@@ -21,11 +21,11 @@ True if the device is able to stream the Geo Located positions of each target.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[MetadataConfigurationOptionsExtension](_api_types_.metadataconfigurationoptionsextension.md)*
 
-*Defined in [api/types.ts:800](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L800)*
+*Defined in [api/types.ts:800](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L800)*
 
 ___
 <a id="ptzstatusfilteroptions"></a>
@@ -34,7 +34,7 @@ ___
 
 **● PTZStatusFilterOptions**: *[PTZStatusFilterOptions](_api_types_.ptzstatusfilteroptions.md)*
 
-*Defined in [api/types.ts:799](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L799)*
+*Defined in [api/types.ts:799](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L799)*
 
 ___
 

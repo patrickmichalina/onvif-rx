@@ -23,38 +23,38 @@ Optional parameter to specify how many times the preset tour is recurred.
 
 <a id="direction"></a>
 
-###  Direction
+### `<Optional>` Direction
 
 **● Direction**: *[PTZPresetTourDirection](../enums/_api_types_.ptzpresettourdirection.md)*
 
-*Defined in [api/types.ts:2361](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2361)*
+*Defined in [api/types.ts:2361](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2361)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[PTZPresetTourStartingConditionExtension](_api_types_.ptzpresettourstartingconditionextension.md)*
 
-*Defined in [api/types.ts:2362](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2362)*
+*Defined in [api/types.ts:2362](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2362)*
 
 ___
 <a id="recurringduration"></a>
 
-###  RecurringDuration
+### `<Optional>` RecurringDuration
 
-**● RecurringDuration**: *`string`*
+**● RecurringDuration**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:2360](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2360)*
+*Defined in [api/types.ts:2360](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2360)*
 
 ___
 <a id="recurringtime"></a>
 
-###  RecurringTime
+### `<Optional>` RecurringTime
 
-**● RecurringTime**: *`number`*
+**● RecurringTime**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2359](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2359)*
+*Defined in [api/types.ts:2359](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2359)*
 
 ___
 

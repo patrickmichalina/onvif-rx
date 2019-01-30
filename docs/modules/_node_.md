@@ -4,11 +4,31 @@
 
 ## Index
 
+### Variables
+
+* [device](_node_.md#device)
+
 ### Functions
 
 * [createManagedDeviceInNode](_node_.md#createmanageddeviceinnode)
 
 ---
+
+## Variables
+
+<a id="device"></a>
+
+### `<Const>` device
+
+**● device**: *[IManagedDevice](../interfaces/_manage_device_.imanageddevice.md)* =  createManagedDeviceInNode({
+  deviceUrl: 'http://192.168.1.172/onvif/device_service',
+  password: 'admin',
+  username: 'admin'
+})
+
+*Defined in [node.ts:15](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/node.ts#L15)*
+
+___
 
 ## Functions
 
@@ -18,7 +38,7 @@
 
 ▸ **createManagedDeviceInNode**(config: *[IDeviceInitConfig](../interfaces/_manage_device_.ideviceinitconfig.md)*): [IManagedDevice](../interfaces/_manage_device_.imanageddevice.md)
 
-*Defined in [node.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/node.ts#L7)*
+*Defined in [node.ts:10](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/node.ts#L10)*
 
 **Parameters:**
 

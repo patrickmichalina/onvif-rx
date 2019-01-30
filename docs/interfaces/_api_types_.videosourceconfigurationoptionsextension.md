@@ -21,20 +21,20 @@ Options of parameters for Rotation feature.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[VideoSourceConfigurationOptionsExtension2](_api_types_.videosourceconfigurationoptionsextension2.md)*
 
-*Defined in [api/types.ts:487](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L487)*
+*Defined in [api/types.ts:487](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L487)*
 
 ___
 <a id="rotate"></a>
 
-###  Rotate
+### `<Optional>` Rotate
 
 **● Rotate**: *[RotateOptions](_api_types_.rotateoptions.md)*
 
-*Defined in [api/types.ts:486](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L486)*
+*Defined in [api/types.ts:486](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L486)*
 
 ___
 

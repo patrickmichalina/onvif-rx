@@ -24,20 +24,20 @@ True if the device is able to stream pan or tilt status information.
 
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[PTZStatusFilterOptionsExtension](_api_types_.ptzstatusfilteroptionsextension.md)*
 
-*Defined in [api/types.ts:825](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L825)*
+*Defined in [api/types.ts:825](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L825)*
 
 ___
 <a id="pantiltpositionsupported"></a>
 
-###  PanTiltPositionSupported
+### `<Optional>` PanTiltPositionSupported
 
-**● PanTiltPositionSupported**: *`boolean`*
+**● PanTiltPositionSupported**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:823](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L823)*
+*Defined in [api/types.ts:823](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L823)*
 
 ___
 <a id="pantiltstatussupported"></a>
@@ -46,16 +46,16 @@ ___
 
 **● PanTiltStatusSupported**: *`boolean`*
 
-*Defined in [api/types.ts:821](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L821)*
+*Defined in [api/types.ts:821](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L821)*
 
 ___
 <a id="zoompositionsupported"></a>
 
-###  ZoomPositionSupported
+### `<Optional>` ZoomPositionSupported
 
-**● ZoomPositionSupported**: *`boolean`*
+**● ZoomPositionSupported**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:824](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L824)*
+*Defined in [api/types.ts:824](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L824)*
 
 ___
 <a id="zoomstatussupported"></a>
@@ -64,7 +64,7 @@ ___
 
 **● ZoomStatusSupported**: *`boolean`*
 
-*Defined in [api/types.ts:822](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L822)*
+*Defined in [api/types.ts:822](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L822)*
 
 ___
 

@@ -29,7 +29,7 @@ The address of the receiver service.
 
 **● MaximumRTSPURILength**: *`number`*
 
-*Defined in [api/types.ts:1733](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1733)*
+*Defined in [api/types.ts:1733](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1733)*
 
 ___
 <a id="rtp_multicast"></a>
@@ -38,7 +38,7 @@ ___
 
 **● RTP_Multicast**: *`boolean`*
 
-*Defined in [api/types.ts:1729](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1729)*
+*Defined in [api/types.ts:1729](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1729)*
 
 ___
 <a id="rtp_rtsp_tcp"></a>
@@ -47,7 +47,7 @@ ___
 
 **● RTP_RTSP_TCP**: *`boolean`*
 
-*Defined in [api/types.ts:1731](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1731)*
+*Defined in [api/types.ts:1731](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1731)*
 
 ___
 <a id="rtp_tcp"></a>
@@ -56,7 +56,7 @@ ___
 
 **● RTP_TCP**: *`boolean`*
 
-*Defined in [api/types.ts:1730](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1730)*
+*Defined in [api/types.ts:1730](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1730)*
 
 ___
 <a id="supportedreceivers"></a>
@@ -65,7 +65,7 @@ ___
 
 **● SupportedReceivers**: *`number`*
 
-*Defined in [api/types.ts:1732](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1732)*
+*Defined in [api/types.ts:1732](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1732)*
 
 ___
 <a id="xaddr"></a>
@@ -74,7 +74,7 @@ ___
 
 **● XAddr**: *`string`*
 
-*Defined in [api/types.ts:1728](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1728)*
+*Defined in [api/types.ts:1728](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1728)*
 
 ___
 

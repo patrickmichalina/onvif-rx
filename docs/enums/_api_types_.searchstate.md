@@ -23,7 +23,7 @@ The search is queued and not yet started.
 
 **Completed**:  = "Completed"
 
-*Defined in [api/types.ts:5363](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5363)*
+*Defined in [api/types.ts:5363](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5363)*
 
 The search has been completed and no new results will be found.
 
@@ -34,7 +34,7 @@ ___
 
 **Queued**:  = "Queued"
 
-*Defined in [api/types.ts:5355](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5355)*
+*Defined in [api/types.ts:5355](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5355)*
 
 The search is queued and not yet started.
 
@@ -45,7 +45,7 @@ ___
 
 **Searching**:  = "Searching"
 
-*Defined in [api/types.ts:5359](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5359)*
+*Defined in [api/types.ts:5359](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5359)*
 
 The search is underway and not yet completed.
 
@@ -56,7 +56,7 @@ ___
 
 **Unknown**:  = "Unknown"
 
-*Defined in [api/types.ts:5367](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L5367)*
+*Defined in [api/types.ts:5367](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L5367)*
 
 The state of the search is unknown. (This is not a valid response from GetSearchState.)
 

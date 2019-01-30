@@ -26,7 +26,7 @@ The earliest point in time where there is recorded data on the device.
 
 **● DataFrom**: *`string`*
 
-*Defined in [api/types.ts:3436](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3436)*
+*Defined in [api/types.ts:3436](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3436)*
 
 ___
 <a id="datauntil"></a>
@@ -35,7 +35,7 @@ ___
 
 **● DataUntil**: *`string`*
 
-*Defined in [api/types.ts:3437](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3437)*
+*Defined in [api/types.ts:3437](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3437)*
 
 ___
 <a id="numberrecordings"></a>
@@ -44,7 +44,7 @@ ___
 
 **● NumberRecordings**: *`number`*
 
-*Defined in [api/types.ts:3438](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3438)*
+*Defined in [api/types.ts:3438](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3438)*
 
 ___
 

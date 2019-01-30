@@ -24,29 +24,29 @@
 
 <a id="absolute"></a>
 
-###  Absolute
+### `<Optional>` Absolute
 
 **● Absolute**: *[AbsoluteFocusOptions](_api_types_.absolutefocusoptions.md)*
 
-*Defined in [api/types.ts:2983](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2983)*
+*Defined in [api/types.ts:2983](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2983)*
 
 ___
 <a id="continuous"></a>
 
-###  Continuous
+### `<Optional>` Continuous
 
 **● Continuous**: *[ContinuousFocusOptions](_api_types_.continuousfocusoptions.md)*
 
-*Defined in [api/types.ts:2985](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2985)*
+*Defined in [api/types.ts:2985](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2985)*
 
 ___
 <a id="relative"></a>
 
-###  Relative
+### `<Optional>` Relative
 
 **● Relative**: *[RelativeFocusOptions20](_api_types_.relativefocusoptions20.md)*
 
-*Defined in [api/types.ts:2984](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2984)*
+*Defined in [api/types.ts:2984](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2984)*
 
 ___
 

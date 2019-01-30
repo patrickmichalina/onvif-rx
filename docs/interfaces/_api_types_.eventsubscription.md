@@ -21,20 +21,20 @@ Subcription handling in the same way as base notification subscription.
 
 <a id="filter"></a>
 
-###  Filter
+### `<Optional>` Filter
 
 **● Filter**: *`any`*
 
-*Defined in [api/types.ts:791](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L791)*
+*Defined in [api/types.ts:791](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L791)*
 
 ___
 <a id="subscriptionpolicy"></a>
 
-###  SubscriptionPolicy
+### `<Optional>` SubscriptionPolicy
 
 **● SubscriptionPolicy**: *`any`*
 
-*Defined in [api/types.ts:792](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L792)*
+*Defined in [api/types.ts:792](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L792)*
 
 ___
 

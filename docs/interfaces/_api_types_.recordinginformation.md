@@ -34,25 +34,25 @@
 
 **● Content**: *[Description](../modules/_api_types_.md#description)*
 
-*Defined in [api/types.ts:3553](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3553)*
+*Defined in [api/types.ts:3553](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3553)*
 
 ___
 <a id="earliestrecording"></a>
 
-###  EarliestRecording
+### `<Optional>` EarliestRecording
 
-**● EarliestRecording**: *`string`*
+**● EarliestRecording**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:3551](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3551)*
+*Defined in [api/types.ts:3551](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3551)*
 
 ___
 <a id="latestrecording"></a>
 
-###  LatestRecording
+### `<Optional>` LatestRecording
 
-**● LatestRecording**: *`string`*
+**● LatestRecording**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:3552](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3552)*
+*Defined in [api/types.ts:3552](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3552)*
 
 ___
 <a id="recordingstatus"></a>
@@ -61,7 +61,7 @@ ___
 
 **● RecordingStatus**: *[RecordingStatus](../enums/_api_types_.recordingstatus.md)*
 
-*Defined in [api/types.ts:3555](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3555)*
+*Defined in [api/types.ts:3555](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3555)*
 
 ___
 <a id="recordingtoken"></a>
@@ -70,7 +70,7 @@ ___
 
 **● RecordingToken**: *[RecordingReference](../modules/_api_types_.md#recordingreference)*
 
-*Defined in [api/types.ts:3549](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3549)*
+*Defined in [api/types.ts:3549](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3549)*
 
 ___
 <a id="source"></a>
@@ -79,16 +79,16 @@ ___
 
 **● Source**: *[RecordingSourceInformation](_api_types_.recordingsourceinformation.md)*
 
-*Defined in [api/types.ts:3550](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3550)*
+*Defined in [api/types.ts:3550](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3550)*
 
 ___
 <a id="track"></a>
 
-###  Track
+### `<Optional>` Track
 
 **● Track**: *[TrackInformation](_api_types_.trackinformation.md)*
 
-*Defined in [api/types.ts:3554](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3554)*
+*Defined in [api/types.ts:3554](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3554)*
 
 ___
 

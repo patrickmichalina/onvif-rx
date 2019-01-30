@@ -25,7 +25,7 @@ Range of values greater equal Min value and less equal Max value.
 
 **● Max**: *`number`*
 
-*Defined in [api/types.ts:291](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L291)*
+*Defined in [api/types.ts:291](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L291)*
 
 ___
 <a id="min"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Min**: *`number`*
 
-*Defined in [api/types.ts:290](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L290)*
+*Defined in [api/types.ts:290](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L290)*
 
 ___
 

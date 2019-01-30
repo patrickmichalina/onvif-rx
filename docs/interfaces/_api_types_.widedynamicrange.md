@@ -27,7 +27,7 @@
 
 **● Level**: *`number`*
 
-*Defined in [api/types.ts:2503](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2503)*
+*Defined in [api/types.ts:2503](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2503)*
 
 ___
 <a id="mode"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Mode**: *[WideDynamicMode](../enums/_api_types_.widedynamicmode.md)*
 
-*Defined in [api/types.ts:2502](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2502)*
+*Defined in [api/types.ts:2502](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2502)*
 
 ___
 

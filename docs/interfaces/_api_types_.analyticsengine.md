@@ -22,7 +22,7 @@
 
 **● AnalyticsEngineConfiguration**: *[AnalyticsDeviceEngineConfiguration](_api_types_.analyticsdeviceengineconfiguration.md)*
 
-*Defined in [api/types.ts:3791](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L3791)*
+*Defined in [api/types.ts:3791](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3791)*
 
 ___
 

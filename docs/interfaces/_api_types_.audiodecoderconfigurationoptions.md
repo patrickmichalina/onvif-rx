@@ -23,38 +23,38 @@ If the device is able to decode AAC encoded audio this section describes the sup
 
 <a id="aacdecoptions"></a>
 
-###  AACDecOptions
+### `<Optional>` AACDecOptions
 
-**● AACDecOptions**: *[AACDecOptions](_api_types_.aacdecoptions.md)*
+**● AACDecOptions**: *[AACDecOptions](_api_types_.audiodecoderconfigurationoptions.md#aacdecoptions)*
 
-*Defined in [api/types.ts:944](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L944)*
+*Defined in [api/types.ts:944](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L944)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[AudioDecoderConfigurationOptionsExtension](_api_types_.audiodecoderconfigurationoptionsextension.md)*
 
-*Defined in [api/types.ts:947](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L947)*
+*Defined in [api/types.ts:947](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L947)*
 
 ___
 <a id="g711decoptions"></a>
 
-###  G711DecOptions
+### `<Optional>` G711DecOptions
 
-**● G711DecOptions**: *[G711DecOptions](_api_types_.g711decoptions.md)*
+**● G711DecOptions**: *[G711DecOptions](_api_types_.audiodecoderconfigurationoptions.md#g711decoptions)*
 
-*Defined in [api/types.ts:945](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L945)*
+*Defined in [api/types.ts:945](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L945)*
 
 ___
 <a id="g726decoptions"></a>
 
-###  G726DecOptions
+### `<Optional>` G726DecOptions
 
-**● G726DecOptions**: *[G726DecOptions](_api_types_.g726decoptions.md)*
+**● G726DecOptions**: *[G726DecOptions](_api_types_.audiodecoderconfigurationoptions.md#g726decoptions)*
 
-*Defined in [api/types.ts:946](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L946)*
+*Defined in [api/types.ts:946](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L946)*
 
 ___
 

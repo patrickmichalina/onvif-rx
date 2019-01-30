@@ -26,7 +26,7 @@ The enoding used for audio data (either G.711, G.726 or AAC)
 
 **● BitrateList**: *[IntList](_api_types_.intlist.md)*
 
-*Defined in [api/types.ts:729](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L729)*
+*Defined in [api/types.ts:729](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L729)*
 
 ___
 <a id="encoding"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Encoding**: *[AudioEncoding](../enums/_api_types_.audioencoding.md)*
 
-*Defined in [api/types.ts:728](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L728)*
+*Defined in [api/types.ts:728](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L728)*
 
 ___
 <a id="sampleratelist"></a>
@@ -44,7 +44,7 @@ ___
 
 **● SampleRateList**: *[IntList](_api_types_.intlist.md)*
 
-*Defined in [api/types.ts:730](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L730)*
+*Defined in [api/types.ts:730](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L730)*
 
 ___
 

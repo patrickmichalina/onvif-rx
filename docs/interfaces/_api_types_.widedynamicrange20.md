@@ -21,11 +21,11 @@ Type describing whether WDR mode is enabled or disabled (on/off).
 
 <a id="level"></a>
 
-###  Level
+### `<Optional>` Level
 
-**● Level**: *`number`*
+**● Level**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2788](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2788)*
+*Defined in [api/types.ts:2788](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2788)*
 
 ___
 <a id="mode"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Mode**: *[WideDynamicMode](../enums/_api_types_.widedynamicmode.md)*
 
-*Defined in [api/types.ts:2787](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L2787)*
+*Defined in [api/types.ts:2787](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2787)*
 
 ___
 

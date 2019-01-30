@@ -19,7 +19,7 @@
 
 **Discoverable**:  = "Discoverable"
 
-*Defined in [api/types.ts:4565](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4565)*
+*Defined in [api/types.ts:4565](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4565)*
 
 ___
 <a id="nondiscoverable"></a>
@@ -28,7 +28,7 @@ ___
 
 **NonDiscoverable**:  = "NonDiscoverable"
 
-*Defined in [api/types.ts:4569](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L4569)*
+*Defined in [api/types.ts:4569](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4569)*
 
 ___
 

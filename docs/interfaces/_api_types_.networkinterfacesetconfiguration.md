@@ -25,56 +25,56 @@ Indicates whether or not an interface is enabled.
 
 <a id="enabled"></a>
 
-###  Enabled
+### `<Optional>` Enabled
 
-**● Enabled**: *`boolean`*
+**● Enabled**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1256](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1256)*
+*Defined in [api/types.ts:1256](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1256)*
 
 ___
 <a id="extension"></a>
 
-###  Extension
+### `<Optional>` Extension
 
 **● Extension**: *[NetworkInterfaceSetConfigurationExtension](_api_types_.networkinterfacesetconfigurationextension.md)*
 
-*Defined in [api/types.ts:1261](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1261)*
+*Defined in [api/types.ts:1261](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1261)*
 
 ___
 <a id="ipv4"></a>
 
-###  IPv4
+### `<Optional>` IPv4
 
 **● IPv4**: *[IPv4NetworkInterfaceSetConfiguration](_api_types_.ipv4networkinterfacesetconfiguration.md)*
 
-*Defined in [api/types.ts:1259](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1259)*
+*Defined in [api/types.ts:1259](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1259)*
 
 ___
 <a id="ipv6"></a>
 
-###  IPv6
+### `<Optional>` IPv6
 
 **● IPv6**: *[IPv6NetworkInterfaceSetConfiguration](_api_types_.ipv6networkinterfacesetconfiguration.md)*
 
-*Defined in [api/types.ts:1260](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1260)*
+*Defined in [api/types.ts:1260](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1260)*
 
 ___
 <a id="link"></a>
 
-###  Link
+### `<Optional>` Link
 
 **● Link**: *[NetworkInterfaceConnectionSetting](_api_types_.networkinterfaceconnectionsetting.md)*
 
-*Defined in [api/types.ts:1257](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1257)*
+*Defined in [api/types.ts:1257](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1257)*
 
 ___
 <a id="mtu"></a>
 
-###  MTU
+### `<Optional>` MTU
 
-**● MTU**: *`number`*
+**● MTU**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:1258](https://github.com/patrickmichalina/onvif-rx/blob/d62cee9/src/api/types.ts#L1258)*
+*Defined in [api/types.ts:1258](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1258)*
 
 ___
 
