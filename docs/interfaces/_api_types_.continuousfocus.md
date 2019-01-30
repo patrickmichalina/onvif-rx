@@ -26,7 +26,7 @@
 
 **● Speed**: *`number`*
 
-*Defined in [api/types.ts:2619](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2619)*
+*Defined in [api/types.ts:2619](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2619)*
 
 ___
 

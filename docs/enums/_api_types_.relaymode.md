@@ -19,7 +19,7 @@
 
 **Bistable**:  = "Bistable"
 
-*Defined in [api/types.ts:4949](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4949)*
+*Defined in [api/types.ts:4949](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4949)*
 
 ___
 <a id="monostable"></a>
@@ -28,7 +28,7 @@ ___
 
 **Monostable**:  = "Monostable"
 
-*Defined in [api/types.ts:4945](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4945)*
+*Defined in [api/types.ts:4945](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4945)*
 
 ___
 

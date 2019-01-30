@@ -26,7 +26,7 @@
 
 **● Extension**: *[SystemCapabilitiesExtension2](_api_types_.systemcapabilitiesextension2.md)*
 
-*Defined in [api/types.ts:1646](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1646)*
+*Defined in [api/types.ts:1646](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1646)*
 
 ___
 <a id="httpfirmwareupgrade"></a>
@@ -35,7 +35,7 @@ ___
 
 **● HttpFirmwareUpgrade**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1642](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1642)*
+*Defined in [api/types.ts:1642](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1642)*
 
 ___
 <a id="httpsupportinformation"></a>
@@ -44,7 +44,7 @@ ___
 
 **● HttpSupportInformation**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1645](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1645)*
+*Defined in [api/types.ts:1645](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1645)*
 
 ___
 <a id="httpsystembackup"></a>
@@ -53,7 +53,7 @@ ___
 
 **● HttpSystemBackup**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1643](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1643)*
+*Defined in [api/types.ts:1643](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1643)*
 
 ___
 <a id="httpsystemlogging"></a>
@@ -62,7 +62,7 @@ ___
 
 **● HttpSystemLogging**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1644](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1644)*
+*Defined in [api/types.ts:1644](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1644)*
 
 ___
 

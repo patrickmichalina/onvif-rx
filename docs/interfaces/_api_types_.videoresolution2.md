@@ -25,7 +25,7 @@ Number of the columns of the Video image.
 
 **● Height**: *`number`*
 
-*Defined in [api/types.ts:664](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L664)*
+*Defined in [api/types.ts:664](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L664)*
 
 ___
 <a id="width"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Width**: *`number`*
 
-*Defined in [api/types.ts:663](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L663)*
+*Defined in [api/types.ts:663](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L663)*
 
 ___
 

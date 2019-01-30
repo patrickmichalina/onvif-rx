@@ -25,7 +25,7 @@ Pan and tilt position. The x component corresponds to pan and the y component to
 
 **● PanTilt**: *[Vector2D](_api_types_.vector2d.md)*
 
-*Defined in [api/types.ts:151](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L151)*
+*Defined in [api/types.ts:151](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L151)*
 
 ___
 <a id="zoom"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Zoom**: *[Vector1D](_api_types_.vector1d.md)*
 
-*Defined in [api/types.ts:152](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L152)*
+*Defined in [api/types.ts:152](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L152)*
 
 ___
 

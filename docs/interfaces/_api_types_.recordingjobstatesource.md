@@ -26,7 +26,7 @@ Identifies the data source of the recording job.
 
 **● SourceToken**: *[SourceReference](_api_types_.sourcereference.md)*
 
-*Defined in [api/types.ts:3748](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3748)*
+*Defined in [api/types.ts:3748](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3748)*
 
 ___
 <a id="state"></a>
@@ -35,7 +35,7 @@ ___
 
 **● State**: *[RecordingJobState](../modules/_api_types_.md#recordingjobstate)*
 
-*Defined in [api/types.ts:3749](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3749)*
+*Defined in [api/types.ts:3749](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3749)*
 
 ___
 <a id="tracks"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Tracks**: *[RecordingJobStateTracks](_api_types_.recordingjobstatetracks.md)*
 
-*Defined in [api/types.ts:3750](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3750)*
+*Defined in [api/types.ts:3750](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3750)*
 
 ___
 

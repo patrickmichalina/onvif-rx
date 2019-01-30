@@ -26,7 +26,7 @@
 
 **● Alias**: *[Name](../modules/_api_types_.md#name)*
 
-*Defined in [api/types.ts:1346](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1346)*
+*Defined in [api/types.ts:1346](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1346)*
 
 ___
 <a id="mode"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Mode**: *[Dot11StationMode](../enums/_api_types_.dot11stationmode.md)*
 
-*Defined in [api/types.ts:1345](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1345)*
+*Defined in [api/types.ts:1345](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1345)*
 
 ___
 <a id="priority"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Priority**: *[NetworkInterfaceConfigPriority](../modules/_api_types_.md#networkinterfaceconfigpriority)*
 
-*Defined in [api/types.ts:1347](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1347)*
+*Defined in [api/types.ts:1347](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1347)*
 
 ___
 <a id="ssid"></a>
@@ -53,7 +53,7 @@ ___
 
 **● SSID**: *[Dot11SSIDType](../modules/_api_types_.md#dot11ssidtype)*
 
-*Defined in [api/types.ts:1344](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1344)*
+*Defined in [api/types.ts:1344](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1344)*
 
 ___
 <a id="security"></a>
@@ -62,7 +62,7 @@ ___
 
 **● Security**: *[Dot11SecurityConfiguration](_api_types_.dot11securityconfiguration.md)*
 
-*Defined in [api/types.ts:1348](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1348)*
+*Defined in [api/types.ts:1348](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1348)*
 
 ___
 

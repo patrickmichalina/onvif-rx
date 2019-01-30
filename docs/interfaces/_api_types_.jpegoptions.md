@@ -26,7 +26,7 @@ List of supported image sizes.
 
 **● EncodingIntervalRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:602](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L602)*
+*Defined in [api/types.ts:602](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L602)*
 
 ___
 <a id="frameraterange"></a>
@@ -35,7 +35,7 @@ ___
 
 **● FrameRateRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:601](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L601)*
+*Defined in [api/types.ts:601](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L601)*
 
 ___
 <a id="resolutionsavailable"></a>
@@ -44,7 +44,7 @@ ___
 
 **● ResolutionsAvailable**: *[VideoResolution](_api_types_.videoresolution.md)*
 
-*Defined in [api/types.ts:600](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L600)*
+*Defined in [api/types.ts:600](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L600)*
 
 ___
 

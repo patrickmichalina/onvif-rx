@@ -19,7 +19,7 @@ export class ONVIFImaging {
      * Get the ImagingConfiguration for the requested VideoSource.
      */
     static GetImagingSettings(VideoSourceToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('timg:GetImagingSettings')({VideoSourceToken}))
+        return createStandardRequestBodyFromString(generateRequestElements('timg:GetImagingSettings')({timg_VideoSourceToken:VideoSourceToken}))
                         .map(mapResponseXmlToJson<any>('timg:GetImagingSettingsResponse'))
                       
     }
@@ -28,7 +28,7 @@ export class ONVIFImaging {
      * Set the ImagingConfiguration for the requested VideoSource.
      */
     static SetImagingSettings(VideoSourceToken: ReferenceToken, ImagingSettings: ImagingSettings20, ForcePersistence?: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('timg:SetImagingSettings')({VideoSourceToken,ImagingSettings,ForcePersistence}))
+        return createStandardRequestBodyFromString(generateRequestElements('timg:SetImagingSettings')({timg_VideoSourceToken:VideoSourceToken,timg_ImagingSettings:ImagingSettings,timg_ForcePersistence:ForcePersistence}))
                         .map(mapResponseXmlToJson<any>('timg:SetImagingSettingsResponse'))
                       
     }
@@ -41,7 +41,7 @@ export class ONVIFImaging {
      *   is provided.
      */
     static GetOptions(VideoSourceToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('timg:GetOptions')({VideoSourceToken}))
+        return createStandardRequestBodyFromString(generateRequestElements('timg:GetOptions')({timg_VideoSourceToken:VideoSourceToken}))
                         .map(mapResponseXmlToJson<any>('timg:GetOptionsResponse'))
                       
     }
@@ -59,7 +59,7 @@ export class ONVIFImaging {
      *   
      */
     static Move(VideoSourceToken: ReferenceToken, Focus: FocusMove) {
-        return createStandardRequestBodyFromString(generateRequestElements('timg:Move')({VideoSourceToken,Focus}))
+        return createStandardRequestBodyFromString(generateRequestElements('timg:Move')({timg_VideoSourceToken:VideoSourceToken,timg_Focus:Focus}))
                         .map(mapResponseXmlToJson<any>('timg:MoveResponse'))
                       
     }
@@ -68,7 +68,7 @@ export class ONVIFImaging {
      * Imaging move operation options supported for the Video source.
      */
     static GetMoveOptions(VideoSourceToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('timg:GetMoveOptions')({VideoSourceToken}))
+        return createStandardRequestBodyFromString(generateRequestElements('timg:GetMoveOptions')({timg_VideoSourceToken:VideoSourceToken}))
                         .map(mapResponseXmlToJson<any>('timg:GetMoveOptionsResponse'))
                       
     }
@@ -78,7 +78,7 @@ export class ONVIFImaging {
      *   the GetMoveOptions supports this command. The operation will not affect ongoing autofocus operation.
      */
     static Stop(VideoSourceToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('timg:Stop')({VideoSourceToken}))
+        return createStandardRequestBodyFromString(generateRequestElements('timg:Stop')({timg_VideoSourceToken:VideoSourceToken}))
                         .map(mapResponseXmlToJson<any>('timg:StopResponse'))
                       
     }
@@ -87,7 +87,7 @@ export class ONVIFImaging {
      * Via this command the current status of the Move operation can be requested. Supported for this command is available if the support for the Move operation is signalled via GetMoveOptions.
      */
     static GetStatus(VideoSourceToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('timg:GetStatus')({VideoSourceToken}))
+        return createStandardRequestBodyFromString(generateRequestElements('timg:GetStatus')({timg_VideoSourceToken:VideoSourceToken}))
                         .map(mapResponseXmlToJson<any>('timg:GetStatusResponse'))
                       
     }
@@ -96,7 +96,7 @@ export class ONVIFImaging {
      * Via this command the list of available Imaging Presets can be requested.
      */
     static GetPresets(VideoSourceToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('timg:GetPresets')({VideoSourceToken}))
+        return createStandardRequestBodyFromString(generateRequestElements('timg:GetPresets')({timg_VideoSourceToken:VideoSourceToken}))
                         .map(mapResponseXmlToJson<any>('timg:GetPresetsResponse'))
                       
     }
@@ -107,7 +107,7 @@ export class ONVIFImaging {
      *   GetCurrentPreset shall return 0 if Imaging Presets are not supported by the Video Source.
      */
     static GetCurrentPreset(VideoSourceToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('timg:GetCurrentPreset')({VideoSourceToken}))
+        return createStandardRequestBodyFromString(generateRequestElements('timg:GetCurrentPreset')({timg_VideoSourceToken:VideoSourceToken}))
                         .map(mapResponseXmlToJson<any>('timg:GetCurrentPresetResponse'))
                       
     }
@@ -119,7 +119,7 @@ export class ONVIFImaging {
      *   When the new Imaging Preset is applied by SetCurrentPreset, the Device shall adjust the Video Source settings to match those defined by the specified Imaging Preset.
      */
     static SetCurrentPreset(VideoSourceToken: ReferenceToken, PresetToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('timg:SetCurrentPreset')({VideoSourceToken,PresetToken}))
+        return createStandardRequestBodyFromString(generateRequestElements('timg:SetCurrentPreset')({timg_VideoSourceToken:VideoSourceToken,timg_PresetToken:PresetToken}))
                         .map(mapResponseXmlToJson<any>('timg:SetCurrentPresetResponse'))
                       
     }

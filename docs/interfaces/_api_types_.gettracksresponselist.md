@@ -24,7 +24,7 @@ Configuration of a track.
 
 **● Track**: *[GetTracksResponseItem](_api_types_.gettracksresponseitem.md)*
 
-*Defined in [api/types.ts:3670](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3670)*
+*Defined in [api/types.ts:3670](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3670)*
 
 ___
 

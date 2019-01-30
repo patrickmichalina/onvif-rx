@@ -26,7 +26,7 @@ Reference to the physical input.
 
 **● Bounds**: *[IntRectangle](_api_types_.intrectangle.md)*
 
-*Defined in [api/types.ts:405](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L405)*
+*Defined in [api/types.ts:405](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L405)*
 
 ___
 <a id="extension"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Extension**: *[VideoSourceConfigurationExtension](_api_types_.videosourceconfigurationextension.md)*
 
-*Defined in [api/types.ts:406](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L406)*
+*Defined in [api/types.ts:406](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L406)*
 
 ___
 <a id="sourcetoken"></a>
@@ -44,7 +44,7 @@ ___
 
 **● SourceToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:404](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L404)*
+*Defined in [api/types.ts:404](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L404)*
 
 ___
 

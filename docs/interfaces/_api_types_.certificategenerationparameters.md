@@ -26,7 +26,7 @@
 
 **● CertificateID**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1894](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1894)*
+*Defined in [api/types.ts:1894](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1894)*
 
 ___
 <a id="extension"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Extension**: *[CertificateGenerationParametersExtension](_api_types_.certificategenerationparametersextension.md)*
 
-*Defined in [api/types.ts:1898](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1898)*
+*Defined in [api/types.ts:1898](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1898)*
 
 ___
 <a id="subject"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Subject**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1895](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1895)*
+*Defined in [api/types.ts:1895](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1895)*
 
 ___
 <a id="validnotafter"></a>
@@ -53,7 +53,7 @@ ___
 
 **● ValidNotAfter**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1897](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1897)*
+*Defined in [api/types.ts:1897](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1897)*
 
 ___
 <a id="validnotbefore"></a>
@@ -62,7 +62,7 @@ ___
 
 **● ValidNotBefore**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1896](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1896)*
+*Defined in [api/types.ts:1896](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1896)*
 
 ___
 

@@ -25,7 +25,7 @@ Supported options for Tone Compensation mode. Its options shall be chosen from t
 
 **● Level**: *`boolean`*
 
-*Defined in [api/types.ts:3090](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3090)*
+*Defined in [api/types.ts:3090](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3090)*
 
 ___
 <a id="mode"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Mode**: *`string`*
 
-*Defined in [api/types.ts:3089](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3089)*
+*Defined in [api/types.ts:3089](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3089)*
 
 ___
 

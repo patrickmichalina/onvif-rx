@@ -25,7 +25,7 @@ The options supported for a display layout.
 
 **● Extension**: *[LayoutOptionsExtension](_api_types_.layoutoptionsextension.md)*
 
-*Defined in [api/types.ts:3363](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3363)*
+*Defined in [api/types.ts:3363](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3363)*
 
 ___
 <a id="panelayoutoptions"></a>
@@ -34,7 +34,7 @@ ___
 
 **● PaneLayoutOptions**: *[PaneLayoutOptions](_api_types_.panelayoutoptions.md)*
 
-*Defined in [api/types.ts:3362](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3362)*
+*Defined in [api/types.ts:3362](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3362)*
 
 ___
 

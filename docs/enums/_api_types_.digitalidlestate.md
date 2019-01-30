@@ -19,7 +19,7 @@
 
 **closed**:  = "closed"
 
-*Defined in [api/types.ts:4959](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4959)*
+*Defined in [api/types.ts:4959](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4959)*
 
 ___
 <a id="open"></a>
@@ -28,7 +28,7 @@ ___
 
 **open**:  = "open"
 
-*Defined in [api/types.ts:4963](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4963)*
+*Defined in [api/types.ts:4963](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4963)*
 
 ___
 

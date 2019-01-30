@@ -25,7 +25,7 @@ Major version number.
 
 **● Major**: *`number`*
 
-*Defined in [api/types.ts:1659](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1659)*
+*Defined in [api/types.ts:1659](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1659)*
 
 ___
 <a id="minor"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Minor**: *`number`*
 
-*Defined in [api/types.ts:1660](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1660)*
+*Defined in [api/types.ts:1660](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1660)*
 
 ___
 

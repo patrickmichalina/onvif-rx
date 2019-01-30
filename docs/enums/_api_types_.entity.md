@@ -20,7 +20,7 @@
 
 **AudioSource**:  = "AudioSource"
 
-*Defined in [api/types.ts:4251](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4251)*
+*Defined in [api/types.ts:4251](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4251)*
 
 ___
 <a id="device"></a>
@@ -29,7 +29,7 @@ ___
 
 **Device**:  = "Device"
 
-*Defined in [api/types.ts:4243](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4243)*
+*Defined in [api/types.ts:4243](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4243)*
 
 ___
 <a id="videosource"></a>
@@ -38,7 +38,7 @@ ___
 
 **VideoSource**:  = "VideoSource"
 
-*Defined in [api/types.ts:4247](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4247)*
+*Defined in [api/types.ts:4247](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4247)*
 
 ___
 

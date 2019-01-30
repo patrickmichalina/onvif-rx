@@ -27,7 +27,7 @@ Username string.
 
 **● Extension**: *[UserExtension](_api_types_.userextension.md)*
 
-*Defined in [api/types.ts:1881](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1881)*
+*Defined in [api/types.ts:1881](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1881)*
 
 ___
 <a id="password"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Password**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1879](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1879)*
+*Defined in [api/types.ts:1879](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1879)*
 
 ___
 <a id="userlevel"></a>
@@ -45,7 +45,7 @@ ___
 
 **● UserLevel**: *[UserLevel](../enums/_api_types_.userlevel.md)*
 
-*Defined in [api/types.ts:1880](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1880)*
+*Defined in [api/types.ts:1880](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1880)*
 
 ___
 <a id="username"></a>
@@ -54,7 +54,7 @@ ___
 
 **● Username**: *`string`*
 
-*Defined in [api/types.ts:1878](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1878)*
+*Defined in [api/types.ts:1878](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1878)*
 
 ___
 

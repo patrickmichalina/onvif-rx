@@ -25,7 +25,7 @@ Subcription handling in the same way as base notification subscription.
 
 **● Filter**: *`any`*
 
-*Defined in [api/types.ts:791](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L791)*
+*Defined in [api/types.ts:791](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L791)*
 
 ___
 <a id="subscriptionpolicy"></a>
@@ -34,7 +34,7 @@ ___
 
 **● SubscriptionPolicy**: *`any`*
 
-*Defined in [api/types.ts:792](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L792)*
+*Defined in [api/types.ts:792](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L792)*
 
 ___
 

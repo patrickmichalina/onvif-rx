@@ -22,7 +22,7 @@
 
 **● CertificateID**: *`string`*
 
-*Defined in [api/types.ts:2001](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2001)*
+*Defined in [api/types.ts:2001](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2001)*
 
 ___
 

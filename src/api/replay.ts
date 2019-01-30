@@ -24,7 +24,7 @@ export class ONVIFReplay {
      *   
      */
     static GetReplayUri(StreamSetup: StreamSetup, RecordingToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('trp:GetReplayUri')({StreamSetup,RecordingToken}))
+        return createStandardRequestBodyFromString(generateRequestElements('trp:GetReplayUri')({trp_StreamSetup:StreamSetup,trp_RecordingToken:RecordingToken}))
                         .map(mapResponseXmlToJson<any>('trp:GetReplayUriResponse'))
                       
     }
@@ -48,7 +48,7 @@ export class ONVIFReplay {
      *   
      */
     static SetReplayConfiguration(Configuration: ReplayConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('trp:SetReplayConfiguration')({Configuration}))
+        return createStandardRequestBodyFromString(generateRequestElements('trp:SetReplayConfiguration')({trp_Configuration:Configuration}))
                         .map(mapResponseXmlToJson<any>('trp:SetReplayConfigurationResponse'))
                       
     }

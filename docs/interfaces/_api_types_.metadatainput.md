@@ -23,7 +23,7 @@
 
 **● Extension**: *[MetadataInputExtension](_api_types_.metadatainputextension.md)*
 
-*Defined in [api/types.ts:3859](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3859)*
+*Defined in [api/types.ts:3859](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3859)*
 
 ___
 <a id="metadataconfig"></a>
@@ -32,7 +32,7 @@ ___
 
 **● MetadataConfig**: *[Config](_api_types_.config.md)*
 
-*Defined in [api/types.ts:3858](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3858)*
+*Defined in [api/types.ts:3858](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3858)*
 
 ___
 

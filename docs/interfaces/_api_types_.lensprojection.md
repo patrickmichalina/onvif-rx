@@ -26,7 +26,7 @@ Angle of incidence.
 
 **● Angle**: *`number`*
 
-*Defined in [api/types.ts:449](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L449)*
+*Defined in [api/types.ts:449](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L449)*
 
 ___
 <a id="radius"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Radius**: *`number`*
 
-*Defined in [api/types.ts:450](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L450)*
+*Defined in [api/types.ts:450](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L450)*
 
 ___
 <a id="transmittance"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Transmittance**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:451](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L451)*
+*Defined in [api/types.ts:451](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L451)*
 
 ___
 

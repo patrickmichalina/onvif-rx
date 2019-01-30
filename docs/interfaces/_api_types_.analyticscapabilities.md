@@ -26,7 +26,7 @@ Analytics service URI.
 
 **● AnalyticsModuleSupport**: *`boolean`*
 
-*Defined in [api/types.ts:1473](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1473)*
+*Defined in [api/types.ts:1473](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1473)*
 
 ___
 <a id="rulesupport"></a>
@@ -35,7 +35,7 @@ ___
 
 **● RuleSupport**: *`boolean`*
 
-*Defined in [api/types.ts:1472](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1472)*
+*Defined in [api/types.ts:1472](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1472)*
 
 ___
 <a id="xaddr"></a>
@@ -44,7 +44,7 @@ ___
 
 **● XAddr**: *`string`*
 
-*Defined in [api/types.ts:1471](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1471)*
+*Defined in [api/types.ts:1471](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1471)*
 
 ___
 

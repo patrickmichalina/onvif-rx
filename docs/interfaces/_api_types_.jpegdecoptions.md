@@ -26,7 +26,7 @@ List of supported Jpeg Video Resolutions
 
 **● ResolutionsAvailable**: *[VideoResolution](_api_types_.videoresolution.md)*
 
-*Defined in [api/types.ts:888](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L888)*
+*Defined in [api/types.ts:888](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L888)*
 
 ___
 <a id="supportedframerate"></a>
@@ -35,7 +35,7 @@ ___
 
 **● SupportedFrameRate**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:890](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L890)*
+*Defined in [api/types.ts:890](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L890)*
 
 ___
 <a id="supportedinputbitrate"></a>
@@ -44,7 +44,7 @@ ___
 
 **● SupportedInputBitrate**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:889](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L889)*
+*Defined in [api/types.ts:889](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L889)*
 
 ___
 

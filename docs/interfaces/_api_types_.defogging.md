@@ -26,7 +26,7 @@ Parameter to enable/disable or automatic Defogging feature. Its options shall be
 
 **● Extension**: *[DefoggingExtension](_api_types_.defoggingextension.md)*
 
-*Defined in [api/types.ts:2838](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2838)*
+*Defined in [api/types.ts:2838](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2838)*
 
 ___
 <a id="level"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Level**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2837](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2837)*
+*Defined in [api/types.ts:2837](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2837)*
 
 ___
 <a id="mode"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Mode**: *`string`*
 
-*Defined in [api/types.ts:2836](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2836)*
+*Defined in [api/types.ts:2836](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2836)*
 
 ___
 

@@ -35,7 +35,7 @@ Type describing the exposure settings.
 
 **● ExposureTime**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2812](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2812)*
+*Defined in [api/types.ts:2812](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2812)*
 
 ___
 <a id="gain"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Gain**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2813](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2813)*
+*Defined in [api/types.ts:2813](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2813)*
 
 ___
 <a id="iris"></a>
@@ -53,7 +53,7 @@ ___
 
 **● Iris**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2814](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2814)*
+*Defined in [api/types.ts:2814](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2814)*
 
 ___
 <a id="maxexposuretime"></a>
@@ -62,7 +62,7 @@ ___
 
 **● MaxExposureTime**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2807](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2807)*
+*Defined in [api/types.ts:2807](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2807)*
 
 ___
 <a id="maxgain"></a>
@@ -71,7 +71,7 @@ ___
 
 **● MaxGain**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2809](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2809)*
+*Defined in [api/types.ts:2809](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2809)*
 
 ___
 <a id="maxiris"></a>
@@ -80,7 +80,7 @@ ___
 
 **● MaxIris**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2811](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2811)*
+*Defined in [api/types.ts:2811](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2811)*
 
 ___
 <a id="minexposuretime"></a>
@@ -89,7 +89,7 @@ ___
 
 **● MinExposureTime**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2806](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2806)*
+*Defined in [api/types.ts:2806](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2806)*
 
 ___
 <a id="mingain"></a>
@@ -98,7 +98,7 @@ ___
 
 **● MinGain**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2808](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2808)*
+*Defined in [api/types.ts:2808](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2808)*
 
 ___
 <a id="miniris"></a>
@@ -107,7 +107,7 @@ ___
 
 **● MinIris**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2810](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2810)*
+*Defined in [api/types.ts:2810](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2810)*
 
 ___
 <a id="mode"></a>
@@ -116,7 +116,7 @@ ___
 
 **● Mode**: *[ExposureMode](../enums/_api_types_.exposuremode.md)*
 
-*Defined in [api/types.ts:2803](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2803)*
+*Defined in [api/types.ts:2803](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2803)*
 
 ___
 <a id="priority"></a>
@@ -125,7 +125,7 @@ ___
 
 **● Priority**: *[ExposurePriority](../enums/_api_types_.exposurepriority.md)*
 
-*Defined in [api/types.ts:2804](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2804)*
+*Defined in [api/types.ts:2804](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2804)*
 
 ___
 <a id="window"></a>
@@ -134,7 +134,7 @@ ___
 
 **● Window**: *[Rectangle](_api_types_.rectangle.md)*
 
-*Defined in [api/types.ts:2805](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L2805)*
+*Defined in [api/types.ts:2805](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2805)*
 
 ___
 

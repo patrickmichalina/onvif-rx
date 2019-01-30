@@ -23,7 +23,7 @@
 
 **● CurrentBitrate**: *`number`*
 
-*Defined in [api/types.ts:3939](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3939)*
+*Defined in [api/types.ts:3939](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3939)*
 
 ___
 <a id="currentfps"></a>
@@ -32,7 +32,7 @@ ___
 
 **● CurrentFps**: *`number`*
 
-*Defined in [api/types.ts:3940](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3940)*
+*Defined in [api/types.ts:3940](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3940)*
 
 ___
 

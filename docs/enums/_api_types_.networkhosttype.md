@@ -20,7 +20,7 @@
 
 **DNS**:  = "DNS"
 
-*Defined in [api/types.ts:4641](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4641)*
+*Defined in [api/types.ts:4641](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4641)*
 
 ___
 <a id="ipv4"></a>
@@ -29,7 +29,7 @@ ___
 
 **IPv4**:  = "IPv4"
 
-*Defined in [api/types.ts:4633](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4633)*
+*Defined in [api/types.ts:4633](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4633)*
 
 ___
 <a id="ipv6"></a>
@@ -38,7 +38,7 @@ ___
 
 **IPv6**:  = "IPv6"
 
-*Defined in [api/types.ts:4637](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4637)*
+*Defined in [api/types.ts:4637](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4637)*
 
 ___
 

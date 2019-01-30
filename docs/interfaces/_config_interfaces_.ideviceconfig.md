@@ -24,7 +24,7 @@
 
 **● deviceUrl**: *`string`*
 
-*Defined in [config/interfaces.ts:25](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/config/interfaces.ts#L25)*
+*Defined in [config/interfaces.ts:25](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/config/interfaces.ts#L25)*
 
 ___
 <a id="system"></a>
@@ -33,7 +33,7 @@ ___
 
 **● system**: *[ISystemConfig](_config_interfaces_.isystemconfig.md)*
 
-*Defined in [config/interfaces.ts:24](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/config/interfaces.ts#L24)*
+*Defined in [config/interfaces.ts:24](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/config/interfaces.ts#L24)*
 
 ___
 <a id="user"></a>
@@ -42,7 +42,7 @@ ___
 
 **● user**: *`IMaybe`<[IUserCredentials](_config_interfaces_.iusercredentials.md)>*
 
-*Defined in [config/interfaces.ts:26](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/config/interfaces.ts#L26)*
+*Defined in [config/interfaces.ts:26](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/config/interfaces.ts#L26)*
 
 ___
 

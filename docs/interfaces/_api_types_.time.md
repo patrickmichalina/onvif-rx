@@ -26,7 +26,7 @@ Range is 0 to 23.
 
 **● Hour**: *`number`*
 
-*Defined in [api/types.ts:1842](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1842)*
+*Defined in [api/types.ts:1842](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1842)*
 
 ___
 <a id="minute"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Minute**: *`number`*
 
-*Defined in [api/types.ts:1843](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1843)*
+*Defined in [api/types.ts:1843](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1843)*
 
 ___
 <a id="second"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Second**: *`number`*
 
-*Defined in [api/types.ts:1844](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1844)*
+*Defined in [api/types.ts:1844](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1844)*
 
 ___
 

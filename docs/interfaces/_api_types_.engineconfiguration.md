@@ -23,7 +23,7 @@
 
 **● AnalyticsEngineInputInfo**: *[AnalyticsEngineInputInfo](_api_types_.analyticsengineinputinfo.md)*
 
-*Defined in [api/types.ts:3813](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3813)*
+*Defined in [api/types.ts:3813](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3813)*
 
 ___
 <a id="videoanalyticsconfiguration"></a>
@@ -32,7 +32,7 @@ ___
 
 **● VideoAnalyticsConfiguration**: *[VideoAnalyticsConfiguration](_api_types_.videoanalyticsconfiguration.md)*
 
-*Defined in [api/types.ts:3812](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3812)*
+*Defined in [api/types.ts:3812](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3812)*
 
 ___
 

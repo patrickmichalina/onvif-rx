@@ -25,7 +25,7 @@ Indicates audio class label
 
 **● Likelihood**: *`number`*
 
-*Defined in [api/types.ts:3918](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3918)*
+*Defined in [api/types.ts:3918](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3918)*
 
 ___
 <a id="type"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Type**: *[AudioClassType](../modules/_api_types_.md#audioclasstype)*
 
-*Defined in [api/types.ts:3917](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3917)*
+*Defined in [api/types.ts:3917](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3917)*
 
 ___
 

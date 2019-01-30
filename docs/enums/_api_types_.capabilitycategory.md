@@ -24,7 +24,7 @@
 
 **All**:  = "All"
 
-*Defined in [api/types.ts:4815](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4815)*
+*Defined in [api/types.ts:4815](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4815)*
 
 ___
 <a id="analytics"></a>
@@ -33,7 +33,7 @@ ___
 
 **Analytics**:  = "Analytics"
 
-*Defined in [api/types.ts:4819](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4819)*
+*Defined in [api/types.ts:4819](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4819)*
 
 ___
 <a id="device"></a>
@@ -42,7 +42,7 @@ ___
 
 **Device**:  = "Device"
 
-*Defined in [api/types.ts:4823](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4823)*
+*Defined in [api/types.ts:4823](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4823)*
 
 ___
 <a id="events"></a>
@@ -51,7 +51,7 @@ ___
 
 **Events**:  = "Events"
 
-*Defined in [api/types.ts:4827](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4827)*
+*Defined in [api/types.ts:4827](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4827)*
 
 ___
 <a id="imaging"></a>
@@ -60,7 +60,7 @@ ___
 
 **Imaging**:  = "Imaging"
 
-*Defined in [api/types.ts:4831](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4831)*
+*Defined in [api/types.ts:4831](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4831)*
 
 ___
 <a id="media"></a>
@@ -69,7 +69,7 @@ ___
 
 **Media**:  = "Media"
 
-*Defined in [api/types.ts:4835](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4835)*
+*Defined in [api/types.ts:4835](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4835)*
 
 ___
 <a id="ptz"></a>
@@ -78,7 +78,7 @@ ___
 
 **PTZ**:  = "PTZ"
 
-*Defined in [api/types.ts:4839](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L4839)*
+*Defined in [api/types.ts:4839](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4839)*
 
 ___
 

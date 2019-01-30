@@ -25,7 +25,7 @@ The log information as attachment data.
 
 **● Binary**: *[AttachmentData](_api_types_.attachmentdata.md)*
 
-*Defined in [api/types.ts:1755](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1755)*
+*Defined in [api/types.ts:1755](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1755)*
 
 ___
 <a id="string"></a>
@@ -34,7 +34,7 @@ ___
 
 **● String**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1756](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1756)*
+*Defined in [api/types.ts:1756](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1756)*
 
 ___
 

@@ -29,7 +29,7 @@ Indicates whether or not an interface is enabled.
 
 **● Enabled**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1256](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1256)*
+*Defined in [api/types.ts:1256](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1256)*
 
 ___
 <a id="extension"></a>
@@ -38,7 +38,7 @@ ___
 
 **● Extension**: *[NetworkInterfaceSetConfigurationExtension](_api_types_.networkinterfacesetconfigurationextension.md)*
 
-*Defined in [api/types.ts:1261](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1261)*
+*Defined in [api/types.ts:1261](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1261)*
 
 ___
 <a id="ipv4"></a>
@@ -47,7 +47,7 @@ ___
 
 **● IPv4**: *[IPv4NetworkInterfaceSetConfiguration](_api_types_.ipv4networkinterfacesetconfiguration.md)*
 
-*Defined in [api/types.ts:1259](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1259)*
+*Defined in [api/types.ts:1259](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1259)*
 
 ___
 <a id="ipv6"></a>
@@ -56,7 +56,7 @@ ___
 
 **● IPv6**: *[IPv6NetworkInterfaceSetConfiguration](_api_types_.ipv6networkinterfacesetconfiguration.md)*
 
-*Defined in [api/types.ts:1260](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1260)*
+*Defined in [api/types.ts:1260](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1260)*
 
 ___
 <a id="link"></a>
@@ -65,7 +65,7 @@ ___
 
 **● Link**: *[NetworkInterfaceConnectionSetting](_api_types_.networkinterfaceconnectionsetting.md)*
 
-*Defined in [api/types.ts:1257](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1257)*
+*Defined in [api/types.ts:1257](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1257)*
 
 ___
 <a id="mtu"></a>
@@ -74,7 +74,7 @@ ___
 
 **● MTU**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:1258](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1258)*
+*Defined in [api/types.ts:1258](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1258)*
 
 ___
 

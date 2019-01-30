@@ -30,7 +30,7 @@ See IEEE802.11 7.3.2.25.2 for details.
 
 **● AuthAndMangementSuite**: *[Dot11AuthAndMangementSuite](../enums/_api_types_.dot11authandmangementsuite.md)*
 
-*Defined in [api/types.ts:1421](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1421)*
+*Defined in [api/types.ts:1421](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1421)*
 
 ___
 <a id="bssid"></a>
@@ -39,7 +39,7 @@ ___
 
 **● BSSID**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1420](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1420)*
+*Defined in [api/types.ts:1420](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1420)*
 
 ___
 <a id="extension"></a>
@@ -48,7 +48,7 @@ ___
 
 **● Extension**: *[Dot11AvailableNetworksExtension](_api_types_.dot11availablenetworksextension.md)*
 
-*Defined in [api/types.ts:1425](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1425)*
+*Defined in [api/types.ts:1425](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1425)*
 
 ___
 <a id="groupcipher"></a>
@@ -57,7 +57,7 @@ ___
 
 **● GroupCipher**: *[Dot11Cipher](../enums/_api_types_.dot11cipher.md)*
 
-*Defined in [api/types.ts:1423](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1423)*
+*Defined in [api/types.ts:1423](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1423)*
 
 ___
 <a id="paircipher"></a>
@@ -66,7 +66,7 @@ ___
 
 **● PairCipher**: *[Dot11Cipher](../enums/_api_types_.dot11cipher.md)*
 
-*Defined in [api/types.ts:1422](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1422)*
+*Defined in [api/types.ts:1422](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1422)*
 
 ___
 <a id="ssid"></a>
@@ -75,7 +75,7 @@ ___
 
 **● SSID**: *[Dot11SSIDType](../modules/_api_types_.md#dot11ssidtype)*
 
-*Defined in [api/types.ts:1419](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1419)*
+*Defined in [api/types.ts:1419](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1419)*
 
 ___
 <a id="signalstrength"></a>
@@ -84,7 +84,7 @@ ___
 
 **● SignalStrength**: *[Dot11SignalStrength](../enums/_api_types_.dot11signalstrength.md)*
 
-*Defined in [api/types.ts:1424](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L1424)*
+*Defined in [api/types.ts:1424](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1424)*
 
 ___
 

@@ -26,7 +26,7 @@ The lower boundary of the PTZ volume to look for.
 
 **● EnterOrExit**: *`boolean`*
 
-*Defined in [api/types.ts:3469](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3469)*
+*Defined in [api/types.ts:3469](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3469)*
 
 ___
 <a id="maxposition"></a>
@@ -35,7 +35,7 @@ ___
 
 **● MaxPosition**: *[PTZVector](_api_types_.ptzvector.md)*
 
-*Defined in [api/types.ts:3468](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3468)*
+*Defined in [api/types.ts:3468](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3468)*
 
 ___
 <a id="minposition"></a>
@@ -44,7 +44,7 @@ ___
 
 **● MinPosition**: *[PTZVector](_api_types_.ptzvector.md)*
 
-*Defined in [api/types.ts:3467](https://github.com/patrickmichalina/onvif-rx/blob/034e4d6/src/api/types.ts#L3467)*
+*Defined in [api/types.ts:3467](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3467)*
 
 ___
 
