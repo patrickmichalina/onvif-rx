@@ -40,7 +40,7 @@
   "dependencies": {
     "js-sha1": "^0.6.0",
     "node-fetch": "^2.3.0",
-    "rxjs": "^6.3.3",
+    "rxjs": "^6.4.0",
     "typescript-monads": "^3.10.0",
     "uuid": "^3.3.2",
     "xml-js": "^1.6.9",
@@ -48,8 +48,8 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^5.0.4",
-    "@types/node": "^10.12.19",
-    "@types/node-fetch": "^2.1.4",
+    "@types/node": "^10.12.20",
+    "@types/node-fetch": "^2.1.5",
     "@types/uuid": "^3.4.4",
     "@types/xml-js": "^1.0.0",
     "@types/xmldom": "^0.1.29",
