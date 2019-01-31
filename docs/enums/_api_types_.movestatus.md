@@ -20,7 +20,7 @@
 
 **IDLE**:  = "IDLE"
 
-*Defined in [api/types.ts:4225](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4225)*
+*Defined in [api/types.ts:4387](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4387)*
 
 ___
 <a id="moving"></a>
@@ -29,7 +29,7 @@ ___
 
 **MOVING**:  = "MOVING"
 
-*Defined in [api/types.ts:4229](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4229)*
+*Defined in [api/types.ts:4391](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4391)*
 
 ___
 <a id="unknown"></a>
@@ -38,7 +38,7 @@ ___
 
 **UNKNOWN**:  = "UNKNOWN"
 
-*Defined in [api/types.ts:4233](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4233)*
+*Defined in [api/types.ts:4395](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4395)*
 
 ___
 

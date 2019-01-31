@@ -20,7 +20,7 @@
 
 **AUTO**:  = "AUTO"
 
-*Defined in [api/types.ts:5243](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5243)*
+*Defined in [api/types.ts:5405](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5405)*
 
 ___
 <a id="off"></a>
@@ -29,7 +29,7 @@ ___
 
 **OFF**:  = "OFF"
 
-*Defined in [api/types.ts:5235](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5235)*
+*Defined in [api/types.ts:5397](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5397)*
 
 ___
 <a id="on"></a>
@@ -38,7 +38,7 @@ ___
 
 **ON**:  = "ON"
 
-*Defined in [api/types.ts:5239](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5239)*
+*Defined in [api/types.ts:5401](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5401)*
 
 ___
 

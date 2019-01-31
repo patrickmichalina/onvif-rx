@@ -25,7 +25,7 @@ Indicates whether or not IPv6 is enabled.
 
 **● Config**: *[IPv6Configuration](_api_types_.ipv6configuration.md)*
 
-*Defined in [api/types.ts:1090](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1090)*
+*Defined in [api/types.ts:1252](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1252)*
 
 ___
 <a id="enabled"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Enabled**: *`boolean`*
 
-*Defined in [api/types.ts:1089](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1089)*
+*Defined in [api/types.ts:1251](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1251)*
 
 ___
 

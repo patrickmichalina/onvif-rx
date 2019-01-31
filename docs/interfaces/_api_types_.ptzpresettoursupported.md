@@ -26,7 +26,7 @@ Indicates number of preset tours that can be created. Required preset tour opera
 
 **● Extension**: *[PTZPresetTourSupportedExtension](_api_types_.ptzpresettoursupportedextension.md)*
 
-*Defined in [api/types.ts:2076](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2076)*
+*Defined in [api/types.ts:2238](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2238)*
 
 ___
 <a id="maximumnumberofpresettours"></a>
@@ -35,7 +35,7 @@ ___
 
 **● MaximumNumberOfPresetTours**: *`number`*
 
-*Defined in [api/types.ts:2074](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2074)*
+*Defined in [api/types.ts:2236](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2236)*
 
 ___
 <a id="ptzpresettouroperation"></a>
@@ -44,7 +44,7 @@ ___
 
 **● PTZPresetTourOperation**: *[PTZPresetTourOperation](_api_types_.ptzpresettoursupported.md#ptzpresettouroperation)*
 
-*Defined in [api/types.ts:2075](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2075)*
+*Defined in [api/types.ts:2237](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2237)*
 
 ___
 

@@ -30,7 +30,7 @@ List of supported OSD text type. When a device indicates the supported number re
 
 **● BackgroundColor**: *[OSDColorOptions](_api_types_.osdcoloroptions.md)*
 
-*Defined in [api/types.ts:4077](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4077)*
+*Defined in [api/types.ts:4239](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4239)*
 
 ___
 <a id="dateformat"></a>
@@ -39,7 +39,7 @@ ___
 
 **● DateFormat**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:4074](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4074)*
+*Defined in [api/types.ts:4236](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4236)*
 
 ___
 <a id="extension"></a>
@@ -48,7 +48,7 @@ ___
 
 **● Extension**: *[OSDTextOptionsExtension](_api_types_.osdtextoptionsextension.md)*
 
-*Defined in [api/types.ts:4078](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4078)*
+*Defined in [api/types.ts:4240](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4240)*
 
 ___
 <a id="fontcolor"></a>
@@ -57,7 +57,7 @@ ___
 
 **● FontColor**: *[OSDColorOptions](_api_types_.osdcoloroptions.md)*
 
-*Defined in [api/types.ts:4076](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4076)*
+*Defined in [api/types.ts:4238](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4238)*
 
 ___
 <a id="fontsizerange"></a>
@@ -66,7 +66,7 @@ ___
 
 **● FontSizeRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:4073](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4073)*
+*Defined in [api/types.ts:4235](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4235)*
 
 ___
 <a id="timeformat"></a>
@@ -75,7 +75,7 @@ ___
 
 **● TimeFormat**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:4075](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4075)*
+*Defined in [api/types.ts:4237](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4237)*
 
 ___
 <a id="type"></a>
@@ -84,7 +84,7 @@ ___
 
 **● Type**: *`string`*
 
-*Defined in [api/types.ts:4072](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4072)*
+*Defined in [api/types.ts:4234](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4234)*
 
 ___
 

@@ -24,7 +24,7 @@ The value range of "Transparent" could be defined by vendors only should follow 
 
 **● Color**: *[Color](_api_types_.color.md)*
 
-*Defined in [api/types.ts:3987](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3987)*
+*Defined in [api/types.ts:4149](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4149)*
 
 ___
 

@@ -23,7 +23,7 @@
 
 **● Type**: *[SystemLogType](../enums/_api_types_.systemlogtype.md)*
 
-*Defined in [api/types.ts:1799](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1799)*
+*Defined in [api/types.ts:1961](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1961)*
 
 ___
 <a id="uri"></a>
@@ -32,7 +32,7 @@ ___
 
 **● Uri**: *`string`*
 
-*Defined in [api/types.ts:1800](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1800)*
+*Defined in [api/types.ts:1962](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1962)*
 
 ___
 

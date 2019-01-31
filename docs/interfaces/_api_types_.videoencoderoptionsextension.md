@@ -27,7 +27,7 @@ Optional JPEG encoder settings ranges.
 
 **● Extension**: *[VideoEncoderOptionsExtension2](_api_types_.videoencoderoptionsextension2.md)*
 
-*Defined in [api/types.ts:587](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L587)*
+*Defined in [api/types.ts:749](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L749)*
 
 ___
 <a id="h264"></a>
@@ -36,7 +36,7 @@ ___
 
 **● H264**: *[H264Options2](_api_types_.h264options2.md)*
 
-*Defined in [api/types.ts:586](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L586)*
+*Defined in [api/types.ts:748](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L748)*
 
 ___
 <a id="jpeg"></a>
@@ -45,7 +45,7 @@ ___
 
 **● JPEG**: *[JpegOptions2](_api_types_.jpegoptions2.md)*
 
-*Defined in [api/types.ts:584](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L584)*
+*Defined in [api/types.ts:746](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L746)*
 
 ___
 <a id="mpeg4"></a>
@@ -54,7 +54,7 @@ ___
 
 **● MPEG4**: *[Mpeg4Options2](_api_types_.mpeg4options2.md)*
 
-*Defined in [api/types.ts:585](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L585)*
+*Defined in [api/types.ts:747](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L747)*
 
 ___
 

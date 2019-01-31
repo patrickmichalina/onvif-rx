@@ -20,7 +20,7 @@
 
 **AAC**:  = "AAC"
 
-*Defined in [api/types.ts:4469](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4469)*
+*Defined in [api/types.ts:4631](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4631)*
 
 ___
 <a id="g711"></a>
@@ -29,7 +29,7 @@ ___
 
 **G711**:  = "G711"
 
-*Defined in [api/types.ts:4461](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4461)*
+*Defined in [api/types.ts:4623](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4623)*
 
 ___
 <a id="g726"></a>
@@ -38,7 +38,7 @@ ___
 
 **G726**:  = "G726"
 
-*Defined in [api/types.ts:4465](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4465)*
+*Defined in [api/types.ts:4627](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4627)*
 
 ___
 

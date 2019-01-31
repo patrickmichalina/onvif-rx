@@ -29,7 +29,7 @@
 
 **● Error**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:163](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L163)*
+*Defined in [api/types.ts:325](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L325)*
 
 ___
 <a id="movestatus"></a>
@@ -38,7 +38,7 @@ ___
 
 **● MoveStatus**: *[PTZMoveStatus](_api_types_.ptzmovestatus.md)*
 
-*Defined in [api/types.ts:162](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L162)*
+*Defined in [api/types.ts:324](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L324)*
 
 ___
 <a id="position"></a>
@@ -47,7 +47,7 @@ ___
 
 **● Position**: *[PTZVector](_api_types_.ptzvector.md)*
 
-*Defined in [api/types.ts:161](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L161)*
+*Defined in [api/types.ts:323](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L323)*
 
 ___
 <a id="utctime"></a>
@@ -56,7 +56,7 @@ ___
 
 **● UtcTime**: *`string`*
 
-*Defined in [api/types.ts:164](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L164)*
+*Defined in [api/types.ts:326](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L326)*
 
 ___
 

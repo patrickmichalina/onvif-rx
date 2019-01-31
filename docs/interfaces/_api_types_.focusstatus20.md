@@ -29,7 +29,7 @@
 
 **● Error**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:2693](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2693)*
+*Defined in [api/types.ts:2855](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2855)*
 
 ___
 <a id="extension"></a>
@@ -38,7 +38,7 @@ ___
 
 **● Extension**: *[FocusStatus20Extension](_api_types_.focusstatus20extension.md)*
 
-*Defined in [api/types.ts:2694](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2694)*
+*Defined in [api/types.ts:2856](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2856)*
 
 ___
 <a id="movestatus"></a>
@@ -47,7 +47,7 @@ ___
 
 **● MoveStatus**: *[MoveStatus](../enums/_api_types_.movestatus.md)*
 
-*Defined in [api/types.ts:2692](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2692)*
+*Defined in [api/types.ts:2854](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2854)*
 
 ___
 <a id="position"></a>
@@ -56,7 +56,7 @@ ___
 
 **● Position**: *`number`*
 
-*Defined in [api/types.ts:2691](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2691)*
+*Defined in [api/types.ts:2853](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2853)*
 
 ___
 

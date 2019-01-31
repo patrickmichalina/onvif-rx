@@ -24,7 +24,7 @@ Parameter to enable/disable Reverse feature.
 
 **● Mode**: *[ReverseMode](../enums/_api_types_.reversemode.md)*
 
-*Defined in [api/types.ts:2145](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2145)*
+*Defined in [api/types.ts:2307](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2307)*
 
 ___
 

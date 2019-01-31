@@ -29,7 +29,7 @@ The maximum number of OSD configurations supported for the specified video sourc
 
 **● Extension**: *[OSDConfigurationOptionsExtension](_api_types_.osdconfigurationoptionsextension.md)*
 
-*Defined in [api/types.ts:4134](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4134)*
+*Defined in [api/types.ts:4296](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4296)*
 
 ___
 <a id="imageoption"></a>
@@ -38,7 +38,7 @@ ___
 
 **● ImageOption**: *[OSDImgOptions](_api_types_.osdimgoptions.md)*
 
-*Defined in [api/types.ts:4133](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4133)*
+*Defined in [api/types.ts:4295](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4295)*
 
 ___
 <a id="maximumnumberofosds"></a>
@@ -47,7 +47,7 @@ ___
 
 **● MaximumNumberOfOSDs**: *[MaximumNumberOfOSDs](_api_types_.maximumnumberofosds.md)*
 
-*Defined in [api/types.ts:4129](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4129)*
+*Defined in [api/types.ts:4291](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4291)*
 
 ___
 <a id="positionoption"></a>
@@ -56,7 +56,7 @@ ___
 
 **● PositionOption**: *`string`*
 
-*Defined in [api/types.ts:4131](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4131)*
+*Defined in [api/types.ts:4293](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4293)*
 
 ___
 <a id="textoption"></a>
@@ -65,7 +65,7 @@ ___
 
 **● TextOption**: *[OSDTextOptions](_api_types_.osdtextoptions.md)*
 
-*Defined in [api/types.ts:4132](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4132)*
+*Defined in [api/types.ts:4294](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4294)*
 
 ___
 <a id="type"></a>
@@ -74,7 +74,7 @@ ___
 
 **● Type**: *[OSDType](../enums/_api_types_.osdtype.md)*
 
-*Defined in [api/types.ts:4130](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4130)*
+*Defined in [api/types.ts:4292](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4292)*
 
 ___
 

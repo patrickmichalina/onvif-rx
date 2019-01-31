@@ -22,7 +22,7 @@
 
 **● SystemLog**: *[SystemLogUri](_api_types_.systemloguri.md)*
 
-*Defined in [api/types.ts:1792](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1792)*
+*Defined in [api/types.ts:1954](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1954)*
 
 ___
 

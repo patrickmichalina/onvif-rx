@@ -27,7 +27,7 @@
 
 **● Extension**: *[PTZNodeExtension2](_api_types_.ptznodeextension2.md)*
 
-*Defined in [api/types.ts:2061](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2061)*
+*Defined in [api/types.ts:2223](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2223)*
 
 ___
 <a id="supportedpresettour"></a>
@@ -36,7 +36,7 @@ ___
 
 **● SupportedPresetTour**: *[PTZPresetTourSupported](_api_types_.ptzpresettoursupported.md)*
 
-*Defined in [api/types.ts:2060](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2060)*
+*Defined in [api/types.ts:2222](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2222)*
 
 ___
 

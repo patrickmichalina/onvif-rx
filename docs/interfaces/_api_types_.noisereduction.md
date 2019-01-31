@@ -24,7 +24,7 @@ Level parameter specified with unitless normalized value from 0.0 to +1.0. Level
 
 **● Level**: *`number`*
 
-*Defined in [api/types.ts:2851](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2851)*
+*Defined in [api/types.ts:3013](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3013)*
 
 ___
 

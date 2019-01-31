@@ -21,7 +21,7 @@
 
 **Extended**:  = "Extended"
 
-*Defined in [api/types.ts:5065](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5065)*
+*Defined in [api/types.ts:5227](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5227)*
 
 ___
 <a id="pause"></a>
@@ -30,7 +30,7 @@ ___
 
 **Pause**:  = "Pause"
 
-*Defined in [api/types.ts:5061](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5061)*
+*Defined in [api/types.ts:5223](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5223)*
 
 ___
 <a id="start"></a>
@@ -39,7 +39,7 @@ ___
 
 **Start**:  = "Start"
 
-*Defined in [api/types.ts:5053](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5053)*
+*Defined in [api/types.ts:5215](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5215)*
 
 ___
 <a id="stop"></a>
@@ -48,7 +48,7 @@ ___
 
 **Stop**:  = "Stop"
 
-*Defined in [api/types.ts:5057](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5057)*
+*Defined in [api/types.ts:5219](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5219)*
 
 ___
 

@@ -23,7 +23,7 @@
 
 **● JobConfiguration**: *[RecordingJobConfiguration](_api_types_.recordingjobconfiguration.md)*
 
-*Defined in [api/types.ts:3775](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3775)*
+*Defined in [api/types.ts:3937](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3937)*
 
 ___
 <a id="jobtoken"></a>
@@ -32,7 +32,7 @@ ___
 
 **● JobToken**: *[RecordingJobReference](../modules/_api_types_.md#recordingjobreference)*
 
-*Defined in [api/types.ts:3774](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3774)*
+*Defined in [api/types.ts:3936](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3936)*
 
 ___
 

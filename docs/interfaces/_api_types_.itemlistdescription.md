@@ -30,7 +30,7 @@
 
 **● ElementItemDescription**: *`any`*
 
-*Defined in [api/types.ts:3161](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3161)*
+*Defined in [api/types.ts:3323](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3323)*
 
 ___
 <a id="extension"></a>
@@ -39,7 +39,7 @@ ___
 
 **● Extension**: *[ItemListDescriptionExtension](_api_types_.itemlistdescriptionextension.md)*
 
-*Defined in [api/types.ts:3162](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3162)*
+*Defined in [api/types.ts:3324](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3324)*
 
 ___
 <a id="simpleitemdescription"></a>
@@ -48,7 +48,7 @@ ___
 
 **● SimpleItemDescription**: *`any`*
 
-*Defined in [api/types.ts:3160](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3160)*
+*Defined in [api/types.ts:3322](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3322)*
 
 ___
 

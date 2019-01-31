@@ -27,7 +27,7 @@ Set of tokens producing this message. The list may only contain SimpleItemDescri
 
 **● Data**: *[ItemListDescription](_api_types_.itemlistdescription.md)*
 
-*Defined in [api/types.ts:3142](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3142)*
+*Defined in [api/types.ts:3304](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3304)*
 
 ___
 <a id="extension"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Extension**: *[MessageDescriptionExtension](_api_types_.messagedescriptionextension.md)*
 
-*Defined in [api/types.ts:3143](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3143)*
+*Defined in [api/types.ts:3305](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3305)*
 
 ___
 <a id="key"></a>
@@ -45,7 +45,7 @@ ___
 
 **● Key**: *[ItemListDescription](_api_types_.itemlistdescription.md)*
 
-*Defined in [api/types.ts:3141](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3141)*
+*Defined in [api/types.ts:3303](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3303)*
 
 ___
 <a id="source"></a>
@@ -54,7 +54,7 @@ ___
 
 **● Source**: *[ItemListDescription](_api_types_.itemlistdescription.md)*
 
-*Defined in [api/types.ts:3140](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3140)*
+*Defined in [api/types.ts:3302](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3302)*
 
 ___
 

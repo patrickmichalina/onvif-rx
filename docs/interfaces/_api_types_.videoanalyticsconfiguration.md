@@ -23,7 +23,7 @@
 
 **● AnalyticsEngineConfiguration**: *[AnalyticsEngineConfiguration](_api_types_.analyticsengineconfiguration.md)*
 
-*Defined in [api/types.ts:756](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L756)*
+*Defined in [api/types.ts:918](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L918)*
 
 ___
 <a id="ruleengineconfiguration"></a>
@@ -32,7 +32,7 @@ ___
 
 **● RuleEngineConfiguration**: *[RuleEngineConfiguration](_api_types_.ruleengineconfiguration.md)*
 
-*Defined in [api/types.ts:757](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L757)*
+*Defined in [api/types.ts:919](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L919)*
 
 ___
 

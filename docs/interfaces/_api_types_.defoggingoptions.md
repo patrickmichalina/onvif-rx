@@ -25,7 +25,7 @@ Supported options for Defogging mode. Its options shall be chosen from tt:Defogg
 
 **● Level**: *`boolean`*
 
-*Defined in [api/types.ts:3098](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3098)*
+*Defined in [api/types.ts:3260](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3260)*
 
 ___
 <a id="mode"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Mode**: *`string`*
 
-*Defined in [api/types.ts:3097](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3097)*
+*Defined in [api/types.ts:3259](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3259)*
 
 ___
 

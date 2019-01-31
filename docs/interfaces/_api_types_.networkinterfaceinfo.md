@@ -26,7 +26,7 @@ Network interface name, for example eth0.
 
 **● HwAddress**: *[HwAddress](_api_types_.networkinterfaceinfo.md#hwaddress)*
 
-*Defined in [api/types.ts:1081](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1081)*
+*Defined in [api/types.ts:1243](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1243)*
 
 ___
 <a id="mtu"></a>
@@ -35,7 +35,7 @@ ___
 
 **● MTU**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:1082](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1082)*
+*Defined in [api/types.ts:1244](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1244)*
 
 ___
 <a id="name"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Name**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1080](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1080)*
+*Defined in [api/types.ts:1242](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1242)*
 
 ___
 

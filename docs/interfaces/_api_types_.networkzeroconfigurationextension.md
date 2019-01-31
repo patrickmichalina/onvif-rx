@@ -25,7 +25,7 @@ Optional array holding the configuration for the second and possibly further int
 
 **● Additional**: *[NetworkZeroConfiguration](_api_types_.networkzeroconfiguration.md)*
 
-*Defined in [api/types.ts:1314](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1314)*
+*Defined in [api/types.ts:1476](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1476)*
 
 ___
 <a id="extension"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Extension**: *[NetworkZeroConfigurationExtension2](_api_types_.networkzeroconfigurationextension2.md)*
 
-*Defined in [api/types.ts:1315](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1315)*
+*Defined in [api/types.ts:1477](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1477)*
 
 ___
 

@@ -26,7 +26,7 @@
 
 **● Range**: *[Space1DDescription](_api_types_.space1ddescription.md)*
 
-*Defined in [api/types.ts:2224](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2224)*
+*Defined in [api/types.ts:2386](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2386)*
 
 ___
 

@@ -34,7 +34,7 @@ Enabled/disabled BLC mode (on/off).
 
 **● BacklightCompensation**: *[BacklightCompensation](_api_types_.imagingsettings.md#backlightcompensation)*
 
-*Defined in [api/types.ts:2453](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2453)*
+*Defined in [api/types.ts:2615](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2615)*
 
 ___
 <a id="brightness"></a>
@@ -43,7 +43,7 @@ ___
 
 **● Brightness**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2454](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2454)*
+*Defined in [api/types.ts:2616](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2616)*
 
 ___
 <a id="colorsaturation"></a>
@@ -52,7 +52,7 @@ ___
 
 **● ColorSaturation**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2455](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2455)*
+*Defined in [api/types.ts:2617](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2617)*
 
 ___
 <a id="contrast"></a>
@@ -61,7 +61,7 @@ ___
 
 **● Contrast**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2456](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2456)*
+*Defined in [api/types.ts:2618](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2618)*
 
 ___
 <a id="exposure"></a>
@@ -70,7 +70,7 @@ ___
 
 **● Exposure**: *[Exposure](_api_types_.imagingsettings.md#exposure)*
 
-*Defined in [api/types.ts:2457](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2457)*
+*Defined in [api/types.ts:2619](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2619)*
 
 ___
 <a id="extension"></a>
@@ -79,7 +79,7 @@ ___
 
 **● Extension**: *[ImagingSettingsExtension](_api_types_.imagingsettingsextension.md)*
 
-*Defined in [api/types.ts:2463](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2463)*
+*Defined in [api/types.ts:2625](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2625)*
 
 ___
 <a id="focus"></a>
@@ -88,7 +88,7 @@ ___
 
 **● Focus**: *[FocusConfiguration](_api_types_.focusconfiguration.md)*
 
-*Defined in [api/types.ts:2458](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2458)*
+*Defined in [api/types.ts:2620](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2620)*
 
 ___
 <a id="ircutfilter"></a>
@@ -97,7 +97,7 @@ ___
 
 **● IrCutFilter**: *[IrCutFilterMode](../enums/_api_types_.ircutfiltermode.md)*
 
-*Defined in [api/types.ts:2459](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2459)*
+*Defined in [api/types.ts:2621](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2621)*
 
 ___
 <a id="sharpness"></a>
@@ -106,7 +106,7 @@ ___
 
 **● Sharpness**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2460](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2460)*
+*Defined in [api/types.ts:2622](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2622)*
 
 ___
 <a id="whitebalance"></a>
@@ -115,7 +115,7 @@ ___
 
 **● WhiteBalance**: *[WhiteBalance](_api_types_.imagingsettings.md#whitebalance)*
 
-*Defined in [api/types.ts:2462](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2462)*
+*Defined in [api/types.ts:2624](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2624)*
 
 ___
 <a id="widedynamicrange"></a>
@@ -124,7 +124,7 @@ ___
 
 **● WideDynamicRange**: *[WideDynamicRange](_api_types_.imagingsettings.md#widedynamicrange)*
 
-*Defined in [api/types.ts:2461](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2461)*
+*Defined in [api/types.ts:2623](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2623)*
 
 ___
 

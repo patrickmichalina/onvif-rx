@@ -24,7 +24,7 @@
 
 **Above**:  = "Above"
 
-*Defined in [api/types.ts:4303](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4303)*
+*Defined in [api/types.ts:4465](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4465)*
 
 ___
 <a id="below"></a>
@@ -33,7 +33,7 @@ ___
 
 **Below**:  = "Below"
 
-*Defined in [api/types.ts:4295](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4295)*
+*Defined in [api/types.ts:4457](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4457)*
 
 ___
 <a id="horizon"></a>
@@ -42,7 +42,7 @@ ___
 
 **Horizon**:  = "Horizon"
 
-*Defined in [api/types.ts:4299](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4299)*
+*Defined in [api/types.ts:4461](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4461)*
 
 ___
 

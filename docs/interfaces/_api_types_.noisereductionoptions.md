@@ -24,7 +24,7 @@ Indicates whether or not support Level parameter for NoiseReduction.
 
 **● Level**: *`boolean`*
 
-*Defined in [api/types.ts:3105](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3105)*
+*Defined in [api/types.ts:3267](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3267)*
 
 ___
 

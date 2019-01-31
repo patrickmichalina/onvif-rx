@@ -25,7 +25,7 @@ IPv6 address
 
 **● Address**: *[IPv6Address](../modules/_api_types_.md#ipv6address)*
 
-*Defined in [api/types.ts:1184](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1184)*
+*Defined in [api/types.ts:1346](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1346)*
 
 ___
 <a id="prefixlength"></a>
@@ -34,7 +34,7 @@ ___
 
 **● PrefixLength**: *`number`*
 
-*Defined in [api/types.ts:1185](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1185)*
+*Defined in [api/types.ts:1347](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1347)*
 
 ___
 

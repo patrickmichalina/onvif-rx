@@ -27,7 +27,7 @@ Detail definition of preset position of the tour spot.
 
 **● Extension**: *[PTZPresetTourSpotExtension](_api_types_.ptzpresettourspotextension.md)*
 
-*Defined in [api/types.ts:2315](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2315)*
+*Defined in [api/types.ts:2477](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2477)*
 
 ___
 <a id="presetdetail"></a>
@@ -36,7 +36,7 @@ ___
 
 **● PresetDetail**: *[PTZPresetTourPresetDetail](_api_types_.ptzpresettourpresetdetail.md)*
 
-*Defined in [api/types.ts:2312](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2312)*
+*Defined in [api/types.ts:2474](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2474)*
 
 ___
 <a id="speed"></a>
@@ -45,7 +45,7 @@ ___
 
 **● Speed**: *[PTZSpeed](_api_types_.ptzspeed.md)*
 
-*Defined in [api/types.ts:2313](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2313)*
+*Defined in [api/types.ts:2475](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2475)*
 
 ___
 <a id="staytime"></a>
@@ -54,7 +54,7 @@ ___
 
 **● StayTime**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:2314](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2314)*
+*Defined in [api/types.ts:2476](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2476)*
 
 ___
 

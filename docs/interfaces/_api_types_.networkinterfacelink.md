@@ -26,7 +26,7 @@ Configured link settings.
 
 **● AdminSettings**: *[NetworkInterfaceConnectionSetting](_api_types_.networkinterfaceconnectionsetting.md)*
 
-*Defined in [api/types.ts:1062](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1062)*
+*Defined in [api/types.ts:1224](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1224)*
 
 ___
 <a id="interfacetype"></a>
@@ -35,7 +35,7 @@ ___
 
 **● InterfaceType**: *`any`*
 
-*Defined in [api/types.ts:1064](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1064)*
+*Defined in [api/types.ts:1226](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1226)*
 
 ___
 <a id="opersettings"></a>
@@ -44,7 +44,7 @@ ___
 
 **● OperSettings**: *[NetworkInterfaceConnectionSetting](_api_types_.networkinterfaceconnectionsetting.md)*
 
-*Defined in [api/types.ts:1063](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1063)*
+*Defined in [api/types.ts:1225](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1225)*
 
 ___
 

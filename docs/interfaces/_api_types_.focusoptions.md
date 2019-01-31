@@ -25,7 +25,7 @@
 
 **● AutoFocusModes**: *[AutoFocusMode](../enums/_api_types_.autofocusmode.md)*
 
-*Defined in [api/types.ts:2550](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2550)*
+*Defined in [api/types.ts:2712](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2712)*
 
 ___
 <a id="defaultspeed"></a>
@@ -34,7 +34,7 @@ ___
 
 **● DefaultSpeed**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2551](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2551)*
+*Defined in [api/types.ts:2713](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2713)*
 
 ___
 <a id="farlimit"></a>
@@ -43,7 +43,7 @@ ___
 
 **● FarLimit**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2553](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2553)*
+*Defined in [api/types.ts:2715](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2715)*
 
 ___
 <a id="nearlimit"></a>
@@ -52,7 +52,7 @@ ___
 
 **● NearLimit**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2552](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2552)*
+*Defined in [api/types.ts:2714](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2714)*
 
 ___
 

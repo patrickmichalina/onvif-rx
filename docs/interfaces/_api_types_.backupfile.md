@@ -23,7 +23,7 @@
 
 **● Data**: *[AttachmentData](_api_types_.attachmentdata.md)*
 
-*Defined in [api/types.ts:1785](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1785)*
+*Defined in [api/types.ts:1947](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1947)*
 
 ___
 <a id="name"></a>
@@ -32,7 +32,7 @@ ___
 
 **● Name**: *`string`*
 
-*Defined in [api/types.ts:1784](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1784)*
+*Defined in [api/types.ts:1946](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1946)*
 
 ___
 

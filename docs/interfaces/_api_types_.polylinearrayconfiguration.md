@@ -24,7 +24,7 @@ Contains PolylineArray configuration data
 
 **● PolylineArray**: *[PolylineArray](_api_types_.polylinearray.md)*
 
-*Defined in [api/types.ts:3291](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3291)*
+*Defined in [api/types.ts:3453](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3453)*
 
 ___
 

@@ -21,7 +21,7 @@
 
 **Extended**:  = "Extended"
 
-*Defined in [api/types.ts:5025](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5025)*
+*Defined in [api/types.ts:5187](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5187)*
 
 ___
 <a id="idle"></a>
@@ -30,7 +30,7 @@ ___
 
 **Idle**:  = "Idle"
 
-*Defined in [api/types.ts:5013](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5013)*
+*Defined in [api/types.ts:5175](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5175)*
 
 ___
 <a id="paused"></a>
@@ -39,7 +39,7 @@ ___
 
 **Paused**:  = "Paused"
 
-*Defined in [api/types.ts:5021](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5021)*
+*Defined in [api/types.ts:5183](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5183)*
 
 ___
 <a id="touring"></a>
@@ -48,7 +48,7 @@ ___
 
 **Touring**:  = "Touring"
 
-*Defined in [api/types.ts:5017](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5017)*
+*Defined in [api/types.ts:5179](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5179)*
 
 ___
 

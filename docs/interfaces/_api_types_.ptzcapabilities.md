@@ -24,7 +24,7 @@ PTZ service URI.
 
 **● XAddr**: *`string`*
 
-*Defined in [api/types.ts:1674](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1674)*
+*Defined in [api/types.ts:1836](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1836)*
 
 ___
 

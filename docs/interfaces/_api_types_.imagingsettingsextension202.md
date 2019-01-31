@@ -25,7 +25,7 @@ An optional parameter applied to only auto mode to adjust timing of toggling Ir 
 
 **● Extension**: *[ImagingSettingsExtension203](_api_types_.imagingsettingsextension203.md)*
 
-*Defined in [api/types.ts:2733](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2733)*
+*Defined in [api/types.ts:2895](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2895)*
 
 ___
 <a id="ircutfilterautoadjustment"></a>
@@ -34,7 +34,7 @@ ___
 
 **● IrCutFilterAutoAdjustment**: *[IrCutFilterAutoAdjustment](_api_types_.imagingsettingsextension202.md#ircutfilterautoadjustment)*
 
-*Defined in [api/types.ts:2732](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2732)*
+*Defined in [api/types.ts:2894](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2894)*
 
 ___
 

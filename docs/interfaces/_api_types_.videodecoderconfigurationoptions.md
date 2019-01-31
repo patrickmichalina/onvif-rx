@@ -27,7 +27,7 @@ If the device is able to decode Jpeg streams this element describes the supporte
 
 **● Extension**: *[VideoDecoderConfigurationOptionsExtension](_api_types_.videodecoderconfigurationoptionsextension.md)*
 
-*Defined in [api/types.ts:871](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L871)*
+*Defined in [api/types.ts:1033](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1033)*
 
 ___
 <a id="h264decoptions"></a>
@@ -36,7 +36,7 @@ ___
 
 **● H264DecOptions**: *[H264DecOptions](_api_types_.videodecoderconfigurationoptions.md#h264decoptions)*
 
-*Defined in [api/types.ts:869](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L869)*
+*Defined in [api/types.ts:1031](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1031)*
 
 ___
 <a id="jpegdecoptions"></a>
@@ -45,7 +45,7 @@ ___
 
 **● JpegDecOptions**: *[JpegDecOptions](_api_types_.videodecoderconfigurationoptions.md#jpegdecoptions)*
 
-*Defined in [api/types.ts:868](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L868)*
+*Defined in [api/types.ts:1030](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1030)*
 
 ___
 <a id="mpeg4decoptions"></a>
@@ -54,7 +54,7 @@ ___
 
 **● Mpeg4DecOptions**: *[Mpeg4DecOptions](_api_types_.videodecoderconfigurationoptions.md#mpeg4decoptions)*
 
-*Defined in [api/types.ts:870](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L870)*
+*Defined in [api/types.ts:1032](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1032)*
 
 ___
 

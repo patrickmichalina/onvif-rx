@@ -28,7 +28,7 @@ True if the device is able to stream pan or tilt status information.
 
 **● Extension**: *[PTZStatusFilterOptionsExtension](_api_types_.ptzstatusfilteroptionsextension.md)*
 
-*Defined in [api/types.ts:825](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L825)*
+*Defined in [api/types.ts:987](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L987)*
 
 ___
 <a id="pantiltpositionsupported"></a>
@@ -37,7 +37,7 @@ ___
 
 **● PanTiltPositionSupported**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:823](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L823)*
+*Defined in [api/types.ts:985](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L985)*
 
 ___
 <a id="pantiltstatussupported"></a>
@@ -46,7 +46,7 @@ ___
 
 **● PanTiltStatusSupported**: *`boolean`*
 
-*Defined in [api/types.ts:821](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L821)*
+*Defined in [api/types.ts:983](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L983)*
 
 ___
 <a id="zoompositionsupported"></a>
@@ -55,7 +55,7 @@ ___
 
 **● ZoomPositionSupported**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:824](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L824)*
+*Defined in [api/types.ts:986](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L986)*
 
 ___
 <a id="zoomstatussupported"></a>
@@ -64,7 +64,7 @@ ___
 
 **● ZoomStatusSupported**: *`boolean`*
 
-*Defined in [api/types.ts:822](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L822)*
+*Defined in [api/types.ts:984](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L984)*
 
 ___
 

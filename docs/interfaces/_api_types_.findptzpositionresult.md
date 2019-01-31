@@ -27,7 +27,7 @@ A reference to the recording containing the PTZ position.
 
 **● Position**: *[PTZVector](_api_types_.ptzvector.md)*
 
-*Defined in [api/types.ts:3521](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3521)*
+*Defined in [api/types.ts:3683](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3683)*
 
 ___
 <a id="recordingtoken"></a>
@@ -36,7 +36,7 @@ ___
 
 **● RecordingToken**: *[RecordingReference](../modules/_api_types_.md#recordingreference)*
 
-*Defined in [api/types.ts:3518](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3518)*
+*Defined in [api/types.ts:3680](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3680)*
 
 ___
 <a id="time"></a>
@@ -45,7 +45,7 @@ ___
 
 **● Time**: *`string`*
 
-*Defined in [api/types.ts:3520](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3520)*
+*Defined in [api/types.ts:3682](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3682)*
 
 ___
 <a id="tracktoken"></a>
@@ -54,7 +54,7 @@ ___
 
 **● TrackToken**: *[TrackReference](../modules/_api_types_.md#trackreference)*
 
-*Defined in [api/types.ts:3519](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3519)*
+*Defined in [api/types.ts:3681](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3681)*
 
 ___
 

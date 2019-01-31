@@ -23,7 +23,7 @@
 
 **● PanTilt**: *[MoveStatus](../enums/_api_types_.movestatus.md)*
 
-*Defined in [api/types.ts:172](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L172)*
+*Defined in [api/types.ts:334](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L334)*
 
 ___
 <a id="zoom"></a>
@@ -32,7 +32,7 @@ ___
 
 **● Zoom**: *[MoveStatus](../enums/_api_types_.movestatus.md)*
 
-*Defined in [api/types.ts:173](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L173)*
+*Defined in [api/types.ts:335](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L335)*
 
 ___
 

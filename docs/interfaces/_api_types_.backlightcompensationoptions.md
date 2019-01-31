@@ -23,7 +23,7 @@
 
 **● Level**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2543](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2543)*
+*Defined in [api/types.ts:2705](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2705)*
 
 ___
 <a id="mode"></a>
@@ -32,7 +32,7 @@ ___
 
 **● Mode**: *[WideDynamicMode](../enums/_api_types_.widedynamicmode.md)*
 
-*Defined in [api/types.ts:2542](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2542)*
+*Defined in [api/types.ts:2704](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2704)*
 
 ___
 

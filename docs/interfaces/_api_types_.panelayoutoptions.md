@@ -25,7 +25,7 @@ Description of a pane layout describing a complete display layout.
 
 **● Area**: *[Rectangle](_api_types_.rectangle.md)*
 
-*Defined in [api/types.ts:3376](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3376)*
+*Defined in [api/types.ts:3538](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3538)*
 
 ___
 <a id="extension"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Extension**: *[PaneOptionExtension](_api_types_.paneoptionextension.md)*
 
-*Defined in [api/types.ts:3377](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3377)*
+*Defined in [api/types.ts:3539](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3539)*
 
 ___
 

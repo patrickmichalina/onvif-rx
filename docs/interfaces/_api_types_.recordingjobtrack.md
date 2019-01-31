@@ -25,7 +25,7 @@ If the received RTSP stream contains multiple tracks of the same type, the Sourc
 
 **● Destination**: *[TrackReference](../modules/_api_types_.md#trackreference)*
 
-*Defined in [api/types.ts:3725](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3725)*
+*Defined in [api/types.ts:3887](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3887)*
 
 ___
 <a id="sourcetag"></a>
@@ -34,7 +34,7 @@ ___
 
 **● SourceTag**: *`string`*
 
-*Defined in [api/types.ts:3724](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3724)*
+*Defined in [api/types.ts:3886](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3886)*
 
 ___
 

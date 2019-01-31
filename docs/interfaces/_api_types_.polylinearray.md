@@ -25,7 +25,7 @@ Contains array of Polyline
 
 **● Extension**: *[PolylineArrayExtension](_api_types_.polylinearrayextension.md)*
 
-*Defined in [api/types.ts:3278](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3278)*
+*Defined in [api/types.ts:3440](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3440)*
 
 ___
 <a id="segment"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Segment**: *[Polyline](_api_types_.polyline.md)*
 
-*Defined in [api/types.ts:3277](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3277)*
+*Defined in [api/types.ts:3439](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3439)*
 
 ___
 

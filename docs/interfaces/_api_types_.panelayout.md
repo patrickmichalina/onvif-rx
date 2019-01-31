@@ -25,7 +25,7 @@ A pane layout describes one Video window of a display. It links a pane configura
 
 **● Area**: *[Rectangle](_api_types_.rectangle.md)*
 
-*Defined in [api/types.ts:3332](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3332)*
+*Defined in [api/types.ts:3494](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3494)*
 
 ___
 <a id="pane"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Pane**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3331](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3331)*
+*Defined in [api/types.ts:3493](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3493)*
 
 ___
 

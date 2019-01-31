@@ -25,7 +25,7 @@ Tokens of the audio source the configuration can be used for.
 
 **● Extension**: *[AudioSourceOptionsExtension](_api_types_.audiosourceoptionsextension.md)*
 
-*Defined in [api/types.ts:697](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L697)*
+*Defined in [api/types.ts:859](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L859)*
 
 ___
 <a id="inputtokensavailable"></a>
@@ -34,7 +34,7 @@ ___
 
 **● InputTokensAvailable**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:696](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L696)*
+*Defined in [api/types.ts:858](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L858)*
 
 ___
 

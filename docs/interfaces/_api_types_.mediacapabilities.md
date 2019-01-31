@@ -26,7 +26,7 @@ Media service URI.
 
 **● Extension**: *[MediaCapabilitiesExtension](_api_types_.mediacapabilitiesextension.md)*
 
-*Defined in [api/types.ts:1534](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1534)*
+*Defined in [api/types.ts:1696](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1696)*
 
 ___
 <a id="streamingcapabilities"></a>
@@ -35,7 +35,7 @@ ___
 
 **● StreamingCapabilities**: *[RealTimeStreamingCapabilities](_api_types_.realtimestreamingcapabilities.md)*
 
-*Defined in [api/types.ts:1533](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1533)*
+*Defined in [api/types.ts:1695](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1695)*
 
 ___
 <a id="xaddr"></a>
@@ -44,7 +44,7 @@ ___
 
 **● XAddr**: *`string`*
 
-*Defined in [api/types.ts:1532](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1532)*
+*Defined in [api/types.ts:1694](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1694)*
 
 ___
 

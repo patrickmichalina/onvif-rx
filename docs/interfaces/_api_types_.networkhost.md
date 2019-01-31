@@ -28,7 +28,7 @@ Network host type: IPv4, IPv6 or DNS.
 
 **● DNSname**: *[DNSName](../modules/_api_types_.md#dnsname)*
 
-*Defined in [api/types.ts:1153](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1153)*
+*Defined in [api/types.ts:1315](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1315)*
 
 ___
 <a id="extension"></a>
@@ -37,7 +37,7 @@ ___
 
 **● Extension**: *[NetworkHostExtension](_api_types_.networkhostextension.md)*
 
-*Defined in [api/types.ts:1154](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1154)*
+*Defined in [api/types.ts:1316](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1316)*
 
 ___
 <a id="ipv4address"></a>
@@ -46,7 +46,7 @@ ___
 
 **● IPv4Address**: *[IPv4Address](_api_types_.networkhost.md#ipv4address)*
 
-*Defined in [api/types.ts:1151](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1151)*
+*Defined in [api/types.ts:1313](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1313)*
 
 ___
 <a id="ipv6address"></a>
@@ -55,7 +55,7 @@ ___
 
 **● IPv6Address**: *[IPv6Address](_api_types_.networkhost.md#ipv6address)*
 
-*Defined in [api/types.ts:1152](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1152)*
+*Defined in [api/types.ts:1314](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1314)*
 
 ___
 <a id="type"></a>
@@ -64,7 +64,7 @@ ___
 
 **● Type**: *[NetworkHostType](../enums/_api_types_.networkhosttype.md)*
 
-*Defined in [api/types.ts:1150](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1150)*
+*Defined in [api/types.ts:1312](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1312)*
 
 ___
 

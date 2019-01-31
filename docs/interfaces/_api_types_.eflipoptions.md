@@ -25,7 +25,7 @@ Options of EFlip mode parameter.
 
 **● Extension**: *[EFlipOptionsExtension](_api_types_.eflipoptionsextension.md)*
 
-*Defined in [api/types.ts:2186](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2186)*
+*Defined in [api/types.ts:2348](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2348)*
 
 ___
 <a id="mode"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Mode**: *[EFlipMode](../enums/_api_types_.eflipmode.md)*
 
-*Defined in [api/types.ts:2185](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2185)*
+*Defined in [api/types.ts:2347](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2347)*
 
 ___
 

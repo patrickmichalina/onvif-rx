@@ -21,7 +21,7 @@ Enumeration describing the available backlight compenstation modes.
 
 **OFF**:  = "OFF"
 
-*Defined in [api/types.ts:5103](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5103)*
+*Defined in [api/types.ts:5265](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5265)*
 
 Backlight compensation is disabled.
 
@@ -32,7 +32,7 @@ ___
 
 **ON**:  = "ON"
 
-*Defined in [api/types.ts:5107](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5107)*
+*Defined in [api/types.ts:5269](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5269)*
 
 Backlight compensation is enabled.
 

@@ -27,7 +27,7 @@
 
 **● AudioOutputs**: *`number`*
 
-*Defined in [api/types.ts:1685](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1685)*
+*Defined in [api/types.ts:1847](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1847)*
 
 ___
 <a id="audiosources"></a>
@@ -36,7 +36,7 @@ ___
 
 **● AudioSources**: *`number`*
 
-*Defined in [api/types.ts:1684](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1684)*
+*Defined in [api/types.ts:1846](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1846)*
 
 ___
 <a id="relayoutputs"></a>
@@ -45,7 +45,7 @@ ___
 
 **● RelayOutputs**: *`number`*
 
-*Defined in [api/types.ts:1686](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1686)*
+*Defined in [api/types.ts:1848](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1848)*
 
 ___
 <a id="videooutputs"></a>
@@ -54,7 +54,7 @@ ___
 
 **● VideoOutputs**: *`number`*
 
-*Defined in [api/types.ts:1683](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1683)*
+*Defined in [api/types.ts:1845](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1845)*
 
 ___
 <a id="videosources"></a>
@@ -63,7 +63,7 @@ ___
 
 **● VideoSources**: *`number`*
 
-*Defined in [api/types.ts:1682](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1682)*
+*Defined in [api/types.ts:1844](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1844)*
 
 ___
 <a id="xaddr"></a>
@@ -72,7 +72,7 @@ ___
 
 **● XAddr**: *`string`*
 
-*Defined in [api/types.ts:1681](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1681)*
+*Defined in [api/types.ts:1843](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1843)*
 
 ___
 

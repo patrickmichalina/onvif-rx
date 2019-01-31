@@ -22,7 +22,7 @@
 
 **● Token**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3421](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3421)*
+*Defined in [api/types.ts:3583](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3583)*
 
 ___
 

@@ -28,7 +28,7 @@ The recording where this event was found. Empty string if no recording is associ
 
 **● Event**: *`any`*
 
-*Defined in [api/types.ts:3502](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3502)*
+*Defined in [api/types.ts:3664](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3664)*
 
 ___
 <a id="recordingtoken"></a>
@@ -37,7 +37,7 @@ ___
 
 **● RecordingToken**: *[RecordingReference](../modules/_api_types_.md#recordingreference)*
 
-*Defined in [api/types.ts:3499](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3499)*
+*Defined in [api/types.ts:3661](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3661)*
 
 ___
 <a id="startstateevent"></a>
@@ -46,7 +46,7 @@ ___
 
 **● StartStateEvent**: *`boolean`*
 
-*Defined in [api/types.ts:3503](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3503)*
+*Defined in [api/types.ts:3665](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3665)*
 
 ___
 <a id="time"></a>
@@ -55,7 +55,7 @@ ___
 
 **● Time**: *`string`*
 
-*Defined in [api/types.ts:3501](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3501)*
+*Defined in [api/types.ts:3663](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3663)*
 
 ___
 <a id="tracktoken"></a>
@@ -64,7 +64,7 @@ ___
 
 **● TrackToken**: *[TrackReference](../modules/_api_types_.md#trackreference)*
 
-*Defined in [api/types.ts:3500](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3500)*
+*Defined in [api/types.ts:3662](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3662)*
 
 ___
 

@@ -24,7 +24,7 @@
 
 **● MetadataInput**: *[MetadataInput](_api_types_.metadatainput.md)*
 
-*Defined in [api/types.ts:3836](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3836)*
+*Defined in [api/types.ts:3998](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3998)*
 
 ___
 <a id="sourceidentification"></a>
@@ -33,7 +33,7 @@ ___
 
 **● SourceIdentification**: *[SourceIdentification](_api_types_.sourceidentification.md)*
 
-*Defined in [api/types.ts:3834](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3834)*
+*Defined in [api/types.ts:3996](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3996)*
 
 ___
 <a id="videoinput"></a>
@@ -42,7 +42,7 @@ ___
 
 **● VideoInput**: *[VideoEncoderConfiguration](_api_types_.videoencoderconfiguration.md)*
 
-*Defined in [api/types.ts:3835](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3835)*
+*Defined in [api/types.ts:3997](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3997)*
 
 ___
 

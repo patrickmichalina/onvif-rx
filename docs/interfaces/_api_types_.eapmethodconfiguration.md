@@ -26,7 +26,7 @@ Confgiuration information for TLS Method.
 
 **● Extension**: *[EapMethodExtension](_api_types_.eapmethodextension.md)*
 
-*Defined in [api/types.ts:1988](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1988)*
+*Defined in [api/types.ts:2150](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2150)*
 
 ___
 <a id="password"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Password**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1987](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1987)*
+*Defined in [api/types.ts:2149](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2149)*
 
 ___
 <a id="tlsconfiguration"></a>
@@ -44,7 +44,7 @@ ___
 
 **● TLSConfiguration**: *[TLSConfiguration](_api_types_.eapmethodconfiguration.md#tlsconfiguration)*
 
-*Defined in [api/types.ts:1986](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1986)*
+*Defined in [api/types.ts:2148](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2148)*
 
 ___
 

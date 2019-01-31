@@ -25,7 +25,7 @@
 
 **Connected**:  = "Connected"
 
-*Defined in [api/types.ts:5341](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5341)*
+*Defined in [api/types.ts:5503](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5503)*
 
 The receiver is connected.
 
@@ -36,7 +36,7 @@ ___
 
 **Connecting**:  = "Connecting"
 
-*Defined in [api/types.ts:5337](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5337)*
+*Defined in [api/types.ts:5499](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5499)*
 
 The receiver is attempting to connect.
 
@@ -47,7 +47,7 @@ ___
 
 **NotConnected**:  = "NotConnected"
 
-*Defined in [api/types.ts:5333](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5333)*
+*Defined in [api/types.ts:5495](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5495)*
 
 The receiver is not connected.
 
@@ -58,7 +58,7 @@ ___
 
 **Unknown**:  = "Unknown"
 
-*Defined in [api/types.ts:5345](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5345)*
+*Defined in [api/types.ts:5507](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5507)*
 
 This case should never happen.
 

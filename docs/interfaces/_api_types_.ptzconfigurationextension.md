@@ -25,7 +25,7 @@ Optional element to configure PT Control Direction related features.
 
 **● Extension**: *[PTZConfigurationExtension2](_api_types_.ptzconfigurationextension2.md)*
 
-*Defined in [api/types.ts:2110](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2110)*
+*Defined in [api/types.ts:2272](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2272)*
 
 ___
 <a id="ptcontroldirection"></a>
@@ -34,7 +34,7 @@ ___
 
 **● PTControlDirection**: *[PTControlDirection](_api_types_.ptzconfigurationextension.md#ptcontroldirection)*
 
-*Defined in [api/types.ts:2109](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2109)*
+*Defined in [api/types.ts:2271](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2271)*
 
 ___
 

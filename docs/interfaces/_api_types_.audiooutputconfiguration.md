@@ -26,7 +26,7 @@ Token of the phsycial Audio output.
 
 **● OutputLevel**: *`number`*
 
-*Defined in [api/types.ts:921](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L921)*
+*Defined in [api/types.ts:1083](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1083)*
 
 ___
 <a id="outputtoken"></a>
@@ -35,7 +35,7 @@ ___
 
 **● OutputToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:919](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L919)*
+*Defined in [api/types.ts:1081](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1081)*
 
 ___
 <a id="sendprimacy"></a>
@@ -44,7 +44,7 @@ ___
 
 **● SendPrimacy**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:920](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L920)*
+*Defined in [api/types.ts:1082](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1082)*
 
 ___
 

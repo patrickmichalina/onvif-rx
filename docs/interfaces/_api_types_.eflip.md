@@ -24,7 +24,7 @@ Parameter to enable/disable E-Flip feature.
 
 **● Mode**: *[EFlipMode](../enums/_api_types_.eflipmode.md)*
 
-*Defined in [api/types.ts:2138](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2138)*
+*Defined in [api/types.ts:2300](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2300)*
 
 ___
 

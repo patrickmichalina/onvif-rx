@@ -26,7 +26,7 @@ The bitrate in kbps.
 
 **● Bitrate**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:3625](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3625)*
+*Defined in [api/types.ts:3787](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3787)*
 
 ___
 <a id="encoding"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Encoding**: *`string`*
 
-*Defined in [api/types.ts:3626](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3626)*
+*Defined in [api/types.ts:3788](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3788)*
 
 ___
 <a id="samplerate"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Samplerate**: *`number`*
 
-*Defined in [api/types.ts:3627](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3627)*
+*Defined in [api/types.ts:3789](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3789)*
 
 ___
 

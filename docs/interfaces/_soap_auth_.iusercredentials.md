@@ -23,7 +23,7 @@
 
 **● password**: *`string`*
 
-*Defined in [soap/auth.ts:13](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L13)*
+*Defined in [soap/auth.ts:13](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/auth.ts#L13)*
 
 ___
 <a id="username"></a>
@@ -32,7 +32,7 @@ ___
 
 **● username**: *`string`*
 
-*Defined in [soap/auth.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/auth.ts#L12)*
+*Defined in [soap/auth.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/auth.ts#L12)*
 
 ___
 

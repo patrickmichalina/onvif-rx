@@ -28,7 +28,7 @@ Identifies the recording to which this job shall store the received data.
 
 **● Extension**: *[RecordingJobConfigurationExtension](_api_types_.recordingjobconfigurationextension.md)*
 
-*Defined in [api/types.ts:3689](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3689)*
+*Defined in [api/types.ts:3851](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3851)*
 
 ___
 <a id="mode"></a>
@@ -37,7 +37,7 @@ ___
 
 **● Mode**: *[RecordingJobMode](../modules/_api_types_.md#recordingjobmode)*
 
-*Defined in [api/types.ts:3686](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3686)*
+*Defined in [api/types.ts:3848](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3848)*
 
 ___
 <a id="priority"></a>
@@ -46,7 +46,7 @@ ___
 
 **● Priority**: *`number`*
 
-*Defined in [api/types.ts:3687](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3687)*
+*Defined in [api/types.ts:3849](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3849)*
 
 ___
 <a id="recordingtoken"></a>
@@ -55,7 +55,7 @@ ___
 
 **● RecordingToken**: *[RecordingReference](../modules/_api_types_.md#recordingreference)*
 
-*Defined in [api/types.ts:3685](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3685)*
+*Defined in [api/types.ts:3847](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3847)*
 
 ___
 <a id="source"></a>
@@ -64,7 +64,7 @@ ___
 
 **● Source**: *[RecordingJobSource](_api_types_.recordingjobsource.md)*
 
-*Defined in [api/types.ts:3688](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3688)*
+*Defined in [api/types.ts:3850](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3850)*
 
 ___
 

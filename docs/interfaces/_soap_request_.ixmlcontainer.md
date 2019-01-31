@@ -23,7 +23,7 @@
 
 **● xmlDocument**: *`Document`*
 
-*Defined in [soap/request.ts:107](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/request.ts#L107)*
+*Defined in [soap/request.ts:117](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/request.ts#L117)*
 
 ___
 <a id="xmlstring"></a>
@@ -32,7 +32,7 @@ ___
 
 **● xmlString**: *`string`*
 
-*Defined in [soap/request.ts:106](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/request.ts#L106)*
+*Defined in [soap/request.ts:116](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/request.ts#L116)*
 
 ___
 

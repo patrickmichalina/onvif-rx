@@ -26,7 +26,7 @@ Parameter to enable/disable Image Stabilization feature.
 
 **● Extension**: *[ImageStabilizationExtension](_api_types_.imagestabilizationextension.md)*
 
-*Defined in [api/types.ts:2758](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2758)*
+*Defined in [api/types.ts:2920](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2920)*
 
 ___
 <a id="level"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Level**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2757](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2757)*
+*Defined in [api/types.ts:2919](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2919)*
 
 ___
 <a id="mode"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Mode**: *[ImageStabilizationMode](../enums/_api_types_.imagestabilizationmode.md)*
 
-*Defined in [api/types.ts:2756](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2756)*
+*Defined in [api/types.ts:2918](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2918)*
 
 ___
 

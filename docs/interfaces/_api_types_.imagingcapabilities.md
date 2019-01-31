@@ -24,7 +24,7 @@ Imaging service URI.
 
 **● XAddr**: *`string`*
 
-*Defined in [api/types.ts:1667](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1667)*
+*Defined in [api/types.ts:1829](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1829)*
 
 ___
 
