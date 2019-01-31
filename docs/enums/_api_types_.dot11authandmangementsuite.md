@@ -21,7 +21,7 @@
 
 **Dot1X**:  = "Dot1X"
 
-*Defined in [api/types.ts:4797](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4797)*
+*Defined in [api/types.ts:4959](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4959)*
 
 ___
 <a id="extended"></a>
@@ -30,7 +30,7 @@ ___
 
 **Extended**:  = "Extended"
 
-*Defined in [api/types.ts:4805](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4805)*
+*Defined in [api/types.ts:4967](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4967)*
 
 ___
 <a id="none"></a>
@@ -39,7 +39,7 @@ ___
 
 **None**:  = "None"
 
-*Defined in [api/types.ts:4793](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4793)*
+*Defined in [api/types.ts:4955](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4955)*
 
 ___
 <a id="psk"></a>
@@ -48,7 +48,7 @@ ___
 
 **PSK**:  = "PSK"
 
-*Defined in [api/types.ts:4801](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4801)*
+*Defined in [api/types.ts:4963](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4963)*
 
 ___
 

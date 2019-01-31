@@ -30,7 +30,7 @@
 
 **● Address**: *`string`*
 
-*Defined in [api/types.ts:3568](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3568)*
+*Defined in [api/types.ts:3730](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3730)*
 
 ___
 <a id="description"></a>
@@ -39,7 +39,7 @@ ___
 
 **● Description**: *[Description](_api_types_.recordingsourceinformation.md#description)*
 
-*Defined in [api/types.ts:3567](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3567)*
+*Defined in [api/types.ts:3729](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3729)*
 
 ___
 <a id="location"></a>
@@ -48,7 +48,7 @@ ___
 
 **● Location**: *[Description](_api_types_.recordingsourceinformation.md#description)*
 
-*Defined in [api/types.ts:3566](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3566)*
+*Defined in [api/types.ts:3728](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3728)*
 
 ___
 <a id="name"></a>
@@ -57,7 +57,7 @@ ___
 
 **● Name**: *[Name](_api_types_.recordingsourceinformation.md#name)*
 
-*Defined in [api/types.ts:3565](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3565)*
+*Defined in [api/types.ts:3727](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3727)*
 
 ___
 <a id="sourceid"></a>
@@ -66,7 +66,7 @@ ___
 
 **● SourceId**: *`string`*
 
-*Defined in [api/types.ts:3564](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3564)*
+*Defined in [api/types.ts:3726](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3726)*
 
 ___
 

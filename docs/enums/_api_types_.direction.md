@@ -20,7 +20,7 @@
 
 **Any**:  = "Any"
 
-*Defined in [api/types.ts:5297](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5297)*
+*Defined in [api/types.ts:5459](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5459)*
 
 ___
 <a id="left"></a>
@@ -29,7 +29,7 @@ ___
 
 **Left**:  = "Left"
 
-*Defined in [api/types.ts:5289](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5289)*
+*Defined in [api/types.ts:5451](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5451)*
 
 ___
 <a id="right"></a>
@@ -38,7 +38,7 @@ ___
 
 **Right**:  = "Right"
 
-*Defined in [api/types.ts:5293](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5293)*
+*Defined in [api/types.ts:5455](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5455)*
 
 ___
 

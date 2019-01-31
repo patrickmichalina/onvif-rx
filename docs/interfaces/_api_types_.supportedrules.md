@@ -26,7 +26,7 @@ Lists the location of all schemas that are referenced in the rules.
 
 **● Extension**: *[SupportedRulesExtension](_api_types_.supportedrulesextension.md)*
 
-*Defined in [api/types.ts:3239](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3239)*
+*Defined in [api/types.ts:3401](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3401)*
 
 ___
 <a id="rulecontentschemalocation"></a>
@@ -35,7 +35,7 @@ ___
 
 **● RuleContentSchemaLocation**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:3237](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3237)*
+*Defined in [api/types.ts:3399](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3399)*
 
 ___
 <a id="ruledescription"></a>
@@ -44,7 +44,7 @@ ___
 
 **● RuleDescription**: *[ConfigDescription](_api_types_.configdescription.md)*
 
-*Defined in [api/types.ts:3238](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3238)*
+*Defined in [api/types.ts:3400](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3400)*
 
 ___
 

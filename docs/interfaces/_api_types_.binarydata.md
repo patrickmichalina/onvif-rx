@@ -24,7 +24,7 @@ base64 encoded binary data.
 
 **● Data**: *`string`*
 
-*Defined in [api/types.ts:1771](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1771)*
+*Defined in [api/types.ts:1933](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1933)*
 
 ___
 

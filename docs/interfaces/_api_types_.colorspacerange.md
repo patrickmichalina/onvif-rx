@@ -25,7 +25,7 @@
 
 **● Colorspace**: *`string`*
 
-*Defined in [api/types.ts:4038](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4038)*
+*Defined in [api/types.ts:4200](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4200)*
 
 ___
 <a id="x"></a>
@@ -34,7 +34,7 @@ ___
 
 **● X**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:4035](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4035)*
+*Defined in [api/types.ts:4197](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4197)*
 
 ___
 <a id="y"></a>
@@ -43,7 +43,7 @@ ___
 
 **● Y**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:4036](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4036)*
+*Defined in [api/types.ts:4198](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4198)*
 
 ___
 <a id="z"></a>
@@ -52,7 +52,7 @@ ___
 
 **● Z**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:4037](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4037)*
+*Defined in [api/types.ts:4199](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4199)*
 
 ___
 

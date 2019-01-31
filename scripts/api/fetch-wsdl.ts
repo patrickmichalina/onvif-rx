@@ -2,6 +2,7 @@ import fetch from 'node-fetch'
 import { DOMParser } from 'xmldom'
 
 export enum WSDL {
+  Event = 'https://www.onvif.org/ver10/events/wsdl/event.wsdl',
   Device = 'https://www.onvif.org/ver10/device/wsdl/devicemgmt.wsdl',
   Media = 'https://www.onvif.org/ver10/media/wsdl/media.wsdl',
   // AccessControl = 'https://www.onvif.org/ver10/pacs/accesscontrol.wsdl',
@@ -49,6 +50,7 @@ export const wsdlHttpRequests = () => Promise.all(httpRequests())
 
 export const fetchXsd = () =>
   Promise.all([
+    'http://docs.oasis-open.org/wsn/b-2.xsd',
     // 'https://www.onvif.org/ver10/pacs/types.xsd',
     // 'https://www.onvif.org/ver20/analytics/rules.xsd',
     'https://www.onvif.org/ver10/schema/common.xsd',

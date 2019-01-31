@@ -22,7 +22,7 @@
 
 **● Point**: *[Vector](_api_types_.vector.md)*
 
-*Defined in [api/types.ts:3175](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3175)*
+*Defined in [api/types.ts:3337](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3337)*
 
 ___
 

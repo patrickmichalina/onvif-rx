@@ -27,7 +27,7 @@ Extension point prepared for future 802.3 configuration.
 
 **● Dot11**: *[Dot11Configuration](_api_types_.dot11configuration.md)*
 
-*Defined in [api/types.ts:1042](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1042)*
+*Defined in [api/types.ts:1204](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1204)*
 
 ___
 <a id="dot3"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Dot3**: *[Dot3Configuration](_api_types_.dot3configuration.md)*
 
-*Defined in [api/types.ts:1041](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1041)*
+*Defined in [api/types.ts:1203](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1203)*
 
 ___
 <a id="extension"></a>
@@ -45,7 +45,7 @@ ___
 
 **● Extension**: *[NetworkInterfaceExtension2](_api_types_.networkinterfaceextension2.md)*
 
-*Defined in [api/types.ts:1043](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1043)*
+*Defined in [api/types.ts:1205](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1205)*
 
 ___
 <a id="interfacetype"></a>
@@ -54,7 +54,7 @@ ___
 
 **● InterfaceType**: *`any`*
 
-*Defined in [api/types.ts:1040](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1040)*
+*Defined in [api/types.ts:1202](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1202)*
 
 ___
 

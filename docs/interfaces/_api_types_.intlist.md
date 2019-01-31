@@ -24,7 +24,7 @@ List of values.
 
 **● Items**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:306](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L306)*
+*Defined in [api/types.ts:468](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L468)*
 
 ___
 

@@ -23,7 +23,7 @@
 
 **● ActiveConnections**: *[ActiveConnection](_api_types_.activeconnection.md)*
 
-*Defined in [api/types.ts:3947](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3947)*
+*Defined in [api/types.ts:4109](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4109)*
 
 ___
 <a id="extension"></a>
@@ -32,7 +32,7 @@ ___
 
 **● Extension**: *[ProfileStatusExtension](_api_types_.profilestatusextension.md)*
 
-*Defined in [api/types.ts:3948](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3948)*
+*Defined in [api/types.ts:4110](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4110)*
 
 ___
 

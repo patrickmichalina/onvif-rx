@@ -25,7 +25,7 @@ Indicates if the scope is fixed or configurable.
 
 **● ScopeDef**: *[ScopeDefinition](../enums/_api_types_.scopedefinition.md)*
 
-*Defined in [api/types.ts:1020](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1020)*
+*Defined in [api/types.ts:1182](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1182)*
 
 ___
 <a id="scopeitem"></a>
@@ -34,7 +34,7 @@ ___
 
 **● ScopeItem**: *`string`*
 
-*Defined in [api/types.ts:1021](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1021)*
+*Defined in [api/types.ts:1183](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1183)*
 
 ___
 

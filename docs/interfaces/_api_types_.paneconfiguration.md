@@ -29,7 +29,7 @@ Configuration of the streaming and coding settings of a Video window.
 
 **● AudioEncoderConfiguration**: *[AudioEncoderConfiguration](_api_types_.paneconfiguration.md#audioencoderconfiguration)*
 
-*Defined in [api/types.ts:3322](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3322)*
+*Defined in [api/types.ts:3484](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3484)*
 
 ___
 <a id="audiooutputtoken"></a>
@@ -38,7 +38,7 @@ ___
 
 **● AudioOutputToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3320](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3320)*
+*Defined in [api/types.ts:3482](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3482)*
 
 ___
 <a id="audiosourcetoken"></a>
@@ -47,7 +47,7 @@ ___
 
 **● AudioSourceToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3321](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3321)*
+*Defined in [api/types.ts:3483](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3483)*
 
 ___
 <a id="panename"></a>
@@ -56,7 +56,7 @@ ___
 
 **● PaneName**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:3319](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3319)*
+*Defined in [api/types.ts:3481](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3481)*
 
 ___
 <a id="receivertoken"></a>
@@ -65,7 +65,7 @@ ___
 
 **● ReceiverToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3323](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3323)*
+*Defined in [api/types.ts:3485](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3485)*
 
 ___
 <a id="token"></a>
@@ -74,7 +74,7 @@ ___
 
 **● Token**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3324](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3324)*
+*Defined in [api/types.ts:3486](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3486)*
 
 ___
 

@@ -25,7 +25,7 @@ The state of the search when the result is returned. Indicates if there can be m
 
 **● RecordingInformation**: *[RecordingInformation](_api_types_.findrecordingresultlist.md#recordinginformation)*
 
-*Defined in [api/types.ts:3484](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3484)*
+*Defined in [api/types.ts:3646](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3646)*
 
 ___
 <a id="searchstate"></a>
@@ -34,7 +34,7 @@ ___
 
 **● SearchState**: *[SearchState](../enums/_api_types_.searchstate.md)*
 
-*Defined in [api/types.ts:3483](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3483)*
+*Defined in [api/types.ts:3645](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3645)*
 
 ___
 

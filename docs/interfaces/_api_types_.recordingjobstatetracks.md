@@ -22,7 +22,7 @@
 
 **● Track**: *[RecordingJobStateTrack](_api_types_.recordingjobstatetrack.md)*
 
-*Defined in [api/types.ts:3757](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3757)*
+*Defined in [api/types.ts:3919](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3919)*
 
 ___
 

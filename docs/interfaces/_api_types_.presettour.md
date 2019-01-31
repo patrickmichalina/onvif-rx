@@ -29,7 +29,7 @@ Readable name of the preset tour.
 
 **● AutoStart**: *`boolean`*
 
-*Defined in [api/types.ts:2296](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2296)*
+*Defined in [api/types.ts:2458](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2458)*
 
 ___
 <a id="extension"></a>
@@ -38,7 +38,7 @@ ___
 
 **● Extension**: *[PTZPresetTourExtension](_api_types_.ptzpresettourextension.md)*
 
-*Defined in [api/types.ts:2299](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2299)*
+*Defined in [api/types.ts:2461](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2461)*
 
 ___
 <a id="name"></a>
@@ -47,7 +47,7 @@ ___
 
 **● Name**: *[Name](_api_types_.presettour.md#name)*
 
-*Defined in [api/types.ts:2294](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2294)*
+*Defined in [api/types.ts:2456](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2456)*
 
 ___
 <a id="startingcondition"></a>
@@ -56,7 +56,7 @@ ___
 
 **● StartingCondition**: *[PTZPresetTourStartingCondition](_api_types_.ptzpresettourstartingcondition.md)*
 
-*Defined in [api/types.ts:2297](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2297)*
+*Defined in [api/types.ts:2459](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2459)*
 
 ___
 <a id="status"></a>
@@ -65,7 +65,7 @@ ___
 
 **● Status**: *[PTZPresetTourStatus](_api_types_.ptzpresettourstatus.md)*
 
-*Defined in [api/types.ts:2295](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2295)*
+*Defined in [api/types.ts:2457](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2457)*
 
 ___
 <a id="tourspot"></a>
@@ -74,7 +74,7 @@ ___
 
 **● TourSpot**: *[PTZPresetTourSpot](_api_types_.ptzpresettourspot.md)*
 
-*Defined in [api/types.ts:2298](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2298)*
+*Defined in [api/types.ts:2460](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2460)*
 
 ___
 

@@ -27,7 +27,7 @@
 
 **● Position**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2637](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2637)*
+*Defined in [api/types.ts:2799](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2799)*
 
 ___
 <a id="speed"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Speed**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2638](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2638)*
+*Defined in [api/types.ts:2800](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2800)*
 
 ___
 

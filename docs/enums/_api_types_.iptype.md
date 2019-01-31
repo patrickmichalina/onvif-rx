@@ -19,7 +19,7 @@
 
 **IPv4**:  = "IPv4"
 
-*Defined in [api/types.ts:4651](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4651)*
+*Defined in [api/types.ts:4813](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4813)*
 
 ___
 <a id="ipv6"></a>
@@ -28,7 +28,7 @@ ___
 
 **IPv6**:  = "IPv6"
 
-*Defined in [api/types.ts:4655](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4655)*
+*Defined in [api/types.ts:4817](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4817)*
 
 ___
 

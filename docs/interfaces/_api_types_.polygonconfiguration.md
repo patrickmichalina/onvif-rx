@@ -24,7 +24,7 @@ Contains Polygon configuration for rule parameters
 
 **● Polygon**: *[Polygon](_api_types_.polygon.md)*
 
-*Defined in [api/types.ts:3270](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3270)*
+*Defined in [api/types.ts:3432](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3432)*
 
 ___
 

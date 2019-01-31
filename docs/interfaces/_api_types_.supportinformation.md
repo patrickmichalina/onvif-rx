@@ -25,7 +25,7 @@ The support information as attachment data.
 
 **● Binary**: *[AttachmentData](_api_types_.attachmentdata.md)*
 
-*Defined in [api/types.ts:1763](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1763)*
+*Defined in [api/types.ts:1925](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1925)*
 
 ___
 <a id="string"></a>
@@ -34,7 +34,7 @@ ___
 
 **● String**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1764](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1764)*
+*Defined in [api/types.ts:1926](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1926)*
 
 ___
 

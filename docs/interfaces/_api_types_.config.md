@@ -24,7 +24,7 @@ List of configuration parameters as defined in the correspding description.
 
 **● Parameters**: *[ItemList](_api_types_.itemlist.md)*
 
-*Defined in [api/types.ts:3210](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3210)*
+*Defined in [api/types.ts:3372](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3372)*
 
 ___
 

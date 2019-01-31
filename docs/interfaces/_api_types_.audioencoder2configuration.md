@@ -27,7 +27,7 @@ Audio Media Subtype for the audio format. For definitions see tt:AudioEncodingMi
 
 **● Bitrate**: *`number`*
 
-*Defined in [api/types.ts:739](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L739)*
+*Defined in [api/types.ts:901](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L901)*
 
 ___
 <a id="encoding"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Encoding**: *`string`*
 
-*Defined in [api/types.ts:737](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L737)*
+*Defined in [api/types.ts:899](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L899)*
 
 ___
 <a id="multicast"></a>
@@ -45,7 +45,7 @@ ___
 
 **● Multicast**: *[MulticastConfiguration](_api_types_.multicastconfiguration.md)*
 
-*Defined in [api/types.ts:738](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L738)*
+*Defined in [api/types.ts:900](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L900)*
 
 ___
 <a id="samplerate"></a>
@@ -54,7 +54,7 @@ ___
 
 **● SampleRate**: *`number`*
 
-*Defined in [api/types.ts:740](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L740)*
+*Defined in [api/types.ts:902](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L902)*
 
 ___
 

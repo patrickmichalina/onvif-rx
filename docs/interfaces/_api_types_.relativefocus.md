@@ -27,7 +27,7 @@
 
 **● Distance**: *`number`*
 
-*Defined in [api/types.ts:2609](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2609)*
+*Defined in [api/types.ts:2771](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2771)*
 
 ___
 <a id="speed"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Speed**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2610](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2610)*
+*Defined in [api/types.ts:2772](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2772)*
 
 ___
 

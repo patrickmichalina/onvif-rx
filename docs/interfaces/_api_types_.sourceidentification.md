@@ -24,7 +24,7 @@
 
 **● Extension**: *[SourceIdentificationExtension](_api_types_.sourceidentificationextension.md)*
 
-*Defined in [api/types.ts:3845](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3845)*
+*Defined in [api/types.ts:4007](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4007)*
 
 ___
 <a id="name"></a>
@@ -33,7 +33,7 @@ ___
 
 **● Name**: *`string`*
 
-*Defined in [api/types.ts:3843](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3843)*
+*Defined in [api/types.ts:4005](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4005)*
 
 ___
 <a id="token"></a>
@@ -42,7 +42,7 @@ ___
 
 **● Token**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:3844](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3844)*
+*Defined in [api/types.ts:4006](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4006)*
 
 ___
 

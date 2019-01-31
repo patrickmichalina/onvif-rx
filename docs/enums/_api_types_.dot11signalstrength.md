@@ -23,7 +23,7 @@
 
 **Bad**:  = "Bad"
 
-*Defined in [api/types.ts:4771](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4771)*
+*Defined in [api/types.ts:4933](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4933)*
 
 ___
 <a id="extended"></a>
@@ -32,7 +32,7 @@ ___
 
 **Extended**:  = "Extended"
 
-*Defined in [api/types.ts:4783](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4783)*
+*Defined in [api/types.ts:4945](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4945)*
 
 ___
 <a id="good"></a>
@@ -41,7 +41,7 @@ ___
 
 **Good**:  = "Good"
 
-*Defined in [api/types.ts:4775](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4775)*
+*Defined in [api/types.ts:4937](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4937)*
 
 ___
 <a id="none"></a>
@@ -50,7 +50,7 @@ ___
 
 **None**:  = "None"
 
-*Defined in [api/types.ts:4763](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4763)*
+*Defined in [api/types.ts:4925](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4925)*
 
 ___
 <a id="very_bad"></a>
@@ -59,7 +59,7 @@ ___
 
 **Very Bad**:  = "Very Bad"
 
-*Defined in [api/types.ts:4767](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4767)*
+*Defined in [api/types.ts:4929](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4929)*
 
 ___
 <a id="very_good"></a>
@@ -68,7 +68,7 @@ ___
 
 **Very Good**:  = "Very Good"
 
-*Defined in [api/types.ts:4779](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4779)*
+*Defined in [api/types.ts:4941](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4941)*
 
 ___
 

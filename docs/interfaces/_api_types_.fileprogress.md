@@ -25,7 +25,7 @@ Exported file name
 
 **● FileName**: *`string`*
 
-*Defined in [api/types.ts:4147](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4147)*
+*Defined in [api/types.ts:4309](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4309)*
 
 ___
 <a id="progress"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Progress**: *`number`*
 
-*Defined in [api/types.ts:4148](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4148)*
+*Defined in [api/types.ts:4310](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4310)*
 
 ___
 

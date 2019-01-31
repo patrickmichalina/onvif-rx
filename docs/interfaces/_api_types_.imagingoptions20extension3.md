@@ -27,7 +27,7 @@ Options of parameters for Tone Compensation feature.
 
 **● DefoggingOptions**: *[DefoggingOptions](_api_types_.imagingoptions20extension3.md#defoggingoptions)*
 
-*Defined in [api/types.ts:2894](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2894)*
+*Defined in [api/types.ts:3056](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3056)*
 
 ___
 <a id="extension"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Extension**: *[ImagingOptions20Extension4](_api_types_.imagingoptions20extension4.md)*
 
-*Defined in [api/types.ts:2896](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2896)*
+*Defined in [api/types.ts:3058](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3058)*
 
 ___
 <a id="noisereductionoptions"></a>
@@ -45,7 +45,7 @@ ___
 
 **● NoiseReductionOptions**: *[NoiseReductionOptions](_api_types_.imagingoptions20extension3.md#noisereductionoptions)*
 
-*Defined in [api/types.ts:2895](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2895)*
+*Defined in [api/types.ts:3057](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3057)*
 
 ___
 <a id="tonecompensationoptions"></a>
@@ -54,7 +54,7 @@ ___
 
 **● ToneCompensationOptions**: *[ToneCompensationOptions](_api_types_.imagingoptions20extension3.md#tonecompensationoptions)*
 
-*Defined in [api/types.ts:2893](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2893)*
+*Defined in [api/types.ts:3055](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3055)*
 
 ___
 

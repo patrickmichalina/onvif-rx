@@ -24,7 +24,7 @@ Motion Expression data structure contains motion expression which is based on Sc
 
 **● Expression**: *`string`*
 
-*Defined in [api/types.ts:3298](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3298)*
+*Defined in [api/types.ts:3460](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3460)*
 
 ___
 

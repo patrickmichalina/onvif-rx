@@ -25,7 +25,7 @@
 
 **AlwaysConnect**:  = "AlwaysConnect"
 
-*Defined in [api/types.ts:5313](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5313)*
+*Defined in [api/types.ts:5475](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5475)*
 
 The receiver attempts to maintain a persistent connection to the configured endpoint.
 
@@ -36,7 +36,7 @@ ___
 
 **AutoConnect**:  = "AutoConnect"
 
-*Defined in [api/types.ts:5309](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5309)*
+*Defined in [api/types.ts:5471](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5471)*
 
 The receiver connects on demand, as required by consumers of the media streams.
 
@@ -47,7 +47,7 @@ ___
 
 **NeverConnect**:  = "NeverConnect"
 
-*Defined in [api/types.ts:5317](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5317)*
+*Defined in [api/types.ts:5479](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5479)*
 
 The receiver does not attempt to connect.
 
@@ -58,7 +58,7 @@ ___
 
 **Unknown**:  = "Unknown"
 
-*Defined in [api/types.ts:5321](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5321)*
+*Defined in [api/types.ts:5483](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5483)*
 
 This case should never happen.
 

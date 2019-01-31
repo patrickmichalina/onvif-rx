@@ -33,7 +33,7 @@
 
 **● DelayTime**: *`string`*
 
-*Defined in [api/types.ts:2021](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2021)*
+*Defined in [api/types.ts:2183](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2183)*
 
 ___
 <a id="idlestate"></a>
@@ -42,7 +42,7 @@ ___
 
 **● IdleState**: *[RelayIdleState](../enums/_api_types_.relayidlestate.md)*
 
-*Defined in [api/types.ts:2022](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2022)*
+*Defined in [api/types.ts:2184](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2184)*
 
 ___
 <a id="mode"></a>
@@ -51,7 +51,7 @@ ___
 
 **● Mode**: *[RelayMode](../enums/_api_types_.relaymode.md)*
 
-*Defined in [api/types.ts:2020](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2020)*
+*Defined in [api/types.ts:2182](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2182)*
 
 ___
 

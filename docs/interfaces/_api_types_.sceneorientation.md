@@ -27,7 +27,7 @@
 
 **● Mode**: *[SceneOrientationMode](../enums/_api_types_.sceneorientationmode.md)*
 
-*Defined in [api/types.ts:518](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L518)*
+*Defined in [api/types.ts:680](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L680)*
 
 ___
 <a id="orientation"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Orientation**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:519](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L519)*
+*Defined in [api/types.ts:681](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L681)*
 
 ___
 

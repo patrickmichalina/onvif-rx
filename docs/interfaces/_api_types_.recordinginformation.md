@@ -34,7 +34,7 @@
 
 **● Content**: *[Description](../modules/_api_types_.md#description)*
 
-*Defined in [api/types.ts:3553](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3553)*
+*Defined in [api/types.ts:3715](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3715)*
 
 ___
 <a id="earliestrecording"></a>
@@ -43,7 +43,7 @@ ___
 
 **● EarliestRecording**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:3551](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3551)*
+*Defined in [api/types.ts:3713](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3713)*
 
 ___
 <a id="latestrecording"></a>
@@ -52,7 +52,7 @@ ___
 
 **● LatestRecording**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:3552](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3552)*
+*Defined in [api/types.ts:3714](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3714)*
 
 ___
 <a id="recordingstatus"></a>
@@ -61,7 +61,7 @@ ___
 
 **● RecordingStatus**: *[RecordingStatus](../enums/_api_types_.recordingstatus.md)*
 
-*Defined in [api/types.ts:3555](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3555)*
+*Defined in [api/types.ts:3717](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3717)*
 
 ___
 <a id="recordingtoken"></a>
@@ -70,7 +70,7 @@ ___
 
 **● RecordingToken**: *[RecordingReference](../modules/_api_types_.md#recordingreference)*
 
-*Defined in [api/types.ts:3549](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3549)*
+*Defined in [api/types.ts:3711](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3711)*
 
 ___
 <a id="source"></a>
@@ -79,7 +79,7 @@ ___
 
 **● Source**: *[RecordingSourceInformation](_api_types_.recordingsourceinformation.md)*
 
-*Defined in [api/types.ts:3550](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3550)*
+*Defined in [api/types.ts:3712](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3712)*
 
 ___
 <a id="track"></a>
@@ -88,7 +88,7 @@ ___
 
 **● Track**: *[TrackInformation](_api_types_.trackinformation.md)*
 
-*Defined in [api/types.ts:3554](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3554)*
+*Defined in [api/types.ts:3716](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3716)*
 
 ___
 

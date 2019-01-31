@@ -23,7 +23,7 @@
 
 **● AnalyticsModule**: *[Config](_api_types_.config.md)*
 
-*Defined in [api/types.ts:3182](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3182)*
+*Defined in [api/types.ts:3344](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3344)*
 
 ___
 <a id="extension"></a>
@@ -32,7 +32,7 @@ ___
 
 **● Extension**: *[AnalyticsEngineConfigurationExtension](_api_types_.analyticsengineconfigurationextension.md)*
 
-*Defined in [api/types.ts:3183](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3183)*
+*Defined in [api/types.ts:3345](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3345)*
 
 ___
 

@@ -27,7 +27,7 @@ Supported options of boundary types for adjustment of Ir cut filter auto mode. T
 
 **● BoundaryOffset**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:2925](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2925)*
+*Defined in [api/types.ts:3087](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3087)*
 
 ___
 <a id="boundarytype"></a>
@@ -36,7 +36,7 @@ ___
 
 **● BoundaryType**: *`string`*
 
-*Defined in [api/types.ts:2924](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2924)*
+*Defined in [api/types.ts:3086](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3086)*
 
 ___
 <a id="extension"></a>
@@ -45,7 +45,7 @@ ___
 
 **● Extension**: *[IrCutFilterAutoAdjustmentOptionsExtension](_api_types_.ircutfilterautoadjustmentoptionsextension.md)*
 
-*Defined in [api/types.ts:2927](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2927)*
+*Defined in [api/types.ts:3089](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3089)*
 
 ___
 <a id="responsetimerange"></a>
@@ -54,7 +54,7 @@ ___
 
 **● ResponseTimeRange**: *[DurationRange](_api_types_.durationrange.md)*
 
-*Defined in [api/types.ts:2926](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2926)*
+*Defined in [api/types.ts:3088](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3088)*
 
 ___
 

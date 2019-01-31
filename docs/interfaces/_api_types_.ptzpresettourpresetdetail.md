@@ -27,7 +27,7 @@ Option to specify the preset position with Preset Token defined in advance.
 
 **● Home**: *`boolean`*
 
-*Defined in [api/types.ts:2329](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2329)*
+*Defined in [api/types.ts:2491](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2491)*
 
 ___
 <a id="ptzposition"></a>
@@ -36,7 +36,7 @@ ___
 
 **● PTZPosition**: *[PTZVector](_api_types_.ptzvector.md)*
 
-*Defined in [api/types.ts:2330](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2330)*
+*Defined in [api/types.ts:2492](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2492)*
 
 ___
 <a id="presettoken"></a>
@@ -45,7 +45,7 @@ ___
 
 **● PresetToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:2328](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2328)*
+*Defined in [api/types.ts:2490](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2490)*
 
 ___
 <a id="typeextension"></a>
@@ -54,7 +54,7 @@ ___
 
 **● TypeExtension**: *[PTZPresetTourTypeExtension](_api_types_.ptzpresettourtypeextension.md)*
 
-*Defined in [api/types.ts:2331](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2331)*
+*Defined in [api/types.ts:2493](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2493)*
 
 ___
 

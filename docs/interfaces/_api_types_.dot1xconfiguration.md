@@ -32,7 +32,7 @@
 
 **● AnonymousID**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1969](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1969)*
+*Defined in [api/types.ts:2131](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2131)*
 
 ___
 <a id="cacertificateid"></a>
@@ -41,7 +41,7 @@ ___
 
 **● CACertificateID**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1971](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1971)*
+*Defined in [api/types.ts:2133](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2133)*
 
 ___
 <a id="dot1xconfigurationtoken"></a>
@@ -50,7 +50,7 @@ ___
 
 **● Dot1XConfigurationToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:1967](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1967)*
+*Defined in [api/types.ts:2129](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2129)*
 
 ___
 <a id="eapmethod"></a>
@@ -59,7 +59,7 @@ ___
 
 **● EAPMethod**: *`number`*
 
-*Defined in [api/types.ts:1970](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1970)*
+*Defined in [api/types.ts:2132](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2132)*
 
 ___
 <a id="eapmethodconfiguration"></a>
@@ -68,7 +68,7 @@ ___
 
 **● EAPMethodConfiguration**: *[EAPMethodConfiguration](_api_types_.dot1xconfiguration.md#eapmethodconfiguration)*
 
-*Defined in [api/types.ts:1972](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1972)*
+*Defined in [api/types.ts:2134](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2134)*
 
 ___
 <a id="extension"></a>
@@ -77,7 +77,7 @@ ___
 
 **● Extension**: *[Dot1XConfigurationExtension](_api_types_.dot1xconfigurationextension.md)*
 
-*Defined in [api/types.ts:1973](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1973)*
+*Defined in [api/types.ts:2135](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2135)*
 
 ___
 <a id="identity"></a>
@@ -86,7 +86,7 @@ ___
 
 **● Identity**: *`string`*
 
-*Defined in [api/types.ts:1968](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1968)*
+*Defined in [api/types.ts:2130](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2130)*
 
 ___
 

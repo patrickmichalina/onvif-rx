@@ -23,7 +23,7 @@
 
 **● From**: *`string`*
 
-*Defined in [api/types.ts:3428](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3428)*
+*Defined in [api/types.ts:3590](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3590)*
 
 ___
 <a id="until"></a>
@@ -32,7 +32,7 @@ ___
 
 **● Until**: *`string`*
 
-*Defined in [api/types.ts:3429](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3429)*
+*Defined in [api/types.ts:3591](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3591)*
 
 ___
 

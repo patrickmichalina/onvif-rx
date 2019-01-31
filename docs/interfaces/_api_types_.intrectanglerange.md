@@ -27,7 +27,7 @@ Range of a rectangle. The rectangle itself is defined by lower left corner posit
 
 **● HeightRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:275](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L275)*
+*Defined in [api/types.ts:437](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L437)*
 
 ___
 <a id="widthrange"></a>
@@ -36,7 +36,7 @@ ___
 
 **● WidthRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:274](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L274)*
+*Defined in [api/types.ts:436](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L436)*
 
 ___
 <a id="xrange"></a>
@@ -45,7 +45,7 @@ ___
 
 **● XRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:272](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L272)*
+*Defined in [api/types.ts:434](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L434)*
 
 ___
 <a id="yrange"></a>
@@ -54,7 +54,7 @@ ___
 
 **● YRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:273](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L273)*
+*Defined in [api/types.ts:435](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L435)*
 
 ___
 

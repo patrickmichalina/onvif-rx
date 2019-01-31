@@ -29,7 +29,7 @@ Indicates whether or not an interface is enabled.
 
 **● Enabled**: *`boolean`*
 
-*Defined in [api/types.ts:1028](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1028)*
+*Defined in [api/types.ts:1190](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1190)*
 
 ___
 <a id="extension"></a>
@@ -38,7 +38,7 @@ ___
 
 **● Extension**: *[NetworkInterfaceExtension](_api_types_.networkinterfaceextension.md)*
 
-*Defined in [api/types.ts:1033](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1033)*
+*Defined in [api/types.ts:1195](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1195)*
 
 ___
 <a id="ipv4"></a>
@@ -47,7 +47,7 @@ ___
 
 **● IPv4**: *[IPv4NetworkInterface](_api_types_.ipv4networkinterface.md)*
 
-*Defined in [api/types.ts:1031](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1031)*
+*Defined in [api/types.ts:1193](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1193)*
 
 ___
 <a id="ipv6"></a>
@@ -56,7 +56,7 @@ ___
 
 **● IPv6**: *[IPv6NetworkInterface](_api_types_.ipv6networkinterface.md)*
 
-*Defined in [api/types.ts:1032](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1032)*
+*Defined in [api/types.ts:1194](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1194)*
 
 ___
 <a id="info"></a>
@@ -65,7 +65,7 @@ ___
 
 **● Info**: *[NetworkInterfaceInfo](_api_types_.networkinterfaceinfo.md)*
 
-*Defined in [api/types.ts:1029](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1029)*
+*Defined in [api/types.ts:1191](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1191)*
 
 ___
 <a id="link"></a>
@@ -74,7 +74,7 @@ ___
 
 **● Link**: *[NetworkInterfaceLink](_api_types_.networkinterfacelink.md)*
 
-*Defined in [api/types.ts:1030](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1030)*
+*Defined in [api/types.ts:1192](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1192)*
 
 ___
 

@@ -21,7 +21,7 @@
 
 **Any**:  = "Any"
 
-*Defined in [api/types.ts:4749](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4749)*
+*Defined in [api/types.ts:4911](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4911)*
 
 ___
 <a id="ccmp"></a>
@@ -30,7 +30,7 @@ ___
 
 **CCMP**:  = "CCMP"
 
-*Defined in [api/types.ts:4741](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4741)*
+*Defined in [api/types.ts:4903](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4903)*
 
 ___
 <a id="extended"></a>
@@ -39,7 +39,7 @@ ___
 
 **Extended**:  = "Extended"
 
-*Defined in [api/types.ts:4753](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4753)*
+*Defined in [api/types.ts:4915](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4915)*
 
 ___
 <a id="tkip"></a>
@@ -48,7 +48,7 @@ ___
 
 **TKIP**:  = "TKIP"
 
-*Defined in [api/types.ts:4745](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4745)*
+*Defined in [api/types.ts:4907](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4907)*
 
 ___
 

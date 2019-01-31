@@ -31,7 +31,7 @@
 
 **● Extension**: *[ConfigDescriptionExtension](_api_types_.configdescriptionextension.md)*
 
-*Defined in [api/types.ts:3224](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3224)*
+*Defined in [api/types.ts:3386](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3386)*
 
 ___
 <a id="messages"></a>
@@ -40,7 +40,7 @@ ___
 
 **● Messages**: *`any`*
 
-*Defined in [api/types.ts:3222](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3222)*
+*Defined in [api/types.ts:3384](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3384)*
 
 ___
 <a id="parameters"></a>
@@ -49,7 +49,7 @@ ___
 
 **● Parameters**: *[ItemListDescription](_api_types_.itemlistdescription.md)*
 
-*Defined in [api/types.ts:3221](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3221)*
+*Defined in [api/types.ts:3383](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3383)*
 
 ___
 <a id="parenttopic"></a>
@@ -58,7 +58,7 @@ ___
 
 **● ParentTopic**: *`string`*
 
-*Defined in [api/types.ts:3223](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3223)*
+*Defined in [api/types.ts:3385](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3385)*
 
 ___
 

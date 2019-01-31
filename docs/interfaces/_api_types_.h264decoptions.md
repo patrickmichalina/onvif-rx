@@ -27,7 +27,7 @@ List of supported H.264 Video Resolutions
 
 **● ResolutionsAvailable**: *[VideoResolution](_api_types_.videoresolution.md)*
 
-*Defined in [api/types.ts:878](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L878)*
+*Defined in [api/types.ts:1040](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1040)*
 
 ___
 <a id="supportedframerate"></a>
@@ -36,7 +36,7 @@ ___
 
 **● SupportedFrameRate**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:881](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L881)*
+*Defined in [api/types.ts:1043](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1043)*
 
 ___
 <a id="supportedh264profiles"></a>
@@ -45,7 +45,7 @@ ___
 
 **● SupportedH264Profiles**: *[H264Profile](../enums/_api_types_.h264profile.md)*
 
-*Defined in [api/types.ts:879](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L879)*
+*Defined in [api/types.ts:1041](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1041)*
 
 ___
 <a id="supportedinputbitrate"></a>
@@ -54,7 +54,7 @@ ___
 
 **● SupportedInputBitrate**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:880](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L880)*
+*Defined in [api/types.ts:1042](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1042)*
 
 ___
 

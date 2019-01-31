@@ -26,7 +26,7 @@
 
 **● AdHocStationMode**: *`boolean`*
 
-*Defined in [api/types.ts:1399](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1399)*
+*Defined in [api/types.ts:1561](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1561)*
 
 ___
 <a id="multipleconfiguration"></a>
@@ -35,7 +35,7 @@ ___
 
 **● MultipleConfiguration**: *`boolean`*
 
-*Defined in [api/types.ts:1398](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1398)*
+*Defined in [api/types.ts:1560](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1560)*
 
 ___
 <a id="scanavailablenetworks"></a>
@@ -44,7 +44,7 @@ ___
 
 **● ScanAvailableNetworks**: *`boolean`*
 
-*Defined in [api/types.ts:1397](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1397)*
+*Defined in [api/types.ts:1559](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1559)*
 
 ___
 <a id="tkip"></a>
@@ -53,7 +53,7 @@ ___
 
 **● TKIP**: *`boolean`*
 
-*Defined in [api/types.ts:1396](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1396)*
+*Defined in [api/types.ts:1558](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1558)*
 
 ___
 <a id="wep"></a>
@@ -62,7 +62,7 @@ ___
 
 **● WEP**: *`boolean`*
 
-*Defined in [api/types.ts:1400](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1400)*
+*Defined in [api/types.ts:1562](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1562)*
 
 ___
 

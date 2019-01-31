@@ -1,3 +1,4 @@
+import { ONVIFEvent } from "./event";
 import { ONVIFDevice } from "./device";
 import { ONVIFMedia } from "./media";
 import { ONVIFAnalytics } from "./analytics";
@@ -13,6 +14,7 @@ import { ONVIFAdvancedSecurity } from "./advancedsecurity";
 import { IDeviceConfig } from "../config";
 
 export class ManagedONVIFApi {
+    public Event = new ONVIFEvent(this.config);
     public Device = new ONVIFDevice(this.config);
     public Media = new ONVIFMedia(this.config);
     public Analytics = new ONVIFAnalytics(this.config);
@@ -30,6 +32,7 @@ export class ManagedONVIFApi {
     }
 }
 
+export * from "./event";
 export * from "./device";
 export * from "./media";
 export * from "./analytics";

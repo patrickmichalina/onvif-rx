@@ -24,7 +24,7 @@ The address of the replay service.
 
 **● XAddr**: *`string`*
 
-*Defined in [api/types.ts:1721](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1721)*
+*Defined in [api/types.ts:1883](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1883)*
 
 ___
 

@@ -25,7 +25,7 @@ Token of the track.
 
 **● Configuration**: *[TrackConfiguration](_api_types_.trackconfiguration.md)*
 
-*Defined in [api/types.ts:3678](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3678)*
+*Defined in [api/types.ts:3840](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3840)*
 
 ___
 <a id="tracktoken"></a>
@@ -34,7 +34,7 @@ ___
 
 **● TrackToken**: *[TrackReference](../modules/_api_types_.md#trackreference)*
 
-*Defined in [api/types.ts:3677](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3677)*
+*Defined in [api/types.ts:3839](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3839)*
 
 ___
 

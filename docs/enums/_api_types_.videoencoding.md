@@ -20,7 +20,7 @@
 
 **H264**:  = "H264"
 
-*Defined in [api/types.ts:4359](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4359)*
+*Defined in [api/types.ts:4521](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4521)*
 
 ___
 <a id="jpeg"></a>
@@ -29,7 +29,7 @@ ___
 
 **JPEG**:  = "JPEG"
 
-*Defined in [api/types.ts:4351](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4351)*
+*Defined in [api/types.ts:4513](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4513)*
 
 ___
 <a id="mpeg4"></a>
@@ -38,7 +38,7 @@ ___
 
 **MPEG4**:  = "MPEG4"
 
-*Defined in [api/types.ts:4355](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4355)*
+*Defined in [api/types.ts:4517](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4517)*
 
 ___
 

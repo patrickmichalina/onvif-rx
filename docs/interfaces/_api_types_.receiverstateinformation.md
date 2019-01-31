@@ -27,7 +27,7 @@
 
 **● AutoCreated**: *`boolean`*
 
-*Defined in [api/types.ts:3414](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3414)*
+*Defined in [api/types.ts:3576](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3576)*
 
 ___
 <a id="state"></a>
@@ -36,7 +36,7 @@ ___
 
 **● State**: *[ReceiverState](../enums/_api_types_.receiverstate.md)*
 
-*Defined in [api/types.ts:3413](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3413)*
+*Defined in [api/types.ts:3575](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3575)*
 
 ___
 

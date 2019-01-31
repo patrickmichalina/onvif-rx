@@ -26,7 +26,7 @@ It optionally contains a list of URLs that provide the location of schema files.
 
 **● AnalyticsModuleContentSchemaLocation**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:3255](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3255)*
+*Defined in [api/types.ts:3417](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3417)*
 
 ___
 <a id="analyticsmoduledescription"></a>
@@ -35,7 +35,7 @@ ___
 
 **● AnalyticsModuleDescription**: *[ConfigDescription](_api_types_.configdescription.md)*
 
-*Defined in [api/types.ts:3256](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3256)*
+*Defined in [api/types.ts:3418](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3418)*
 
 ___
 <a id="extension"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Extension**: *[SupportedAnalyticsModulesExtension](_api_types_.supportedanalyticsmodulesextension.md)*
 
-*Defined in [api/types.ts:3257](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3257)*
+*Defined in [api/types.ts:3419](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3419)*
 
 ___
 

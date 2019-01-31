@@ -26,7 +26,7 @@ Maximum output framerate in fps. If an EncodingInterval is provided the resultin
 
 **● BitrateLimit**: *`number`*
 
-*Defined in [api/types.ts:550](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L550)*
+*Defined in [api/types.ts:712](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L712)*
 
 ___
 <a id="encodinginterval"></a>
@@ -35,7 +35,7 @@ ___
 
 **● EncodingInterval**: *`number`*
 
-*Defined in [api/types.ts:549](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L549)*
+*Defined in [api/types.ts:711](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L711)*
 
 ___
 <a id="frameratelimit"></a>
@@ -44,7 +44,7 @@ ___
 
 **● FrameRateLimit**: *`number`*
 
-*Defined in [api/types.ts:548](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L548)*
+*Defined in [api/types.ts:710](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L710)*
 
 ___
 

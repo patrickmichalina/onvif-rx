@@ -25,7 +25,7 @@ List of available image URIs.
 
 **● Extension**: *[OSDImgOptionsExtension](_api_types_.osdimgoptionsextension.md)*
 
-*Defined in [api/types.ts:4092](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4092)*
+*Defined in [api/types.ts:4254](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4254)*
 
 ___
 <a id="imagepath"></a>
@@ -34,7 +34,7 @@ ___
 
 **● ImagePath**: *`string`*
 
-*Defined in [api/types.ts:4091](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4091)*
+*Defined in [api/types.ts:4253](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4253)*
 
 ___
 

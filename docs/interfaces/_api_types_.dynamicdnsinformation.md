@@ -27,7 +27,7 @@ Dynamic DNS type.
 
 **● Extension**: *[DynamicDNSInformationExtension](_api_types_.dynamicdnsinformationextension.md)*
 
-*Defined in [api/types.ts:1243](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1243)*
+*Defined in [api/types.ts:1405](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1405)*
 
 ___
 <a id="name"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Name**: *[DNSName](../modules/_api_types_.md#dnsname)*
 
-*Defined in [api/types.ts:1241](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1241)*
+*Defined in [api/types.ts:1403](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1403)*
 
 ___
 <a id="ttl"></a>
@@ -45,7 +45,7 @@ ___
 
 **● TTL**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1242](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1242)*
+*Defined in [api/types.ts:1404](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1404)*
 
 ___
 <a id="type"></a>
@@ -54,7 +54,7 @@ ___
 
 **● Type**: *[DynamicDNSType](../enums/_api_types_.dynamicdnstype.md)*
 
-*Defined in [api/types.ts:1240](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1240)*
+*Defined in [api/types.ts:1402](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1402)*
 
 ___
 

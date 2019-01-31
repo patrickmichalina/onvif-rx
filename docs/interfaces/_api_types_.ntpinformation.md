@@ -27,7 +27,7 @@ Indicates if NTP information is to be retrieved by using DHCP.
 
 **● Extension**: *[NTPInformationExtension](_api_types_.ntpinformationextension.md)*
 
-*Defined in [api/types.ts:1227](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1227)*
+*Defined in [api/types.ts:1389](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1389)*
 
 ___
 <a id="fromdhcp"></a>
@@ -36,7 +36,7 @@ ___
 
 **● FromDHCP**: *`boolean`*
 
-*Defined in [api/types.ts:1224](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1224)*
+*Defined in [api/types.ts:1386](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1386)*
 
 ___
 <a id="ntpfromdhcp"></a>
@@ -45,7 +45,7 @@ ___
 
 **● NTPFromDHCP**: *[NetworkHost](_api_types_.networkhost.md)*
 
-*Defined in [api/types.ts:1225](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1225)*
+*Defined in [api/types.ts:1387](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1387)*
 
 ___
 <a id="ntpmanual"></a>
@@ -54,7 +54,7 @@ ___
 
 **● NTPManual**: *[NetworkHost](_api_types_.networkhost.md)*
 
-*Defined in [api/types.ts:1226](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1226)*
+*Defined in [api/types.ts:1388](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1388)*
 
 ___
 

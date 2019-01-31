@@ -24,7 +24,7 @@ Token of the Video Output the configuration applies to
 
 **● OutputToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:855](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L855)*
+*Defined in [api/types.ts:1017](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1017)*
 
 ___
 

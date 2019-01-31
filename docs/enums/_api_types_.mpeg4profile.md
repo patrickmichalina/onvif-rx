@@ -19,7 +19,7 @@
 
 **ASP**:  = "ASP"
 
-*Defined in [api/types.ts:4373](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4373)*
+*Defined in [api/types.ts:4535](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4535)*
 
 ___
 <a id="sp"></a>
@@ -28,7 +28,7 @@ ___
 
 **SP**:  = "SP"
 
-*Defined in [api/types.ts:4369](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4369)*
+*Defined in [api/types.ts:4531](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4531)*
 
 ___
 

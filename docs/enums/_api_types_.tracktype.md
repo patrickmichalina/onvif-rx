@@ -23,7 +23,7 @@ Placeholder for future extension.
 
 **Audio**:  = "Audio"
 
-*Defined in [api/types.ts:5411](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5411)*
+*Defined in [api/types.ts:5573](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5573)*
 
 ___
 <a id="extended"></a>
@@ -32,7 +32,7 @@ ___
 
 **Extended**:  = "Extended"
 
-*Defined in [api/types.ts:5419](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5419)*
+*Defined in [api/types.ts:5581](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5581)*
 
 Placeholder for future extension.
 
@@ -43,7 +43,7 @@ ___
 
 **Metadata**:  = "Metadata"
 
-*Defined in [api/types.ts:5415](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5415)*
+*Defined in [api/types.ts:5577](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5577)*
 
 ___
 <a id="video"></a>
@@ -52,7 +52,7 @@ ___
 
 **Video**:  = "Video"
 
-*Defined in [api/types.ts:5407](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5407)*
+*Defined in [api/types.ts:5569](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5569)*
 
 ___
 

@@ -26,7 +26,7 @@ A reference to the recording containing the metadata.
 
 **● RecordingToken**: *[RecordingReference](../modules/_api_types_.md#recordingreference)*
 
-*Defined in [api/types.ts:3536](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3536)*
+*Defined in [api/types.ts:3698](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3698)*
 
 ___
 <a id="time"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Time**: *`string`*
 
-*Defined in [api/types.ts:3538](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3538)*
+*Defined in [api/types.ts:3700](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3700)*
 
 ___
 <a id="tracktoken"></a>
@@ -44,7 +44,7 @@ ___
 
 **● TrackToken**: *[TrackReference](../modules/_api_types_.md#trackreference)*
 
-*Defined in [api/types.ts:3537](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3537)*
+*Defined in [api/types.ts:3699](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3699)*
 
 ___
 

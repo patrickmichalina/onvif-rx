@@ -27,7 +27,7 @@ Event service URI.
 
 **● WSPausableSubscriptionManagerInterfaceSupport**: *`boolean`*
 
-*Defined in [api/types.ts:1501](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1501)*
+*Defined in [api/types.ts:1663](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1663)*
 
 ___
 <a id="wspullpointsupport"></a>
@@ -36,7 +36,7 @@ ___
 
 **● WSPullPointSupport**: *`boolean`*
 
-*Defined in [api/types.ts:1500](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1500)*
+*Defined in [api/types.ts:1662](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1662)*
 
 ___
 <a id="wssubscriptionpolicysupport"></a>
@@ -45,7 +45,7 @@ ___
 
 **● WSSubscriptionPolicySupport**: *`boolean`*
 
-*Defined in [api/types.ts:1499](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1499)*
+*Defined in [api/types.ts:1661](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1661)*
 
 ___
 <a id="xaddr"></a>
@@ -54,7 +54,7 @@ ___
 
 **● XAddr**: *`string`*
 
-*Defined in [api/types.ts:1498](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1498)*
+*Defined in [api/types.ts:1660](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1660)*
 
 ___
 

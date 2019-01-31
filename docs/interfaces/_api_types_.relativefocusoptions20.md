@@ -27,7 +27,7 @@
 
 **● Distance**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2994](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2994)*
+*Defined in [api/types.ts:3156](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3156)*
 
 ___
 <a id="speed"></a>
@@ -36,7 +36,7 @@ ___
 
 **● Speed**: *[FloatRange](_api_types_.floatrange.md)*
 
-*Defined in [api/types.ts:2995](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2995)*
+*Defined in [api/types.ts:3157](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3157)*
 
 ___
 

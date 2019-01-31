@@ -28,7 +28,7 @@ Indicates whether or not IP filtering is supported.
 
 **● DynDNS**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1574](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1574)*
+*Defined in [api/types.ts:1736](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1736)*
 
 ___
 <a id="extension"></a>
@@ -37,7 +37,7 @@ ___
 
 **● Extension**: *[NetworkCapabilitiesExtension](_api_types_.networkcapabilitiesextension.md)*
 
-*Defined in [api/types.ts:1575](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1575)*
+*Defined in [api/types.ts:1737](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1737)*
 
 ___
 <a id="ipfilter"></a>
@@ -46,7 +46,7 @@ ___
 
 **● IPFilter**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1571](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1571)*
+*Defined in [api/types.ts:1733](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1733)*
 
 ___
 <a id="ipversion6"></a>
@@ -55,7 +55,7 @@ ___
 
 **● IPVersion6**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1573](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1573)*
+*Defined in [api/types.ts:1735](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1735)*
 
 ___
 <a id="zeroconfiguration"></a>
@@ -64,7 +64,7 @@ ___
 
 **● ZeroConfiguration**: *`undefined` \| `false` \| `true`*
 
-*Defined in [api/types.ts:1572](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1572)*
+*Defined in [api/types.ts:1734](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1734)*
 
 ___
 

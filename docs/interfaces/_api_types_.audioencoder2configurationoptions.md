@@ -26,7 +26,7 @@ Audio Media Subtype for the audio format. For definitions see tt:AudioEncodingMi
 
 **● BitrateList**: *[IntList](_api_types_.intlist.md)*
 
-*Defined in [api/types.ts:748](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L748)*
+*Defined in [api/types.ts:910](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L910)*
 
 ___
 <a id="encoding"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Encoding**: *`string`*
 
-*Defined in [api/types.ts:747](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L747)*
+*Defined in [api/types.ts:909](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L909)*
 
 ___
 <a id="sampleratelist"></a>
@@ -44,7 +44,7 @@ ___
 
 **● SampleRateList**: *[IntList](_api_types_.intlist.md)*
 
-*Defined in [api/types.ts:749](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L749)*
+*Defined in [api/types.ts:911](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L911)*
 
 ___
 

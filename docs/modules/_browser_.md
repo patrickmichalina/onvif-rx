@@ -18,7 +18,7 @@
 
 ▸ **createManagedDeviceInBrowser**(config: *[IDeviceInitConfig](../interfaces/_manage_device_.ideviceinitconfig.md)*): [IManagedDevice](../interfaces/_manage_device_.imanageddevice.md)
 
-*Defined in [browser.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/browser.ts#L7)*
+*Defined in [browser.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/browser.ts#L7)*
 
 **Parameters:**
 

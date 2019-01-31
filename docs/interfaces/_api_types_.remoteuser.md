@@ -24,7 +24,7 @@
 
 **● Password**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:1870](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1870)*
+*Defined in [api/types.ts:2032](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2032)*
 
 ___
 <a id="usederivedpassword"></a>
@@ -33,7 +33,7 @@ ___
 
 **● UseDerivedPassword**: *`boolean`*
 
-*Defined in [api/types.ts:1871](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1871)*
+*Defined in [api/types.ts:2033](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2033)*
 
 ___
 <a id="username"></a>
@@ -42,7 +42,7 @@ ___
 
 **● Username**: *`string`*
 
-*Defined in [api/types.ts:1869](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1869)*
+*Defined in [api/types.ts:2031](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2031)*
 
 ___
 

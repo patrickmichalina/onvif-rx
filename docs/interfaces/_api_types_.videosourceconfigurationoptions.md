@@ -30,7 +30,7 @@
 
 **● BoundsRange**: *[IntRectangleRange](_api_types_.intrectanglerange.md)*
 
-*Defined in [api/types.ts:477](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L477)*
+*Defined in [api/types.ts:639](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L639)*
 
 ___
 <a id="extension"></a>
@@ -39,7 +39,7 @@ ___
 
 **● Extension**: *[VideoSourceConfigurationOptionsExtension](_api_types_.videosourceconfigurationoptionsextension.md)*
 
-*Defined in [api/types.ts:479](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L479)*
+*Defined in [api/types.ts:641](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L641)*
 
 ___
 <a id="videosourcetokensavailable"></a>
@@ -48,7 +48,7 @@ ___
 
 **● VideoSourceTokensAvailable**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:478](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L478)*
+*Defined in [api/types.ts:640](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L640)*
 
 ___
 

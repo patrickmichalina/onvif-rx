@@ -1,4 +1,8 @@
 /**
+ * 
+ */
+export type AbsoluteOrRelativeTimeType = any;
+/**
  * Unique identifier for a physical or logical resource.
  * 			Tokens should be assigned such that they are unique within a device. Tokens must be at least unique within its class.
  * 			Length up to 64 characters.
@@ -117,6 +121,164 @@ export type AudioClassType = string;
  * 	  
  */
 export type encodingStyle = ReadonlyArray<string>;
+
+/**
+ * 
+ */
+export interface QueryExpressionType {
+}
+
+/**
+ * 
+ */
+export interface TopicExpressionType {
+}
+
+/**
+ * 
+ */
+export interface FilterType {
+}
+
+/**
+ * 
+ */
+export interface SubscriptionPolicyType {
+}
+
+/**
+ * 
+ */
+export interface NotificationMessageHolderType {
+    readonly 'Message': any;
+}
+
+/**
+ * 
+ */
+export interface SubscribeCreationFailedFaultType {
+}
+
+/**
+ * 
+ */
+export interface InvalidFilterFaultType {
+    readonly 'UnknownFilter': any;
+}
+
+/**
+ * 
+ */
+export interface TopicExpressionDialectUnknownFaultType {
+}
+
+/**
+ * 
+ */
+export interface InvalidTopicExpressionFaultType {
+}
+
+/**
+ * 
+ */
+export interface TopicNotSupportedFaultType {
+}
+
+/**
+ * 
+ */
+export interface MultipleTopicsSpecifiedFaultType {
+}
+
+/**
+ * 
+ */
+export interface InvalidProducerPropertiesExpressionFaultType {
+}
+
+/**
+ * 
+ */
+export interface InvalidMessageContentExpressionFaultType {
+}
+
+/**
+ * 
+ */
+export interface UnrecognizedPolicyRequestFaultType {
+    readonly 'UnrecognizedPolicy'?: any;
+}
+
+/**
+ * 
+ */
+export interface UnsupportedPolicyRequestFaultType {
+    readonly 'UnsupportedPolicy'?: any;
+}
+
+/**
+ * 
+ */
+export interface NotifyMessageNotSupportedFaultType {
+}
+
+/**
+ * 
+ */
+export interface UnacceptableInitialTerminationTimeFaultType {
+    readonly 'MinimumTime': string;
+    readonly 'MaximumTime'?: string;
+}
+
+/**
+ * 
+ */
+export interface NoCurrentMessageOnTopicFaultType {
+}
+
+/**
+ * 
+ */
+export interface UnableToGetMessagesFaultType {
+}
+
+/**
+ * 
+ */
+export interface UnableToDestroyPullPointFaultType {
+}
+
+/**
+ * 
+ */
+export interface UnableToCreatePullPointFaultType {
+}
+
+/**
+ * 
+ */
+export interface UnacceptableTerminationTimeFaultType {
+    readonly 'MinimumTime': string;
+    readonly 'MaximumTime'?: string;
+}
+
+/**
+ * 
+ */
+export interface UnableToDestroySubscriptionFaultType {
+}
+
+/**
+ * 
+ */
+export interface PauseFailedFaultType {
+}
+
+/**
+ * 
+ */
+export interface ResumeFailedFaultType {
+}
 
 /**
  * 

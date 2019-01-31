@@ -26,7 +26,7 @@ Indicates whether or not the AutoStart is supported.
 
 **● AutoStart**: *`boolean`*
 
-*Defined in [api/types.ts:2375](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2375)*
+*Defined in [api/types.ts:2537](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2537)*
 
 ___
 <a id="startingcondition"></a>
@@ -35,7 +35,7 @@ ___
 
 **● StartingCondition**: *[PTZPresetTourStartingConditionOptions](_api_types_.ptzpresettourstartingconditionoptions.md)*
 
-*Defined in [api/types.ts:2376](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2376)*
+*Defined in [api/types.ts:2538](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2538)*
 
 ___
 <a id="tourspot"></a>
@@ -44,7 +44,7 @@ ___
 
 **● TourSpot**: *[PTZPresetTourSpotOptions](_api_types_.ptzpresettourspotoptions.md)*
 
-*Defined in [api/types.ts:2377](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2377)*
+*Defined in [api/types.ts:2539](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2539)*
 
 ___
 

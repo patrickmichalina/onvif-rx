@@ -20,7 +20,7 @@
 
 **Backward**:  = "Backward"
 
-*Defined in [api/types.ts:5039](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5039)*
+*Defined in [api/types.ts:5201](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5201)*
 
 ___
 <a id="extended"></a>
@@ -29,7 +29,7 @@ ___
 
 **Extended**:  = "Extended"
 
-*Defined in [api/types.ts:5043](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5043)*
+*Defined in [api/types.ts:5205](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5205)*
 
 ___
 <a id="forward"></a>
@@ -38,7 +38,7 @@ ___
 
 **Forward**:  = "Forward"
 
-*Defined in [api/types.ts:5035](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L5035)*
+*Defined in [api/types.ts:5197](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5197)*
 
 ___
 

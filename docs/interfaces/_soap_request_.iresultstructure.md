@@ -25,7 +25,7 @@
 
 **● json**: *`T`*
 
-*Defined in [soap/request.ts:9](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/request.ts#L9)*
+*Defined in [soap/request.ts:9](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/request.ts#L9)*
 
 ___
 <a id="xml"></a>
@@ -34,7 +34,7 @@ ___
 
 **● xml**: *`string`*
 
-*Defined in [soap/request.ts:10](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/soap/request.ts#L10)*
+*Defined in [soap/request.ts:10](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/request.ts#L10)*
 
 ___
 

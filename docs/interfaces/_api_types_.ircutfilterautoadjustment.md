@@ -27,7 +27,7 @@ Specifies which boundaries to automatically toggle Ir cut filter following param
 
 **● BoundaryOffset**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2772](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2772)*
+*Defined in [api/types.ts:2934](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2934)*
 
 ___
 <a id="boundarytype"></a>
@@ -36,7 +36,7 @@ ___
 
 **● BoundaryType**: *`string`*
 
-*Defined in [api/types.ts:2771](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2771)*
+*Defined in [api/types.ts:2933](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2933)*
 
 ___
 <a id="extension"></a>
@@ -45,7 +45,7 @@ ___
 
 **● Extension**: *[IrCutFilterAutoAdjustmentExtension](_api_types_.ircutfilterautoadjustmentextension.md)*
 
-*Defined in [api/types.ts:2774](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2774)*
+*Defined in [api/types.ts:2936](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2936)*
 
 ___
 <a id="responsetime"></a>
@@ -54,7 +54,7 @@ ___
 
 **● ResponseTime**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:2773](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2773)*
+*Defined in [api/types.ts:2935](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2935)*
 
 ___
 

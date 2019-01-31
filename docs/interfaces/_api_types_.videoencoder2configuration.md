@@ -28,7 +28,7 @@ Video Media Subtype for the video format. For definitions see tt:VideoEncodingMi
 
 **● Encoding**: *`string`*
 
-*Defined in [api/types.ts:652](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L652)*
+*Defined in [api/types.ts:814](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L814)*
 
 ___
 <a id="multicast"></a>
@@ -37,7 +37,7 @@ ___
 
 **● Multicast**: *[MulticastConfiguration](_api_types_.multicastconfiguration.md)*
 
-*Defined in [api/types.ts:655](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L655)*
+*Defined in [api/types.ts:817](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L817)*
 
 ___
 <a id="quality"></a>
@@ -46,7 +46,7 @@ ___
 
 **● Quality**: *`number`*
 
-*Defined in [api/types.ts:656](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L656)*
+*Defined in [api/types.ts:818](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L818)*
 
 ___
 <a id="ratecontrol"></a>
@@ -55,7 +55,7 @@ ___
 
 **● RateControl**: *[VideoRateControl2](_api_types_.videoratecontrol2.md)*
 
-*Defined in [api/types.ts:654](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L654)*
+*Defined in [api/types.ts:816](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L816)*
 
 ___
 <a id="resolution"></a>
@@ -64,7 +64,7 @@ ___
 
 **● Resolution**: *[VideoResolution2](_api_types_.videoresolution2.md)*
 
-*Defined in [api/types.ts:653](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L653)*
+*Defined in [api/types.ts:815](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L815)*
 
 ___
 

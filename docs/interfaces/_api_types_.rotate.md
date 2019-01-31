@@ -26,7 +26,7 @@ Parameter to enable/disable Rotation feature.
 
 **● Degree**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:435](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L435)*
+*Defined in [api/types.ts:597](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L597)*
 
 ___
 <a id="extension"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Extension**: *[RotateExtension](_api_types_.rotateextension.md)*
 
-*Defined in [api/types.ts:436](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L436)*
+*Defined in [api/types.ts:598](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L598)*
 
 ___
 <a id="mode"></a>
@@ -44,7 +44,7 @@ ___
 
 **● Mode**: *[RotateMode](../enums/_api_types_.rotatemode.md)*
 
-*Defined in [api/types.ts:434](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L434)*
+*Defined in [api/types.ts:596](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L596)*
 
 ___
 

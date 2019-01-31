@@ -32,7 +32,7 @@ Indicates whether or not TLS 1.1 is supported.
 
 **● AccessPolicyConfig**: *`boolean`*
 
-*Defined in [api/types.ts:1599](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1599)*
+*Defined in [api/types.ts:1761](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1761)*
 
 ___
 <a id="extension"></a>
@@ -41,7 +41,7 @@ ___
 
 **● Extension**: *[SecurityCapabilitiesExtension](_api_types_.securitycapabilitiesextension.md)*
 
-*Defined in [api/types.ts:1604](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1604)*
+*Defined in [api/types.ts:1766](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1766)*
 
 ___
 <a id="kerberostoken"></a>
@@ -50,7 +50,7 @@ ___
 
 **● KerberosToken**: *`boolean`*
 
-*Defined in [api/types.ts:1602](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1602)*
+*Defined in [api/types.ts:1764](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1764)*
 
 ___
 <a id="onboardkeygeneration"></a>
@@ -59,7 +59,7 @@ ___
 
 **● OnboardKeyGeneration**: *`boolean`*
 
-*Defined in [api/types.ts:1598](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1598)*
+*Defined in [api/types.ts:1760](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1760)*
 
 ___
 <a id="reltoken"></a>
@@ -68,7 +68,7 @@ ___
 
 **● RELToken**: *`boolean`*
 
-*Defined in [api/types.ts:1603](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1603)*
+*Defined in [api/types.ts:1765](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1765)*
 
 ___
 <a id="samltoken"></a>
@@ -77,7 +77,7 @@ ___
 
 **● SAMLToken**: *`boolean`*
 
-*Defined in [api/types.ts:1601](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1601)*
+*Defined in [api/types.ts:1763](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1763)*
 
 ___
 <a id="tls1_1"></a>
@@ -86,7 +86,7 @@ ___
 
 **● TLS1.1**: *`boolean`*
 
-*Defined in [api/types.ts:1596](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1596)*
+*Defined in [api/types.ts:1758](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1758)*
 
 ___
 <a id="tls1_2"></a>
@@ -95,7 +95,7 @@ ___
 
 **● TLS1.2**: *`boolean`*
 
-*Defined in [api/types.ts:1597](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1597)*
+*Defined in [api/types.ts:1759](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1759)*
 
 ___
 <a id="x_509token"></a>
@@ -104,7 +104,7 @@ ___
 
 **● X.509Token**: *`boolean`*
 
-*Defined in [api/types.ts:1600](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1600)*
+*Defined in [api/types.ts:1762](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1762)*
 
 ___
 

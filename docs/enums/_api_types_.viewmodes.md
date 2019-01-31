@@ -27,7 +27,7 @@ Source view modes supported by device.
 
 **180Panorama**:  = "180Panorama"
 
-*Defined in [api/types.ts:4321](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4321)*
+*Defined in [api/types.ts:4483](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4483)*
 
 180 degree panoramic view.
 
@@ -38,7 +38,7 @@ ___
 
 **360Panorama**:  = "360Panorama"
 
-*Defined in [api/types.ts:4317](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4317)*
+*Defined in [api/types.ts:4479](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4479)*
 
 360 degree panoramic view.
 
@@ -49,7 +49,7 @@ ___
 
 **Dewarp**:  = "Dewarp"
 
-*Defined in [api/types.ts:4341](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4341)*
+*Defined in [api/types.ts:4503](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4503)*
 
 Dewarped view mode for device supporting fisheye lens.
 
@@ -60,7 +60,7 @@ ___
 
 **Fisheye**:  = "Fisheye"
 
-*Defined in [api/types.ts:4313](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4313)*
+*Defined in [api/types.ts:4475](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4475)*
 
 Undewarped viewmode from device supporting fisheye lens.
 
@@ -71,7 +71,7 @@ ___
 
 **LeftHalf**:  = "LeftHalf"
 
-*Defined in [api/types.ts:4333](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4333)*
+*Defined in [api/types.ts:4495](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4495)*
 
 Viewmode combining the left side sensors, applicable for devices supporting multiple sensors.
 
@@ -82,7 +82,7 @@ ___
 
 **Original**:  = "Original"
 
-*Defined in [api/types.ts:4329](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4329)*
+*Defined in [api/types.ts:4491](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4491)*
 
 Unaltered view from the sensor.
 
@@ -93,7 +93,7 @@ ___
 
 **Quad**:  = "Quad"
 
-*Defined in [api/types.ts:4325](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4325)*
+*Defined in [api/types.ts:4487](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4487)*
 
 View mode combining four streams in single Quad, eg., applicable for devices supporting four heads.
 
@@ -104,7 +104,7 @@ ___
 
 **RightHalf**:  = "RightHalf"
 
-*Defined in [api/types.ts:4337](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4337)*
+*Defined in [api/types.ts:4499](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4499)*
 
 Viewmode combining the right side sensors, applicable for devices supporting multiple sensors.
 

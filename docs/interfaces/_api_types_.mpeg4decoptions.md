@@ -27,7 +27,7 @@ List of supported Mpeg4 Video Resolutions
 
 **● ResolutionsAvailable**: *[VideoResolution](_api_types_.videoresolution.md)*
 
-*Defined in [api/types.ts:897](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L897)*
+*Defined in [api/types.ts:1059](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1059)*
 
 ___
 <a id="supportedframerate"></a>
@@ -36,7 +36,7 @@ ___
 
 **● SupportedFrameRate**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:900](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L900)*
+*Defined in [api/types.ts:1062](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1062)*
 
 ___
 <a id="supportedinputbitrate"></a>
@@ -45,7 +45,7 @@ ___
 
 **● SupportedInputBitrate**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:899](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L899)*
+*Defined in [api/types.ts:1061](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1061)*
 
 ___
 <a id="supportedmpeg4profiles"></a>
@@ -54,7 +54,7 @@ ___
 
 **● SupportedMpeg4Profiles**: *[Mpeg4Profile](../enums/_api_types_.mpeg4profile.md)*
 
-*Defined in [api/types.ts:898](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L898)*
+*Defined in [api/types.ts:1060](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1060)*
 
 ___
 

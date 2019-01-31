@@ -23,7 +23,7 @@
 
 **● Error**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:3893](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3893)*
+*Defined in [api/types.ts:4055](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4055)*
 
 ___
 <a id="state"></a>
@@ -32,7 +32,7 @@ ___
 
 **● State**: *`string`*
 
-*Defined in [api/types.ts:3894](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3894)*
+*Defined in [api/types.ts:4056](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4056)*
 
 ___
 

@@ -25,7 +25,7 @@ Type describing whether BLC mode is enabled or disabled (on/off).
 
 **● Level**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:2796](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2796)*
+*Defined in [api/types.ts:2958](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2958)*
 
 ___
 <a id="mode"></a>
@@ -34,7 +34,7 @@ ___
 
 **● Mode**: *[BacklightCompensationMode](../enums/_api_types_.backlightcompensationmode.md)*
 
-*Defined in [api/types.ts:2795](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2795)*
+*Defined in [api/types.ts:2957](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2957)*
 
 ___
 

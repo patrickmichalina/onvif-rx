@@ -20,7 +20,7 @@
 
 **EXI**:  = "EXI"
 
-*Defined in [api/types.ts:4505](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4505)*
+*Defined in [api/types.ts:4667](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4667)*
 
 ___
 <a id="gzip"></a>
@@ -29,7 +29,7 @@ ___
 
 **GZIP**:  = "GZIP"
 
-*Defined in [api/types.ts:4501](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4501)*
+*Defined in [api/types.ts:4663](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4663)*
 
 ___
 <a id="none"></a>
@@ -38,7 +38,7 @@ ___
 
 **None**:  = "None"
 
-*Defined in [api/types.ts:4497](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L4497)*
+*Defined in [api/types.ts:4659](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4659)*
 
 ___
 

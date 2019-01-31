@@ -28,7 +28,7 @@
 
 **● MediaUri**: *`string`*
 
-*Defined in [api/types.ts:3403](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3403)*
+*Defined in [api/types.ts:3565](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3565)*
 
 ___
 <a id="mode"></a>
@@ -37,7 +37,7 @@ ___
 
 **● Mode**: *[ReceiverMode](../enums/_api_types_.receivermode.md)*
 
-*Defined in [api/types.ts:3402](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3402)*
+*Defined in [api/types.ts:3564](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3564)*
 
 ___
 <a id="streamsetup"></a>
@@ -46,7 +46,7 @@ ___
 
 **● StreamSetup**: *[StreamSetup](_api_types_.streamsetup.md)*
 
-*Defined in [api/types.ts:3404](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L3404)*
+*Defined in [api/types.ts:3566](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3566)*
 
 ___
 

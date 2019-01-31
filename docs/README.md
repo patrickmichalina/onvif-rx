@@ -9,6 +9,7 @@
 * ["api/analytics"](modules/_api_analytics_.md)
 * ["api/device"](modules/_api_device_.md)
 * ["api/display"](modules/_api_display_.md)
+* ["api/event"](modules/_api_event_.md)
 * ["api/imaging"](modules/_api_imaging_.md)
 * ["api/index"](modules/_api_index_.md)
 * ["api/media"](modules/_api_media_.md)

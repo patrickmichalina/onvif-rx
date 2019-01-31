@@ -26,7 +26,7 @@
 
 **● parser**: *`DOMParser`* =  new DOMParser()
 
-*Defined in [config/node.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/config/node.ts#L6)*
+*Defined in [config/node.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/node.ts#L6)*
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 ▸ **transport**(body: *`string`*): `(Anonymous function)`
 
-*Defined in [config/node.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/config/node.ts#L7)*
+*Defined in [config/node.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/node.ts#L7)*
 
 **Parameters:**
 
@@ -58,7 +58,7 @@ ___
 
 **DEFAULT_NODE_ENV**: *`object`*
 
-*Defined in [config/node.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/config/node.ts#L12)*
+*Defined in [config/node.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/node.ts#L12)*
 
 <a id="default_node_env.buffer"></a>
 
@@ -66,7 +66,7 @@ ___
 
 **● buffer**: *`object`* =  Buffer
 
-*Defined in [config/node.ts:17](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/config/node.ts#L17)*
+*Defined in [config/node.ts:17](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/node.ts#L17)*
 
 #### Type declaration
 
@@ -387,7 +387,7 @@ ___
 
 **● digestSha1**: *`function`*
 
-*Defined in [config/node.ts:16](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/config/node.ts#L16)*
+*Defined in [config/node.ts:16](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/node.ts#L16)*
 
 #### Type declaration
 ▸(str: *`string`*): `string`
@@ -407,7 +407,7 @@ ___
 
 **● nonce**: *`function`*
 
-*Defined in [config/node.ts:15](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/config/node.ts#L15)*
+*Defined in [config/node.ts:15](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/node.ts#L15)*
 
 #### Type declaration
 ▸(size?: *`undefined` \| `number`*): `string`
@@ -427,7 +427,7 @@ ___
 
 **● parser**: *`DOMParser`*
 
-*Defined in [config/node.ts:13](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/config/node.ts#L13)*
+*Defined in [config/node.ts:13](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/node.ts#L13)*
 
 ___
 <a id="default_node_env.transport-1"></a>
@@ -436,7 +436,7 @@ ___
 
 **● transport**: *[transport]()*
 
-*Defined in [config/node.ts:14](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/config/node.ts#L14)*
+*Defined in [config/node.ts:14](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/node.ts#L14)*
 
 ___
 

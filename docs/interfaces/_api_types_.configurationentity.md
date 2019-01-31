@@ -25,7 +25,7 @@ Base type defining the common properties of a configuration.
 
 **● Name**: *[Name](_api_types_.configurationentity.md#name)*
 
-*Defined in [api/types.ts:396](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L396)*
+*Defined in [api/types.ts:558](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L558)*
 
 ___
 <a id="usecount"></a>
@@ -34,7 +34,7 @@ ___
 
 **● UseCount**: *`number`*
 
-*Defined in [api/types.ts:397](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L397)*
+*Defined in [api/types.ts:559](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L559)*
 
 ___
 

@@ -22,7 +22,7 @@
 
 **● Items**: *`undefined` \| `number`*
 
-*Defined in [api/types.ts:313](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L313)*
+*Defined in [api/types.ts:475](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L475)*
 
 ___
 

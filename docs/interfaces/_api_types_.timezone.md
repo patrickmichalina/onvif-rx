@@ -35,7 +35,7 @@
 
 **● TZ**: *`string`*
 
-*Defined in [api/types.ts:1862](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L1862)*
+*Defined in [api/types.ts:2024](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2024)*
 
 ___
 

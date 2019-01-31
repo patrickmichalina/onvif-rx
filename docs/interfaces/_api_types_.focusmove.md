@@ -28,7 +28,7 @@
 
 **● Absolute**: *[AbsoluteFocus](_api_types_.absolutefocus.md)*
 
-*Defined in [api/types.ts:2588](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2588)*
+*Defined in [api/types.ts:2750](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2750)*
 
 ___
 <a id="continuous"></a>
@@ -37,7 +37,7 @@ ___
 
 **● Continuous**: *[ContinuousFocus](_api_types_.continuousfocus.md)*
 
-*Defined in [api/types.ts:2590](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2590)*
+*Defined in [api/types.ts:2752](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2752)*
 
 ___
 <a id="relative"></a>
@@ -46,7 +46,7 @@ ___
 
 **● Relative**: *[RelativeFocus](_api_types_.relativefocus.md)*
 
-*Defined in [api/types.ts:2589](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L2589)*
+*Defined in [api/types.ts:2751](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2751)*
 
 ___
 

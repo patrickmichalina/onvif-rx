@@ -26,7 +26,7 @@ Tokens of the physical Audio outputs (typically one).
 
 **● OutputLevelRange**: *[IntRange](_api_types_.intrange.md)*
 
-*Defined in [api/types.ts:930](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L930)*
+*Defined in [api/types.ts:1092](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1092)*
 
 ___
 <a id="outputtokensavailable"></a>
@@ -35,7 +35,7 @@ ___
 
 **● OutputTokensAvailable**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:928](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L928)*
+*Defined in [api/types.ts:1090](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1090)*
 
 ___
 <a id="sendprimacyoptions"></a>
@@ -44,7 +44,7 @@ ___
 
 **● SendPrimacyOptions**: *`undefined` \| `string`*
 
-*Defined in [api/types.ts:929](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L929)*
+*Defined in [api/types.ts:1091](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1091)*
 
 ___
 

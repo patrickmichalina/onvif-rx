@@ -26,7 +26,7 @@ Offset of the lens center to the imager center in normalized coordinates.
 
 **● Offset**: *[LensOffset](_api_types_.lensoffset.md)*
 
-*Defined in [api/types.ts:464](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L464)*
+*Defined in [api/types.ts:626](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L626)*
 
 ___
 <a id="projection"></a>
@@ -35,7 +35,7 @@ ___
 
 **● Projection**: *[LensProjection](_api_types_.lensprojection.md)*
 
-*Defined in [api/types.ts:465](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L465)*
+*Defined in [api/types.ts:627](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L627)*
 
 ___
 <a id="xfactor"></a>
@@ -44,7 +44,7 @@ ___
 
 **● XFactor**: *`number`*
 
-*Defined in [api/types.ts:466](https://github.com/patrickmichalina/onvif-rx/blob/3ab1739/src/api/types.ts#L466)*
+*Defined in [api/types.ts:628](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L628)*
 
 ___
 

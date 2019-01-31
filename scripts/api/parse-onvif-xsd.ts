@@ -31,9 +31,9 @@ export interface ParsedXsd {
  * https://www.onvif.org/ver10/schema/onvif.xsd
  */
 export const parseOnvifXsdForTypeInfo = (xmlDoc: Document): ParsedXsd => {
-  const NS = xmlDoc.documentElement.lookupNamespaceURI('xs') || ''
+  const NS = xmlDoc.documentElement.lookupNamespaceURI('xs') || xmlDoc.documentElement.lookupNamespaceURI('xsd') || ''
   const sts = Array.from(xmlDoc.getElementsByTagNameNS(NS, 'simpleType'))
-
+  
   const enumTypes = sts.filter(s => Array.from(s.getElementsByTagNameNS(NS, 'enumeration')).length)
   const simpleTypes = sts.filter(s => Array.from(s.getElementsByTagNameNS(NS, 'enumeration')).length === 0)
 
