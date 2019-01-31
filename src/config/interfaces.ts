@@ -6,6 +6,7 @@ export interface ITransportPayoad {
   readonly statusMessage: string
   readonly status: number
 }
+
 export type ITransport = (body: string) => (uri: string) => Observable<ITransportPayoad>
 
 export type IEncodeBase64 = (str: string) => string

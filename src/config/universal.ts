@@ -10,7 +10,7 @@ export const FETCH_CONFIG = (body: string) => ({ method: 'POST', body, headers: 
 export const sharedFetchWrapper =
   (fetchResponse: Promise<any>) =>
     from(fetchResponse)
-      .pipe(flatMap<Response, ITransportPayoad>(a => a.text().then(body => {
+      .pipe(flatMap<Response, Promise<ITransportPayoad>>(a => a.text().then(body => {
         return {
           body,
           status: a.status,

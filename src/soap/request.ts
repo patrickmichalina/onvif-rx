@@ -70,6 +70,10 @@ export const soapShell =
         <${SOAP_NODE.Body}>${rawBody}</${SOAP_NODE.Body}>
       </${SOAP_NODE.Envelope}>`
 
+const stringIsBool = (str: string) => str.toLowerCase() === 'true' || str.toLowerCase() === 'false'
+const stringToBool = (str: string) => str.toLowerCase() === 'true' ? true : false
+const typeConversion = (str: string) => stringIsBool(str) ? stringToBool(str) : str
+
 export const mapResponseXmlToJson =
   <T>(node: string) =>
     (source: Observable<IOnvifResult>) =>
@@ -82,8 +86,14 @@ export const mapResponseXmlToJson =
           const parsed = JSON.parse(xml2json(b.xmlString, {
             compact: true,
             spaces: 2,
-            nativeType: true,
-            nativeTypeAttributes: true,
+            textFn: (value: any, parentElement: any) => {
+              try {
+                const keyNo = Object.keys(parentElement._parent).length
+                const keyName = Object.keys(parentElement._parent)[keyNo - 1]
+                // tslint:disable-next-line:no-object-mutation
+                parentElement._parent[keyName] = typeConversion(value)
+              } catch (e) { }
+            },
             elementNameFn: (d: string) => maybe(d.split(':')[1]).valueOr(d)
           } as any))
 
