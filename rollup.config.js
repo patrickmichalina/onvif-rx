@@ -31,7 +31,8 @@ export default [
           'typescript-monads': 'typescriptMonads',
           'rxjs': 'rxjs',
           'rxjs/operators': 'rxjs/operators',
-          'buffer': 'Buffer'
+          'buffer': 'Buffer',
+          'xml-js': 'xml-js'
         }
       }
     ]
