@@ -8,9 +8,8 @@ export interface ITransportPayoad {
 }
 
 export type ITransport = (body: string) => (uri: string) => Observable<ITransportPayoad>
-
 export type IEncodeBase64 = (str: string) => string
-export type ISha1Digest = (str: string) => string
+export type ISha1Digest = (str: string) => PromiseLike<string>
 export type INonce = (size?: number) => string
 
 export interface ISystemConfig {

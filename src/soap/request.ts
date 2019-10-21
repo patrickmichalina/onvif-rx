@@ -53,7 +53,7 @@ const parseXml =
     (xmlString: string): Document =>
       parser.parseFromString(xmlString, 'text/xml')
 
-const nsstr = () => Object.keys(XMLNS).map((k: any) => XMLNS[k])
+const nsstr = () => Object.keys(XMLNS).map((k: any) => (XMLNS as any)[k])
 
 export enum SOAP_NODE {
   Header = 'S11:Header',

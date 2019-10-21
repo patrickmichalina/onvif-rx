@@ -1,6 +1,11 @@
 import { ISystemConfig } from './interfaces'
-import { nonce, digestSha1, sharedFetchWrapper, FETCH_CONFIG } from './universal'
+import { nonce, sharedFetchWrapper, FETCH_CONFIG } from './universal'
 import { Buffer } from 'buffer'
+
+const digestSha1 =
+  (data: string) =>
+    crypto.subtle.digest('SHA-1', new TextEncoder().encode(data))
+      .then(hash => Array.from(new Uint8Array(hash)).map(b => b.toString(16).padStart(2, '0')).join(''))
 
 const transport =
   (body: string) =>
