@@ -41,7 +41,6 @@
     "node-fetch": "^2.6.0",
     "rxjs": "^6.5.3",
     "typescript-monads": "^3.13.0",
-    "uuid": "^3.3.3",
     "xml-js": "^1.6.11",
     "xmldom": "^0.1.27"
   },
@@ -49,7 +48,6 @@
     "@types/fs-extra": "^8.0.1",
     "@types/node": "^12.11.1",
     "@types/node-fetch": "^2.5.2",
-    "@types/uuid": "^3.4.5",
     "@types/xml-js": "^1.0.0",
     "@types/xmldom": "^0.1.29",
     "fs-extra": "^8.1.0",
