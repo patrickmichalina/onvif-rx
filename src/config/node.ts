@@ -1,7 +1,10 @@
 import { DOMParser } from 'xmldom'
 import { ISystemConfig } from './interfaces'
-import { nonce, digestSha1, sharedFetchWrapper, FETCH_CONFIG } from './universal'
+import { nonce, sharedFetchWrapper, FETCH_CONFIG } from './universal'
+import { createHash } from 'crypto'
 import fetch from 'node-fetch'
+
+const digestSha1 = (str: string) => Promise.resolve(createHash('sha1').update(str).digest('hex'))
 
 const parser = new DOMParser()
 const transport =

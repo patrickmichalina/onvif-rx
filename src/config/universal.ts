@@ -2,8 +2,6 @@ import { INonce, ISha1Digest, ITransportPayoad } from './interfaces'
 import { from } from 'rxjs'
 import { flatMap } from 'rxjs/operators'
 
-export const digestSha1: ISha1Digest = require('js-sha1').digest
-
 export const REQUEST_HEADERS = { 'Content-Type': 'application/soap+xml; charset=utf-8;' }
 export const FETCH_CONFIG = (body: string) => ({ method: 'POST', body, headers: REQUEST_HEADERS })
 

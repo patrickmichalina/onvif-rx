@@ -15,19 +15,20 @@ export interface IUserCredentials {
 
 export const onvifDigest =
   (dateIsoString: string) =>
-    reader<IDeviceConfig, IMaybe<IDigestBag>>(config => config.user
+    reader<IDeviceConfig, IMaybe<PromiseLike<IDigestBag>>>(config => config.user
       .map(user => {
-        const toBase64 = (a: string) => config.system.buffer.from(a).toString('base64')
+        const toBase64 = (str: string) => config.system.buffer.from(str).toString('base64')
         const nonce = config.system.nonce()
-        const digest = config.system.digestSha1(nonce + dateIsoString + user.password)
-        const digest64 = toBase64(digest)
-        const nonceBase64 = toBase64(nonce)
-        return {
-          dateIsoString,
-          nonceBase64,
-          digest64,
-          username: user.username
-        }
+        return config.system.digestSha1(nonce + dateIsoString + user.password).then(hash => {
+          const digest64 = toBase64(hash)
+          const nonceBase64 = toBase64(nonce)
+          return {
+            dateIsoString,
+            nonceBase64,
+            digest64,
+            username: user.username
+          }
+        })
       }))
 
 const TOKENS = {
@@ -42,11 +43,13 @@ const TOKENS = {
 export const createUserToken =
   (timeDifference = 0) =>
     onvifDigest((new Date(Date.now() + timeDifference)).toISOString())
-      .map(obj => obj.map(securityInfo => `<${TOKENS.s} S11:mustUnderstand="1">
-      <${TOKENS.unt}>
-        <${TOKENS.un}>${securityInfo.username}</${TOKENS.un}>
-        <${TOKENS.pw} Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">${securityInfo.digest64}</${TOKENS.pw}>
-        <${TOKENS.nc} EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">${securityInfo.nonceBase64}</${TOKENS.nc}>
-        <${TOKENS.cr}>${securityInfo.dateIsoString}</${TOKENS.cr}>
-      </${TOKENS.unt}>
-    </${TOKENS.s}>`))
+      .map(obj => obj.map(prom => prom.then(securityInfo => {
+        return `<${TOKENS.s} S11:mustUnderstand="1">
+        <${TOKENS.unt}>
+          <${TOKENS.un}>${securityInfo.username}</${TOKENS.un}>
+          <${TOKENS.pw} Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest">${securityInfo.digest64}</${TOKENS.pw}>
+          <${TOKENS.nc} EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary">${securityInfo.nonceBase64}</${TOKENS.nc}>
+          <${TOKENS.cr}>${securityInfo.dateIsoString}</${TOKENS.cr}>
+        </${TOKENS.unt}>
+      </${TOKENS.s}>`
+      })))
