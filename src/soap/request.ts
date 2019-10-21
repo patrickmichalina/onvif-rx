@@ -1,7 +1,7 @@
 import { reader, maybe, fail, ok, IResult } from 'typescript-monads'
 import { IDeviceConfig, ITransportPayoad } from '../config/interfaces'
-import { Observable } from 'rxjs'
-import { map } from 'rxjs/operators'
+import { Observable, from } from 'rxjs'
+import { map, flatMap } from 'rxjs/operators'
 import { createUserToken } from './auth'
 import { xml2json } from 'xml-js'
 
@@ -156,8 +156,9 @@ export const createStandardRequestBody =
         }))
 
       return createUserToken().map(maybeUserToken => {
-        return maybeUserToken.map(token => {
-          return gen(body.replace(`<${SOAP_NODE.Header}></${SOAP_NODE.Header}>`, `<${SOAP_NODE.Header}>${token}</${SOAP_NODE.Header}>`))
+        return maybeUserToken.map(tokenPromise => {
+          return from(tokenPromise).pipe(
+            flatMap(token => gen(body.replace(`<${SOAP_NODE.Header}></${SOAP_NODE.Header}>`, `<${SOAP_NODE.Header}>${token}</${SOAP_NODE.Header}>`))))
         }).valueOr(gen(body))
       }).run(config)
     })

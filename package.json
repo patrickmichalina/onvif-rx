@@ -59,6 +59,7 @@
     "terser": "^4.3.9",
     "ts-node-dev": "^1.0.0-pre.32",
     "ts-simple-ast": "^21.0.4",
+    "tslib": "^1.10.0",
     "tslint": "^5.20.0",
     "tslint-immutable": "^6.0.1",
     "typedoc": "^0.15.0",
