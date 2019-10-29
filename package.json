@@ -38,7 +38,6 @@
     "gen.api": "rm -rf src/api && ts-node scripts/api/ast.ts && npm run docs"
   },
   "dependencies": {
-    "node-fetch": "^2.6.0",
     "rxjs": "^6.5.3",
     "typescript-monads": "^3.13.0",
     "xml-js": "^1.6.11",
@@ -46,16 +45,15 @@
   },
   "devDependencies": {
     "@types/fs-extra": "^8.0.1",
-    "@types/node": "^12.11.1",
-    "@types/node-fetch": "^2.5.2",
+    "@types/node": "^12.11.7",
     "@types/xml-js": "^1.0.0",
     "@types/xmldom": "^0.1.29",
     "fs-extra": "^8.1.0",
-    "rollup": "^1.25.1",
+    "rollup": "^1.26.0",
     "rollup-plugin-typescript2": "^0.24.3",
-    "semantic-release": "^15.13.27",
+    "semantic-release": "^15.13.28",
     "terser": "^4.3.9",
-    "ts-node-dev": "^1.0.0-pre.32",
+    "ts-node-dev": "^1.0.0-pre.43",
     "ts-simple-ast": "^21.0.4",
     "tslib": "^1.10.0",
     "tslint": "^5.20.0",
