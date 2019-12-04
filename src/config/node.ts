@@ -11,6 +11,7 @@ const getContent =
   (url: string, body: string) =>
     http.post(url, {
       body,
+      family: 4, // fixes: https://github.com/nodejs/node/issues/5436#issuecomment-189600282
       headers: {
         'Content-Type': 'application/soap+xml; charset=utf-8;',
         'Content-Length': body.length
