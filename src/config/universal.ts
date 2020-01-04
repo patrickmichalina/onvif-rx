@@ -1,6 +1,7 @@
-import { INonce, ISha1Digest, ITransportPayoad } from './interfaces'
-import { from } from 'rxjs'
-import { flatMap } from 'rxjs/operators'
+import { INonce, ITransportPayoad } from './interfaces'
+import { from, of } from 'rxjs'
+import { flatMap, catchError } from 'rxjs/operators'
+import { Response } from 'node-fetch'
 
 export const REQUEST_HEADERS = { 'Content-Type': 'application/soap+xml; charset=utf-8;' }
 export const FETCH_CONFIG = (body: string) => ({ method: 'POST', body, headers: REQUEST_HEADERS })
@@ -8,13 +9,15 @@ export const FETCH_CONFIG = (body: string) => ({ method: 'POST', body, headers: 
 export const sharedFetchWrapper =
   (fetchResponse: Promise<any>) =>
     from(fetchResponse)
-      .pipe(flatMap<Response, Promise<ITransportPayoad>>(a => a.text().then(body => {
-        return {
-          body,
-          status: a.status,
-          statusMessage: a.statusText
-        }
-      })))
+      .pipe(
+        flatMap<Response, Promise<ITransportPayoad>>(a => a.text().then(body => {
+          return {
+            body,
+            status: a.status,
+            statusMessage: a.statusText
+          }
+        }))
+      )
 
 export const nonce: INonce =
   (size = 30) =>
