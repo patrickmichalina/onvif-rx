@@ -54,7 +54,7 @@
     "node-fetch": "^2.6.0",
     "rollup": "^1.28.0",
     "rollup-plugin-typescript2": "^0.25.3",
-    "semantic-release": "^15.14.0",
+    "semantic-release": "^17.2.3",
     "terser": "^4.5.1",
     "ts-node-dev": "^1.0.0-pre.44",
     "ts-simple-ast": "^21.0.4",
