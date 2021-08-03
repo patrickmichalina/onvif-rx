@@ -42,7 +42,7 @@
     "rxjs": "^6.5.4",
     "typescript-monads": "^3.13.0",
     "xml-js": "^1.6.11",
-    "xmldom": "^0.2.1"
+    "xmldom": "^0.6.0"
   },
   "devDependencies": {
     "@types/fs-extra": "^8.0.1",
