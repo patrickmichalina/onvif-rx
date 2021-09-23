@@ -149,7 +149,8 @@ generateTypes()
               parameters: action.input.parameters.map(p => {
                 return {
                   name: p.name,
-                  type: p.propertyType
+                  type: p.propertyType,
+                  hasQuestionToken: p.propertyMinOccurs === '0'
                 }
               })
             }

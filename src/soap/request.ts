@@ -118,6 +118,7 @@ export interface IXmlContainer {
 }
 
 export const generateRequestElements = (reqNode: string) => (params: any) => {
+  Object.keys(params).forEach(key => params[key] === undefined ? delete params[key] : {});
   return js2xml({[reqNode.replace(':', '_')]: params}, {
     compact: true,
     elementNameFn: (value) => value.indexOf('_') > 0 ? value.replace('_', ':') : 'tt:' + value
