@@ -104,7 +104,7 @@ generateTypes()
             ]
           }, [] as ReadonlyArray<string>)
             .filter((elem, pos, arr) => arr.indexOf(elem) == pos)
-            .filter(a => !['string', 'number', 'any', 'boolean'].some(b => b === a))
+            .filter(a => !['string', 'number', 'any', 'boolean', ''].some(b => b === a))
             .map(name => ({ name }))
         }],
         classes: [{
@@ -123,7 +123,7 @@ generateTypes()
             }, {} as any)
 
             const d = JSON.stringify(ps).replace(/"/g, '')
-            
+
             return {
               isStatic: true,
               docs: [{ description: action.documentation.replace(/\*/g, '') }],

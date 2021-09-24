@@ -8,15 +8,13 @@ export const typeConvert = (val: string) => {
     case 'token': return 'string'
     case 'hexBinary': return 'string'
     case 'anyURI': return 'string'
+    case 'anyType': return 'any'
     case 'base64Binary': return 'string'
     case 'duration': return 'string'
     case 'IANA-IfTypes': return 'any'
     case 'dateTime': return 'string'
     case 'FilterType': return 'any'
     case 'QName': return 'any'
-    case 'NotificationMessageHolderType': return 'any'
-    case 'StorageConfigurationData': return 'any'
-    case 'StorageConfiguration': return 'any'
     default: return val
   }
 }
@@ -33,7 +31,7 @@ export interface ParsedXsd {
 export const parseOnvifXsdForTypeInfo = (xmlDoc: Document): ParsedXsd => {
   const NS = xmlDoc.documentElement.lookupNamespaceURI('xs') || xmlDoc.documentElement.lookupNamespaceURI('xsd') || ''
   const sts = Array.from(xmlDoc.getElementsByTagNameNS(NS, 'simpleType'))
-  
+
   const enumTypes = sts.filter(s => Array.from(s.getElementsByTagNameNS(NS, 'enumeration')).length)
   const simpleTypes = sts.filter(s => Array.from(s.getElementsByTagNameNS(NS, 'enumeration')).length === 0)
 

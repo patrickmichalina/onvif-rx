@@ -3,7 +3,7 @@ import { IDeviceConfig, ITransportPayoad } from '../config/interfaces'
 import { Observable, from } from 'rxjs'
 import { map, flatMap } from 'rxjs/operators'
 import { createUserToken } from './auth'
-import { xml2json } from 'xml-js'
+import { xml2json, js2xml } from 'xml-js'
 
 export interface IResultStructure<T> {
   readonly json: T
@@ -118,23 +118,14 @@ export interface IXmlContainer {
 }
 
 export const generateRequestElements = (reqNode: string) => (params: any) => {
-  const reducer = (obj: any) => (base: string) => (value?: string): any => Object
-    .keys(obj)
-    .reduce((acc, key) => {
-      const modded = key.includes('_')
-        ? key.replace('_', ':')
-        : `tt:${key}`
-
-      const value = typeof obj[key] === 'string'
-        ? obj[key]
-        : undefined
-
-      return value
-        ? acc.replace('><', `><${modded}>${value}</${modded}><`)
-        : acc.replace('><', '>' + reducer(obj[key])(modded)() + '<')
-    }, value ? `<${base}>${value}</${base}>` : `<${base}></${base}>`)
-
-  return reducer(params)(reqNode)()
+  const result = js2xml({[reqNode.replace(':', '_')]: params}, {
+    compact: true,
+    elementNameFn: (value) => {
+      const res = value.indexOf('_') > 0 ? value.replace('_', ':') : 'tt:' + value
+      return res
+    }
+  })
+  return result
 }
 
 export const createStandardRequestBody =

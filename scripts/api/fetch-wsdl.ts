@@ -55,7 +55,9 @@ export const fetchXsd = () =>
     // 'https://www.onvif.org/ver20/analytics/rules.xsd',
     'https://www.onvif.org/ver10/schema/common.xsd',
     'https://www.onvif.org/ver10/schema/onvif.xsd',
-    'http://schemas.xmlsoap.org/soap/envelope/'
+    'http://schemas.xmlsoap.org/soap/envelope/',
+    'https://www.onvif.org/ver10/events/wsdl/event.wsdl',
+    'https://www.onvif.org/ver10/device/wsdl/devicemgmt.wsdl'
   ]
     .map(url => fetch(url)
       .then(res => res.text())
