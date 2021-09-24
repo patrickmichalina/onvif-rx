@@ -118,14 +118,10 @@ export interface IXmlContainer {
 }
 
 export const generateRequestElements = (reqNode: string) => (params: any) => {
-  const result = js2xml({[reqNode.replace(':', '_')]: params}, {
+  return js2xml({[reqNode.replace(':', '_')]: params}, {
     compact: true,
-    elementNameFn: (value) => {
-      const res = value.indexOf('_') > 0 ? value.replace('_', ':') : 'tt:' + value
-      return res
-    }
+    elementNameFn: (value) => value.indexOf('_') > 0 ? value.replace('_', ':') : 'tt:' + value
   })
-  return result
 }
 
 export const createStandardRequestBody =
