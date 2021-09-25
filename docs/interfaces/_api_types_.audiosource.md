@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [AudioSource](../interfaces/_api_types_.audiosource.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [AudioSource](_api_types_.audiosource.md)
 
 # Interface: AudioSource
 
@@ -6,25 +6,18 @@ Representation of a physical audio input.
 
 ## Hierarchy
 
-**AudioSource**
+* **AudioSource**
 
 ## Index
 
 ### Properties
 
-* [Channels](_api_types_.audiosource.md#channels)
-
----
+* [Channels](_api_types_.audiosource.md#readonly-channels)
 
 ## Properties
 
-<a id="channels"></a>
+### `Readonly` Channels
 
-###  Channels
+• **Channels**: *number*
 
-**● Channels**: *`number`*
-
-*Defined in [api/types.ts:512](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L512)*
-
-___
-
+*Defined in [api/types.ts:541](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L541)*

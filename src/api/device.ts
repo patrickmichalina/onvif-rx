@@ -1,6 +1,6 @@
 import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequestElements, mapResponseObsToProperty } from "../soap/request";
 import { IDeviceConfig } from "../config";
-import { SetDateTimeType, TimeZone, DateTime, FactoryDefaultType, AttachmentData, BackupFile, SystemLogType, DiscoveryMode, NetworkHost, RemoteUser, User, CapabilityCategory, IPAddress, DynamicDNSType, DNSName, ReferenceToken, NetworkInterfaceSetConfiguration, NetworkProtocol, IPv4Address, IPv6Address, IPAddressFilter, BinaryData, CertificateStatus, Certificate, RelayOutputSettings, RelayLogicalState, AuxiliaryData, CertificateWithPrivateKey, Dot1XConfiguration, LocationEntity } from "./types";
+import { SetDateTimeType, TimeZone, DateTime, FactoryDefaultType, AttachmentData, BackupFile, SystemLogType, DiscoveryMode, NetworkHost, RemoteUser, User, CapabilityCategory, IPAddress, DynamicDNSType, DNSName, ReferenceToken, NetworkInterfaceSetConfiguration, NetworkProtocol, IPv4Address, IPv6Address, IPAddressFilter, BinaryData, RelayOutputSettings, RelayLogicalState, AuxiliaryData, StorageConfigurationData, StorageConfiguration, LocationEntity, CertificateStatus, Certificate, CertificateWithPrivateKey, Dot1XConfiguration } from "./types";
 
 export class ONVIFDevice {
     constructor(private config: IDeviceConfig) {
@@ -346,10 +346,7 @@ export class ONVIFDevice {
     }
 
     /**
-     * It is possible for an endpoint to request a URL that can be used to retrieve the complete
-     *   schema and WSDL definitions of a device. The command gives in return a URL entry point
-     *   where all the necessary product specific WSDL and schema definitions can be retrieved. The
-     *   device shall provide a URL for WSDL and schema download through the GetWsdlUrl command.
+     * This method allows to provide a URL where product specific WSDL and schema definitions can be retrieved. This method is deprecated.
      */
     static GetWsdlUrl() {
         return createStandardRequestBodyFromString(generateRequestElements('tds:GetWsdlUrl')({}))
@@ -624,133 +621,6 @@ export class ONVIFDevice {
     }
 
     /**
-     * This operation generates a private/public key pair and also can create a self-signed device
-     *   certificate as a result of key pair generation. The certificate is created using a suitable
-     *   onboard key pair generation mechanism.
-     *   If a device supports onboard key pair generation, the device that supports TLS shall support
-     *   this certificate creation command. And also, if a device supports onboard key pair generation,
-     *   the device that support IEEE 802.1X shall support this command for the purpose of key pair
-     *   generation. Certificates and key pairs are identified using certificate IDs. These IDs are either
-     *   chosen by the certificate generation requester or by the device (in case that no ID value is
-     *   given).
-     */
-    static CreateCertificate(CertificateID?: string, Subject?: string, ValidNotBefore?: string, ValidNotAfter?: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:CreateCertificate')({tds_CertificateID:CertificateID,tds_Subject:Subject,tds_ValidNotBefore:ValidNotBefore,tds_ValidNotAfter:ValidNotAfter}))
-                        .map(mapResponseXmlToJson<any>('tds:CreateCertificateResponse'))
-                      
-    }
-
-    /**
-     * This operation gets all device server certificates (including self-signed) for the purpose of TLS
-     *   authentication and all device client certificates for the purpose of IEEE 802.1X authentication.
-     *   This command lists only the TLS server certificates and IEEE 802.1X client certificates for the
-     *   device (neither trusted CA certificates nor trusted root certificates). The certificates are
-     *   returned as binary data. A device that supports TLS shall support this command and the
-     *   certificates shall be encoded using ASN.1 [X.681], [X.682], [X.683] DER [X.690] encoding
-     *   rules.
-     */
-    static GetCertificates() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificates')({}))
-                        .map(mapResponseXmlToJson<any>('tds:GetCertificatesResponse'))
-                      
-    }
-
-    /**
-     * This operation is specific to TLS functionality. This operation gets the status
-     *   (enabled/disabled) of the device TLS server certificates. A device that supports TLS shall
-     *   support this command.
-     */
-    static GetCertificatesStatus() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificatesStatus')({}))
-                        .map(mapResponseXmlToJson<any>('tds:GetCertificatesStatusResponse'))
-                      
-    }
-
-    /**
-     * This operation is specific to TLS functionality. This operation sets the status (enable/disable)
-     *   of the device TLS server certificates. A device that supports TLS shall support this command.
-     *   Typically only one device server certificate is allowed to be enabled at a time.
-     */
-    static SetCertificatesStatus(CertificateStatus?: CertificateStatus) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetCertificatesStatus')({tds_CertificateStatus:CertificateStatus}))
-                        .map(mapResponseXmlToJson<any>('tds:SetCertificatesStatusResponse'))
-                      
-    }
-
-    /**
-     * This operation deletes a certificate or multiple certificates. The device MAY also delete a
-     *   private/public key pair which is coupled with the certificate to be deleted. The device that
-     *   support either TLS or IEEE 802.1X shall support the deletion of a certificate or multiple
-     *   certificates through this command. Either all certificates are deleted successfully or a fault
-     *   message shall be returned without deleting any certificate.
-     */
-    static DeleteCertificates(CertificateID: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteCertificates')({tds_CertificateID:CertificateID}))
-                        .map(mapResponseXmlToJson<any>('tds:DeleteCertificatesResponse'))
-                      
-    }
-
-    /**
-     * This operation requests a PKCS #10 certificate signature request from the device. The
-     *   returned information field shall be either formatted exactly as specified in [PKCS#10] or PEM
-     *   encoded [PKCS#10] format. In order for this command to work, the device must already have
-     *   a private/public key pair. This key pair should be referred by CertificateID as specified in the
-     *   input parameter description. This CertificateID refers to the key pair generated using
-     *   CreateCertificate command.
-     *   A device that support onboard key pair generation that supports either TLS or IEEE 802.1X
-     *   using client certificate shall support this command.
-     */
-    static GetPkcs10Request(CertificateID: string, Subject?: string, Attributes?: BinaryData) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetPkcs10Request')({tds_CertificateID:CertificateID,tds_Subject:Subject,tds_Attributes:Attributes}))
-                        .map(mapResponseXmlToJson<any>('tds:GetPkcs10RequestResponse'))
-                      
-    }
-
-    /**
-     * TLS server certificate(s) or IEEE 802.1X client certificate(s) created using the PKCS#10
-     *   certificate request command can be loaded into the device using this command (see Section
-     *   8.4.13). The certificate ID in the request shall be present. The device may sort the received
-     *   certificate(s) based on the public key and subject information in the certificate(s).
-     *   The certificate ID in the request will be the ID value the client wish to have. The device is
-     *   supposed to scan the generated key pairs present in the device to identify which is the
-     *   correspondent key pair with the loaded certificate and then make the link between the
-     *   certificate and the key pair.
-     *   A device that supports onboard key pair generation that support either TLS or IEEE 802.1X
-     *   shall support this command.
-     *   The certificates shall be encoded using ASN.1 [X.681], [X.682], [X.683] DER [X.690] encoding
-     *   rules.
-     *   This command is applicable to any device type, although the parameter name is called for
-     *   historical reasons NVTCertificate.
-     */
-    static LoadCertificates(NVTCertificate: Certificate) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCertificates')({tds_NVTCertificate:NVTCertificate}))
-                        .map(mapResponseXmlToJson<any>('tds:LoadCertificatesResponse'))
-                      
-    }
-
-    /**
-     * This operation is specific to TLS functionality. This operation gets the status
-     *   (enabled/disabled) of the device TLS client authentication. A device that supports TLS shall
-     *   support this command.
-     */
-    static GetClientCertificateMode() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetClientCertificateMode')({}))
-                        .map(mapResponseXmlToJson<any>('tds:GetClientCertificateModeResponse'))
-                      
-    }
-
-    /**
-     * This operation is specific to TLS functionality. This operation sets the status
-     *   (enabled/disabled) of the device TLS client authentication. A device that supports TLS shall
-     *   support this command.
-     */
-    static SetClientCertificateMode(Enabled: boolean) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetClientCertificateMode')({tds_Enabled:Enabled}))
-                        .map(mapResponseXmlToJson<any>('tds:SetClientCertificateModeResponse'))
-                      
-    }
-
-    /**
      * This operation gets a list of all available relay outputs and their settings.
      *   This method has been depricated with version 2.0. Refer to the DeviceIO service.
      */
@@ -802,134 +672,6 @@ export class ONVIFDevice {
     static SendAuxiliaryCommand(AuxiliaryCommand: AuxiliaryData) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SendAuxiliaryCommand')({tds_AuxiliaryCommand:AuxiliaryCommand}))
                         .map(mapResponseXmlToJson<any>('tds:SendAuxiliaryCommandResponse'))
-                      
-    }
-
-    /**
-     * CA certificates will be loaded into a device and be used for the sake of following two cases.
-     *   The one is for the purpose of TLS client authentication in TLS server function. The other one
-     *   is for the purpose of Authentication Server authentication in IEEE 802.1X function. This
-     *   operation gets all CA certificates loaded into a device. A device that supports either TLS client
-     *   authentication or IEEE 802.1X shall support this command and the returned certificates shall
-     *   be encoded using ASN.1 [X.681], [X.682], [X.683] DER [X.690] encoding rules.
-     */
-    static GetCACertificates() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCACertificates')({}))
-                        .map(mapResponseXmlToJson<any>('tds:GetCACertificatesResponse'))
-                      
-    }
-
-    /**
-     * There might be some cases that a Certificate Authority or some other equivalent creates a
-     *   certificate without having PKCS#10 certificate signing request. In such cases, the certificate
-     *   will be bundled in conjunction with its private key. This command will be used for such use
-     *   case scenarios. The certificate ID in the request is optionally set to the ID value the client
-     *   wish to have. If the certificate ID is not specified in the request, device can choose the ID
-     *   accordingly.
-     *   This operation imports a private/public key pair into the device.
-     *   The certificates shall be encoded using ASN.1 [X.681], [X.682], [X.683] DER [X.690] encoding
-     *   rules.
-     *   A device that does not support onboard key pair generation and support either TLS or IEEE
-     *   802.1X using client certificate shall support this command. A device that support onboard key
-     *   pair generation MAY support this command. The security policy of a device that supports this
-     *   operation should make sure that the private key is sufficiently protected.
-     */
-    static LoadCertificateWithPrivateKey(CertificateWithPrivateKey: CertificateWithPrivateKey) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCertificateWithPrivateKey')({tds_CertificateWithPrivateKey:CertificateWithPrivateKey}))
-                        .map(mapResponseXmlToJson<any>('tds:LoadCertificateWithPrivateKeyResponse'))
-                      
-    }
-
-    /**
-     * This operation requests the information of a certificate specified by certificate ID. The device
-     *   should respond with its “Issuer DN”, “Subject DN”, “Key usage”, "Extended key usage”, “Key
-     *   Length”, “Version”, “Serial Number”, “Signature Algorithm” and “Validity” data as the
-     *   information of the certificate, as long as the device can retrieve such information from the
-     *   specified certificate.
-     *   A device that supports either TLS or IEEE 802.1X should support this command.
-     */
-    static GetCertificateInformation(CertificateID: string) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificateInformation')({tds_CertificateID:CertificateID}))
-                        .map(mapResponseXmlToJson<any>('tds:GetCertificateInformationResponse'))
-                      
-    }
-
-    /**
-     * This command is used when it is necessary to load trusted CA certificates or trusted root
-     *   certificates for the purpose of verification for its counterpart i.e. client certificate verification in
-     *   TLS function or server certificate verification in IEEE 802.1X function.
-     *   A device that support either TLS or IEEE 802.1X shall support this command. As for the
-     *   supported certificate format, either DER format or PEM format is possible to be used. But a
-     *   device that support this command shall support at least DER format as supported format type.
-     *   The device may sort the received certificate(s) based on the public key and subject
-     *   information in the certificate(s). Either all CA certificates are loaded successfully or a fault
-     *   message shall be returned without loading any CA certificate.
-     */
-    static LoadCACertificates(CACertificate: Certificate) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCACertificates')({tds_CACertificate:CACertificate}))
-                        .map(mapResponseXmlToJson<any>('tds:LoadCACertificatesResponse'))
-                      
-    }
-
-    /**
-     * This operation newly creates IEEE 802.1X configuration parameter set of the device. The
-     *   device shall support this command if it supports IEEE 802.1X. If the device receives this
-     *   request with already existing configuration token (Dot1XConfigurationToken) specification, the
-     *   device should respond with 'ter:ReferenceToken ' error to indicate there is some configuration
-     *   conflict.
-     */
-    static CreateDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:CreateDot1XConfiguration')({tds_Dot1XConfiguration:Dot1XConfiguration}))
-                        .map(mapResponseXmlToJson<any>('tds:CreateDot1XConfigurationResponse'))
-                      
-    }
-
-    /**
-     * While the CreateDot1XConfiguration command is trying to create a new configuration
-     *   parameter set, this operation modifies existing IEEE 802.1X configuration parameter set of
-     *   the device. A device that support IEEE 802.1X shall support this command.
-     */
-    static SetDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:SetDot1XConfiguration')({tds_Dot1XConfiguration:Dot1XConfiguration}))
-                        .map(mapResponseXmlToJson<any>('tds:SetDot1XConfigurationResponse'))
-                      
-    }
-
-    /**
-     * This operation gets one IEEE 802.1X configuration parameter set from the device by
-     *   specifying the configuration token (Dot1XConfigurationToken).
-     *   A device that supports IEEE 802.1X shall support this command.
-     *   Regardless of whether the 802.1X method in the retrieved configuration has a password or
-     *   not, the device shall not include the Password element in the response.
-     */
-    static GetDot1XConfiguration(Dot1XConfigurationToken: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot1XConfiguration')({tds_Dot1XConfigurationToken:Dot1XConfigurationToken}))
-                        .map(mapResponseXmlToJson<any>('tds:GetDot1XConfigurationResponse'))
-                      
-    }
-
-    /**
-     * This operation gets all the existing IEEE 802.1X configuration parameter sets from the device.
-     *   The device shall respond with all the IEEE 802.1X configurations so that the client can get to
-     *   know how many IEEE 802.1X configurations are existing and how they are configured.
-     *   A device that support IEEE 802.1X shall support this command.
-     *   Regardless of whether the 802.1X method in the retrieved configuration has a password or
-     *   not, the device shall not include the Password element in the response.
-     */
-    static GetDot1XConfigurations() {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot1XConfigurations')({}))
-                        .map(mapResponseXmlToJson<any>('tds:GetDot1XConfigurationsResponse'))
-                      
-    }
-
-    /**
-     * This operation deletes an IEEE 802.1X configuration parameter set from the device. Which
-     *   configuration should be deleted is specified by the 'Dot1XConfigurationToken' in the request.
-     *   A device that support IEEE 802.1X shall support this command.
-     */
-    static DeleteDot1XConfiguration(Dot1XConfigurationToken?: ReferenceToken) {
-        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteDot1XConfiguration')({tds_Dot1XConfigurationToken:Dot1XConfigurationToken}))
-                        .map(mapResponseXmlToJson<any>('tds:DeleteDot1XConfigurationResponse'))
                       
     }
 
@@ -1048,7 +790,7 @@ export class ONVIFDevice {
      *   The configuration data shall be created in the device and shall be persistent (remain after reboot).
      *   
      */
-    static CreateStorageConfiguration(StorageConfiguration: any) {
+    static CreateStorageConfiguration(StorageConfiguration: StorageConfigurationData) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:CreateStorageConfiguration')({tds_StorageConfiguration:StorageConfiguration}))
                         .map(mapResponseXmlToJson<any>('tds:CreateStorageConfigurationResponse'))
                       
@@ -1070,7 +812,7 @@ export class ONVIFDevice {
      *   This operation modifies an existing Storage configuration.
      *   
      */
-    static SetStorageConfiguration(StorageConfiguration: any) {
+    static SetStorageConfiguration(StorageConfiguration: StorageConfiguration) {
         return createStandardRequestBodyFromString(generateRequestElements('tds:SetStorageConfiguration')({tds_StorageConfiguration:StorageConfiguration}))
                         .map(mapResponseXmlToJson<any>('tds:SetStorageConfigurationResponse'))
                       
@@ -1121,6 +863,168 @@ export class ONVIFDevice {
     }
 
     /**
+     * 
+     */
+    static CreateCertificate(CertificateID?: string, Subject?: string, ValidNotBefore?: string, ValidNotAfter?: string) {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:CreateCertificate')({tds_CertificateID:CertificateID,tds_Subject:Subject,tds_ValidNotBefore:ValidNotBefore,tds_ValidNotAfter:ValidNotAfter}))
+                        .map(mapResponseXmlToJson<any>('tds:CreateCertificateResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static GetCertificates() {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificates')({}))
+                        .map(mapResponseXmlToJson<any>('tds:GetCertificatesResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static GetCertificatesStatus() {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificatesStatus')({}))
+                        .map(mapResponseXmlToJson<any>('tds:GetCertificatesStatusResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static SetCertificatesStatus(CertificateStatus?: CertificateStatus) {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetCertificatesStatus')({tds_CertificateStatus:CertificateStatus}))
+                        .map(mapResponseXmlToJson<any>('tds:SetCertificatesStatusResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static DeleteCertificates(CertificateID: string) {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteCertificates')({tds_CertificateID:CertificateID}))
+                        .map(mapResponseXmlToJson<any>('tds:DeleteCertificatesResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static GetPkcs10Request(CertificateID: string, Subject?: string, Attributes?: BinaryData) {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetPkcs10Request')({tds_CertificateID:CertificateID,tds_Subject:Subject,tds_Attributes:Attributes}))
+                        .map(mapResponseXmlToJson<any>('tds:GetPkcs10RequestResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static LoadCertificates(NVTCertificate: Certificate) {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCertificates')({tds_NVTCertificate:NVTCertificate}))
+                        .map(mapResponseXmlToJson<any>('tds:LoadCertificatesResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static GetClientCertificateMode() {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetClientCertificateMode')({}))
+                        .map(mapResponseXmlToJson<any>('tds:GetClientCertificateModeResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static SetClientCertificateMode(Enabled: boolean) {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetClientCertificateMode')({tds_Enabled:Enabled}))
+                        .map(mapResponseXmlToJson<any>('tds:SetClientCertificateModeResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static GetCACertificates() {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCACertificates')({}))
+                        .map(mapResponseXmlToJson<any>('tds:GetCACertificatesResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static LoadCertificateWithPrivateKey(CertificateWithPrivateKey: CertificateWithPrivateKey) {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCertificateWithPrivateKey')({tds_CertificateWithPrivateKey:CertificateWithPrivateKey}))
+                        .map(mapResponseXmlToJson<any>('tds:LoadCertificateWithPrivateKeyResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static GetCertificateInformation(CertificateID: string) {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetCertificateInformation')({tds_CertificateID:CertificateID}))
+                        .map(mapResponseXmlToJson<any>('tds:GetCertificateInformationResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static LoadCACertificates(CACertificate: Certificate) {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:LoadCACertificates')({tds_CACertificate:CACertificate}))
+                        .map(mapResponseXmlToJson<any>('tds:LoadCACertificatesResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static CreateDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:CreateDot1XConfiguration')({tds_Dot1XConfiguration:Dot1XConfiguration}))
+                        .map(mapResponseXmlToJson<any>('tds:CreateDot1XConfigurationResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static SetDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:SetDot1XConfiguration')({tds_Dot1XConfiguration:Dot1XConfiguration}))
+                        .map(mapResponseXmlToJson<any>('tds:SetDot1XConfigurationResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static GetDot1XConfiguration(Dot1XConfigurationToken: ReferenceToken) {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot1XConfiguration')({tds_Dot1XConfigurationToken:Dot1XConfigurationToken}))
+                        .map(mapResponseXmlToJson<any>('tds:GetDot1XConfigurationResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static GetDot1XConfigurations() {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:GetDot1XConfigurations')({}))
+                        .map(mapResponseXmlToJson<any>('tds:GetDot1XConfigurationsResponse'))
+                      
+    }
+
+    /**
+     * 
+     */
+    static DeleteDot1XConfiguration(Dot1XConfigurationToken?: ReferenceToken) {
+        return createStandardRequestBodyFromString(generateRequestElements('tds:DeleteDot1XConfiguration')({tds_Dot1XConfigurationToken:Dot1XConfigurationToken}))
+                        .map(mapResponseXmlToJson<any>('tds:DeleteDot1XConfigurationResponse'))
+                      
+    }
+
+    /**
      * Returns information about services on the device.
      */
     GetServices(IncludeCapability: boolean) {
@@ -1152,7 +1056,7 @@ export class ONVIFDevice {
      *   Clear the DayLightSavings flag if the DST portion of the TimeZone settings should be ignored.
      *   
      */
-    SetSystemDateAndTime(DateTimeType: SetDateTimeType, DaylightSavings: boolean, TimeZone: TimeZone, UTCDateTime: DateTime) {
+    SetSystemDateAndTime(DateTimeType: SetDateTimeType, DaylightSavings: boolean, TimeZone?: TimeZone, UTCDateTime?: DateTime) {
         return ONVIFDevice.SetSystemDateAndTime(DateTimeType,DaylightSavings,TimeZone,UTCDateTime).run(this.config)
     }
 
@@ -1324,7 +1228,7 @@ export class ONVIFDevice {
      *   remote discovery, as specified in Section 7.4, the device shall support configuration of the
      *   remote DP address(es) through the SetDPAddresses command.
      */
-    SetDPAddresses(DPAddress: NetworkHost) {
+    SetDPAddresses(DPAddress?: NetworkHost) {
         return ONVIFDevice.SetDPAddresses(DPAddress).run(this.config)
     }
 
@@ -1356,7 +1260,7 @@ export class ONVIFDevice {
      *   remote device.The algorithm to use for deriving the password is described in section 5.12.2.1 of the core specification.
      *   To remove the remote user SetRemoteUser should be called without the RemoteUser parameter.
      */
-    SetRemoteUser(RemoteUser: RemoteUser) {
+    SetRemoteUser(RemoteUser?: RemoteUser) {
         return ONVIFDevice.SetRemoteUser(RemoteUser).run(this.config)
     }
 
@@ -1402,10 +1306,7 @@ export class ONVIFDevice {
     }
 
     /**
-     * It is possible for an endpoint to request a URL that can be used to retrieve the complete
-     *   schema and WSDL definitions of a device. The command gives in return a URL entry point
-     *   where all the necessary product specific WSDL and schema definitions can be retrieved. The
-     *   device shall provide a URL for WSDL and schema download through the GetWsdlUrl command.
+     * This method allows to provide a URL where product specific WSDL and schema definitions can be retrieved. This method is deprecated.
      */
     GetWsdlUrl() {
         return ONVIFDevice.GetWsdlUrl().run(this.config)
@@ -1415,7 +1316,7 @@ export class ONVIFDevice {
      * This method has been replaced by the more generic GetServices method.
      *    For capabilities of individual services refer to the GetServiceCapabilities methods.
      */
-    GetCapabilities(Category: CapabilityCategory) {
+    GetCapabilities(Category?: CapabilityCategory) {
         return ONVIFDevice.GetCapabilities(Category).run(this.config)
     }
 
@@ -1457,7 +1358,7 @@ export class ONVIFDevice {
      * This operation sets the DNS settings on a device. It shall be possible to set the device DNS
      *   configurations through the SetDNS command.
      */
-    SetDNS(FromDHCP: boolean, SearchDomain: string, DNSManual: IPAddress) {
+    SetDNS(FromDHCP: boolean, SearchDomain?: string, DNSManual?: IPAddress) {
         return ONVIFDevice.SetDNS(FromDHCP,SearchDomain,DNSManual).run(this.config)
     }
 
@@ -1477,7 +1378,7 @@ export class ONVIFDevice {
      *   Changes to the NTP server list will not affect the clock mode DateTimeType. Use SetSystemDateAndTime to activate NTP operation.
      *   
      */
-    SetNTP(FromDHCP: boolean, NTPManual: NetworkHost) {
+    SetNTP(FromDHCP: boolean, NTPManual?: NetworkHost) {
         return ONVIFDevice.SetNTP(FromDHCP,NTPManual).run(this.config)
     }
 
@@ -1495,7 +1396,7 @@ export class ONVIFDevice {
      *   DNS as specified in [RFC 2136] and [RFC 4702], it shall be possible to set the type, name
      *   and TTL through the SetDynamicDNS command.
      */
-    SetDynamicDNS(Type: DynamicDNSType, Name: DNSName, TTL: string) {
+    SetDynamicDNS(Type: DynamicDNSType, Name?: DNSName, TTL?: string) {
         return ONVIFDevice.SetDynamicDNS(Type,Name,TTL).run(this.config)
     }
 
@@ -1548,7 +1449,7 @@ export class ONVIFDevice {
      * This operation sets the default gateway settings on a device. The device shall support
      *   configuration of default gateway through the SetNetworkDefaultGateway command.
      */
-    SetNetworkDefaultGateway(IPv4Address: IPv4Address, IPv6Address: IPv6Address) {
+    SetNetworkDefaultGateway(IPv4Address?: IPv4Address, IPv6Address?: IPv6Address) {
         return ONVIFDevice.SetNetworkDefaultGateway(IPv4Address,IPv6Address).run(this.config)
     }
 
@@ -1630,115 +1531,6 @@ export class ONVIFDevice {
     }
 
     /**
-     * This operation generates a private/public key pair and also can create a self-signed device
-     *   certificate as a result of key pair generation. The certificate is created using a suitable
-     *   onboard key pair generation mechanism.
-     *   If a device supports onboard key pair generation, the device that supports TLS shall support
-     *   this certificate creation command. And also, if a device supports onboard key pair generation,
-     *   the device that support IEEE 802.1X shall support this command for the purpose of key pair
-     *   generation. Certificates and key pairs are identified using certificate IDs. These IDs are either
-     *   chosen by the certificate generation requester or by the device (in case that no ID value is
-     *   given).
-     */
-    CreateCertificate(CertificateID: string, Subject: string, ValidNotBefore: string, ValidNotAfter: string) {
-        return ONVIFDevice.CreateCertificate(CertificateID,Subject,ValidNotBefore,ValidNotAfter).run(this.config)
-    }
-
-    /**
-     * This operation gets all device server certificates (including self-signed) for the purpose of TLS
-     *   authentication and all device client certificates for the purpose of IEEE 802.1X authentication.
-     *   This command lists only the TLS server certificates and IEEE 802.1X client certificates for the
-     *   device (neither trusted CA certificates nor trusted root certificates). The certificates are
-     *   returned as binary data. A device that supports TLS shall support this command and the
-     *   certificates shall be encoded using ASN.1 [X.681], [X.682], [X.683] DER [X.690] encoding
-     *   rules.
-     */
-    GetCertificates() {
-        return ONVIFDevice.GetCertificates().run(this.config)
-    }
-
-    /**
-     * This operation is specific to TLS functionality. This operation gets the status
-     *   (enabled/disabled) of the device TLS server certificates. A device that supports TLS shall
-     *   support this command.
-     */
-    GetCertificatesStatus() {
-        return ONVIFDevice.GetCertificatesStatus().run(this.config)
-    }
-
-    /**
-     * This operation is specific to TLS functionality. This operation sets the status (enable/disable)
-     *   of the device TLS server certificates. A device that supports TLS shall support this command.
-     *   Typically only one device server certificate is allowed to be enabled at a time.
-     */
-    SetCertificatesStatus(CertificateStatus: CertificateStatus) {
-        return ONVIFDevice.SetCertificatesStatus(CertificateStatus).run(this.config)
-    }
-
-    /**
-     * This operation deletes a certificate or multiple certificates. The device MAY also delete a
-     *   private/public key pair which is coupled with the certificate to be deleted. The device that
-     *   support either TLS or IEEE 802.1X shall support the deletion of a certificate or multiple
-     *   certificates through this command. Either all certificates are deleted successfully or a fault
-     *   message shall be returned without deleting any certificate.
-     */
-    DeleteCertificates(CertificateID: string) {
-        return ONVIFDevice.DeleteCertificates(CertificateID).run(this.config)
-    }
-
-    /**
-     * This operation requests a PKCS #10 certificate signature request from the device. The
-     *   returned information field shall be either formatted exactly as specified in [PKCS#10] or PEM
-     *   encoded [PKCS#10] format. In order for this command to work, the device must already have
-     *   a private/public key pair. This key pair should be referred by CertificateID as specified in the
-     *   input parameter description. This CertificateID refers to the key pair generated using
-     *   CreateCertificate command.
-     *   A device that support onboard key pair generation that supports either TLS or IEEE 802.1X
-     *   using client certificate shall support this command.
-     */
-    GetPkcs10Request(CertificateID: string, Subject: string, Attributes: BinaryData) {
-        return ONVIFDevice.GetPkcs10Request(CertificateID,Subject,Attributes).run(this.config)
-    }
-
-    /**
-     * TLS server certificate(s) or IEEE 802.1X client certificate(s) created using the PKCS#10
-     *   certificate request command can be loaded into the device using this command (see Section
-     *   8.4.13). The certificate ID in the request shall be present. The device may sort the received
-     *   certificate(s) based on the public key and subject information in the certificate(s).
-     *   The certificate ID in the request will be the ID value the client wish to have. The device is
-     *   supposed to scan the generated key pairs present in the device to identify which is the
-     *   correspondent key pair with the loaded certificate and then make the link between the
-     *   certificate and the key pair.
-     *   A device that supports onboard key pair generation that support either TLS or IEEE 802.1X
-     *   shall support this command.
-     *   The certificates shall be encoded using ASN.1 [X.681], [X.682], [X.683] DER [X.690] encoding
-     *   rules.
-     *   This command is applicable to any device type, although the parameter name is called for
-     *   historical reasons NVTCertificate.
-     */
-    LoadCertificates(NVTCertificate: Certificate) {
-        return ONVIFDevice.LoadCertificates(NVTCertificate).run(this.config)
-    }
-
-    /**
-     * This operation is specific to TLS functionality. This operation gets the status
-     *   (enabled/disabled) of the device TLS client authentication. A device that supports TLS shall
-     *   support this command.
-     */
-    GetClientCertificateMode() {
-        return ONVIFDevice.GetClientCertificateMode().run(this.config)
-    }
-
-    /**
-     * This operation is specific to TLS functionality. This operation sets the status
-     *   (enabled/disabled) of the device TLS client authentication. A device that supports TLS shall
-     *   support this command.
-     */
-    SetClientCertificateMode(Enabled: boolean) {
-        return ONVIFDevice.SetClientCertificateMode(Enabled).run(this.config)
-    }
-
-    /**
      * This operation gets a list of all available relay outputs and their settings.
      *   This method has been depricated with version 2.0. Refer to the DeviceIO service.
      */
@@ -1783,116 +1575,6 @@ export class ONVIFDevice {
      */
     SendAuxiliaryCommand(AuxiliaryCommand: AuxiliaryData) {
         return ONVIFDevice.SendAuxiliaryCommand(AuxiliaryCommand).run(this.config)
-    }
-
-    /**
-     * CA certificates will be loaded into a device and be used for the sake of following two cases.
-     *   The one is for the purpose of TLS client authentication in TLS server function. The other one
-     *   is for the purpose of Authentication Server authentication in IEEE 802.1X function. This
-     *   operation gets all CA certificates loaded into a device. A device that supports either TLS client
-     *   authentication or IEEE 802.1X shall support this command and the returned certificates shall
-     *   be encoded using ASN.1 [X.681], [X.682], [X.683] DER [X.690] encoding rules.
-     */
-    GetCACertificates() {
-        return ONVIFDevice.GetCACertificates().run(this.config)
-    }
-
-    /**
-     * There might be some cases that a Certificate Authority or some other equivalent creates a
-     *   certificate without having PKCS#10 certificate signing request. In such cases, the certificate
-     *   will be bundled in conjunction with its private key. This command will be used for such use
-     *   case scenarios. The certificate ID in the request is optionally set to the ID value the client
-     *   wish to have. If the certificate ID is not specified in the request, device can choose the ID
-     *   accordingly.
-     *   This operation imports a private/public key pair into the device.
-     *   The certificates shall be encoded using ASN.1 [X.681], [X.682], [X.683] DER [X.690] encoding
-     *   rules.
-     *   A device that does not support onboard key pair generation and support either TLS or IEEE
-     *   802.1X using client certificate shall support this command. A device that support onboard key
-     *   pair generation MAY support this command. The security policy of a device that supports this
-     *   operation should make sure that the private key is sufficiently protected.
-     */
-    LoadCertificateWithPrivateKey(CertificateWithPrivateKey: CertificateWithPrivateKey) {
-        return ONVIFDevice.LoadCertificateWithPrivateKey(CertificateWithPrivateKey).run(this.config)
-    }
-
-    /**
-     * This operation requests the information of a certificate specified by certificate ID. The device
-     *   should respond with its “Issuer DN”, “Subject DN”, “Key usage”, "Extended key usage”, “Key
-     *   Length”, “Version”, “Serial Number”, “Signature Algorithm” and “Validity” data as the
-     *   information of the certificate, as long as the device can retrieve such information from the
-     *   specified certificate.
-     *   A device that supports either TLS or IEEE 802.1X should support this command.
-     */
-    GetCertificateInformation(CertificateID: string) {
-        return ONVIFDevice.GetCertificateInformation(CertificateID).run(this.config)
-    }
-
-    /**
-     * This command is used when it is necessary to load trusted CA certificates or trusted root
-     *   certificates for the purpose of verification for its counterpart i.e. client certificate verification in
-     *   TLS function or server certificate verification in IEEE 802.1X function.
-     *   A device that support either TLS or IEEE 802.1X shall support this command. As for the
-     *   supported certificate format, either DER format or PEM format is possible to be used. But a
-     *   device that support this command shall support at least DER format as supported format type.
-     *   The device may sort the received certificate(s) based on the public key and subject
-     *   information in the certificate(s). Either all CA certificates are loaded successfully or a fault
-     *   message shall be returned without loading any CA certificate.
-     */
-    LoadCACertificates(CACertificate: Certificate) {
-        return ONVIFDevice.LoadCACertificates(CACertificate).run(this.config)
-    }
-
-    /**
-     * This operation newly creates IEEE 802.1X configuration parameter set of the device. The
-     *   device shall support this command if it supports IEEE 802.1X. If the device receives this
-     *   request with already existing configuration token (Dot1XConfigurationToken) specification, the
-     *   device should respond with 'ter:ReferenceToken ' error to indicate there is some configuration
-     *   conflict.
-     */
-    CreateDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
-        return ONVIFDevice.CreateDot1XConfiguration(Dot1XConfiguration).run(this.config)
-    }
-
-    /**
-     * While the CreateDot1XConfiguration command is trying to create a new configuration
-     *   parameter set, this operation modifies existing IEEE 802.1X configuration parameter set of
-     *   the device. A device that support IEEE 802.1X shall support this command.
-     */
-    SetDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
-        return ONVIFDevice.SetDot1XConfiguration(Dot1XConfiguration).run(this.config)
-    }
-
-    /**
-     * This operation gets one IEEE 802.1X configuration parameter set from the device by
-     *   specifying the configuration token (Dot1XConfigurationToken).
-     *   A device that supports IEEE 802.1X shall support this command.
-     *   Regardless of whether the 802.1X method in the retrieved configuration has a password or
-     *   not, the device shall not include the Password element in the response.
-     */
-    GetDot1XConfiguration(Dot1XConfigurationToken: ReferenceToken) {
-        return ONVIFDevice.GetDot1XConfiguration(Dot1XConfigurationToken).run(this.config)
-    }
-
-    /**
-     * This operation gets all the existing IEEE 802.1X configuration parameter sets from the device.
-     *   The device shall respond with all the IEEE 802.1X configurations so that the client can get to
-     *   know how many IEEE 802.1X configurations are existing and how they are configured.
-     *   A device that support IEEE 802.1X shall support this command.
-     *   Regardless of whether the 802.1X method in the retrieved configuration has a password or
-     *   not, the device shall not include the Password element in the response.
-     */
-    GetDot1XConfigurations() {
-        return ONVIFDevice.GetDot1XConfigurations().run(this.config)
-    }
-
-    /**
-     * This operation deletes an IEEE 802.1X configuration parameter set from the device. Which
-     *   configuration should be deleted is specified by the 'Dot1XConfigurationToken' in the request.
-     *   A device that support IEEE 802.1X shall support this command.
-     */
-    DeleteDot1XConfiguration(Dot1XConfigurationToken: ReferenceToken) {
-        return ONVIFDevice.DeleteDot1XConfiguration(Dot1XConfigurationToken).run(this.config)
     }
 
     /**
@@ -1996,7 +1678,7 @@ export class ONVIFDevice {
      *   The configuration data shall be created in the device and shall be persistent (remain after reboot).
      *   
      */
-    CreateStorageConfiguration(StorageConfiguration: any) {
+    CreateStorageConfiguration(StorageConfiguration: StorageConfigurationData) {
         return ONVIFDevice.CreateStorageConfiguration(StorageConfiguration).run(this.config)
     }
 
@@ -2014,7 +1696,7 @@ export class ONVIFDevice {
      *   This operation modifies an existing Storage configuration.
      *   
      */
-    SetStorageConfiguration(StorageConfiguration: any) {
+    SetStorageConfiguration(StorageConfiguration: StorageConfiguration) {
         return ONVIFDevice.SetStorageConfiguration(StorageConfiguration).run(this.config)
     }
 
@@ -2052,5 +1734,131 @@ export class ONVIFDevice {
      */
     DeleteGeoLocation(Location: LocationEntity) {
         return ONVIFDevice.DeleteGeoLocation(Location).run(this.config)
+    }
+
+    /**
+     * 
+     */
+    CreateCertificate(CertificateID?: string, Subject?: string, ValidNotBefore?: string, ValidNotAfter?: string) {
+        return ONVIFDevice.CreateCertificate(CertificateID,Subject,ValidNotBefore,ValidNotAfter).run(this.config)
+    }
+
+    /**
+     * 
+     */
+    GetCertificates() {
+        return ONVIFDevice.GetCertificates().run(this.config)
+    }
+
+    /**
+     * 
+     */
+    GetCertificatesStatus() {
+        return ONVIFDevice.GetCertificatesStatus().run(this.config)
+    }
+
+    /**
+     * 
+     */
+    SetCertificatesStatus(CertificateStatus?: CertificateStatus) {
+        return ONVIFDevice.SetCertificatesStatus(CertificateStatus).run(this.config)
+    }
+
+    /**
+     * 
+     */
+    DeleteCertificates(CertificateID: string) {
+        return ONVIFDevice.DeleteCertificates(CertificateID).run(this.config)
+    }
+
+    /**
+     * 
+     */
+    GetPkcs10Request(CertificateID: string, Subject?: string, Attributes?: BinaryData) {
+        return ONVIFDevice.GetPkcs10Request(CertificateID,Subject,Attributes).run(this.config)
+    }
+
+    /**
+     * 
+     */
+    LoadCertificates(NVTCertificate: Certificate) {
+        return ONVIFDevice.LoadCertificates(NVTCertificate).run(this.config)
+    }
+
+    /**
+     * 
+     */
+    GetClientCertificateMode() {
+        return ONVIFDevice.GetClientCertificateMode().run(this.config)
+    }
+
+    /**
+     * 
+     */
+    SetClientCertificateMode(Enabled: boolean) {
+        return ONVIFDevice.SetClientCertificateMode(Enabled).run(this.config)
+    }
+
+    /**
+     * 
+     */
+    GetCACertificates() {
+        return ONVIFDevice.GetCACertificates().run(this.config)
+    }
+
+    /**
+     * 
+     */
+    LoadCertificateWithPrivateKey(CertificateWithPrivateKey: CertificateWithPrivateKey) {
+        return ONVIFDevice.LoadCertificateWithPrivateKey(CertificateWithPrivateKey).run(this.config)
+    }
+
+    /**
+     * 
+     */
+    GetCertificateInformation(CertificateID: string) {
+        return ONVIFDevice.GetCertificateInformation(CertificateID).run(this.config)
+    }
+
+    /**
+     * 
+     */
+    LoadCACertificates(CACertificate: Certificate) {
+        return ONVIFDevice.LoadCACertificates(CACertificate).run(this.config)
+    }
+
+    /**
+     * 
+     */
+    CreateDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
+        return ONVIFDevice.CreateDot1XConfiguration(Dot1XConfiguration).run(this.config)
+    }
+
+    /**
+     * 
+     */
+    SetDot1XConfiguration(Dot1XConfiguration: Dot1XConfiguration) {
+        return ONVIFDevice.SetDot1XConfiguration(Dot1XConfiguration).run(this.config)
+    }
+
+    /**
+     * 
+     */
+    GetDot1XConfiguration(Dot1XConfigurationToken: ReferenceToken) {
+        return ONVIFDevice.GetDot1XConfiguration(Dot1XConfigurationToken).run(this.config)
+    }
+
+    /**
+     * 
+     */
+    GetDot1XConfigurations() {
+        return ONVIFDevice.GetDot1XConfigurations().run(this.config)
+    }
+
+    /**
+     * 
+     */
+    DeleteDot1XConfiguration(Dot1XConfigurationToken?: ReferenceToken) {
+        return ONVIFDevice.DeleteDot1XConfiguration(Dot1XConfigurationToken).run(this.config)
     }
 }

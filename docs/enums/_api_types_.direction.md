@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Direction](../enums/_api_types_.direction.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Direction](_api_types_.direction.md)
 
 # Enumeration: Direction
 
@@ -10,35 +10,26 @@
 * [Left](_api_types_.direction.md#left)
 * [Right](_api_types_.direction.md#right)
 
----
-
 ## Enumeration members
-
-<a id="any"></a>
 
 ###  Any
 
-**Any**:  = "Any"
+• **Any**: = "Any"
 
-*Defined in [api/types.ts:5459](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5459)*
+*Defined in [api/types.ts:5635](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5635)*
 
 ___
-<a id="left"></a>
 
 ###  Left
 
-**Left**:  = "Left"
+• **Left**: = "Left"
 
-*Defined in [api/types.ts:5451](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5451)*
+*Defined in [api/types.ts:5627](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5627)*
 
 ___
-<a id="right"></a>
 
 ###  Right
 
-**Right**:  = "Right"
+• **Right**: = "Right"
 
-*Defined in [api/types.ts:5455](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5455)*
-
-___
-
+*Defined in [api/types.ts:5631](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5631)*

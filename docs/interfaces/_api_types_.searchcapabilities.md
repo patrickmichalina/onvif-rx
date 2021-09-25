@@ -1,38 +1,30 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [SearchCapabilities](../interfaces/_api_types_.searchcapabilities.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [SearchCapabilities](_api_types_.searchcapabilities.md)
 
 # Interface: SearchCapabilities
 
 ## Hierarchy
 
-**SearchCapabilities**
+* **SearchCapabilities**
 
 ## Index
 
 ### Properties
 
-* [MetadataSearch](_api_types_.searchcapabilities.md#metadatasearch)
-* [XAddr](_api_types_.searchcapabilities.md#xaddr)
-
----
+* [MetadataSearch](_api_types_.searchcapabilities.md#readonly-metadatasearch)
+* [XAddr](_api_types_.searchcapabilities.md#readonly-xaddr)
 
 ## Properties
 
-<a id="metadatasearch"></a>
+### `Readonly` MetadataSearch
 
-###  MetadataSearch
+• **MetadataSearch**: *boolean*
 
-**● MetadataSearch**: *`boolean`*
-
-*Defined in [api/types.ts:1876](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1876)*
-
-___
-<a id="xaddr"></a>
-
-###  XAddr
-
-**● XAddr**: *`string`*
-
-*Defined in [api/types.ts:1875](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1875)*
+*Defined in [api/types.ts:1905](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1905)*
 
 ___
 
+### `Readonly` XAddr
+
+• **XAddr**: *string*
+
+*Defined in [api/types.ts:1904](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1904)*

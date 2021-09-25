@@ -1,12 +1,7 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [SourceIdentificationExtension](../interfaces/_api_types_.sourceidentificationextension.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [SourceIdentificationExtension](_api_types_.sourceidentificationextension.md)
 
 # Interface: SourceIdentificationExtension
 
 ## Hierarchy
 
-**SourceIdentificationExtension**
-
-## Index
-
----
-
+* **SourceIdentificationExtension**

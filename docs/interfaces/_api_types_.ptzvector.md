@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZVector](../interfaces/_api_types_.ptzvector.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZVector](_api_types_.ptzvector.md)
 
 # Interface: PTZVector
 
@@ -6,35 +6,27 @@ Pan and tilt position. The x component corresponds to pan and the y component to
 
 ## Hierarchy
 
-**PTZVector**
+* **PTZVector**
 
 ## Index
 
 ### Properties
 
-* [PanTilt](_api_types_.ptzvector.md#pantilt)
-* [Zoom](_api_types_.ptzvector.md#zoom)
-
----
+* [PanTilt](_api_types_.ptzvector.md#optional-readonly-pantilt)
+* [Zoom](_api_types_.ptzvector.md#optional-readonly-zoom)
 
 ## Properties
 
-<a id="pantilt"></a>
+### `Optional` `Readonly` PanTilt
 
-### `<Optional>` PanTilt
+• **PanTilt**? : *[Vector2D](_api_types_.vector2d.md)*
 
-**● PanTilt**: *[Vector2D](_api_types_.vector2d.md)*
-
-*Defined in [api/types.ts:313](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L313)*
-
-___
-<a id="zoom"></a>
-
-### `<Optional>` Zoom
-
-**● Zoom**: *[Vector1D](_api_types_.vector1d.md)*
-
-*Defined in [api/types.ts:314](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L314)*
+*Defined in [api/types.ts:315](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L315)*
 
 ___
 
+### `Optional` `Readonly` Zoom
+
+• **Zoom**? : *[Vector1D](_api_types_.vector1d.md)*
+
+*Defined in [api/types.ts:316](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L316)*

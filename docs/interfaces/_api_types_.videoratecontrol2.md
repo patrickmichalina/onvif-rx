@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [VideoRateControl2](../interfaces/_api_types_.videoratecontrol2.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [VideoRateControl2](_api_types_.videoratecontrol2.md)
 
 # Interface: VideoRateControl2
 
@@ -6,35 +6,27 @@ Desired frame rate in fps. The actual rate may be lower due to e.g. performance 
 
 ## Hierarchy
 
-**VideoRateControl2**
+* **VideoRateControl2**
 
 ## Index
 
 ### Properties
 
-* [BitrateLimit](_api_types_.videoratecontrol2.md#bitratelimit)
-* [FrameRateLimit](_api_types_.videoratecontrol2.md#frameratelimit)
-
----
+* [BitrateLimit](_api_types_.videoratecontrol2.md#readonly-bitratelimit)
+* [FrameRateLimit](_api_types_.videoratecontrol2.md#readonly-frameratelimit)
 
 ## Properties
 
-<a id="bitratelimit"></a>
+### `Readonly` BitrateLimit
 
-###  BitrateLimit
+• **BitrateLimit**: *number*
 
-**● BitrateLimit**: *`number`*
-
-*Defined in [api/types.ts:834](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L834)*
-
-___
-<a id="frameratelimit"></a>
-
-###  FrameRateLimit
-
-**● FrameRateLimit**: *`number`*
-
-*Defined in [api/types.ts:833](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L833)*
+*Defined in [api/types.ts:863](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L863)*
 
 ___
 
+### `Readonly` FrameRateLimit
+
+• **FrameRateLimit**: *number*
+
+*Defined in [api/types.ts:862](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L862)*

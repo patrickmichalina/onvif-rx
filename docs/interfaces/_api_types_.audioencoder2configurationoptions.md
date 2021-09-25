@@ -1,50 +1,41 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [AudioEncoder2ConfigurationOptions](../interfaces/_api_types_.audioencoder2configurationoptions.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [AudioEncoder2ConfigurationOptions](_api_types_.audioencoder2configurationoptions.md)
 
 # Interface: AudioEncoder2ConfigurationOptions
 
-Audio Media Subtype for the audio format. For definitions see tt:AudioEncodingMimeNames and IANA Media Types.
+Audio Media Subtype for the audio format. For definitions see tt:AudioEncodingMimeNames and  IANA Media Types.
 
 ## Hierarchy
 
-**AudioEncoder2ConfigurationOptions**
+* **AudioEncoder2ConfigurationOptions**
 
 ## Index
 
 ### Properties
 
-* [BitrateList](_api_types_.audioencoder2configurationoptions.md#bitratelist)
-* [Encoding](_api_types_.audioencoder2configurationoptions.md#encoding)
-* [SampleRateList](_api_types_.audioencoder2configurationoptions.md#sampleratelist)
-
----
+* [BitrateList](_api_types_.audioencoder2configurationoptions.md#readonly-bitratelist)
+* [Encoding](_api_types_.audioencoder2configurationoptions.md#readonly-encoding)
+* [SampleRateList](_api_types_.audioencoder2configurationoptions.md#readonly-sampleratelist)
 
 ## Properties
 
-<a id="bitratelist"></a>
+### `Readonly` BitrateList
 
-###  BitrateList
+• **BitrateList**: *[IntItems](_api_types_.intitems.md)*
 
-**● BitrateList**: *[IntList](_api_types_.intlist.md)*
-
-*Defined in [api/types.ts:910](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L910)*
-
-___
-<a id="encoding"></a>
-
-###  Encoding
-
-**● Encoding**: *`string`*
-
-*Defined in [api/types.ts:909](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L909)*
-
-___
-<a id="sampleratelist"></a>
-
-###  SampleRateList
-
-**● SampleRateList**: *[IntList](_api_types_.intlist.md)*
-
-*Defined in [api/types.ts:911](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L911)*
+*Defined in [api/types.ts:939](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L939)*
 
 ___
 
+### `Readonly` Encoding
+
+• **Encoding**: *string*
+
+*Defined in [api/types.ts:938](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L938)*
+
+___
+
+### `Readonly` SampleRateList
+
+• **SampleRateList**: *[IntItems](_api_types_.intitems.md)*
+
+*Defined in [api/types.ts:940](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L940)*

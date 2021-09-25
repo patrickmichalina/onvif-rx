@@ -1,90 +1,78 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Capabilities](../interfaces/_api_types_.capabilities.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Capabilities](_api_types_.capabilities.md)
 
 # Interface: Capabilities
 
 Analytics capabilities
+Indicates that the WS Subscription policy is supported.
 
 ## Hierarchy
 
-**Capabilities**
+* **Capabilities**
 
 ## Index
 
 ### Properties
 
-* [Analytics](_api_types_.capabilities.md#analytics)
-* [Device](_api_types_.capabilities.md#device)
-* [Events](_api_types_.capabilities.md#events)
-* [Extension](_api_types_.capabilities.md#extension)
-* [Imaging](_api_types_.capabilities.md#imaging)
-* [Media](_api_types_.capabilities.md#media)
-* [PTZ](_api_types_.capabilities.md#ptz)
-
----
+* [Analytics](_api_types_.capabilities.md#optional-readonly-analytics)
+* [Device](_api_types_.capabilities.md#optional-readonly-device)
+* [Events](_api_types_.capabilities.md#optional-readonly-events)
+* [Extension](_api_types_.capabilities.md#optional-readonly-extension)
+* [Imaging](_api_types_.capabilities.md#optional-readonly-imaging)
+* [Media](_api_types_.capabilities.md#optional-readonly-media)
+* [PTZ](_api_types_.capabilities.md#optional-readonly-ptz)
 
 ## Properties
 
-<a id="analytics"></a>
+### `Optional` `Readonly` Analytics
 
-### `<Optional>` Analytics
+• **Analytics**? : *[AnalyticsCapabilities](_api_types_.analyticscapabilities.md)*
 
-**● Analytics**: *[AnalyticsCapabilities](_api_types_.analyticscapabilities.md)*
-
-*Defined in [api/types.ts:1600](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1600)*
-
-___
-<a id="device"></a>
-
-### `<Optional>` Device
-
-**● Device**: *[DeviceCapabilities](_api_types_.devicecapabilities.md)*
-
-*Defined in [api/types.ts:1601](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1601)*
-
-___
-<a id="events"></a>
-
-### `<Optional>` Events
-
-**● Events**: *[EventCapabilities](_api_types_.eventcapabilities.md)*
-
-*Defined in [api/types.ts:1602](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1602)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[CapabilitiesExtension](_api_types_.capabilitiesextension.md)*
-
-*Defined in [api/types.ts:1606](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1606)*
-
-___
-<a id="imaging"></a>
-
-### `<Optional>` Imaging
-
-**● Imaging**: *[ImagingCapabilities](_api_types_.imagingcapabilities.md)*
-
-*Defined in [api/types.ts:1603](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1603)*
-
-___
-<a id="media"></a>
-
-### `<Optional>` Media
-
-**● Media**: *[MediaCapabilities](_api_types_.mediacapabilities.md)*
-
-*Defined in [api/types.ts:1604](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1604)*
-
-___
-<a id="ptz"></a>
-
-### `<Optional>` PTZ
-
-**● PTZ**: *[PTZCapabilities](_api_types_.ptzcapabilities.md)*
-
-*Defined in [api/types.ts:1605](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1605)*
+*Defined in [api/types.ts:1629](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1629)*
 
 ___
 
+### `Optional` `Readonly` Device
+
+• **Device**? : *[DeviceCapabilities](_api_types_.devicecapabilities.md)*
+
+*Defined in [api/types.ts:1630](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1630)*
+
+___
+
+### `Optional` `Readonly` Events
+
+• **Events**? : *[EventCapabilities](_api_types_.eventcapabilities.md)*
+
+*Defined in [api/types.ts:1631](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1631)*
+
+___
+
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[CapabilitiesExtension](_api_types_.capabilitiesextension.md)*
+
+*Defined in [api/types.ts:1635](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1635)*
+
+___
+
+### `Optional` `Readonly` Imaging
+
+• **Imaging**? : *[ImagingCapabilities](_api_types_.imagingcapabilities.md)*
+
+*Defined in [api/types.ts:1632](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1632)*
+
+___
+
+### `Optional` `Readonly` Media
+
+• **Media**? : *[MediaCapabilities](_api_types_.mediacapabilities.md)*
+
+*Defined in [api/types.ts:1633](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1633)*
+
+___
+
+### `Optional` `Readonly` PTZ
+
+• **PTZ**? : *[PTZCapabilities](_api_types_.ptzcapabilities.md)*
+
+*Defined in [api/types.ts:1634](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1634)*

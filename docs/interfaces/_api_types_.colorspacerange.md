@@ -1,58 +1,50 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ColorspaceRange](../interfaces/_api_types_.colorspacerange.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ColorspaceRange](_api_types_.colorspacerange.md)
 
 # Interface: ColorspaceRange
 
+Acceptable values are the same as in tt:Color.
+
 ## Hierarchy
 
-**ColorspaceRange**
+* **ColorspaceRange**
 
 ## Index
 
 ### Properties
 
-* [Colorspace](_api_types_.colorspacerange.md#colorspace)
-* [X](_api_types_.colorspacerange.md#x)
-* [Y](_api_types_.colorspacerange.md#y)
-* [Z](_api_types_.colorspacerange.md#z)
-
----
+* [Colorspace](_api_types_.colorspacerange.md#readonly-colorspace)
+* [X](_api_types_.colorspacerange.md#readonly-x)
+* [Y](_api_types_.colorspacerange.md#readonly-y)
+* [Z](_api_types_.colorspacerange.md#readonly-z)
 
 ## Properties
 
-<a id="colorspace"></a>
+### `Readonly` Colorspace
 
-###  Colorspace
+• **Colorspace**: *string*
 
-**● Colorspace**: *`string`*
-
-*Defined in [api/types.ts:4200](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4200)*
-
-___
-<a id="x"></a>
-
-###  X
-
-**● X**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:4197](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4197)*
-
-___
-<a id="y"></a>
-
-###  Y
-
-**● Y**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:4198](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4198)*
-
-___
-<a id="z"></a>
-
-###  Z
-
-**● Z**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:4199](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4199)*
+*Defined in [api/types.ts:4222](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4222)*
 
 ___
 
+### `Readonly` X
+
+• **X**: *[FloatRange](_api_types_.floatrange.md)*
+
+*Defined in [api/types.ts:4219](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4219)*
+
+___
+
+### `Readonly` Y
+
+• **Y**: *[FloatRange](_api_types_.floatrange.md)*
+
+*Defined in [api/types.ts:4220](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4220)*
+
+___
+
+### `Readonly` Z
+
+• **Z**: *[FloatRange](_api_types_.floatrange.md)*
+
+*Defined in [api/types.ts:4221](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4221)*

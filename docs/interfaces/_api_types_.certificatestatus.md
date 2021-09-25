@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [CertificateStatus](../interfaces/_api_types_.certificatestatus.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [CertificateStatus](_api_types_.certificatestatus.md)
 
 # Interface: CertificateStatus
 
@@ -6,35 +6,27 @@ Certificate id.
 
 ## Hierarchy
 
-**CertificateStatus**
+* **CertificateStatus**
 
 ## Index
 
 ### Properties
 
-* [CertificateID](_api_types_.certificatestatus.md#certificateid)
-* [Status](_api_types_.certificatestatus.md#status)
-
----
+* [CertificateID](_api_types_.certificatestatus.md#readonly-certificateid)
+* [Status](_api_types_.certificatestatus.md#readonly-status)
 
 ## Properties
 
-<a id="certificateid"></a>
+### `Readonly` CertificateID
 
-###  CertificateID
+• **CertificateID**: *string*
 
-**● CertificateID**: *`string`*
-
-*Defined in [api/types.ts:2081](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2081)*
-
-___
-<a id="status"></a>
-
-###  Status
-
-**● Status**: *`boolean`*
-
-*Defined in [api/types.ts:2082](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2082)*
+*Defined in [api/types.ts:2110](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2110)*
 
 ___
 
+### `Readonly` Status
+
+• **Status**: *boolean*
+
+*Defined in [api/types.ts:2111](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2111)*

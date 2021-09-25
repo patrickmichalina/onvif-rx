@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [IPv6DHCPConfiguration](../enums/_api_types_.ipv6dhcpconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [IPv6DHCPConfiguration](_api_types_.ipv6dhcpconfiguration.md)
 
 # Enumeration: IPv6DHCPConfiguration
 
@@ -11,44 +11,34 @@
 * [Stateful](_api_types_.ipv6dhcpconfiguration.md#stateful)
 * [Stateless](_api_types_.ipv6dhcpconfiguration.md#stateless)
 
----
-
 ## Enumeration members
-
-<a id="auto"></a>
 
 ###  Auto
 
-**Auto**:  = "Auto"
+• **Auto**: = "Auto"
 
-*Defined in [api/types.ts:4755](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4755)*
+*Defined in [api/types.ts:4881](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4881)*
 
 ___
-<a id="off"></a>
 
 ###  Off
 
-**Off**:  = "Off"
+• **Off**: = "Off"
 
-*Defined in [api/types.ts:4767](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4767)*
+*Defined in [api/types.ts:4893](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4893)*
 
 ___
-<a id="stateful"></a>
 
 ###  Stateful
 
-**Stateful**:  = "Stateful"
+• **Stateful**: = "Stateful"
 
-*Defined in [api/types.ts:4759](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4759)*
+*Defined in [api/types.ts:4885](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4885)*
 
 ___
-<a id="stateless"></a>
 
 ###  Stateless
 
-**Stateless**:  = "Stateless"
+• **Stateless**: = "Stateless"
 
-*Defined in [api/types.ts:4763](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4763)*
-
-___
-
+*Defined in [api/types.ts:4889](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4889)*

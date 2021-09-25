@@ -685,8 +685,7 @@ export class ONVIFMedia {
      *   RTP over RTSP over TCP: StreamType = "RTP_unicast", TransportProtocol = "RTSP"
      *   
      *   
-     *   If a multicast stream is requested the VideoEncoderConfiguration, AudioEncoderConfiguration and MetadataConfiguration element inside the corresponding 
-     *   media profile must be configured with valid multicast settings.
+     *   If a multicast stream is requested at least one of VideoEncoderConfiguration, AudioEncoderConfiguration and MetadataConfiguration shall have a valid multicast setting.
      *   For full compatibility with other ONVIF services a device should not generate Uris longer than
      *   128 octets.
      */
@@ -859,7 +858,7 @@ export class ONVIFMedia {
      *   device and shall be persistent (remain after reboot). A created profile shall be deletable and a device shall set the “fixed” attribute to false in the
      *   returned Profile.
      */
-    CreateProfile(Name: Name, Token: ReferenceToken) {
+    CreateProfile(Name: Name, Token?: ReferenceToken) {
         return ONVIFMedia.CreateProfile(Name,Token).run(this.config)
     }
 
@@ -1294,7 +1293,7 @@ export class ONVIFMedia {
      *   particular configuration. If a media profile is specified, the options shall be compatible with
      *   that media profile.
      */
-    GetVideoSourceConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
+    GetVideoSourceConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return ONVIFMedia.GetVideoSourceConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
@@ -1308,7 +1307,7 @@ export class ONVIFMedia {
      *   compatible with that media profile. If no tokens are specified, the options shall be considered generic for the device.
      *   
      */
-    GetVideoEncoderConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
+    GetVideoEncoderConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return ONVIFMedia.GetVideoEncoderConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
@@ -1318,7 +1317,7 @@ export class ONVIFMedia {
      *   particular configuration. If a media profile is specified, the options shall be compatible with
      *   that media profile.
      */
-    GetAudioSourceConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
+    GetAudioSourceConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return ONVIFMedia.GetAudioSourceConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
@@ -1326,21 +1325,21 @@ export class ONVIFMedia {
      * This operation returns the available options  (supported values and ranges for audio encoder configuration parameters) when the audio encoder parameters are
      *   reconfigured.
      */
-    GetAudioEncoderConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
+    GetAudioEncoderConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return ONVIFMedia.GetAudioEncoderConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
     /**
      * This operation returns the available options (supported values and ranges for metadata configuration parameters) for changing the metadata configuration.
      */
-    GetMetadataConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
+    GetMetadataConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return ONVIFMedia.GetMetadataConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
     /**
      * This operation returns the available options (supported values and ranges for audio output configuration parameters) for configuring an audio output.
      */
-    GetAudioOutputConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
+    GetAudioOutputConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return ONVIFMedia.GetAudioOutputConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
@@ -1348,7 +1347,7 @@ export class ONVIFMedia {
      * This command list the audio decoding capabilities for a given profile and configuration of a
      *   device.
      */
-    GetAudioDecoderConfigurationOptions(ConfigurationToken: ReferenceToken, ProfileToken: ReferenceToken) {
+    GetAudioDecoderConfigurationOptions(ConfigurationToken?: ReferenceToken, ProfileToken?: ReferenceToken) {
         return ONVIFMedia.GetAudioDecoderConfigurationOptions(ConfigurationToken,ProfileToken).run(this.config)
     }
 
@@ -1373,8 +1372,7 @@ export class ONVIFMedia {
      *   RTP over RTSP over TCP: StreamType = "RTP_unicast", TransportProtocol = "RTSP"
      *   
      *   
-     *   If a multicast stream is requested the VideoEncoderConfiguration, AudioEncoderConfiguration and MetadataConfiguration element inside the corresponding 
-     *   media profile must be configured with valid multicast settings.
+     *   If a multicast stream is requested at least one of VideoEncoderConfiguration, AudioEncoderConfiguration and MetadataConfiguration shall have a valid multicast setting.
      *   For full compatibility with other ONVIF services a device should not generate Uris longer than
      *   128 octets.
      */
@@ -1449,7 +1447,7 @@ export class ONVIFMedia {
     /**
      * Get the OSDs.
      */
-    GetOSDs(ConfigurationToken: ReferenceToken) {
+    GetOSDs(ConfigurationToken?: ReferenceToken) {
         return ONVIFMedia.GetOSDs(ConfigurationToken).run(this.config)
     }
 

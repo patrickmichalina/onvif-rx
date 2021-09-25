@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZPresetTourStartingConditionOptions](../interfaces/_api_types_.ptzpresettourstartingconditionoptions.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZPresetTourStartingConditionOptions](_api_types_.ptzpresettourstartingconditionoptions.md)
 
 # Interface: PTZPresetTourStartingConditionOptions
 
@@ -6,55 +6,45 @@ Supported range of Recurring Time.
 
 ## Hierarchy
 
-**PTZPresetTourStartingConditionOptions**
+* **PTZPresetTourStartingConditionOptions**
 
 ## Index
 
 ### Properties
 
-* [Direction](_api_types_.ptzpresettourstartingconditionoptions.md#direction)
-* [Extension](_api_types_.ptzpresettourstartingconditionoptions.md#extension)
-* [RecurringDuration](_api_types_.ptzpresettourstartingconditionoptions.md#recurringduration)
-* [RecurringTime](_api_types_.ptzpresettourstartingconditionoptions.md#recurringtime)
-
----
+* [Direction](_api_types_.ptzpresettourstartingconditionoptions.md#optional-readonly-direction)
+* [Extension](_api_types_.ptzpresettourstartingconditionoptions.md#optional-readonly-extension)
+* [RecurringDuration](_api_types_.ptzpresettourstartingconditionoptions.md#optional-readonly-recurringduration)
+* [RecurringTime](_api_types_.ptzpresettourstartingconditionoptions.md#optional-readonly-recurringtime)
 
 ## Properties
 
-<a id="direction"></a>
+### `Optional` `Readonly` Direction
 
-### `<Optional>` Direction
+• **Direction**? : *[PTZPresetTourDirection](../enums/_api_types_.ptzpresettourdirection.md)*
 
-**● Direction**: *[PTZPresetTourDirection](../enums/_api_types_.ptzpresettourdirection.md)*
-
-*Defined in [api/types.ts:2573](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2573)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[PTZPresetTourStartingConditionOptionsExtension](_api_types_.ptzpresettourstartingconditionoptionsextension.md)*
-
-*Defined in [api/types.ts:2574](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2574)*
-
-___
-<a id="recurringduration"></a>
-
-### `<Optional>` RecurringDuration
-
-**● RecurringDuration**: *[DurationRange](_api_types_.durationrange.md)*
-
-*Defined in [api/types.ts:2572](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2572)*
-
-___
-<a id="recurringtime"></a>
-
-### `<Optional>` RecurringTime
-
-**● RecurringTime**: *[IntRange](_api_types_.intrange.md)*
-
-*Defined in [api/types.ts:2571](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2571)*
+*Defined in [api/types.ts:2602](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2602)*
 
 ___
 
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[PTZPresetTourStartingConditionOptionsExtension](_api_types_.ptzpresettourstartingconditionoptionsextension.md)*
+
+*Defined in [api/types.ts:2603](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2603)*
+
+___
+
+### `Optional` `Readonly` RecurringDuration
+
+• **RecurringDuration**? : *[DurationRange](_api_types_.durationrange.md)*
+
+*Defined in [api/types.ts:2601](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2601)*
+
+___
+
+### `Optional` `Readonly` RecurringTime
+
+• **RecurringTime**? : *[IntRange](_api_types_.intrange.md)*
+
+*Defined in [api/types.ts:2600](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2600)*

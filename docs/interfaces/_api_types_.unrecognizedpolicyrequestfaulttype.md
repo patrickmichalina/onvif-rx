@@ -1,28 +1,21 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [UnrecognizedPolicyRequestFaultType](../interfaces/_api_types_.unrecognizedpolicyrequestfaulttype.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [UnrecognizedPolicyRequestFaultType](_api_types_.unrecognizedpolicyrequestfaulttype.md)
 
 # Interface: UnrecognizedPolicyRequestFaultType
 
 ## Hierarchy
 
-**UnrecognizedPolicyRequestFaultType**
+* **UnrecognizedPolicyRequestFaultType**
 
 ## Index
 
 ### Properties
 
-* [UnrecognizedPolicy](_api_types_.unrecognizedpolicyrequestfaulttype.md#unrecognizedpolicy)
-
----
+* [UnrecognizedPolicy](_api_types_.unrecognizedpolicyrequestfaulttype.md#optional-readonly-unrecognizedpolicy)
 
 ## Properties
 
-<a id="unrecognizedpolicy"></a>
+### `Optional` `Readonly` UnrecognizedPolicy
 
-### `<Optional>` UnrecognizedPolicy
+• **UnrecognizedPolicy**? : *any*
 
-**● UnrecognizedPolicy**: *`any`*
-
-*Defined in [api/types.ts:209](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L209)*
-
-___
-
+*Defined in [api/types.ts:203](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L203)*

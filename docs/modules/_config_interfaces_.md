@@ -1,6 +1,6 @@
-[onvif-rx](../README.md) > ["config/interfaces"](../modules/_config_interfaces_.md)
+[onvif-rx](../README.md) › ["config/interfaces"](_config_interfaces_.md)
 
-# External module: "config/interfaces"
+# Module: "config/interfaces"
 
 ## Index
 
@@ -18,88 +18,82 @@
 * [ISha1Digest](_config_interfaces_.md#isha1digest)
 * [ITransport](_config_interfaces_.md#itransport)
 
----
-
 ## Type aliases
-
-<a id="iencodebase64"></a>
 
 ###  IEncodeBase64
 
-**Ƭ IEncodeBase64**: *`function`*
+Ƭ **IEncodeBase64**: *function*
 
-*Defined in [config/interfaces.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L12)*
+*Defined in [config/interfaces.ts:11](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L11)*
 
-#### Type declaration
-▸(str: *`string`*): `string`
+#### Type declaration:
+
+▸ (`str`: string): *string*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| str | `string` |
-
-**Returns:** `string`
+Name | Type |
+------ | ------ |
+`str` | string |
 
 ___
-<a id="inonce"></a>
 
 ###  INonce
 
-**Ƭ INonce**: *`function`*
+Ƭ **INonce**: *function*
 
-*Defined in [config/interfaces.ts:14](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L14)*
+*Defined in [config/interfaces.ts:13](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L13)*
 
-#### Type declaration
-▸(size?: *`undefined` \| `number`*): `string`
+#### Type declaration:
+
+▸ (`size?`: undefined | number): *string*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| `Optional` size | `undefined` \| `number` |
-
-**Returns:** `string`
+Name | Type |
+------ | ------ |
+`size?` | undefined &#124; number |
 
 ___
-<a id="isha1digest"></a>
 
 ###  ISha1Digest
 
-**Ƭ ISha1Digest**: *`function`*
+Ƭ **ISha1Digest**: *function*
 
-*Defined in [config/interfaces.ts:13](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L13)*
+*Defined in [config/interfaces.ts:12](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L12)*
 
-#### Type declaration
-▸(str: *`string`*): `string`
+#### Type declaration:
+
+▸ (`str`: string): *PromiseLike‹string›*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| str | `string` |
-
-**Returns:** `string`
+Name | Type |
+------ | ------ |
+`str` | string |
 
 ___
-<a id="itransport"></a>
 
 ###  ITransport
 
-**Ƭ ITransport**: *`function`*
+Ƭ **ITransport**: *function*
 
-*Defined in [config/interfaces.ts:10](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L10)*
+*Defined in [config/interfaces.ts:10](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L10)*
 
-#### Type declaration
-▸(body: *`string`*): `function`
+#### Type declaration:
+
+▸ (`body`: string): *function*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| body | `string` |
+Name | Type |
+------ | ------ |
+`body` | string |
 
-**Returns:** `function`
+▸ (`uri`: string): *Observable‹[ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›*
 
-___
+**Parameters:**
 
+Name | Type |
+------ | ------ |
+`uri` | string |

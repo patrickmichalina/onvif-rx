@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PolylineArray](../interfaces/_api_types_.polylinearray.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PolylineArray](_api_types_.polylinearray.md)
 
 # Interface: PolylineArray
 
@@ -6,35 +6,27 @@ Contains array of Polyline
 
 ## Hierarchy
 
-**PolylineArray**
+* **PolylineArray**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.polylinearray.md#extension)
-* [Segment](_api_types_.polylinearray.md#segment)
-
----
+* [Extension](_api_types_.polylinearray.md#optional-readonly-extension)
+* [Segment](_api_types_.polylinearray.md#readonly-segment)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[PolylineArrayExtension](_api_types_.polylinearrayextension.md)*
 
-**● Extension**: *[PolylineArrayExtension](_api_types_.polylinearrayextension.md)*
-
-*Defined in [api/types.ts:3440](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3440)*
-
-___
-<a id="segment"></a>
-
-###  Segment
-
-**● Segment**: *[Polyline](_api_types_.polyline.md)*
-
-*Defined in [api/types.ts:3439](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3439)*
+*Defined in [api/types.ts:3460](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3460)*
 
 ___
 
+### `Readonly` Segment
+
+• **Segment**: *[Polyline](_api_types_.polyline.md)*
+
+*Defined in [api/types.ts:3459](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3459)*

@@ -1,16 +1,20 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md)
+[onvif-rx](../README.md) › ["api/types"](_api_types_.md)
 
-# External module: "api/types"
+# Module: "api/types"
 
 ## Index
 
 ### Enumerations
 
+* [AFModes](../enums/_api_types_.afmodes.md)
+* [AudioClassType](../enums/_api_types_.audioclasstype.md)
 * [AudioEncoding](../enums/_api_types_.audioencoding.md)
 * [AudioEncodingMimeNames](../enums/_api_types_.audioencodingmimenames.md)
 * [AutoFocusMode](../enums/_api_types_.autofocusmode.md)
+* [AutoGeoModes](../enums/_api_types_.autogeomodes.md)
 * [BacklightCompensationMode](../enums/_api_types_.backlightcompensationmode.md)
 * [CapabilityCategory](../enums/_api_types_.capabilitycategory.md)
+* [ConnectionStatus](../enums/_api_types_.connectionstatus.md)
 * [DefoggingMode](../enums/_api_types_.defoggingmode.md)
 * [DigitalIdleState](../enums/_api_types_.digitalidlestate.md)
 * [Direction](../enums/_api_types_.direction.md)
@@ -25,6 +29,7 @@
 * [EFlipMode](../enums/_api_types_.eflipmode.md)
 * [Enabled](../enums/_api_types_.enabled.md)
 * [Entity](../enums/_api_types_.entity.md)
+* [EventBrokerProtocol](../enums/_api_types_.eventbrokerprotocol.md)
 * [ExposureMode](../enums/_api_types_.exposuremode.md)
 * [ExposurePriority](../enums/_api_types_.exposurepriority.md)
 * [FactoryDefaultType](../enums/_api_types_.factorydefaulttype.md)
@@ -32,11 +37,13 @@
 * [IPAddressFilterType](../enums/_api_types_.ipaddressfiltertype.md)
 * [IPType](../enums/_api_types_.iptype.md)
 * [IPv6DHCPConfiguration](../enums/_api_types_.ipv6dhcpconfiguration.md)
+* [ImageSendingType](../enums/_api_types_.imagesendingtype.md)
 * [ImageStabilizationMode](../enums/_api_types_.imagestabilizationmode.md)
 * [IrCutFilterAutoBoundaryType](../enums/_api_types_.ircutfilterautoboundarytype.md)
 * [IrCutFilterMode](../enums/_api_types_.ircutfiltermode.md)
 * [MetadataCompressionType](../enums/_api_types_.metadatacompressiontype.md)
 * [ModeOfOperation](../enums/_api_types_.modeofoperation.md)
+* [MoveAndTrackMethod](../enums/_api_types_.moveandtrackmethod.md)
 * [MoveStatus](../enums/_api_types_.movestatus.md)
 * [Mpeg4Profile](../enums/_api_types_.mpeg4profile.md)
 * [NetworkHostType](../enums/_api_types_.networkhosttype.md)
@@ -59,6 +66,7 @@
 * [ScopeDefinition](../enums/_api_types_.scopedefinition.md)
 * [SearchState](../enums/_api_types_.searchstate.md)
 * [SetDateTimeType](../enums/_api_types_.setdatetimetype.md)
+* [StorageType](../enums/_api_types_.storagetype.md)
 * [StreamType](../enums/_api_types_.streamtype.md)
 * [SystemLogType](../enums/_api_types_.systemlogtype.md)
 * [ToneCompensationMode](../enums/_api_types_.tonecompensationmode.md)
@@ -139,6 +147,7 @@
 * [CodingCapabilities](../interfaces/_api_types_.codingcapabilities.md)
 * [Color](../interfaces/_api_types_.color.md)
 * [ColorCovariance](../interfaces/_api_types_.colorcovariance.md)
+* [ColorDescriptor](../interfaces/_api_types_.colordescriptor.md)
 * [ColorOptions](../interfaces/_api_types_.coloroptions.md)
 * [ColorspaceRange](../interfaces/_api_types_.colorspacerange.md)
 * [Config](../interfaces/_api_types_.config.md)
@@ -159,6 +168,7 @@
 * [DeviceCapabilitiesExtension](../interfaces/_api_types_.devicecapabilitiesextension.md)
 * [DeviceEntity](../interfaces/_api_types_.deviceentity.md)
 * [DeviceIOCapabilities](../interfaces/_api_types_.deviceiocapabilities.md)
+* [DeviceServiceCapabilities](../interfaces/_api_types_.deviceservicecapabilities.md)
 * [DigitalInput](../interfaces/_api_types_.digitalinput.md)
 * [DisplayCapabilities](../interfaces/_api_types_.displaycapabilities.md)
 * [Dot11AvailableNetworks](../interfaces/_api_types_.dot11availablenetworks.md)
@@ -183,6 +193,7 @@
 * [EapMethodExtension](../interfaces/_api_types_.eapmethodextension.md)
 * [EngineConfiguration](../interfaces/_api_types_.engineconfiguration.md)
 * [Envelope](../interfaces/_api_types_.envelope.md)
+* [EventBrokerConfig](../interfaces/_api_types_.eventbrokerconfig.md)
 * [EventCapabilities](../interfaces/_api_types_.eventcapabilities.md)
 * [EventFilter](../interfaces/_api_types_.eventfilter.md)
 * [EventSubscription](../interfaces/_api_types_.eventsubscription.md)
@@ -200,7 +211,7 @@
 * [FindPTZPositionResult](../interfaces/_api_types_.findptzpositionresult.md)
 * [FindPTZPositionResultList](../interfaces/_api_types_.findptzpositionresultlist.md)
 * [FindRecordingResultList](../interfaces/_api_types_.findrecordingresultlist.md)
-* [FloatList](../interfaces/_api_types_.floatlist.md)
+* [FloatItems](../interfaces/_api_types_.floatitems.md)
 * [FloatRange](../interfaces/_api_types_.floatrange.md)
 * [FocusConfiguration](../interfaces/_api_types_.focusconfiguration.md)
 * [FocusConfiguration20](../interfaces/_api_types_.focusconfiguration20.md)
@@ -262,7 +273,7 @@
 * [ImagingStatus](../interfaces/_api_types_.imagingstatus.md)
 * [ImagingStatus20](../interfaces/_api_types_.imagingstatus20.md)
 * [ImagingStatus20Extension](../interfaces/_api_types_.imagingstatus20extension.md)
-* [IntList](../interfaces/_api_types_.intlist.md)
+* [IntItems](../interfaces/_api_types_.intitems.md)
 * [IntRange](../interfaces/_api_types_.intrange.md)
 * [IntRectangle](../interfaces/_api_types_.intrectangle.md)
 * [IntRectangleRange](../interfaces/_api_types_.intrectanglerange.md)
@@ -308,6 +319,7 @@
 * [MetadataFilter](../interfaces/_api_types_.metadatafilter.md)
 * [MetadataInput](../interfaces/_api_types_.metadatainput.md)
 * [MetadataInputExtension](../interfaces/_api_types_.metadatainputextension.md)
+* [MiscCapabilities](../interfaces/_api_types_.misccapabilities.md)
 * [MotionExpression](../interfaces/_api_types_.motionexpression.md)
 * [MotionExpressionConfiguration](../interfaces/_api_types_.motionexpressionconfiguration.md)
 * [MoveOptions](../interfaces/_api_types_.moveoptions.md)
@@ -412,7 +424,7 @@
 * [PaneOptionExtension](../interfaces/_api_types_.paneoptionextension.md)
 * [PauseFailedFaultType](../interfaces/_api_types_.pausefailedfaulttype.md)
 * [Polygon](../interfaces/_api_types_.polygon.md)
-* [PolygonConfiguration](../interfaces/_api_types_.polygonconfiguration.md)
+* [PolygonOptions](../interfaces/_api_types_.polygonoptions.md)
 * [Polyline](../interfaces/_api_types_.polyline.md)
 * [PolylineArray](../interfaces/_api_types_.polylinearray.md)
 * [PolylineArrayConfiguration](../interfaces/_api_types_.polylinearrayconfiguration.md)
@@ -475,11 +487,14 @@
 * [SecurityCapabilities](../interfaces/_api_types_.securitycapabilities.md)
 * [SecurityCapabilitiesExtension](../interfaces/_api_types_.securitycapabilitiesextension.md)
 * [SecurityCapabilitiesExtension2](../interfaces/_api_types_.securitycapabilitiesextension2.md)
+* [Service](../interfaces/_api_types_.service.md)
 * [SourceIdentification](../interfaces/_api_types_.sourceidentification.md)
 * [SourceIdentificationExtension](../interfaces/_api_types_.sourceidentificationextension.md)
 * [SourceReference](../interfaces/_api_types_.sourcereference.md)
 * [Space1DDescription](../interfaces/_api_types_.space1ddescription.md)
 * [Space2DDescription](../interfaces/_api_types_.space2ddescription.md)
+* [StorageConfiguration](../interfaces/_api_types_.storageconfiguration.md)
+* [StorageConfigurationData](../interfaces/_api_types_.storageconfigurationdata.md)
 * [StorageReferencePath](../interfaces/_api_types_.storagereferencepath.md)
 * [StorageReferencePathExtension](../interfaces/_api_types_.storagereferencepathextension.md)
 * [StreamSetup](../interfaces/_api_types_.streamsetup.md)
@@ -523,6 +538,7 @@
 * [UnrecognizedPolicyRequestFaultType](../interfaces/_api_types_.unrecognizedpolicyrequestfaulttype.md)
 * [UnsupportedPolicyRequestFaultType](../interfaces/_api_types_.unsupportedpolicyrequestfaulttype.md)
 * [User](../interfaces/_api_types_.user.md)
+* [UserCredential](../interfaces/_api_types_.usercredential.md)
 * [UserExtension](../interfaces/_api_types_.userextension.md)
 * [Vector](../interfaces/_api_types_.vector.md)
 * [Vector1D](../interfaces/_api_types_.vector1d.md)
@@ -570,7 +586,6 @@
 ### Type aliases
 
 * [AbsoluteOrRelativeTimeType](_api_types_.md#absoluteorrelativetimetype)
-* [AudioClassType](_api_types_.md#audioclasstype)
 * [AuxiliaryData](_api_types_.md#auxiliarydata)
 * [DNSName](_api_types_.md#dnsname)
 * [Description](_api_types_.md#description)
@@ -578,11 +593,11 @@
 * [Dot11PSK](_api_types_.md#dot11psk)
 * [Dot11PSKPassphrase](_api_types_.md#dot11pskpassphrase)
 * [Dot11SSIDType](_api_types_.md#dot11ssidtype)
-* [FloatAttrList](_api_types_.md#floatattrlist)
+* [FloatList](_api_types_.md#floatlist)
 * [HwAddress](_api_types_.md#hwaddress)
 * [IPv4Address](_api_types_.md#ipv4address)
 * [IPv6Address](_api_types_.md#ipv6address)
-* [IntAttrList](_api_types_.md#intattrlist)
+* [IntList](_api_types_.md#intlist)
 * [JobToken](_api_types_.md#jobtoken)
 * [Name](_api_types_.md#name)
 * [NetworkInterfaceConfigPriority](_api_types_.md#networkinterfaceconfigpriority)
@@ -594,287 +609,240 @@
 * [ReferenceToken](_api_types_.md#referencetoken)
 * [ReferenceTokenList](_api_types_.md#referencetokenlist)
 * [StringAttrList](_api_types_.md#stringattrlist)
-* [TopicNamespaceLocation](_api_types_.md#topicnamespacelocation)
+* [StringList](_api_types_.md#stringlist)
 * [TrackReference](_api_types_.md#trackreference)
 * [XPathExpression](_api_types_.md#xpathexpression)
 * [encodingStyle](_api_types_.md#encodingstyle)
 
----
-
 ## Type aliases
-
-<a id="absoluteorrelativetimetype"></a>
 
 ###  AbsoluteOrRelativeTimeType
 
-**Ƭ AbsoluteOrRelativeTimeType**: *`any`*
+Ƭ **AbsoluteOrRelativeTimeType**: *any*
 
-*Defined in [api/types.ts:4](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4)*
-
-___
-<a id="audioclasstype"></a>
-
-###  AudioClassType
-
-**Ƭ AudioClassType**: *`string`*
-
-*Defined in [api/types.ts:117](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L117)*
-
-```
-      AudioClassType acceptable values are;
-       gun_shot, scream, glass_breaking, tire_screech
-```
+*Defined in [api/types.ts:4](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4)*
 
 ___
-<a id="auxiliarydata"></a>
 
 ###  AuxiliaryData
 
-**Ƭ AuxiliaryData**: *`string`*
+Ƭ **AuxiliaryData**: *string*
 
-*Defined in [api/types.ts:70](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L70)*
+*Defined in [api/types.ts:75](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L75)*
 
 ___
-<a id="dnsname"></a>
 
 ###  DNSName
 
-**Ƭ DNSName**: *`string`*
+Ƭ **DNSName**: *string*
 
-*Defined in [api/types.ts:50](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L50)*
+*Defined in [api/types.ts:55](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L55)*
 
 ___
-<a id="description"></a>
 
 ###  Description
 
-**Ƭ Description**: *`string`*
+Ƭ **Description**: *string*
 
-*Defined in [api/types.ts:90](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L90)*
+*Defined in [api/types.ts:91](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L91)*
 
 ___
-<a id="domain"></a>
 
 ###  Domain
 
-**Ƭ Domain**: *`string`*
+Ƭ **Domain**: *string*
 
-*Defined in [api/types.ts:54](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L54)*
+*Defined in [api/types.ts:59](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L59)*
 
 ___
-<a id="dot11psk"></a>
 
 ###  Dot11PSK
 
-**Ƭ Dot11PSK**: *`string`*
+Ƭ **Dot11PSK**: *string*
 
-*Defined in [api/types.ts:62](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L62)*
+*Defined in [api/types.ts:67](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L67)*
 
 ___
-<a id="dot11pskpassphrase"></a>
 
 ###  Dot11PSKPassphrase
 
-**Ƭ Dot11PSKPassphrase**: *`string`*
+Ƭ **Dot11PSKPassphrase**: *string*
 
-*Defined in [api/types.ts:66](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L66)*
+*Defined in [api/types.ts:71](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L71)*
 
 ___
-<a id="dot11ssidtype"></a>
 
 ###  Dot11SSIDType
 
-**Ƭ Dot11SSIDType**: *`string`*
+Ƭ **Dot11SSIDType**: *string*
 
-*Defined in [api/types.ts:58](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L58)*
-
-___
-<a id="floatattrlist"></a>
-
-###  FloatAttrList
-
-**Ƭ FloatAttrList**: *`ReadonlyArray`<`number`>*
-
-*Defined in [api/types.ts:22](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L22)*
+*Defined in [api/types.ts:63](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L63)*
 
 ___
-<a id="hwaddress"></a>
+
+###  FloatList
+
+Ƭ **FloatList**: *ReadonlyArray‹number›*
+
+*Defined in [api/types.ts:23](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L23)*
+
+___
 
 ###  HwAddress
 
-**Ƭ HwAddress**: *`string`*
+Ƭ **HwAddress**: *string*
 
-*Defined in [api/types.ts:46](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L46)*
+*Defined in [api/types.ts:51](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L51)*
 
 ___
-<a id="ipv4address"></a>
 
 ###  IPv4Address
 
-**Ƭ IPv4Address**: *`string`*
+Ƭ **IPv4Address**: *string*
 
-*Defined in [api/types.ts:38](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L38)*
+*Defined in [api/types.ts:43](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L43)*
 
 ___
-<a id="ipv6address"></a>
 
 ###  IPv6Address
 
-**Ƭ IPv6Address**: *`string`*
+Ƭ **IPv6Address**: *string*
 
-*Defined in [api/types.ts:42](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L42)*
-
-___
-<a id="intattrlist"></a>
-
-###  IntAttrList
-
-**Ƭ IntAttrList**: *`ReadonlyArray`<`number`>*
-
-*Defined in [api/types.ts:18](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L18)*
+*Defined in [api/types.ts:47](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L47)*
 
 ___
-<a id="jobtoken"></a>
+
+###  IntList
+
+Ƭ **IntList**: *ReadonlyArray‹number›*
+
+*Defined in [api/types.ts:19](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L19)*
+
+___
 
 ###  JobToken
 
-**Ƭ JobToken**: *[ReferenceToken](_api_types_.md#referencetoken)*
+Ƭ **JobToken**: *[ReferenceToken](_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:98](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L98)*
+*Defined in [api/types.ts:99](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L99)*
 
 ___
-<a id="name"></a>
 
 ###  Name
 
-**Ƭ Name**: *`string`*
+Ƭ **Name**: *string*
 
-*Defined in [api/types.ts:14](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L14)*
+*Defined in [api/types.ts:15](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L15)*
 
 User readable name. Length up to 64 characters.
 
 ___
-<a id="networkinterfaceconfigpriority"></a>
 
 ###  NetworkInterfaceConfigPriority
 
-**Ƭ NetworkInterfaceConfigPriority**: *`number`*
+Ƭ **NetworkInterfaceConfigPriority**: *number*
 
-*Defined in [api/types.ts:34](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L34)*
+*Defined in [api/types.ts:39](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L39)*
 
 ___
-<a id="receiverreference"></a>
 
 ###  ReceiverReference
 
-**Ƭ ReceiverReference**: *[ReferenceToken](_api_types_.md#referencetoken)*
+Ƭ **ReceiverReference**: *[ReferenceToken](_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:78](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L78)*
+*Defined in [api/types.ts:79](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L79)*
 
 ___
-<a id="recordingjobmode"></a>
 
 ###  RecordingJobMode
 
-**Ƭ RecordingJobMode**: *`string`*
+Ƭ **RecordingJobMode**: *string*
 
-*Defined in [api/types.ts:106](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L106)*
+*Defined in [api/types.ts:107](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L107)*
 
 ___
-<a id="recordingjobreference"></a>
 
 ###  RecordingJobReference
 
-**Ƭ RecordingJobReference**: *[ReferenceToken](_api_types_.md#referencetoken)*
+Ƭ **RecordingJobReference**: *[ReferenceToken](_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:102](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L102)*
+*Defined in [api/types.ts:103](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L103)*
 
 ___
-<a id="recordingjobstate"></a>
 
 ###  RecordingJobState
 
-**Ƭ RecordingJobState**: *`string`*
+Ƭ **RecordingJobState**: *string*
 
-*Defined in [api/types.ts:110](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L110)*
+*Defined in [api/types.ts:111](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L111)*
 
 ___
-<a id="recordingreference"></a>
 
 ###  RecordingReference
 
-**Ƭ RecordingReference**: *[ReferenceToken](_api_types_.md#referencetoken)*
+Ƭ **RecordingReference**: *[ReferenceToken](_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:82](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L82)*
+*Defined in [api/types.ts:83](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L83)*
 
 ___
-<a id="referencetoken"></a>
 
 ###  ReferenceToken
 
-**Ƭ ReferenceToken**: *`string`*
+Ƭ **ReferenceToken**: *string*
 
-*Defined in [api/types.ts:10](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L10)*
+*Defined in [api/types.ts:11](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L11)*
 
-Unique identifier for a physical or logical resource. Tokens should be assigned such that they are unique within a device. Tokens must be at least unique within its class. Length up to 64 characters.
+Unique identifier for a physical or logical resource.
+			Tokens should be assigned such that they are unique within a device. Tokens must be at least unique within its class.
+			Length up to 64 characters. Token may be extended by intermediate terminal with adding prefix to make it global unique.
+			The length should be within 36 characters for generating at local device. See "Remote Token" section in Resource Query specification.
 
 ___
-<a id="referencetokenlist"></a>
 
 ###  ReferenceTokenList
 
-**Ƭ ReferenceTokenList**: *`ReadonlyArray`<[ReferenceToken](_api_types_.md#referencetoken)>*
+Ƭ **ReferenceTokenList**: *ReadonlyArray‹[ReferenceToken](_api_types_.md#referencetoken)›*
 
-*Defined in [api/types.ts:30](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L30)*
+*Defined in [api/types.ts:35](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L35)*
 
 ___
-<a id="stringattrlist"></a>
 
 ###  StringAttrList
 
-**Ƭ StringAttrList**: *`ReadonlyArray`<`string`>*
+Ƭ **StringAttrList**: *ReadonlyArray‹string›*
 
-*Defined in [api/types.ts:26](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L26)*
-
-___
-<a id="topicnamespacelocation"></a>
-
-###  TopicNamespaceLocation
-
-**Ƭ TopicNamespaceLocation**: *`string`*
-
-*Defined in [api/types.ts:74](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L74)*
+*Defined in [api/types.ts:27](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L27)*
 
 ___
-<a id="trackreference"></a>
+
+###  StringList
+
+Ƭ **StringList**: *ReadonlyArray‹string›*
+
+*Defined in [api/types.ts:31](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L31)*
+
+___
 
 ###  TrackReference
 
-**Ƭ TrackReference**: *[ReferenceToken](_api_types_.md#referencetoken)*
+Ƭ **TrackReference**: *[ReferenceToken](_api_types_.md#referencetoken)*
 
-*Defined in [api/types.ts:86](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L86)*
+*Defined in [api/types.ts:87](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L87)*
 
 ___
-<a id="xpathexpression"></a>
 
 ###  XPathExpression
 
-**Ƭ XPathExpression**: *`string`*
+Ƭ **XPathExpression**: *string*
 
-*Defined in [api/types.ts:94](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L94)*
+*Defined in [api/types.ts:95](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L95)*
 
 ___
-<a id="encodingstyle"></a>
 
 ###  encodingStyle
 
-**Ƭ encodingStyle**: *`ReadonlyArray`<`string`>*
+Ƭ **encodingStyle**: *ReadonlyArray‹string›*
 
-*Defined in [api/types.ts:123](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L123)*
+*Defined in [api/types.ts:117](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L117)*
 
-```
-    'encodingStyle' indicates any canonicalization conventions followed in the contents of the containing element.  For example, the value 'http://schemas.xmlsoap.org/soap/encoding/' indicates the pattern described in SOAP specification
-```
-
-___
-
+	    'encodingStyle' indicates any canonicalization conventions followed in the contents of the containing element.  For example, the value 'http://schemas.xmlsoap.org/soap/encoding/' indicates the pattern described in SOAP specification

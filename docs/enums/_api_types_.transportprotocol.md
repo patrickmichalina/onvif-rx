@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [TransportProtocol](../enums/_api_types_.transportprotocol.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [TransportProtocol](_api_types_.transportprotocol.md)
 
 # Enumeration: TransportProtocol
 
@@ -13,46 +13,36 @@ This value is deprecated.
 * [TCP](_api_types_.transportprotocol.md#tcp)
 * [UDP](_api_types_.transportprotocol.md#udp)
 
----
-
 ## Enumeration members
-
-<a id="http"></a>
 
 ###  HTTP
 
-**HTTP**:  = "HTTP"
+• **HTTP**: = "HTTP"
 
-*Defined in [api/types.ts:4703](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4703)*
+*Defined in [api/types.ts:4829](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4829)*
 
 ___
-<a id="rtsp"></a>
 
 ###  RTSP
 
-**RTSP**:  = "RTSP"
+• **RTSP**: = "RTSP"
 
-*Defined in [api/types.ts:4699](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4699)*
+*Defined in [api/types.ts:4825](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4825)*
 
 ___
-<a id="tcp"></a>
 
 ###  TCP
 
-**TCP**:  = "TCP"
+• **TCP**: = "TCP"
 
-*Defined in [api/types.ts:4695](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4695)*
+*Defined in [api/types.ts:4821](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4821)*
 
 This value is deprecated.
 
 ___
-<a id="udp"></a>
 
 ###  UDP
 
-**UDP**:  = "UDP"
+• **UDP**: = "UDP"
 
-*Defined in [api/types.ts:4691](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4691)*
-
-___
-
+*Defined in [api/types.ts:4817](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4817)*

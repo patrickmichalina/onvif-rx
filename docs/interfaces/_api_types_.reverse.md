@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Reverse](../interfaces/_api_types_.reverse.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Reverse](_api_types_.reverse.md)
 
 # Interface: Reverse
 
@@ -6,25 +6,18 @@ Parameter to enable/disable Reverse feature.
 
 ## Hierarchy
 
-**Reverse**
+* **Reverse**
 
 ## Index
 
 ### Properties
 
-* [Mode](_api_types_.reverse.md#mode)
-
----
+* [Mode](_api_types_.reverse.md#readonly-mode)
 
 ## Properties
 
-<a id="mode"></a>
+### `Readonly` Mode
 
-###  Mode
+• **Mode**: *[ReverseMode](../enums/_api_types_.reversemode.md)*
 
-**● Mode**: *[ReverseMode](../enums/_api_types_.reversemode.md)*
-
-*Defined in [api/types.ts:2307](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2307)*
-
-___
-
+*Defined in [api/types.ts:2336](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2336)*

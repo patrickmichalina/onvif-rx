@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [FindPTZPositionResultList](../interfaces/_api_types_.findptzpositionresultlist.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [FindPTZPositionResultList](_api_types_.findptzpositionresultlist.md)
 
 # Interface: FindPTZPositionResultList
 
@@ -6,35 +6,27 @@ The state of the search when the result is returned. Indicates if there can be m
 
 ## Hierarchy
 
-**FindPTZPositionResultList**
+* **FindPTZPositionResultList**
 
 ## Index
 
 ### Properties
 
-* [Result](_api_types_.findptzpositionresultlist.md#result)
-* [SearchState](_api_types_.findptzpositionresultlist.md#searchstate)
-
----
+* [Result](_api_types_.findptzpositionresultlist.md#optional-readonly-result)
+* [SearchState](_api_types_.findptzpositionresultlist.md#readonly-searchstate)
 
 ## Properties
 
-<a id="result"></a>
+### `Optional` `Readonly` Result
 
-### `<Optional>` Result
+• **Result**? : *[FindPTZPositionResult](_api_types_.findptzpositionresult.md)*
 
-**● Result**: *[FindPTZPositionResult](_api_types_.findptzpositionresult.md)*
-
-*Defined in [api/types.ts:3673](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3673)*
-
-___
-<a id="searchstate"></a>
-
-###  SearchState
-
-**● SearchState**: *[SearchState](../enums/_api_types_.searchstate.md)*
-
-*Defined in [api/types.ts:3672](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3672)*
+*Defined in [api/types.ts:3693](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3693)*
 
 ___
 
+### `Readonly` SearchState
+
+• **SearchState**: *[SearchState](../enums/_api_types_.searchstate.md)*
+
+*Defined in [api/types.ts:3692](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3692)*

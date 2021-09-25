@@ -1,68 +1,57 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [CertificateGenerationParameters](../interfaces/_api_types_.certificategenerationparameters.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [CertificateGenerationParameters](_api_types_.certificategenerationparameters.md)
 
 # Interface: CertificateGenerationParameters
 
 ## Hierarchy
 
-**CertificateGenerationParameters**
+* **CertificateGenerationParameters**
 
 ## Index
 
 ### Properties
 
-* [CertificateID](_api_types_.certificategenerationparameters.md#certificateid)
-* [Extension](_api_types_.certificategenerationparameters.md#extension)
-* [Subject](_api_types_.certificategenerationparameters.md#subject)
-* [ValidNotAfter](_api_types_.certificategenerationparameters.md#validnotafter)
-* [ValidNotBefore](_api_types_.certificategenerationparameters.md#validnotbefore)
-
----
+* [CertificateID](_api_types_.certificategenerationparameters.md#optional-readonly-certificateid)
+* [Extension](_api_types_.certificategenerationparameters.md#optional-readonly-extension)
+* [Subject](_api_types_.certificategenerationparameters.md#optional-readonly-subject)
+* [ValidNotAfter](_api_types_.certificategenerationparameters.md#optional-readonly-validnotafter)
+* [ValidNotBefore](_api_types_.certificategenerationparameters.md#optional-readonly-validnotbefore)
 
 ## Properties
 
-<a id="certificateid"></a>
+### `Optional` `Readonly` CertificateID
 
-### `<Optional>` CertificateID
+• **CertificateID**? : *undefined | string*
 
-**● CertificateID**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2056](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2056)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[CertificateGenerationParametersExtension](_api_types_.certificategenerationparametersextension.md)*
-
-*Defined in [api/types.ts:2060](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2060)*
-
-___
-<a id="subject"></a>
-
-### `<Optional>` Subject
-
-**● Subject**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2057](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2057)*
-
-___
-<a id="validnotafter"></a>
-
-### `<Optional>` ValidNotAfter
-
-**● ValidNotAfter**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2059](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2059)*
-
-___
-<a id="validnotbefore"></a>
-
-### `<Optional>` ValidNotBefore
-
-**● ValidNotBefore**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2058](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2058)*
+*Defined in [api/types.ts:2085](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2085)*
 
 ___
 
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[CertificateGenerationParametersExtension](_api_types_.certificategenerationparametersextension.md)*
+
+*Defined in [api/types.ts:2089](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2089)*
+
+___
+
+### `Optional` `Readonly` Subject
+
+• **Subject**? : *undefined | string*
+
+*Defined in [api/types.ts:2086](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2086)*
+
+___
+
+### `Optional` `Readonly` ValidNotAfter
+
+• **ValidNotAfter**? : *undefined | string*
+
+*Defined in [api/types.ts:2088](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2088)*
+
+___
+
+### `Optional` `Readonly` ValidNotBefore
+
+• **ValidNotBefore**? : *undefined | string*
+
+*Defined in [api/types.ts:2087](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2087)*

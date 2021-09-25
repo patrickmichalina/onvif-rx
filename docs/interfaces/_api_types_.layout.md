@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Layout](../interfaces/_api_types_.layout.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Layout](_api_types_.layout.md)
 
 # Interface: Layout
 
@@ -6,35 +6,27 @@ A layout describes a set of Video windows that are displayed simultaniously on a
 
 ## Hierarchy
 
-**Layout**
+* **Layout**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.layout.md#extension)
-* [PaneLayout](_api_types_.layout.md#panelayout)
-
----
+* [Extension](_api_types_.layout.md#optional-readonly-extension)
+* [PaneLayout](_api_types_.layout.md#readonly-panelayout)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[LayoutExtension](_api_types_.layoutextension.md)*
 
-**● Extension**: *[LayoutExtension](_api_types_.layoutextension.md)*
-
-*Defined in [api/types.ts:3502](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3502)*
-
-___
-<a id="panelayout"></a>
-
-###  PaneLayout
-
-**● PaneLayout**: *[PaneLayout](_api_types_.panelayout.md)*
-
-*Defined in [api/types.ts:3501](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3501)*
+*Defined in [api/types.ts:3522](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3522)*
 
 ___
 
+### `Readonly` PaneLayout
+
+• **PaneLayout**: *[PaneLayout](_api_types_.panelayout.md)*
+
+*Defined in [api/types.ts:3521](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3521)*

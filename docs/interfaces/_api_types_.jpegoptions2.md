@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [JpegOptions2](../interfaces/_api_types_.jpegoptions2.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [JpegOptions2](_api_types_.jpegoptions2.md)
 
 # Interface: JpegOptions2
 
@@ -6,25 +6,18 @@ Supported range of encoded bitrate in kbps.
 
 ## Hierarchy
 
-**JpegOptions2**
+* **JpegOptions2**
 
 ## Index
 
 ### Properties
 
-* [BitrateRange](_api_types_.jpegoptions2.md#bitraterange)
-
----
+* [BitrateRange](_api_types_.jpegoptions2.md#readonly-bitraterange)
 
 ## Properties
 
-<a id="bitraterange"></a>
+### `Readonly` BitrateRange
 
-###  BitrateRange
+• **BitrateRange**: *[IntRange](_api_types_.intrange.md)*
 
-**● BitrateRange**: *[IntRange](_api_types_.intrange.md)*
-
-*Defined in [api/types.ts:771](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L771)*
-
-___
-
+*Defined in [api/types.ts:800](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L800)*

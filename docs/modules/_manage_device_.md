@@ -1,6 +1,6 @@
-[onvif-rx](../README.md) > ["manage/device"](../modules/_manage_device_.md)
+[onvif-rx](../README.md) › ["manage/device"](_manage_device_.md)
 
-# External module: "manage/device"
+# Module: "manage/device"
 
 ## Index
 
@@ -11,27 +11,20 @@
 
 ### Functions
 
-* [createManagedDevice](_manage_device_.md#createmanageddevice)
-
----
+* [createManagedDevice](_manage_device_.md#const-createmanageddevice)
 
 ## Functions
 
-<a id="createmanageddevice"></a>
+### `Const` createManagedDevice
 
-### `<Const>` createManagedDevice
+▸ **createManagedDevice**(`config`: [IDeviceInitConfig](../interfaces/_manage_device_.ideviceinitconfig.md)): *IReader‹[ISystemConfig](../interfaces/_config_interfaces_.isystemconfig.md), [IManagedDevice](../interfaces/_manage_device_.imanageddevice.md)›*
 
-▸ **createManagedDevice**(config: *[IDeviceInitConfig](../interfaces/_manage_device_.ideviceinitconfig.md)*): `IReader`<[ISystemConfig](../interfaces/_config_interfaces_.isystemconfig.md), [IManagedDevice](../interfaces/_manage_device_.imanageddevice.md)>
-
-*Defined in [manage/device.ts:18](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/manage/device.ts#L18)*
+*Defined in [manage/device.ts:18](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/manage/device.ts#L18)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| config | [IDeviceInitConfig](../interfaces/_manage_device_.ideviceinitconfig.md) |
+Name | Type |
+------ | ------ |
+`config` | [IDeviceInitConfig](../interfaces/_manage_device_.ideviceinitconfig.md) |
 
-**Returns:** `IReader`<[ISystemConfig](../interfaces/_config_interfaces_.isystemconfig.md), [IManagedDevice](../interfaces/_manage_device_.imanageddevice.md)>
-
-___
-
+**Returns:** *IReader‹[ISystemConfig](../interfaces/_config_interfaces_.isystemconfig.md), [IManagedDevice](../interfaces/_manage_device_.imanageddevice.md)›*

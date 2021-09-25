@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [TrackType](../enums/_api_types_.tracktype.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [TrackType](_api_types_.tracktype.md)
 
 # Enumeration: TrackType
 
@@ -13,46 +13,36 @@ Placeholder for future extension.
 * [Metadata](_api_types_.tracktype.md#metadata)
 * [Video](_api_types_.tracktype.md#video)
 
----
-
 ## Enumeration members
-
-<a id="audio"></a>
 
 ###  Audio
 
-**Audio**:  = "Audio"
+• **Audio**: = "Audio"
 
-*Defined in [api/types.ts:5573](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5573)*
+*Defined in [api/types.ts:5749](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5749)*
 
 ___
-<a id="extended"></a>
 
 ###  Extended
 
-**Extended**:  = "Extended"
+• **Extended**: = "Extended"
 
-*Defined in [api/types.ts:5581](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5581)*
+*Defined in [api/types.ts:5757](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5757)*
 
 Placeholder for future extension.
 
 ___
-<a id="metadata"></a>
 
 ###  Metadata
 
-**Metadata**:  = "Metadata"
+• **Metadata**: = "Metadata"
 
-*Defined in [api/types.ts:5577](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5577)*
+*Defined in [api/types.ts:5753](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5753)*
 
 ___
-<a id="video"></a>
 
 ###  Video
 
-**Video**:  = "Video"
+• **Video**: = "Video"
 
-*Defined in [api/types.ts:5569](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5569)*
-
-___
-
+*Defined in [api/types.ts:5745](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5745)*

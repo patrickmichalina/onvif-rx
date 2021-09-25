@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [VideoSourceConfigurationExtension2](../interfaces/_api_types_.videosourceconfigurationextension2.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [VideoSourceConfigurationExtension2](_api_types_.videosourceconfigurationextension2.md)
 
 # Interface: VideoSourceConfigurationExtension2
 
@@ -6,35 +6,27 @@ Optional element describing the geometric lens distortion. Multiple instances fo
 
 ## Hierarchy
 
-**VideoSourceConfigurationExtension2**
+* **VideoSourceConfigurationExtension2**
 
 ## Index
 
 ### Properties
 
-* [LensDescription](_api_types_.videosourceconfigurationextension2.md#lensdescription)
-* [SceneOrientation](_api_types_.videosourceconfigurationextension2.md#sceneorientation)
-
----
+* [LensDescription](_api_types_.videosourceconfigurationextension2.md#optional-readonly-lensdescription)
+* [SceneOrientation](_api_types_.videosourceconfigurationextension2.md#optional-readonly-sceneorientation)
 
 ## Properties
 
-<a id="lensdescription"></a>
+### `Optional` `Readonly` LensDescription
 
-### `<Optional>` LensDescription
+• **LensDescription**? : *[LensDescription](_api_types_.videosourceconfigurationextension2.md#optional-readonly-lensdescription)*
 
-**● LensDescription**: *[LensDescription](_api_types_.videosourceconfigurationextension2.md#lensdescription)*
-
-*Defined in [api/types.ts:588](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L588)*
-
-___
-<a id="sceneorientation"></a>
-
-### `<Optional>` SceneOrientation
-
-**● SceneOrientation**: *[SceneOrientation](_api_types_.videosourceconfigurationextension2.md#sceneorientation)*
-
-*Defined in [api/types.ts:589](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L589)*
+*Defined in [api/types.ts:617](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L617)*
 
 ___
 
+### `Optional` `Readonly` SceneOrientation
+
+• **SceneOrientation**? : *[SceneOrientation](_api_types_.videosourceconfigurationextension2.md#optional-readonly-sceneorientation)*
+
+*Defined in [api/types.ts:618](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L618)*

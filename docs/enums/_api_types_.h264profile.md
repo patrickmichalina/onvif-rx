@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [H264Profile](../enums/_api_types_.h264profile.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [H264Profile](_api_types_.h264profile.md)
 
 # Enumeration: H264Profile
 
@@ -11,44 +11,34 @@
 * [High](_api_types_.h264profile.md#high)
 * [Main](_api_types_.h264profile.md#main)
 
----
-
 ## Enumeration members
-
-<a id="baseline"></a>
 
 ###  Baseline
 
-**Baseline**:  = "Baseline"
+• **Baseline**: = "Baseline"
 
-*Defined in [api/types.ts:4545](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4545)*
+*Defined in [api/types.ts:4667](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4667)*
 
 ___
-<a id="extended"></a>
 
 ###  Extended
 
-**Extended**:  = "Extended"
+• **Extended**: = "Extended"
 
-*Defined in [api/types.ts:4553](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4553)*
+*Defined in [api/types.ts:4675](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4675)*
 
 ___
-<a id="high"></a>
 
 ###  High
 
-**High**:  = "High"
+• **High**: = "High"
 
-*Defined in [api/types.ts:4557](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4557)*
+*Defined in [api/types.ts:4679](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4679)*
 
 ___
-<a id="main"></a>
 
 ###  Main
 
-**Main**:  = "Main"
+• **Main**: = "Main"
 
-*Defined in [api/types.ts:4549](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4549)*
-
-___
-
+*Defined in [api/types.ts:4671](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4671)*

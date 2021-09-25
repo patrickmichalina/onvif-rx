@@ -1,38 +1,30 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [RuleEngineConfiguration](../interfaces/_api_types_.ruleengineconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [RuleEngineConfiguration](_api_types_.ruleengineconfiguration.md)
 
 # Interface: RuleEngineConfiguration
 
 ## Hierarchy
 
-**RuleEngineConfiguration**
+* **RuleEngineConfiguration**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.ruleengineconfiguration.md#extension)
-* [Rule](_api_types_.ruleengineconfiguration.md#rule)
-
----
+* [Extension](_api_types_.ruleengineconfiguration.md#optional-readonly-extension)
+* [Rule](_api_types_.ruleengineconfiguration.md#optional-readonly-rule)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[RuleEngineConfigurationExtension](_api_types_.ruleengineconfigurationextension.md)*
 
-**● Extension**: *[RuleEngineConfigurationExtension](_api_types_.ruleengineconfigurationextension.md)*
-
-*Defined in [api/types.ts:3359](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3359)*
-
-___
-<a id="rule"></a>
-
-### `<Optional>` Rule
-
-**● Rule**: *[Config](_api_types_.config.md)*
-
-*Defined in [api/types.ts:3358](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3358)*
+*Defined in [api/types.ts:3386](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3386)*
 
 ___
 
+### `Optional` `Readonly` Rule
+
+• **Rule**? : *[Config](_api_types_.config.md)*
+
+*Defined in [api/types.ts:3385](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3385)*

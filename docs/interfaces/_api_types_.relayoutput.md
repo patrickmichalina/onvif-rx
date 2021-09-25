@@ -1,28 +1,21 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [RelayOutput](../interfaces/_api_types_.relayoutput.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [RelayOutput](_api_types_.relayoutput.md)
 
 # Interface: RelayOutput
 
 ## Hierarchy
 
-**RelayOutput**
+* **RelayOutput**
 
 ## Index
 
 ### Properties
 
-* [Properties](_api_types_.relayoutput.md#properties)
-
----
+* [Properties](_api_types_.relayoutput.md#readonly-properties)
 
 ## Properties
 
-<a id="properties"></a>
+### `Readonly` Properties
 
-###  Properties
+• **Properties**: *[RelayOutputSettings](_api_types_.relayoutputsettings.md)*
 
-**● Properties**: *[RelayOutputSettings](_api_types_.relayoutputsettings.md)*
-
-*Defined in [api/types.ts:2191](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2191)*
-
-___
-
+*Defined in [api/types.ts:2220](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2220)*

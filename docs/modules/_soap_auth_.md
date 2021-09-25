@@ -1,6 +1,6 @@
-[onvif-rx](../README.md) > ["soap/auth"](../modules/_soap_auth_.md)
+[onvif-rx](../README.md) › ["soap/auth"](_soap_auth_.md)
 
-# External module: "soap/auth"
+# Module: "soap/auth"
 
 ## Index
 
@@ -11,116 +11,85 @@
 
 ### Functions
 
-* [createUserToken](_soap_auth_.md#createusertoken)
-* [onvifDigest](_soap_auth_.md#onvifdigest)
+* [createUserToken](_soap_auth_.md#const-createusertoken)
+* [onvifDigest](_soap_auth_.md#const-onvifdigest)
 
 ### Object literals
 
-* [TOKENS](_soap_auth_.md#tokens)
-
----
+* [TOKENS](_soap_auth_.md#const-tokens)
 
 ## Functions
 
-<a id="createusertoken"></a>
+### `Const` createUserToken
 
-### `<Const>` createUserToken
+▸ **createUserToken**(`timeDifference`: number): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), IMaybe‹PromiseLike‹string›››*
 
-▸ **createUserToken**(timeDifference?: *`number`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `IMaybe`<`string`>>
-
-*Defined in [soap/auth.ts:42](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/auth.ts#L42)*
+*Defined in [soap/auth.ts:42](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/soap/auth.ts#L42)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| `Default value` timeDifference | `number` | 0 |
+Name | Type | Default |
+------ | ------ | ------ |
+`timeDifference` | number | 0 |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `IMaybe`<`string`>>
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), IMaybe‹PromiseLike‹string›››*
 
 ___
-<a id="onvifdigest"></a>
 
-### `<Const>` onvifDigest
+### `Const` onvifDigest
 
-▸ **onvifDigest**(dateIsoString: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `IMaybe`<[IDigestBag](../interfaces/_soap_auth_.idigestbag.md)>>
+▸ **onvifDigest**(`dateIsoString`: string): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), IMaybe‹PromiseLike‹[IDigestBag](../interfaces/_soap_auth_.idigestbag.md)›››*
 
-*Defined in [soap/auth.ts:16](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/auth.ts#L16)*
+*Defined in [soap/auth.ts:16](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/soap/auth.ts#L16)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| dateIsoString | `string` |
+Name | Type |
+------ | ------ |
+`dateIsoString` | string |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `IMaybe`<[IDigestBag](../interfaces/_soap_auth_.idigestbag.md)>>
-
-___
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), IMaybe‹PromiseLike‹[IDigestBag](../interfaces/_soap_auth_.idigestbag.md)›››*
 
 ## Object literals
 
-<a id="tokens"></a>
+### `Const` TOKENS
 
-### `<Const>` TOKENS
+### ▪ **TOKENS**: *object*
 
-**TOKENS**: *`object`*
+*Defined in [soap/auth.ts:33](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/soap/auth.ts#L33)*
 
-*Defined in [soap/auth.ts:33](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/auth.ts#L33)*
+###  cr
 
-<a id="tokens.cr"></a>
+• **cr**: *string* = "wsu:Created"
 
-####  cr
+*Defined in [soap/auth.ts:39](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/soap/auth.ts#L39)*
 
-**● cr**: *`string`* = "wsu:Created"
+###  nc
 
-*Defined in [soap/auth.ts:39](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/auth.ts#L39)*
+• **nc**: *string* = "wsse:Nonce"
 
-___
-<a id="tokens.nc"></a>
+*Defined in [soap/auth.ts:38](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/soap/auth.ts#L38)*
 
-####  nc
+###  pw
 
-**● nc**: *`string`* = "wsse:Nonce"
+• **pw**: *string* = "wsse:Password"
 
-*Defined in [soap/auth.ts:38](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/auth.ts#L38)*
+*Defined in [soap/auth.ts:37](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/soap/auth.ts#L37)*
 
-___
-<a id="tokens.pw"></a>
+###  s
 
-####  pw
+• **s**: *string* = "wsse:Security"
 
-**● pw**: *`string`* = "wsse:Password"
+*Defined in [soap/auth.ts:34](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/soap/auth.ts#L34)*
 
-*Defined in [soap/auth.ts:37](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/auth.ts#L37)*
+###  un
 
-___
-<a id="tokens.s"></a>
+• **un**: *string* = "wsse:Username"
 
-####  s
+*Defined in [soap/auth.ts:36](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/soap/auth.ts#L36)*
 
-**● s**: *`string`* = "wsse:Security"
+###  unt
 
-*Defined in [soap/auth.ts:34](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/auth.ts#L34)*
+• **unt**: *string* = "wsse:UsernameToken"
 
-___
-<a id="tokens.un"></a>
-
-####  un
-
-**● un**: *`string`* = "wsse:Username"
-
-*Defined in [soap/auth.ts:36](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/auth.ts#L36)*
-
-___
-<a id="tokens.unt"></a>
-
-####  unt
-
-**● unt**: *`string`* = "wsse:UsernameToken"
-
-*Defined in [soap/auth.ts:35](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/auth.ts#L35)*
-
-___
-
-___
-
+*Defined in [soap/auth.ts:35](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/soap/auth.ts#L35)*

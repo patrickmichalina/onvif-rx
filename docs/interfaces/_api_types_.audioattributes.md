@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [AudioAttributes](../interfaces/_api_types_.audioattributes.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [AudioAttributes](_api_types_.audioattributes.md)
 
 # Interface: AudioAttributes
 
@@ -6,45 +6,36 @@ The bitrate in kbps.
 
 ## Hierarchy
 
-**AudioAttributes**
+* **AudioAttributes**
 
 ## Index
 
 ### Properties
 
-* [Bitrate](_api_types_.audioattributes.md#bitrate)
-* [Encoding](_api_types_.audioattributes.md#encoding)
-* [Samplerate](_api_types_.audioattributes.md#samplerate)
-
----
+* [Bitrate](_api_types_.audioattributes.md#optional-readonly-bitrate)
+* [Encoding](_api_types_.audioattributes.md#readonly-encoding)
+* [Samplerate](_api_types_.audioattributes.md#readonly-samplerate)
 
 ## Properties
 
-<a id="bitrate"></a>
+### `Optional` `Readonly` Bitrate
 
-### `<Optional>` Bitrate
+• **Bitrate**? : *undefined | number*
 
-**● Bitrate**: *`undefined` \| `number`*
-
-*Defined in [api/types.ts:3787](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3787)*
-
-___
-<a id="encoding"></a>
-
-###  Encoding
-
-**● Encoding**: *`string`*
-
-*Defined in [api/types.ts:3788](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3788)*
-
-___
-<a id="samplerate"></a>
-
-###  Samplerate
-
-**● Samplerate**: *`number`*
-
-*Defined in [api/types.ts:3789](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3789)*
+*Defined in [api/types.ts:3807](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3807)*
 
 ___
 
+### `Readonly` Encoding
+
+• **Encoding**: *string*
+
+*Defined in [api/types.ts:3808](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3808)*
+
+___
+
+### `Readonly` Samplerate
+
+• **Samplerate**: *number*
+
+*Defined in [api/types.ts:3809](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3809)*

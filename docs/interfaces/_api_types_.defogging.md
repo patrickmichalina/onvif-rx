@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Defogging](../interfaces/_api_types_.defogging.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Defogging](_api_types_.defogging.md)
 
 # Interface: Defogging
 
@@ -6,45 +6,36 @@ Parameter to enable/disable or automatic Defogging feature. Its options shall be
 
 ## Hierarchy
 
-**Defogging**
+* **Defogging**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.defogging.md#extension)
-* [Level](_api_types_.defogging.md#level)
-* [Mode](_api_types_.defogging.md#mode)
-
----
+* [Extension](_api_types_.defogging.md#optional-readonly-extension)
+* [Level](_api_types_.defogging.md#optional-readonly-level)
+* [Mode](_api_types_.defogging.md#readonly-mode)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[DefoggingExtension](_api_types_.defoggingextension.md)*
 
-**● Extension**: *[DefoggingExtension](_api_types_.defoggingextension.md)*
-
-*Defined in [api/types.ts:3000](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3000)*
-
-___
-<a id="level"></a>
-
-### `<Optional>` Level
-
-**● Level**: *`undefined` \| `number`*
-
-*Defined in [api/types.ts:2999](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2999)*
-
-___
-<a id="mode"></a>
-
-###  Mode
-
-**● Mode**: *`string`*
-
-*Defined in [api/types.ts:2998](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2998)*
+*Defined in [api/types.ts:3029](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3029)*
 
 ___
 
+### `Optional` `Readonly` Level
+
+• **Level**? : *undefined | number*
+
+*Defined in [api/types.ts:3028](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3028)*
+
+___
+
+### `Readonly` Mode
+
+• **Mode**: *string*
+
+*Defined in [api/types.ts:3027](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3027)*

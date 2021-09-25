@@ -1,38 +1,30 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [VideoAnalyticsConfiguration](../interfaces/_api_types_.videoanalyticsconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [VideoAnalyticsConfiguration](_api_types_.videoanalyticsconfiguration.md)
 
 # Interface: VideoAnalyticsConfiguration
 
 ## Hierarchy
 
-**VideoAnalyticsConfiguration**
+* **VideoAnalyticsConfiguration**
 
 ## Index
 
 ### Properties
 
-* [AnalyticsEngineConfiguration](_api_types_.videoanalyticsconfiguration.md#analyticsengineconfiguration)
-* [RuleEngineConfiguration](_api_types_.videoanalyticsconfiguration.md#ruleengineconfiguration)
-
----
+* [AnalyticsEngineConfiguration](_api_types_.videoanalyticsconfiguration.md#readonly-analyticsengineconfiguration)
+* [RuleEngineConfiguration](_api_types_.videoanalyticsconfiguration.md#readonly-ruleengineconfiguration)
 
 ## Properties
 
-<a id="analyticsengineconfiguration"></a>
+### `Readonly` AnalyticsEngineConfiguration
 
-###  AnalyticsEngineConfiguration
+• **AnalyticsEngineConfiguration**: *[AnalyticsEngineConfiguration](_api_types_.analyticsengineconfiguration.md)*
 
-**● AnalyticsEngineConfiguration**: *[AnalyticsEngineConfiguration](_api_types_.analyticsengineconfiguration.md)*
-
-*Defined in [api/types.ts:918](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L918)*
-
-___
-<a id="ruleengineconfiguration"></a>
-
-###  RuleEngineConfiguration
-
-**● RuleEngineConfiguration**: *[RuleEngineConfiguration](_api_types_.ruleengineconfiguration.md)*
-
-*Defined in [api/types.ts:919](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L919)*
+*Defined in [api/types.ts:947](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L947)*
 
 ___
 
+### `Readonly` RuleEngineConfiguration
+
+• **RuleEngineConfiguration**: *[RuleEngineConfiguration](_api_types_.ruleengineconfiguration.md)*
+
+*Defined in [api/types.ts:948](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L948)*

@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Dot11StationMode](../enums/_api_types_.dot11stationmode.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Dot11StationMode](_api_types_.dot11stationmode.md)
 
 # Enumeration: Dot11StationMode
 
@@ -6,39 +6,30 @@
 
 ### Enumeration members
 
-* [Ad-hoc](_api_types_.dot11stationmode.md#ad_hoc)
+* [Ad-hoc](_api_types_.dot11stationmode.md#ad-hoc)
 * [Extended](_api_types_.dot11stationmode.md#extended)
 * [Infrastructure](_api_types_.dot11stationmode.md#infrastructure)
 
----
-
 ## Enumeration members
-
-<a id="ad_hoc"></a>
 
 ###  Ad-hoc
 
-**Ad-hoc**:  = "Ad-hoc"
+• **Ad-hoc**: = "Ad-hoc"
 
-*Defined in [api/types.ts:4859](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4859)*
+*Defined in [api/types.ts:4985](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4985)*
 
 ___
-<a id="extended"></a>
 
 ###  Extended
 
-**Extended**:  = "Extended"
+• **Extended**: = "Extended"
 
-*Defined in [api/types.ts:4867](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4867)*
+*Defined in [api/types.ts:4993](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4993)*
 
 ___
-<a id="infrastructure"></a>
 
 ###  Infrastructure
 
-**Infrastructure**:  = "Infrastructure"
+• **Infrastructure**: = "Infrastructure"
 
-*Defined in [api/types.ts:4863](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4863)*
-
-___
-
+*Defined in [api/types.ts:4989](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4989)*

@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [SceneOrientationMode](../enums/_api_types_.sceneorientationmode.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [SceneOrientationMode](_api_types_.sceneorientationmode.md)
 
 # Enumeration: SceneOrientationMode
 
@@ -9,26 +9,18 @@
 * [AUTO](_api_types_.sceneorientationmode.md#auto)
 * [MANUAL](_api_types_.sceneorientationmode.md#manual)
 
----
-
 ## Enumeration members
-
-<a id="auto"></a>
 
 ###  AUTO
 
-**AUTO**:  = "AUTO"
+• **AUTO**: = "AUTO"
 
-*Defined in [api/types.ts:4445](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4445)*
+*Defined in [api/types.ts:4567](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4567)*
 
 ___
-<a id="manual"></a>
 
 ###  MANUAL
 
-**MANUAL**:  = "MANUAL"
+• **MANUAL**: = "MANUAL"
 
-*Defined in [api/types.ts:4441](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4441)*
-
-___
-
+*Defined in [api/types.ts:4563](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4563)*

@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ProfileExtension](../interfaces/_api_types_.profileextension.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ProfileExtension](_api_types_.profileextension.md)
 
 # Interface: ProfileExtension
 
@@ -6,45 +6,36 @@ Optional configuration of the Audio output.
 
 ## Hierarchy
 
-**ProfileExtension**
+* **ProfileExtension**
 
 ## Index
 
 ### Properties
 
-* [AudioDecoderConfiguration](_api_types_.profileextension.md#audiodecoderconfiguration)
-* [AudioOutputConfiguration](_api_types_.profileextension.md#audiooutputconfiguration)
-* [Extension](_api_types_.profileextension.md#extension)
-
----
+* [AudioDecoderConfiguration](_api_types_.profileextension.md#optional-readonly-audiodecoderconfiguration)
+* [AudioOutputConfiguration](_api_types_.profileextension.md#optional-readonly-audiooutputconfiguration)
+* [Extension](_api_types_.profileextension.md#optional-readonly-extension)
 
 ## Properties
 
-<a id="audiodecoderconfiguration"></a>
+### `Optional` `Readonly` AudioDecoderConfiguration
 
-### `<Optional>` AudioDecoderConfiguration
+• **AudioDecoderConfiguration**? : *[AudioDecoderConfiguration](_api_types_.profileextension.md#optional-readonly-audiodecoderconfiguration)*
 
-**● AudioDecoderConfiguration**: *[AudioDecoderConfiguration](_api_types_.profileextension.md#audiodecoderconfiguration)*
-
-*Defined in [api/types.ts:544](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L544)*
-
-___
-<a id="audiooutputconfiguration"></a>
-
-### `<Optional>` AudioOutputConfiguration
-
-**● AudioOutputConfiguration**: *[AudioOutputConfiguration](_api_types_.profileextension.md#audiooutputconfiguration)*
-
-*Defined in [api/types.ts:543](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L543)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[ProfileExtension2](_api_types_.profileextension2.md)*
-
-*Defined in [api/types.ts:545](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L545)*
+*Defined in [api/types.ts:573](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L573)*
 
 ___
 
+### `Optional` `Readonly` AudioOutputConfiguration
+
+• **AudioOutputConfiguration**? : *[AudioOutputConfiguration](_api_types_.profileextension.md#optional-readonly-audiooutputconfiguration)*
+
+*Defined in [api/types.ts:572](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L572)*
+
+___
+
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[ProfileExtension2](_api_types_.profileextension2.md)*
+
+*Defined in [api/types.ts:574](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L574)*

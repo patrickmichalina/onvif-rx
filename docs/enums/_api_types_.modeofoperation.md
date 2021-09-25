@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ModeOfOperation](../enums/_api_types_.modeofoperation.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ModeOfOperation](_api_types_.modeofoperation.md)
 
 # Enumeration: ModeOfOperation
 
@@ -12,37 +12,28 @@ This case should never happen.
 * [Idle](_api_types_.modeofoperation.md#idle)
 * [Unknown](_api_types_.modeofoperation.md#unknown)
 
----
-
 ## Enumeration members
-
-<a id="active"></a>
 
 ###  Active
 
-**Active**:  = "Active"
+• **Active**: = "Active"
 
-*Defined in [api/types.ts:5595](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5595)*
+*Defined in [api/types.ts:5771](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5771)*
 
 ___
-<a id="idle"></a>
 
 ###  Idle
 
-**Idle**:  = "Idle"
+• **Idle**: = "Idle"
 
-*Defined in [api/types.ts:5591](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5591)*
+*Defined in [api/types.ts:5767](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5767)*
 
 ___
-<a id="unknown"></a>
 
 ###  Unknown
 
-**Unknown**:  = "Unknown"
+• **Unknown**: = "Unknown"
 
-*Defined in [api/types.ts:5599](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5599)*
+*Defined in [api/types.ts:5775](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5775)*
 
 This case should never happen.
-
-___
-

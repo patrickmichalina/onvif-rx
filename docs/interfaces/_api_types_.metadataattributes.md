@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [MetadataAttributes](../interfaces/_api_types_.metadataattributes.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [MetadataAttributes](_api_types_.metadataattributes.md)
 
 # Interface: MetadataAttributes
 
@@ -6,45 +6,36 @@ Indicates that there can be PTZ data in the metadata track in the specified time
 
 ## Hierarchy
 
-**MetadataAttributes**
+* **MetadataAttributes**
 
 ## Index
 
 ### Properties
 
-* [CanContainAnalytics](_api_types_.metadataattributes.md#cancontainanalytics)
-* [CanContainNotifications](_api_types_.metadataattributes.md#cancontainnotifications)
-* [CanContainPTZ](_api_types_.metadataattributes.md#cancontainptz)
-
----
+* [CanContainAnalytics](_api_types_.metadataattributes.md#readonly-cancontainanalytics)
+* [CanContainNotifications](_api_types_.metadataattributes.md#readonly-cancontainnotifications)
+* [CanContainPTZ](_api_types_.metadataattributes.md#readonly-cancontainptz)
 
 ## Properties
 
-<a id="cancontainanalytics"></a>
+### `Readonly` CanContainAnalytics
 
-###  CanContainAnalytics
+• **CanContainAnalytics**: *boolean*
 
-**● CanContainAnalytics**: *`boolean`*
-
-*Defined in [api/types.ts:3797](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3797)*
-
-___
-<a id="cancontainnotifications"></a>
-
-###  CanContainNotifications
-
-**● CanContainNotifications**: *`boolean`*
-
-*Defined in [api/types.ts:3798](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3798)*
-
-___
-<a id="cancontainptz"></a>
-
-###  CanContainPTZ
-
-**● CanContainPTZ**: *`boolean`*
-
-*Defined in [api/types.ts:3796](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3796)*
+*Defined in [api/types.ts:3817](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3817)*
 
 ___
 
+### `Readonly` CanContainNotifications
+
+• **CanContainNotifications**: *boolean*
+
+*Defined in [api/types.ts:3818](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3818)*
+
+___
+
+### `Readonly` CanContainPTZ
+
+• **CanContainPTZ**: *boolean*
+
+*Defined in [api/types.ts:3816](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3816)*

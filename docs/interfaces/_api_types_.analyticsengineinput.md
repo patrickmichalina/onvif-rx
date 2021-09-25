@@ -1,48 +1,39 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [AnalyticsEngineInput](../interfaces/_api_types_.analyticsengineinput.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [AnalyticsEngineInput](_api_types_.analyticsengineinput.md)
 
 # Interface: AnalyticsEngineInput
 
 ## Hierarchy
 
-**AnalyticsEngineInput**
+* **AnalyticsEngineInput**
 
 ## Index
 
 ### Properties
 
-* [MetadataInput](_api_types_.analyticsengineinput.md#metadatainput)
-* [SourceIdentification](_api_types_.analyticsengineinput.md#sourceidentification)
-* [VideoInput](_api_types_.analyticsengineinput.md#videoinput)
-
----
+* [MetadataInput](_api_types_.analyticsengineinput.md#readonly-metadatainput)
+* [SourceIdentification](_api_types_.analyticsengineinput.md#readonly-sourceidentification)
+* [VideoInput](_api_types_.analyticsengineinput.md#readonly-videoinput)
 
 ## Properties
 
-<a id="metadatainput"></a>
+### `Readonly` MetadataInput
 
-###  MetadataInput
+• **MetadataInput**: *[MetadataInput](_api_types_.metadatainput.md)*
 
-**● MetadataInput**: *[MetadataInput](_api_types_.metadatainput.md)*
-
-*Defined in [api/types.ts:3998](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3998)*
-
-___
-<a id="sourceidentification"></a>
-
-###  SourceIdentification
-
-**● SourceIdentification**: *[SourceIdentification](_api_types_.sourceidentification.md)*
-
-*Defined in [api/types.ts:3996](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3996)*
-
-___
-<a id="videoinput"></a>
-
-###  VideoInput
-
-**● VideoInput**: *[VideoEncoderConfiguration](_api_types_.videoencoderconfiguration.md)*
-
-*Defined in [api/types.ts:3997](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3997)*
+*Defined in [api/types.ts:4018](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4018)*
 
 ___
 
+### `Readonly` SourceIdentification
+
+• **SourceIdentification**: *[SourceIdentification](_api_types_.sourceidentification.md)*
+
+*Defined in [api/types.ts:4016](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4016)*
+
+___
+
+### `Readonly` VideoInput
+
+• **VideoInput**: *[VideoEncoderConfiguration](_api_types_.videoencoderconfiguration.md)*
+
+*Defined in [api/types.ts:4017](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4017)*

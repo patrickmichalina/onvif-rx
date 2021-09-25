@@ -1,30 +1,23 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Config](../interfaces/_api_types_.config.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Config](_api_types_.config.md)
 
 # Interface: Config
 
-List of configuration parameters as defined in the correspding description.
+List of configuration parameters as defined in the corresponding description.
 
 ## Hierarchy
 
-**Config**
+* **Config**
 
 ## Index
 
 ### Properties
 
-* [Parameters](_api_types_.config.md#parameters)
-
----
+* [Parameters](_api_types_.config.md#readonly-parameters)
 
 ## Properties
 
-<a id="parameters"></a>
+### `Readonly` Parameters
 
-###  Parameters
+• **Parameters**: *[ItemList](_api_types_.itemlist.md)*
 
-**● Parameters**: *[ItemList](_api_types_.itemlist.md)*
-
-*Defined in [api/types.ts:3372](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3372)*
-
-___
-
+*Defined in [api/types.ts:3399](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3399)*

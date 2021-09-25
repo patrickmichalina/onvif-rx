@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [NetworkGateway](../interfaces/_api_types_.networkgateway.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [NetworkGateway](_api_types_.networkgateway.md)
 
 # Interface: NetworkGateway
 
@@ -6,35 +6,27 @@ IPv4 address string.
 
 ## Hierarchy
 
-**NetworkGateway**
+* **NetworkGateway**
 
 ## Index
 
 ### Properties
 
-* [IPv4Address](_api_types_.networkgateway.md#ipv4address)
-* [IPv6Address](_api_types_.networkgateway.md#ipv6address)
-
----
+* [IPv4Address](_api_types_.networkgateway.md#optional-readonly-ipv4address)
+* [IPv6Address](_api_types_.networkgateway.md#optional-readonly-ipv6address)
 
 ## Properties
 
-<a id="ipv4address"></a>
+### `Optional` `Readonly` IPv4Address
 
-### `<Optional>` IPv4Address
+• **IPv4Address**? : *[IPv4Address](_api_types_.networkgateway.md#optional-readonly-ipv4address)*
 
-**● IPv4Address**: *[IPv4Address](_api_types_.networkgateway.md#ipv4address)*
-
-*Defined in [api/types.ts:1458](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1458)*
-
-___
-<a id="ipv6address"></a>
-
-### `<Optional>` IPv6Address
-
-**● IPv6Address**: *[IPv6Address](_api_types_.networkgateway.md#ipv6address)*
-
-*Defined in [api/types.ts:1459](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1459)*
+*Defined in [api/types.ts:1487](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1487)*
 
 ___
 
+### `Optional` `Readonly` IPv6Address
+
+• **IPv6Address**? : *[IPv6Address](_api_types_.networkgateway.md#optional-readonly-ipv6address)*
+
+*Defined in [api/types.ts:1488](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1488)*

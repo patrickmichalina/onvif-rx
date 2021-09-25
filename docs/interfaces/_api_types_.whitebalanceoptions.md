@@ -1,48 +1,39 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [WhiteBalanceOptions](../interfaces/_api_types_.whitebalanceoptions.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [WhiteBalanceOptions](_api_types_.whitebalanceoptions.md)
 
 # Interface: WhiteBalanceOptions
 
 ## Hierarchy
 
-**WhiteBalanceOptions**
+* **WhiteBalanceOptions**
 
 ## Index
 
 ### Properties
 
-* [Mode](_api_types_.whitebalanceoptions.md#mode)
-* [YbGain](_api_types_.whitebalanceoptions.md#ybgain)
-* [YrGain](_api_types_.whitebalanceoptions.md#yrgain)
-
----
+* [Mode](_api_types_.whitebalanceoptions.md#readonly-mode)
+* [YbGain](_api_types_.whitebalanceoptions.md#readonly-ybgain)
+* [YrGain](_api_types_.whitebalanceoptions.md#readonly-yrgain)
 
 ## Properties
 
-<a id="mode"></a>
+### `Readonly` Mode
 
-###  Mode
+• **Mode**: *[WhiteBalanceMode](../enums/_api_types_.whitebalancemode.md)*
 
-**● Mode**: *[WhiteBalanceMode](../enums/_api_types_.whitebalancemode.md)*
-
-*Defined in [api/types.ts:2739](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2739)*
-
-___
-<a id="ybgain"></a>
-
-###  YbGain
-
-**● YbGain**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:2741](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2741)*
-
-___
-<a id="yrgain"></a>
-
-###  YrGain
-
-**● YrGain**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:2740](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2740)*
+*Defined in [api/types.ts:2768](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2768)*
 
 ___
 
+### `Readonly` YbGain
+
+• **YbGain**: *[FloatRange](_api_types_.floatrange.md)*
+
+*Defined in [api/types.ts:2770](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2770)*
+
+___
+
+### `Readonly` YrGain
+
+• **YrGain**: *[FloatRange](_api_types_.floatrange.md)*
+
+*Defined in [api/types.ts:2769](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2769)*

@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ImageStabilizationOptions](../interfaces/_api_types_.imagestabilizationoptions.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ImageStabilizationOptions](_api_types_.imagestabilizationoptions.md)
 
 # Interface: ImageStabilizationOptions
 
@@ -6,45 +6,36 @@ Supported options of Image Stabilization mode parameter.
 
 ## Hierarchy
 
-**ImageStabilizationOptions**
+* **ImageStabilizationOptions**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.imagestabilizationoptions.md#extension)
-* [Level](_api_types_.imagestabilizationoptions.md#level)
-* [Mode](_api_types_.imagestabilizationoptions.md#mode)
-
----
+* [Extension](_api_types_.imagestabilizationoptions.md#optional-readonly-extension)
+* [Level](_api_types_.imagestabilizationoptions.md#optional-readonly-level)
+* [Mode](_api_types_.imagestabilizationoptions.md#readonly-mode)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[ImageStabilizationOptionsExtension](_api_types_.imagestabilizationoptionsextension.md)*
 
-**● Extension**: *[ImageStabilizationOptionsExtension](_api_types_.imagestabilizationoptionsextension.md)*
-
-*Defined in [api/types.ts:3073](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3073)*
-
-___
-<a id="level"></a>
-
-### `<Optional>` Level
-
-**● Level**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:3072](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3072)*
-
-___
-<a id="mode"></a>
-
-###  Mode
-
-**● Mode**: *[ImageStabilizationMode](../enums/_api_types_.imagestabilizationmode.md)*
-
-*Defined in [api/types.ts:3071](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3071)*
+*Defined in [api/types.ts:3102](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3102)*
 
 ___
 
+### `Optional` `Readonly` Level
+
+• **Level**? : *[FloatRange](_api_types_.floatrange.md)*
+
+*Defined in [api/types.ts:3101](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3101)*
+
+___
+
+### `Readonly` Mode
+
+• **Mode**: *[ImageStabilizationMode](../enums/_api_types_.imagestabilizationmode.md)*
+
+*Defined in [api/types.ts:3100](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3100)*

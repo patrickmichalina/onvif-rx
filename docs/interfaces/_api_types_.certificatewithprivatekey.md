@@ -1,48 +1,39 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [CertificateWithPrivateKey](../interfaces/_api_types_.certificatewithprivatekey.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [CertificateWithPrivateKey](_api_types_.certificatewithprivatekey.md)
 
 # Interface: CertificateWithPrivateKey
 
 ## Hierarchy
 
-**CertificateWithPrivateKey**
+* **CertificateWithPrivateKey**
 
 ## Index
 
 ### Properties
 
-* [Certificate](_api_types_.certificatewithprivatekey.md#certificate)
-* [CertificateID](_api_types_.certificatewithprivatekey.md#certificateid)
-* [PrivateKey](_api_types_.certificatewithprivatekey.md#privatekey)
-
----
+* [Certificate](_api_types_.certificatewithprivatekey.md#readonly-certificate)
+* [CertificateID](_api_types_.certificatewithprivatekey.md#optional-readonly-certificateid)
+* [PrivateKey](_api_types_.certificatewithprivatekey.md#readonly-privatekey)
 
 ## Properties
 
-<a id="certificate"></a>
+### `Readonly` Certificate
 
-###  Certificate
+• **Certificate**: *[BinaryData](_api_types_.binarydata.md)*
 
-**● Certificate**: *[BinaryData](_api_types_.binarydata.md)*
-
-*Defined in [api/types.ts:2090](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2090)*
-
-___
-<a id="certificateid"></a>
-
-### `<Optional>` CertificateID
-
-**● CertificateID**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2089](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2089)*
-
-___
-<a id="privatekey"></a>
-
-###  PrivateKey
-
-**● PrivateKey**: *[BinaryData](_api_types_.binarydata.md)*
-
-*Defined in [api/types.ts:2091](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2091)*
+*Defined in [api/types.ts:2119](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2119)*
 
 ___
 
+### `Optional` `Readonly` CertificateID
+
+• **CertificateID**? : *undefined | string*
+
+*Defined in [api/types.ts:2118](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2118)*
+
+___
+
+### `Readonly` PrivateKey
+
+• **PrivateKey**: *[BinaryData](_api_types_.binarydata.md)*
+
+*Defined in [api/types.ts:2120](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2120)*

@@ -1,28 +1,21 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [SystemLogUriList](../interfaces/_api_types_.systemlogurilist.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [SystemLogUriList](_api_types_.systemlogurilist.md)
 
 # Interface: SystemLogUriList
 
 ## Hierarchy
 
-**SystemLogUriList**
+* **SystemLogUriList**
 
 ## Index
 
 ### Properties
 
-* [SystemLog](_api_types_.systemlogurilist.md#systemlog)
-
----
+* [SystemLog](_api_types_.systemlogurilist.md#optional-readonly-systemlog)
 
 ## Properties
 
-<a id="systemlog"></a>
+### `Optional` `Readonly` SystemLog
 
-### `<Optional>` SystemLog
+• **SystemLog**? : *[SystemLogUri](_api_types_.systemloguri.md)*
 
-**● SystemLog**: *[SystemLogUri](_api_types_.systemloguri.md)*
-
-*Defined in [api/types.ts:1954](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1954)*
-
-___
-
+*Defined in [api/types.ts:1983](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1983)*

@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ExposureMode](../enums/_api_types_.exposuremode.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ExposureMode](_api_types_.exposuremode.md)
 
 # Enumeration: ExposureMode
 
@@ -9,26 +9,18 @@
 * [AUTO](_api_types_.exposuremode.md#auto)
 * [MANUAL](_api_types_.exposuremode.md#manual)
 
----
-
 ## Enumeration members
-
-<a id="auto"></a>
 
 ###  AUTO
 
-**AUTO**:  = "AUTO"
+• **AUTO**: = "AUTO"
 
-*Defined in [api/types.ts:5293](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5293)*
+*Defined in [api/types.ts:5451](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5451)*
 
 ___
-<a id="manual"></a>
 
 ###  MANUAL
 
-**MANUAL**:  = "MANUAL"
+• **MANUAL**: = "MANUAL"
 
-*Defined in [api/types.ts:5297](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5297)*
-
-___
-
+*Defined in [api/types.ts:5455](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5455)*

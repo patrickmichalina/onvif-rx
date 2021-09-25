@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [FindMetadataResult](../interfaces/_api_types_.findmetadataresult.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [FindMetadataResult](_api_types_.findmetadataresult.md)
 
 # Interface: FindMetadataResult
 
@@ -6,45 +6,36 @@ A reference to the recording containing the metadata.
 
 ## Hierarchy
 
-**FindMetadataResult**
+* **FindMetadataResult**
 
 ## Index
 
 ### Properties
 
-* [RecordingToken](_api_types_.findmetadataresult.md#recordingtoken)
-* [Time](_api_types_.findmetadataresult.md#time)
-* [TrackToken](_api_types_.findmetadataresult.md#tracktoken)
-
----
+* [RecordingToken](_api_types_.findmetadataresult.md#readonly-recordingtoken)
+* [Time](_api_types_.findmetadataresult.md#readonly-time)
+* [TrackToken](_api_types_.findmetadataresult.md#readonly-tracktoken)
 
 ## Properties
 
-<a id="recordingtoken"></a>
+### `Readonly` RecordingToken
 
-###  RecordingToken
+• **RecordingToken**: *[RecordingReference](../modules/_api_types_.md#recordingreference)*
 
-**● RecordingToken**: *[RecordingReference](../modules/_api_types_.md#recordingreference)*
-
-*Defined in [api/types.ts:3698](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3698)*
-
-___
-<a id="time"></a>
-
-###  Time
-
-**● Time**: *`string`*
-
-*Defined in [api/types.ts:3700](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3700)*
-
-___
-<a id="tracktoken"></a>
-
-###  TrackToken
-
-**● TrackToken**: *[TrackReference](../modules/_api_types_.md#trackreference)*
-
-*Defined in [api/types.ts:3699](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3699)*
+*Defined in [api/types.ts:3718](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3718)*
 
 ___
 
+### `Readonly` Time
+
+• **Time**: *string*
+
+*Defined in [api/types.ts:3720](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3720)*
+
+___
+
+### `Readonly` TrackToken
+
+• **TrackToken**: *[TrackReference](../modules/_api_types_.md#trackreference)*
+
+*Defined in [api/types.ts:3719](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3719)*

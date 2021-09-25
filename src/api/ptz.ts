@@ -362,6 +362,20 @@ export class ONVIFPTZ {
     }
 
     /**
+     * Operation to send an an atomic command to the device: move the camera to a wanted position and then delegate the PTZ control to the tracking algorithm. 
+     *                       An existing Speed argument overrides DefaultSpeed of the corresponding PTZ configuration during movement to the requested position. 
+     *                       If spaces are referenced within the Speed argument, they shall be speed spaces supported by the PTZ node. 
+     *                       If the detection and the tracking are done in the same device, an ObjectID reference can be passed as an argument, in order to specify which object should be tracked. 
+     *                       The operation shall fail if the requested absolute position is not reachable.
+     *               
+     */
+    static MoveAndStartTracking(ProfileToken: ReferenceToken, PresetToken?: ReferenceToken, GeoLocation?: GeoLocation, TargetPosition?: PTZVector, Speed?: PTZSpeed, ObjectID?: number) {
+        return createStandardRequestBodyFromString(generateRequestElements('tptz:MoveAndStartTracking')({tptz_ProfileToken:ProfileToken,tptz_PresetToken:PresetToken,tptz_GeoLocation:GeoLocation,tptz_TargetPosition:TargetPosition,tptz_Speed:Speed,tptz_ObjectID:ObjectID}))
+                        .map(mapResponseXmlToJson<any>('tptz:MoveAndStartTrackingResponse'))
+                      
+    }
+
+    /**
      * Returns the capabilities of the PTZ service. The result is returned in a typed answer.
      */
     GetServiceCapabilities() {
@@ -495,7 +509,7 @@ export class ONVIFPTZ {
      *   The device MAY internally save additional states such as imaging properties in the PTZ
      *   Preset which then should be recalled in the GotoPreset operation.      
      */
-    SetPreset(ProfileToken: ReferenceToken, PresetName: string, PresetToken: ReferenceToken) {
+    SetPreset(ProfileToken: ReferenceToken, PresetName?: string, PresetToken?: ReferenceToken) {
         return ONVIFPTZ.SetPreset(ProfileToken,PresetName,PresetToken).run(this.config)
     }
 
@@ -519,7 +533,7 @@ export class ONVIFPTZ {
      *           PTZNode in the selected profile. The operation is supported if there is
      *           support for at least on PTZ preset by the PTZNode.
      */
-    GotoPreset(ProfileToken: ReferenceToken, PresetToken: ReferenceToken, Speed: PTZSpeed) {
+    GotoPreset(ProfileToken: ReferenceToken, PresetToken: ReferenceToken, Speed?: PTZSpeed) {
         return ONVIFPTZ.GotoPreset(ProfileToken,PresetToken,Speed).run(this.config)
     }
 
@@ -527,7 +541,7 @@ export class ONVIFPTZ {
      * 
      *           Operation to move the PTZ device to it's "home" position. The operation is supported if the HomeSupported element in the PTZNode is true.
      */
-    GotoHomePosition(ProfileToken: ReferenceToken, Speed: PTZSpeed) {
+    GotoHomePosition(ProfileToken: ReferenceToken, Speed?: PTZSpeed) {
         return ONVIFPTZ.GotoHomePosition(ProfileToken,Speed).run(this.config)
     }
 
@@ -544,7 +558,7 @@ export class ONVIFPTZ {
     /**
      * Operation for continuous Pan/Tilt and Zoom movements. The operation is supported if the PTZNode supports at least one continuous Pan/Tilt or Zoom space. If the space argument is omitted, the default space set by the PTZConfiguration will be used.
      */
-    ContinuousMove(ProfileToken: ReferenceToken, Velocity: PTZSpeed, Timeout: string) {
+    ContinuousMove(ProfileToken: ReferenceToken, Velocity: PTZSpeed, Timeout?: string) {
         return ONVIFPTZ.ContinuousMove(ProfileToken,Velocity,Timeout).run(this.config)
     }
 
@@ -555,7 +569,7 @@ export class ONVIFPTZ {
      *   If the speed argument is omitted, the default speed set by the PTZConfiguration will be used.
      *   
      */
-    RelativeMove(ProfileToken: ReferenceToken, Translation: PTZVector, Speed: PTZSpeed) {
+    RelativeMove(ProfileToken: ReferenceToken, Translation: PTZVector, Speed?: PTZSpeed) {
         return ONVIFPTZ.RelativeMove(ProfileToken,Translation,Speed).run(this.config)
     }
 
@@ -575,7 +589,7 @@ export class ONVIFPTZ {
      *   If the speed argument is omitted, the default speed set by the PTZConfiguration will be used.
      *   
      */
-    AbsoluteMove(ProfileToken: ReferenceToken, Position: PTZVector, Speed: PTZSpeed) {
+    AbsoluteMove(ProfileToken: ReferenceToken, Position: PTZVector, Speed?: PTZSpeed) {
         return ONVIFPTZ.AbsoluteMove(ProfileToken,Position,Speed).run(this.config)
     }
 
@@ -588,7 +602,7 @@ export class ONVIFPTZ {
      *   by the device to automatically determine the best zoom level to show the target.
      *   
      */
-    GeoMove(ProfileToken: ReferenceToken, Target: GeoLocation, Speed: PTZSpeed, AreaHeight: number, AreaWidth: number) {
+    GeoMove(ProfileToken: ReferenceToken, Target: GeoLocation, Speed?: PTZSpeed, AreaHeight?: number, AreaWidth?: number) {
         return ONVIFPTZ.GeoMove(ProfileToken,Target,Speed,AreaHeight,AreaWidth).run(this.config)
     }
 
@@ -596,7 +610,7 @@ export class ONVIFPTZ {
      * Operation to stop ongoing pan, tilt and zoom movements of absolute relative and continuous type.
      *   If no stop argument for pan, tilt or zoom is set, the device will stop all ongoing pan, tilt and zoom movements.
      */
-    Stop(ProfileToken: ReferenceToken, PanTilt: boolean, Zoom: boolean) {
+    Stop(ProfileToken: ReferenceToken, PanTilt?: boolean, Zoom?: boolean) {
         return ONVIFPTZ.Stop(ProfileToken,PanTilt,Zoom).run(this.config)
     }
 
@@ -617,7 +631,7 @@ export class ONVIFPTZ {
     /**
      * Operation to request available options to configure PTZ preset tour.
      */
-    GetPresetTourOptions(ProfileToken: ReferenceToken, PresetTourToken: ReferenceToken) {
+    GetPresetTourOptions(ProfileToken: ReferenceToken, PresetTourToken?: ReferenceToken) {
         return ONVIFPTZ.GetPresetTourOptions(ProfileToken,PresetTourToken).run(this.config)
     }
 
@@ -658,5 +672,17 @@ export class ONVIFPTZ {
      */
     GetCompatibleConfigurations(ProfileToken: ReferenceToken) {
         return ONVIFPTZ.GetCompatibleConfigurations(ProfileToken).run(this.config)
+    }
+
+    /**
+     * Operation to send an an atomic command to the device: move the camera to a wanted position and then delegate the PTZ control to the tracking algorithm. 
+     *                       An existing Speed argument overrides DefaultSpeed of the corresponding PTZ configuration during movement to the requested position. 
+     *                       If spaces are referenced within the Speed argument, they shall be speed spaces supported by the PTZ node. 
+     *                       If the detection and the tracking are done in the same device, an ObjectID reference can be passed as an argument, in order to specify which object should be tracked. 
+     *                       The operation shall fail if the requested absolute position is not reachable.
+     *               
+     */
+    MoveAndStartTracking(ProfileToken: ReferenceToken, PresetToken?: ReferenceToken, GeoLocation?: GeoLocation, TargetPosition?: PTZVector, Speed?: PTZSpeed, ObjectID?: number) {
+        return ONVIFPTZ.MoveAndStartTracking(ProfileToken,PresetToken,GeoLocation,TargetPosition,Speed,ObjectID).run(this.config)
     }
 }

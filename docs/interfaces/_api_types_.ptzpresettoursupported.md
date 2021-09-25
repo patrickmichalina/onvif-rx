@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZPresetTourSupported](../interfaces/_api_types_.ptzpresettoursupported.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZPresetTourSupported](_api_types_.ptzpresettoursupported.md)
 
 # Interface: PTZPresetTourSupported
 
@@ -6,45 +6,36 @@ Indicates number of preset tours that can be created. Required preset tour opera
 
 ## Hierarchy
 
-**PTZPresetTourSupported**
+* **PTZPresetTourSupported**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.ptzpresettoursupported.md#extension)
-* [MaximumNumberOfPresetTours](_api_types_.ptzpresettoursupported.md#maximumnumberofpresettours)
-* [PTZPresetTourOperation](_api_types_.ptzpresettoursupported.md#ptzpresettouroperation)
-
----
+* [Extension](_api_types_.ptzpresettoursupported.md#optional-readonly-extension)
+* [MaximumNumberOfPresetTours](_api_types_.ptzpresettoursupported.md#readonly-maximumnumberofpresettours)
+* [PTZPresetTourOperation](_api_types_.ptzpresettoursupported.md#optional-readonly-ptzpresettouroperation)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[PTZPresetTourSupportedExtension](_api_types_.ptzpresettoursupportedextension.md)*
 
-**● Extension**: *[PTZPresetTourSupportedExtension](_api_types_.ptzpresettoursupportedextension.md)*
-
-*Defined in [api/types.ts:2238](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2238)*
-
-___
-<a id="maximumnumberofpresettours"></a>
-
-###  MaximumNumberOfPresetTours
-
-**● MaximumNumberOfPresetTours**: *`number`*
-
-*Defined in [api/types.ts:2236](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2236)*
-
-___
-<a id="ptzpresettouroperation"></a>
-
-### `<Optional>` PTZPresetTourOperation
-
-**● PTZPresetTourOperation**: *[PTZPresetTourOperation](_api_types_.ptzpresettoursupported.md#ptzpresettouroperation)*
-
-*Defined in [api/types.ts:2237](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2237)*
+*Defined in [api/types.ts:2267](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2267)*
 
 ___
 
+### `Readonly` MaximumNumberOfPresetTours
+
+• **MaximumNumberOfPresetTours**: *number*
+
+*Defined in [api/types.ts:2265](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2265)*
+
+___
+
+### `Optional` `Readonly` PTZPresetTourOperation
+
+• **PTZPresetTourOperation**? : *[PTZPresetTourOperation](_api_types_.ptzpresettoursupported.md#optional-readonly-ptzpresettouroperation)*
+
+*Defined in [api/types.ts:2266](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2266)*

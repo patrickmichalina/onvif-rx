@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [SecurityCapabilitiesExtension2](../interfaces/_api_types_.securitycapabilitiesextension2.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [SecurityCapabilitiesExtension2](_api_types_.securitycapabilitiesextension2.md)
 
 # Interface: SecurityCapabilitiesExtension2
 
@@ -6,45 +6,36 @@ EAP Methods supported by the device. The int values refer to the IANA EAP Regist
 
 ## Hierarchy
 
-**SecurityCapabilitiesExtension2**
+* **SecurityCapabilitiesExtension2**
 
 ## Index
 
 ### Properties
 
-* [Dot1X](_api_types_.securitycapabilitiesextension2.md#dot1x)
-* [RemoteUserHandling](_api_types_.securitycapabilitiesextension2.md#remoteuserhandling)
-* [SupportedEAPMethod](_api_types_.securitycapabilitiesextension2.md#supportedeapmethod)
-
----
+* [Dot1X](_api_types_.securitycapabilitiesextension2.md#readonly-dot1x)
+* [RemoteUserHandling](_api_types_.securitycapabilitiesextension2.md#readonly-remoteuserhandling)
+* [SupportedEAPMethod](_api_types_.securitycapabilitiesextension2.md#optional-readonly-supportedeapmethod)
 
 ## Properties
 
-<a id="dot1x"></a>
+### `Readonly` Dot1X
 
-###  Dot1X
+• **Dot1X**: *boolean*
 
-**● Dot1X**: *`boolean`*
-
-*Defined in [api/types.ts:1781](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1781)*
-
-___
-<a id="remoteuserhandling"></a>
-
-###  RemoteUserHandling
-
-**● RemoteUserHandling**: *`boolean`*
-
-*Defined in [api/types.ts:1783](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1783)*
-
-___
-<a id="supportedeapmethod"></a>
-
-### `<Optional>` SupportedEAPMethod
-
-**● SupportedEAPMethod**: *`undefined` \| `number`*
-
-*Defined in [api/types.ts:1782](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1782)*
+*Defined in [api/types.ts:1810](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1810)*
 
 ___
 
+### `Readonly` RemoteUserHandling
+
+• **RemoteUserHandling**: *boolean*
+
+*Defined in [api/types.ts:1812](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1812)*
+
+___
+
+### `Optional` `Readonly` SupportedEAPMethod
+
+• **SupportedEAPMethod**? : *undefined | number*
+
+*Defined in [api/types.ts:1811](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1811)*

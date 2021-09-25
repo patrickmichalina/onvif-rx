@@ -1,12 +1,9 @@
-[onvif-rx](../README.md) > ["api/provisioning"](../modules/_api_provisioning_.md)
+[onvif-rx](../README.md) › ["api/provisioning"](_api_provisioning_.md)
 
-# External module: "api/provisioning"
+# Module: "api/provisioning"
 
 ## Index
 
 ### Classes
 
 * [ONVIFProvisioning](../classes/_api_provisioning_.onvifprovisioning.md)
-
----
-

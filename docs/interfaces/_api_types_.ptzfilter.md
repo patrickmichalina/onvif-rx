@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZFilter](../interfaces/_api_types_.ptzfilter.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZFilter](_api_types_.ptzfilter.md)
 
 # Interface: PTZFilter
 
@@ -6,35 +6,27 @@ True if the metadata stream shall contain the PTZ status (IDLE, MOVING or UNKNOW
 
 ## Hierarchy
 
-**PTZFilter**
+* **PTZFilter**
 
 ## Index
 
 ### Properties
 
-* [Position](_api_types_.ptzfilter.md#position)
-* [Status](_api_types_.ptzfilter.md#status)
-
----
+* [Position](_api_types_.ptzfilter.md#readonly-position)
+* [Status](_api_types_.ptzfilter.md#readonly-status)
 
 ## Properties
 
-<a id="position"></a>
+### `Readonly` Position
 
-###  Position
+• **Position**: *boolean*
 
-**● Position**: *`boolean`*
-
-*Defined in [api/types.ts:946](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L946)*
-
-___
-<a id="status"></a>
-
-###  Status
-
-**● Status**: *`boolean`*
-
-*Defined in [api/types.ts:945](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L945)*
+*Defined in [api/types.ts:975](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L975)*
 
 ___
 
+### `Readonly` Status
+
+• **Status**: *boolean*
+
+*Defined in [api/types.ts:974](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L974)*

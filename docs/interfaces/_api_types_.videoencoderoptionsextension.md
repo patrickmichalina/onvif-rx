@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [VideoEncoderOptionsExtension](../interfaces/_api_types_.videoencoderoptionsextension.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [VideoEncoderOptionsExtension](_api_types_.videoencoderoptionsextension.md)
 
 # Interface: VideoEncoderOptionsExtension
 
@@ -6,55 +6,45 @@ Optional JPEG encoder settings ranges.
 
 ## Hierarchy
 
-**VideoEncoderOptionsExtension**
+* **VideoEncoderOptionsExtension**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.videoencoderoptionsextension.md#extension)
-* [H264](_api_types_.videoencoderoptionsextension.md#h264)
-* [JPEG](_api_types_.videoencoderoptionsextension.md#jpeg)
-* [MPEG4](_api_types_.videoencoderoptionsextension.md#mpeg4)
-
----
+* [Extension](_api_types_.videoencoderoptionsextension.md#optional-readonly-extension)
+* [H264](_api_types_.videoencoderoptionsextension.md#optional-readonly-h264)
+* [JPEG](_api_types_.videoencoderoptionsextension.md#optional-readonly-jpeg)
+* [MPEG4](_api_types_.videoencoderoptionsextension.md#optional-readonly-mpeg4)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[VideoEncoderOptionsExtension2](_api_types_.videoencoderoptionsextension2.md)*
 
-**● Extension**: *[VideoEncoderOptionsExtension2](_api_types_.videoencoderoptionsextension2.md)*
-
-*Defined in [api/types.ts:749](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L749)*
-
-___
-<a id="h264"></a>
-
-### `<Optional>` H264
-
-**● H264**: *[H264Options2](_api_types_.h264options2.md)*
-
-*Defined in [api/types.ts:748](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L748)*
-
-___
-<a id="jpeg"></a>
-
-### `<Optional>` JPEG
-
-**● JPEG**: *[JpegOptions2](_api_types_.jpegoptions2.md)*
-
-*Defined in [api/types.ts:746](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L746)*
-
-___
-<a id="mpeg4"></a>
-
-### `<Optional>` MPEG4
-
-**● MPEG4**: *[Mpeg4Options2](_api_types_.mpeg4options2.md)*
-
-*Defined in [api/types.ts:747](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L747)*
+*Defined in [api/types.ts:778](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L778)*
 
 ___
 
+### `Optional` `Readonly` H264
+
+• **H264**? : *[H264Options2](_api_types_.h264options2.md)*
+
+*Defined in [api/types.ts:777](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L777)*
+
+___
+
+### `Optional` `Readonly` JPEG
+
+• **JPEG**? : *[JpegOptions2](_api_types_.jpegoptions2.md)*
+
+*Defined in [api/types.ts:775](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L775)*
+
+___
+
+### `Optional` `Readonly` MPEG4
+
+• **MPEG4**? : *[Mpeg4Options2](_api_types_.mpeg4options2.md)*
+
+*Defined in [api/types.ts:776](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L776)*

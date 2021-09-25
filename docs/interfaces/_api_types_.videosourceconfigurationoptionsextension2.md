@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [VideoSourceConfigurationOptionsExtension2](../interfaces/_api_types_.videosourceconfigurationoptionsextension2.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [VideoSourceConfigurationOptionsExtension2](_api_types_.videosourceconfigurationoptionsextension2.md)
 
 # Interface: VideoSourceConfigurationOptionsExtension2
 
@@ -6,25 +6,18 @@ Scene orientation modes supported by the device for this configuration.
 
 ## Hierarchy
 
-**VideoSourceConfigurationOptionsExtension2**
+* **VideoSourceConfigurationOptionsExtension2**
 
 ## Index
 
 ### Properties
 
-* [SceneOrientationMode](_api_types_.videosourceconfigurationoptionsextension2.md#sceneorientationmode)
-
----
+* [SceneOrientationMode](_api_types_.videosourceconfigurationoptionsextension2.md#optional-readonly-sceneorientationmode)
 
 ## Properties
 
-<a id="sceneorientationmode"></a>
+### `Optional` `Readonly` SceneOrientationMode
 
-### `<Optional>` SceneOrientationMode
+• **SceneOrientationMode**? : *[SceneOrientationMode](_api_types_.videosourceconfigurationoptionsextension2.md#optional-readonly-sceneorientationmode)*
 
-**● SceneOrientationMode**: *[SceneOrientationMode](_api_types_.videosourceconfigurationoptionsextension2.md#sceneorientationmode)*
-
-*Defined in [api/types.ts:656](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L656)*
-
-___
-
+*Defined in [api/types.ts:685](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L685)*

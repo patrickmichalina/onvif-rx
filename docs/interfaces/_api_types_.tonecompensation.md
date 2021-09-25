@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ToneCompensation](../interfaces/_api_types_.tonecompensation.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ToneCompensation](_api_types_.tonecompensation.md)
 
 # Interface: ToneCompensation
 
@@ -6,45 +6,36 @@ Parameter to enable/disable or automatic ToneCompensation feature. Its options s
 
 ## Hierarchy
 
-**ToneCompensation**
+* **ToneCompensation**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.tonecompensation.md#extension)
-* [Level](_api_types_.tonecompensation.md#level)
-* [Mode](_api_types_.tonecompensation.md#mode)
-
----
+* [Extension](_api_types_.tonecompensation.md#optional-readonly-extension)
+* [Level](_api_types_.tonecompensation.md#optional-readonly-level)
+* [Mode](_api_types_.tonecompensation.md#readonly-mode)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[ToneCompensationExtension](_api_types_.tonecompensationextension.md)*
 
-**● Extension**: *[ToneCompensationExtension](_api_types_.tonecompensationextension.md)*
-
-*Defined in [api/types.ts:2985](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2985)*
-
-___
-<a id="level"></a>
-
-### `<Optional>` Level
-
-**● Level**: *`undefined` \| `number`*
-
-*Defined in [api/types.ts:2984](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2984)*
-
-___
-<a id="mode"></a>
-
-###  Mode
-
-**● Mode**: *`string`*
-
-*Defined in [api/types.ts:2983](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2983)*
+*Defined in [api/types.ts:3014](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3014)*
 
 ___
 
+### `Optional` `Readonly` Level
+
+• **Level**? : *undefined | number*
+
+*Defined in [api/types.ts:3013](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3013)*
+
+___
+
+### `Readonly` Mode
+
+• **Mode**: *string*
+
+*Defined in [api/types.ts:3012](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3012)*

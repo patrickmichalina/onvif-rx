@@ -1,28 +1,21 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ImagingStatus](../interfaces/_api_types_.imagingstatus.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ImagingStatus](_api_types_.imagingstatus.md)
 
 # Interface: ImagingStatus
 
 ## Hierarchy
 
-**ImagingStatus**
+* **ImagingStatus**
 
 ## Index
 
 ### Properties
 
-* [FocusStatus](_api_types_.imagingstatus.md#focusstatus)
-
----
+* [FocusStatus](_api_types_.imagingstatus.md#readonly-focusstatus)
 
 ## Properties
 
-<a id="focusstatus"></a>
+### `Readonly` FocusStatus
 
-###  FocusStatus
+• **FocusStatus**: *[FocusStatus](_api_types_.focusstatus.md)*
 
-**● FocusStatus**: *[FocusStatus](_api_types_.focusstatus.md)*
-
-*Defined in [api/types.ts:2587](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2587)*
-
-___
-
+*Defined in [api/types.ts:2616](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2616)*

@@ -1,28 +1,21 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [TLSConfiguration](../interfaces/_api_types_.tlsconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [TLSConfiguration](_api_types_.tlsconfiguration.md)
 
 # Interface: TLSConfiguration
 
 ## Hierarchy
 
-**TLSConfiguration**
+* **TLSConfiguration**
 
 ## Index
 
 ### Properties
 
-* [CertificateID](_api_types_.tlsconfiguration.md#certificateid)
-
----
+* [CertificateID](_api_types_.tlsconfiguration.md#readonly-certificateid)
 
 ## Properties
 
-<a id="certificateid"></a>
+### `Readonly` CertificateID
 
-###  CertificateID
+• **CertificateID**: *string*
 
-**● CertificateID**: *`string`*
-
-*Defined in [api/types.ts:2163](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2163)*
-
-___
-
+*Defined in [api/types.ts:2192](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2192)*

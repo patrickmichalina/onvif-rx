@@ -1,28 +1,21 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Polyline](../interfaces/_api_types_.polyline.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Polyline](_api_types_.polyline.md)
 
 # Interface: Polyline
 
 ## Hierarchy
 
-**Polyline**
+* **Polyline**
 
 ## Index
 
 ### Properties
 
-* [Point](_api_types_.polyline.md#point)
-
----
+* [Point](_api_types_.polyline.md#readonly-point)
 
 ## Properties
 
-<a id="point"></a>
+### `Readonly` Point
 
-###  Point
+• **Point**: *[Vector](_api_types_.vector.md)*
 
-**● Point**: *[Vector](_api_types_.vector.md)*
-
-*Defined in [api/types.ts:3337](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3337)*
-
-___
-
+*Defined in [api/types.ts:3364](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3364)*

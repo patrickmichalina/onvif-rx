@@ -1,62 +1,50 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Fault](../interfaces/_api_types_.fault.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Fault](_api_types_.fault.md)
 
 # Interface: Fault
 
-```
-    Fault reporting structure
-```
+Fault reporting structure
 
 ## Hierarchy
 
-**Fault**
+* **Fault**
 
 ## Index
 
 ### Properties
 
-* [detail](_api_types_.fault.md#detail)
-* [faultactor](_api_types_.fault.md#faultactor)
-* [faultcode](_api_types_.fault.md#faultcode)
-* [faultstring](_api_types_.fault.md#faultstring)
-
----
+* [detail](_api_types_.fault.md#optional-readonly-detail)
+* [faultactor](_api_types_.fault.md#optional-readonly-faultactor)
+* [faultcode](_api_types_.fault.md#readonly-faultcode)
+* [faultstring](_api_types_.fault.md#readonly-faultstring)
 
 ## Properties
 
-<a id="detail"></a>
+### `Optional` `Readonly` detail
 
-### `<Optional>` detail
+• **detail**? : *[detail](_api_types_.fault.md#optional-readonly-detail)*
 
-**● detail**: *[detail](_api_types_.fault.md#detail)*
-
-*Defined in [api/types.ts:4371](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4371)*
-
-___
-<a id="faultactor"></a>
-
-### `<Optional>` faultactor
-
-**● faultactor**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:4370](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4370)*
-
-___
-<a id="faultcode"></a>
-
-###  faultcode
-
-**● faultcode**: *`any`*
-
-*Defined in [api/types.ts:4368](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4368)*
-
-___
-<a id="faultstring"></a>
-
-###  faultstring
-
-**● faultstring**: *`string`*
-
-*Defined in [api/types.ts:4369](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4369)*
+*Defined in [api/types.ts:4402](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4402)*
 
 ___
 
+### `Optional` `Readonly` faultactor
+
+• **faultactor**? : *undefined | string*
+
+*Defined in [api/types.ts:4401](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4401)*
+
+___
+
+### `Readonly` faultcode
+
+• **faultcode**: *any*
+
+*Defined in [api/types.ts:4399](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4399)*
+
+___
+
+### `Readonly` faultstring
+
+• **faultstring**: *string*
+
+*Defined in [api/types.ts:4400](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4400)*

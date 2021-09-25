@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [TrackAttributes](../interfaces/_api_types_.trackattributes.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [TrackAttributes](_api_types_.trackattributes.md)
 
 # Interface: TrackAttributes
 
@@ -6,65 +6,54 @@ The basic information about the track. Note that a track may represent a single 
 
 ## Hierarchy
 
-**TrackAttributes**
+* **TrackAttributes**
 
 ## Index
 
 ### Properties
 
-* [AudioAttributes](_api_types_.trackattributes.md#audioattributes)
-* [Extension](_api_types_.trackattributes.md#extension)
-* [MetadataAttributes](_api_types_.trackattributes.md#metadataattributes)
-* [TrackInformation](_api_types_.trackattributes.md#trackinformation)
-* [VideoAttributes](_api_types_.trackattributes.md#videoattributes)
-
----
+* [AudioAttributes](_api_types_.trackattributes.md#optional-readonly-audioattributes)
+* [Extension](_api_types_.trackattributes.md#optional-readonly-extension)
+* [MetadataAttributes](_api_types_.trackattributes.md#optional-readonly-metadataattributes)
+* [TrackInformation](_api_types_.trackattributes.md#readonly-trackinformation)
+* [VideoAttributes](_api_types_.trackattributes.md#optional-readonly-videoattributes)
 
 ## Properties
 
-<a id="audioattributes"></a>
+### `Optional` `Readonly` AudioAttributes
 
-### `<Optional>` AudioAttributes
+• **AudioAttributes**? : *[AudioAttributes](_api_types_.trackattributes.md#optional-readonly-audioattributes)*
 
-**● AudioAttributes**: *[AudioAttributes](_api_types_.trackattributes.md#audioattributes)*
-
-*Defined in [api/types.ts:3761](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3761)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[TrackAttributesExtension](_api_types_.trackattributesextension.md)*
-
-*Defined in [api/types.ts:3763](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3763)*
-
-___
-<a id="metadataattributes"></a>
-
-### `<Optional>` MetadataAttributes
-
-**● MetadataAttributes**: *[MetadataAttributes](_api_types_.trackattributes.md#metadataattributes)*
-
-*Defined in [api/types.ts:3762](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3762)*
-
-___
-<a id="trackinformation"></a>
-
-###  TrackInformation
-
-**● TrackInformation**: *[TrackInformation](_api_types_.trackinformation.md)*
-
-*Defined in [api/types.ts:3759](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3759)*
-
-___
-<a id="videoattributes"></a>
-
-### `<Optional>` VideoAttributes
-
-**● VideoAttributes**: *[VideoAttributes](_api_types_.trackattributes.md#videoattributes)*
-
-*Defined in [api/types.ts:3760](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3760)*
+*Defined in [api/types.ts:3781](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3781)*
 
 ___
 
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[TrackAttributesExtension](_api_types_.trackattributesextension.md)*
+
+*Defined in [api/types.ts:3783](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3783)*
+
+___
+
+### `Optional` `Readonly` MetadataAttributes
+
+• **MetadataAttributes**? : *[MetadataAttributes](_api_types_.trackattributes.md#optional-readonly-metadataattributes)*
+
+*Defined in [api/types.ts:3782](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3782)*
+
+___
+
+### `Readonly` TrackInformation
+
+• **TrackInformation**: *[TrackInformation](_api_types_.trackinformation.md)*
+
+*Defined in [api/types.ts:3779](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3779)*
+
+___
+
+### `Optional` `Readonly` VideoAttributes
+
+• **VideoAttributes**? : *[VideoAttributes](_api_types_.trackattributes.md#optional-readonly-videoattributes)*
+
+*Defined in [api/types.ts:3780](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3780)*

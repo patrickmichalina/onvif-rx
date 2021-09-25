@@ -64,7 +64,7 @@ export const parseOnvifWsdlDocument = (xmlDoc: Document) => {
                   const propertyType = maybe(paramNode.getAttribute('type')).flatMapAuto(a => a.split(':').pop()).map(typeConvert).valueOr('')
                   const propertyMinOccurs = paramNode.getAttribute('minOccurs') || '1' as string
                   const propertyMaxOccurs = paramNode.getAttribute('maxOccurs') as string
-                  const documentation = maybe(paramNode.getElementsByTagNameNS(xmlSchemaNs, 'documentation').item(0)).map(a => a.textContent).valueOr('') as string
+                  const documentation = maybe(paramNode.getElementsByTagNameNS(xmlSchemaNs, 'documentation').item(0)).flatMapAuto(a => a.textContent).valueOr('') as string
 
                   return {
                     name,

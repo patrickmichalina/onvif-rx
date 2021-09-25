@@ -1,38 +1,30 @@
-[onvif-rx](../README.md) > ["soap/request"](../modules/_soap_request_.md) > [IXmlContainer](../interfaces/_soap_request_.ixmlcontainer.md)
+[onvif-rx](../README.md) › ["soap/request"](../modules/_soap_request_.md) › [IXmlContainer](_soap_request_.ixmlcontainer.md)
 
 # Interface: IXmlContainer
 
 ## Hierarchy
 
-**IXmlContainer**
+* **IXmlContainer**
 
 ## Index
 
 ### Properties
 
-* [xmlDocument](_soap_request_.ixmlcontainer.md#xmldocument)
-* [xmlString](_soap_request_.ixmlcontainer.md#xmlstring)
-
----
+* [xmlDocument](_soap_request_.ixmlcontainer.md#readonly-xmldocument)
+* [xmlString](_soap_request_.ixmlcontainer.md#readonly-xmlstring)
 
 ## Properties
 
-<a id="xmldocument"></a>
+### `Readonly` xmlDocument
 
-###  xmlDocument
+• **xmlDocument**: *Document*
 
-**● xmlDocument**: *`Document`*
-
-*Defined in [soap/request.ts:117](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/request.ts#L117)*
-
-___
-<a id="xmlstring"></a>
-
-###  xmlString
-
-**● xmlString**: *`string`*
-
-*Defined in [soap/request.ts:116](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/soap/request.ts#L116)*
+*Defined in [soap/request.ts:117](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/soap/request.ts#L117)*
 
 ___
 
+### `Readonly` xmlString
+
+• **xmlString**: *string*
+
+*Defined in [soap/request.ts:116](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/soap/request.ts#L116)*

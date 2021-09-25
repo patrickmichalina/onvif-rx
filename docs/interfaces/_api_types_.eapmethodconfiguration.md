@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [EAPMethodConfiguration](../interfaces/_api_types_.eapmethodconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [EAPMethodConfiguration](_api_types_.eapmethodconfiguration.md)
 
 # Interface: EAPMethodConfiguration
 
@@ -6,45 +6,36 @@ Confgiuration information for TLS Method.
 
 ## Hierarchy
 
-**EAPMethodConfiguration**
+* **EAPMethodConfiguration**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.eapmethodconfiguration.md#extension)
-* [Password](_api_types_.eapmethodconfiguration.md#password)
-* [TLSConfiguration](_api_types_.eapmethodconfiguration.md#tlsconfiguration)
-
----
+* [Extension](_api_types_.eapmethodconfiguration.md#optional-readonly-extension)
+* [Password](_api_types_.eapmethodconfiguration.md#optional-readonly-password)
+* [TLSConfiguration](_api_types_.eapmethodconfiguration.md#optional-readonly-tlsconfiguration)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[EapMethodExtension](_api_types_.eapmethodextension.md)*
 
-**● Extension**: *[EapMethodExtension](_api_types_.eapmethodextension.md)*
-
-*Defined in [api/types.ts:2150](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2150)*
-
-___
-<a id="password"></a>
-
-### `<Optional>` Password
-
-**● Password**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2149](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2149)*
-
-___
-<a id="tlsconfiguration"></a>
-
-### `<Optional>` TLSConfiguration
-
-**● TLSConfiguration**: *[TLSConfiguration](_api_types_.eapmethodconfiguration.md#tlsconfiguration)*
-
-*Defined in [api/types.ts:2148](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2148)*
+*Defined in [api/types.ts:2179](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2179)*
 
 ___
 
+### `Optional` `Readonly` Password
+
+• **Password**? : *undefined | string*
+
+*Defined in [api/types.ts:2178](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2178)*
+
+___
+
+### `Optional` `Readonly` TLSConfiguration
+
+• **TLSConfiguration**? : *[TLSConfiguration](_api_types_.eapmethodconfiguration.md#optional-readonly-tlsconfiguration)*
+
+*Defined in [api/types.ts:2177](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2177)*

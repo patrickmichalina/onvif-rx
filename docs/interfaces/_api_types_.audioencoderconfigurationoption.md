@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [AudioEncoderConfigurationOption](../interfaces/_api_types_.audioencoderconfigurationoption.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [AudioEncoderConfigurationOption](_api_types_.audioencoderconfigurationoption.md)
 
 # Interface: AudioEncoderConfigurationOption
 
@@ -6,45 +6,36 @@ The enoding used for audio data (either G.711, G.726 or AAC)
 
 ## Hierarchy
 
-**AudioEncoderConfigurationOption**
+* **AudioEncoderConfigurationOption**
 
 ## Index
 
 ### Properties
 
-* [BitrateList](_api_types_.audioencoderconfigurationoption.md#bitratelist)
-* [Encoding](_api_types_.audioencoderconfigurationoption.md#encoding)
-* [SampleRateList](_api_types_.audioencoderconfigurationoption.md#sampleratelist)
-
----
+* [BitrateList](_api_types_.audioencoderconfigurationoption.md#readonly-bitratelist)
+* [Encoding](_api_types_.audioencoderconfigurationoption.md#readonly-encoding)
+* [SampleRateList](_api_types_.audioencoderconfigurationoption.md#readonly-sampleratelist)
 
 ## Properties
 
-<a id="bitratelist"></a>
+### `Readonly` BitrateList
 
-###  BitrateList
+• **BitrateList**: *[IntItems](_api_types_.intitems.md)*
 
-**● BitrateList**: *[IntList](_api_types_.intlist.md)*
-
-*Defined in [api/types.ts:891](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L891)*
-
-___
-<a id="encoding"></a>
-
-###  Encoding
-
-**● Encoding**: *[AudioEncoding](../enums/_api_types_.audioencoding.md)*
-
-*Defined in [api/types.ts:890](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L890)*
-
-___
-<a id="sampleratelist"></a>
-
-###  SampleRateList
-
-**● SampleRateList**: *[IntList](_api_types_.intlist.md)*
-
-*Defined in [api/types.ts:892](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L892)*
+*Defined in [api/types.ts:920](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L920)*
 
 ___
 
+### `Readonly` Encoding
+
+• **Encoding**: *[AudioEncoding](../enums/_api_types_.audioencoding.md)*
+
+*Defined in [api/types.ts:919](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L919)*
+
+___
+
+### `Readonly` SampleRateList
+
+• **SampleRateList**: *[IntItems](_api_types_.intitems.md)*
+
+*Defined in [api/types.ts:921](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L921)*

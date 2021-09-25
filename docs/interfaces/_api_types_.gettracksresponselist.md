@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [GetTracksResponseList](../interfaces/_api_types_.gettracksresponselist.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [GetTracksResponseList](_api_types_.gettracksresponselist.md)
 
 # Interface: GetTracksResponseList
 
@@ -6,25 +6,18 @@ Configuration of a track.
 
 ## Hierarchy
 
-**GetTracksResponseList**
+* **GetTracksResponseList**
 
 ## Index
 
 ### Properties
 
-* [Track](_api_types_.gettracksresponselist.md#track)
-
----
+* [Track](_api_types_.gettracksresponselist.md#optional-readonly-track)
 
 ## Properties
 
-<a id="track"></a>
+### `Optional` `Readonly` Track
 
-### `<Optional>` Track
+• **Track**? : *[GetTracksResponseItem](_api_types_.gettracksresponseitem.md)*
 
-**● Track**: *[GetTracksResponseItem](_api_types_.gettracksresponseitem.md)*
-
-*Defined in [api/types.ts:3832](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3832)*
-
-___
-
+*Defined in [api/types.ts:3852](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3852)*

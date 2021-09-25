@@ -1,68 +1,57 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [SystemCapabilitiesExtension](../interfaces/_api_types_.systemcapabilitiesextension.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [SystemCapabilitiesExtension](_api_types_.systemcapabilitiesextension.md)
 
 # Interface: SystemCapabilitiesExtension
 
 ## Hierarchy
 
-**SystemCapabilitiesExtension**
+* **SystemCapabilitiesExtension**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.systemcapabilitiesextension.md#extension)
-* [HttpFirmwareUpgrade](_api_types_.systemcapabilitiesextension.md#httpfirmwareupgrade)
-* [HttpSupportInformation](_api_types_.systemcapabilitiesextension.md#httpsupportinformation)
-* [HttpSystemBackup](_api_types_.systemcapabilitiesextension.md#httpsystembackup)
-* [HttpSystemLogging](_api_types_.systemcapabilitiesextension.md#httpsystemlogging)
-
----
+* [Extension](_api_types_.systemcapabilitiesextension.md#optional-readonly-extension)
+* [HttpFirmwareUpgrade](_api_types_.systemcapabilitiesextension.md#optional-readonly-httpfirmwareupgrade)
+* [HttpSupportInformation](_api_types_.systemcapabilitiesextension.md#optional-readonly-httpsupportinformation)
+* [HttpSystemBackup](_api_types_.systemcapabilitiesextension.md#optional-readonly-httpsystembackup)
+* [HttpSystemLogging](_api_types_.systemcapabilitiesextension.md#optional-readonly-httpsystemlogging)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[SystemCapabilitiesExtension2](_api_types_.systemcapabilitiesextension2.md)*
 
-**● Extension**: *[SystemCapabilitiesExtension2](_api_types_.systemcapabilitiesextension2.md)*
-
-*Defined in [api/types.ts:1808](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1808)*
-
-___
-<a id="httpfirmwareupgrade"></a>
-
-### `<Optional>` HttpFirmwareUpgrade
-
-**● HttpFirmwareUpgrade**: *`undefined` \| `false` \| `true`*
-
-*Defined in [api/types.ts:1804](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1804)*
-
-___
-<a id="httpsupportinformation"></a>
-
-### `<Optional>` HttpSupportInformation
-
-**● HttpSupportInformation**: *`undefined` \| `false` \| `true`*
-
-*Defined in [api/types.ts:1807](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1807)*
-
-___
-<a id="httpsystembackup"></a>
-
-### `<Optional>` HttpSystemBackup
-
-**● HttpSystemBackup**: *`undefined` \| `false` \| `true`*
-
-*Defined in [api/types.ts:1805](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1805)*
-
-___
-<a id="httpsystemlogging"></a>
-
-### `<Optional>` HttpSystemLogging
-
-**● HttpSystemLogging**: *`undefined` \| `false` \| `true`*
-
-*Defined in [api/types.ts:1806](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1806)*
+*Defined in [api/types.ts:1837](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1837)*
 
 ___
 
+### `Optional` `Readonly` HttpFirmwareUpgrade
+
+• **HttpFirmwareUpgrade**? : *undefined | false | true*
+
+*Defined in [api/types.ts:1833](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1833)*
+
+___
+
+### `Optional` `Readonly` HttpSupportInformation
+
+• **HttpSupportInformation**? : *undefined | false | true*
+
+*Defined in [api/types.ts:1836](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1836)*
+
+___
+
+### `Optional` `Readonly` HttpSystemBackup
+
+• **HttpSystemBackup**? : *undefined | false | true*
+
+*Defined in [api/types.ts:1834](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1834)*
+
+___
+
+### `Optional` `Readonly` HttpSystemLogging
+
+• **HttpSystemLogging**? : *undefined | false | true*
+
+*Defined in [api/types.ts:1835](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1835)*

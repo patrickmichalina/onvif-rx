@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ReplayCapabilities](../interfaces/_api_types_.replaycapabilities.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ReplayCapabilities](_api_types_.replaycapabilities.md)
 
 # Interface: ReplayCapabilities
 
@@ -6,25 +6,18 @@ The address of the replay service.
 
 ## Hierarchy
 
-**ReplayCapabilities**
+* **ReplayCapabilities**
 
 ## Index
 
 ### Properties
 
-* [XAddr](_api_types_.replaycapabilities.md#xaddr)
-
----
+* [XAddr](_api_types_.replaycapabilities.md#readonly-xaddr)
 
 ## Properties
 
-<a id="xaddr"></a>
+### `Readonly` XAddr
 
-###  XAddr
+• **XAddr**: *string*
 
-**● XAddr**: *`string`*
-
-*Defined in [api/types.ts:1883](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1883)*
-
-___
-
+*Defined in [api/types.ts:1912](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1912)*

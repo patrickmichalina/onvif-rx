@@ -1,42 +1,32 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZPreset](../interfaces/_api_types_.ptzpreset.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZPreset](_api_types_.ptzpreset.md)
 
 # Interface: PTZPreset
 
-```
-        A list of preset position name.
-```
+A list of preset position name.
 
 ## Hierarchy
 
-**PTZPreset**
+* **PTZPreset**
 
 ## Index
 
 ### Properties
 
-* [Name](_api_types_.ptzpreset.md#name)
-* [PTZPosition](_api_types_.ptzpreset.md#ptzposition)
-
----
+* [Name](_api_types_.ptzpreset.md#optional-readonly-name)
+* [PTZPosition](_api_types_.ptzpreset.md#optional-readonly-ptzposition)
 
 ## Properties
 
-<a id="name"></a>
+### `Optional` `Readonly` Name
 
-### `<Optional>` Name
+• **Name**? : *[Name](_api_types_.ptzpreset.md#optional-readonly-name)*
 
-**● Name**: *[Name](_api_types_.ptzpreset.md#name)*
-
-*Defined in [api/types.ts:2448](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2448)*
-
-___
-<a id="ptzposition"></a>
-
-### `<Optional>` PTZPosition
-
-**● PTZPosition**: *[PTZVector](_api_types_.ptzvector.md)*
-
-*Defined in [api/types.ts:2449](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2449)*
+*Defined in [api/types.ts:2477](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2477)*
 
 ___
 
+### `Optional` `Readonly` PTZPosition
+
+• **PTZPosition**? : *[PTZVector](_api_types_.ptzvector.md)*
+
+*Defined in [api/types.ts:2478](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2478)*

@@ -1,52 +1,41 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [FocusStatus](../interfaces/_api_types_.focusstatus.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [FocusStatus](_api_types_.focusstatus.md)
 
 # Interface: FocusStatus
 
-```
-            Status of focus position.
-```
+Status of focus position.
 
 ## Hierarchy
 
-**FocusStatus**
+* **FocusStatus**
 
 ## Index
 
 ### Properties
 
-* [Error](_api_types_.focusstatus.md#error)
-* [MoveStatus](_api_types_.focusstatus.md#movestatus)
-* [Position](_api_types_.focusstatus.md#position)
-
----
+* [Error](_api_types_.focusstatus.md#readonly-error)
+* [MoveStatus](_api_types_.focusstatus.md#readonly-movestatus)
+* [Position](_api_types_.focusstatus.md#readonly-position)
 
 ## Properties
 
-<a id="error"></a>
+### `Readonly` Error
 
-###  Error
+• **Error**: *string*
 
-**● Error**: *`string`*
-
-*Defined in [api/types.ts:2598](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2598)*
-
-___
-<a id="movestatus"></a>
-
-###  MoveStatus
-
-**● MoveStatus**: *[MoveStatus](../enums/_api_types_.movestatus.md)*
-
-*Defined in [api/types.ts:2597](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2597)*
-
-___
-<a id="position"></a>
-
-###  Position
-
-**● Position**: *`number`*
-
-*Defined in [api/types.ts:2596](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2596)*
+*Defined in [api/types.ts:2627](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2627)*
 
 ___
 
+### `Readonly` MoveStatus
+
+• **MoveStatus**: *[MoveStatus](../enums/_api_types_.movestatus.md)*
+
+*Defined in [api/types.ts:2626](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2626)*
+
+___
+
+### `Readonly` Position
+
+• **Position**: *number*
+
+*Defined in [api/types.ts:2625](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2625)*

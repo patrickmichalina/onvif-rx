@@ -1,38 +1,30 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [WideDynamicRangeOptions20](../interfaces/_api_types_.widedynamicrangeoptions20.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [WideDynamicRangeOptions20](_api_types_.widedynamicrangeoptions20.md)
 
 # Interface: WideDynamicRangeOptions20
 
 ## Hierarchy
 
-**WideDynamicRangeOptions20**
+* **WideDynamicRangeOptions20**
 
 ## Index
 
 ### Properties
 
-* [Level](_api_types_.widedynamicrangeoptions20.md#level)
-* [Mode](_api_types_.widedynamicrangeoptions20.md#mode)
-
----
+* [Level](_api_types_.widedynamicrangeoptions20.md#optional-readonly-level)
+* [Mode](_api_types_.widedynamicrangeoptions20.md#readonly-mode)
 
 ## Properties
 
-<a id="level"></a>
+### `Optional` `Readonly` Level
 
-### `<Optional>` Level
+• **Level**? : *[FloatRange](_api_types_.floatrange.md)*
 
-**● Level**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:3103](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3103)*
-
-___
-<a id="mode"></a>
-
-###  Mode
-
-**● Mode**: *[WideDynamicMode](../enums/_api_types_.widedynamicmode.md)*
-
-*Defined in [api/types.ts:3102](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3102)*
+*Defined in [api/types.ts:3132](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3132)*
 
 ___
 
+### `Readonly` Mode
+
+• **Mode**: *[WideDynamicMode](../enums/_api_types_.widedynamicmode.md)*
+
+*Defined in [api/types.ts:3131](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3131)*

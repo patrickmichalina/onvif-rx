@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [IntRectangleRange](../interfaces/_api_types_.intrectanglerange.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [IntRectangleRange](_api_types_.intrectanglerange.md)
 
 # Interface: IntRectangleRange
 
@@ -6,55 +6,45 @@ Range of a rectangle. The rectangle itself is defined by lower left corner posit
 
 ## Hierarchy
 
-**IntRectangleRange**
+* **IntRectangleRange**
 
 ## Index
 
 ### Properties
 
-* [HeightRange](_api_types_.intrectanglerange.md#heightrange)
-* [WidthRange](_api_types_.intrectanglerange.md#widthrange)
-* [XRange](_api_types_.intrectanglerange.md#xrange)
-* [YRange](_api_types_.intrectanglerange.md#yrange)
-
----
+* [HeightRange](_api_types_.intrectanglerange.md#readonly-heightrange)
+* [WidthRange](_api_types_.intrectanglerange.md#readonly-widthrange)
+* [XRange](_api_types_.intrectanglerange.md#readonly-xrange)
+* [YRange](_api_types_.intrectanglerange.md#readonly-yrange)
 
 ## Properties
 
-<a id="heightrange"></a>
+### `Readonly` HeightRange
 
-###  HeightRange
+• **HeightRange**: *[IntRange](_api_types_.intrange.md)*
 
-**● HeightRange**: *[IntRange](_api_types_.intrange.md)*
-
-*Defined in [api/types.ts:437](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L437)*
-
-___
-<a id="widthrange"></a>
-
-###  WidthRange
-
-**● WidthRange**: *[IntRange](_api_types_.intrange.md)*
-
-*Defined in [api/types.ts:436](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L436)*
-
-___
-<a id="xrange"></a>
-
-###  XRange
-
-**● XRange**: *[IntRange](_api_types_.intrange.md)*
-
-*Defined in [api/types.ts:434](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L434)*
-
-___
-<a id="yrange"></a>
-
-###  YRange
-
-**● YRange**: *[IntRange](_api_types_.intrange.md)*
-
-*Defined in [api/types.ts:435](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L435)*
+*Defined in [api/types.ts:474](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L474)*
 
 ___
 
+### `Readonly` WidthRange
+
+• **WidthRange**: *[IntRange](_api_types_.intrange.md)*
+
+*Defined in [api/types.ts:473](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L473)*
+
+___
+
+### `Readonly` XRange
+
+• **XRange**: *[IntRange](_api_types_.intrange.md)*
+
+*Defined in [api/types.ts:471](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L471)*
+
+___
+
+### `Readonly` YRange
+
+• **YRange**: *[IntRange](_api_types_.intrange.md)*
+
+*Defined in [api/types.ts:472](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L472)*

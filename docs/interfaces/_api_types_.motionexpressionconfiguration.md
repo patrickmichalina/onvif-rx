@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [MotionExpressionConfiguration](../interfaces/_api_types_.motionexpressionconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [MotionExpressionConfiguration](_api_types_.motionexpressionconfiguration.md)
 
 # Interface: MotionExpressionConfiguration
 
@@ -6,25 +6,18 @@ Contains Rule MotionExpression configuration
 
 ## Hierarchy
 
-**MotionExpressionConfiguration**
+* **MotionExpressionConfiguration**
 
 ## Index
 
 ### Properties
 
-* [MotionExpression](_api_types_.motionexpressionconfiguration.md#motionexpression)
-
----
+* [MotionExpression](_api_types_.motionexpressionconfiguration.md#readonly-motionexpression)
 
 ## Properties
 
-<a id="motionexpression"></a>
+### `Readonly` MotionExpression
 
-###  MotionExpression
+• **MotionExpression**: *[MotionExpression](_api_types_.motionexpression.md)*
 
-**● MotionExpression**: *[MotionExpression](_api_types_.motionexpression.md)*
-
-*Defined in [api/types.ts:3467](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3467)*
-
-___
-
+*Defined in [api/types.ts:3487](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3487)*

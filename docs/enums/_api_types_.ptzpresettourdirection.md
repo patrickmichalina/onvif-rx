@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZPresetTourDirection](../enums/_api_types_.ptzpresettourdirection.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZPresetTourDirection](_api_types_.ptzpresettourdirection.md)
 
 # Enumeration: PTZPresetTourDirection
 
@@ -10,35 +10,26 @@
 * [Extended](_api_types_.ptzpresettourdirection.md#extended)
 * [Forward](_api_types_.ptzpresettourdirection.md#forward)
 
----
-
 ## Enumeration members
-
-<a id="backward"></a>
 
 ###  Backward
 
-**Backward**:  = "Backward"
+• **Backward**: = "Backward"
 
-*Defined in [api/types.ts:5201](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5201)*
+*Defined in [api/types.ts:5327](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5327)*
 
 ___
-<a id="extended"></a>
 
 ###  Extended
 
-**Extended**:  = "Extended"
+• **Extended**: = "Extended"
 
-*Defined in [api/types.ts:5205](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5205)*
+*Defined in [api/types.ts:5331](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5331)*
 
 ___
-<a id="forward"></a>
 
 ###  Forward
 
-**Forward**:  = "Forward"
+• **Forward**: = "Forward"
 
-*Defined in [api/types.ts:5197](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5197)*
-
-___
-
+*Defined in [api/types.ts:5323](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5323)*

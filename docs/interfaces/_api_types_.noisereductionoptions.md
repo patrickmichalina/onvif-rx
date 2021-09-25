@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [NoiseReductionOptions](../interfaces/_api_types_.noisereductionoptions.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [NoiseReductionOptions](_api_types_.noisereductionoptions.md)
 
 # Interface: NoiseReductionOptions
 
@@ -6,25 +6,18 @@ Indicates whether or not support Level parameter for NoiseReduction.
 
 ## Hierarchy
 
-**NoiseReductionOptions**
+* **NoiseReductionOptions**
 
 ## Index
 
 ### Properties
 
-* [Level](_api_types_.noisereductionoptions.md#level)
-
----
+* [Level](_api_types_.noisereductionoptions.md#readonly-level)
 
 ## Properties
 
-<a id="level"></a>
+### `Readonly` Level
 
-###  Level
+• **Level**: *boolean*
 
-**● Level**: *`boolean`*
-
-*Defined in [api/types.ts:3267](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3267)*
-
-___
-
+*Defined in [api/types.ts:3297](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3297)*

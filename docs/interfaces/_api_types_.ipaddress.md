@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [IPAddress](../interfaces/_api_types_.ipaddress.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [IPAddress](_api_types_.ipaddress.md)
 
 # Interface: IPAddress
 
@@ -6,45 +6,36 @@ Indicates if the address is an IPv4 or IPv6 address.
 
 ## Hierarchy
 
-**IPAddress**
+* **IPAddress**
 
 ## Index
 
 ### Properties
 
-* [IPv4Address](_api_types_.ipaddress.md#ipv4address)
-* [IPv6Address](_api_types_.ipaddress.md#ipv6address)
-* [Type](_api_types_.ipaddress.md#type)
-
----
+* [IPv4Address](_api_types_.ipaddress.md#optional-readonly-ipv4address)
+* [IPv6Address](_api_types_.ipaddress.md#optional-readonly-ipv6address)
+* [Type](_api_types_.ipaddress.md#readonly-type)
 
 ## Properties
 
-<a id="ipv4address"></a>
+### `Optional` `Readonly` IPv4Address
 
-### `<Optional>` IPv4Address
+• **IPv4Address**? : *[IPv4Address](_api_types_.ipaddress.md#optional-readonly-ipv4address)*
 
-**● IPv4Address**: *[IPv4Address](_api_types_.ipaddress.md#ipv4address)*
-
-*Defined in [api/types.ts:1330](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1330)*
-
-___
-<a id="ipv6address"></a>
-
-### `<Optional>` IPv6Address
-
-**● IPv6Address**: *[IPv6Address](_api_types_.ipaddress.md#ipv6address)*
-
-*Defined in [api/types.ts:1331](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1331)*
-
-___
-<a id="type"></a>
-
-###  Type
-
-**● Type**: *[IPType](../enums/_api_types_.iptype.md)*
-
-*Defined in [api/types.ts:1329](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1329)*
+*Defined in [api/types.ts:1359](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1359)*
 
 ___
 
+### `Optional` `Readonly` IPv6Address
+
+• **IPv6Address**? : *[IPv6Address](_api_types_.ipaddress.md#optional-readonly-ipv6address)*
+
+*Defined in [api/types.ts:1360](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1360)*
+
+___
+
+### `Readonly` Type
+
+• **Type**: *[IPType](../enums/_api_types_.iptype.md)*
+
+*Defined in [api/types.ts:1358](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1358)*

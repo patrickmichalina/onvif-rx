@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [DefoggingOptions](../interfaces/_api_types_.defoggingoptions.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [DefoggingOptions](_api_types_.defoggingoptions.md)
 
 # Interface: DefoggingOptions
 
@@ -6,35 +6,27 @@ Supported options for Defogging mode. Its options shall be chosen from tt:Defogg
 
 ## Hierarchy
 
-**DefoggingOptions**
+* **DefoggingOptions**
 
 ## Index
 
 ### Properties
 
-* [Level](_api_types_.defoggingoptions.md#level)
-* [Mode](_api_types_.defoggingoptions.md#mode)
-
----
+* [Level](_api_types_.defoggingoptions.md#readonly-level)
+* [Mode](_api_types_.defoggingoptions.md#readonly-mode)
 
 ## Properties
 
-<a id="level"></a>
+### `Readonly` Level
 
-###  Level
+• **Level**: *boolean*
 
-**● Level**: *`boolean`*
-
-*Defined in [api/types.ts:3260](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3260)*
-
-___
-<a id="mode"></a>
-
-###  Mode
-
-**● Mode**: *`string`*
-
-*Defined in [api/types.ts:3259](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3259)*
+*Defined in [api/types.ts:3290](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3290)*
 
 ___
 
+### `Readonly` Mode
+
+• **Mode**: *string*
+
+*Defined in [api/types.ts:3289](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3289)*

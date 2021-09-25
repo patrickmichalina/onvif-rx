@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Dot11SecurityMode](../enums/_api_types_.dot11securitymode.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Dot11SecurityMode](_api_types_.dot11securitymode.md)
 
 # Enumeration: Dot11SecurityMode
 
@@ -12,53 +12,42 @@
 * [PSK](_api_types_.dot11securitymode.md#psk)
 * [WEP](_api_types_.dot11securitymode.md#wep)
 
----
-
 ## Enumeration members
-
-<a id="dot1x"></a>
 
 ###  Dot1X
 
-**Dot1X**:  = "Dot1X"
+• **Dot1X**: = "Dot1X"
 
-*Defined in [api/types.ts:4889](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4889)*
+*Defined in [api/types.ts:5015](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5015)*
 
 ___
-<a id="extended"></a>
 
 ###  Extended
 
-**Extended**:  = "Extended"
+• **Extended**: = "Extended"
 
-*Defined in [api/types.ts:4893](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4893)*
+*Defined in [api/types.ts:5019](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5019)*
 
 ___
-<a id="none"></a>
 
 ###  None
 
-**None**:  = "None"
+• **None**: = "None"
 
-*Defined in [api/types.ts:4877](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4877)*
+*Defined in [api/types.ts:5003](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5003)*
 
 ___
-<a id="psk"></a>
 
 ###  PSK
 
-**PSK**:  = "PSK"
+• **PSK**: = "PSK"
 
-*Defined in [api/types.ts:4885](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4885)*
+*Defined in [api/types.ts:5011](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5011)*
 
 ___
-<a id="wep"></a>
 
 ###  WEP
 
-**WEP**:  = "WEP"
+• **WEP**: = "WEP"
 
-*Defined in [api/types.ts:4881](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4881)*
-
-___
-
+*Defined in [api/types.ts:5007](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5007)*

@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [RelayLogicalState](../enums/_api_types_.relaylogicalstate.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [RelayLogicalState](_api_types_.relaylogicalstate.md)
 
 # Enumeration: RelayLogicalState
 
@@ -9,26 +9,18 @@
 * [active](_api_types_.relaylogicalstate.md#active)
 * [inactive](_api_types_.relaylogicalstate.md#inactive)
 
----
-
 ## Enumeration members
-
-<a id="active"></a>
 
 ###  active
 
-**active**:  = "active"
+• **active**: = "active"
 
-*Defined in [api/types.ts:5079](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5079)*
+*Defined in [api/types.ts:5205](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5205)*
 
 ___
-<a id="inactive"></a>
 
 ###  inactive
 
-**inactive**:  = "inactive"
+• **inactive**: = "inactive"
 
-*Defined in [api/types.ts:5083](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5083)*
-
-___
-
+*Defined in [api/types.ts:5209](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5209)*

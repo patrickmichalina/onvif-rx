@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [NetworkHostType](../enums/_api_types_.networkhosttype.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [NetworkHostType](_api_types_.networkhosttype.md)
 
 # Enumeration: NetworkHostType
 
@@ -10,35 +10,26 @@
 * [IPv4](_api_types_.networkhosttype.md#ipv4)
 * [IPv6](_api_types_.networkhosttype.md#ipv6)
 
----
-
 ## Enumeration members
-
-<a id="dns"></a>
 
 ###  DNS
 
-**DNS**:  = "DNS"
+• **DNS**: = "DNS"
 
-*Defined in [api/types.ts:4803](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4803)*
+*Defined in [api/types.ts:4929](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4929)*
 
 ___
-<a id="ipv4"></a>
 
 ###  IPv4
 
-**IPv4**:  = "IPv4"
+• **IPv4**: = "IPv4"
 
-*Defined in [api/types.ts:4795](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4795)*
+*Defined in [api/types.ts:4921](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4921)*
 
 ___
-<a id="ipv6"></a>
 
 ###  IPv6
 
-**IPv6**:  = "IPv6"
+• **IPv6**: = "IPv6"
 
-*Defined in [api/types.ts:4799](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4799)*
-
-___
-
+*Defined in [api/types.ts:4925](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4925)*

@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ReverseMode](../enums/_api_types_.reversemode.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ReverseMode](_api_types_.reversemode.md)
 
 # Enumeration: ReverseMode
 
@@ -11,44 +11,34 @@
 * [OFF](_api_types_.reversemode.md#off)
 * [ON](_api_types_.reversemode.md#on)
 
----
-
 ## Enumeration members
-
-<a id="auto"></a>
 
 ###  AUTO
 
-**AUTO**:  = "AUTO"
+• **AUTO**: = "AUTO"
 
-*Defined in [api/types.ts:5161](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5161)*
+*Defined in [api/types.ts:5287](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5287)*
 
 ___
-<a id="extended"></a>
 
 ###  Extended
 
-**Extended**:  = "Extended"
+• **Extended**: = "Extended"
 
-*Defined in [api/types.ts:5165](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5165)*
+*Defined in [api/types.ts:5291](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5291)*
 
 ___
-<a id="off"></a>
 
 ###  OFF
 
-**OFF**:  = "OFF"
+• **OFF**: = "OFF"
 
-*Defined in [api/types.ts:5153](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5153)*
+*Defined in [api/types.ts:5279](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5279)*
 
 ___
-<a id="on"></a>
 
 ###  ON
 
-**ON**:  = "ON"
+• **ON**: = "ON"
 
-*Defined in [api/types.ts:5157](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5157)*
-
-___
-
+*Defined in [api/types.ts:5283](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5283)*

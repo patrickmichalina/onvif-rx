@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZPresetTourOperation](../enums/_api_types_.ptzpresettouroperation.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZPresetTourOperation](_api_types_.ptzpresettouroperation.md)
 
 # Enumeration: PTZPresetTourOperation
 
@@ -11,44 +11,34 @@
 * [Start](_api_types_.ptzpresettouroperation.md#start)
 * [Stop](_api_types_.ptzpresettouroperation.md#stop)
 
----
-
 ## Enumeration members
-
-<a id="extended"></a>
 
 ###  Extended
 
-**Extended**:  = "Extended"
+• **Extended**: = "Extended"
 
-*Defined in [api/types.ts:5227](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5227)*
+*Defined in [api/types.ts:5353](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5353)*
 
 ___
-<a id="pause"></a>
 
 ###  Pause
 
-**Pause**:  = "Pause"
+• **Pause**: = "Pause"
 
-*Defined in [api/types.ts:5223](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5223)*
+*Defined in [api/types.ts:5349](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5349)*
 
 ___
-<a id="start"></a>
 
 ###  Start
 
-**Start**:  = "Start"
+• **Start**: = "Start"
 
-*Defined in [api/types.ts:5215](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5215)*
+*Defined in [api/types.ts:5341](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5341)*
 
 ___
-<a id="stop"></a>
 
 ###  Stop
 
-**Stop**:  = "Stop"
+• **Stop**: = "Stop"
 
-*Defined in [api/types.ts:5219](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5219)*
-
-___
-
+*Defined in [api/types.ts:5345](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5345)*

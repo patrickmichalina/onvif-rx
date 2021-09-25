@@ -1,67 +1,53 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [WhiteBalanceOptions20](../interfaces/_api_types_.whitebalanceoptions20.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [WhiteBalanceOptions20](_api_types_.whitebalanceoptions20.md)
 
 # Interface: WhiteBalanceOptions20
 
-```
-            Mode of WhiteBalance.
-```
+Mode of WhiteBalance.
 
-```
-                        AUTO
-                        MANUAL
-```
+							AUTO
+							MANUAL
 
 ## Hierarchy
 
-**WhiteBalanceOptions20**
+* **WhiteBalanceOptions20**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.whitebalanceoptions20.md#extension)
-* [Mode](_api_types_.whitebalanceoptions20.md#mode)
-* [YbGain](_api_types_.whitebalanceoptions20.md#ybgain)
-* [YrGain](_api_types_.whitebalanceoptions20.md#yrgain)
-
----
+* [Extension](_api_types_.whitebalanceoptions20.md#optional-readonly-extension)
+* [Mode](_api_types_.whitebalanceoptions20.md#readonly-mode)
+* [YbGain](_api_types_.whitebalanceoptions20.md#optional-readonly-ybgain)
+* [YrGain](_api_types_.whitebalanceoptions20.md#optional-readonly-yrgain)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[WhiteBalanceOptions20Extension](_api_types_.whitebalanceoptions20extension.md)*
 
-**● Extension**: *[WhiteBalanceOptions20Extension](_api_types_.whitebalanceoptions20extension.md)*
-
-*Defined in [api/types.ts:3215](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3215)*
-
-___
-<a id="mode"></a>
-
-###  Mode
-
-**● Mode**: *[WhiteBalanceMode](../enums/_api_types_.whitebalancemode.md)*
-
-*Defined in [api/types.ts:3212](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3212)*
-
-___
-<a id="ybgain"></a>
-
-### `<Optional>` YbGain
-
-**● YbGain**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:3214](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3214)*
-
-___
-<a id="yrgain"></a>
-
-### `<Optional>` YrGain
-
-**● YrGain**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:3213](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3213)*
+*Defined in [api/types.ts:3244](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3244)*
 
 ___
 
+### `Readonly` Mode
+
+• **Mode**: *[WhiteBalanceMode](../enums/_api_types_.whitebalancemode.md)*
+
+*Defined in [api/types.ts:3241](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3241)*
+
+___
+
+### `Optional` `Readonly` YbGain
+
+• **YbGain**? : *[FloatRange](_api_types_.floatrange.md)*
+
+*Defined in [api/types.ts:3243](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3243)*
+
+___
+
+### `Optional` `Readonly` YrGain
+
+• **YrGain**? : *[FloatRange](_api_types_.floatrange.md)*
+
+*Defined in [api/types.ts:3242](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3242)*
