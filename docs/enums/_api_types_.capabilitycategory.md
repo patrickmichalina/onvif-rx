@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [CapabilityCategory](../enums/_api_types_.capabilitycategory.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [CapabilityCategory](_api_types_.capabilitycategory.md)
 
 # Enumeration: CapabilityCategory
 
@@ -14,71 +14,58 @@
 * [Media](_api_types_.capabilitycategory.md#media)
 * [PTZ](_api_types_.capabilitycategory.md#ptz)
 
----
-
 ## Enumeration members
-
-<a id="all"></a>
 
 ###  All
 
-**All**:  = "All"
+• **All**: = "All"
 
-*Defined in [api/types.ts:4977](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4977)*
+*Defined in [api/types.ts:5103](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5103)*
 
 ___
-<a id="analytics"></a>
 
 ###  Analytics
 
-**Analytics**:  = "Analytics"
+• **Analytics**: = "Analytics"
 
-*Defined in [api/types.ts:4981](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4981)*
+*Defined in [api/types.ts:5107](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5107)*
 
 ___
-<a id="device"></a>
 
 ###  Device
 
-**Device**:  = "Device"
+• **Device**: = "Device"
 
-*Defined in [api/types.ts:4985](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4985)*
+*Defined in [api/types.ts:5111](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5111)*
 
 ___
-<a id="events"></a>
 
 ###  Events
 
-**Events**:  = "Events"
+• **Events**: = "Events"
 
-*Defined in [api/types.ts:4989](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4989)*
+*Defined in [api/types.ts:5115](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5115)*
 
 ___
-<a id="imaging"></a>
 
 ###  Imaging
 
-**Imaging**:  = "Imaging"
+• **Imaging**: = "Imaging"
 
-*Defined in [api/types.ts:4993](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4993)*
+*Defined in [api/types.ts:5119](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5119)*
 
 ___
-<a id="media"></a>
 
 ###  Media
 
-**Media**:  = "Media"
+• **Media**: = "Media"
 
-*Defined in [api/types.ts:4997](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4997)*
+*Defined in [api/types.ts:5123](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5123)*
 
 ___
-<a id="ptz"></a>
 
 ###  PTZ
 
-**PTZ**:  = "PTZ"
+• **PTZ**: = "PTZ"
 
-*Defined in [api/types.ts:5001](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5001)*
-
-___
-
+*Defined in [api/types.ts:5127](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5127)*

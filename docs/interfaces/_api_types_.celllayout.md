@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [CellLayout](../interfaces/_api_types_.celllayout.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [CellLayout](_api_types_.celllayout.md)
 
 # Interface: CellLayout
 
@@ -6,25 +6,18 @@ Mapping of the cell grid to the Video frame. The cell grid is starting from the 
 
 ## Hierarchy
 
-**CellLayout**
+* **CellLayout**
 
 ## Index
 
 ### Properties
 
-* [Transformation](_api_types_.celllayout.md#transformation)
-
----
+* [Transformation](_api_types_.celllayout.md#readonly-transformation)
 
 ## Properties
 
-<a id="transformation"></a>
+### `Readonly` Transformation
 
-###  Transformation
+• **Transformation**: *[Transformation](_api_types_.transformation.md)*
 
-**● Transformation**: *[Transformation](_api_types_.transformation.md)*
-
-*Defined in [api/types.ts:3474](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3474)*
-
-___
-
+*Defined in [api/types.ts:3494](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3494)*

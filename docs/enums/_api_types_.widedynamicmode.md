@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [WideDynamicMode](../enums/_api_types_.widedynamicmode.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [WideDynamicMode](_api_types_.widedynamicmode.md)
 
 # Enumeration: WideDynamicMode
 
@@ -9,26 +9,18 @@
 * [OFF](_api_types_.widedynamicmode.md#off)
 * [ON](_api_types_.widedynamicmode.md#on)
 
----
-
 ## Enumeration members
-
-<a id="off"></a>
 
 ###  OFF
 
-**OFF**:  = "OFF"
+• **OFF**: = "OFF"
 
-*Defined in [api/types.ts:5251](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5251)*
+*Defined in [api/types.ts:5409](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5409)*
 
 ___
-<a id="on"></a>
 
 ###  ON
 
-**ON**:  = "ON"
+• **ON**: = "ON"
 
-*Defined in [api/types.ts:5255](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5255)*
-
-___
-
+*Defined in [api/types.ts:5413](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5413)*

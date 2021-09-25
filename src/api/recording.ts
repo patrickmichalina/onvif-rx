@@ -418,7 +418,7 @@ export class ONVIFRecording {
      *   Exports the selected recordings (from existing recorded data) to the given storage target based on the requested file format. 
      *   
      */
-    ExportRecordedData(SearchScope: SearchScope, FileFormat: string, StorageDestination: StorageReferencePath, StartPoint: string, EndPoint: string) {
+    ExportRecordedData(SearchScope: SearchScope, FileFormat: string, StorageDestination: StorageReferencePath, StartPoint?: string, EndPoint?: string) {
         return ONVIFRecording.ExportRecordedData(SearchScope,FileFormat,StorageDestination,StartPoint,EndPoint).run(this.config)
     }
 

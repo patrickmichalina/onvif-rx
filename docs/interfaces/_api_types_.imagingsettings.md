@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ImagingSettings](../interfaces/_api_types_.imagingsettings.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ImagingSettings](_api_types_.imagingsettings.md)
 
 # Interface: ImagingSettings
 
@@ -6,125 +6,108 @@ Enabled/disabled BLC mode (on/off).
 
 ## Hierarchy
 
-**ImagingSettings**
+* **ImagingSettings**
 
 ## Index
 
 ### Properties
 
-* [BacklightCompensation](_api_types_.imagingsettings.md#backlightcompensation)
-* [Brightness](_api_types_.imagingsettings.md#brightness)
-* [ColorSaturation](_api_types_.imagingsettings.md#colorsaturation)
-* [Contrast](_api_types_.imagingsettings.md#contrast)
-* [Exposure](_api_types_.imagingsettings.md#exposure)
-* [Extension](_api_types_.imagingsettings.md#extension)
-* [Focus](_api_types_.imagingsettings.md#focus)
-* [IrCutFilter](_api_types_.imagingsettings.md#ircutfilter)
-* [Sharpness](_api_types_.imagingsettings.md#sharpness)
-* [WhiteBalance](_api_types_.imagingsettings.md#whitebalance)
-* [WideDynamicRange](_api_types_.imagingsettings.md#widedynamicrange)
-
----
+* [BacklightCompensation](_api_types_.imagingsettings.md#optional-readonly-backlightcompensation)
+* [Brightness](_api_types_.imagingsettings.md#optional-readonly-brightness)
+* [ColorSaturation](_api_types_.imagingsettings.md#optional-readonly-colorsaturation)
+* [Contrast](_api_types_.imagingsettings.md#optional-readonly-contrast)
+* [Exposure](_api_types_.imagingsettings.md#optional-readonly-exposure)
+* [Extension](_api_types_.imagingsettings.md#optional-readonly-extension)
+* [Focus](_api_types_.imagingsettings.md#optional-readonly-focus)
+* [IrCutFilter](_api_types_.imagingsettings.md#optional-readonly-ircutfilter)
+* [Sharpness](_api_types_.imagingsettings.md#optional-readonly-sharpness)
+* [WhiteBalance](_api_types_.imagingsettings.md#optional-readonly-whitebalance)
+* [WideDynamicRange](_api_types_.imagingsettings.md#optional-readonly-widedynamicrange)
 
 ## Properties
 
-<a id="backlightcompensation"></a>
+### `Optional` `Readonly` BacklightCompensation
 
-### `<Optional>` BacklightCompensation
+• **BacklightCompensation**? : *[BacklightCompensation](_api_types_.imagingsettings.md#optional-readonly-backlightcompensation)*
 
-**● BacklightCompensation**: *[BacklightCompensation](_api_types_.imagingsettings.md#backlightcompensation)*
-
-*Defined in [api/types.ts:2615](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2615)*
-
-___
-<a id="brightness"></a>
-
-### `<Optional>` Brightness
-
-**● Brightness**: *`undefined` \| `number`*
-
-*Defined in [api/types.ts:2616](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2616)*
-
-___
-<a id="colorsaturation"></a>
-
-### `<Optional>` ColorSaturation
-
-**● ColorSaturation**: *`undefined` \| `number`*
-
-*Defined in [api/types.ts:2617](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2617)*
-
-___
-<a id="contrast"></a>
-
-### `<Optional>` Contrast
-
-**● Contrast**: *`undefined` \| `number`*
-
-*Defined in [api/types.ts:2618](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2618)*
-
-___
-<a id="exposure"></a>
-
-### `<Optional>` Exposure
-
-**● Exposure**: *[Exposure](_api_types_.imagingsettings.md#exposure)*
-
-*Defined in [api/types.ts:2619](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2619)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[ImagingSettingsExtension](_api_types_.imagingsettingsextension.md)*
-
-*Defined in [api/types.ts:2625](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2625)*
-
-___
-<a id="focus"></a>
-
-### `<Optional>` Focus
-
-**● Focus**: *[FocusConfiguration](_api_types_.focusconfiguration.md)*
-
-*Defined in [api/types.ts:2620](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2620)*
-
-___
-<a id="ircutfilter"></a>
-
-### `<Optional>` IrCutFilter
-
-**● IrCutFilter**: *[IrCutFilterMode](../enums/_api_types_.ircutfiltermode.md)*
-
-*Defined in [api/types.ts:2621](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2621)*
-
-___
-<a id="sharpness"></a>
-
-### `<Optional>` Sharpness
-
-**● Sharpness**: *`undefined` \| `number`*
-
-*Defined in [api/types.ts:2622](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2622)*
-
-___
-<a id="whitebalance"></a>
-
-### `<Optional>` WhiteBalance
-
-**● WhiteBalance**: *[WhiteBalance](_api_types_.imagingsettings.md#whitebalance)*
-
-*Defined in [api/types.ts:2624](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2624)*
-
-___
-<a id="widedynamicrange"></a>
-
-### `<Optional>` WideDynamicRange
-
-**● WideDynamicRange**: *[WideDynamicRange](_api_types_.imagingsettings.md#widedynamicrange)*
-
-*Defined in [api/types.ts:2623](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2623)*
+*Defined in [api/types.ts:2644](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2644)*
 
 ___
 
+### `Optional` `Readonly` Brightness
+
+• **Brightness**? : *undefined | number*
+
+*Defined in [api/types.ts:2645](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2645)*
+
+___
+
+### `Optional` `Readonly` ColorSaturation
+
+• **ColorSaturation**? : *undefined | number*
+
+*Defined in [api/types.ts:2646](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2646)*
+
+___
+
+### `Optional` `Readonly` Contrast
+
+• **Contrast**? : *undefined | number*
+
+*Defined in [api/types.ts:2647](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2647)*
+
+___
+
+### `Optional` `Readonly` Exposure
+
+• **Exposure**? : *[Exposure](_api_types_.imagingsettings.md#optional-readonly-exposure)*
+
+*Defined in [api/types.ts:2648](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2648)*
+
+___
+
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[ImagingSettingsExtension](_api_types_.imagingsettingsextension.md)*
+
+*Defined in [api/types.ts:2654](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2654)*
+
+___
+
+### `Optional` `Readonly` Focus
+
+• **Focus**? : *[FocusConfiguration](_api_types_.focusconfiguration.md)*
+
+*Defined in [api/types.ts:2649](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2649)*
+
+___
+
+### `Optional` `Readonly` IrCutFilter
+
+• **IrCutFilter**? : *[IrCutFilterMode](../enums/_api_types_.ircutfiltermode.md)*
+
+*Defined in [api/types.ts:2650](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2650)*
+
+___
+
+### `Optional` `Readonly` Sharpness
+
+• **Sharpness**? : *undefined | number*
+
+*Defined in [api/types.ts:2651](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2651)*
+
+___
+
+### `Optional` `Readonly` WhiteBalance
+
+• **WhiteBalance**? : *[WhiteBalance](_api_types_.imagingsettings.md#optional-readonly-whitebalance)*
+
+*Defined in [api/types.ts:2653](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2653)*
+
+___
+
+### `Optional` `Readonly` WideDynamicRange
+
+• **WideDynamicRange**? : *[WideDynamicRange](_api_types_.imagingsettings.md#optional-readonly-widedynamicrange)*
+
+*Defined in [api/types.ts:2652](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2652)*

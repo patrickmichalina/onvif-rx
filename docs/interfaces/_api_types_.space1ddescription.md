@@ -1,42 +1,32 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Space1DDescription](../interfaces/_api_types_.space1ddescription.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Space1DDescription](_api_types_.space1ddescription.md)
 
 # Interface: Space1DDescription
 
-```
-        A URI of coordinate systems.
-```
+A URI of coordinate systems.
 
 ## Hierarchy
 
-**Space1DDescription**
+* **Space1DDescription**
 
 ## Index
 
 ### Properties
 
-* [URI](_api_types_.space1ddescription.md#uri)
-* [XRange](_api_types_.space1ddescription.md#xrange)
-
----
+* [URI](_api_types_.space1ddescription.md#readonly-uri)
+* [XRange](_api_types_.space1ddescription.md#readonly-xrange)
 
 ## Properties
 
-<a id="uri"></a>
+### `Readonly` URI
 
-###  URI
+• **URI**: *string*
 
-**● URI**: *`string`*
-
-*Defined in [api/types.ts:2430](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2430)*
-
-___
-<a id="xrange"></a>
-
-###  XRange
-
-**● XRange**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:2431](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2431)*
+*Defined in [api/types.ts:2459](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2459)*
 
 ___
 
+### `Readonly` XRange
+
+• **XRange**: *[FloatRange](_api_types_.floatrange.md)*
+
+*Defined in [api/types.ts:2460](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2460)*

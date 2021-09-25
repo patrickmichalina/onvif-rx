@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [LocationEntity](../interfaces/_api_types_.locationentity.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [LocationEntity](_api_types_.locationentity.md)
 
 # Interface: LocationEntity
 
@@ -6,55 +6,45 @@ Location on earth.
 
 ## Hierarchy
 
-**LocationEntity**
+* **LocationEntity**
 
 ## Index
 
 ### Properties
 
-* [GeoLocation](_api_types_.locationentity.md#geolocation)
-* [GeoOrientation](_api_types_.locationentity.md#geoorientation)
-* [LocalLocation](_api_types_.locationentity.md#locallocation)
-* [LocalOrientation](_api_types_.locationentity.md#localorientation)
-
----
+* [GeoLocation](_api_types_.locationentity.md#optional-readonly-geolocation)
+* [GeoOrientation](_api_types_.locationentity.md#optional-readonly-geoorientation)
+* [LocalLocation](_api_types_.locationentity.md#optional-readonly-locallocation)
+* [LocalOrientation](_api_types_.locationentity.md#optional-readonly-localorientation)
 
 ## Properties
 
-<a id="geolocation"></a>
+### `Optional` `Readonly` GeoLocation
 
-### `<Optional>` GeoLocation
+• **GeoLocation**? : *[GeoLocation](_api_types_.locationentity.md#optional-readonly-geolocation)*
 
-**● GeoLocation**: *[GeoLocation](_api_types_.locationentity.md#geolocation)*
-
-*Defined in [api/types.ts:412](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L412)*
-
-___
-<a id="geoorientation"></a>
-
-### `<Optional>` GeoOrientation
-
-**● GeoOrientation**: *[GeoOrientation](_api_types_.locationentity.md#geoorientation)*
-
-*Defined in [api/types.ts:413](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L413)*
-
-___
-<a id="locallocation"></a>
-
-### `<Optional>` LocalLocation
-
-**● LocalLocation**: *[LocalLocation](_api_types_.locationentity.md#locallocation)*
-
-*Defined in [api/types.ts:414](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L414)*
-
-___
-<a id="localorientation"></a>
-
-### `<Optional>` LocalOrientation
-
-**● LocalOrientation**: *[LocalOrientation](_api_types_.locationentity.md#localorientation)*
-
-*Defined in [api/types.ts:415](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L415)*
+*Defined in [api/types.ts:449](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L449)*
 
 ___
 
+### `Optional` `Readonly` GeoOrientation
+
+• **GeoOrientation**? : *[GeoOrientation](_api_types_.locationentity.md#optional-readonly-geoorientation)*
+
+*Defined in [api/types.ts:450](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L450)*
+
+___
+
+### `Optional` `Readonly` LocalLocation
+
+• **LocalLocation**? : *[LocalLocation](_api_types_.locationentity.md#optional-readonly-locallocation)*
+
+*Defined in [api/types.ts:451](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L451)*
+
+___
+
+### `Optional` `Readonly` LocalOrientation
+
+• **LocalOrientation**? : *[LocalOrientation](_api_types_.locationentity.md#optional-readonly-localorientation)*
+
+*Defined in [api/types.ts:452](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L452)*

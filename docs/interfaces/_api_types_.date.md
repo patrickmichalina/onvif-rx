@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Date](../interfaces/_api_types_.date.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Date](_api_types_.date.md)
 
 # Interface: Date
 
@@ -6,45 +6,36 @@ Range is 1 to 12.
 
 ## Hierarchy
 
-**Date**
+* **Date**
 
 ## Index
 
 ### Properties
 
-* [Day](_api_types_.date.md#day)
-* [Month](_api_types_.date.md#month)
-* [Year](_api_types_.date.md#year)
-
----
+* [Day](_api_types_.date.md#readonly-day)
+* [Month](_api_types_.date.md#readonly-month)
+* [Year](_api_types_.date.md#readonly-year)
 
 ## Properties
 
-<a id="day"></a>
+### `Readonly` Day
 
-###  Day
+• **Day**: *number*
 
-**● Day**: *`number`*
-
-*Defined in [api/types.ts:1997](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1997)*
-
-___
-<a id="month"></a>
-
-###  Month
-
-**● Month**: *`number`*
-
-*Defined in [api/types.ts:1996](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1996)*
-
-___
-<a id="year"></a>
-
-###  Year
-
-**● Year**: *`number`*
-
-*Defined in [api/types.ts:1995](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1995)*
+*Defined in [api/types.ts:2026](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2026)*
 
 ___
 
+### `Readonly` Month
+
+• **Month**: *number*
+
+*Defined in [api/types.ts:2025](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2025)*
+
+___
+
+### `Readonly` Year
+
+• **Year**: *number*
+
+*Defined in [api/types.ts:2024](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2024)*

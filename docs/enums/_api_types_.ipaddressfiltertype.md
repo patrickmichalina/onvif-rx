@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [IPAddressFilterType](../enums/_api_types_.ipaddressfiltertype.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [IPAddressFilterType](_api_types_.ipaddressfiltertype.md)
 
 # Enumeration: IPAddressFilterType
 
@@ -9,26 +9,18 @@
 * [Allow](_api_types_.ipaddressfiltertype.md#allow)
 * [Deny](_api_types_.ipaddressfiltertype.md#deny)
 
----
-
 ## Enumeration members
-
-<a id="allow"></a>
 
 ###  Allow
 
-**Allow**:  = "Allow"
+• **Allow**: = "Allow"
 
-*Defined in [api/types.ts:4827](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4827)*
+*Defined in [api/types.ts:4953](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4953)*
 
 ___
-<a id="deny"></a>
 
 ###  Deny
 
-**Deny**:  = "Deny"
+• **Deny**: = "Deny"
 
-*Defined in [api/types.ts:4831](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4831)*
-
-___
-
+*Defined in [api/types.ts:4957](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4957)*

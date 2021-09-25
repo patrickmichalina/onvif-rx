@@ -1,142 +1,122 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZConfiguration](../interfaces/_api_types_.ptzconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZConfiguration](_api_types_.ptzconfiguration.md)
 
 # Interface: PTZConfiguration
 
-```
-            A mandatory reference to the PTZ Node that the PTZ Configuration belongs to.
-```
+A mandatory reference to the PTZ Node that the PTZ Configuration belongs to.
 
 ## Hierarchy
 
-**PTZConfiguration**
+* **PTZConfiguration**
 
 ## Index
 
 ### Properties
 
-* [DefaultAbsolutePantTiltPositionSpace](_api_types_.ptzconfiguration.md#defaultabsolutepanttiltpositionspace)
-* [DefaultAbsoluteZoomPositionSpace](_api_types_.ptzconfiguration.md#defaultabsolutezoompositionspace)
-* [DefaultContinuousPanTiltVelocitySpace](_api_types_.ptzconfiguration.md#defaultcontinuouspantiltvelocityspace)
-* [DefaultContinuousZoomVelocitySpace](_api_types_.ptzconfiguration.md#defaultcontinuouszoomvelocityspace)
-* [DefaultPTZSpeed](_api_types_.ptzconfiguration.md#defaultptzspeed)
-* [DefaultPTZTimeout](_api_types_.ptzconfiguration.md#defaultptztimeout)
-* [DefaultRelativePanTiltTranslationSpace](_api_types_.ptzconfiguration.md#defaultrelativepantilttranslationspace)
-* [DefaultRelativeZoomTranslationSpace](_api_types_.ptzconfiguration.md#defaultrelativezoomtranslationspace)
-* [Extension](_api_types_.ptzconfiguration.md#extension)
-* [NodeToken](_api_types_.ptzconfiguration.md#nodetoken)
-* [PanTiltLimits](_api_types_.ptzconfiguration.md#pantiltlimits)
-* [ZoomLimits](_api_types_.ptzconfiguration.md#zoomlimits)
-
----
+* [DefaultAbsolutePantTiltPositionSpace](_api_types_.ptzconfiguration.md#optional-readonly-defaultabsolutepanttiltpositionspace)
+* [DefaultAbsoluteZoomPositionSpace](_api_types_.ptzconfiguration.md#optional-readonly-defaultabsolutezoompositionspace)
+* [DefaultContinuousPanTiltVelocitySpace](_api_types_.ptzconfiguration.md#optional-readonly-defaultcontinuouspantiltvelocityspace)
+* [DefaultContinuousZoomVelocitySpace](_api_types_.ptzconfiguration.md#optional-readonly-defaultcontinuouszoomvelocityspace)
+* [DefaultPTZSpeed](_api_types_.ptzconfiguration.md#optional-readonly-defaultptzspeed)
+* [DefaultPTZTimeout](_api_types_.ptzconfiguration.md#optional-readonly-defaultptztimeout)
+* [DefaultRelativePanTiltTranslationSpace](_api_types_.ptzconfiguration.md#optional-readonly-defaultrelativepantilttranslationspace)
+* [DefaultRelativeZoomTranslationSpace](_api_types_.ptzconfiguration.md#optional-readonly-defaultrelativezoomtranslationspace)
+* [Extension](_api_types_.ptzconfiguration.md#optional-readonly-extension)
+* [NodeToken](_api_types_.ptzconfiguration.md#readonly-nodetoken)
+* [PanTiltLimits](_api_types_.ptzconfiguration.md#optional-readonly-pantiltlimits)
+* [ZoomLimits](_api_types_.ptzconfiguration.md#optional-readonly-zoomlimits)
 
 ## Properties
 
-<a id="defaultabsolutepanttiltpositionspace"></a>
+### `Optional` `Readonly` DefaultAbsolutePantTiltPositionSpace
 
-### `<Optional>` DefaultAbsolutePantTiltPositionSpace
+• **DefaultAbsolutePantTiltPositionSpace**? : *undefined | string*
 
-**● DefaultAbsolutePantTiltPositionSpace**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2254](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2254)*
-
-___
-<a id="defaultabsolutezoompositionspace"></a>
-
-### `<Optional>` DefaultAbsoluteZoomPositionSpace
-
-**● DefaultAbsoluteZoomPositionSpace**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2255](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2255)*
-
-___
-<a id="defaultcontinuouspantiltvelocityspace"></a>
-
-### `<Optional>` DefaultContinuousPanTiltVelocitySpace
-
-**● DefaultContinuousPanTiltVelocitySpace**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2258](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2258)*
-
-___
-<a id="defaultcontinuouszoomvelocityspace"></a>
-
-### `<Optional>` DefaultContinuousZoomVelocitySpace
-
-**● DefaultContinuousZoomVelocitySpace**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2259](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2259)*
-
-___
-<a id="defaultptzspeed"></a>
-
-### `<Optional>` DefaultPTZSpeed
-
-**● DefaultPTZSpeed**: *[PTZSpeed](_api_types_.ptzspeed.md)*
-
-*Defined in [api/types.ts:2260](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2260)*
-
-___
-<a id="defaultptztimeout"></a>
-
-### `<Optional>` DefaultPTZTimeout
-
-**● DefaultPTZTimeout**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2261](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2261)*
-
-___
-<a id="defaultrelativepantilttranslationspace"></a>
-
-### `<Optional>` DefaultRelativePanTiltTranslationSpace
-
-**● DefaultRelativePanTiltTranslationSpace**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2256](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2256)*
-
-___
-<a id="defaultrelativezoomtranslationspace"></a>
-
-### `<Optional>` DefaultRelativeZoomTranslationSpace
-
-**● DefaultRelativeZoomTranslationSpace**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2257](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2257)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[PTZConfigurationExtension](_api_types_.ptzconfigurationextension.md)*
-
-*Defined in [api/types.ts:2264](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2264)*
-
-___
-<a id="nodetoken"></a>
-
-###  NodeToken
-
-**● NodeToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
-
-*Defined in [api/types.ts:2253](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2253)*
-
-___
-<a id="pantiltlimits"></a>
-
-### `<Optional>` PanTiltLimits
-
-**● PanTiltLimits**: *[PanTiltLimits](_api_types_.ptzconfiguration.md#pantiltlimits)*
-
-*Defined in [api/types.ts:2262](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2262)*
-
-___
-<a id="zoomlimits"></a>
-
-### `<Optional>` ZoomLimits
-
-**● ZoomLimits**: *[ZoomLimits](_api_types_.ptzconfiguration.md#zoomlimits)*
-
-*Defined in [api/types.ts:2263](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2263)*
+*Defined in [api/types.ts:2283](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2283)*
 
 ___
 
+### `Optional` `Readonly` DefaultAbsoluteZoomPositionSpace
+
+• **DefaultAbsoluteZoomPositionSpace**? : *undefined | string*
+
+*Defined in [api/types.ts:2284](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2284)*
+
+___
+
+### `Optional` `Readonly` DefaultContinuousPanTiltVelocitySpace
+
+• **DefaultContinuousPanTiltVelocitySpace**? : *undefined | string*
+
+*Defined in [api/types.ts:2287](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2287)*
+
+___
+
+### `Optional` `Readonly` DefaultContinuousZoomVelocitySpace
+
+• **DefaultContinuousZoomVelocitySpace**? : *undefined | string*
+
+*Defined in [api/types.ts:2288](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2288)*
+
+___
+
+### `Optional` `Readonly` DefaultPTZSpeed
+
+• **DefaultPTZSpeed**? : *[PTZSpeed](_api_types_.ptzspeed.md)*
+
+*Defined in [api/types.ts:2289](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2289)*
+
+___
+
+### `Optional` `Readonly` DefaultPTZTimeout
+
+• **DefaultPTZTimeout**? : *undefined | string*
+
+*Defined in [api/types.ts:2290](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2290)*
+
+___
+
+### `Optional` `Readonly` DefaultRelativePanTiltTranslationSpace
+
+• **DefaultRelativePanTiltTranslationSpace**? : *undefined | string*
+
+*Defined in [api/types.ts:2285](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2285)*
+
+___
+
+### `Optional` `Readonly` DefaultRelativeZoomTranslationSpace
+
+• **DefaultRelativeZoomTranslationSpace**? : *undefined | string*
+
+*Defined in [api/types.ts:2286](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2286)*
+
+___
+
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[PTZConfigurationExtension](_api_types_.ptzconfigurationextension.md)*
+
+*Defined in [api/types.ts:2293](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2293)*
+
+___
+
+### `Readonly` NodeToken
+
+• **NodeToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
+
+*Defined in [api/types.ts:2282](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2282)*
+
+___
+
+### `Optional` `Readonly` PanTiltLimits
+
+• **PanTiltLimits**? : *[PanTiltLimits](_api_types_.ptzconfiguration.md#optional-readonly-pantiltlimits)*
+
+*Defined in [api/types.ts:2291](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2291)*
+
+___
+
+### `Optional` `Readonly` ZoomLimits
+
+• **ZoomLimits**? : *[ZoomLimits](_api_types_.ptzconfiguration.md#optional-readonly-zoomlimits)*
+
+*Defined in [api/types.ts:2292](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2292)*

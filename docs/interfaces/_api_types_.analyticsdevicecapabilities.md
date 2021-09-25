@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [AnalyticsDeviceCapabilities](../interfaces/_api_types_.analyticsdevicecapabilities.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [AnalyticsDeviceCapabilities](_api_types_.analyticsdevicecapabilities.md)
 
 # Interface: AnalyticsDeviceCapabilities
 
@@ -6,45 +6,36 @@ Obsolete property.
 
 ## Hierarchy
 
-**AnalyticsDeviceCapabilities**
+* **AnalyticsDeviceCapabilities**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.analyticsdevicecapabilities.md#extension)
-* [RuleSupport](_api_types_.analyticsdevicecapabilities.md#rulesupport)
-* [XAddr](_api_types_.analyticsdevicecapabilities.md#xaddr)
-
----
+* [Extension](_api_types_.analyticsdevicecapabilities.md#optional-readonly-extension)
+* [RuleSupport](_api_types_.analyticsdevicecapabilities.md#optional-readonly-rulesupport)
+* [XAddr](_api_types_.analyticsdevicecapabilities.md#readonly-xaddr)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[AnalyticsDeviceExtension](_api_types_.analyticsdeviceextension.md)*
 
-**● Extension**: *[AnalyticsDeviceExtension](_api_types_.analyticsdeviceextension.md)*
-
-*Defined in [api/types.ts:1904](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1904)*
-
-___
-<a id="rulesupport"></a>
-
-### `<Optional>` RuleSupport
-
-**● RuleSupport**: *`undefined` \| `false` \| `true`*
-
-*Defined in [api/types.ts:1903](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1903)*
-
-___
-<a id="xaddr"></a>
-
-###  XAddr
-
-**● XAddr**: *`string`*
-
-*Defined in [api/types.ts:1902](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1902)*
+*Defined in [api/types.ts:1933](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1933)*
 
 ___
 
+### `Optional` `Readonly` RuleSupport
+
+• **RuleSupport**? : *undefined | false | true*
+
+*Defined in [api/types.ts:1932](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1932)*
+
+___
+
+### `Readonly` XAddr
+
+• **XAddr**: *string*
+
+*Defined in [api/types.ts:1931](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1931)*

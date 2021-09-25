@@ -1,10 +1,8 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [SceneOrientationOption](../enums/_api_types_.sceneorientationoption.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [SceneOrientationOption](_api_types_.sceneorientationoption.md)
 
 # Enumeration: SceneOrientationOption
 
-```
-                Defines the acceptable values for the Orientation element of the SceneOrientation type
-```
+Defines the acceptable values for the Orientation element of the SceneOrientation type
 
 ## Index
 
@@ -14,35 +12,26 @@
 * [Below](_api_types_.sceneorientationoption.md#below)
 * [Horizon](_api_types_.sceneorientationoption.md#horizon)
 
----
-
 ## Enumeration members
-
-<a id="above"></a>
 
 ###  Above
 
-**Above**:  = "Above"
+• **Above**: = "Above"
 
-*Defined in [api/types.ts:4465](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4465)*
+*Defined in [api/types.ts:4587](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4587)*
 
 ___
-<a id="below"></a>
 
 ###  Below
 
-**Below**:  = "Below"
+• **Below**: = "Below"
 
-*Defined in [api/types.ts:4457](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4457)*
+*Defined in [api/types.ts:4579](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4579)*
 
 ___
-<a id="horizon"></a>
 
 ###  Horizon
 
-**Horizon**:  = "Horizon"
+• **Horizon**: = "Horizon"
 
-*Defined in [api/types.ts:4461](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4461)*
-
-___
-
+*Defined in [api/types.ts:4583](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4583)*

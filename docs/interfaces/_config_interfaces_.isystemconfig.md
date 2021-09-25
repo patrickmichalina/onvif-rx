@@ -1,68 +1,57 @@
-[onvif-rx](../README.md) > ["config/interfaces"](../modules/_config_interfaces_.md) > [ISystemConfig](../interfaces/_config_interfaces_.isystemconfig.md)
+[onvif-rx](../README.md) › ["config/interfaces"](../modules/_config_interfaces_.md) › [ISystemConfig](_config_interfaces_.isystemconfig.md)
 
 # Interface: ISystemConfig
 
 ## Hierarchy
 
-**ISystemConfig**
+* **ISystemConfig**
 
 ## Index
 
 ### Properties
 
-* [buffer](_config_interfaces_.isystemconfig.md#buffer)
-* [digestSha1](_config_interfaces_.isystemconfig.md#digestsha1)
-* [nonce](_config_interfaces_.isystemconfig.md#nonce)
-* [parser](_config_interfaces_.isystemconfig.md#parser)
-* [transport](_config_interfaces_.isystemconfig.md#transport)
-
----
+* [buffer](_config_interfaces_.isystemconfig.md#readonly-buffer)
+* [digestSha1](_config_interfaces_.isystemconfig.md#readonly-digestsha1)
+* [nonce](_config_interfaces_.isystemconfig.md#readonly-nonce)
+* [parser](_config_interfaces_.isystemconfig.md#readonly-parser)
+* [transport](_config_interfaces_.isystemconfig.md#readonly-transport)
 
 ## Properties
 
-<a id="buffer"></a>
+### `Readonly` buffer
 
-###  buffer
+• **buffer**: *any*
 
-**● buffer**: *`any`*
-
-*Defined in [config/interfaces.ts:20](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L20)*
-
-___
-<a id="digestsha1"></a>
-
-###  digestSha1
-
-**● digestSha1**: *[ISha1Digest](../modules/_config_interfaces_.md#isha1digest)*
-
-*Defined in [config/interfaces.ts:21](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L21)*
-
-___
-<a id="nonce"></a>
-
-###  nonce
-
-**● nonce**: *[INonce](../modules/_config_interfaces_.md#inonce)*
-
-*Defined in [config/interfaces.ts:19](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L19)*
-
-___
-<a id="parser"></a>
-
-###  parser
-
-**● parser**: *`DOMParser`*
-
-*Defined in [config/interfaces.ts:17](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L17)*
-
-___
-<a id="transport"></a>
-
-###  transport
-
-**● transport**: *[ITransport](../modules/_config_interfaces_.md#itransport)*
-
-*Defined in [config/interfaces.ts:18](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L18)*
+*Defined in [config/interfaces.ts:19](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L19)*
 
 ___
 
+### `Readonly` digestSha1
+
+• **digestSha1**: *[ISha1Digest](../modules/_config_interfaces_.md#isha1digest)*
+
+*Defined in [config/interfaces.ts:20](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L20)*
+
+___
+
+### `Readonly` nonce
+
+• **nonce**: *[INonce](../modules/_config_interfaces_.md#inonce)*
+
+*Defined in [config/interfaces.ts:18](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L18)*
+
+___
+
+### `Readonly` parser
+
+• **parser**: *DOMParser*
+
+*Defined in [config/interfaces.ts:16](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L16)*
+
+___
+
+### `Readonly` transport
+
+• **transport**: *[ITransport](../modules/_config_interfaces_.md#itransport)*
+
+*Defined in [config/interfaces.ts:17](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L17)*

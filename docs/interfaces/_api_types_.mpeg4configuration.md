@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Mpeg4Configuration](../interfaces/_api_types_.mpeg4configuration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Mpeg4Configuration](_api_types_.mpeg4configuration.md)
 
 # Interface: Mpeg4Configuration
 
@@ -6,35 +6,27 @@ Determines the interval in which the I-Frames will be coded. An entry of 1 indic
 
 ## Hierarchy
 
-**Mpeg4Configuration**
+* **Mpeg4Configuration**
 
 ## Index
 
 ### Properties
 
-* [GovLength](_api_types_.mpeg4configuration.md#govlength)
-* [Mpeg4Profile](_api_types_.mpeg4configuration.md#mpeg4profile)
-
----
+* [GovLength](_api_types_.mpeg4configuration.md#readonly-govlength)
+* [Mpeg4Profile](_api_types_.mpeg4configuration.md#readonly-mpeg4profile)
 
 ## Properties
 
-<a id="govlength"></a>
+### `Readonly` GovLength
 
-###  GovLength
+• **GovLength**: *number*
 
-**● GovLength**: *`number`*
-
-*Defined in [api/types.ts:719](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L719)*
-
-___
-<a id="mpeg4profile"></a>
-
-###  Mpeg4Profile
-
-**● Mpeg4Profile**: *[Mpeg4Profile](../enums/_api_types_.mpeg4profile.md)*
-
-*Defined in [api/types.ts:720](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L720)*
+*Defined in [api/types.ts:748](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L748)*
 
 ___
 
+### `Readonly` Mpeg4Profile
+
+• **Mpeg4Profile**: *[Mpeg4Profile](../enums/_api_types_.mpeg4profile.md)*
+
+*Defined in [api/types.ts:749](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L749)*

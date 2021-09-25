@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [FloatRange](../interfaces/_api_types_.floatrange.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [FloatRange](_api_types_.floatrange.md)
 
 # Interface: FloatRange
 
@@ -6,35 +6,27 @@ Range of values greater equal Min value and less equal Max value.
 
 ## Hierarchy
 
-**FloatRange**
+* **FloatRange**
 
 ## Index
 
 ### Properties
 
-* [Max](_api_types_.floatrange.md#max)
-* [Min](_api_types_.floatrange.md#min)
-
----
+* [Max](_api_types_.floatrange.md#readonly-max)
+* [Min](_api_types_.floatrange.md#readonly-min)
 
 ## Properties
 
-<a id="max"></a>
+### `Readonly` Max
 
-###  Max
+• **Max**: *number*
 
-**● Max**: *`number`*
-
-*Defined in [api/types.ts:453](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L453)*
-
-___
-<a id="min"></a>
-
-###  Min
-
-**● Min**: *`number`*
-
-*Defined in [api/types.ts:452](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L452)*
+*Defined in [api/types.ts:482](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L482)*
 
 ___
 
+### `Readonly` Min
+
+• **Min**: *number*
+
+*Defined in [api/types.ts:481](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L481)*

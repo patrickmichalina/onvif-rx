@@ -1,52 +1,41 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Space2DDescription](../interfaces/_api_types_.space2ddescription.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Space2DDescription](_api_types_.space2ddescription.md)
 
 # Interface: Space2DDescription
 
-```
-        A URI of coordinate systems.
-```
+A URI of coordinate systems.
 
 ## Hierarchy
 
-**Space2DDescription**
+* **Space2DDescription**
 
 ## Index
 
 ### Properties
 
-* [URI](_api_types_.space2ddescription.md#uri)
-* [XRange](_api_types_.space2ddescription.md#xrange)
-* [YRange](_api_types_.space2ddescription.md#yrange)
-
----
+* [URI](_api_types_.space2ddescription.md#readonly-uri)
+* [XRange](_api_types_.space2ddescription.md#readonly-xrange)
+* [YRange](_api_types_.space2ddescription.md#readonly-yrange)
 
 ## Properties
 
-<a id="uri"></a>
+### `Readonly` URI
 
-###  URI
+• **URI**: *string*
 
-**● URI**: *`string`*
-
-*Defined in [api/types.ts:2419](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2419)*
-
-___
-<a id="xrange"></a>
-
-###  XRange
-
-**● XRange**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:2420](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2420)*
-
-___
-<a id="yrange"></a>
-
-###  YRange
-
-**● YRange**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:2421](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2421)*
+*Defined in [api/types.ts:2448](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2448)*
 
 ___
 
+### `Readonly` XRange
+
+• **XRange**: *[FloatRange](_api_types_.floatrange.md)*
+
+*Defined in [api/types.ts:2449](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2449)*
+
+___
+
+### `Readonly` YRange
+
+• **YRange**: *[FloatRange](_api_types_.floatrange.md)*
+
+*Defined in [api/types.ts:2450](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2450)*

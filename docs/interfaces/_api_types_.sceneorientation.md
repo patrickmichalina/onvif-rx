@@ -1,42 +1,32 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [SceneOrientation](../interfaces/_api_types_.sceneorientation.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [SceneOrientation](_api_types_.sceneorientation.md)
 
 # Interface: SceneOrientation
 
-```
-                    Parameter to assign the way the camera determines the scene orientation.
-```
+Parameter to assign the way the camera determines the scene orientation.
 
 ## Hierarchy
 
-**SceneOrientation**
+* **SceneOrientation**
 
 ## Index
 
 ### Properties
 
-* [Mode](_api_types_.sceneorientation.md#mode)
-* [Orientation](_api_types_.sceneorientation.md#orientation)
-
----
+* [Mode](_api_types_.sceneorientation.md#readonly-mode)
+* [Orientation](_api_types_.sceneorientation.md#optional-readonly-orientation)
 
 ## Properties
 
-<a id="mode"></a>
+### `Readonly` Mode
 
-###  Mode
+• **Mode**: *[SceneOrientationMode](../enums/_api_types_.sceneorientationmode.md)*
 
-**● Mode**: *[SceneOrientationMode](../enums/_api_types_.sceneorientationmode.md)*
-
-*Defined in [api/types.ts:680](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L680)*
-
-___
-<a id="orientation"></a>
-
-### `<Optional>` Orientation
-
-**● Orientation**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:681](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L681)*
+*Defined in [api/types.ts:709](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L709)*
 
 ___
 
+### `Optional` `Readonly` Orientation
+
+• **Orientation**? : *undefined | string*
+
+*Defined in [api/types.ts:710](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L710)*

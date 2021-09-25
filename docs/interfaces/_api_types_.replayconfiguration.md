@@ -1,32 +1,23 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ReplayConfiguration](../interfaces/_api_types_.replayconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ReplayConfiguration](_api_types_.replayconfiguration.md)
 
 # Interface: ReplayConfiguration
 
-```
-  Configuration parameters for the replay service.
-```
+Configuration parameters for the replay service.
 
 ## Hierarchy
 
-**ReplayConfiguration**
+* **ReplayConfiguration**
 
 ## Index
 
 ### Properties
 
-* [SessionTimeout](_api_types_.replayconfiguration.md#sessiontimeout)
-
----
+* [SessionTimeout](_api_types_.replayconfiguration.md#readonly-sessiontimeout)
 
 ## Properties
 
-<a id="sessiontimeout"></a>
+### `Readonly` SessionTimeout
 
-###  SessionTimeout
+• **SessionTimeout**: *string*
 
-**● SessionTimeout**: *`string`*
-
-*Defined in [api/types.ts:3946](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3946)*
-
-___
-
+*Defined in [api/types.ts:3966](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3966)*

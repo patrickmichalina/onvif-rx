@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Dot11AuthAndMangementSuite](../enums/_api_types_.dot11authandmangementsuite.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Dot11AuthAndMangementSuite](_api_types_.dot11authandmangementsuite.md)
 
 # Enumeration: Dot11AuthAndMangementSuite
 
@@ -11,44 +11,34 @@
 * [None](_api_types_.dot11authandmangementsuite.md#none)
 * [PSK](_api_types_.dot11authandmangementsuite.md#psk)
 
----
-
 ## Enumeration members
-
-<a id="dot1x"></a>
 
 ###  Dot1X
 
-**Dot1X**:  = "Dot1X"
+• **Dot1X**: = "Dot1X"
 
-*Defined in [api/types.ts:4959](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4959)*
+*Defined in [api/types.ts:5085](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5085)*
 
 ___
-<a id="extended"></a>
 
 ###  Extended
 
-**Extended**:  = "Extended"
+• **Extended**: = "Extended"
 
-*Defined in [api/types.ts:4967](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4967)*
+*Defined in [api/types.ts:5093](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5093)*
 
 ___
-<a id="none"></a>
 
 ###  None
 
-**None**:  = "None"
+• **None**: = "None"
 
-*Defined in [api/types.ts:4955](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4955)*
+*Defined in [api/types.ts:5081](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5081)*
 
 ___
-<a id="psk"></a>
 
 ###  PSK
 
-**PSK**:  = "PSK"
+• **PSK**: = "PSK"
 
-*Defined in [api/types.ts:4963](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4963)*
-
-___
-
+*Defined in [api/types.ts:5089](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5089)*

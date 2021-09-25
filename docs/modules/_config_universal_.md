@@ -1,110 +1,85 @@
-[onvif-rx](../README.md) > ["config/universal"](../modules/_config_universal_.md)
+[onvif-rx](../README.md) › ["config/universal"](_config_universal_.md)
 
-# External module: "config/universal"
+# Module: "config/universal"
 
 ## Index
 
-### Variables
-
-* [digestSha1](_config_universal_.md#digestsha1)
-
 ### Functions
 
-* [FETCH_CONFIG](_config_universal_.md#fetch_config)
-* [nonce](_config_universal_.md#nonce)
-* [sharedFetchWrapper](_config_universal_.md#sharedfetchwrapper)
+* [FETCH_CONFIG](_config_universal_.md#const-fetch_config)
+* [nonce](_config_universal_.md#const-nonce)
+* [sharedFetchWrapper](_config_universal_.md#const-sharedfetchwrapper)
 
 ### Object literals
 
-* [REQUEST_HEADERS](_config_universal_.md#request_headers)
-
----
-
-## Variables
-
-<a id="digestsha1"></a>
-
-### `<Const>` digestSha1
-
-**● digestSha1**: *[ISha1Digest](_config_interfaces_.md#isha1digest)* =  require('js-sha1').digest
-
-*Defined in [config/universal.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/universal.ts#L5)*
-
-___
+* [REQUEST_HEADERS](_config_universal_.md#const-request_headers)
 
 ## Functions
 
-<a id="fetch_config"></a>
+### `Const` FETCH_CONFIG
 
-### `<Const>` FETCH_CONFIG
+▸ **FETCH_CONFIG**(`body`: string): *object*
 
-▸ **FETCH_CONFIG**(body: *`string`*): `object`
-
-*Defined in [config/universal.ts:8](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/universal.ts#L8)*
+*Defined in [config/universal.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/universal.ts#L7)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| body | `string` |
+Name | Type |
+------ | ------ |
+`body` | string |
 
-**Returns:** `object`
+**Returns:** *object*
+
+* **body**: *string*
+
+* **headers**(): *object*
+
+  * **Content-Type**: *string* = "application/soap+xml; charset=utf-8;"
+
+* **method**: *string* = "POST"
 
 ___
-<a id="nonce"></a>
 
-### `<Const>` nonce
+### `Const` nonce
 
-▸ **nonce**(size?: *`undefined` \| `number`*): `string`
+▸ **nonce**(`size`: undefined | number): *string*
 
-*Defined in [config/universal.ts:21](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/universal.ts#L21)*
+*Defined in [config/universal.ts:22](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/universal.ts#L22)*
 
 **Parameters:**
 
-| Name | Type | Default value |
-| ------ | ------ | ------ |
-| `Default value` size | `undefined` \| `number` | 30 |
+Name | Type | Default |
+------ | ------ | ------ |
+`size` | undefined &#124; number | 30 |
 
-**Returns:** `string`
+**Returns:** *string*
 
 ___
-<a id="sharedfetchwrapper"></a>
 
-### `<Const>` sharedFetchWrapper
+### `Const` sharedFetchWrapper
 
-▸ **sharedFetchWrapper**(fetchResponse: *`Promise`<`any`>*): `Observable`<[ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>
+▸ **sharedFetchWrapper**(`fetchResponse`: Promise‹any›): *Observable‹[ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›*
 
-*Defined in [config/universal.ts:10](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/universal.ts#L10)*
+*Defined in [config/universal.ts:9](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/universal.ts#L9)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| fetchResponse | `Promise`<`any`> |
+Name | Type |
+------ | ------ |
+`fetchResponse` | Promise‹any› |
 
-**Returns:** `Observable`<[ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>
-
-___
+**Returns:** *Observable‹[ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›*
 
 ## Object literals
 
-<a id="request_headers"></a>
+### `Const` REQUEST_HEADERS
 
-### `<Const>` REQUEST_HEADERS
+### ▪ **REQUEST_HEADERS**: *object*
 
-**REQUEST_HEADERS**: *`object`*
+*Defined in [config/universal.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/universal.ts#L6)*
 
-*Defined in [config/universal.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/universal.ts#L7)*
+###  Content-Type
 
-<a id="request_headers.content_type"></a>
+• **Content-Type**: *string* = "application/soap+xml; charset=utf-8;"
 
-####  Content-Type
-
-**● Content-Type**: *`string`* = "application/soap+xml; charset=utf-8;"
-
-*Defined in [config/universal.ts:7](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/universal.ts#L7)*
-
-___
-
-___
-
+*Defined in [config/universal.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/universal.ts#L6)*

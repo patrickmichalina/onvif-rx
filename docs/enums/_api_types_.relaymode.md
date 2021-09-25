@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [RelayMode](../enums/_api_types_.relaymode.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [RelayMode](_api_types_.relaymode.md)
 
 # Enumeration: RelayMode
 
@@ -9,26 +9,18 @@
 * [Bistable](_api_types_.relaymode.md#bistable)
 * [Monostable](_api_types_.relaymode.md#monostable)
 
----
-
 ## Enumeration members
-
-<a id="bistable"></a>
 
 ###  Bistable
 
-**Bistable**:  = "Bistable"
+• **Bistable**: = "Bistable"
 
-*Defined in [api/types.ts:5111](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5111)*
+*Defined in [api/types.ts:5237](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5237)*
 
 ___
-<a id="monostable"></a>
 
 ###  Monostable
 
-**Monostable**:  = "Monostable"
+• **Monostable**: = "Monostable"
 
-*Defined in [api/types.ts:5107](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5107)*
-
-___
-
+*Defined in [api/types.ts:5233](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5233)*

@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [UserLevel](../enums/_api_types_.userlevel.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [UserLevel](_api_types_.userlevel.md)
 
 # Enumeration: UserLevel
 
@@ -12,53 +12,42 @@
 * [Operator](_api_types_.userlevel.md#operator)
 * [User](_api_types_.userlevel.md#user)
 
----
-
 ## Enumeration members
-
-<a id="administrator"></a>
 
 ###  Administrator
 
-**Administrator**:  = "Administrator"
+• **Administrator**: = "Administrator"
 
-*Defined in [api/types.ts:5053](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5053)*
+*Defined in [api/types.ts:5179](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5179)*
 
 ___
-<a id="anonymous"></a>
 
 ###  Anonymous
 
-**Anonymous**:  = "Anonymous"
+• **Anonymous**: = "Anonymous"
 
-*Defined in [api/types.ts:5065](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5065)*
+*Defined in [api/types.ts:5191](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5191)*
 
 ___
-<a id="extended"></a>
 
 ###  Extended
 
-**Extended**:  = "Extended"
+• **Extended**: = "Extended"
 
-*Defined in [api/types.ts:5069](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5069)*
+*Defined in [api/types.ts:5195](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5195)*
 
 ___
-<a id="operator"></a>
 
 ###  Operator
 
-**Operator**:  = "Operator"
+• **Operator**: = "Operator"
 
-*Defined in [api/types.ts:5057](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5057)*
+*Defined in [api/types.ts:5183](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5183)*
 
 ___
-<a id="user"></a>
 
 ###  User
 
-**User**:  = "User"
+• **User**: = "User"
 
-*Defined in [api/types.ts:5061](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5061)*
-
-___
-
+*Defined in [api/types.ts:5187](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5187)*

@@ -1,38 +1,30 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [AnalyticsDeviceEngineConfiguration](../interfaces/_api_types_.analyticsdeviceengineconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [AnalyticsDeviceEngineConfiguration](_api_types_.analyticsdeviceengineconfiguration.md)
 
 # Interface: AnalyticsDeviceEngineConfiguration
 
 ## Hierarchy
 
-**AnalyticsDeviceEngineConfiguration**
+* **AnalyticsDeviceEngineConfiguration**
 
 ## Index
 
 ### Properties
 
-* [EngineConfiguration](_api_types_.analyticsdeviceengineconfiguration.md#engineconfiguration)
-* [Extension](_api_types_.analyticsdeviceengineconfiguration.md#extension)
-
----
+* [EngineConfiguration](_api_types_.analyticsdeviceengineconfiguration.md#readonly-engineconfiguration)
+* [Extension](_api_types_.analyticsdeviceengineconfiguration.md#optional-readonly-extension)
 
 ## Properties
 
-<a id="engineconfiguration"></a>
+### `Readonly` EngineConfiguration
 
-###  EngineConfiguration
+• **EngineConfiguration**: *[EngineConfiguration](_api_types_.engineconfiguration.md)*
 
-**● EngineConfiguration**: *[EngineConfiguration](_api_types_.engineconfiguration.md)*
-
-*Defined in [api/types.ts:3960](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3960)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[AnalyticsDeviceEngineConfigurationExtension](_api_types_.analyticsdeviceengineconfigurationextension.md)*
-
-*Defined in [api/types.ts:3961](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3961)*
+*Defined in [api/types.ts:3980](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3980)*
 
 ___
 
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[AnalyticsDeviceEngineConfigurationExtension](_api_types_.analyticsdeviceengineconfigurationextension.md)*
+
+*Defined in [api/types.ts:3981](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3981)*

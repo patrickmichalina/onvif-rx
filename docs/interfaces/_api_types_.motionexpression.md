@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [MotionExpression](../interfaces/_api_types_.motionexpression.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [MotionExpression](_api_types_.motionexpression.md)
 
 # Interface: MotionExpression
 
@@ -6,25 +6,18 @@ Motion Expression data structure contains motion expression which is based on Sc
 
 ## Hierarchy
 
-**MotionExpression**
+* **MotionExpression**
 
 ## Index
 
 ### Properties
 
-* [Expression](_api_types_.motionexpression.md#expression)
-
----
+* [Expression](_api_types_.motionexpression.md#readonly-expression)
 
 ## Properties
 
-<a id="expression"></a>
+### `Readonly` Expression
 
-###  Expression
+• **Expression**: *string*
 
-**● Expression**: *`string`*
-
-*Defined in [api/types.ts:3460](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3460)*
-
-___
-
+*Defined in [api/types.ts:3480](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3480)*

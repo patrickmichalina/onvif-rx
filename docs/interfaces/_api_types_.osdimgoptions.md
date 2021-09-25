@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [OSDImgOptions](../interfaces/_api_types_.osdimgoptions.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [OSDImgOptions](_api_types_.osdimgoptions.md)
 
 # Interface: OSDImgOptions
 
@@ -6,35 +6,27 @@ List of available image URIs.
 
 ## Hierarchy
 
-**OSDImgOptions**
+* **OSDImgOptions**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.osdimgoptions.md#extension)
-* [ImagePath](_api_types_.osdimgoptions.md#imagepath)
-
----
+* [Extension](_api_types_.osdimgoptions.md#optional-readonly-extension)
+* [ImagePath](_api_types_.osdimgoptions.md#readonly-imagepath)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[OSDImgOptionsExtension](_api_types_.osdimgoptionsextension.md)*
 
-**● Extension**: *[OSDImgOptionsExtension](_api_types_.osdimgoptionsextension.md)*
-
-*Defined in [api/types.ts:4254](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4254)*
-
-___
-<a id="imagepath"></a>
-
-###  ImagePath
-
-**● ImagePath**: *`string`*
-
-*Defined in [api/types.ts:4253](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4253)*
+*Defined in [api/types.ts:4274](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4274)*
 
 ___
 
+### `Readonly` ImagePath
+
+• **ImagePath**: *string*
+
+*Defined in [api/types.ts:4273](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4273)*

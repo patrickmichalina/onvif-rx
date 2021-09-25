@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Enabled](../enums/_api_types_.enabled.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Enabled](_api_types_.enabled.md)
 
 # Enumeration: Enabled
 
@@ -9,26 +9,18 @@
 * [DISABLED](_api_types_.enabled.md#disabled)
 * [ENABLED](_api_types_.enabled.md#enabled)
 
----
-
 ## Enumeration members
-
-<a id="disabled"></a>
 
 ###  DISABLED
 
-**DISABLED**:  = "DISABLED"
+• **DISABLED**: = "DISABLED"
 
-*Defined in [api/types.ts:5311](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5311)*
+*Defined in [api/types.ts:5469](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5469)*
 
 ___
-<a id="enabled"></a>
 
 ###  ENABLED
 
-**ENABLED**:  = "ENABLED"
+• **ENABLED**: = "ENABLED"
 
-*Defined in [api/types.ts:5307](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5307)*
-
-___
-
+*Defined in [api/types.ts:5465](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5465)*

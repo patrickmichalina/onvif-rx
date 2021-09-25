@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [EFlip](../interfaces/_api_types_.eflip.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [EFlip](_api_types_.eflip.md)
 
 # Interface: EFlip
 
@@ -6,25 +6,18 @@ Parameter to enable/disable E-Flip feature.
 
 ## Hierarchy
 
-**EFlip**
+* **EFlip**
 
 ## Index
 
 ### Properties
 
-* [Mode](_api_types_.eflip.md#mode)
-
----
+* [Mode](_api_types_.eflip.md#readonly-mode)
 
 ## Properties
 
-<a id="mode"></a>
+### `Readonly` Mode
 
-###  Mode
+• **Mode**: *[EFlipMode](../enums/_api_types_.eflipmode.md)*
 
-**● Mode**: *[EFlipMode](../enums/_api_types_.eflipmode.md)*
-
-*Defined in [api/types.ts:2300](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2300)*
-
-___
-
+*Defined in [api/types.ts:2329](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2329)*

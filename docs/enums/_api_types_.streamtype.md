@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [StreamType](../enums/_api_types_.streamtype.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [StreamType](_api_types_.streamtype.md)
 
 # Enumeration: StreamType
 
@@ -6,29 +6,21 @@
 
 ### Enumeration members
 
-* [RTP-Multicast](_api_types_.streamtype.md#rtp_multicast)
-* [RTP-Unicast](_api_types_.streamtype.md#rtp_unicast)
-
----
+* [RTP-Multicast](_api_types_.streamtype.md#rtp-multicast)
+* [RTP-Unicast](_api_types_.streamtype.md#rtp-unicast)
 
 ## Enumeration members
 
-<a id="rtp_multicast"></a>
-
 ###  RTP-Multicast
 
-**RTP-Multicast**:  = "RTP-Multicast"
+• **RTP-Multicast**: = "RTP-Multicast"
 
-*Defined in [api/types.ts:4681](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4681)*
+*Defined in [api/types.ts:4807](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4807)*
 
 ___
-<a id="rtp_unicast"></a>
 
 ###  RTP-Unicast
 
-**RTP-Unicast**:  = "RTP-Unicast"
+• **RTP-Unicast**: = "RTP-Unicast"
 
-*Defined in [api/types.ts:4677](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4677)*
-
-___
-
+*Defined in [api/types.ts:4803](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4803)*

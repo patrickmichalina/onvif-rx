@@ -1,6 +1,6 @@
 import { createStandardRequestBodyFromString, mapResponseXmlToJson, generateRequestElements, mapResponseObsToProperty } from "../soap/request";
 import { IDeviceConfig } from "../config";
-import { AbsoluteOrRelativeTimeType,  } from "./types";
+import { AbsoluteOrRelativeTimeType, EventBrokerConfig } from "./types";
 
 export class ONVIFEvent {
     constructor(private config: IDeviceConfig) {
@@ -37,6 +37,33 @@ export class ONVIFEvent {
     static GetEventProperties() {
         return createStandardRequestBodyFromString(generateRequestElements('tev:GetEventProperties')({}))
                         .map(mapResponseXmlToJson<any>('tev:GetEventPropertiesResponse'))
+                      
+    }
+
+    /**
+     * The AddEventBroker command allows an ONVIF client to add an event broker configuration to device to enable ONVIF events to be transferred to an event broker. If an existing event broker configuration already exists with the same Address, the existing configuration shall be modified.
+     */
+    static AddEventBroker(EventBroker: EventBrokerConfig) {
+        return createStandardRequestBodyFromString(generateRequestElements('tev:AddEventBroker')({tev_EventBroker:EventBroker}))
+                        .map(mapResponseXmlToJson<any>('tev:AddEventBrokerResponse'))
+                      
+    }
+
+    /**
+     * The DeleteEventBroker allows an ONVIF client to delete an event broker configuration from an ONVIF device.
+     */
+    static DeleteEventBroker(Address: string) {
+        return createStandardRequestBodyFromString(generateRequestElements('tev:DeleteEventBroker')({tev_Address:Address}))
+                        .map(mapResponseXmlToJson<any>('tev:DeleteEventBrokerResponse'))
+                      
+    }
+
+    /**
+     * The GetEventBrokers command lets a client retrieve event broker configurations from the device.
+     */
+    static GetEventBrokers(Address?: string) {
+        return createStandardRequestBodyFromString(generateRequestElements('tev:GetEventBrokers')({tev_Address:Address}))
+                        .map(mapResponseXmlToJson<any>('tev:GetEventBrokersResponse'))
                       
     }
 
@@ -113,7 +140,7 @@ export class ONVIFEvent {
      *   If no Filter is specified the pullpoint notifies all occurring events to the client.
      *   This method is mandatory.
      */
-    CreatePullPointSubscription(Filter: any, InitialTerminationTime: AbsoluteOrRelativeTimeType, SubscriptionPolicy: any) {
+    CreatePullPointSubscription(Filter?: any, InitialTerminationTime?: AbsoluteOrRelativeTimeType, SubscriptionPolicy?: any) {
         return ONVIFEvent.CreatePullPointSubscription(Filter,InitialTerminationTime,SubscriptionPolicy).run(this.config)
     }
 
@@ -126,6 +153,27 @@ export class ONVIFEvent {
      */
     GetEventProperties() {
         return ONVIFEvent.GetEventProperties().run(this.config)
+    }
+
+    /**
+     * The AddEventBroker command allows an ONVIF client to add an event broker configuration to device to enable ONVIF events to be transferred to an event broker. If an existing event broker configuration already exists with the same Address, the existing configuration shall be modified.
+     */
+    AddEventBroker(EventBroker: EventBrokerConfig) {
+        return ONVIFEvent.AddEventBroker(EventBroker).run(this.config)
+    }
+
+    /**
+     * The DeleteEventBroker allows an ONVIF client to delete an event broker configuration from an ONVIF device.
+     */
+    DeleteEventBroker(Address: string) {
+        return ONVIFEvent.DeleteEventBroker(Address).run(this.config)
+    }
+
+    /**
+     * The GetEventBrokers command lets a client retrieve event broker configurations from the device.
+     */
+    GetEventBrokers(Address?: string) {
+        return ONVIFEvent.GetEventBrokers(Address).run(this.config)
     }
 
     /**
@@ -152,7 +200,7 @@ export class ONVIFEvent {
      *   NotificationMessage.
      *   
      */
-    Seek(UtcTime: string, Reverse: boolean) {
+    Seek(UtcTime: string, Reverse?: boolean) {
         return ONVIFEvent.Seek(UtcTime,Reverse).run(this.config)
     }
 

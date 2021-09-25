@@ -1,42 +1,32 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [RelativeFocusOptions20](../interfaces/_api_types_.relativefocusoptions20.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [RelativeFocusOptions20](_api_types_.relativefocusoptions20.md)
 
 # Interface: RelativeFocusOptions20
 
-```
-            Valid ranges of the distance.
-```
+Valid ranges of the distance.
 
 ## Hierarchy
 
-**RelativeFocusOptions20**
+* **RelativeFocusOptions20**
 
 ## Index
 
 ### Properties
 
-* [Distance](_api_types_.relativefocusoptions20.md#distance)
-* [Speed](_api_types_.relativefocusoptions20.md#speed)
-
----
+* [Distance](_api_types_.relativefocusoptions20.md#readonly-distance)
+* [Speed](_api_types_.relativefocusoptions20.md#optional-readonly-speed)
 
 ## Properties
 
-<a id="distance"></a>
+### `Readonly` Distance
 
-###  Distance
+• **Distance**: *[FloatRange](_api_types_.floatrange.md)*
 
-**● Distance**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:3156](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3156)*
-
-___
-<a id="speed"></a>
-
-### `<Optional>` Speed
-
-**● Speed**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:3157](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3157)*
+*Defined in [api/types.ts:3185](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3185)*
 
 ___
 
+### `Optional` `Readonly` Speed
+
+• **Speed**? : *[FloatRange](_api_types_.floatrange.md)*
+
+*Defined in [api/types.ts:3186](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3186)*

@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [AudioEncoderConfigurationOptions](../interfaces/_api_types_.audioencoderconfigurationoptions.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [AudioEncoderConfigurationOptions](_api_types_.audioencoderconfigurationoptions.md)
 
 # Interface: AudioEncoderConfigurationOptions
 
@@ -6,25 +6,18 @@ list of supported AudioEncoderConfigurations
 
 ## Hierarchy
 
-**AudioEncoderConfigurationOptions**
+* **AudioEncoderConfigurationOptions**
 
 ## Index
 
 ### Properties
 
-* [Options](_api_types_.audioencoderconfigurationoptions.md#options)
-
----
+* [Options](_api_types_.audioencoderconfigurationoptions.md#optional-readonly-options)
 
 ## Properties
 
-<a id="options"></a>
+### `Optional` `Readonly` Options
 
-### `<Optional>` Options
+• **Options**? : *[AudioEncoderConfigurationOption](_api_types_.audioencoderconfigurationoption.md)*
 
-**● Options**: *[AudioEncoderConfigurationOption](_api_types_.audioencoderconfigurationoption.md)*
-
-*Defined in [api/types.ts:883](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L883)*
-
-___
-
+*Defined in [api/types.ts:912](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L912)*

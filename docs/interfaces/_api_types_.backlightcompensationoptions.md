@@ -1,38 +1,30 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [BacklightCompensationOptions](../interfaces/_api_types_.backlightcompensationoptions.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [BacklightCompensationOptions](_api_types_.backlightcompensationoptions.md)
 
 # Interface: BacklightCompensationOptions
 
 ## Hierarchy
 
-**BacklightCompensationOptions**
+* **BacklightCompensationOptions**
 
 ## Index
 
 ### Properties
 
-* [Level](_api_types_.backlightcompensationoptions.md#level)
-* [Mode](_api_types_.backlightcompensationoptions.md#mode)
-
----
+* [Level](_api_types_.backlightcompensationoptions.md#readonly-level)
+* [Mode](_api_types_.backlightcompensationoptions.md#readonly-mode)
 
 ## Properties
 
-<a id="level"></a>
+### `Readonly` Level
 
-###  Level
+• **Level**: *[FloatRange](_api_types_.floatrange.md)*
 
-**● Level**: *[FloatRange](_api_types_.floatrange.md)*
-
-*Defined in [api/types.ts:2705](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2705)*
-
-___
-<a id="mode"></a>
-
-###  Mode
-
-**● Mode**: *[WideDynamicMode](../enums/_api_types_.widedynamicmode.md)*
-
-*Defined in [api/types.ts:2704](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2704)*
+*Defined in [api/types.ts:2734](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2734)*
 
 ___
 
+### `Readonly` Mode
+
+• **Mode**: *[WideDynamicMode](../enums/_api_types_.widedynamicmode.md)*
+
+*Defined in [api/types.ts:2733](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2733)*

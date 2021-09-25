@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZPresetTourOptions](../interfaces/_api_types_.ptzpresettouroptions.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZPresetTourOptions](_api_types_.ptzpresettouroptions.md)
 
 # Interface: PTZPresetTourOptions
 
@@ -6,45 +6,36 @@ Indicates whether or not the AutoStart is supported.
 
 ## Hierarchy
 
-**PTZPresetTourOptions**
+* **PTZPresetTourOptions**
 
 ## Index
 
 ### Properties
 
-* [AutoStart](_api_types_.ptzpresettouroptions.md#autostart)
-* [StartingCondition](_api_types_.ptzpresettouroptions.md#startingcondition)
-* [TourSpot](_api_types_.ptzpresettouroptions.md#tourspot)
-
----
+* [AutoStart](_api_types_.ptzpresettouroptions.md#readonly-autostart)
+* [StartingCondition](_api_types_.ptzpresettouroptions.md#readonly-startingcondition)
+* [TourSpot](_api_types_.ptzpresettouroptions.md#readonly-tourspot)
 
 ## Properties
 
-<a id="autostart"></a>
+### `Readonly` AutoStart
 
-###  AutoStart
+• **AutoStart**: *boolean*
 
-**● AutoStart**: *`boolean`*
-
-*Defined in [api/types.ts:2537](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2537)*
-
-___
-<a id="startingcondition"></a>
-
-###  StartingCondition
-
-**● StartingCondition**: *[PTZPresetTourStartingConditionOptions](_api_types_.ptzpresettourstartingconditionoptions.md)*
-
-*Defined in [api/types.ts:2538](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2538)*
-
-___
-<a id="tourspot"></a>
-
-###  TourSpot
-
-**● TourSpot**: *[PTZPresetTourSpotOptions](_api_types_.ptzpresettourspotoptions.md)*
-
-*Defined in [api/types.ts:2539](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2539)*
+*Defined in [api/types.ts:2566](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2566)*
 
 ___
 
+### `Readonly` StartingCondition
+
+• **StartingCondition**: *[PTZPresetTourStartingConditionOptions](_api_types_.ptzpresettourstartingconditionoptions.md)*
+
+*Defined in [api/types.ts:2567](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2567)*
+
+___
+
+### `Readonly` TourSpot
+
+• **TourSpot**: *[PTZPresetTourSpotOptions](_api_types_.ptzpresettourspotoptions.md)*
+
+*Defined in [api/types.ts:2568](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2568)*

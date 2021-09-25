@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [BinaryData](../interfaces/_api_types_.binarydata.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [BinaryData](_api_types_.binarydata.md)
 
 # Interface: BinaryData
 
@@ -6,25 +6,18 @@ base64 encoded binary data.
 
 ## Hierarchy
 
-**BinaryData**
+* **BinaryData**
 
 ## Index
 
 ### Properties
 
-* [Data](_api_types_.binarydata.md#data)
-
----
+* [Data](_api_types_.binarydata.md#readonly-data)
 
 ## Properties
 
-<a id="data"></a>
+### `Readonly` Data
 
-###  Data
+• **Data**: *string*
 
-**● Data**: *`string`*
-
-*Defined in [api/types.ts:1933](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1933)*
-
-___
-
+*Defined in [api/types.ts:1962](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1962)*

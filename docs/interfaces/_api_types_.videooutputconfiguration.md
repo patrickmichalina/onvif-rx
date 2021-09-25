@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [VideoOutputConfiguration](../interfaces/_api_types_.videooutputconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [VideoOutputConfiguration](_api_types_.videooutputconfiguration.md)
 
 # Interface: VideoOutputConfiguration
 
@@ -6,25 +6,18 @@ Token of the Video Output the configuration applies to
 
 ## Hierarchy
 
-**VideoOutputConfiguration**
+* **VideoOutputConfiguration**
 
 ## Index
 
 ### Properties
 
-* [OutputToken](_api_types_.videooutputconfiguration.md#outputtoken)
-
----
+* [OutputToken](_api_types_.videooutputconfiguration.md#readonly-outputtoken)
 
 ## Properties
 
-<a id="outputtoken"></a>
+### `Readonly` OutputToken
 
-###  OutputToken
+• **OutputToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-**● OutputToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
-
-*Defined in [api/types.ts:1017](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1017)*
-
-___
-
+*Defined in [api/types.ts:1046](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1046)*

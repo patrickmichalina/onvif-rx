@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [DynamicDNSType](../enums/_api_types_.dynamicdnstype.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [DynamicDNSType](_api_types_.dynamicdnstype.md)
 
 # Enumeration: DynamicDNSType
 
@@ -10,35 +10,26 @@
 * [NoUpdate](_api_types_.dynamicdnstype.md#noupdate)
 * [ServerUpdates](_api_types_.dynamicdnstype.md#serverupdates)
 
----
-
 ## Enumeration members
-
-<a id="clientupdates"></a>
 
 ###  ClientUpdates
 
-**ClientUpdates**:  = "ClientUpdates"
+• **ClientUpdates**: = "ClientUpdates"
 
-*Defined in [api/types.ts:4845](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4845)*
+*Defined in [api/types.ts:4971](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4971)*
 
 ___
-<a id="noupdate"></a>
 
 ###  NoUpdate
 
-**NoUpdate**:  = "NoUpdate"
+• **NoUpdate**: = "NoUpdate"
 
-*Defined in [api/types.ts:4841](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4841)*
+*Defined in [api/types.ts:4967](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4967)*
 
 ___
-<a id="serverupdates"></a>
 
 ###  ServerUpdates
 
-**ServerUpdates**:  = "ServerUpdates"
+• **ServerUpdates**: = "ServerUpdates"
 
-*Defined in [api/types.ts:4849](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4849)*
-
-___
-
+*Defined in [api/types.ts:4975](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4975)*

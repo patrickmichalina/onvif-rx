@@ -1,53 +1,41 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ItemList](../interfaces/_api_types_.itemlist.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ItemList](_api_types_.itemlist.md)
 
 # Interface: ItemList
 
-```
-        List of parameters according to the corresponding ItemListDescription.
-        Each item in the list shall have a unique name.
-```
+Value name pair as defined by the corresponding description.
 
 ## Hierarchy
 
-**ItemList**
+* **ItemList**
 
 ## Index
 
 ### Properties
 
-* [ElementItem](_api_types_.itemlist.md#elementitem)
-* [Extension](_api_types_.itemlist.md#extension)
-* [SimpleItem](_api_types_.itemlist.md#simpleitem)
-
----
+* [ElementItem](_api_types_.itemlist.md#optional-readonly-elementitem)
+* [Extension](_api_types_.itemlist.md#optional-readonly-extension)
+* [SimpleItem](_api_types_.itemlist.md#optional-readonly-simpleitem)
 
 ## Properties
 
-<a id="elementitem"></a>
+### `Optional` `Readonly` ElementItem
 
-### `<Optional>` ElementItem
+• **ElementItem**? : *any*
 
-**● ElementItem**: *`any`*
-
-*Defined in [api/types.ts:3284](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3284)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[ItemListExtension](_api_types_.itemlistextension.md)*
-
-*Defined in [api/types.ts:3285](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3285)*
-
-___
-<a id="simpleitem"></a>
-
-### `<Optional>` SimpleItem
-
-**● SimpleItem**: *`any`*
-
-*Defined in [api/types.ts:3283](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3283)*
+*Defined in [api/types.ts:3311](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3311)*
 
 ___
 
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[ItemListExtension](_api_types_.itemlistextension.md)*
+
+*Defined in [api/types.ts:3312](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3312)*
+
+___
+
+### `Optional` `Readonly` SimpleItem
+
+• **SimpleItem**? : *any*
+
+*Defined in [api/types.ts:3310](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3310)*

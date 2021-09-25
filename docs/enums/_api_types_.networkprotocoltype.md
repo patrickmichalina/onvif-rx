@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [NetworkProtocolType](../enums/_api_types_.networkprotocoltype.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [NetworkProtocolType](_api_types_.networkprotocoltype.md)
 
 # Enumeration: NetworkProtocolType
 
@@ -10,35 +10,26 @@
 * [HTTPS](_api_types_.networkprotocoltype.md#https)
 * [RTSP](_api_types_.networkprotocoltype.md#rtsp)
 
----
-
 ## Enumeration members
-
-<a id="http"></a>
 
 ###  HTTP
 
-**HTTP**:  = "HTTP"
+• **HTTP**: = "HTTP"
 
-*Defined in [api/types.ts:4777](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4777)*
+*Defined in [api/types.ts:4903](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4903)*
 
 ___
-<a id="https"></a>
 
 ###  HTTPS
 
-**HTTPS**:  = "HTTPS"
+• **HTTPS**: = "HTTPS"
 
-*Defined in [api/types.ts:4781](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4781)*
+*Defined in [api/types.ts:4907](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4907)*
 
 ___
-<a id="rtsp"></a>
 
 ###  RTSP
 
-**RTSP**:  = "RTSP"
+• **RTSP**: = "RTSP"
 
-*Defined in [api/types.ts:4785](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4785)*
-
-___
-
+*Defined in [api/types.ts:4911](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4911)*

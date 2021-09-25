@@ -1,42 +1,32 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [AbsoluteFocus](../interfaces/_api_types_.absolutefocus.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [AbsoluteFocus](_api_types_.absolutefocus.md)
 
 # Interface: AbsoluteFocus
 
-```
-            Position parameter for the absolute focus control.
-```
+Position parameter for the absolute focus control.
 
 ## Hierarchy
 
-**AbsoluteFocus**
+* **AbsoluteFocus**
 
 ## Index
 
 ### Properties
 
-* [Position](_api_types_.absolutefocus.md#position)
-* [Speed](_api_types_.absolutefocus.md#speed)
-
----
+* [Position](_api_types_.absolutefocus.md#readonly-position)
+* [Speed](_api_types_.absolutefocus.md#optional-readonly-speed)
 
 ## Properties
 
-<a id="position"></a>
+### `Readonly` Position
 
-###  Position
+• **Position**: *number*
 
-**● Position**: *`number`*
-
-*Defined in [api/types.ts:2761](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2761)*
-
-___
-<a id="speed"></a>
-
-### `<Optional>` Speed
-
-**● Speed**: *`undefined` \| `number`*
-
-*Defined in [api/types.ts:2762](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2762)*
+*Defined in [api/types.ts:2790](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2790)*
 
 ___
 
+### `Optional` `Readonly` Speed
+
+• **Speed**? : *undefined | number*
+
+*Defined in [api/types.ts:2791](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2791)*

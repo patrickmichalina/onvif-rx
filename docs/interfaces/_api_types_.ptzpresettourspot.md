@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZPresetTourSpot](../interfaces/_api_types_.ptzpresettourspot.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZPresetTourSpot](_api_types_.ptzpresettourspot.md)
 
 # Interface: PTZPresetTourSpot
 
@@ -6,55 +6,45 @@ Detail definition of preset position of the tour spot.
 
 ## Hierarchy
 
-**PTZPresetTourSpot**
+* **PTZPresetTourSpot**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.ptzpresettourspot.md#extension)
-* [PresetDetail](_api_types_.ptzpresettourspot.md#presetdetail)
-* [Speed](_api_types_.ptzpresettourspot.md#speed)
-* [StayTime](_api_types_.ptzpresettourspot.md#staytime)
-
----
+* [Extension](_api_types_.ptzpresettourspot.md#optional-readonly-extension)
+* [PresetDetail](_api_types_.ptzpresettourspot.md#readonly-presetdetail)
+* [Speed](_api_types_.ptzpresettourspot.md#optional-readonly-speed)
+* [StayTime](_api_types_.ptzpresettourspot.md#optional-readonly-staytime)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[PTZPresetTourSpotExtension](_api_types_.ptzpresettourspotextension.md)*
 
-**● Extension**: *[PTZPresetTourSpotExtension](_api_types_.ptzpresettourspotextension.md)*
-
-*Defined in [api/types.ts:2477](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2477)*
-
-___
-<a id="presetdetail"></a>
-
-###  PresetDetail
-
-**● PresetDetail**: *[PTZPresetTourPresetDetail](_api_types_.ptzpresettourpresetdetail.md)*
-
-*Defined in [api/types.ts:2474](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2474)*
-
-___
-<a id="speed"></a>
-
-### `<Optional>` Speed
-
-**● Speed**: *[PTZSpeed](_api_types_.ptzspeed.md)*
-
-*Defined in [api/types.ts:2475](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2475)*
-
-___
-<a id="staytime"></a>
-
-### `<Optional>` StayTime
-
-**● StayTime**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2476](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2476)*
+*Defined in [api/types.ts:2506](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2506)*
 
 ___
 
+### `Readonly` PresetDetail
+
+• **PresetDetail**: *[PTZPresetTourPresetDetail](_api_types_.ptzpresettourpresetdetail.md)*
+
+*Defined in [api/types.ts:2503](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2503)*
+
+___
+
+### `Optional` `Readonly` Speed
+
+• **Speed**? : *[PTZSpeed](_api_types_.ptzspeed.md)*
+
+*Defined in [api/types.ts:2504](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2504)*
+
+___
+
+### `Optional` `Readonly` StayTime
+
+• **StayTime**? : *undefined | string*
+
+*Defined in [api/types.ts:2505](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2505)*

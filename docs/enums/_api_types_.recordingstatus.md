@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [RecordingStatus](../enums/_api_types_.recordingstatus.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [RecordingStatus](_api_types_.recordingstatus.md)
 
 # Enumeration: RecordingStatus
 
@@ -15,64 +15,52 @@ This case should never happen.
 * [Stopped](_api_types_.recordingstatus.md#stopped)
 * [Unknown](_api_types_.recordingstatus.md#unknown)
 
----
-
 ## Enumeration members
-
-<a id="initiated"></a>
 
 ###  Initiated
 
-**Initiated**:  = "Initiated"
+• **Initiated**: = "Initiated"
 
-*Defined in [api/types.ts:5539](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5539)*
+*Defined in [api/types.ts:5715](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5715)*
 
 ___
-<a id="recording"></a>
 
 ###  Recording
 
-**Recording**:  = "Recording"
+• **Recording**: = "Recording"
 
-*Defined in [api/types.ts:5543](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5543)*
+*Defined in [api/types.ts:5719](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5719)*
 
 ___
-<a id="removed"></a>
 
 ###  Removed
 
-**Removed**:  = "Removed"
+• **Removed**: = "Removed"
 
-*Defined in [api/types.ts:5555](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5555)*
+*Defined in [api/types.ts:5731](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5731)*
 
 ___
-<a id="removing"></a>
 
 ###  Removing
 
-**Removing**:  = "Removing"
+• **Removing**: = "Removing"
 
-*Defined in [api/types.ts:5551](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5551)*
+*Defined in [api/types.ts:5727](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5727)*
 
 ___
-<a id="stopped"></a>
 
 ###  Stopped
 
-**Stopped**:  = "Stopped"
+• **Stopped**: = "Stopped"
 
-*Defined in [api/types.ts:5547](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5547)*
+*Defined in [api/types.ts:5723](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5723)*
 
 ___
-<a id="unknown"></a>
 
 ###  Unknown
 
-**Unknown**:  = "Unknown"
+• **Unknown**: = "Unknown"
 
-*Defined in [api/types.ts:5559](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5559)*
+*Defined in [api/types.ts:5735](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5735)*
 
 This case should never happen.
-
-___
-

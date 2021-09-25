@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [RotateMode](../enums/_api_types_.rotatemode.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [RotateMode](_api_types_.rotatemode.md)
 
 # Enumeration: RotateMode
 
@@ -12,41 +12,32 @@ Enable the Rotate feature. Degree of rotation is specified Degree parameter.
 * [OFF](_api_types_.rotatemode.md#off)
 * [ON](_api_types_.rotatemode.md#on)
 
----
-
 ## Enumeration members
-
-<a id="auto"></a>
 
 ###  AUTO
 
-**AUTO**:  = "AUTO"
+• **AUTO**: = "AUTO"
 
-*Defined in [api/types.ts:4431](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4431)*
+*Defined in [api/types.ts:4553](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4553)*
 
 Rotate feature is automatically activated by the device.
 
 ___
-<a id="off"></a>
 
 ###  OFF
 
-**OFF**:  = "OFF"
+• **OFF**: = "OFF"
 
-*Defined in [api/types.ts:4423](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4423)*
+*Defined in [api/types.ts:4545](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4545)*
 
 Enable the Rotate feature. Degree of rotation is specified Degree parameter.
 
 ___
-<a id="on"></a>
 
 ###  ON
 
-**ON**:  = "ON"
+• **ON**: = "ON"
 
-*Defined in [api/types.ts:4427](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4427)*
+*Defined in [api/types.ts:4549](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4549)*
 
 Disable the Rotate feature.
-
-___
-

@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZPositionFilter](../interfaces/_api_types_.ptzpositionfilter.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZPositionFilter](_api_types_.ptzpositionfilter.md)
 
 # Interface: PTZPositionFilter
 
@@ -6,45 +6,36 @@ The lower boundary of the PTZ volume to look for.
 
 ## Hierarchy
 
-**PTZPositionFilter**
+* **PTZPositionFilter**
 
 ## Index
 
 ### Properties
 
-* [EnterOrExit](_api_types_.ptzpositionfilter.md#enterorexit)
-* [MaxPosition](_api_types_.ptzpositionfilter.md#maxposition)
-* [MinPosition](_api_types_.ptzpositionfilter.md#minposition)
-
----
+* [EnterOrExit](_api_types_.ptzpositionfilter.md#readonly-enterorexit)
+* [MaxPosition](_api_types_.ptzpositionfilter.md#readonly-maxposition)
+* [MinPosition](_api_types_.ptzpositionfilter.md#readonly-minposition)
 
 ## Properties
 
-<a id="enterorexit"></a>
+### `Readonly` EnterOrExit
 
-###  EnterOrExit
+• **EnterOrExit**: *boolean*
 
-**● EnterOrExit**: *`boolean`*
-
-*Defined in [api/types.ts:3631](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3631)*
-
-___
-<a id="maxposition"></a>
-
-###  MaxPosition
-
-**● MaxPosition**: *[PTZVector](_api_types_.ptzvector.md)*
-
-*Defined in [api/types.ts:3630](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3630)*
-
-___
-<a id="minposition"></a>
-
-###  MinPosition
-
-**● MinPosition**: *[PTZVector](_api_types_.ptzvector.md)*
-
-*Defined in [api/types.ts:3629](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3629)*
+*Defined in [api/types.ts:3651](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3651)*
 
 ___
 
+### `Readonly` MaxPosition
+
+• **MaxPosition**: *[PTZVector](_api_types_.ptzvector.md)*
+
+*Defined in [api/types.ts:3650](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3650)*
+
+___
+
+### `Readonly` MinPosition
+
+• **MinPosition**: *[PTZVector](_api_types_.ptzvector.md)*
+
+*Defined in [api/types.ts:3649](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3649)*

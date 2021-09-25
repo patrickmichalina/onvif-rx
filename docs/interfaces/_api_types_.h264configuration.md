@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [H264Configuration](../interfaces/_api_types_.h264configuration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [H264Configuration](_api_types_.h264configuration.md)
 
 # Interface: H264Configuration
 
@@ -6,35 +6,27 @@ Group of Video frames length. Determines typically the interval in which the I-F
 
 ## Hierarchy
 
-**H264Configuration**
+* **H264Configuration**
 
 ## Index
 
 ### Properties
 
-* [GovLength](_api_types_.h264configuration.md#govlength)
-* [H264Profile](_api_types_.h264configuration.md#h264profile)
-
----
+* [GovLength](_api_types_.h264configuration.md#readonly-govlength)
+* [H264Profile](_api_types_.h264configuration.md#readonly-h264profile)
 
 ## Properties
 
-<a id="govlength"></a>
+### `Readonly` GovLength
 
-###  GovLength
+• **GovLength**: *number*
 
-**● GovLength**: *`number`*
-
-*Defined in [api/types.ts:727](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L727)*
-
-___
-<a id="h264profile"></a>
-
-###  H264Profile
-
-**● H264Profile**: *[H264Profile](../enums/_api_types_.h264profile.md)*
-
-*Defined in [api/types.ts:728](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L728)*
+*Defined in [api/types.ts:756](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L756)*
 
 ___
 
+### `Readonly` H264Profile
+
+• **H264Profile**: *[H264Profile](../enums/_api_types_.h264profile.md)*
+
+*Defined in [api/types.ts:757](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L757)*

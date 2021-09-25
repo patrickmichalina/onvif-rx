@@ -1,38 +1,30 @@
-[onvif-rx](../README.md) > ["config/interfaces"](../modules/_config_interfaces_.md) > [IUserCredentials](../interfaces/_config_interfaces_.iusercredentials.md)
+[onvif-rx](../README.md) › ["config/interfaces"](../modules/_config_interfaces_.md) › [IUserCredentials](_config_interfaces_.iusercredentials.md)
 
 # Interface: IUserCredentials
 
 ## Hierarchy
 
-**IUserCredentials**
+* **IUserCredentials**
 
 ## Index
 
 ### Properties
 
-* [password](_config_interfaces_.iusercredentials.md#password)
-* [username](_config_interfaces_.iusercredentials.md#username)
-
----
+* [password](_config_interfaces_.iusercredentials.md#readonly-password)
+* [username](_config_interfaces_.iusercredentials.md#readonly-username)
 
 ## Properties
 
-<a id="password"></a>
+### `Readonly` password
 
-###  password
+• **password**: *string*
 
-**● password**: *`string`*
-
-*Defined in [config/interfaces.ts:32](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L32)*
-
-___
-<a id="username"></a>
-
-###  username
-
-**● username**: *`string`*
-
-*Defined in [config/interfaces.ts:31](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L31)*
+*Defined in [config/interfaces.ts:31](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L31)*
 
 ___
 
+### `Readonly` username
+
+• **username**: *string*
+
+*Defined in [config/interfaces.ts:30](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L30)*

@@ -1,92 +1,77 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Dot1XConfiguration](../interfaces/_api_types_.dot1xconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Dot1XConfiguration](_api_types_.dot1xconfiguration.md)
 
 # Interface: Dot1XConfiguration
 
-```
-            EAP Method type as defined in IANA EAP Registry.
-```
+EAP Method type as defined in IANA EAP Registry.
 
 ## Hierarchy
 
-**Dot1XConfiguration**
+* **Dot1XConfiguration**
 
 ## Index
 
 ### Properties
 
-* [AnonymousID](_api_types_.dot1xconfiguration.md#anonymousid)
-* [CACertificateID](_api_types_.dot1xconfiguration.md#cacertificateid)
-* [Dot1XConfigurationToken](_api_types_.dot1xconfiguration.md#dot1xconfigurationtoken)
-* [EAPMethod](_api_types_.dot1xconfiguration.md#eapmethod)
-* [EAPMethodConfiguration](_api_types_.dot1xconfiguration.md#eapmethodconfiguration)
-* [Extension](_api_types_.dot1xconfiguration.md#extension)
-* [Identity](_api_types_.dot1xconfiguration.md#identity)
-
----
+* [AnonymousID](_api_types_.dot1xconfiguration.md#optional-readonly-anonymousid)
+* [CACertificateID](_api_types_.dot1xconfiguration.md#optional-readonly-cacertificateid)
+* [Dot1XConfigurationToken](_api_types_.dot1xconfiguration.md#readonly-dot1xconfigurationtoken)
+* [EAPMethod](_api_types_.dot1xconfiguration.md#readonly-eapmethod)
+* [EAPMethodConfiguration](_api_types_.dot1xconfiguration.md#optional-readonly-eapmethodconfiguration)
+* [Extension](_api_types_.dot1xconfiguration.md#optional-readonly-extension)
+* [Identity](_api_types_.dot1xconfiguration.md#readonly-identity)
 
 ## Properties
 
-<a id="anonymousid"></a>
+### `Optional` `Readonly` AnonymousID
 
-### `<Optional>` AnonymousID
+• **AnonymousID**? : *undefined | string*
 
-**● AnonymousID**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2131](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2131)*
-
-___
-<a id="cacertificateid"></a>
-
-### `<Optional>` CACertificateID
-
-**● CACertificateID**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2133](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2133)*
-
-___
-<a id="dot1xconfigurationtoken"></a>
-
-###  Dot1XConfigurationToken
-
-**● Dot1XConfigurationToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
-
-*Defined in [api/types.ts:2129](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2129)*
-
-___
-<a id="eapmethod"></a>
-
-###  EAPMethod
-
-**● EAPMethod**: *`number`*
-
-*Defined in [api/types.ts:2132](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2132)*
-
-___
-<a id="eapmethodconfiguration"></a>
-
-### `<Optional>` EAPMethodConfiguration
-
-**● EAPMethodConfiguration**: *[EAPMethodConfiguration](_api_types_.dot1xconfiguration.md#eapmethodconfiguration)*
-
-*Defined in [api/types.ts:2134](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2134)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[Dot1XConfigurationExtension](_api_types_.dot1xconfigurationextension.md)*
-
-*Defined in [api/types.ts:2135](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2135)*
-
-___
-<a id="identity"></a>
-
-###  Identity
-
-**● Identity**: *`string`*
-
-*Defined in [api/types.ts:2130](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2130)*
+*Defined in [api/types.ts:2160](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2160)*
 
 ___
 
+### `Optional` `Readonly` CACertificateID
+
+• **CACertificateID**? : *undefined | string*
+
+*Defined in [api/types.ts:2162](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2162)*
+
+___
+
+### `Readonly` Dot1XConfigurationToken
+
+• **Dot1XConfigurationToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
+
+*Defined in [api/types.ts:2158](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2158)*
+
+___
+
+### `Readonly` EAPMethod
+
+• **EAPMethod**: *number*
+
+*Defined in [api/types.ts:2161](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2161)*
+
+___
+
+### `Optional` `Readonly` EAPMethodConfiguration
+
+• **EAPMethodConfiguration**? : *[EAPMethodConfiguration](_api_types_.dot1xconfiguration.md#optional-readonly-eapmethodconfiguration)*
+
+*Defined in [api/types.ts:2163](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2163)*
+
+___
+
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[Dot1XConfigurationExtension](_api_types_.dot1xconfigurationextension.md)*
+
+*Defined in [api/types.ts:2164](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2164)*
+
+___
+
+### `Readonly` Identity
+
+• **Identity**: *string*
+
+*Defined in [api/types.ts:2159](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2159)*

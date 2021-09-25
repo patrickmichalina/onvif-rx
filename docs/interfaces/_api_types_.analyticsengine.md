@@ -1,28 +1,21 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [AnalyticsEngine](../interfaces/_api_types_.analyticsengine.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [AnalyticsEngine](_api_types_.analyticsengine.md)
 
 # Interface: AnalyticsEngine
 
 ## Hierarchy
 
-**AnalyticsEngine**
+* **AnalyticsEngine**
 
 ## Index
 
 ### Properties
 
-* [AnalyticsEngineConfiguration](_api_types_.analyticsengine.md#analyticsengineconfiguration)
-
----
+* [AnalyticsEngineConfiguration](_api_types_.analyticsengine.md#readonly-analyticsengineconfiguration)
 
 ## Properties
 
-<a id="analyticsengineconfiguration"></a>
+### `Readonly` AnalyticsEngineConfiguration
 
-###  AnalyticsEngineConfiguration
+• **AnalyticsEngineConfiguration**: *[AnalyticsDeviceEngineConfiguration](_api_types_.analyticsdeviceengineconfiguration.md)*
 
-**● AnalyticsEngineConfiguration**: *[AnalyticsDeviceEngineConfiguration](_api_types_.analyticsdeviceengineconfiguration.md)*
-
-*Defined in [api/types.ts:3953](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3953)*
-
-___
-
+*Defined in [api/types.ts:3973](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3973)*

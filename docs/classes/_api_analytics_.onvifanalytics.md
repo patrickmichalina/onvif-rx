@@ -1,10 +1,10 @@
-[onvif-rx](../README.md) > ["api/analytics"](../modules/_api_analytics_.md) > [ONVIFAnalytics](../classes/_api_analytics_.onvifanalytics.md)
+[onvif-rx](../README.md) › ["api/analytics"](../modules/_api_analytics_.md) › [ONVIFAnalytics](_api_analytics_.onvifanalytics.md)
 
 # Class: ONVIFAnalytics
 
 ## Hierarchy
 
-**ONVIFAnalytics**
+* **ONVIFAnalytics**
 
 ## Index
 
@@ -14,7 +14,7 @@
 
 ### Properties
 
-* [config](_api_analytics_.onvifanalytics.md#config)
+* [config](_api_analytics_.onvifanalytics.md#private-config)
 
 ### Methods
 
@@ -28,567 +28,611 @@
 * [GetRules](_api_analytics_.onvifanalytics.md#getrules)
 * [GetServiceCapabilities](_api_analytics_.onvifanalytics.md#getservicecapabilities)
 * [GetSupportedAnalyticsModules](_api_analytics_.onvifanalytics.md#getsupportedanalyticsmodules)
+* [GetSupportedMetadata](_api_analytics_.onvifanalytics.md#getsupportedmetadata)
 * [GetSupportedRules](_api_analytics_.onvifanalytics.md#getsupportedrules)
 * [ModifyAnalyticsModules](_api_analytics_.onvifanalytics.md#modifyanalyticsmodules)
 * [ModifyRules](_api_analytics_.onvifanalytics.md#modifyrules)
-* [CreateAnalyticsModules](_api_analytics_.onvifanalytics.md#createanalyticsmodules-1)
-* [CreateRules](_api_analytics_.onvifanalytics.md#createrules-1)
-* [DeleteAnalyticsModules](_api_analytics_.onvifanalytics.md#deleteanalyticsmodules-1)
-* [DeleteRules](_api_analytics_.onvifanalytics.md#deleterules-1)
-* [GetAnalyticsModuleOptions](_api_analytics_.onvifanalytics.md#getanalyticsmoduleoptions-1)
-* [GetAnalyticsModules](_api_analytics_.onvifanalytics.md#getanalyticsmodules-1)
-* [GetRuleOptions](_api_analytics_.onvifanalytics.md#getruleoptions-1)
-* [GetRules](_api_analytics_.onvifanalytics.md#getrules-1)
-* [GetServiceCapabilities](_api_analytics_.onvifanalytics.md#getservicecapabilities-1)
-* [GetSupportedAnalyticsModules](_api_analytics_.onvifanalytics.md#getsupportedanalyticsmodules-1)
-* [GetSupportedRules](_api_analytics_.onvifanalytics.md#getsupportedrules-1)
-* [ModifyAnalyticsModules](_api_analytics_.onvifanalytics.md#modifyanalyticsmodules-1)
-* [ModifyRules](_api_analytics_.onvifanalytics.md#modifyrules-1)
-
----
+* [CreateAnalyticsModules](_api_analytics_.onvifanalytics.md#static-createanalyticsmodules)
+* [CreateRules](_api_analytics_.onvifanalytics.md#static-createrules)
+* [DeleteAnalyticsModules](_api_analytics_.onvifanalytics.md#static-deleteanalyticsmodules)
+* [DeleteRules](_api_analytics_.onvifanalytics.md#static-deleterules)
+* [GetAnalyticsModuleOptions](_api_analytics_.onvifanalytics.md#static-getanalyticsmoduleoptions)
+* [GetAnalyticsModules](_api_analytics_.onvifanalytics.md#static-getanalyticsmodules)
+* [GetRuleOptions](_api_analytics_.onvifanalytics.md#static-getruleoptions)
+* [GetRules](_api_analytics_.onvifanalytics.md#static-getrules)
+* [GetServiceCapabilities](_api_analytics_.onvifanalytics.md#static-getservicecapabilities)
+* [GetSupportedAnalyticsModules](_api_analytics_.onvifanalytics.md#static-getsupportedanalyticsmodules)
+* [GetSupportedMetadata](_api_analytics_.onvifanalytics.md#static-getsupportedmetadata)
+* [GetSupportedRules](_api_analytics_.onvifanalytics.md#static-getsupportedrules)
+* [ModifyAnalyticsModules](_api_analytics_.onvifanalytics.md#static-modifyanalyticsmodules)
+* [ModifyRules](_api_analytics_.onvifanalytics.md#static-modifyrules)
 
 ## Constructors
 
-<a id="constructor"></a>
-
 ###  constructor
 
-⊕ **new ONVIFAnalytics**(config: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*): [ONVIFAnalytics](_api_analytics_.onvifanalytics.md)
+\+ **new ONVIFAnalytics**(`config`: [IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)): *[ONVIFAnalytics](_api_analytics_.onvifanalytics.md)*
 
-*Defined in [api/analytics.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L5)*
+*Defined in [api/analytics.ts:5](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L5)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| config | [IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md) |
+Name | Type |
+------ | ------ |
+`config` | [IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md) |
 
-**Returns:** [ONVIFAnalytics](_api_analytics_.onvifanalytics.md)
-
-___
+**Returns:** *[ONVIFAnalytics](_api_analytics_.onvifanalytics.md)*
 
 ## Properties
 
-<a id="config"></a>
+### `Private` config
 
-### `<Private>` config
+• **config**: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*
 
-**● config**: *[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)*
-
-*Defined in [api/analytics.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L6)*
-
-___
+*Defined in [api/analytics.ts:6](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L6)*
 
 ## Methods
 
-<a id="createanalyticsmodules"></a>
-
 ###  CreateAnalyticsModules
 
-▸ **CreateAnalyticsModules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, AnalyticsModule: *[Config](../interfaces/_api_types_.config.md)*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+▸ **CreateAnalyticsModules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `AnalyticsModule`: [Config](../interfaces/_api_types_.config.md)): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
-*Defined in [api/analytics.ts:289](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L289)*
+*Defined in [api/analytics.ts:298](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L298)*
 
-Add one or more analytics modules to an existing VideoAnalyticsConfiguration. The available supported types can be retrieved via GetSupportedAnalyticsModules, where the Name of the supported AnalyticsModules correspond to the type of an AnalyticsModule instance. Pass unique module names which can be later used as reference. The Parameters of the analytics module must match those of the corresponding AnalyticsModuleDescription.
+  Add one or more analytics modules to an existing VideoAnalyticsConfiguration.
+  The available supported types can be retrieved via GetSupportedAnalyticsModules,
+  where the Name of the supported AnalyticsModules correspond to the type of an AnalyticsModule instance.
+  Pass unique module names which can be later used as reference. The Parameters of the analytics module must match those of the corresponding AnalyticsModuleDescription.
 
-Although this method is mandatory a device implementation must not support adding modules. Instead it can provide a fixed set of predefined configurations via the media service function GetCompatibleVideoAnalyticsConfigurations.
+  Although this method is mandatory a device implementation may not support adding modules.
+  Instead it can provide a fixed set of predefined configurations via the media service functions
+  GetCompatibleVideoAnalyticsConfigurations and
+  GetAnalyticsConfigurations.
 
-The device shall ensure that a corresponding analytics engine starts operation when a client subscribes directly or indirectly for events produced by the analytics or rule engine or when a client requests the corresponding scene description stream. An analytics module must be attached to a Video source using the media profiles before it can be used. In case differing analytics configurations are attached to the same profile it is undefined which of the analytics module configuration becomes active if no stream is activated or multiple streams with different profiles are activated at the same time.
+  The device shall ensure that a corresponding analytics engine starts operation when a client
+  subscribes directly or indirectly for events produced by the analytics or rule engine or when a
+  client requests the corresponding scene description stream.
+  An analytics module must be attached to a Video source using the media profiles before it can be used.
+  In case differing analytics configurations are attached to the same profile it is undefined which
+  of the analytics module configuration becomes active if no stream is activated or multiple streams
+  with different profiles are activated at the same time.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| AnalyticsModule | [Config](../interfaces/_api_types_.config.md) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`AnalyticsModule` | [Config](../interfaces/_api_types_.config.md) |
 
-**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
 ___
-<a id="createrules"></a>
 
 ###  CreateRules
 
-▸ **CreateRules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Rule: *[Config](../interfaces/_api_types_.config.md)*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+▸ **CreateRules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `Rule`: [Config](../interfaces/_api_types_.config.md)): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
-*Defined in [api/analytics.ts:202](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L202)*
+*Defined in [api/analytics.ts:212](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L212)*
 
-Add one or more rules to an existing VideoAnalyticsConfiguration. The available supported types can be retrieved via GetSupportedRules, where the Name of the supported rule correspond to the type of an rule instance. Pass unique module names which can be later used as reference. The Parameters of the rules must match those of the corresponding description.
+  Add one or more rules to an existing VideoAnalyticsConfiguration.
+  The available supported types can be retrieved via GetSupportedRules,
+  where the Name of the supported rule correspond to the type of an rule instance.
+  Pass unique module names which can be later used as reference.
+  The Parameters of the rules must match those of the corresponding description.
 
-Although this method is mandatory a device implementation must not support adding rules. Instead it can provide a fixed set of predefined configurations via the media service function GetCompatibleVideoAnalyticsConfigurations.
+  Although this method is mandatory a device implementation must not support adding rules.
+  Instead it can provide a fixed set of predefined configurations via the media service function
+  GetCompatibleVideoAnalyticsConfigurations.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| Rule | [Config](../interfaces/_api_types_.config.md) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`Rule` | [Config](../interfaces/_api_types_.config.md) |
 
-**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
 ___
-<a id="deleteanalyticsmodules"></a>
 
 ###  DeleteAnalyticsModules
 
-▸ **DeleteAnalyticsModules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, AnalyticsModuleName: *`string`*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+▸ **DeleteAnalyticsModules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `AnalyticsModuleName`: string): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
-*Defined in [api/analytics.ts:298](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L298)*
+*Defined in [api/analytics.ts:307](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L307)*
 
-Remove one or more analytics modules from a VideoAnalyticsConfiguration referenced by their names.
+  Remove one or more analytics modules from a VideoAnalyticsConfiguration referenced by their names.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| AnalyticsModuleName | `string` |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`AnalyticsModuleName` | string |
 
-**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
 ___
-<a id="deleterules"></a>
 
 ###  DeleteRules
 
-▸ **DeleteRules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, RuleName: *`string`*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+▸ **DeleteRules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `RuleName`: string): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
-*Defined in [api/analytics.ts:211](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L211)*
+*Defined in [api/analytics.ts:221](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L221)*
 
-Remove one or more rules from a VideoAnalyticsConfiguration.
+  Remove one or more rules from a VideoAnalyticsConfiguration.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| RuleName | `string` |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`RuleName` | string |
 
-**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
 ___
-<a id="getanalyticsmoduleoptions"></a>
 
 ###  GetAnalyticsModuleOptions
 
-▸ **GetAnalyticsModuleOptions**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Type: *`any`*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+▸ **GetAnalyticsModuleOptions**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `Type?`: any): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
-*Defined in [api/analytics.ts:265](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L265)*
+*Defined in [api/analytics.ts:273](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L273)*
 
-Return the options for the supported analytics modules that specify an Option attribute.
+  Return the options for the supported analytics modules that specify an Option attribute.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| Type | `any` |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`Type?` | any |
 
-**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
 ___
-<a id="getanalyticsmodules"></a>
 
 ###  GetAnalyticsModules
 
-▸ **GetAnalyticsModules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+▸ **GetAnalyticsModules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken)): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
-*Defined in [api/analytics.ts:307](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L307)*
+*Defined in [api/analytics.ts:316](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L316)*
 
-List the currently assigned set of analytics modules of a VideoAnalyticsConfiguration.
+  List the currently assigned set of analytics modules of a VideoAnalyticsConfiguration.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
 
-**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
 ___
-<a id="getruleoptions"></a>
 
 ###  GetRuleOptions
 
-▸ **GetRuleOptions**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, RuleType: *`any`*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+▸ **GetRuleOptions**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `RuleType?`: any): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
-*Defined in [api/analytics.ts:229](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L229)*
+*Defined in [api/analytics.ts:239](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L239)*
 
-Return the options for the supported rules that specify an Option attribute.
+  Return the options for the supported rules that specify an Option attribute.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| RuleType | `any` |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`RuleType?` | any |
 
-**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
 ___
-<a id="getrules"></a>
 
 ###  GetRules
 
-▸ **GetRules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+▸ **GetRules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken)): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
-*Defined in [api/analytics.ts:220](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L220)*
+*Defined in [api/analytics.ts:230](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L230)*
 
-List the currently assigned set of rules of a VideoAnalyticsConfiguration.
+  List the currently assigned set of rules of a VideoAnalyticsConfiguration.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
 
-**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
 ___
-<a id="getservicecapabilities"></a>
 
 ###  GetServiceCapabilities
 
-▸ **GetServiceCapabilities**(): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+▸ **GetServiceCapabilities**(): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
-*Defined in [api/analytics.ts:245](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L245)*
+*Defined in [api/analytics.ts:255](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L255)*
 
 Returns the capabilities of the analytics service. The result is returned in a typed answer.
 
-**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
 ___
-<a id="getsupportedanalyticsmodules"></a>
 
 ###  GetSupportedAnalyticsModules
 
-▸ **GetSupportedAnalyticsModules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+▸ **GetSupportedAnalyticsModules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken)): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
-*Defined in [api/analytics.ts:256](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L256)*
+*Defined in [api/analytics.ts:264](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L264)*
 
-List all analytics modules that are supported by the given VideoAnalyticsConfiguration. The result of this method may depend on the overall Video analytics configuration of the device, which is available via the current set of profiles.
+  List all analytics modules that are supported by the given VideoAnalyticsConfiguration.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
 
-**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
 ___
-<a id="getsupportedrules"></a>
+
+###  GetSupportedMetadata
+
+▸ **GetSupportedMetadata**(`Type?`: any): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
+
+*Defined in [api/analytics.ts:339](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L339)*
+
+  This method provides a computer readable description of the metadata that the selected analytics modules can generate.
+  The type parameter allows to select a single analytics module. By default the output shall relate to all analytics modules that exist in the device.
+  The response shall provide a sample XML frame.
+  The sample frame shall include all potentially generated elements by the selected analytics modules.
+  Note that this e.g. does not need to include all possible class type enumerations.
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`Type?` | any |
+
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
+
+___
 
 ###  GetSupportedRules
 
-▸ **GetSupportedRules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+▸ **GetSupportedRules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken)): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
-*Defined in [api/analytics.ts:185](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L185)*
+*Defined in [api/analytics.ts:195](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L195)*
 
-List all rules that are supported by the given VideoAnalyticsConfiguration. The result of this method may depend on the overall Video analytics configuration of the device, which is available via the current set of profiles.
+  List all rules that are supported by the given VideoAnalyticsConfiguration.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
 
-**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
 ___
-<a id="modifyanalyticsmodules"></a>
 
 ###  ModifyAnalyticsModules
 
-▸ **ModifyAnalyticsModules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, AnalyticsModule: *[Config](../interfaces/_api_types_.config.md)*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+▸ **ModifyAnalyticsModules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `AnalyticsModule`: [Config](../interfaces/_api_types_.config.md)): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
-*Defined in [api/analytics.ts:317](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L317)*
+*Defined in [api/analytics.ts:326](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L326)*
 
-Modify the settings of one or more analytics modules of a VideoAnalyticsConfiguration. The modules are referenced by their names. It is allowed to pass only a subset to be modified.
+  Modify the settings of one or more analytics modules of a VideoAnalyticsConfiguration. The modules are referenced by their names.
+  It is allowed to pass only a subset to be modified.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| AnalyticsModule | [Config](../interfaces/_api_types_.config.md) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`AnalyticsModule` | [Config](../interfaces/_api_types_.config.md) |
 
-**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
 ___
-<a id="modifyrules"></a>
 
 ###  ModifyRules
 
-▸ **ModifyRules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Rule: *[Config](../interfaces/_api_types_.config.md)*): `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
+▸ **ModifyRules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `Rule`: [Config](../interfaces/_api_types_.config.md)): *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
-*Defined in [api/analytics.ts:238](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L238)*
+*Defined in [api/analytics.ts:248](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L248)*
 
-Modify one or more rules of a VideoAnalyticsConfiguration. The rules are referenced by their names.
-
-**Parameters:**
-
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| Rule | [Config](../interfaces/_api_types_.config.md) |
-
-**Returns:** `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>
-
-___
-<a id="createanalyticsmodules-1"></a>
-
-### `<Static>` CreateAnalyticsModules
-
-▸ **CreateAnalyticsModules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, AnalyticsModule: *[Config](../interfaces/_api_types_.config.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
-
-*Defined in [api/analytics.ts:138](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L138)*
-
-Add one or more analytics modules to an existing VideoAnalyticsConfiguration. The available supported types can be retrieved via GetSupportedAnalyticsModules, where the Name of the supported AnalyticsModules correspond to the type of an AnalyticsModule instance. Pass unique module names which can be later used as reference. The Parameters of the analytics module must match those of the corresponding AnalyticsModuleDescription.
-
-Although this method is mandatory a device implementation must not support adding modules. Instead it can provide a fixed set of predefined configurations via the media service function GetCompatibleVideoAnalyticsConfigurations.
-
-The device shall ensure that a corresponding analytics engine starts operation when a client subscribes directly or indirectly for events produced by the analytics or rule engine or when a client requests the corresponding scene description stream. An analytics module must be attached to a Video source using the media profiles before it can be used. In case differing analytics configurations are attached to the same profile it is undefined which of the analytics module configuration becomes active if no stream is activated or multiple streams with different profiles are activated at the same time.
+  Modify one or more rules of a VideoAnalyticsConfiguration. The rules are referenced by their names.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| AnalyticsModule | [Config](../interfaces/_api_types_.config.md) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`Rule` | [Config](../interfaces/_api_types_.config.md) |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+**Returns:** *Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)››*
 
 ___
-<a id="createrules-1"></a>
 
-### `<Static>` CreateRules
+### `Static` CreateAnalyticsModules
 
-▸ **CreateRules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Rule: *[Config](../interfaces/_api_types_.config.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+▸ **CreateAnalyticsModules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `AnalyticsModule`: [Config](../interfaces/_api_types_.config.md)): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
-*Defined in [api/analytics.ts:35](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L35)*
+*Defined in [api/analytics.ts:135](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L135)*
 
-Add one or more rules to an existing VideoAnalyticsConfiguration. The available supported types can be retrieved via GetSupportedRules, where the Name of the supported rule correspond to the type of an rule instance. Pass unique module names which can be later used as reference. The Parameters of the rules must match those of the corresponding description.
+  Add one or more analytics modules to an existing VideoAnalyticsConfiguration.
+  The available supported types can be retrieved via GetSupportedAnalyticsModules,
+  where the Name of the supported AnalyticsModules correspond to the type of an AnalyticsModule instance.
+  Pass unique module names which can be later used as reference. The Parameters of the analytics module must match those of the corresponding AnalyticsModuleDescription.
 
-Although this method is mandatory a device implementation must not support adding rules. Instead it can provide a fixed set of predefined configurations via the media service function GetCompatibleVideoAnalyticsConfigurations.
+  Although this method is mandatory a device implementation may not support adding modules.
+  Instead it can provide a fixed set of predefined configurations via the media service functions
+  GetCompatibleVideoAnalyticsConfigurations and
+  GetAnalyticsConfigurations.
+
+  The device shall ensure that a corresponding analytics engine starts operation when a client
+  subscribes directly or indirectly for events produced by the analytics or rule engine or when a
+  client requests the corresponding scene description stream.
+  An analytics module must be attached to a Video source using the media profiles before it can be used.
+  In case differing analytics configurations are attached to the same profile it is undefined which
+  of the analytics module configuration becomes active if no stream is activated or multiple streams
+  with different profiles are activated at the same time.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| Rule | [Config](../interfaces/_api_types_.config.md) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`AnalyticsModule` | [Config](../interfaces/_api_types_.config.md) |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
 ___
-<a id="deleteanalyticsmodules-1"></a>
 
-### `<Static>` DeleteAnalyticsModules
+### `Static` CreateRules
 
-▸ **DeleteAnalyticsModules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, AnalyticsModuleName: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+▸ **CreateRules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `Rule`: [Config](../interfaces/_api_types_.config.md)): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
-*Defined in [api/analytics.ts:149](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L149)*
+*Defined in [api/analytics.ts:33](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L33)*
 
-Remove one or more analytics modules from a VideoAnalyticsConfiguration referenced by their names.
+  Add one or more rules to an existing VideoAnalyticsConfiguration.
+  The available supported types can be retrieved via GetSupportedRules,
+  where the Name of the supported rule correspond to the type of an rule instance.
+  Pass unique module names which can be later used as reference.
+  The Parameters of the rules must match those of the corresponding description.
+
+  Although this method is mandatory a device implementation must not support adding rules.
+  Instead it can provide a fixed set of predefined configurations via the media service function
+  GetCompatibleVideoAnalyticsConfigurations.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| AnalyticsModuleName | `string` |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`Rule` | [Config](../interfaces/_api_types_.config.md) |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
 ___
-<a id="deleterules-1"></a>
 
-### `<Static>` DeleteRules
+### `Static` DeleteAnalyticsModules
 
-▸ **DeleteRules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, RuleName: *`string`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+▸ **DeleteAnalyticsModules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `AnalyticsModuleName`: string): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
-*Defined in [api/analytics.ts:46](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L46)*
+*Defined in [api/analytics.ts:146](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L146)*
 
-Remove one or more rules from a VideoAnalyticsConfiguration.
+  Remove one or more analytics modules from a VideoAnalyticsConfiguration referenced by their names.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| RuleName | `string` |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`AnalyticsModuleName` | string |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
 ___
-<a id="getanalyticsmoduleoptions-1"></a>
 
-### `<Static>` GetAnalyticsModuleOptions
+### `Static` DeleteRules
 
-▸ **GetAnalyticsModuleOptions**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Type?: *`any`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+▸ **DeleteRules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `RuleName`: string): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
-*Defined in [api/analytics.ts:112](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L112)*
+*Defined in [api/analytics.ts:44](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L44)*
 
-Return the options for the supported analytics modules that specify an Option attribute.
+  Remove one or more rules from a VideoAnalyticsConfiguration.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| `Optional` Type | `any` |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`RuleName` | string |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
 ___
-<a id="getanalyticsmodules-1"></a>
 
-### `<Static>` GetAnalyticsModules
+### `Static` GetAnalyticsModuleOptions
 
-▸ **GetAnalyticsModules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+▸ **GetAnalyticsModuleOptions**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `Type?`: any): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
-*Defined in [api/analytics.ts:160](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L160)*
+*Defined in [api/analytics.ts:108](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L108)*
 
-List the currently assigned set of analytics modules of a VideoAnalyticsConfiguration.
+  Return the options for the supported analytics modules that specify an Option attribute.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`Type?` | any |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
 ___
-<a id="getruleoptions-1"></a>
 
-### `<Static>` GetRuleOptions
+### `Static` GetAnalyticsModules
 
-▸ **GetRuleOptions**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, RuleType?: *`any`*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+▸ **GetAnalyticsModules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken)): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
-*Defined in [api/analytics.ts:68](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L68)*
+*Defined in [api/analytics.ts:157](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L157)*
 
-Return the options for the supported rules that specify an Option attribute.
+  List the currently assigned set of analytics modules of a VideoAnalyticsConfiguration.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| `Optional` RuleType | `any` |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
 ___
-<a id="getrules-1"></a>
 
-### `<Static>` GetRules
+### `Static` GetRuleOptions
 
-▸ **GetRules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+▸ **GetRuleOptions**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `RuleType?`: any): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
-*Defined in [api/analytics.ts:57](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L57)*
+*Defined in [api/analytics.ts:66](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L66)*
 
-List the currently assigned set of rules of a VideoAnalyticsConfiguration.
+  Return the options for the supported rules that specify an Option attribute.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`RuleType?` | any |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
 ___
-<a id="getservicecapabilities-1"></a>
 
-### `<Static>` GetServiceCapabilities
+### `Static` GetRules
 
-▸ **GetServiceCapabilities**(): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+▸ **GetRules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken)): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
-*Defined in [api/analytics.ts:88](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L88)*
+*Defined in [api/analytics.ts:55](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L55)*
+
+  List the currently assigned set of rules of a VideoAnalyticsConfiguration.
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
+
+___
+
+### `Static` GetServiceCapabilities
+
+▸ **GetServiceCapabilities**(): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
+
+*Defined in [api/analytics.ts:86](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L86)*
 
 Returns the capabilities of the analytics service. The result is returned in a typed answer.
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
 ___
-<a id="getsupportedanalyticsmodules-1"></a>
 
-### `<Static>` GetSupportedAnalyticsModules
+### `Static` GetSupportedAnalyticsModules
 
-▸ **GetSupportedAnalyticsModules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+▸ **GetSupportedAnalyticsModules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken)): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
-*Defined in [api/analytics.ts:101](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L101)*
+*Defined in [api/analytics.ts:97](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L97)*
 
-List all analytics modules that are supported by the given VideoAnalyticsConfiguration. The result of this method may depend on the overall Video analytics configuration of the device, which is available via the current set of profiles.
+  List all analytics modules that are supported by the given VideoAnalyticsConfiguration.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
 ___
-<a id="getsupportedrules-1"></a>
 
-### `<Static>` GetSupportedRules
+### `Static` GetSupportedMetadata
 
-▸ **GetSupportedRules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+▸ **GetSupportedMetadata**(`Type?`: any): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
-*Defined in [api/analytics.ts:16](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L16)*
+*Defined in [api/analytics.ts:184](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L184)*
 
-List all rules that are supported by the given VideoAnalyticsConfiguration. The result of this method may depend on the overall Video analytics configuration of the device, which is available via the current set of profiles.
+  This method provides a computer readable description of the metadata that the selected analytics modules can generate.
+  The type parameter allows to select a single analytics module. By default the output shall relate to all analytics modules that exist in the device.
+  The response shall provide a sample XML frame.
+  The sample frame shall include all potentially generated elements by the selected analytics modules.
+  Note that this e.g. does not need to include all possible class type enumerations.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+Name | Type |
+------ | ------ |
+`Type?` | any |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
 ___
-<a id="modifyanalyticsmodules-1"></a>
 
-### `<Static>` ModifyAnalyticsModules
+### `Static` GetSupportedRules
 
-▸ **ModifyAnalyticsModules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, AnalyticsModule: *[Config](../interfaces/_api_types_.config.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+▸ **GetSupportedRules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken)): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
-*Defined in [api/analytics.ts:172](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L172)*
+*Defined in [api/analytics.ts:14](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L14)*
 
-Modify the settings of one or more analytics modules of a VideoAnalyticsConfiguration. The modules are referenced by their names. It is allowed to pass only a subset to be modified.
+  List all rules that are supported by the given VideoAnalyticsConfiguration.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| AnalyticsModule | [Config](../interfaces/_api_types_.config.md) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
 ___
-<a id="modifyrules-1"></a>
 
-### `<Static>` ModifyRules
+### `Static` ModifyAnalyticsModules
 
-▸ **ModifyRules**(ConfigurationToken: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*, Rule: *[Config](../interfaces/_api_types_.config.md)*): `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+▸ **ModifyAnalyticsModules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `AnalyticsModule`: [Config](../interfaces/_api_types_.config.md)): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
-*Defined in [api/analytics.ts:79](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/analytics.ts#L79)*
+*Defined in [api/analytics.ts:169](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L169)*
 
-Modify one or more rules of a VideoAnalyticsConfiguration. The rules are referenced by their names.
+  Modify the settings of one or more analytics modules of a VideoAnalyticsConfiguration. The modules are referenced by their names.
+  It is allowed to pass only a subset to be modified.
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| ConfigurationToken | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
-| Rule | [Config](../interfaces/_api_types_.config.md) |
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`AnalyticsModule` | [Config](../interfaces/_api_types_.config.md) |
 
-**Returns:** `IReader`<[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), `Observable`<`IResult`<[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)<`any`>, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)>>>
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
 
 ___
 
+### `Static` ModifyRules
+
+▸ **ModifyRules**(`ConfigurationToken`: [ReferenceToken](../modules/_api_types_.md#referencetoken), `Rule`: [Config](../interfaces/_api_types_.config.md)): *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*
+
+*Defined in [api/analytics.ts:77](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/analytics.ts#L77)*
+
+  Modify one or more rules of a VideoAnalyticsConfiguration. The rules are referenced by their names.
+
+**Parameters:**
+
+Name | Type |
+------ | ------ |
+`ConfigurationToken` | [ReferenceToken](../modules/_api_types_.md#referencetoken) |
+`Rule` | [Config](../interfaces/_api_types_.config.md) |
+
+**Returns:** *IReader‹[IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md), Observable‹IResult‹[IResultStructure](../interfaces/_soap_request_.iresultstructure.md)‹any›, [ITransportPayoad](../interfaces/_config_interfaces_.itransportpayoad.md)›››*

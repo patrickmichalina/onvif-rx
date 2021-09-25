@@ -1,78 +1,66 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [DeviceIOCapabilities](../interfaces/_api_types_.deviceiocapabilities.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [DeviceIOCapabilities](_api_types_.deviceiocapabilities.md)
 
 # Interface: DeviceIOCapabilities
 
 ## Hierarchy
 
-**DeviceIOCapabilities**
+* **DeviceIOCapabilities**
 
 ## Index
 
 ### Properties
 
-* [AudioOutputs](_api_types_.deviceiocapabilities.md#audiooutputs)
-* [AudioSources](_api_types_.deviceiocapabilities.md#audiosources)
-* [RelayOutputs](_api_types_.deviceiocapabilities.md#relayoutputs)
-* [VideoOutputs](_api_types_.deviceiocapabilities.md#videooutputs)
-* [VideoSources](_api_types_.deviceiocapabilities.md#videosources)
-* [XAddr](_api_types_.deviceiocapabilities.md#xaddr)
-
----
+* [AudioOutputs](_api_types_.deviceiocapabilities.md#readonly-audiooutputs)
+* [AudioSources](_api_types_.deviceiocapabilities.md#readonly-audiosources)
+* [RelayOutputs](_api_types_.deviceiocapabilities.md#readonly-relayoutputs)
+* [VideoOutputs](_api_types_.deviceiocapabilities.md#readonly-videooutputs)
+* [VideoSources](_api_types_.deviceiocapabilities.md#readonly-videosources)
+* [XAddr](_api_types_.deviceiocapabilities.md#readonly-xaddr)
 
 ## Properties
 
-<a id="audiooutputs"></a>
+### `Readonly` AudioOutputs
 
-###  AudioOutputs
+• **AudioOutputs**: *number*
 
-**● AudioOutputs**: *`number`*
-
-*Defined in [api/types.ts:1847](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1847)*
-
-___
-<a id="audiosources"></a>
-
-###  AudioSources
-
-**● AudioSources**: *`number`*
-
-*Defined in [api/types.ts:1846](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1846)*
-
-___
-<a id="relayoutputs"></a>
-
-###  RelayOutputs
-
-**● RelayOutputs**: *`number`*
-
-*Defined in [api/types.ts:1848](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1848)*
-
-___
-<a id="videooutputs"></a>
-
-###  VideoOutputs
-
-**● VideoOutputs**: *`number`*
-
-*Defined in [api/types.ts:1845](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1845)*
-
-___
-<a id="videosources"></a>
-
-###  VideoSources
-
-**● VideoSources**: *`number`*
-
-*Defined in [api/types.ts:1844](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1844)*
-
-___
-<a id="xaddr"></a>
-
-###  XAddr
-
-**● XAddr**: *`string`*
-
-*Defined in [api/types.ts:1843](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1843)*
+*Defined in [api/types.ts:1876](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1876)*
 
 ___
 
+### `Readonly` AudioSources
+
+• **AudioSources**: *number*
+
+*Defined in [api/types.ts:1875](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1875)*
+
+___
+
+### `Readonly` RelayOutputs
+
+• **RelayOutputs**: *number*
+
+*Defined in [api/types.ts:1877](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1877)*
+
+___
+
+### `Readonly` VideoOutputs
+
+• **VideoOutputs**: *number*
+
+*Defined in [api/types.ts:1874](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1874)*
+
+___
+
+### `Readonly` VideoSources
+
+• **VideoSources**: *number*
+
+*Defined in [api/types.ts:1873](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1873)*
+
+___
+
+### `Readonly` XAddr
+
+• **XAddr**: *string*
+
+*Defined in [api/types.ts:1872](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1872)*

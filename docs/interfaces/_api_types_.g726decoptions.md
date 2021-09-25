@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [G726DecOptions](../interfaces/_api_types_.g726decoptions.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [G726DecOptions](_api_types_.g726decoptions.md)
 
 # Interface: G726DecOptions
 
@@ -6,35 +6,27 @@ List of supported bitrates in kbps
 
 ## Hierarchy
 
-**G726DecOptions**
+* **G726DecOptions**
 
 ## Index
 
 ### Properties
 
-* [Bitrate](_api_types_.g726decoptions.md#bitrate)
-* [SampleRateRange](_api_types_.g726decoptions.md#sampleraterange)
-
----
+* [Bitrate](_api_types_.g726decoptions.md#readonly-bitrate)
+* [SampleRateRange](_api_types_.g726decoptions.md#readonly-sampleraterange)
 
 ## Properties
 
-<a id="bitrate"></a>
+### `Readonly` Bitrate
 
-###  Bitrate
+• **Bitrate**: *[IntItems](_api_types_.intitems.md)*
 
-**● Bitrate**: *[IntList](_api_types_.intlist.md)*
-
-*Defined in [api/types.ts:1132](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1132)*
-
-___
-<a id="sampleraterange"></a>
-
-###  SampleRateRange
-
-**● SampleRateRange**: *[IntList](_api_types_.intlist.md)*
-
-*Defined in [api/types.ts:1133](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1133)*
+*Defined in [api/types.ts:1161](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1161)*
 
 ___
 
+### `Readonly` SampleRateRange
+
+• **SampleRateRange**: *[IntItems](_api_types_.intitems.md)*
+
+*Defined in [api/types.ts:1162](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1162)*

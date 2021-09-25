@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ExposurePriority](../enums/_api_types_.exposurepriority.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ExposurePriority](_api_types_.exposurepriority.md)
 
 # Enumeration: ExposurePriority
 
@@ -9,26 +9,18 @@
 * [FrameRate](_api_types_.exposurepriority.md#framerate)
 * [LowNoise](_api_types_.exposurepriority.md#lownoise)
 
----
-
 ## Enumeration members
-
-<a id="framerate"></a>
 
 ###  FrameRate
 
-**FrameRate**:  = "FrameRate"
+• **FrameRate**: = "FrameRate"
 
-*Defined in [api/types.ts:5283](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5283)*
+*Defined in [api/types.ts:5441](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5441)*
 
 ___
-<a id="lownoise"></a>
 
 ###  LowNoise
 
-**LowNoise**:  = "LowNoise"
+• **LowNoise**: = "LowNoise"
 
-*Defined in [api/types.ts:5279](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5279)*
-
-___
-
+*Defined in [api/types.ts:5437](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5437)*

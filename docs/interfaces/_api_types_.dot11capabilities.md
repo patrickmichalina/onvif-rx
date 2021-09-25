@@ -1,68 +1,57 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Dot11Capabilities](../interfaces/_api_types_.dot11capabilities.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Dot11Capabilities](_api_types_.dot11capabilities.md)
 
 # Interface: Dot11Capabilities
 
 ## Hierarchy
 
-**Dot11Capabilities**
+* **Dot11Capabilities**
 
 ## Index
 
 ### Properties
 
-* [AdHocStationMode](_api_types_.dot11capabilities.md#adhocstationmode)
-* [MultipleConfiguration](_api_types_.dot11capabilities.md#multipleconfiguration)
-* [ScanAvailableNetworks](_api_types_.dot11capabilities.md#scanavailablenetworks)
-* [TKIP](_api_types_.dot11capabilities.md#tkip)
-* [WEP](_api_types_.dot11capabilities.md#wep)
-
----
+* [AdHocStationMode](_api_types_.dot11capabilities.md#readonly-adhocstationmode)
+* [MultipleConfiguration](_api_types_.dot11capabilities.md#readonly-multipleconfiguration)
+* [ScanAvailableNetworks](_api_types_.dot11capabilities.md#readonly-scanavailablenetworks)
+* [TKIP](_api_types_.dot11capabilities.md#readonly-tkip)
+* [WEP](_api_types_.dot11capabilities.md#readonly-wep)
 
 ## Properties
 
-<a id="adhocstationmode"></a>
+### `Readonly` AdHocStationMode
 
-###  AdHocStationMode
+• **AdHocStationMode**: *boolean*
 
-**● AdHocStationMode**: *`boolean`*
-
-*Defined in [api/types.ts:1561](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1561)*
-
-___
-<a id="multipleconfiguration"></a>
-
-###  MultipleConfiguration
-
-**● MultipleConfiguration**: *`boolean`*
-
-*Defined in [api/types.ts:1560](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1560)*
-
-___
-<a id="scanavailablenetworks"></a>
-
-###  ScanAvailableNetworks
-
-**● ScanAvailableNetworks**: *`boolean`*
-
-*Defined in [api/types.ts:1559](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1559)*
-
-___
-<a id="tkip"></a>
-
-###  TKIP
-
-**● TKIP**: *`boolean`*
-
-*Defined in [api/types.ts:1558](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1558)*
-
-___
-<a id="wep"></a>
-
-###  WEP
-
-**● WEP**: *`boolean`*
-
-*Defined in [api/types.ts:1562](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1562)*
+*Defined in [api/types.ts:1590](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1590)*
 
 ___
 
+### `Readonly` MultipleConfiguration
+
+• **MultipleConfiguration**: *boolean*
+
+*Defined in [api/types.ts:1589](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1589)*
+
+___
+
+### `Readonly` ScanAvailableNetworks
+
+• **ScanAvailableNetworks**: *boolean*
+
+*Defined in [api/types.ts:1588](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1588)*
+
+___
+
+### `Readonly` TKIP
+
+• **TKIP**: *boolean*
+
+*Defined in [api/types.ts:1587](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1587)*
+
+___
+
+### `Readonly` WEP
+
+• **WEP**: *boolean*
+
+*Defined in [api/types.ts:1591](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1591)*

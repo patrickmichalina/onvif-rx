@@ -1,38 +1,30 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [GetRecordingJobsResponseItem](../interfaces/_api_types_.getrecordingjobsresponseitem.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [GetRecordingJobsResponseItem](_api_types_.getrecordingjobsresponseitem.md)
 
 # Interface: GetRecordingJobsResponseItem
 
 ## Hierarchy
 
-**GetRecordingJobsResponseItem**
+* **GetRecordingJobsResponseItem**
 
 ## Index
 
 ### Properties
 
-* [JobConfiguration](_api_types_.getrecordingjobsresponseitem.md#jobconfiguration)
-* [JobToken](_api_types_.getrecordingjobsresponseitem.md#jobtoken)
-
----
+* [JobConfiguration](_api_types_.getrecordingjobsresponseitem.md#readonly-jobconfiguration)
+* [JobToken](_api_types_.getrecordingjobsresponseitem.md#readonly-jobtoken)
 
 ## Properties
 
-<a id="jobconfiguration"></a>
+### `Readonly` JobConfiguration
 
-###  JobConfiguration
+• **JobConfiguration**: *[RecordingJobConfiguration](_api_types_.recordingjobconfiguration.md)*
 
-**● JobConfiguration**: *[RecordingJobConfiguration](_api_types_.recordingjobconfiguration.md)*
-
-*Defined in [api/types.ts:3937](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3937)*
-
-___
-<a id="jobtoken"></a>
-
-###  JobToken
-
-**● JobToken**: *[RecordingJobReference](../modules/_api_types_.md#recordingjobreference)*
-
-*Defined in [api/types.ts:3936](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3936)*
+*Defined in [api/types.ts:3957](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3957)*
 
 ___
 
+### `Readonly` JobToken
+
+• **JobToken**: *[RecordingJobReference](../modules/_api_types_.md#recordingjobreference)*
+
+*Defined in [api/types.ts:3956](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3956)*

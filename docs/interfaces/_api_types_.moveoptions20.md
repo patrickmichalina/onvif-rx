@@ -1,52 +1,41 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [MoveOptions20](../interfaces/_api_types_.moveoptions20.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [MoveOptions20](_api_types_.moveoptions20.md)
 
 # Interface: MoveOptions20
 
-```
-            Valid ranges for the absolute control.
-```
+Valid ranges for the absolute control.
 
 ## Hierarchy
 
-**MoveOptions20**
+* **MoveOptions20**
 
 ## Index
 
 ### Properties
 
-* [Absolute](_api_types_.moveoptions20.md#absolute)
-* [Continuous](_api_types_.moveoptions20.md#continuous)
-* [Relative](_api_types_.moveoptions20.md#relative)
-
----
+* [Absolute](_api_types_.moveoptions20.md#optional-readonly-absolute)
+* [Continuous](_api_types_.moveoptions20.md#optional-readonly-continuous)
+* [Relative](_api_types_.moveoptions20.md#optional-readonly-relative)
 
 ## Properties
 
-<a id="absolute"></a>
+### `Optional` `Readonly` Absolute
 
-### `<Optional>` Absolute
+• **Absolute**? : *[AbsoluteFocusOptions](_api_types_.absolutefocusoptions.md)*
 
-**● Absolute**: *[AbsoluteFocusOptions](_api_types_.absolutefocusoptions.md)*
-
-*Defined in [api/types.ts:3145](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3145)*
-
-___
-<a id="continuous"></a>
-
-### `<Optional>` Continuous
-
-**● Continuous**: *[ContinuousFocusOptions](_api_types_.continuousfocusoptions.md)*
-
-*Defined in [api/types.ts:3147](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3147)*
-
-___
-<a id="relative"></a>
-
-### `<Optional>` Relative
-
-**● Relative**: *[RelativeFocusOptions20](_api_types_.relativefocusoptions20.md)*
-
-*Defined in [api/types.ts:3146](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3146)*
+*Defined in [api/types.ts:3174](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3174)*
 
 ___
 
+### `Optional` `Readonly` Continuous
+
+• **Continuous**? : *[ContinuousFocusOptions](_api_types_.continuousfocusoptions.md)*
+
+*Defined in [api/types.ts:3176](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3176)*
+
+___
+
+### `Optional` `Readonly` Relative
+
+• **Relative**? : *[RelativeFocusOptions20](_api_types_.relativefocusoptions20.md)*
+
+*Defined in [api/types.ts:3175](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3175)*

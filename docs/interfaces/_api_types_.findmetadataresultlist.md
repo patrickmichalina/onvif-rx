@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [FindMetadataResultList](../interfaces/_api_types_.findmetadataresultlist.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [FindMetadataResultList](_api_types_.findmetadataresultlist.md)
 
 # Interface: FindMetadataResultList
 
@@ -6,35 +6,27 @@ The state of the search when the result is returned. Indicates if there can be m
 
 ## Hierarchy
 
-**FindMetadataResultList**
+* **FindMetadataResultList**
 
 ## Index
 
 ### Properties
 
-* [Result](_api_types_.findmetadataresultlist.md#result)
-* [SearchState](_api_types_.findmetadataresultlist.md#searchstate)
-
----
+* [Result](_api_types_.findmetadataresultlist.md#optional-readonly-result)
+* [SearchState](_api_types_.findmetadataresultlist.md#readonly-searchstate)
 
 ## Properties
 
-<a id="result"></a>
+### `Optional` `Readonly` Result
 
-### `<Optional>` Result
+• **Result**? : *[FindMetadataResult](_api_types_.findmetadataresult.md)*
 
-**● Result**: *[FindMetadataResult](_api_types_.findmetadataresult.md)*
-
-*Defined in [api/types.ts:3691](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3691)*
-
-___
-<a id="searchstate"></a>
-
-###  SearchState
-
-**● SearchState**: *[SearchState](../enums/_api_types_.searchstate.md)*
-
-*Defined in [api/types.ts:3690](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3690)*
+*Defined in [api/types.ts:3711](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3711)*
 
 ___
 
+### `Readonly` SearchState
+
+• **SearchState**: *[SearchState](../enums/_api_types_.searchstate.md)*
+
+*Defined in [api/types.ts:3710](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3710)*

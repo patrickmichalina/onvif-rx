@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [MetadataConfigurationOptions](../interfaces/_api_types_.metadataconfigurationoptions.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [MetadataConfigurationOptions](_api_types_.metadataconfigurationoptions.md)
 
 # Interface: MetadataConfigurationOptions
 
@@ -6,35 +6,27 @@ True if the device is able to stream the Geo Located positions of each target.
 
 ## Hierarchy
 
-**MetadataConfigurationOptions**
+* **MetadataConfigurationOptions**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.metadataconfigurationoptions.md#extension)
-* [PTZStatusFilterOptions](_api_types_.metadataconfigurationoptions.md#ptzstatusfilteroptions)
-
----
+* [Extension](_api_types_.metadataconfigurationoptions.md#optional-readonly-extension)
+* [PTZStatusFilterOptions](_api_types_.metadataconfigurationoptions.md#readonly-ptzstatusfilteroptions)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[MetadataConfigurationOptionsExtension](_api_types_.metadataconfigurationoptionsextension.md)*
 
-**● Extension**: *[MetadataConfigurationOptionsExtension](_api_types_.metadataconfigurationoptionsextension.md)*
-
-*Defined in [api/types.ts:962](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L962)*
-
-___
-<a id="ptzstatusfilteroptions"></a>
-
-###  PTZStatusFilterOptions
-
-**● PTZStatusFilterOptions**: *[PTZStatusFilterOptions](_api_types_.ptzstatusfilteroptions.md)*
-
-*Defined in [api/types.ts:961](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L961)*
+*Defined in [api/types.ts:991](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L991)*
 
 ___
 
+### `Readonly` PTZStatusFilterOptions
+
+• **PTZStatusFilterOptions**: *[PTZStatusFilterOptions](_api_types_.ptzstatusfilteroptions.md)*
+
+*Defined in [api/types.ts:990](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L990)*

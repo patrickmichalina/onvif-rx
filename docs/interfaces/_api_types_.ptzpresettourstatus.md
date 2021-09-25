@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZPresetTourStatus](../interfaces/_api_types_.ptzpresettourstatus.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZPresetTourStatus](_api_types_.ptzpresettourstatus.md)
 
 # Interface: PTZPresetTourStatus
 
@@ -6,45 +6,36 @@ Indicates state of this preset tour by Idle/Touring/Paused.
 
 ## Hierarchy
 
-**PTZPresetTourStatus**
+* **PTZPresetTourStatus**
 
 ## Index
 
 ### Properties
 
-* [CurrentTourSpot](_api_types_.ptzpresettourstatus.md#currenttourspot)
-* [Extension](_api_types_.ptzpresettourstatus.md#extension)
-* [State](_api_types_.ptzpresettourstatus.md#state)
-
----
+* [CurrentTourSpot](_api_types_.ptzpresettourstatus.md#optional-readonly-currenttourspot)
+* [Extension](_api_types_.ptzpresettourstatus.md#optional-readonly-extension)
+* [State](_api_types_.ptzpresettourstatus.md#readonly-state)
 
 ## Properties
 
-<a id="currenttourspot"></a>
+### `Optional` `Readonly` CurrentTourSpot
 
-### `<Optional>` CurrentTourSpot
+• **CurrentTourSpot**? : *[PTZPresetTourSpot](_api_types_.ptzpresettourspot.md)*
 
-**● CurrentTourSpot**: *[PTZPresetTourSpot](_api_types_.ptzpresettourspot.md)*
-
-*Defined in [api/types.ts:2507](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2507)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[PTZPresetTourStatusExtension](_api_types_.ptzpresettourstatusextension.md)*
-
-*Defined in [api/types.ts:2508](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2508)*
-
-___
-<a id="state"></a>
-
-###  State
-
-**● State**: *[PTZPresetTourState](../enums/_api_types_.ptzpresettourstate.md)*
-
-*Defined in [api/types.ts:2506](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2506)*
+*Defined in [api/types.ts:2536](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2536)*
 
 ___
 
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[PTZPresetTourStatusExtension](_api_types_.ptzpresettourstatusextension.md)*
+
+*Defined in [api/types.ts:2537](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2537)*
+
+___
+
+### `Readonly` State
+
+• **State**: *[PTZPresetTourState](../enums/_api_types_.ptzpresettourstate.md)*
+
+*Defined in [api/types.ts:2535](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2535)*

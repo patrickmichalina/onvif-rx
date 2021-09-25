@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [Dot11Cipher](../enums/_api_types_.dot11cipher.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [Dot11Cipher](_api_types_.dot11cipher.md)
 
 # Enumeration: Dot11Cipher
 
@@ -11,44 +11,34 @@
 * [Extended](_api_types_.dot11cipher.md#extended)
 * [TKIP](_api_types_.dot11cipher.md#tkip)
 
----
-
 ## Enumeration members
-
-<a id="any"></a>
 
 ###  Any
 
-**Any**:  = "Any"
+• **Any**: = "Any"
 
-*Defined in [api/types.ts:4911](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4911)*
+*Defined in [api/types.ts:5037](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5037)*
 
 ___
-<a id="ccmp"></a>
 
 ###  CCMP
 
-**CCMP**:  = "CCMP"
+• **CCMP**: = "CCMP"
 
-*Defined in [api/types.ts:4903](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4903)*
+*Defined in [api/types.ts:5029](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5029)*
 
 ___
-<a id="extended"></a>
 
 ###  Extended
 
-**Extended**:  = "Extended"
+• **Extended**: = "Extended"
 
-*Defined in [api/types.ts:4915](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4915)*
+*Defined in [api/types.ts:5041](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5041)*
 
 ___
-<a id="tkip"></a>
 
 ###  TKIP
 
-**TKIP**:  = "TKIP"
+• **TKIP**: = "TKIP"
 
-*Defined in [api/types.ts:4907](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4907)*
-
-___
-
+*Defined in [api/types.ts:5033](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5033)*

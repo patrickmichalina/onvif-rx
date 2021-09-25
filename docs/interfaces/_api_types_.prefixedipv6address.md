@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PrefixedIPv6Address](../interfaces/_api_types_.prefixedipv6address.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PrefixedIPv6Address](_api_types_.prefixedipv6address.md)
 
 # Interface: PrefixedIPv6Address
 
@@ -6,35 +6,27 @@ IPv6 address
 
 ## Hierarchy
 
-**PrefixedIPv6Address**
+* **PrefixedIPv6Address**
 
 ## Index
 
 ### Properties
 
-* [Address](_api_types_.prefixedipv6address.md#address)
-* [PrefixLength](_api_types_.prefixedipv6address.md#prefixlength)
-
----
+* [Address](_api_types_.prefixedipv6address.md#readonly-address)
+* [PrefixLength](_api_types_.prefixedipv6address.md#readonly-prefixlength)
 
 ## Properties
 
-<a id="address"></a>
+### `Readonly` Address
 
-###  Address
+• **Address**: *[IPv6Address](../modules/_api_types_.md#ipv6address)*
 
-**● Address**: *[IPv6Address](../modules/_api_types_.md#ipv6address)*
-
-*Defined in [api/types.ts:1346](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1346)*
-
-___
-<a id="prefixlength"></a>
-
-###  PrefixLength
-
-**● PrefixLength**: *`number`*
-
-*Defined in [api/types.ts:1347](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1347)*
+*Defined in [api/types.ts:1375](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1375)*
 
 ___
 
+### `Readonly` PrefixLength
+
+• **PrefixLength**: *number*
+
+*Defined in [api/types.ts:1376](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1376)*

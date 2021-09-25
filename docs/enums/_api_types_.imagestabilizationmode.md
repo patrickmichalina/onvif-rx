@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ImageStabilizationMode](../enums/_api_types_.imagestabilizationmode.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ImageStabilizationMode](_api_types_.imagestabilizationmode.md)
 
 # Enumeration: ImageStabilizationMode
 
@@ -11,44 +11,34 @@
 * [OFF](_api_types_.imagestabilizationmode.md#off)
 * [ON](_api_types_.imagestabilizationmode.md#on)
 
----
-
 ## Enumeration members
-
-<a id="auto"></a>
 
 ###  AUTO
 
-**AUTO**:  = "AUTO"
+• **AUTO**: = "AUTO"
 
-*Defined in [api/types.ts:5361](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5361)*
+*Defined in [api/types.ts:5519](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5519)*
 
 ___
-<a id="extended"></a>
 
 ###  Extended
 
-**Extended**:  = "Extended"
+• **Extended**: = "Extended"
 
-*Defined in [api/types.ts:5365](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5365)*
+*Defined in [api/types.ts:5523](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5523)*
 
 ___
-<a id="off"></a>
 
 ###  OFF
 
-**OFF**:  = "OFF"
+• **OFF**: = "OFF"
 
-*Defined in [api/types.ts:5353](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5353)*
+*Defined in [api/types.ts:5511](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5511)*
 
 ___
-<a id="on"></a>
 
 ###  ON
 
-**ON**:  = "ON"
+• **ON**: = "ON"
 
-*Defined in [api/types.ts:5357](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5357)*
-
-___
-
+*Defined in [api/types.ts:5515](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5515)*

@@ -1,48 +1,39 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [NetworkInterfaceSetConfigurationExtension](../interfaces/_api_types_.networkinterfacesetconfigurationextension.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [NetworkInterfaceSetConfigurationExtension](_api_types_.networkinterfacesetconfigurationextension.md)
 
 # Interface: NetworkInterfaceSetConfigurationExtension
 
 ## Hierarchy
 
-**NetworkInterfaceSetConfigurationExtension**
+* **NetworkInterfaceSetConfigurationExtension**
 
 ## Index
 
 ### Properties
 
-* [Dot11](_api_types_.networkinterfacesetconfigurationextension.md#dot11)
-* [Dot3](_api_types_.networkinterfacesetconfigurationextension.md#dot3)
-* [Extension](_api_types_.networkinterfacesetconfigurationextension.md#extension)
-
----
+* [Dot11](_api_types_.networkinterfacesetconfigurationextension.md#optional-readonly-dot11)
+* [Dot3](_api_types_.networkinterfacesetconfigurationextension.md#optional-readonly-dot3)
+* [Extension](_api_types_.networkinterfacesetconfigurationextension.md#optional-readonly-extension)
 
 ## Properties
 
-<a id="dot11"></a>
+### `Optional` `Readonly` Dot11
 
-### `<Optional>` Dot11
+• **Dot11**? : *[Dot11Configuration](_api_types_.dot11configuration.md)*
 
-**● Dot11**: *[Dot11Configuration](_api_types_.dot11configuration.md)*
-
-*Defined in [api/types.ts:1431](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1431)*
-
-___
-<a id="dot3"></a>
-
-### `<Optional>` Dot3
-
-**● Dot3**: *[Dot3Configuration](_api_types_.dot3configuration.md)*
-
-*Defined in [api/types.ts:1430](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1430)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[NetworkInterfaceSetConfigurationExtension2](_api_types_.networkinterfacesetconfigurationextension2.md)*
-
-*Defined in [api/types.ts:1432](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1432)*
+*Defined in [api/types.ts:1460](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1460)*
 
 ___
 
+### `Optional` `Readonly` Dot3
+
+• **Dot3**? : *[Dot3Configuration](_api_types_.dot3configuration.md)*
+
+*Defined in [api/types.ts:1459](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1459)*
+
+___
+
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[NetworkInterfaceSetConfigurationExtension2](_api_types_.networkinterfacesetconfigurationextension2.md)*
+
+*Defined in [api/types.ts:1461](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1461)*

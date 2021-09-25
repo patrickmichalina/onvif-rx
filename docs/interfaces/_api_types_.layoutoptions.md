@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [LayoutOptions](../interfaces/_api_types_.layoutoptions.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [LayoutOptions](_api_types_.layoutoptions.md)
 
 # Interface: LayoutOptions
 
@@ -6,35 +6,27 @@ The options supported for a display layout.
 
 ## Hierarchy
 
-**LayoutOptions**
+* **LayoutOptions**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.layoutoptions.md#extension)
-* [PaneLayoutOptions](_api_types_.layoutoptions.md#panelayoutoptions)
-
----
+* [Extension](_api_types_.layoutoptions.md#optional-readonly-extension)
+* [PaneLayoutOptions](_api_types_.layoutoptions.md#readonly-panelayoutoptions)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[LayoutOptionsExtension](_api_types_.layoutoptionsextension.md)*
 
-**● Extension**: *[LayoutOptionsExtension](_api_types_.layoutoptionsextension.md)*
-
-*Defined in [api/types.ts:3525](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3525)*
-
-___
-<a id="panelayoutoptions"></a>
-
-###  PaneLayoutOptions
-
-**● PaneLayoutOptions**: *[PaneLayoutOptions](_api_types_.panelayoutoptions.md)*
-
-*Defined in [api/types.ts:3524](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3524)*
+*Defined in [api/types.ts:3545](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3545)*
 
 ___
 
+### `Readonly` PaneLayoutOptions
+
+• **PaneLayoutOptions**: *[PaneLayoutOptions](_api_types_.panelayoutoptions.md)*
+
+*Defined in [api/types.ts:3544](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3544)*

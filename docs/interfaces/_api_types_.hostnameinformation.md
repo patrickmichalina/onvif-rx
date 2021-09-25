@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [HostnameInformation](../interfaces/_api_types_.hostnameinformation.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [HostnameInformation](_api_types_.hostnameinformation.md)
 
 # Interface: HostnameInformation
 
@@ -6,45 +6,36 @@ Indicates whether the hostname is obtained from DHCP or not.
 
 ## Hierarchy
 
-**HostnameInformation**
+* **HostnameInformation**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.hostnameinformation.md#extension)
-* [FromDHCP](_api_types_.hostnameinformation.md#fromdhcp)
-* [Name](_api_types_.hostnameinformation.md#name)
-
----
+* [Extension](_api_types_.hostnameinformation.md#optional-readonly-extension)
+* [FromDHCP](_api_types_.hostnameinformation.md#readonly-fromdhcp)
+* [Name](_api_types_.hostnameinformation.md#optional-readonly-name)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[HostnameInformationExtension](_api_types_.hostnameinformationextension.md)*
 
-**● Extension**: *[HostnameInformationExtension](_api_types_.hostnameinformationextension.md)*
-
-*Defined in [api/types.ts:1356](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1356)*
-
-___
-<a id="fromdhcp"></a>
-
-###  FromDHCP
-
-**● FromDHCP**: *`boolean`*
-
-*Defined in [api/types.ts:1354](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1354)*
-
-___
-<a id="name"></a>
-
-### `<Optional>` Name
-
-**● Name**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:1355](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1355)*
+*Defined in [api/types.ts:1385](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1385)*
 
 ___
 
+### `Readonly` FromDHCP
+
+• **FromDHCP**: *boolean*
+
+*Defined in [api/types.ts:1383](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1383)*
+
+___
+
+### `Optional` `Readonly` Name
+
+• **Name**? : *undefined | string*
+
+*Defined in [api/types.ts:1384](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1384)*

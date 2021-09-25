@@ -591,6 +591,29 @@ export class ONVIFAdvancedSecurity {
 
     /**
      * 
+     *           This operation enables or disables mapping of the Common Name present in the TLS client certificate to an existing user name in the device.
+     *           The TLS server on the device shall perform mapping if parameter clientAuthenticationRequired is set to true.
+     *         
+     */
+    static SetCnMapsToUser() {
+        return createStandardRequestBodyFromString(generateRequestElements('tas:SetCnMapsToUser')({}))
+                        .map(mapResponseXmlToJson<any>('tas:SetCnMapsToUserResponse'))
+                      
+    }
+
+    /**
+     * 
+     *           This operation returns whether the Common Name Mapping to User is enabled.
+     *         
+     */
+    static GetCnMapsToUser() {
+        return createStandardRequestBodyFromString(generateRequestElements('tas:GetCnMapsToUser')({}))
+                        .map(mapResponseXmlToJson<any>('tas:GetCnMapsToUserResponse'))
+                      
+    }
+
+    /**
+     * 
      *           This operation assigns a certification path validation policy to the TLS server on the device. The TLS server shall enforce the policy when authenticating TLS clients and consider a client authentic if and only if the algorithm returns valid.
      *           If no certification path validation policy is stored under the requested CertPathValidationPolicyID, the device shall produce a CertPathValidationPolicyID fault.
      *           A TLS server may use different certification path validation policies to authenticate clients. Therefore more than one certification path validation policy may be assigned to the TLS server. If the maximum number of certification path validation policies that may be assigned to the  TLS server simultaneously is reached, the device shall produce a MaximumNumberOfTLSCertPathValidationPoliciesReached fault and shall not assign the requested certification path validation policy to the TLS server.
@@ -1222,6 +1245,25 @@ export class ONVIFAdvancedSecurity {
      */
     GetClientAuthenticationRequired() {
         return ONVIFAdvancedSecurity.GetClientAuthenticationRequired().run(this.config)
+    }
+
+    /**
+     * 
+     *           This operation enables or disables mapping of the Common Name present in the TLS client certificate to an existing user name in the device.
+     *           The TLS server on the device shall perform mapping if parameter clientAuthenticationRequired is set to true.
+     *         
+     */
+    SetCnMapsToUser() {
+        return ONVIFAdvancedSecurity.SetCnMapsToUser().run(this.config)
+    }
+
+    /**
+     * 
+     *           This operation returns whether the Common Name Mapping to User is enabled.
+     *         
+     */
+    GetCnMapsToUser() {
+        return ONVIFAdvancedSecurity.GetCnMapsToUser().run(this.config)
     }
 
     /**

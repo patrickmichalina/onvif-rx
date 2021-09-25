@@ -1,28 +1,21 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [MetadataFilter](../interfaces/_api_types_.metadatafilter.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [MetadataFilter](_api_types_.metadatafilter.md)
 
 # Interface: MetadataFilter
 
 ## Hierarchy
 
-**MetadataFilter**
+* **MetadataFilter**
 
 ## Index
 
 ### Properties
 
-* [MetadataStreamFilter](_api_types_.metadatafilter.md#metadatastreamfilter)
-
----
+* [MetadataStreamFilter](_api_types_.metadatafilter.md#readonly-metadatastreamfilter)
 
 ## Properties
 
-<a id="metadatastreamfilter"></a>
+### `Readonly` MetadataStreamFilter
 
-###  MetadataStreamFilter
+• **MetadataStreamFilter**: *[XPathExpression](../modules/_api_types_.md#xpathexpression)*
 
-**● MetadataStreamFilter**: *[XPathExpression](../modules/_api_types_.md#xpathexpression)*
-
-*Defined in [api/types.ts:3638](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L3638)*
-
-___
-
+*Defined in [api/types.ts:3658](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L3658)*

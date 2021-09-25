@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZCapabilities](../interfaces/_api_types_.ptzcapabilities.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZCapabilities](_api_types_.ptzcapabilities.md)
 
 # Interface: PTZCapabilities
 
@@ -6,25 +6,18 @@ PTZ service URI.
 
 ## Hierarchy
 
-**PTZCapabilities**
+* **PTZCapabilities**
 
 ## Index
 
 ### Properties
 
-* [XAddr](_api_types_.ptzcapabilities.md#xaddr)
-
----
+* [XAddr](_api_types_.ptzcapabilities.md#readonly-xaddr)
 
 ## Properties
 
-<a id="xaddr"></a>
+### `Readonly` XAddr
 
-###  XAddr
+• **XAddr**: *string*
 
-**● XAddr**: *`string`*
-
-*Defined in [api/types.ts:1836](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1836)*
-
-___
-
+*Defined in [api/types.ts:1865](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1865)*

@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [AudioOutputConfiguration](../interfaces/_api_types_.audiooutputconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [AudioOutputConfiguration](_api_types_.audiooutputconfiguration.md)
 
 # Interface: AudioOutputConfiguration
 
@@ -6,45 +6,36 @@ Token of the phsycial Audio output.
 
 ## Hierarchy
 
-**AudioOutputConfiguration**
+* **AudioOutputConfiguration**
 
 ## Index
 
 ### Properties
 
-* [OutputLevel](_api_types_.audiooutputconfiguration.md#outputlevel)
-* [OutputToken](_api_types_.audiooutputconfiguration.md#outputtoken)
-* [SendPrimacy](_api_types_.audiooutputconfiguration.md#sendprimacy)
-
----
+* [OutputLevel](_api_types_.audiooutputconfiguration.md#readonly-outputlevel)
+* [OutputToken](_api_types_.audiooutputconfiguration.md#readonly-outputtoken)
+* [SendPrimacy](_api_types_.audiooutputconfiguration.md#optional-readonly-sendprimacy)
 
 ## Properties
 
-<a id="outputlevel"></a>
+### `Readonly` OutputLevel
 
-###  OutputLevel
+• **OutputLevel**: *number*
 
-**● OutputLevel**: *`number`*
-
-*Defined in [api/types.ts:1083](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1083)*
-
-___
-<a id="outputtoken"></a>
-
-###  OutputToken
-
-**● OutputToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
-
-*Defined in [api/types.ts:1081](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1081)*
-
-___
-<a id="sendprimacy"></a>
-
-### `<Optional>` SendPrimacy
-
-**● SendPrimacy**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:1082](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1082)*
+*Defined in [api/types.ts:1112](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1112)*
 
 ___
 
+### `Readonly` OutputToken
+
+• **OutputToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
+
+*Defined in [api/types.ts:1110](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1110)*
+
+___
+
+### `Optional` `Readonly` SendPrimacy
+
+• **SendPrimacy**? : *undefined | string*
+
+*Defined in [api/types.ts:1111](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1111)*

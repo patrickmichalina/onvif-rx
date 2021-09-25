@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [ImagingCapabilities](../interfaces/_api_types_.imagingcapabilities.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [ImagingCapabilities](_api_types_.imagingcapabilities.md)
 
 # Interface: ImagingCapabilities
 
@@ -6,25 +6,18 @@ Imaging service URI.
 
 ## Hierarchy
 
-**ImagingCapabilities**
+* **ImagingCapabilities**
 
 ## Index
 
 ### Properties
 
-* [XAddr](_api_types_.imagingcapabilities.md#xaddr)
-
----
+* [XAddr](_api_types_.imagingcapabilities.md#readonly-xaddr)
 
 ## Properties
 
-<a id="xaddr"></a>
+### `Readonly` XAddr
 
-###  XAddr
+• **XAddr**: *string*
 
-**● XAddr**: *`string`*
-
-*Defined in [api/types.ts:1829](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1829)*
-
-___
-
+*Defined in [api/types.ts:1858](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1858)*

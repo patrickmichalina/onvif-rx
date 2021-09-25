@@ -1,48 +1,39 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [RemoteUser](../interfaces/_api_types_.remoteuser.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [RemoteUser](_api_types_.remoteuser.md)
 
 # Interface: RemoteUser
 
 ## Hierarchy
 
-**RemoteUser**
+* **RemoteUser**
 
 ## Index
 
 ### Properties
 
-* [Password](_api_types_.remoteuser.md#password)
-* [UseDerivedPassword](_api_types_.remoteuser.md#usederivedpassword)
-* [Username](_api_types_.remoteuser.md#username)
-
----
+* [Password](_api_types_.remoteuser.md#optional-readonly-password)
+* [UseDerivedPassword](_api_types_.remoteuser.md#readonly-usederivedpassword)
+* [Username](_api_types_.remoteuser.md#readonly-username)
 
 ## Properties
 
-<a id="password"></a>
+### `Optional` `Readonly` Password
 
-### `<Optional>` Password
+• **Password**? : *undefined | string*
 
-**● Password**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2032](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2032)*
-
-___
-<a id="usederivedpassword"></a>
-
-###  UseDerivedPassword
-
-**● UseDerivedPassword**: *`boolean`*
-
-*Defined in [api/types.ts:2033](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2033)*
-
-___
-<a id="username"></a>
-
-###  Username
-
-**● Username**: *`string`*
-
-*Defined in [api/types.ts:2031](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2031)*
+*Defined in [api/types.ts:2061](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2061)*
 
 ___
 
+### `Readonly` UseDerivedPassword
+
+• **UseDerivedPassword**: *boolean*
+
+*Defined in [api/types.ts:2062](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2062)*
+
+___
+
+### `Readonly` Username
+
+• **Username**: *string*
+
+*Defined in [api/types.ts:2060](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2060)*

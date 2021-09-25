@@ -1,100 +1,87 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [SystemCapabilities](../interfaces/_api_types_.systemcapabilities.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [SystemCapabilities](_api_types_.systemcapabilities.md)
 
 # Interface: SystemCapabilities
 
 Indicates whether or not WS Discovery resolve requests are supported.
+Indicates support for WS Discovery resolve requests.
 
 ## Hierarchy
 
-**SystemCapabilities**
+* **SystemCapabilities**
 
 ## Index
 
 ### Properties
 
-* [DiscoveryBye](_api_types_.systemcapabilities.md#discoverybye)
-* [DiscoveryResolve](_api_types_.systemcapabilities.md#discoveryresolve)
-* [Extension](_api_types_.systemcapabilities.md#extension)
-* [FirmwareUpgrade](_api_types_.systemcapabilities.md#firmwareupgrade)
-* [RemoteDiscovery](_api_types_.systemcapabilities.md#remotediscovery)
-* [SupportedVersions](_api_types_.systemcapabilities.md#supportedversions)
-* [SystemBackup](_api_types_.systemcapabilities.md#systembackup)
-* [SystemLogging](_api_types_.systemcapabilities.md#systemlogging)
-
----
+* [DiscoveryBye](_api_types_.systemcapabilities.md#readonly-discoverybye)
+* [DiscoveryResolve](_api_types_.systemcapabilities.md#readonly-discoveryresolve)
+* [Extension](_api_types_.systemcapabilities.md#optional-readonly-extension)
+* [FirmwareUpgrade](_api_types_.systemcapabilities.md#readonly-firmwareupgrade)
+* [RemoteDiscovery](_api_types_.systemcapabilities.md#readonly-remotediscovery)
+* [SupportedVersions](_api_types_.systemcapabilities.md#readonly-supportedversions)
+* [SystemBackup](_api_types_.systemcapabilities.md#readonly-systembackup)
+* [SystemLogging](_api_types_.systemcapabilities.md#readonly-systemlogging)
 
 ## Properties
 
-<a id="discoverybye"></a>
+### `Readonly` DiscoveryBye
 
-###  DiscoveryBye
+• **DiscoveryBye**: *boolean*
 
-**● DiscoveryBye**: *`boolean`*
-
-*Defined in [api/types.ts:1791](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1791)*
-
-___
-<a id="discoveryresolve"></a>
-
-###  DiscoveryResolve
-
-**● DiscoveryResolve**: *`boolean`*
-
-*Defined in [api/types.ts:1790](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1790)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[SystemCapabilitiesExtension](_api_types_.systemcapabilitiesextension.md)*
-
-*Defined in [api/types.ts:1797](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1797)*
-
-___
-<a id="firmwareupgrade"></a>
-
-###  FirmwareUpgrade
-
-**● FirmwareUpgrade**: *`boolean`*
-
-*Defined in [api/types.ts:1795](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1795)*
-
-___
-<a id="remotediscovery"></a>
-
-###  RemoteDiscovery
-
-**● RemoteDiscovery**: *`boolean`*
-
-*Defined in [api/types.ts:1792](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1792)*
-
-___
-<a id="supportedversions"></a>
-
-###  SupportedVersions
-
-**● SupportedVersions**: *[OnvifVersion](_api_types_.onvifversion.md)*
-
-*Defined in [api/types.ts:1796](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1796)*
-
-___
-<a id="systembackup"></a>
-
-###  SystemBackup
-
-**● SystemBackup**: *`boolean`*
-
-*Defined in [api/types.ts:1793](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1793)*
-
-___
-<a id="systemlogging"></a>
-
-###  SystemLogging
-
-**● SystemLogging**: *`boolean`*
-
-*Defined in [api/types.ts:1794](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1794)*
+*Defined in [api/types.ts:1820](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1820)*
 
 ___
 
+### `Readonly` DiscoveryResolve
+
+• **DiscoveryResolve**: *boolean*
+
+*Defined in [api/types.ts:1819](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1819)*
+
+___
+
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[SystemCapabilitiesExtension](_api_types_.systemcapabilitiesextension.md)*
+
+*Defined in [api/types.ts:1826](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1826)*
+
+___
+
+### `Readonly` FirmwareUpgrade
+
+• **FirmwareUpgrade**: *boolean*
+
+*Defined in [api/types.ts:1824](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1824)*
+
+___
+
+### `Readonly` RemoteDiscovery
+
+• **RemoteDiscovery**: *boolean*
+
+*Defined in [api/types.ts:1821](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1821)*
+
+___
+
+### `Readonly` SupportedVersions
+
+• **SupportedVersions**: *[OnvifVersion](_api_types_.onvifversion.md)*
+
+*Defined in [api/types.ts:1825](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1825)*
+
+___
+
+### `Readonly` SystemBackup
+
+• **SystemBackup**: *boolean*
+
+*Defined in [api/types.ts:1822](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1822)*
+
+___
+
+### `Readonly` SystemLogging
+
+• **SystemLogging**: *boolean*
+
+*Defined in [api/types.ts:1823](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1823)*

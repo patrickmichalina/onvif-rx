@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [WideDynamicRange20](../interfaces/_api_types_.widedynamicrange20.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [WideDynamicRange20](_api_types_.widedynamicrange20.md)
 
 # Interface: WideDynamicRange20
 
@@ -6,35 +6,27 @@ Type describing whether WDR mode is enabled or disabled (on/off).
 
 ## Hierarchy
 
-**WideDynamicRange20**
+* **WideDynamicRange20**
 
 ## Index
 
 ### Properties
 
-* [Level](_api_types_.widedynamicrange20.md#level)
-* [Mode](_api_types_.widedynamicrange20.md#mode)
-
----
+* [Level](_api_types_.widedynamicrange20.md#optional-readonly-level)
+* [Mode](_api_types_.widedynamicrange20.md#readonly-mode)
 
 ## Properties
 
-<a id="level"></a>
+### `Optional` `Readonly` Level
 
-### `<Optional>` Level
+• **Level**? : *undefined | number*
 
-**● Level**: *`undefined` \| `number`*
-
-*Defined in [api/types.ts:2950](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2950)*
-
-___
-<a id="mode"></a>
-
-###  Mode
-
-**● Mode**: *[WideDynamicMode](../enums/_api_types_.widedynamicmode.md)*
-
-*Defined in [api/types.ts:2949](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2949)*
+*Defined in [api/types.ts:2979](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2979)*
 
 ___
 
+### `Readonly` Mode
+
+• **Mode**: *[WideDynamicMode](../enums/_api_types_.widedynamicmode.md)*
+
+*Defined in [api/types.ts:2978](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2978)*

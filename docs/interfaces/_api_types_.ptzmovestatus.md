@@ -1,38 +1,30 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PTZMoveStatus](../interfaces/_api_types_.ptzmovestatus.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PTZMoveStatus](_api_types_.ptzmovestatus.md)
 
 # Interface: PTZMoveStatus
 
 ## Hierarchy
 
-**PTZMoveStatus**
+* **PTZMoveStatus**
 
 ## Index
 
 ### Properties
 
-* [PanTilt](_api_types_.ptzmovestatus.md#pantilt)
-* [Zoom](_api_types_.ptzmovestatus.md#zoom)
-
----
+* [PanTilt](_api_types_.ptzmovestatus.md#optional-readonly-pantilt)
+* [Zoom](_api_types_.ptzmovestatus.md#optional-readonly-zoom)
 
 ## Properties
 
-<a id="pantilt"></a>
+### `Optional` `Readonly` PanTilt
 
-### `<Optional>` PanTilt
+• **PanTilt**? : *[MoveStatus](../enums/_api_types_.movestatus.md)*
 
-**● PanTilt**: *[MoveStatus](../enums/_api_types_.movestatus.md)*
-
-*Defined in [api/types.ts:334](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L334)*
-
-___
-<a id="zoom"></a>
-
-### `<Optional>` Zoom
-
-**● Zoom**: *[MoveStatus](../enums/_api_types_.movestatus.md)*
-
-*Defined in [api/types.ts:335](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L335)*
+*Defined in [api/types.ts:336](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L336)*
 
 ___
 
+### `Optional` `Readonly` Zoom
+
+• **Zoom**? : *[MoveStatus](../enums/_api_types_.movestatus.md)*
+
+*Defined in [api/types.ts:337](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L337)*

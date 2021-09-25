@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PropertyOperation](../enums/_api_types_.propertyoperation.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PropertyOperation](_api_types_.propertyoperation.md)
 
 # Enumeration: PropertyOperation
 
@@ -10,35 +10,26 @@
 * [Deleted](_api_types_.propertyoperation.md#deleted)
 * [Initialized](_api_types_.propertyoperation.md#initialized)
 
----
-
 ## Enumeration members
-
-<a id="changed"></a>
 
 ###  Changed
 
-**Changed**:  = "Changed"
+• **Changed**: = "Changed"
 
-*Defined in [api/types.ts:5441](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5441)*
+*Defined in [api/types.ts:5617](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5617)*
 
 ___
-<a id="deleted"></a>
 
 ###  Deleted
 
-**Deleted**:  = "Deleted"
+• **Deleted**: = "Deleted"
 
-*Defined in [api/types.ts:5437](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5437)*
+*Defined in [api/types.ts:5613](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5613)*
 
 ___
-<a id="initialized"></a>
 
 ###  Initialized
 
-**Initialized**:  = "Initialized"
+• **Initialized**: = "Initialized"
 
-*Defined in [api/types.ts:5433](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L5433)*
-
-___
-
+*Defined in [api/types.ts:5609](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L5609)*

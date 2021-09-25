@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [NetworkZeroConfiguration](../interfaces/_api_types_.networkzeroconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [NetworkZeroConfiguration](_api_types_.networkzeroconfiguration.md)
 
 # Interface: NetworkZeroConfiguration
 
@@ -6,55 +6,45 @@ Unique identifier of network interface.
 
 ## Hierarchy
 
-**NetworkZeroConfiguration**
+* **NetworkZeroConfiguration**
 
 ## Index
 
 ### Properties
 
-* [Addresses](_api_types_.networkzeroconfiguration.md#addresses)
-* [Enabled](_api_types_.networkzeroconfiguration.md#enabled)
-* [Extension](_api_types_.networkzeroconfiguration.md#extension)
-* [InterfaceToken](_api_types_.networkzeroconfiguration.md#interfacetoken)
-
----
+* [Addresses](_api_types_.networkzeroconfiguration.md#optional-readonly-addresses)
+* [Enabled](_api_types_.networkzeroconfiguration.md#readonly-enabled)
+* [Extension](_api_types_.networkzeroconfiguration.md#optional-readonly-extension)
+* [InterfaceToken](_api_types_.networkzeroconfiguration.md#readonly-interfacetoken)
 
 ## Properties
 
-<a id="addresses"></a>
+### `Optional` `Readonly` Addresses
 
-### `<Optional>` Addresses
+• **Addresses**? : *[IPv4Address](../modules/_api_types_.md#ipv4address)*
 
-**● Addresses**: *[IPv4Address](../modules/_api_types_.md#ipv4address)*
-
-*Defined in [api/types.ts:1468](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1468)*
-
-___
-<a id="enabled"></a>
-
-###  Enabled
-
-**● Enabled**: *`boolean`*
-
-*Defined in [api/types.ts:1467](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1467)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[NetworkZeroConfigurationExtension](_api_types_.networkzeroconfigurationextension.md)*
-
-*Defined in [api/types.ts:1469](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1469)*
-
-___
-<a id="interfacetoken"></a>
-
-###  InterfaceToken
-
-**● InterfaceToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
-
-*Defined in [api/types.ts:1466](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1466)*
+*Defined in [api/types.ts:1497](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1497)*
 
 ___
 
+### `Readonly` Enabled
+
+• **Enabled**: *boolean*
+
+*Defined in [api/types.ts:1496](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1496)*
+
+___
+
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[NetworkZeroConfigurationExtension](_api_types_.networkzeroconfigurationextension.md)*
+
+*Defined in [api/types.ts:1498](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1498)*
+
+___
+
+### `Readonly` InterfaceToken
+
+• **InterfaceToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
+
+*Defined in [api/types.ts:1495](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1495)*

@@ -20,7 +20,7 @@ export class ONVIFReplay {
      *   Requests a URI that can be used to initiate playback of a recorded stream
      *   using RTSP as the control protocol. The URI is valid only as it is
      *   specified in the response.
-     *   This operation is mandatory.
+     *   A device supporting the Replay Service shall support the GetReplayUri command.
      *   
      */
     static GetReplayUri(StreamSetup: StreamSetup, RecordingToken: ReferenceToken) {
@@ -65,7 +65,7 @@ export class ONVIFReplay {
      *   Requests a URI that can be used to initiate playback of a recorded stream
      *   using RTSP as the control protocol. The URI is valid only as it is
      *   specified in the response.
-     *   This operation is mandatory.
+     *   A device supporting the Replay Service shall support the GetReplayUri command.
      *   
      */
     GetReplayUri(StreamSetup: StreamSetup, RecordingToken: ReferenceToken) {

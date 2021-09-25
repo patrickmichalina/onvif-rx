@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [FocusConfiguration](../interfaces/_api_types_.focusconfiguration.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [FocusConfiguration](_api_types_.focusconfiguration.md)
 
 # Interface: FocusConfiguration
 
@@ -6,55 +6,45 @@ Parameter to set autofocus near limit (unit: meter).
 
 ## Hierarchy
 
-**FocusConfiguration**
+* **FocusConfiguration**
 
 ## Index
 
 ### Properties
 
-* [AutoFocusMode](_api_types_.focusconfiguration.md#autofocusmode)
-* [DefaultSpeed](_api_types_.focusconfiguration.md#defaultspeed)
-* [FarLimit](_api_types_.focusconfiguration.md#farlimit)
-* [NearLimit](_api_types_.focusconfiguration.md#nearlimit)
-
----
+* [AutoFocusMode](_api_types_.focusconfiguration.md#readonly-autofocusmode)
+* [DefaultSpeed](_api_types_.focusconfiguration.md#readonly-defaultspeed)
+* [FarLimit](_api_types_.focusconfiguration.md#readonly-farlimit)
+* [NearLimit](_api_types_.focusconfiguration.md#readonly-nearlimit)
 
 ## Properties
 
-<a id="autofocusmode"></a>
+### `Readonly` AutoFocusMode
 
-###  AutoFocusMode
+• **AutoFocusMode**: *[AutoFocusMode](../enums/_api_types_.autofocusmode.md)*
 
-**● AutoFocusMode**: *[AutoFocusMode](../enums/_api_types_.autofocusmode.md)*
-
-*Defined in [api/types.ts:2605](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2605)*
-
-___
-<a id="defaultspeed"></a>
-
-###  DefaultSpeed
-
-**● DefaultSpeed**: *`number`*
-
-*Defined in [api/types.ts:2606](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2606)*
-
-___
-<a id="farlimit"></a>
-
-###  FarLimit
-
-**● FarLimit**: *`number`*
-
-*Defined in [api/types.ts:2608](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2608)*
-
-___
-<a id="nearlimit"></a>
-
-###  NearLimit
-
-**● NearLimit**: *`number`*
-
-*Defined in [api/types.ts:2607](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2607)*
+*Defined in [api/types.ts:2634](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2634)*
 
 ___
 
+### `Readonly` DefaultSpeed
+
+• **DefaultSpeed**: *number*
+
+*Defined in [api/types.ts:2635](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2635)*
+
+___
+
+### `Readonly` FarLimit
+
+• **FarLimit**: *number*
+
+*Defined in [api/types.ts:2637](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2637)*
+
+___
+
+### `Readonly` NearLimit
+
+• **NearLimit**: *number*
+
+*Defined in [api/types.ts:2636](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2636)*

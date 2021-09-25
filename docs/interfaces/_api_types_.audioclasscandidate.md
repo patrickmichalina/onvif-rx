@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [AudioClassCandidate](../interfaces/_api_types_.audioclasscandidate.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [AudioClassCandidate](_api_types_.audioclasscandidate.md)
 
 # Interface: AudioClassCandidate
 
@@ -6,35 +6,27 @@ Indicates audio class label
 
 ## Hierarchy
 
-**AudioClassCandidate**
+* **AudioClassCandidate**
 
 ## Index
 
 ### Properties
 
-* [Likelihood](_api_types_.audioclasscandidate.md#likelihood)
-* [Type](_api_types_.audioclasscandidate.md#type)
-
----
+* [Likelihood](_api_types_.audioclasscandidate.md#readonly-likelihood)
+* [Type](_api_types_.audioclasscandidate.md#readonly-type)
 
 ## Properties
 
-<a id="likelihood"></a>
+### `Readonly` Likelihood
 
-###  Likelihood
+• **Likelihood**: *number*
 
-**● Likelihood**: *`number`*
-
-*Defined in [api/types.ts:4080](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4080)*
-
-___
-<a id="type"></a>
-
-###  Type
-
-**● Type**: *[AudioClassType](../modules/_api_types_.md#audioclasstype)*
-
-*Defined in [api/types.ts:4079](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4079)*
+*Defined in [api/types.ts:4100](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4100)*
 
 ___
 
+### `Readonly` Type
+
+• **Type**: *[AudioClassType](../enums/_api_types_.audioclasstype.md)*
+
+*Defined in [api/types.ts:4099](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4099)*

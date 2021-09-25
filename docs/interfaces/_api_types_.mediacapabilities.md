@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [MediaCapabilities](../interfaces/_api_types_.mediacapabilities.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [MediaCapabilities](_api_types_.mediacapabilities.md)
 
 # Interface: MediaCapabilities
 
@@ -6,45 +6,36 @@ Media service URI.
 
 ## Hierarchy
 
-**MediaCapabilities**
+* **MediaCapabilities**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.mediacapabilities.md#extension)
-* [StreamingCapabilities](_api_types_.mediacapabilities.md#streamingcapabilities)
-* [XAddr](_api_types_.mediacapabilities.md#xaddr)
-
----
+* [Extension](_api_types_.mediacapabilities.md#optional-readonly-extension)
+* [StreamingCapabilities](_api_types_.mediacapabilities.md#readonly-streamingcapabilities)
+* [XAddr](_api_types_.mediacapabilities.md#readonly-xaddr)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[MediaCapabilitiesExtension](_api_types_.mediacapabilitiesextension.md)*
 
-**● Extension**: *[MediaCapabilitiesExtension](_api_types_.mediacapabilitiesextension.md)*
-
-*Defined in [api/types.ts:1696](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1696)*
-
-___
-<a id="streamingcapabilities"></a>
-
-###  StreamingCapabilities
-
-**● StreamingCapabilities**: *[RealTimeStreamingCapabilities](_api_types_.realtimestreamingcapabilities.md)*
-
-*Defined in [api/types.ts:1695](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1695)*
-
-___
-<a id="xaddr"></a>
-
-###  XAddr
-
-**● XAddr**: *`string`*
-
-*Defined in [api/types.ts:1694](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1694)*
+*Defined in [api/types.ts:1725](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1725)*
 
 ___
 
+### `Readonly` StreamingCapabilities
+
+• **StreamingCapabilities**: *[RealTimeStreamingCapabilities](_api_types_.realtimestreamingcapabilities.md)*
+
+*Defined in [api/types.ts:1724](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1724)*
+
+___
+
+### `Readonly` XAddr
+
+• **XAddr**: *string*
+
+*Defined in [api/types.ts:1723](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1723)*

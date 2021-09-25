@@ -141,7 +141,7 @@ export class ONVIFImaging {
     /**
      * Set the ImagingConfiguration for the requested VideoSource.
      */
-    SetImagingSettings(VideoSourceToken: ReferenceToken, ImagingSettings: ImagingSettings20, ForcePersistence: boolean) {
+    SetImagingSettings(VideoSourceToken: ReferenceToken, ImagingSettings: ImagingSettings20, ForcePersistence?: boolean) {
         return ONVIFImaging.SetImagingSettings(VideoSourceToken,ImagingSettings,ForcePersistence).run(this.config)
     }
 

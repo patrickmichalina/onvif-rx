@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [CertificateInformation](../interfaces/_api_types_.certificateinformation.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [CertificateInformation](_api_types_.certificateinformation.md)
 
 # Interface: CertificateInformation
 
@@ -6,125 +6,108 @@ Validity Range is from "NotBefore" to "NotAfter"; the corresponding DateTimeRang
 
 ## Hierarchy
 
-**CertificateInformation**
+* **CertificateInformation**
 
 ## Index
 
 ### Properties
 
-* [CertificateID](_api_types_.certificateinformation.md#certificateid)
-* [ExtendedKeyUsage](_api_types_.certificateinformation.md#extendedkeyusage)
-* [Extension](_api_types_.certificateinformation.md#extension)
-* [IssuerDN](_api_types_.certificateinformation.md#issuerdn)
-* [KeyLength](_api_types_.certificateinformation.md#keylength)
-* [KeyUsage](_api_types_.certificateinformation.md#keyusage)
-* [SerialNum](_api_types_.certificateinformation.md#serialnum)
-* [SignatureAlgorithm](_api_types_.certificateinformation.md#signaturealgorithm)
-* [SubjectDN](_api_types_.certificateinformation.md#subjectdn)
-* [Validity](_api_types_.certificateinformation.md#validity)
-* [Version](_api_types_.certificateinformation.md#version)
-
----
+* [CertificateID](_api_types_.certificateinformation.md#readonly-certificateid)
+* [ExtendedKeyUsage](_api_types_.certificateinformation.md#optional-readonly-extendedkeyusage)
+* [Extension](_api_types_.certificateinformation.md#optional-readonly-extension)
+* [IssuerDN](_api_types_.certificateinformation.md#optional-readonly-issuerdn)
+* [KeyLength](_api_types_.certificateinformation.md#optional-readonly-keylength)
+* [KeyUsage](_api_types_.certificateinformation.md#optional-readonly-keyusage)
+* [SerialNum](_api_types_.certificateinformation.md#optional-readonly-serialnum)
+* [SignatureAlgorithm](_api_types_.certificateinformation.md#optional-readonly-signaturealgorithm)
+* [SubjectDN](_api_types_.certificateinformation.md#optional-readonly-subjectdn)
+* [Validity](_api_types_.certificateinformation.md#optional-readonly-validity)
+* [Version](_api_types_.certificateinformation.md#optional-readonly-version)
 
 ## Properties
 
-<a id="certificateid"></a>
+### `Readonly` CertificateID
 
-###  CertificateID
+• **CertificateID**: *string*
 
-**● CertificateID**: *`string`*
-
-*Defined in [api/types.ts:2098](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2098)*
-
-___
-<a id="extendedkeyusage"></a>
-
-### `<Optional>` ExtendedKeyUsage
-
-**● ExtendedKeyUsage**: *[CertificateUsage](_api_types_.certificateusage.md)*
-
-*Defined in [api/types.ts:2102](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2102)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[CertificateInformationExtension](_api_types_.certificateinformationextension.md)*
-
-*Defined in [api/types.ts:2108](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2108)*
-
-___
-<a id="issuerdn"></a>
-
-### `<Optional>` IssuerDN
-
-**● IssuerDN**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2099](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2099)*
-
-___
-<a id="keylength"></a>
-
-### `<Optional>` KeyLength
-
-**● KeyLength**: *`undefined` \| `number`*
-
-*Defined in [api/types.ts:2103](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2103)*
-
-___
-<a id="keyusage"></a>
-
-### `<Optional>` KeyUsage
-
-**● KeyUsage**: *[CertificateUsage](_api_types_.certificateusage.md)*
-
-*Defined in [api/types.ts:2101](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2101)*
-
-___
-<a id="serialnum"></a>
-
-### `<Optional>` SerialNum
-
-**● SerialNum**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2105](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2105)*
-
-___
-<a id="signaturealgorithm"></a>
-
-### `<Optional>` SignatureAlgorithm
-
-**● SignatureAlgorithm**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2106](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2106)*
-
-___
-<a id="subjectdn"></a>
-
-### `<Optional>` SubjectDN
-
-**● SubjectDN**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2100](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2100)*
-
-___
-<a id="validity"></a>
-
-### `<Optional>` Validity
-
-**● Validity**: *[DateTimeRange](_api_types_.datetimerange.md)*
-
-*Defined in [api/types.ts:2107](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2107)*
-
-___
-<a id="version"></a>
-
-### `<Optional>` Version
-
-**● Version**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:2104](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2104)*
+*Defined in [api/types.ts:2127](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2127)*
 
 ___
 
+### `Optional` `Readonly` ExtendedKeyUsage
+
+• **ExtendedKeyUsage**? : *[CertificateUsage](_api_types_.certificateusage.md)*
+
+*Defined in [api/types.ts:2131](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2131)*
+
+___
+
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[CertificateInformationExtension](_api_types_.certificateinformationextension.md)*
+
+*Defined in [api/types.ts:2137](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2137)*
+
+___
+
+### `Optional` `Readonly` IssuerDN
+
+• **IssuerDN**? : *undefined | string*
+
+*Defined in [api/types.ts:2128](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2128)*
+
+___
+
+### `Optional` `Readonly` KeyLength
+
+• **KeyLength**? : *undefined | number*
+
+*Defined in [api/types.ts:2132](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2132)*
+
+___
+
+### `Optional` `Readonly` KeyUsage
+
+• **KeyUsage**? : *[CertificateUsage](_api_types_.certificateusage.md)*
+
+*Defined in [api/types.ts:2130](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2130)*
+
+___
+
+### `Optional` `Readonly` SerialNum
+
+• **SerialNum**? : *undefined | string*
+
+*Defined in [api/types.ts:2134](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2134)*
+
+___
+
+### `Optional` `Readonly` SignatureAlgorithm
+
+• **SignatureAlgorithm**? : *undefined | string*
+
+*Defined in [api/types.ts:2135](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2135)*
+
+___
+
+### `Optional` `Readonly` SubjectDN
+
+• **SubjectDN**? : *undefined | string*
+
+*Defined in [api/types.ts:2129](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2129)*
+
+___
+
+### `Optional` `Readonly` Validity
+
+• **Validity**? : *[DateTimeRange](_api_types_.datetimerange.md)*
+
+*Defined in [api/types.ts:2136](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2136)*
+
+___
+
+### `Optional` `Readonly` Version
+
+• **Version**? : *undefined | string*
+
+*Defined in [api/types.ts:2133](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2133)*

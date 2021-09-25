@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [StreamSetup](../interfaces/_api_types_.streamsetup.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [StreamSetup](_api_types_.streamsetup.md)
 
 # Interface: StreamSetup
 
@@ -6,35 +6,27 @@ Defines if a multicast or unicast stream is requested
 
 ## Hierarchy
 
-**StreamSetup**
+* **StreamSetup**
 
 ## Index
 
 ### Properties
 
-* [Stream](_api_types_.streamsetup.md#stream)
-* [Transport](_api_types_.streamsetup.md#transport)
-
----
+* [Stream](_api_types_.streamsetup.md#readonly-stream)
+* [Transport](_api_types_.streamsetup.md#readonly-transport)
 
 ## Properties
 
-<a id="stream"></a>
+### `Readonly` Stream
 
-###  Stream
+• **Stream**: *[StreamType](../enums/_api_types_.streamtype.md)*
 
-**● Stream**: *[StreamType](../enums/_api_types_.streamtype.md)*
-
-*Defined in [api/types.ts:1156](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1156)*
-
-___
-<a id="transport"></a>
-
-###  Transport
-
-**● Transport**: *[Transport](_api_types_.transport.md)*
-
-*Defined in [api/types.ts:1157](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1157)*
+*Defined in [api/types.ts:1185](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1185)*
 
 ___
 
+### `Readonly` Transport
+
+• **Transport**: *[Transport](_api_types_.transport.md)*
+
+*Defined in [api/types.ts:1186](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1186)*

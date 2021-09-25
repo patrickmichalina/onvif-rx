@@ -1,32 +1,23 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [PanTiltLimits](../interfaces/_api_types_.pantiltlimits.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [PanTiltLimits](_api_types_.pantiltlimits.md)
 
 # Interface: PanTiltLimits
 
-```
-        A range of pan tilt limits.
-```
+A range of pan tilt limits.
 
 ## Hierarchy
 
-**PanTiltLimits**
+* **PanTiltLimits**
 
 ## Index
 
 ### Properties
 
-* [Range](_api_types_.pantiltlimits.md#range)
-
----
+* [Range](_api_types_.pantiltlimits.md#readonly-range)
 
 ## Properties
 
-<a id="range"></a>
+### `Readonly` Range
 
-###  Range
+• **Range**: *[Space2DDescription](_api_types_.space2ddescription.md)*
 
-**● Range**: *[Space2DDescription](_api_types_.space2ddescription.md)*
-
-*Defined in [api/types.ts:2377](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L2377)*
-
-___
-
+*Defined in [api/types.ts:2406](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L2406)*

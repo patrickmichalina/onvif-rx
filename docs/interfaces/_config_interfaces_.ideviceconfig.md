@@ -1,48 +1,39 @@
-[onvif-rx](../README.md) > ["config/interfaces"](../modules/_config_interfaces_.md) > [IDeviceConfig](../interfaces/_config_interfaces_.ideviceconfig.md)
+[onvif-rx](../README.md) › ["config/interfaces"](../modules/_config_interfaces_.md) › [IDeviceConfig](_config_interfaces_.ideviceconfig.md)
 
 # Interface: IDeviceConfig
 
 ## Hierarchy
 
-**IDeviceConfig**
+* **IDeviceConfig**
 
 ## Index
 
 ### Properties
 
-* [deviceUrl](_config_interfaces_.ideviceconfig.md#deviceurl)
-* [system](_config_interfaces_.ideviceconfig.md#system)
-* [user](_config_interfaces_.ideviceconfig.md#user)
-
----
+* [deviceUrl](_config_interfaces_.ideviceconfig.md#readonly-deviceurl)
+* [system](_config_interfaces_.ideviceconfig.md#readonly-system)
+* [user](_config_interfaces_.ideviceconfig.md#readonly-user)
 
 ## Properties
 
-<a id="deviceurl"></a>
+### `Readonly` deviceUrl
 
-###  deviceUrl
+• **deviceUrl**: *string*
 
-**● deviceUrl**: *`string`*
-
-*Defined in [config/interfaces.ts:26](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L26)*
-
-___
-<a id="system"></a>
-
-###  system
-
-**● system**: *[ISystemConfig](_config_interfaces_.isystemconfig.md)*
-
-*Defined in [config/interfaces.ts:25](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L25)*
-
-___
-<a id="user"></a>
-
-###  user
-
-**● user**: *`IMaybe`<[IUserCredentials](_config_interfaces_.iusercredentials.md)>*
-
-*Defined in [config/interfaces.ts:27](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/config/interfaces.ts#L27)*
+*Defined in [config/interfaces.ts:25](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L25)*
 
 ___
 
+### `Readonly` system
+
+• **system**: *[ISystemConfig](_config_interfaces_.isystemconfig.md)*
+
+*Defined in [config/interfaces.ts:24](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L24)*
+
+___
+
+### `Readonly` user
+
+• **user**: *IMaybe‹[IUserCredentials](_config_interfaces_.iusercredentials.md)›*
+
+*Defined in [config/interfaces.ts:26](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/config/interfaces.ts#L26)*

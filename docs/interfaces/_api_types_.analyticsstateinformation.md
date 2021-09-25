@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [AnalyticsStateInformation](../interfaces/_api_types_.analyticsstateinformation.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [AnalyticsStateInformation](_api_types_.analyticsstateinformation.md)
 
 # Interface: AnalyticsStateInformation
 
@@ -6,35 +6,27 @@ Token of the control object whose status is requested.
 
 ## Hierarchy
 
-**AnalyticsStateInformation**
+* **AnalyticsStateInformation**
 
 ## Index
 
 ### Properties
 
-* [AnalyticsEngineControlToken](_api_types_.analyticsstateinformation.md#analyticsenginecontroltoken)
-* [State](_api_types_.analyticsstateinformation.md#state)
-
----
+* [AnalyticsEngineControlToken](_api_types_.analyticsstateinformation.md#readonly-analyticsenginecontroltoken)
+* [State](_api_types_.analyticsstateinformation.md#readonly-state)
 
 ## Properties
 
-<a id="analyticsenginecontroltoken"></a>
+### `Readonly` AnalyticsEngineControlToken
 
-###  AnalyticsEngineControlToken
+• **AnalyticsEngineControlToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
 
-**● AnalyticsEngineControlToken**: *[ReferenceToken](../modules/_api_types_.md#referencetoken)*
-
-*Defined in [api/types.ts:4047](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4047)*
-
-___
-<a id="state"></a>
-
-###  State
-
-**● State**: *[AnalyticsState](_api_types_.analyticsstate.md)*
-
-*Defined in [api/types.ts:4048](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4048)*
+*Defined in [api/types.ts:4067](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4067)*
 
 ___
 
+### `Readonly` State
+
+• **State**: *[AnalyticsState](_api_types_.analyticsstate.md)*
+
+*Defined in [api/types.ts:4068](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4068)*

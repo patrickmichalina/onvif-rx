@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [DeviceCapabilities](../interfaces/_api_types_.devicecapabilities.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [DeviceCapabilities](_api_types_.devicecapabilities.md)
 
 # Interface: DeviceCapabilities
 
@@ -6,75 +6,63 @@ Device service URI.
 
 ## Hierarchy
 
-**DeviceCapabilities**
+* **DeviceCapabilities**
 
 ## Index
 
 ### Properties
 
-* [Extension](_api_types_.devicecapabilities.md#extension)
-* [IO](_api_types_.devicecapabilities.md#io)
-* [Network](_api_types_.devicecapabilities.md#network)
-* [Security](_api_types_.devicecapabilities.md#security)
-* [System](_api_types_.devicecapabilities.md#system)
-* [XAddr](_api_types_.devicecapabilities.md#xaddr)
-
----
+* [Extension](_api_types_.devicecapabilities.md#optional-readonly-extension)
+* [IO](_api_types_.devicecapabilities.md#optional-readonly-io)
+* [Network](_api_types_.devicecapabilities.md#optional-readonly-network)
+* [Security](_api_types_.devicecapabilities.md#optional-readonly-security)
+* [System](_api_types_.devicecapabilities.md#optional-readonly-system)
+* [XAddr](_api_types_.devicecapabilities.md#readonly-xaddr)
 
 ## Properties
 
-<a id="extension"></a>
+### `Optional` `Readonly` Extension
 
-### `<Optional>` Extension
+• **Extension**? : *[DeviceCapabilitiesExtension](_api_types_.devicecapabilitiesextension.md)*
 
-**● Extension**: *[DeviceCapabilitiesExtension](_api_types_.devicecapabilitiesextension.md)*
-
-*Defined in [api/types.ts:1647](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1647)*
-
-___
-<a id="io"></a>
-
-### `<Optional>` IO
-
-**● IO**: *[IOCapabilities](_api_types_.iocapabilities.md)*
-
-*Defined in [api/types.ts:1645](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1645)*
-
-___
-<a id="network"></a>
-
-### `<Optional>` Network
-
-**● Network**: *[NetworkCapabilities](_api_types_.networkcapabilities.md)*
-
-*Defined in [api/types.ts:1643](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1643)*
-
-___
-<a id="security"></a>
-
-### `<Optional>` Security
-
-**● Security**: *[SecurityCapabilities](_api_types_.securitycapabilities.md)*
-
-*Defined in [api/types.ts:1646](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1646)*
-
-___
-<a id="system"></a>
-
-### `<Optional>` System
-
-**● System**: *[SystemCapabilities](_api_types_.systemcapabilities.md)*
-
-*Defined in [api/types.ts:1644](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1644)*
-
-___
-<a id="xaddr"></a>
-
-###  XAddr
-
-**● XAddr**: *`string`*
-
-*Defined in [api/types.ts:1642](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1642)*
+*Defined in [api/types.ts:1676](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1676)*
 
 ___
 
+### `Optional` `Readonly` IO
+
+• **IO**? : *[IOCapabilities](_api_types_.iocapabilities.md)*
+
+*Defined in [api/types.ts:1674](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1674)*
+
+___
+
+### `Optional` `Readonly` Network
+
+• **Network**? : *[NetworkCapabilities](_api_types_.networkcapabilities.md)*
+
+*Defined in [api/types.ts:1672](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1672)*
+
+___
+
+### `Optional` `Readonly` Security
+
+• **Security**? : *[SecurityCapabilities](_api_types_.securitycapabilities.md)*
+
+*Defined in [api/types.ts:1675](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1675)*
+
+___
+
+### `Optional` `Readonly` System
+
+• **System**? : *[SystemCapabilities](_api_types_.systemcapabilities.md)*
+
+*Defined in [api/types.ts:1673](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1673)*
+
+___
+
+### `Readonly` XAddr
+
+• **XAddr**: *string*
+
+*Defined in [api/types.ts:1671](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1671)*

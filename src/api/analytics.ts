@@ -9,8 +9,6 @@ export class ONVIFAnalytics {
     /**
      * 
      *   List all rules that are supported by the given VideoAnalyticsConfiguration.
-     *   The result of this method may depend on the overall Video analytics configuration of the device,
-     *   which is available via the current set of profiles. 
      *   
      */
     static GetSupportedRules(ConfigurationToken: ReferenceToken) {
@@ -94,8 +92,6 @@ export class ONVIFAnalytics {
     /**
      * 
      *   List all analytics modules that are supported by the given VideoAnalyticsConfiguration.
-     *   The result of this method may depend on the overall Video analytics configuration of the device,
-     *   which is available via the current set of profiles. 
      *   
      */
     static GetSupportedAnalyticsModules(ConfigurationToken: ReferenceToken) {
@@ -122,9 +118,10 @@ export class ONVIFAnalytics {
      *   where the Name of the supported AnalyticsModules correspond to the type of an AnalyticsModule instance.
      *   Pass unique module names which can be later used as reference. The Parameters of the analytics module must match those of the corresponding AnalyticsModuleDescription.
      *   
-     *   Although this method is mandatory a device implementation must not support adding modules. 
-     *   Instead it can provide a fixed set of predefined configurations via the media service function 
-     *   GetCompatibleVideoAnalyticsConfigurations.
+     *   Although this method is mandatory a device implementation may not support adding modules. 
+     *   Instead it can provide a fixed set of predefined configurations via the media service functions 
+     *   GetCompatibleVideoAnalyticsConfigurations and 
+     *   GetAnalyticsConfigurations.
      *   
      *   The device shall ensure that a corresponding analytics engine starts operation when a client
      *   subscribes directly or indirectly for events produced by the analytics or rule engine or when a
@@ -177,9 +174,22 @@ export class ONVIFAnalytics {
 
     /**
      * 
+     *   This method provides a computer readable description of the metadata that the selected analytics modules can generate. 
+     *   The type parameter allows to select a single analytics module. By default the output shall relate to all analytics modules that exist in the device. 
+     *   The response shall provide a sample XML frame. 
+     *   The sample frame shall include all potentially generated elements by the selected analytics modules. 
+     *   Note that this e.g. does not need to include all possible class type enumerations.
+     *   
+     */
+    static GetSupportedMetadata(Type?: any) {
+        return createStandardRequestBodyFromString(generateRequestElements('tan:GetSupportedMetadata')({tan_Type:Type}))
+                        .map(mapResponseXmlToJson<any>('tan:GetSupportedMetadataResponse'))
+                      
+    }
+
+    /**
+     * 
      *   List all rules that are supported by the given VideoAnalyticsConfiguration.
-     *   The result of this method may depend on the overall Video analytics configuration of the device,
-     *   which is available via the current set of profiles. 
      *   
      */
     GetSupportedRules(ConfigurationToken: ReferenceToken) {
@@ -226,7 +236,7 @@ export class ONVIFAnalytics {
      *   Return the options for the supported rules that specify an Option attribute.
      *   
      */
-    GetRuleOptions(ConfigurationToken: ReferenceToken, RuleType: any) {
+    GetRuleOptions(ConfigurationToken: ReferenceToken, RuleType?: any) {
         return ONVIFAnalytics.GetRuleOptions(ConfigurationToken,RuleType).run(this.config)
     }
 
@@ -249,8 +259,6 @@ export class ONVIFAnalytics {
     /**
      * 
      *   List all analytics modules that are supported by the given VideoAnalyticsConfiguration.
-     *   The result of this method may depend on the overall Video analytics configuration of the device,
-     *   which is available via the current set of profiles. 
      *   
      */
     GetSupportedAnalyticsModules(ConfigurationToken: ReferenceToken) {
@@ -262,7 +270,7 @@ export class ONVIFAnalytics {
      *   Return the options for the supported analytics modules that specify an Option attribute.
      *   
      */
-    GetAnalyticsModuleOptions(ConfigurationToken: ReferenceToken, Type: any) {
+    GetAnalyticsModuleOptions(ConfigurationToken: ReferenceToken, Type?: any) {
         return ONVIFAnalytics.GetAnalyticsModuleOptions(ConfigurationToken,Type).run(this.config)
     }
 
@@ -273,9 +281,10 @@ export class ONVIFAnalytics {
      *   where the Name of the supported AnalyticsModules correspond to the type of an AnalyticsModule instance.
      *   Pass unique module names which can be later used as reference. The Parameters of the analytics module must match those of the corresponding AnalyticsModuleDescription.
      *   
-     *   Although this method is mandatory a device implementation must not support adding modules. 
-     *   Instead it can provide a fixed set of predefined configurations via the media service function 
-     *   GetCompatibleVideoAnalyticsConfigurations.
+     *   Although this method is mandatory a device implementation may not support adding modules. 
+     *   Instead it can provide a fixed set of predefined configurations via the media service functions 
+     *   GetCompatibleVideoAnalyticsConfigurations and 
+     *   GetAnalyticsConfigurations.
      *   
      *   The device shall ensure that a corresponding analytics engine starts operation when a client
      *   subscribes directly or indirectly for events produced by the analytics or rule engine or when a
@@ -316,5 +325,18 @@ export class ONVIFAnalytics {
      */
     ModifyAnalyticsModules(ConfigurationToken: ReferenceToken, AnalyticsModule: Config) {
         return ONVIFAnalytics.ModifyAnalyticsModules(ConfigurationToken,AnalyticsModule).run(this.config)
+    }
+
+    /**
+     * 
+     *   This method provides a computer readable description of the metadata that the selected analytics modules can generate. 
+     *   The type parameter allows to select a single analytics module. By default the output shall relate to all analytics modules that exist in the device. 
+     *   The response shall provide a sample XML frame. 
+     *   The sample frame shall include all potentially generated elements by the selected analytics modules. 
+     *   Note that this e.g. does not need to include all possible class type enumerations.
+     *   
+     */
+    GetSupportedMetadata(Type?: any) {
+        return ONVIFAnalytics.GetSupportedMetadata(Type).run(this.config)
     }
 }

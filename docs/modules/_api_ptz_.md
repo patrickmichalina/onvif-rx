@@ -1,12 +1,9 @@
-[onvif-rx](../README.md) > ["api/ptz"](../modules/_api_ptz_.md)
+[onvif-rx](../README.md) › ["api/ptz"](_api_ptz_.md)
 
-# External module: "api/ptz"
+# Module: "api/ptz"
 
 ## Index
 
 ### Classes
 
 * [ONVIFPTZ](../classes/_api_ptz_.onvifptz.md)
-
----
-

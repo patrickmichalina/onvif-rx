@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [VideoEncodingProfiles](../enums/_api_types_.videoencodingprofiles.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [VideoEncodingProfiles](_api_types_.videoencodingprofiles.md)
 
 # Enumeration: VideoEncodingProfiles
 
@@ -14,71 +14,58 @@
 * [Main10](_api_types_.videoencodingprofiles.md#main10)
 * [Simple](_api_types_.videoencodingprofiles.md#simple)
 
----
-
 ## Enumeration members
-
-<a id="advancedsimple"></a>
 
 ###  AdvancedSimple
 
-**AdvancedSimple**:  = "AdvancedSimple"
+• **AdvancedSimple**: = "AdvancedSimple"
 
-*Defined in [api/types.ts:4593](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4593)*
+*Defined in [api/types.ts:4715](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4715)*
 
 ___
-<a id="baseline"></a>
 
 ###  Baseline
 
-**Baseline**:  = "Baseline"
+• **Baseline**: = "Baseline"
 
-*Defined in [api/types.ts:4597](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4597)*
+*Defined in [api/types.ts:4719](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4719)*
 
 ___
-<a id="extended"></a>
 
 ###  Extended
 
-**Extended**:  = "Extended"
+• **Extended**: = "Extended"
 
-*Defined in [api/types.ts:4609](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4609)*
+*Defined in [api/types.ts:4731](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4731)*
 
 ___
-<a id="high"></a>
 
 ###  High
 
-**High**:  = "High"
+• **High**: = "High"
 
-*Defined in [api/types.ts:4613](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4613)*
+*Defined in [api/types.ts:4735](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4735)*
 
 ___
-<a id="main"></a>
 
 ###  Main
 
-**Main**:  = "Main"
+• **Main**: = "Main"
 
-*Defined in [api/types.ts:4601](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4601)*
+*Defined in [api/types.ts:4723](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4723)*
 
 ___
-<a id="main10"></a>
 
 ###  Main10
 
-**Main10**:  = "Main10"
+• **Main10**: = "Main10"
 
-*Defined in [api/types.ts:4605](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4605)*
+*Defined in [api/types.ts:4727](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4727)*
 
 ___
-<a id="simple"></a>
 
 ###  Simple
 
-**Simple**:  = "Simple"
+• **Simple**: = "Simple"
 
-*Defined in [api/types.ts:4589](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4589)*
-
-___
-
+*Defined in [api/types.ts:4711](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4711)*

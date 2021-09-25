@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [SupportInformation](../interfaces/_api_types_.supportinformation.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [SupportInformation](_api_types_.supportinformation.md)
 
 # Interface: SupportInformation
 
@@ -6,35 +6,27 @@ The support information as attachment data.
 
 ## Hierarchy
 
-**SupportInformation**
+* **SupportInformation**
 
 ## Index
 
 ### Properties
 
-* [Binary](_api_types_.supportinformation.md#binary)
-* [String](_api_types_.supportinformation.md#string)
-
----
+* [Binary](_api_types_.supportinformation.md#optional-readonly-binary)
+* [String](_api_types_.supportinformation.md#optional-readonly-string)
 
 ## Properties
 
-<a id="binary"></a>
+### `Optional` `Readonly` Binary
 
-### `<Optional>` Binary
+• **Binary**? : *[AttachmentData](_api_types_.attachmentdata.md)*
 
-**● Binary**: *[AttachmentData](_api_types_.attachmentdata.md)*
-
-*Defined in [api/types.ts:1925](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1925)*
-
-___
-<a id="string"></a>
-
-### `<Optional>` String
-
-**● String**: *`undefined` \| `string`*
-
-*Defined in [api/types.ts:1926](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1926)*
+*Defined in [api/types.ts:1954](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1954)*
 
 ___
 
+### `Optional` `Readonly` String
+
+• **String**? : *undefined | string*
+
+*Defined in [api/types.ts:1955](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1955)*

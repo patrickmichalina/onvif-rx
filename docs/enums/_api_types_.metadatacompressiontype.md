@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [MetadataCompressionType](../enums/_api_types_.metadatacompressiontype.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [MetadataCompressionType](_api_types_.metadatacompressiontype.md)
 
 # Enumeration: MetadataCompressionType
 
@@ -10,35 +10,26 @@
 * [GZIP](_api_types_.metadatacompressiontype.md#gzip)
 * [None](_api_types_.metadatacompressiontype.md#none)
 
----
-
 ## Enumeration members
-
-<a id="exi"></a>
 
 ###  EXI
 
-**EXI**:  = "EXI"
+• **EXI**: = "EXI"
 
-*Defined in [api/types.ts:4667](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4667)*
+*Defined in [api/types.ts:4793](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4793)*
 
 ___
-<a id="gzip"></a>
 
 ###  GZIP
 
-**GZIP**:  = "GZIP"
+• **GZIP**: = "GZIP"
 
-*Defined in [api/types.ts:4663](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4663)*
+*Defined in [api/types.ts:4789](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4789)*
 
 ___
-<a id="none"></a>
 
 ###  None
 
-**None**:  = "None"
+• **None**: = "None"
 
-*Defined in [api/types.ts:4659](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L4659)*
-
-___
-
+*Defined in [api/types.ts:4785](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L4785)*

@@ -5,7 +5,8 @@ export type AbsoluteOrRelativeTimeType = any;
 /**
  * Unique identifier for a physical or logical resource.
  * 			Tokens should be assigned such that they are unique within a device. Tokens must be at least unique within its class.
- * 			Length up to 64 characters.
+ * 			Length up to 64 characters. Token may be extended by intermediate terminal with adding prefix to make it global unique.
+ * 			The length should be within 36 characters for generating at local device. See "Remote Token" section in Resource Query specification.
  */
 export type ReferenceToken = string;
 /**
@@ -15,15 +16,19 @@ export type Name = string;
 /**
  * 
  */
-export type IntAttrList = ReadonlyArray<number>;
+export type IntList = ReadonlyArray<number>;
 /**
  * 
  */
-export type FloatAttrList = ReadonlyArray<number>;
+export type FloatList = ReadonlyArray<number>;
 /**
  * 
  */
 export type StringAttrList = ReadonlyArray<string>;
+/**
+ * 
+ */
+export type StringList = ReadonlyArray<string>;
 /**
  * 
  */
@@ -71,10 +76,6 @@ export type AuxiliaryData = string;
 /**
  * 
  */
-export type TopicNamespaceLocation = string;
-/**
- * 
- */
 export type ReceiverReference = ReferenceToken;
 /**
  * 
@@ -108,13 +109,6 @@ export type RecordingJobMode = string;
  * 
  */
 export type RecordingJobState = string;
-/**
- * 
- * 		  AudioClassType acceptable values are;
- * 		   gun_shot, scream, glass_breaking, tire_screech   
- * 		
- */
-export type AudioClassType = string;
 /**
  * 
  * 	    'encodingStyle' indicates any canonicalization conventions followed in the contents of the containing element.  For example, the value 'http://schemas.xmlsoap.org/soap/encoding/' indicates the pattern described in SOAP specification
@@ -281,6 +275,14 @@ export interface ResumeFailedFaultType {
 }
 
 /**
+ * Range of values greater equal Min value and less equal Max value.
+ */
+export interface IntRange {
+    readonly 'Min': number;
+    readonly 'Max': number;
+}
+
+/**
  * 
  *   				Pan/tilt coordinate space selector. The following options are defined:
  * 						 http://www.onvif.org/ver10/tptz/PanTiltSpaces/PositionGenericSpace
@@ -356,14 +358,49 @@ export interface Polygon {
 
 /**
  * 
+ * 					Acceptable values:
+ * 					
+ * 						http://www.onvif.org/ver10/colorspace/YCbCr - YCbCr
+ * 							X attribute = Y value
+ * 								Y attribute = Cb value
+ * 								Z attribute = Cr value
+ * 						
+ * 						http://www.onvif.org/ver10/colorspace/RGB - RGB
+ * 							X attribute = R value
+ * 								Y attribute = G value
+ * 								Z attribute = B value
+ * 						
+ * 					
+ * 					If the Colorspace attribute is absent, YCbCr is implied.
+ * 
+ * 					Deprecated values:
+ * 					
+ * 						http://www.onvif.org/ver10/colorspace/CIELUV - CIE LUV
+ * 						http://www.onvif.org/ver10/colorspace/CIELAB - CIE 1976 (L*a*b*)
+ * 						http://www.onvif.org/ver10/colorspace/HSV - HSV
+ * 					
+ * 				
  */
 export interface Color {
 }
 
 /**
  * 
+ * 					Acceptable values are the same as in tt:Color.
+ * 				
  */
 export interface ColorCovariance {
+}
+
+/**
+ * 
+ */
+export interface ColorDescriptor {
+    readonly 'ColorCluster'?: any;
+    readonly 'Color': Color;
+    readonly 'Weight'?: number;
+    readonly 'Covariance'?: ColorCovariance;
+    readonly 'Extension'?: any;
 }
 
 /**
@@ -440,14 +477,6 @@ export interface IntRectangleRange {
 /**
  * Range of values greater equal Min value and less equal Max value.
  */
-export interface IntRange {
-    readonly 'Min': number;
-    readonly 'Max': number;
-}
-
-/**
- * Range of values greater equal Min value and less equal Max value.
- */
 export interface FloatRange {
     readonly 'Min': number;
     readonly 'Max': number;
@@ -464,14 +493,14 @@ export interface DurationRange {
 /**
  * List of values.
  */
-export interface IntList {
+export interface IntItems {
     readonly 'Items'?: number;
 }
 
 /**
  * 
  */
-export interface FloatList {
+export interface FloatItems {
     readonly 'Items'?: number;
 }
 
@@ -661,7 +690,7 @@ export interface VideoSourceConfigurationOptionsExtension2 {
  */
 export interface RotateOptions {
     readonly 'Mode': RotateMode;
-    readonly 'DegreeList'?: IntList;
+    readonly 'DegreeList'?: IntItems;
     readonly 'Extension'?: RotateOptionsExtension;
 }
 
@@ -888,8 +917,8 @@ export interface AudioEncoderConfigurationOptions {
  */
 export interface AudioEncoderConfigurationOption {
     readonly 'Encoding': AudioEncoding;
-    readonly 'BitrateList': IntList;
-    readonly 'SampleRateList': IntList;
+    readonly 'BitrateList': IntItems;
+    readonly 'SampleRateList': IntItems;
 }
 
 /**
@@ -907,8 +936,8 @@ export interface AudioEncoder2Configuration {
  */
 export interface AudioEncoder2ConfigurationOptions {
     readonly 'Encoding': string;
-    readonly 'BitrateList': IntList;
-    readonly 'SampleRateList': IntList;
+    readonly 'BitrateList': IntItems;
+    readonly 'SampleRateList': IntItems;
 }
 
 /**
@@ -1113,24 +1142,24 @@ export interface AudioDecoderConfigurationOptions {
  * List of supported bitrates in kbps
  */
 export interface G711DecOptions {
-    readonly 'Bitrate': IntList;
-    readonly 'SampleRateRange': IntList;
+    readonly 'Bitrate': IntItems;
+    readonly 'SampleRateRange': IntItems;
 }
 
 /**
  * List of supported bitrates in kbps
  */
 export interface AACDecOptions {
-    readonly 'Bitrate': IntList;
-    readonly 'SampleRateRange': IntList;
+    readonly 'Bitrate': IntItems;
+    readonly 'SampleRateRange': IntItems;
 }
 
 /**
  * List of supported bitrates in kbps
  */
 export interface G726DecOptions {
-    readonly 'Bitrate': IntList;
-    readonly 'SampleRateRange': IntList;
+    readonly 'Bitrate': IntItems;
+    readonly 'SampleRateRange': IntItems;
 }
 
 /**
@@ -3239,9 +3268,10 @@ export interface FocusOptions20 {
 }
 
 /**
- * 
+ * Supported options for auto focus. Options shall be chosen from tt:AFModes.
  */
 export interface FocusOptions20Extension {
+    readonly 'AFModes'?: StringAttrList;
 }
 
 /**
@@ -3274,10 +3304,7 @@ export interface MessageExtension {
 }
 
 /**
- * 
- * 			List of parameters according to the corresponding ItemListDescription.
- * 			Each item in the list shall have a unique name.
- * 		
+ * Value name pair as defined by the corresponding description.
  */
 export interface ItemList {
     readonly 'SimpleItem'?: any;
@@ -3366,7 +3393,7 @@ export interface RuleEngineConfigurationExtension {
 }
 
 /**
- * List of configuration parameters as defined in the correspding description.
+ * List of configuration parameters as defined in the corresponding description.
  */
 export interface Config {
     readonly 'Parameters': ItemList;
@@ -3409,9 +3436,9 @@ export interface SupportedRulesExtension {
 
 /**
  * It optionally contains a list of URLs that provide the location of schema files.
- *         These schema files describe the types and elements used in the analytics module descriptions.
- *         If the analytics module descriptions reference types or elements of the ONVIF schema file,
- *         the ONVIF schema file MUST be explicitly listed.
+ * 					These schema files describe the types and elements used in the analytics module descriptions.
+ * 					Analytics module descriptions that reference types or elements imported from any ONVIF defined schema files
+ * 					need not explicitly list those schema files.
  */
 export interface SupportedAnalyticsModules {
     readonly 'AnalyticsModuleContentSchemaLocation'?: string;
@@ -3423,13 +3450,6 @@ export interface SupportedAnalyticsModules {
  * 
  */
 export interface SupportedAnalyticsModulesExtension {
-}
-
-/**
- * Contains Polygon configuration for rule parameters
- */
-export interface PolygonConfiguration {
-    readonly 'Polygon': Polygon;
 }
 
 /**
@@ -3661,7 +3681,7 @@ export interface FindEventResult {
     readonly 'RecordingToken': RecordingReference;
     readonly 'TrackToken': TrackReference;
     readonly 'Time': string;
-    readonly 'Event': any;
+    readonly 'Event': NotificationMessageHolderType;
     readonly 'StartStateEvent': boolean;
 }
 
@@ -4192,6 +4212,8 @@ export interface OSDImgConfigurationExtension {
 
 /**
  * 
+ * 						Acceptable values are the same as in tt:Color.
+ * 					
  */
 export interface ColorspaceRange {
     readonly 'X': FloatRange;
@@ -4201,10 +4223,8 @@ export interface ColorspaceRange {
 }
 
 /**
- * Describe the option of the color supported. Either list each color or define the range of color value. The following values are acceptable for Colourspace attribute.http://www.onvif.org/ver10/colorspace/YCbCr - YCbCr colourspace
- * 				http://www.onvif.org/ver10/colorspace/CIELUV - CIE LUV
- * 				http://www.onvif.org/ver10/colorspace/CIELAB - CIE 1976 (L*a*b*)
- * 				http://www.onvif.org/ver10/colorspace/HSV - HSV colourspace
+ * 
+ * 				Describe the colors supported. Either list each color or define the range of color values.
  * 			
  */
 export interface ColorOptions {
@@ -4341,6 +4361,17 @@ export interface StorageReferencePathExtension {
 
 /**
  * 
+ * True if the device supports defining a region only using Rectangle.
+ * The rectangle points are still passed using a Polygon element if the device does not support polygon regions. In this case, the points provided in the Polygon element shall represent a rectangle.
+ * 				
+ */
+export interface PolygonOptions {
+    readonly 'RectangleOnly'?: boolean;
+    readonly 'VertexLimits'?: IntRange;
+}
+
+/**
+ * 
  */
 export interface Envelope {
 }
@@ -4375,6 +4406,97 @@ export interface Fault {
  * 
  */
 export interface detail {
+}
+
+/**
+ * Indicates that the WS Subscription policy is supported.
+ */
+export interface Capabilities {
+}
+
+/**
+ * Event broker address in the format "scheme://host:port[/resource]". The supported schemes shall be returned by the EventBrokerProtocols capability. The resource part of the URL is only valid when using websocket. The Address must be unique.
+ */
+export interface EventBrokerConfig {
+    readonly 'Address': string;
+    readonly 'TopicPrefix': string;
+    readonly 'UserName'?: string;
+    readonly 'Password'?: string;
+    readonly 'CertificateID'?: string;
+    readonly 'PublishFilter'?: any;
+    readonly 'QoS'?: number;
+    readonly 'Status'?: string;
+    readonly 'CertPathValidationPolicyID'?: string;
+}
+
+/**
+ * Namespace of the service being described. This parameter allows to match the service capabilities to the service. Note that only one set of capabilities is supported per namespace.
+ */
+export interface Service {
+    readonly 'Namespace': string;
+    readonly 'XAddr': string;
+    readonly 'Capabilities'?: any;
+    readonly 'Version': OnvifVersion;
+}
+
+/**
+ * Network capabilities.
+ */
+export interface DeviceServiceCapabilities {
+    readonly 'Network': NetworkCapabilities;
+    readonly 'Security': SecurityCapabilities;
+    readonly 'System': SystemCapabilities;
+    readonly 'Misc'?: MiscCapabilities;
+}
+
+/**
+ * Indicates support for IP filtering.
+ */
+export interface NetworkCapabilities {
+}
+
+/**
+ * Indicates support for TLS 1.0.
+ */
+export interface SecurityCapabilities {
+}
+
+/**
+ * Indicates support for WS Discovery resolve requests.
+ */
+export interface SystemCapabilities {
+}
+
+/**
+ * Lists of commands supported by SendAuxiliaryCommand.
+ */
+export interface MiscCapabilities {
+}
+
+/**
+ * User name
+ */
+export interface UserCredential {
+    readonly 'UserName': string;
+    readonly 'Password'?: string;
+    readonly 'Extension'?: any;
+}
+
+/**
+ *  local path 
+ */
+export interface StorageConfigurationData {
+    readonly 'LocalPath'?: string;
+    readonly 'StorageUri'?: string;
+    readonly 'User'?: UserCredential;
+    readonly 'Extension'?: any;
+}
+
+/**
+ * 
+ */
+export interface StorageConfiguration {
+    readonly 'Data': StorageConfigurationData;
 }
 
 /**
@@ -4646,7 +4768,11 @@ export enum AudioEncodingMimeNames {
     /**
      * 
      */
-    'MP4A-LATM' = "MP4A-LATM"
+    'MP4A-LATM' = "MP4A-LATM",
+    /**
+     * 
+     */
+    'mpeg4-generic' = "mpeg4-generic"
 }
 
 /**
@@ -5230,6 +5356,28 @@ export enum PTZPresetTourOperation {
 /**
  * 
  */
+export enum MoveAndTrackMethod {
+    /**
+     * 
+     */
+    'PresetToken' = "PresetToken",
+    /**
+     * 
+     */
+    'GeoLocation' = "GeoLocation",
+    /**
+     * 
+     */
+    'PTZVector' = "PTZVector",
+    /**
+     * 
+     */
+    'ObjectID' = "ObjectID"
+}
+
+/**
+ * 
+ */
 export enum AutoFocusMode {
     /**
      * 
@@ -5239,6 +5387,16 @@ export enum AutoFocusMode {
      * 
      */
     'MANUAL' = "MANUAL"
+}
+
+/**
+ * Focus of a moving camera is updated only once after stopping a pan, tilt or zoom movement.
+ */
+export enum AFModes {
+    /**
+     * Focus of a moving camera is updated only once after stopping a pan, tilt or zoom movement.
+     */
+    'OnceAfterMove' = "OnceAfterMove"
 }
 
 /**
@@ -5426,6 +5584,24 @@ export enum DefoggingMode {
 /**
  * 
  */
+export enum ImageSendingType {
+    /**
+     * 
+     */
+    'Embedded' = "Embedded",
+    /**
+     * 
+     */
+    'LocalStorage' = "LocalStorage",
+    /**
+     * 
+     */
+    'RemoteStorage' = "RemoteStorage"
+}
+
+/**
+ * 
+ */
 export enum PropertyOperation {
     /**
      * 
@@ -5601,6 +5777,31 @@ export enum ModeOfOperation {
 
 /**
  * 
+ * 		  AudioClassType acceptable values are;
+ * 		   gun_shot, scream, glass_breaking, tire_screech   
+ * 		
+ */
+export enum AudioClassType {
+    /**
+     * 
+     */
+    'gun_shot' = "gun_shot",
+    /**
+     * 
+     */
+    'scream' = "scream",
+    /**
+     * 
+     */
+    'glass_breaking' = "glass_breaking",
+    /**
+     * 
+     */
+    'tire_screech' = "tire_screech"
+}
+
+/**
+ * 
  */
 export enum OSDType {
     /**
@@ -5615,4 +5816,84 @@ export enum OSDType {
      * 
      */
     'Extended' = "Extended"
+}
+
+/**
+ * 
+ */
+export enum EventBrokerProtocol {
+    /**
+     * 
+     */
+    'mqtt' = "mqtt",
+    /**
+     * 
+     */
+    'mqtts' = "mqtts",
+    /**
+     * 
+     */
+    'ws' = "ws",
+    /**
+     * 
+     */
+    'wss' = "wss"
+}
+
+/**
+ * 
+ */
+export enum ConnectionStatus {
+    /**
+     * 
+     */
+    'Offline' = "Offline",
+    /**
+     * 
+     */
+    'Connecting' = "Connecting",
+    /**
+     * 
+     */
+    'Connected' = "Connected"
+}
+
+/**
+ * Automatic adjustment of the device location.
+ */
+export enum AutoGeoModes {
+    /**
+     * Automatic adjustment of the device location.
+     */
+    'Location' = "Location",
+    /**
+     * Automatic adjustment of the device orientation relative to the compass also called yaw.
+     */
+    'Heading' = "Heading",
+    /**
+     * Automatic adjustment of the deviation from the horizon also called pitch and roll.
+     */
+    'Leveling' = "Leveling"
+}
+
+/**
+ * NFS protocol
+ */
+export enum StorageType {
+    /**
+     * NFS protocol
+     */
+    'NFS' = "NFS",
+    /**
+     * CIFS protocol
+     */
+    'CIFS' = "CIFS",
+    /**
+     * CDMI protocol
+     */
+    'CDMI' = "CDMI",
+    /**
+     * FTP protocol
+     */
+    'FTP' = "FTP"
 }

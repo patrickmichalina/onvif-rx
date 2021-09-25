@@ -1,4 +1,4 @@
-[onvif-rx](../README.md) > ["api/types"](../modules/_api_types_.md) > [NetworkInterface](../interfaces/_api_types_.networkinterface.md)
+[onvif-rx](../README.md) › ["api/types"](../modules/_api_types_.md) › [NetworkInterface](_api_types_.networkinterface.md)
 
 # Interface: NetworkInterface
 
@@ -6,75 +6,63 @@ Indicates whether or not an interface is enabled.
 
 ## Hierarchy
 
-**NetworkInterface**
+* **NetworkInterface**
 
 ## Index
 
 ### Properties
 
-* [Enabled](_api_types_.networkinterface.md#enabled)
-* [Extension](_api_types_.networkinterface.md#extension)
-* [IPv4](_api_types_.networkinterface.md#ipv4)
-* [IPv6](_api_types_.networkinterface.md#ipv6)
-* [Info](_api_types_.networkinterface.md#info)
-* [Link](_api_types_.networkinterface.md#link)
-
----
+* [Enabled](_api_types_.networkinterface.md#readonly-enabled)
+* [Extension](_api_types_.networkinterface.md#optional-readonly-extension)
+* [IPv4](_api_types_.networkinterface.md#optional-readonly-ipv4)
+* [IPv6](_api_types_.networkinterface.md#optional-readonly-ipv6)
+* [Info](_api_types_.networkinterface.md#optional-readonly-info)
+* [Link](_api_types_.networkinterface.md#optional-readonly-link)
 
 ## Properties
 
-<a id="enabled"></a>
+### `Readonly` Enabled
 
-###  Enabled
+• **Enabled**: *boolean*
 
-**● Enabled**: *`boolean`*
-
-*Defined in [api/types.ts:1190](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1190)*
-
-___
-<a id="extension"></a>
-
-### `<Optional>` Extension
-
-**● Extension**: *[NetworkInterfaceExtension](_api_types_.networkinterfaceextension.md)*
-
-*Defined in [api/types.ts:1195](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1195)*
-
-___
-<a id="ipv4"></a>
-
-### `<Optional>` IPv4
-
-**● IPv4**: *[IPv4NetworkInterface](_api_types_.ipv4networkinterface.md)*
-
-*Defined in [api/types.ts:1193](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1193)*
-
-___
-<a id="ipv6"></a>
-
-### `<Optional>` IPv6
-
-**● IPv6**: *[IPv6NetworkInterface](_api_types_.ipv6networkinterface.md)*
-
-*Defined in [api/types.ts:1194](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1194)*
-
-___
-<a id="info"></a>
-
-### `<Optional>` Info
-
-**● Info**: *[NetworkInterfaceInfo](_api_types_.networkinterfaceinfo.md)*
-
-*Defined in [api/types.ts:1191](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1191)*
-
-___
-<a id="link"></a>
-
-### `<Optional>` Link
-
-**● Link**: *[NetworkInterfaceLink](_api_types_.networkinterfacelink.md)*
-
-*Defined in [api/types.ts:1192](https://github.com/patrickmichalina/onvif-rx/blob/f117e44/src/api/types.ts#L1192)*
+*Defined in [api/types.ts:1219](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1219)*
 
 ___
 
+### `Optional` `Readonly` Extension
+
+• **Extension**? : *[NetworkInterfaceExtension](_api_types_.networkinterfaceextension.md)*
+
+*Defined in [api/types.ts:1224](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1224)*
+
+___
+
+### `Optional` `Readonly` IPv4
+
+• **IPv4**? : *[IPv4NetworkInterface](_api_types_.ipv4networkinterface.md)*
+
+*Defined in [api/types.ts:1222](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1222)*
+
+___
+
+### `Optional` `Readonly` IPv6
+
+• **IPv6**? : *[IPv6NetworkInterface](_api_types_.ipv6networkinterface.md)*
+
+*Defined in [api/types.ts:1223](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1223)*
+
+___
+
+### `Optional` `Readonly` Info
+
+• **Info**? : *[NetworkInterfaceInfo](_api_types_.networkinterfaceinfo.md)*
+
+*Defined in [api/types.ts:1220](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1220)*
+
+___
+
+### `Optional` `Readonly` Link
+
+• **Link**? : *[NetworkInterfaceLink](_api_types_.networkinterfacelink.md)*
+
+*Defined in [api/types.ts:1221](https://github.com/patrickmichalina/onvif-rx/blob/3e9b152/src/api/types.ts#L1221)*
