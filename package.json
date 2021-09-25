@@ -40,30 +40,30 @@
   "dependencies": {
     "@akanass/rx-http-request": "^3.3.0",
     "rxjs": "^6.5.4",
-    "typescript-monads": "^3.13.0",
+    "typescript-monads": "^7.1.0",
     "xml-js": "^1.6.11",
-    "xmldom": "^0.2.1"
+    "xmldom": "^0.6.0"
   },
   "devDependencies": {
-    "@types/fs-extra": "^8.0.1",
+    "@types/fs-extra": "^9.0.13",
     "@types/node": "^13.1.4",
     "@types/node-fetch": "^2.5.4",
     "@types/xml-js": "^1.0.0",
     "@types/xmldom": "^0.1.29",
-    "fs-extra": "^8.1.0",
+    "fs-extra": "^10.0.0",
     "node-fetch": "^2.6.0",
     "rollup": "^1.28.0",
     "rollup-plugin-typescript2": "^0.25.3",
-    "semantic-release": "^15.14.0",
+    "semantic-release": "^18.0.0",
     "terser": "^4.5.1",
     "ts-node-dev": "^1.0.0-pre.44",
     "ts-simple-ast": "^21.0.4",
     "tslib": "^1.10.0",
     "tslint": "^5.20.1",
     "tslint-immutable": "^6.0.1",
-    "typedoc": "^0.15.6",
+    "typedoc": "^0.17.0",
     "typedoc-plugin-markdown": "^2.2.14",
-    "typescript": "^3.7.4"
+    "typescript": "^3.8.3"
   },
   "release": {
     "pkgRoot": "dist",
