@@ -120,7 +120,7 @@ export interface IXmlContainer {
 export const generateRequestElements = (reqNode: string) => (params: any) => {
   const cleanedParams = Object
     .keys(params)
-    .reduce((acc, curr) => params[curr] === undefined ? acc : { ...acc, ...params[curr] }, {})
+    .reduce((acc, curr) => params[curr] === undefined ? acc : { ...acc, [curr]: params[curr] }, {})
 
   return js2xml({ [reqNode.replace(':', '_')]: cleanedParams }, {
     compact: true,
