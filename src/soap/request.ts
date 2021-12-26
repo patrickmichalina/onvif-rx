@@ -142,7 +142,7 @@ export const createStandardRequestBody =
             ? ok<IXmlContainer, ITransportPayoad>({ xmlString: response.body, xmlDocument })
             : fail<IXmlContainer, ITransportPayoad>({
               ...response,
-              statusMessage: (reason.valueOrUndefined() || subcode.valueOr(response.statusMessage)).trim()
+              statusMessage: (reason.valueOrUndefined() || subcode.valueOr(JSON.stringify(response.statusMessage))).trim()
             })
         }))
 
