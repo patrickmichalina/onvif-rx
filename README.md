@@ -4,12 +4,6 @@
   <a href="https://circleci.com/gh/patrickmichalina/onvif-rx">
     <img alt="circeci" src="https://circleci.com/gh/patrickmichalina/onvif-rx.svg?style=shield">
   </a>
-  <!-- <a href="https://codeclimate.com/github/patrickmichalina/onvif-rx/test_coverage">
-    <img src="https://api.codeclimate.com/v1/badges/f40c9fff2927e49c3ea2/test_coverage" />
-  </a>
-  <a href="https://codeclimate.com/github/patrickmichalina/onvif-rx/maintainability">
-    <img alt="codeclimate" src="https://api.codeclimate.com/v1/badges/f40c9fff2927e49c3ea2/maintainability">
-  </a> -->
 </p>
 <p align="center">
   <a href="https://greenkeeper.io">
