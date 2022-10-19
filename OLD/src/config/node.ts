@@ -1,8 +1,8 @@
 import { DOMParser } from 'xmldom'
+import { RxHR as http, RxHttpRequestResponse } from '@akanass/rx-http-request'
 import { ISystemConfig } from './interfaces'
 import { nonce, sharedFetchWrapper } from './universal'
 import { createHash } from 'crypto'
-import { RxHR as http, RxHttpRequestResponse } from '@akanass/rx-http-request'
 import { map, catchError } from 'rxjs/operators'
 import { of, Observable } from 'rxjs'
 
