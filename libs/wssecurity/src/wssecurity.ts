@@ -1,5 +1,5 @@
 import { IsString, ValidationError, MinLength } from 'class-validator'
-import { validateOrRejectPlainObservable } from './validate-or-reject-plain-obs';
+import { validateOrRejectPlainObservable } from '@patrickmichalina/onvif-validation';
 import { IResult } from 'typescript-monads';
 import { mapResult } from './result-operators';
 import { Observable } from 'rxjs';
@@ -18,9 +18,7 @@ export class UsernameTokenFragmentOptions {
 
 export function wsUsernameTokenFragment(options: UsernameTokenFragmentOptions): Observable<IResult<XMLBuilder, ValidationError[]>> {
   return validateOrRejectPlainObservable(UsernameTokenFragmentOptions, options).pipe(
-    mapResult(optionsInstance => {
-      const { username, password } = optionsInstance
-
+    mapResult(({ username, password }) => {
       const urls = {
         passwordDigestType: 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordDigest',
         nonceEncodingType: 'http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary',

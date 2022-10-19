@@ -22,7 +22,10 @@ export class DigestMessageOptions {
   readonly alg: DigestAlgo
 }
 
-export function digestMessage(message: string, alg: DigestAlgo = DigestAlgo.SHA256): Observable<IResult<string, Error>> {
+export function digestMessage({ alg, message }: DigestMessageOptions): Observable<IResult<string, Error>> {
+  // validateOrRejectPlainObservable(DigestMessageOptions, options).pipe(
+  //   mapResult(o =>)
+
   const promise = webcrypto.subtle
     .digest(alg, new TextEncoder().encode(message))
     .then(hashBuffer => Array.from(new Uint8Array(hashBuffer)))

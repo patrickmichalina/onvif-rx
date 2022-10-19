@@ -5,7 +5,7 @@ import { flatMapResult, mapResult } from './result-operators'
 describe("", () => {
   it("", done => {
     of(ok("thing")).pipe(
-      mapResult(a => `${a}-with-tail`)
+      mapResult<string, string, Error>(a => `${a}-with-tail`)
     ).subscribe({
       next: val => {
         expect(val.isOk()).toEqual(true)
