@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/nx/schemas/nx-schema.json",
-  "npmScope": "onvif-rx",
+  "npmScope": "patrickmichalina",
   "tasksRunnerOptions": {
     "default": {
       "runner": "nx/tasks-runners/default",
