@@ -30,7 +30,7 @@ export function wsUsernameTokenFragment(options: UsernameTokenFragmentOptions): 
 
       return fragment({ version: '1.0', namespaceAlias })
         .ele('@wsse', 'wsse:Security').att('S11:mustUnderstand', '1')
-        .ele('@wsse', 'UsernameToken').att('@wsu', 'wsu:Id', 'Sample')
+        .ele('@wsse', 'UsernameToken').att('@wsu', 'wsu:Id', username)
         .ele('@wsse', 'Username').txt(username).up()
         .ele('@wsse', 'Password').att('Type', 'wsse:PasswordText').txt(password).up()
         .ele('@wsu', 'wsu:Created')

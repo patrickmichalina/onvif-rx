@@ -22,7 +22,7 @@ describe('wssecurity', () => {
         expect(sut.isOk()).toEqual(true)
 
         const expects = `<wsse:Security xmlns:wsse="http://schemas.xmlsoap.org/ws/2003/06/secext" S11:mustUnderstand="1">
-  <wsse:UsernameToken xmlns:wsu="http://schemas.xmlsoap.org/ws/2003/06/utility" wsu:Id="Sample">
+  <wsse:UsernameToken xmlns:wsu="http://schemas.xmlsoap.org/ws/2003/06/utility" wsu:Id="test">
     <wsse:Username>test</wsse:Username>
     <wsse:Password Type="wsse:PasswordText">123</wsse:Password>
     <wsu:Created xmlns:wsu="http://schemas.xmlsoap.org/ws/2003/06/utility"/>
