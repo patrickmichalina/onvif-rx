@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-namespace */
+
 import { webcrypto } from 'crypto'
 import { from, Observable } from 'rxjs';
 import { fail, IResult, ok } from 'typescript-monads';
