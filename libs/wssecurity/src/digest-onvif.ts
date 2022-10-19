@@ -16,7 +16,7 @@
 //       }))
 
 
-export function onvifDigest() {
+export function wsSecurityDigest() {
   return {
     
   }

@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@patrickmichalina/wssecurity": ["libs/wssecurity/src/index.ts"]
+      "@patrickmichalina/onvif-nonce": ["libs/nonce/src/index.ts"],
+      "@patrickmichalina/onvif-wssecurity": ["libs/wssecurity/src/index.ts"],
+      "@patrickmichalina/validation": ["libs/validation/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
