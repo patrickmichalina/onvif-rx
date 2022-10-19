@@ -10,11 +10,13 @@
     "importHelpers": true,
     "target": "es2015",
     "module": "esnext",
-    "lib": ["es2017", "dom"],
+    "lib": ["ESNext", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@patrickmichalina/wssecurity": ["libs/wssecurity/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

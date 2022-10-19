@@ -29,10 +29,13 @@
   ],
   "dependencies": {
     "@nestjs/axios": "^0.1.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.13.2",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.5.7",
     "tslib": "^2.3.0",
-    "typescript-monads": "^8.0.0"
+    "typescript-monads": "^8.0.0",
+    "xmlbuilder2": "^3.0.2"
   },
   "devDependencies": {
     "@nestjs/schematics": "^9.0.3",
@@ -40,6 +43,7 @@
     "@nrwl/cli": "15.0.0",
     "@nrwl/eslint-plugin-nx": "15.0.0",
     "@nrwl/jest": "15.0.0",
+    "@nrwl/js": "15.0.0",
     "@nrwl/linter": "15.0.0",
     "@nrwl/nest": "15.0.0",
     "@nrwl/node": "15.0.0",
