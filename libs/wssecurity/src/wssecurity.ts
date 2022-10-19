@@ -8,11 +8,11 @@ import { mapResult } from './result-operators';
 
 export class UsernameTokenFragmentOptions {
   @IsString()
-  @MinLength(2)
+  @MinLength(1)
   readonly username: string
 
   @IsString()
-  @MinLength(2)
+  @MinLength(1)
   readonly password: string
 }
 
@@ -25,6 +25,8 @@ export function wsUsernameTokenFragment(options: UsernameTokenFragmentOptions): 
         wsse: 'http://schemas.xmlsoap.org/ws/2003/06/secext',
         wsu: 'http://schemas.xmlsoap.org/ws/2003/06/utility'
       }
+
+      // (new Date(Date.now() + timeDifference)).toISOString()
 
       return fragment({ version: '1.0', namespaceAlias })
         .ele('@wsse', 'wsse:Security').att('S11:mustUnderstand', '1')
